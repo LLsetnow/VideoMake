@@ -1,0 +1,33 @@
+subject_definitions:
+<Subject 1> is the young anime girl shown in <Picture 1>, with silver-gray wavy hair, a large turquoise bow, a white short-sleeve blouse, a red necktie with white star details, a pink backpack with white wing accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, and pink platform shoes. Preserve her exact face, hairstyle, body proportions, costume details, colors, and recognizable identity from the reference image in every shot.
+<Audio 1> is the first 15 seconds of the source audio, directly reused 1:1 as the target video's complete final audio track, including all music, vocals, ambience, effects, timing, dynamics, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical mixed-media music video starring <Subject 1>. The visual sequence is fully specified below and does not require any reference video input. Use photographic environments with a full-color 2D anime character composited into them. Reuse <Audio 1> exactly from beginning to end, without generating new dialogue, singing, music, or sound effects.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 7]): fully_preserved - the character's identity and all defining visual features from <Picture 1> remain consistent throughout the entire video.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the target video's complete final audio track.
+
+detailed_description:
+The target video is a 9:16 vertical mixed-media music-video montage combining photographic urban and natural environments with a full-color hand-drawn 2D anime character. Preserve <Subject 1> exactly while adding subtle paper-like compositing edges, soft film grain, slight chromatic aberration, cyan and magenta accents, and collage-style graphic overlays. Keep the cuts synchronized to the existing rhythm of <Audio 1>. Do not use or reproduce any source-video frames, watermarks, or platform UI elements.
+
+[Shot 1] The video opens inside a moving public-transit vehicle. <Subject 1> sits centered on a blue bench, with blurred passengers on both sides and a pale instrument case standing beside her. Through the windows, the city slides laterally with soft motion blur. Large abstract magenta typographic blocks appear behind her but do not need to be readable. The camera is mostly static with subtle handheld vibration and a very slow push in. <Audio 1> begins immediately and remains unchanged.
+
+[Shot 2] At 00:04.900, the camera cuts to a full-body side view of <Subject 1> outdoors beneath a vivid blue sky. Utility poles, overhead wires, and distant buildings pass through the background. She walks slowly from left to right while her hair, bow, wings, and loose clothing respond naturally to the wind. Tall white vertical typography-like graphics occupy one side of the frame. Use a smooth tracking shot with small amplitude.
+
+[Shot 3] At 00:06.733, the shot cuts to a medium close-up inside a small record store. <Subject 1> stands in front of shelves filled with album covers, posters, and printed materials. She raises both hands near her shoulders, tilts her head slightly, and makes a small rhythmic movement. The camera performs a slow push in while preserving her face and costume details.
+
+[Shot 4] At 00:08.667, cut to a low-angle tracking shot of <Subject 1> running beneath bright clouds. She moves through an open roadside landscape, with her hair, bow, wings, skirt, and striped leg warmers trailing naturally behind her. Large soft white lyric-like graphics float across the sky but remain partially obscured and non-legible. The camera tracks her at fast speed while keeping her recognizable.
+
+[Shot 5] At 00:10.100, cut to a full-screen abstract transition of pink, cyan, orange, and cream ribbon-like streaks sweeping diagonally at fast speed. The streaks briefly form a ghosted outline of <Subject 1> and her turquoise bow before dissolving into the next scene.
+
+[Shot 6] At 00:11.967, cut to a green meadow filled with small white flowers and a tall electrical transmission tower. <Subject 1> stands small in the frame, looks upward, and slowly raises one arm. Use a low-angle camera with a gentle push in. Wind moves her hair, bow, wings, and skirt while the flowers move softly in the foreground.
+
+[Shot 7] At 00:14.000, cut to a slightly closer three-quarter view in the same meadow. <Subject 1> turns toward the camera and holds the raised-hand pose as the wind continues to move her hair and clothing. End precisely at 00:15.000 on this held frame. Preserve the uninterrupted original audio from <Audio 1> across every cut.
+
+overall_soundscape:
+All ambience, physical sounds, vocals, and effects already present in <Audio 1> are preserved through the copied audio track. Do not generate additional dialogue, foley, or sound effects.
+
+non_diegetic_music:
+The complete musical and vocal mix from <Audio 1> is directly reused 1:1. Preserve its exact timing, tempo, beat placement, dynamics, vocal content, and stereo image from 00:00.000 to 00:15.000. Do not generate replacement music.

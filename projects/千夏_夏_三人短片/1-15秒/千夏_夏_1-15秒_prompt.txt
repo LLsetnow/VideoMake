@@ -1,0 +1,39 @@
+subject_definitions:
+<Picture 1> is the single vertical identity board used as the reference image: Qianxia stands on the left, Nangong Yu stands in the center, and Airui stands on the right. The board is derived from the three provided character turnaround sheets and is an identity anchor, not a scene frame.
+<Subject 1> is Qianxia, the pale mint-blonde young woman with a large turquoise star bow, white blouse, red star-pattern necktie, pink winged backpack, white wings, black layered skirt, pink-and-white striped arm warmers and leg warmers, and pink platform shoes. Preserve her face, hair, bow, wings, costume colors, proportions, and accessories.
+<Subject 2> is Nangong Yu, the young woman with short black hair and pink curled side locks, small red horn-like ornaments, a turquoise halo, white-and-black gothic dress, red accents, white mechanical-looking wings, black thigh-high stockings, and platform shoes. Preserve her face, hair silhouette, halo, wings, costume structure, and colors.
+<Subject 3> is Airui, the pink-haired young woman with turquoise streaks, black-and-orange headphones, white dress with orange bow details, mint-green panels, white wings, speaker-like accessories, and white boots. Preserve her face, hair, headphones, wings, costume details, and colors.
+<Audio 1> is the supplied 15-second audio excerpt from the reference video's first 15 seconds, directly reused 1:1 as this segment's complete final audio track, including music, vocals, timing, dynamics, effects, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 animated music-video segment starring <Subject 1>, <Subject 2>, and <Subject 3>. Use <Picture 1> only for character identity and visual consistency. Reuse <Audio 1> exactly from beginning to end. Translate the analyzed source rhythm into an original sequence of short blue-green summer city shots, staircase encounters, graphic inserts, and a shared run toward light. Do not use the source video, its frames, its watermark, its subtitles, or its literal choreography.
+
+retention_analysis:
+<Picture 1> (identity anchor for all shots): fully_preserved - the three character identities, costume signatures, colors, and proportions are retained while the board's white background is replaced by animated environments.
+<Subject 1> (appears in [Shot 1] through [Shot 7]): fully_preserved - Qianxia remains recognizable with her mint-blonde hair, turquoise bow, white wings, pink backpack, striped warmers, and pink platform shoes.
+<Subject 2> (appears in [Shot 1], [Shot 4], [Shot 5], and [Shot 7]): fully_preserved - Nangong Yu's black-and-pink hair, turquoise halo, gothic dress, wings, and red accents remain stable.
+<Subject 3> (appears in [Shot 1], [Shot 3], [Shot 4], [Shot 5], and [Shot 7]): fully_preserved - Airui's pink hair, turquoise streaks, headphones, orange-and-mint costume, wings, and white boots remain stable.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete audio track for this 15-second segment.
+
+detailed_description:
+The target video is a 9:16 hand-drawn anime music-video montage with clean cel shading, expressive but controlled motion, blue-green summer lighting, and quick editorial rhythm. Use magenta, turquoise, orange, and cream graphic shapes as brief transitions, while keeping the three characters fully colored and sharply identifiable. Keep the backgrounds original and free of readable text, logos, subtitles, or platform UI. The motion follows the energy of an opening sequence without copying any source frame or exact composition.
+
+[Shot 1] The video opens in a narrow blue-green summer shopping street with long vertical shadows and bright sky at the far end. <Subject 1> walks in the left foreground with one hand on her pink backpack strap; <Subject 2> waits halfway down the street near a stair entrance; <Subject 3> is visible under a striped awning on the right, turning toward them. The camera uses a smooth Tracking Shot forward with small amplitude at slow speed, then gives a slight handheld vibration on the beat. <Audio 1> begins immediately and remains unchanged.
+
+[Shot 2] At 00:02.300, the camera cuts to a low close-up of <Subject 1>'s pink platform shoes stepping across sunlit pavement, then tilts up to the hem of her black skirt and striped leg warmers. A turquoise reflection moves across the ground. Use a restrained Tilt Up with small amplitude; do not change her costume or footwear.
+
+[Shot 3] At 00:04.200, the shot cuts to <Subject 3> in a bright graphic close-up. She turns her head toward camera, her pink hair and turquoise streaks lifting slightly in the breeze, while orange and mint geometric shapes slide behind her like a printed music-video collage. The camera performs a small Push In at slow speed. Her headphones and wing edges remain visible.
+
+[Shot 4] At 00:06.200, the camera cuts to an open school stairwell washed in pale daylight. <Subject 2> sits on the landing with her turquoise halo centered against the railings; <Subject 1> climbs the first steps and stops one step below; <Subject 3> enters from the upper landing. The three exchange a clear glance and a small hand wave without dialogue. Use a gentle Pan Right with small amplitude, keeping all three faces readable.
+
+[Shot 5] At 00:09.200, cut to a medium three-quarter view on the stair landing. <Subject 1> extends her hand toward <Subject 2>, and <Subject 2> reaches back; <Subject 3> leans into frame from the side and points toward a sunlit rooftop exit. Their hair, bows, wings, and loose costume pieces respond to a soft cross-breeze. Use a slow Arc Shot with small amplitude around the group.
+
+[Shot 6] At 00:11.400, cut to a bright abstract transition of turquoise, pink, orange, and cream paper-like ribbons sweeping diagonally. The ribbons briefly trace the silhouettes of the turquoise bow, halo, and headphones, then open into a white summer flare. This is a fast visual bridge with no readable text and no new sound effect; <Audio 1> continues underneath.
+
+[Shot 7] At 00:13.200, the flare resolves into a wide blue sky and sunlit street outside the stairwell. <Subject 1>, <Subject 2>, and <Subject 3> run side by side toward the camera, then pass it as their shadows cross the foreground. Qianxia's wings and bow, Nangong Yu's halo and wing plates, and Airui's orange ribbons and headphones move naturally. The camera performs a smooth Tracking Shot backward at slow-to-medium speed and ends on the three turning their heads toward one another. Hold the final connected pose precisely until 00:15.000. Preserve the uninterrupted copied audio from <Audio 1> across every cut.
+
+overall_soundscape:
+All music, vocals, ambience, physical sounds, and effects already present in <Audio 1> are preserved by the locked copied track. Do not generate additional dialogue, foley, crowd noise, or sound effects.
+
+non_diegetic_music:
+The complete musical and vocal mix from <Audio 1> is directly reused 1:1 from 00:00.000 to 00:15.000. Preserve its exact beat placement, tempo, dynamics, vocal content, and stereo image; do not generate replacement music.
