@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is the square three-view identity reference for <Subject 1>, used only to preserve character identity, costume construction, colors, proportions, and accessories; it is not a target frame and it is not a scene reference.
+<Subject 1> is the single young anime girl shown in <Picture 1>, with short wavy silver-gray hair, a large turquoise bow, pale pink eyes, a white short-sleeve blouse, a red necktie with small white star details, a pink winged backpack, white wing-like side accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, pale skin, and pink-and-white platform shoes. Preserve her exact face, hairstyle, bow, backpack, wings, body proportions, costume details, colors, and recognizable identity in every shot.
+
+summary:
+[reference generation] Create a new 15-second 16:9 landscape anime live-action-composite vignette starring <Subject 1>. Use <Picture 1> only as a character identity reference. The shot rhythm is an original translation of a simple wake-up, walk, refrigerator-opening, drink-selection, and drinking sequence; do not use any source-video frames, source-video audio, source-video camera footage, watermark, platform UI, or literal composition. Generate original synchronized sound effects natively with the video and do not use any external audio input.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 7]): fully_preserved - her face, silver-gray hair, turquoise bow, white blouse, red star-detail necktie, pink winged backpack, white wings, black layered skirt, striped warmers, and pink-and-white platform shoes remain stable and recognizable throughout the target video.
+<Picture 1> (identity reference only): fully_preserved - preserve the referenced character design and three-view identity information, while replacing the white reference background with an original nighttime convenience-store environment.
+
+detailed_description:
+The target video is a 16:9 landscape cinematic anime sequence with a crisp hand-drawn 2D character integrated into an original, believable convenience-store environment at night. Use clean cel shading on <Subject 1>, realistic glass and metal surfaces, cool cyan refrigerator light, warm amber ceiling light, gentle reflections on the polished floor, shallow depth of field, restrained film grain, and stable facial identity. Keep the visual language original and do not reproduce any source-video frame, character, logo, readable product label, subtitle, watermark, or platform interface. The only visual reference is <Picture 1>, used for <Subject 1>'s identity and costume.
+
+[Shot 1] The video opens on an intimate close-up of <Subject 1> resting her cheek on one folded arm at a small counter inside a quiet convenience-store staff nook. Her eyes are closed, her turquoise bow is partly visible near the edge of frame, and warm ceiling light falls across her silver-gray hair. A faint refrigerator hum is audible. The camera is nearly static with a very small Push In at slow speed. Keep her costume details and facial proportions consistent with <Picture 1>.
+
+[Shot 2] At 00:02.400, the camera cuts to a medium-wide view of the same original store. <Subject 1> lifts her head, blinks once, slides off the stool, and stands upright beside the counter. Her pink winged backpack, white wing-like accessories, black layered skirt, striped warmers, and platform shoes become fully readable. Use a slow Pull Out with small amplitude, then a gentle Static Shot as she looks toward the glowing refrigerator aisle. Include a soft stool scrape and a small fabric rustle.
+
+[Shot 3] At 00:04.400, the shot cuts to a side-profile full-body view. <Subject 1> walks from left to right through the empty aisle toward a tall glass-door refrigerator. Her short wavy hair, turquoise bow, backpack straps, and skirt layers respond with subtle secondary motion. The camera follows with a smooth Tracking Shot at slow speed, keeping her full silhouette visible while warm store light transitions into cyan refrigerator spill.
+
+[Shot 4] At 00:06.600, the camera cuts to a close-up of <Subject 1>'s hand reaching for the refrigerator handle. She pulls the glass door open in one clear motion. Cool white light spills across her sleeve and cheek, a thin veil of cold vapor escapes from the case, and rows of colorful but completely unreadable bottles become visible. Use a small Push In at normal speed. Make the door seal release and sliding-door movement audible, with no music.
+
+[Shot 5] At 00:08.400, the shot cuts over her shoulder into the refrigerator. <Subject 1> leans in, her face and turquoise bow reflected softly in the glass edge, then reaches to the middle shelf and selects one small chilled pink bottle with a plain unbranded cap. Use a controlled Arc Shot with small amplitude around her right shoulder. Keep her hand, sleeve stripes, and bottle contact clear; do not invent readable labels or logos.
+
+[Shot 6] At 00:10.700, the shot cuts to a medium close-up from the front of the open refrigerator. <Subject 1> steps back into the aisle, holds the cold pink bottle beside her face, and turns slightly toward camera. Cyan light from the refrigerator outlines her hair and bow while warm amber light remains behind her. Use a gentle Push In at slow speed. The door begins to swing closed in the background and the bottle makes a small plastic crinkle in her hand.
+
+[Shot 7] At 00:12.600, the camera cuts to a three-quarter close-up. <Subject 1> raises the bottle to her lips and takes one natural drink, eyes closing briefly as a small condensation highlight moves across the bottle. She lowers it, exhales softly, and ends on a relaxed, faintly relieved smile while the refrigerator door settles shut behind her. Use a very small Push In at slow speed and hold the final expression cleanly until 00:15.000. Preserve the same original character identity, costume, lighting logic, and synchronized store ambience through the final frame.
+
+overall_soundscape:
+Generate original synchronized diegetic sound only: a quiet convenience-store room tone, low refrigerator compressor hum, a soft stool scrape, clothing rustle, light footsteps on polished flooring, the refrigerator seal releasing, the glass door sliding, a subtle cold-air whoosh, a small plastic bottle crinkle, one gentle cap movement, and a natural quiet swallow. Do not use or copy any sound from the storyboard reference video. No dialogue, singing, voiceover, or crowd noise.
+
+non_diegetic_music:
+N/A. Do not generate background music; keep the audio focused on original synchronized store ambience and physical actions.

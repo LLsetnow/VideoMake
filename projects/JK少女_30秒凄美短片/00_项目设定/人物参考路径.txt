@@ -1,0 +1,3 @@
+/Users/apple/Documents/VideoMake/charater/character_turnaround_3view_v2.png
+
+用途：所有人物相关的图生视频、角色重绘和场景合成，均以此三视图作为人物身份、服装、发型、耳机、MP3和吉他包的统一参考。

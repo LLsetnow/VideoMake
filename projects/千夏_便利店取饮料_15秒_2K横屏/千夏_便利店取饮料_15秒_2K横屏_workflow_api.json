@@ -1,0 +1,285 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1.0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 2026080915
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_convenience_store_2k_landscape_15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 2.0,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the square three-view identity reference for <Subject 1>, used only to preserve character identity, costume construction, colors, proportions, and accessories; it is not a target frame and it is not a scene reference.\n<Subject 1> is the single young anime girl shown in <Picture 1>, with short wavy silver-gray hair, a large turquoise bow, pale pink eyes, a white short-sleeve blouse, a red necktie with small white star details, a pink winged backpack, white wing-like side accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, pale skin, and pink-and-white platform shoes. Preserve her exact face, hairstyle, bow, backpack, wings, body proportions, costume details, colors, and recognizable identity in every shot.\n\nsummary:\n[reference generation] Create a new 15-second 16:9 landscape anime live-action-composite vignette starring <Subject 1>. Use <Picture 1> only as a character identity reference. The shot rhythm is an original translation of a simple wake-up, walk, refrigerator-opening, drink-selection, and drinking sequence; do not use any source-video frames, source-video audio, source-video camera footage, watermark, platform UI, or literal composition. Generate original synchronized sound effects natively with the video and do not use any external audio input.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 7]): fully_preserved - her face, silver-gray hair, turquoise bow, white blouse, red star-detail necktie, pink winged backpack, white wings, black layered skirt, striped warmers, and pink-and-white platform shoes remain stable and recognizable throughout the target video.\n<Picture 1> (identity reference only): fully_preserved - preserve the referenced character design and three-view identity information, while replacing the white reference background with an original nighttime convenience-store environment.\n\ndetailed_description:\nThe target video is a 16:9 landscape cinematic anime sequence with a crisp hand-drawn 2D character integrated into an original, believable convenience-store environment at night. Use clean cel shading on <Subject 1>, realistic glass and metal surfaces, cool cyan refrigerator light, warm amber ceiling light, gentle reflections on the polished floor, shallow depth of field, restrained film grain, and stable facial identity. Keep the visual language original and do not reproduce any source-video frame, character, logo, readable product label, subtitle, watermark, or platform interface. The only visual reference is <Picture 1>, used for <Subject 1>'s identity and costume.\n\n[Shot 1] The video opens on an intimate close-up of <Subject 1> resting her cheek on one folded arm at a small counter inside a quiet convenience-store staff nook. Her eyes are closed, her turquoise bow is partly visible near the edge of frame, and warm ceiling light falls across her silver-gray hair. A faint refrigerator hum is audible. The camera is nearly static with a very small Push In at slow speed. Keep her costume details and facial proportions consistent with <Picture 1>.\n\n[Shot 2] At 00:02.400, the camera cuts to a medium-wide view of the same original store. <Subject 1> lifts her head, blinks once, slides off the stool, and stands upright beside the counter. Her pink winged backpack, white wing-like accessories, black layered skirt, striped warmers, and platform shoes become fully readable. Use a slow Pull Out with small amplitude, then a gentle Static Shot as she looks toward the glowing refrigerator aisle. Include a soft stool scrape and a small fabric rustle.\n\n[Shot 3] At 00:04.400, the shot cuts to a side-profile full-body view. <Subject 1> walks from left to right through the empty aisle toward a tall glass-door refrigerator. Her short wavy hair, turquoise bow, backpack straps, and skirt layers respond with subtle secondary motion. The camera follows with a smooth Tracking Shot at slow speed, keeping her full silhouette visible while warm store light transitions into cyan refrigerator spill.\n\n[Shot 4] At 00:06.600, the camera cuts to a close-up of <Subject 1>'s hand reaching for the refrigerator handle. She pulls the glass door open in one clear motion. Cool white light spills across her sleeve and cheek, a thin veil of cold vapor escapes from the case, and rows of colorful but completely unreadable bottles become visible. Use a small Push In at normal speed. Make the door seal release and sliding-door movement audible, with no music.\n\n[Shot 5] At 00:08.400, the shot cuts over her shoulder into the refrigerator. <Subject 1> leans in, her face and turquoise bow reflected softly in the glass edge, then reaches to the middle shelf and selects one small chilled pink bottle with a plain unbranded cap. Use a controlled Arc Shot with small amplitude around her right shoulder. Keep her hand, sleeve stripes, and bottle contact clear; do not invent readable labels or logos.\n\n[Shot 6] At 00:10.700, the shot cuts to a medium close-up from the front of the open refrigerator. <Subject 1> steps back into the aisle, holds the cold pink bottle beside her face, and turns slightly toward camera. Cyan light from the refrigerator outlines her hair and bow while warm amber light remains behind her. Use a gentle Push In at slow speed. The door begins to swing closed in the background and the bottle makes a small plastic crinkle in her hand.\n\n[Shot 7] At 00:12.600, the camera cuts to a three-quarter close-up. <Subject 1> raises the bottle to her lips and takes one natural drink, eyes closing briefly as a small condensation highlight moves across the bottle. She lowers it, exhales softly, and ends on a relaxed, faintly relieved smile while the refrigerator door settles shut behind her. Use a very small Push In at slow speed and hold the final expression cleanly until 00:15.000. Preserve the same original character identity, costume, lighting logic, and synchronized store ambience through the final frame.\n\noverall_soundscape:\nGenerate original synchronized diegetic sound only: a quiet convenience-store room tone, low refrigerator compressor hum, a soft stool scrape, clothing rustle, light footsteps on polished flooring, the refrigerator seal releasing, the glass door sliding, a subtle cold-air whoosh, a small plastic bottle crinkle, one gentle cap movement, and a natural quiet swallow. Do not use or copy any sound from the storyboard reference video. No dialogue, singing, voiceover, or crowd noise.\n\nnon_diegetic_music:\nN/A. Do not generate background music; keep the audio focused on original synchronized store ambience and physical actions.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> is the single anime girl shown in <Picture 1>, with short wavy ash-gray hair, a large turquoise bow, pale pink eyes, a white short-sleeve blouse, a red necktie with small white star details, a pink backpack, white wing-like side accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, pale skin, and pink-and-white platform shoes. Preserve her exact face, hairstyle, body proportions, costume construction, accessory placement, colors, and recognizable identity throughout the target video.
+<Picture 1> is the flat 2D constructivist character poster used as the main visual and opening frame reference. Preserve its 9:16 portrait composition, full-body framing, blocky geometry, thick contour lines, flat color fills, and pink-white-mint palette.
+<Audio 1> is the first 15 seconds of the supplied Hypervoid music track, directly reused 1:1 as the target video's complete final audio track, including its original timing, dynamics, stereo balance, and musical content.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical flat 2D constructivist music video starring <Subject 1>. Start from <Picture 1> as the opening visual reference and animate the poster into a short geometric activation story. Use a blocky paper-cut and screen-print language with thick lines, clean shape fills, pink and white as the dominant colors, and only a small amount of mint green as an activation accent. Reuse <Audio 1> exactly from 00:00.000 to 00:15.000. Do not generate dialogue, singing, replacement music, extra sound effects, readable text, logos, or watermarks.
+
+retention_analysis:
+<Subject 1>: fully_preserved - preserve the character's identity, face, hairstyle, turquoise bow, wings, backpack, red tie, striped sleeves and leg warmers, layered skirt, platform shoes, colors, and full-body silhouette from <Picture 1>.
+<Picture 1>: fully_preserved - preserve the flat poster language, portrait framing, blocky shapes, thick contour lines, and pink-white-mint color relationship while animating the graphic elements.
+<Audio 1>: fully_copy - reuse the first 15 seconds as the complete final audio track without changing its timing, mix, or stereo image.
+
+detailed_description:
+The target video is a 9:16 vertical flat 2D constructivist animation built from crisp geometric blocks, thick dark contour lines, paper-cut planes, limited interior linework, and large matte color fills. The character remains the single visual focus. Keep the background mostly soft pink and warm white, with a small amount of mint green used only for the activation line, geometric core, and a few secondary shapes. The image must feel like a moving screen-printed poster, not a 3D render: no volumetric lighting, glossy materials, realistic shadows, soft airbrush, or dimensional surface modeling. Keep <Subject 1> fully visible from hair to platform shoes, with both white wings and the pink backpack readable in every character shot.
+
+[Shot 1] The video opens on <Picture 1> as a nearly static full-body poster. <Subject 1> stands centered inside a modular pink-and-white geometric frame. The camera uses a Static Shot with a very small amplitude Push In at slow speed. A thin mint-green line slides horizontally across the lower part of the frame, passing in front of her shoes without changing the character design. For the first two seconds, the poster remains stable and graphic.
+
+[Shot 2] At 00:02.000, the mint-green line travels upward through the composition. It visibly activates the shoes, leg warmers, layered skirt, wings, backpack, turquoise bow, and eyes in sequence. These parts briefly separate into simple polygonal blocks and then reconnect into the same costume. The camera continues a small Push In at slow speed; the face remains sharp and recognizable.
+
+[Shot 3] At 00:05.000, the pink diagonal background blocks begin sliding from left to right like a geometric conveyor. <Subject 1> takes one clear step forward while keeping the same three-quarter pose and full-body framing. Her wings open as two or three flat paper planes, and the bow, backpack straps, skirt layers, and striped leg warmers respond with simple rhythmic cutout motion. Use a smooth Tracking Shot to the right with small amplitude at normal speed. Do not add another character or prop.
+
+[Shot 4] At 00:09.000, a small mint-green geometric core rises in front of <Subject 1> at chest height. She extends one hand and touches it. At the contact point, clean pink, white, and mint lines expand diagonally across the frame in a brief graphic burst. Use a Push In with small amplitude at fast speed, followed by a Pull Out with small amplitude at fast speed, while keeping her hands and face readable and avoiding motion blur that destroys the outline.
+
+[Shot 5] At 00:12.000, the geometric blocks quickly return to their modular positions around <Subject 1>. The camera becomes a Static Shot. She settles into a confident centered stance, her wings held open and her turquoise bow making one final small movement. The pink-and-white frame locks around her with a restrained mint-green flash, then holds the final poster-like pose without new text. End precisely at 00:15.000 on the clean held frame.
+
+overall_soundscape:
+No dialogue, voice, or separate environmental ambience is required. Do not add independent foley or sound effects that could alter the source mix; keep the visual activation silent apart from the locked source track.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve its original beat placement, tempo, dynamics, musical content, and stereo image exactly. Do not generate replacement music or extend the audio beyond the first 15 seconds.

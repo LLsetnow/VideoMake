@@ -1,0 +1,19 @@
+subject_definitions:
+<Audio 1> is a 2-second conditioning track made from the final 0.650408 seconds of the extracted source soundtrack followed by 1.349592 seconds of silence. Only 00:00.000–00:00.650408 of this segment is retained in the final assembly; the padding exists only to satisfy the H3 minimum generation window. No visual frames from the reference video are used.
+
+summary:
+[audio reuse] Create the final 2-second 16:9 landscape text-to-video conditioning segment from text only, then retain only its first 0.650408 seconds in the final 30.650408-second assembly. Continue the original gothic graphic language with black, white, crimson, and a thin electric-blue accent. Use <Audio 1> as the synchronized conditioning signal. Do not receive, inspect, or reproduce the reference video as a video input; do not generate replacement music, dialogue, ambience, or sound effects.
+
+retention_analysis:
+<Audio 1>: partially_copy - the final 0.650408 seconds of <Audio 1> are copied 1:1 into the beginning of the conditioning segment and retained in the final assembly; the following 1.349592 seconds are padded silence and are discarded.
+
+detailed_description:
+The target is a 2-second 16:9 landscape closing conditioning segment, of which only the first 0.650408 seconds will be used. Use one continuous shot with no cut: a black card seal snaps shut around the centered faceless porcelain guardian, a white flash fills the frame, and one thin electric-blue ring remains visible for the retained instant. Keep the graphic palette limited to matte black, bone white, deep crimson, and electric blue. Do not add readable text, logos, watermarks, subtitles, platform UI, or any copied source-video frame. <Audio 1> begins at the first frame; preserve its first 0.650408 seconds exactly, and ignore the padded silence after the retained portion.
+
+[Shot 1] The closing tableau is already centered at the first frame: black card borders surround the white guardian and crimson curtains. During the first 0.650408 seconds, the borders fold inward, the guardian becomes a flat white silhouette, and a thin electric-blue ring flashes once around the head before a clean white graphic wipe. Use a very fast Push In with small amplitude and no additional cut. Generate the remaining conditioning time as a simple held white field so the final assembly can retain only the first 0.650408 seconds. End the retained portion on the single blue ring flash.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Only the retained portion of <Audio 1> is audible in the final assembly; the padded silence is discarded.
+
+non_diegetic_music:
+The first 0.650408 seconds of <Audio 1> are directly reused 1:1 in the final timeline. Preserve exact timing, musical content, dynamics, effects, and stereo image. The remaining 1.349592 seconds are padding silence and are not part of the final export.

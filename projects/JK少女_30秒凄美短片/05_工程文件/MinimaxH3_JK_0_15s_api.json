@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/jk_girl_0_15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 1.0,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the young anime girl shown in <Picture 1>, with silver-gray wavy hair, a large turquoise bow, a white short-sleeve blouse, a red necktie with white star details, a pink backpack with white wing accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, and pink platform shoes. Preserve her exact face, hairstyle, body proportions, costume details, colors, and recognizable identity from the reference image in every shot.\n<Audio 1> is the first 15 seconds of the source audio, directly reused 1:1 as the target video's complete final audio track, including all music, vocals, ambience, effects, timing, dynamics, and stereo balance.\n\nsummary:\n[reference generation + audio reuse] Create a new 15-second 9:16 vertical mixed-media music video starring <Subject 1>. The visual sequence is fully specified below and does not require any reference video input. Use photographic environments with a full-color 2D anime character composited into them. Reuse <Audio 1> exactly from beginning to end, without generating new dialogue, singing, music, or sound effects.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 7]): fully_preserved - the character's identity and all defining visual features from <Picture 1> remain consistent throughout the entire video.\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the target video's complete final audio track.\n\ndetailed_description:\nThe target video is a 9:16 vertical mixed-media music-video montage combining photographic urban and natural environments with a full-color hand-drawn 2D anime character. Preserve <Subject 1> exactly while adding subtle paper-like compositing edges, soft film grain, slight chromatic aberration, cyan and magenta accents, and collage-style graphic overlays. Keep the cuts synchronized to the existing rhythm of <Audio 1>. Do not use or reproduce any source-video frames, watermarks, or platform UI elements.\n\n[Shot 1] The video opens inside a moving public-transit vehicle. <Subject 1> sits centered on a blue bench, with blurred passengers on both sides and a pale instrument case standing beside her. Through the windows, the city slides laterally with soft motion blur. Large abstract magenta typographic blocks appear behind her but do not need to be readable. The camera is mostly static with subtle handheld vibration and a very slow push in. <Audio 1> begins immediately and remains unchanged.\n\n[Shot 2] At 00:04.900, the camera cuts to a full-body side view of <Subject 1> outdoors beneath a vivid blue sky. Utility poles, overhead wires, and distant buildings pass through the background. She walks slowly from left to right while her hair, bow, wings, and loose clothing respond naturally to the wind. Tall white vertical typography-like graphics occupy one side of the frame. Use a smooth tracking shot with small amplitude.\n\n[Shot 3] At 00:06.733, the shot cuts to a medium close-up inside a small record store. <Subject 1> stands in front of shelves filled with album covers, posters, and printed materials. She raises both hands near her shoulders, tilts her head slightly, and makes a small rhythmic movement. The camera performs a slow push in while preserving her face and costume details.\n\n[Shot 4] At 00:08.667, cut to a low-angle tracking shot of <Subject 1> running beneath bright clouds. She moves through an open roadside landscape, with her hair, bow, wings, skirt, and striped leg warmers trailing naturally behind her. Large soft white lyric-like graphics float across the sky but remain partially obscured and non-legible. The camera tracks her at fast speed while keeping her recognizable.\n\n[Shot 5] At 00:10.100, cut to a full-screen abstract transition of pink, cyan, orange, and cream ribbon-like streaks sweeping diagonally at fast speed. The streaks briefly form a ghosted outline of <Subject 1> and her turquoise bow before dissolving into the next scene.\n\n[Shot 6] At 00:11.967, cut to a green meadow filled with small white flowers and a tall electrical transmission tower. <Subject 1> stands small in the frame, looks upward, and slowly raises one arm. Use a low-angle camera with a gentle push in. Wind moves her hair, bow, wings, and skirt while the flowers move softly in the foreground.\n\n[Shot 7] At 00:14.000, cut to a slightly closer three-quarter view in the same meadow. <Subject 1> turns toward the camera and holds the raised-hand pose as the wind continues to move her hair and clothing. End precisely at 00:15.000 on this held frame. Preserve the uninterrupted original audio from <Audio 1> across every cut.\n\noverall_soundscape:\nAll ambience, physical sounds, vocals, and effects already present in <Audio 1> are preserved through the copied audio track. Do not generate additional dialogue, foley, or sound effects.\n\nnon_diegetic_music:\nThe complete musical and vocal mix from <Audio 1> is directly reused 1:1. Preserve its exact timing, tempo, beat placement, dynamics, vocal content, and stereo image from 00:00.000 to 00:15.000. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "95078c8870a4ea22b9285d089d59f137e24a5463149ba7e11811d470d2f01994.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "32e928b64088eafb89cc7071aadaaba8cb8eba614e18f76c2a8f6814a447a18b.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}
