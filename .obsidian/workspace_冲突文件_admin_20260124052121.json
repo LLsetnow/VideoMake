@@ -1,0 +1,258 @@
+{
+  "main": {
+    "id": "3fd6467422b8198f",
+    "type": "split",
+    "children": [
+      {
+        "id": "935eec50b58f962f",
+        "type": "tabs",
+        "dimension": 20.033112582781456,
+        "children": [
+          {
+            "id": "747ffae6d8535001",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "绘画/KK零基础课.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "KK零基础课 的大纲"
+            }
+          }
+        ]
+      },
+      {
+        "id": "dc638d986e99170b",
+        "type": "tabs",
+        "dimension": 79.96688741721854,
+        "children": [
+          {
+            "id": "41dc97dfdc44efee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "绘画/KK零基础课.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "KK零基础课"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6220f5a1779562da",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a12a6c96c60a931",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95388314a18be10d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "74bec182ed23b97e",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "quiet-outline"
+            }
+          },
+          {
+            "id": "0c3c20e2c2068ca0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9b0764d520373530",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "93b8fb5a0d81a6e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "899f493e1450c6d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f17a4fa0fbad01ac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "完全模型/模型/PPNC2.0模型编译.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "PPNC2.0模型编译 的反向链接列表"
+            }
+          },
+          {
+            "id": "22898dcf9bf7577c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "完全模型/模型/PPNC2.0模型编译.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "PPNC2.0模型编译 的出链列表"
+            }
+          },
+          {
+            "id": "8654624b7204c80f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "1774ebbb06e47aed",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 353.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "41dc97dfdc44efee",
+  "lastOpenFiles": [
+    "绘画/assets/KK零基础课/file-20260122010123719.jpg",
+    "绘画/assets/KK零基础课",
+    "绘画/学习路径.md",
+    "绘画/KK零基础课.md",
+    "人像摄影/布光/布灯.md",
+    "人像摄影/布光/白棚布光.md",
+    "程序员的自我修养/算法学习/动态规划.md",
+    "程序员的自我修养/算法学习/机考真题.md",
+    "程序员的自我修养/算法学习/力扣刷题.md",
+    "程序员的自我修养/算法学习/算法学习.md",
+    "程序员的自我修养/算法学习/图论.md",
+    "程序员的自我修养/算法学习/回溯.md",
+    "人像摄影/布光/assets/白棚布光/file-20260120034121009.png",
+    "人像摄影/动作库/动作库.md",
+    "人像摄影/待定计划/白棚雷姆.md",
+    "人像摄影/动作库/assets/动作库/file-20260120050417160.png",
+    "人像摄影/动作库/assets/动作库/file-20260120050339204.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045949834.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045937100.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045902271.png",
+    "人像摄影/动作库/assets/动作库",
+    "人像摄影/动作库/assets/动作库/file-20260120045825241.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045825243.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045825245.png",
+    "人像摄影/动作库/assets/动作库/file-20260120045825246.png",
+    "人像摄影/动作库/assets/无道具",
+    "人像摄影/待定计划/非cos棚拍.md",
+    "人像摄影/布光/assets/布灯",
+    "人像摄影/动作库/动作细节.md",
+    "人像摄影/动作库/甜妹.md",
+    "人像摄影/动作库/病娇.md",
+    "人像摄影/布光/assets/白棚布光",
+    "人像摄影/布光/assets",
+    "人像摄影/其他/未命名.md",
+    "人像摄影/其他/其他.md",
+    "人像摄影/布光",
+    "人像摄影/其他/器材统计.md",
+    "人像摄影/其他/拍片复盘.md",
+    "人像摄影/无限进步/基础知识.md",
+    "人像摄影/无限进步/无限进步.md",
+    "人像摄影/无限进步/拉片.md",
+    "人像摄影/人像摄影.md",
+    "人像摄影/待定计划/assets/非cos棚拍",
+    "人像摄影/待定计划/assets/白棚雷姆",
+    "人像摄影/策划/模特博主.md",
+    "绘画/学习路径.md.baiduyun.uploading.cfg",
+    "MMD制作/概述.canvas",
+    "MMD制作/blender/物理模拟/未命名.canvas"
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/BV1P2ux6gEF8_ref_30-38.382585s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 8.382585
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the original faceless dancer-like figure established by <Picture 1>, wearing a cobalt-blue long coat with a sharp red diagonal inner panel, black featureless face and hands, and a balanced graphic silhouette. Preserve this identity, costume colors, body proportions, and featureless face throughout the segment.\n<Picture 1> is the generated 16:9 visual identity and composition anchor reused for character consistency; it is not a source-video frame.\n<Audio 1> is the extracted soundtrack segment from 00:30.000 to 00:38.382585 of the supplied reference video's audio, directly reused 1:1 as this segment's complete final audio track, including any music, speech, vocals, effects, timing, dynamics, and stereo image. No visual frames from the reference video are used.\n\nsummary:\n[reference generation + audio reuse] Create the 8.382585-second 16:9 closing segment starring <Subject 1>. Resolve the constructivist sequence through a final cycle of black, warm white, cobalt blue, and signal red geometry, centered emblems, scanline glitches, and precise graphic motion. Use <Picture 1> for visual identity and lock <Audio 1> from 00:00.000 through 00:08.382585. The source video is prompt inspiration only and is not an input; do not reproduce its frames, characters, captions, logos, watermarks, or platform UI.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - the same faceless figure, cobalt coat, red inner panel, black silhouette, and graphic identity remain consistent through the closing transformations.\n<Picture 1> (visual identity and costume reference): fully_preserved - reuse the same figure design and palette as a stable reference, without treating the source image as a literal unchanging frame.\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this 8.382585-second segment without generating replacement music, dialogue, ambience, or sound effects.\n\ndetailed_description:\nThe target video is an original 16:9 constructivist closing passage with flat matte black, warm white, cobalt blue, and signal red fields, thin drafting lines, paper-cut silhouettes, controlled RGB separation, subtle grain, and a clean emblematic finish. Use no readable text, logo, watermark, subtitle, platform UI, or copied source-video frame. <Subject 1> is the only human figure, and <Audio 1> begins on the first frame and stays unchanged across every cut.\n\n[Shot 1] Open on <Subject 1> centered inside a cobalt-and-red radial emblem on a black field. The figure raises one hand toward a thin white arc while the red inner panel catches a sharp diagonal highlight. Use a Static Shot with a small Push In at slow speed.\n\n[Shot 2] At 00:01.550, cut to a warm-white field of tall black bars. <Subject 1> walks between the bars as a cobalt shadow slides laterally and a red rectangle briefly aligns with the coat. Use a smooth Tracking Shot forward at normal speed; keep the geometry sparse.\n\n[Shot 3] At 00:03.100, cut to a top-down black circle with four blue arcs and one red wedge. <Subject 1> stands at the center and extends both arms; the arcs rotate into a single balanced ring. Use a controlled Arc Shot with small amplitude at fast speed.\n\n[Shot 4] At 00:04.650, cut to a fast glitch passage of white scanlines, black fragments, blue afterimages, and red blocks. The central silhouette appears in three successive poses, then resolves into one figure without multiplying the character. Use a fast Pan Left with small amplitude.\n\n[Shot 5] At 00:06.150, cut to a low-angle final architectural frame: <Subject 1> stands on a black platform between two warm-white planes, a cobalt halo behind the shoulders and a red triangular path below. The figure lowers the raised hand and becomes perfectly still. Use a slow Tilt Up with small amplitude.\n\n[Shot 6] At 00:07.250, cut to a centered closing emblem in which the black frame, blue ring, red axis, and white background lock into exact symmetry around <Subject 1>. Hold this iconic silhouette with a barely perceptible Push In until precisely 00:08.382585, then end cleanly on the final frame. Preserve the copied <Audio 1> without interruption.\n\noverall_soundscape:\nN/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete soundtrack from 00:00.000 through 00:08.382585. Preserve its exact timing, musical or spoken content, dynamics, effects, and stereo image. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "visual_reference_16x9_v1.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_30-38.382585.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

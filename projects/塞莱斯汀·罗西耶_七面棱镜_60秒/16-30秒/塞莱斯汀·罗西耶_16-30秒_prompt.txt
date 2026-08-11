@@ -1,0 +1,31 @@
+subject_definitions:
+<Picture 1> is the three-view character identity reference for <Subject 1>, used to preserve her face, hairstyle, costume construction, proportions, colors, crystal ornament and silhouette; it is not a target frame.
+<Subject 1> is Célestine Rosier, a young adult fantasy heroine with extremely long straight pastel pink hair, blunt rounded bangs, pale skin, dark plum eyes, a black high-collar inner tunic, an ivory blouse-dress with voluminous bishop sleeves, a wide wine-red sash, cobalt-blue triangular shoulder panels, a deep wine-red geometric cape, black thigh-high stockings, tall wine-red lace-up boots and a small five-sided faceted prism. Preserve her exact identity and costume in every shot.
+<Audio 1> is the 15-second WAV segment corresponding to 00:15.000–00:30.000 of the supplied source music, directly reused 1:1 as this segment's complete final audio track.
+
+summary:
+[reference generation + audio reuse] Create the second 15-second 9:16 chapter of the Orthelia fantasy story. Continue from the half-open vermilion ring and the three activated facets at the end of the previous chapter. <Subject 1> crosses into Vermilia, the floating constructivist city, and activates the road, boundary and transformation facets. Use <Picture 1> for identity consistency and reuse <Audio 1> exactly across this segment. No dialogue, generated ambience, foley, sound effects, readable text, logos, subtitles or watermarks.
+
+retention_analysis:
+<Picture 1> (identity reference): fully_preserved - preserve the character design and all three-view identity information as a reusable reference, not as a literal starting frame.
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve her face, pink hair length, ivory-and-wine costume, cobalt shoulder panels, prism and silhouette.
+<Audio 1>: fully_copy - reuse the supplied 00:15.000–00:30.000 source segment 1:1 as this segment's complete final audio track.
+
+detailed_description:
+The target video is a flat 2D/2.5D constructivist fantasy music-video chapter. Continue the ivory, vermilion, cobalt and black architecture of the Sky Cathedral into Vermilia, a floating city made from folded platforms, black structural lines, circular rings, red bridges and blue directional planes. Use hard-edged paper-cut motion, graphic parallax and restrained pale-gold energy. No other character appears. <Audio 1> begins at the local first frame and remains unchanged.
+
+[Shot 1] The video opens from the half-open vermilion ring established at the previous chapter's ending. <Subject 1> passes through its center into a huge vertical city of ivory slabs and vermilion bridges. The three already-lit diamond facets hover behind her while four dark facets follow like a suspended constellation. Use a forward Tracking Shot with small amplitude at normal speed; keep her full silhouette and long hair readable.
+
+[Shot 2] At 00:02.800, the camera cuts to a wide side view of Vermilia. The road facet ignites and a vermilion roadway unfolds horizontally beneath <Subject 1>. She walks across it from left to right, while cobalt direction lines rotate into alignment and distant platforms slide like a measured architectural mechanism. Use a smooth Tracking Shot to the right with small amplitude at normal speed; do not add crowds or vehicles.
+
+[Shot 3] At 00:05.800, the shot cuts to a medium close-up. The boundary facet opens as a thin cobalt frame around <Subject 1>'s face and shoulders. She turns her gaze toward an empty ivory gap; the frame closes and reopens around her without changing her costume. Use a controlled Arc Shot with small amplitude at slow speed, keeping her face calm and legible.
+
+[Shot 4] At 00:08.700, cut to a full-body frontal view on a red bridge. The transformation facet activates: her long pink hair fans outward into two large hinged paper planes, then folds back into long ribbon-like locks. Her deep wine-red cape follows the same geometric motion. Use a Pull Out with small amplitude at normal speed; keep the transformation controlled and graphic, with no biological wings.
+
+[Shot 5] At 00:11.600, cut to a low-angle medium-wide view. The remaining lit facets form a diagonal staircase toward a circular gate high above the city. <Subject 1> raises the prism, and three narrow pale-gold calibration lines connect the prism to the activated facets. The road, boundary and transformation planes lock into a stable route. Use a slow Tilt Up with small amplitude, ending on the open gate and the character looking upward until exactly 00:15.000. Leave the seventh facet dark and keep a small empty gap in the composition for the next chapter.
+
+overall_soundscape:
+N/A. Do not generate ambience, footsteps, impacts, foley, voice or magic sound effects. All audible content comes from the copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack for this segment. Preserve its exact source timing, musical content, vocals if present, dynamics, effects and stereo image from local 00:00.000 through 00:15.000. Do not generate replacement music.

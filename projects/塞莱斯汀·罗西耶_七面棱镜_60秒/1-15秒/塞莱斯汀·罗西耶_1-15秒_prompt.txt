@@ -1,0 +1,32 @@
+subject_definitions:
+<Picture 1> is the three-view character identity reference for <Subject 1>, used to preserve her face, hairstyle, costume construction, proportions, colors, crystal ornament and silhouette; it is not a target frame.
+<Subject 1> is Célestine Rosier, a young adult fantasy heroine with extremely long straight pastel pink hair reaching near the floor, blunt rounded bangs, pale skin, dark plum eyes, a black high-collar inner tunic, an ivory blouse-dress with voluminous bishop sleeves, a wide wine-red sash, cobalt-blue triangular shoulder panels, a deep wine-red geometric cape, black thigh-high stockings, tall wine-red lace-up boots, and a small five-sided faceted prism at her chest. Preserve her identity and costume exactly in every shot.
+<Audio 1> is the 15-second WAV segment corresponding to 00:00.000–00:15.000 of the supplied source music, directly reused 1:1 as this segment's complete final audio track.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical fantasy animation starring <Subject 1> in the Sky Cathedral of Orthelia. This is the first chapter of a four-part story: the cathedral wakes, the first calibration facets activate, and Célestine forms her five-sided prism. Use the same character identity from <Picture 1> and reuse <Audio 1> exactly from the first frame to the last. Do not generate dialogue, ambience, foley, sound effects, readable text, logos, subtitles or watermarks.
+
+retention_analysis:
+<Picture 1> (identity reference): fully_preserved - preserve the three-view character design, face, hair length, costume layers, color placement and prism ornament without treating the sheet as a literal frame.
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve her recognizable identity, proportions, clothing and hair silhouette.
+<Audio 1>: fully_copy - reuse the supplied 00:00.000–00:15.000 source segment 1:1 as the complete final audio track.
+
+detailed_description:
+The target video is a flat 2D/2.5D constructivist fantasy animation with hard-edged paper-cut planes, screen-printed color blocks, thick dark contours, matte ivory space, vermilion architecture, cobalt geometry and restrained pale-gold calibration light. The continuous location is the ivory-and-vermilion Sky Cathedral: a tall black arch, floating diamond facets, modular circles and folded architectural planes. Keep the image graphic and elegant, never realistic 3D, glossy or particle-heavy. No other character appears. <Audio 1> begins immediately and remains unchanged.
+
+[Shot 1] The video opens on a centered full-body view of <Subject 1> beneath the tall black arch of the Sky Cathedral. Seven flat diamond facets hang in a precise vertical rhythm behind her, all dim except for a tiny pulse in the first facet. Her pink hair rests like long paper ribbons around the wine-red cape. Use a Static Shot with a very small Push In at slow speed. Establish the scale of the cathedral and the character's calm, watchful posture.
+
+[Shot 2] At 00:03.200, the camera cuts to a medium-wide three-quarter view. A sharp ivory calibration beam sweeps diagonally from upper left to lower right, touching the first three diamond facets in sequence. <Subject 1> raises her chin and the prism at her chest catches a restrained pink reflection. Use a Pan Right with small amplitude at fast speed; keep the geometric planes crisp and readable.
+
+[Shot 3] At 00:06.000, the camera cuts to a full-body side view. The cathedral floor folds upward into three vermilion triangular steps. <Subject 1> takes two measured steps forward while her long pink hair separates into a few angular ribbon planes; cobalt triangles slide laterally in the distant architecture. Use a Tracking Shot to the right with small amplitude at normal speed. Keep the same face, costume and boots.
+
+[Shot 4] At 00:09.100, the camera cuts to a close view of her hand and chest. <Subject 1> lifts one hand, and three flat color planes rotate around the small chest crystal and lock into a complete five-sided prism. A restrained pale-gold cross-shaped highlight appears on her palm; no explosion or extra creature occurs. Use a Push In with small amplitude at fast speed, then hold long enough for the prism facets to read clearly.
+
+[Shot 5] At 00:12.300, cut to a frontal medium-wide view. A half-open vermilion circular ring appears behind <Subject 1>. Three diamond facets glow in pink, vermilion and cobalt while four remain dark. She steps toward the ring and the prism hovers one handspan from her chest. Use a slow Pull Out with small amplitude, then hold the unfinished gateway and her centered silhouette until exactly 00:15.000. The ending state must clearly continue into the next chapter.
+
+overall_soundscape:
+N/A. Do not generate ambience, footsteps, impacts, foley, voice or magic sound effects. All audible content comes from the copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack for this segment. Preserve its exact source timing, musical content, vocals if present, dynamics, effects and stereo image from 00:00.000 through 00:15.000. Do not generate replacement music.
+

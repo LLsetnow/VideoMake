@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> is the reusable visual language extracted from the supplied reference image: a horizontal pink screen-printed art-poster system with rough paper grain, magenta and coral ink, dense black halftone dots, cyan and black registration offsets, offset shadow copies, torn brush silhouettes, star and eye motifs, barcode-like line clusters, circular diagrams, and imperfect ink edges. Transfer this graphic process and palette without copying the original person's exact identity, face, layout, or wording.
+<Subject 2> is the same original faceless black ink silhouette from the previous 15-second passage, with long angular hair, a single pale-pink eye shape, and a blocky coat-like form. Preserve its anonymous cutout identity and flat printed construction while changing its pose through graphic rearrangement rather than realistic acting.
+<Audio 1> is the 00:15.000-00:30.000 segment of the downloaded track "偏执 Pt.5 - SASIOVERLXRD x BOBBYNOPEACE Type Beat", directly reused 1:1 as the complete final audio track for this 15-second segment. Use it as the locked source music driver, preserving its timing, rhythm, dynamics, effects, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create the second 15-second 16:9 horizontal continuation of the original pink screen-print motion-poster sequence. Continue <Subject 1> as the active graphic language and <Subject 2> as the anonymous recurring silhouette, beginning from the energy of the previous segment but using fresh collage layouts, mirrored crops, paper tears, and denser waveform-like diagrams. Sync every cut, smear, ring, and registration snap to the 00:15.000-00:30.000 section of <Audio 1>. Use exact visible text "OFFBEAT" and "SHIFT 02" only. Do not add dialogue, logos, watermarks, subtitles, platform UI, photorealism, or realistic extra people.
+
+retention_analysis:
+<Subject 1> (applies to [Shot 1] through [Shot 5]): fully_preserved - keep the pink paper, halftone print, black brush language, coral/magenta ink, cyan registration ghost, collage marks, circular diagrams, and tactile editorial finish consistent with the supplied reference style.
+<Subject 2> (appears in [Shot 1] through [Shot 5]): fully_preserved - retain the same faceless angular black silhouette, pale-pink eye mark, blocky coat shape, and flat cutout construction while changing only graphic pose, crop, and duplication.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete 15-second soundtrack, with no generated replacement music, dialogue, ambience, foley, or independent sound effects.
+
+detailed_description:
+The target video is a 16:9 horizontal continuation of a tactile pink kinetic screen-print poster. Begin with the same blush paper, rough fibers, dense black halftone, hot magenta and coral ink, sparse cyan offset, dry brush edges, circular diagrams, stars, eyes, barcode-like line clusters, and imperfect registration. <Subject 2> remains a flat anonymous black cutout, never photorealistic and never given a detailed face. The edit should feel like one printed poster being torn apart and reassembled by the music: hard cuts, brief paper holds, horizontal smears, mirrored panels, rings and dot fields responding to bass hits. <Audio 1> starts at the first frame of this segment and remains uninterrupted. No readable text except "OFFBEAT" and "SHIFT 02"; no copied original lettering, logos, watermarks, subtitles, or platform UI.
+
+[Shot 1] Open on the final poster energy from the previous passage: a pink paper field with the black silhouette compressed into a tall vertical stamp at center. On the first beat, the paper splits along a jagged horizontal tear and exposes a second cyan offset layer underneath. The silhouette unfolds into a wider black shape without changing its anonymous identity. Use a Static Shot with a small Push In at slow speed, then let the tear snap open on the kick.
+
+[Shot 2] At 00:02.400, cut to a long horizontal collage strip. The same silhouette appears three times as black halftone stamps, each shifted by a different magenta or cyan registration error. Large black circles, tiny stars, and barcode lines scroll behind them while one eye motif blinks as a simple two-frame graphic mark. Use a smooth Truck Left with small amplitude at normal speed; keep the paper texture and ink edges visible.
+
+[Shot 3] At 00:05.200, cut to an extreme close-up of the eye mark and angular hair rendered as coarse black dots on pink paper. A circular waveform made from uneven ink rings grows from the eye, and the magenta layer drifts diagonally before the cyan layer catches up. On the next bass accent the rings flatten into horizontal bars. Use a fast Tilt Down with small amplitude, then hold one sharp printed frame for a fraction of a second.
+
+[Shot 4] At 00:08.000, cut through a stack of rotating poster sheets. Each sheet reveals a new crop of <Subject 2>, a black brush slash, or a rose-pink dot field; never show a different person. The sheets whirl once, then land as a mirrored diptych with the black silhouette facing its cyan offset. Use a fast Roll Clockwise with small amplitude followed by a short Pull Out; keep the collage flat and analog rather than 3D.
+
+[Shot 5] At 00:11.200, cut to the final 15-second poster lock. Place <Subject 2> as a centered black silhouette inside a thick circular diagram, with three black stars on the upper-right, a barcode cluster on the lower-left, exact bold condensed text "OFFBEAT" across the left half, and exact small text "SHIFT 02" under the circle. A thin cyan ghost line and magenta shadow perform one final offset jump on the last strong beat, then all layers stop sharply and hold the finished pink print until 00:15.000. Preserve <Audio 1> without interruption so the two-segment edit can be joined to the first passage.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voiceover, ambience, foley, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000 of this segment. Preserve its exact musical content, timing, dynamics, effects, and stereo image. Drive all visible edits and graphic pulses from its beat without generating replacement music.

@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "name": "Markdown"
+    },
+    {
+      "name": "Markdown (Hugo)"
+    },
+    {
+      "name": "Html"
+    },
+    {
+      "name": "TextBundle"
+    },
+    {
+      "name": "Typst"
+    },
+    {
+      "name": "PDF"
+    },
+    {
+      "name": "Word (.docx)"
+    },
+    {
+      "name": "OpenOffice"
+    },
+    {
+      "name": "RTF"
+    },
+    {
+      "name": "Epub"
+    },
+    {
+      "name": "Latex"
+    },
+    {
+      "name": "Media Wiki"
+    },
+    {
+      "name": "reStructuredText"
+    },
+    {
+      "name": "Textile"
+    },
+    {
+      "name": "OPML"
+    },
+    {
+      "name": "Bibliography"
+    },
+    {
+      "name": "PowerPoint (.pptx)"
+    }
+  ],
+  "pandocPath": {
+    "win32": "E:\\Program Files\\pandoc-3.8.2.1",
+    "darwin": "/opt/homebrew/bin/pandoc"
+  },
+  "defaultExportDirectoryMode": "Custom",
+  "openExportedFile": true,
+  "env": {
+    "HOME": "${HOME}",
+    "PATH": "/opt/homebrew/bin:/usr/local/bin:/Library/TeX/texbin:${PATH}",
+    "TEXINPUTS": "${pluginDir}/textemplate/:"
+  },
+  "showExportProgressBar": true,
+  "customDefaultExportDirectory": {
+    "win32": "D:\\桌面中转",
+    "darwin": "~/Desktop"
+  },
+  "lastEditName": "Word (.docx)"
+}

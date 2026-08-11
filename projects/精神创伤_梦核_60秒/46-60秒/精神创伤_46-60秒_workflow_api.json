@@ -1,0 +1,313 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1.0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MinimaxH3/spirit_trauma_46_60s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the vertical character reference sheet for the protagonist, showing her short black bob haircut, tired eyes, muted teal oversized office shirt, charcoal pleated skirt, red lanyard, old white sneakers, pale skin, silver ear cuff, and flat dreamcore collage style.\n<Subject 1> is the same short-haired young adult office worker from <Picture 1>. Preserve her face, bob haircut, clothing, body proportions, calm eyes, colors, and recognizable identity through the final shot; the red lanyard is absent after its transformation into paper birds.\n<Audio 1> is the first 15 seconds of the downloaded music file \"精神创伤（emo版）.mp3\" from https://music.163.com/#/album?id=388759463. Use it only as an audio reference and later background-music source; do not copy its timing into the native flower resonance, sea, or foley.\n\nsummary:\n[reference generation + audio reference] Create a new 15-second 9:16 vertical 2D/2.5D flat-cartoon dreamcore ending for full-film time 00:45–01:00 of \"精神创伤\". Use <Audio 1> only as a loose tonal and rhythmic reference while generating native stereo sound; generate the flower resonance, paper sea, dawn air, phone stop, and foley from the timeline below. Continue from <Subject 1> floating beside the shrinking office bubble. She walks through a meadow of floating windows, buries the phone, grows a blue flower, deletes the accumulated messages, crosses a dream sea in a paper boat, sees the title \"精神创伤\", and walks through a dawn doorway. Use <Picture 1> as the stable identity and style reference. No logos, watermarks, photorealism, or extra human characters.\n\nretention_analysis:\n<Picture 1> (used in [Shot 1] through [Shot 6]): fully_preserved - preserve the protagonist's face, bob haircut, clothing, proportions, palette, and flat-cartoon rendering.\n<Subject 1> (used in [Shot 1] through [Shot 6]): fully_preserved - maintain her identity and calm posture while changing the phone, environment, and final light.\n<Audio 1>: reference - guide only the tonal density and pacing of the later external music mix; do not copy its original signal into this native-audio clip.\n\ndetailed_description:\nThe target segment is a 9:16 vertical flat-cartoon dreamcore resolution in mint green, cream, pale gold, lavender, and a single saturated blue flower. Use paper-cut collage planes, soft dawn gradients made from flat shapes, gentle parallax, and a calm final rhythm. Keep the protagonist the only human figure. The office bubble from the previous segment remains visible at the start, then disappears.\n\n[Shot 1] The segment opens on <Subject 1> walking through a cream-and-mint meadow where floating window frames hover like flowers. The shrinking office bubble is far behind her and fades into pale dust. Her hands are empty; no phone or lanyard is visible. Use a Tracking Shot with small amplitude at slow speed alongside her full-body profile. Grass planes bend under her old white sneakers, and the floating windows reflect only sky. Use soft wind, steps, and paper creaks.\n\n[Shot 2] At 00:02.500, cut to a close-up of <Subject 1>'s hands placing the black phone into a small cream patch of soil. She covers it with two handfuls of flat paper-like earth and presses the surface once. Use a Tilt Down with small amplitude at slow speed from her face to the soil. The phone makes one faint vibration under the earth, then falls silent; use soil patter, a soft tap, and a long quiet pause.\n\n[Shot 3] At 00:05.000, cut to a low angle on the soil. A blue flower grows from the phone's position, its petals shaped like tiny rounded notification bubbles without text. The flower projects a circle of pale images: the earlier banners, the office clock, and stacked voice waveforms. <Subject 1> enters from the side and calmly swipes the projected images away one by one; each dissolves into a small white square. Use a Push In with small amplitude at slow speed. Show no readable message text in this shot.\n\n[Shot 4] At 00:07.500, cut to a medium frontal view. The blue flower gives one final projection containing the exact words \"精神创伤\" as a temporary pale outline, then <Subject 1> presses her palm through it and the outline breaks into soft light. Her face is calm, her shoulders relaxed, and her short hair moves in a mild dawn breeze. Use a Static Shot with a very small Zoom In at slow speed; the final phone vibration from earlier echoes once and stops completely.\n\n[Shot 5] At 00:10.000, cut to a wide dream sea made of layered cream and lavender paper waves under a pale gold dawn. <Subject 1> sits in a small folded paper boat, the blue flower attached at the bow. The boat travels from lower frame toward a bright floating doorway; her posture is upright and unhurried. Use a Tracking Shot with small amplitude at slow speed from behind, with the sea waves moving in layered parallax. Add quiet water-like paper swishes and distant morning air.\n\n[Shot 6] At 00:12.500, cut to a front three-quarter shot at the doorway. The title \"精神创伤\" appears as large cream-and-charcoal cut-paper letters suspended in the dawn opening, readable and centered. <Subject 1> looks toward the camera for one breath, then turns and walks through the doorway. The door closes behind her, leaving only the blue flower and a pale sky. Use a slow Push In with small amplitude, then hold a Static Shot until exactly 00:15.000. End on complete silence from the phone and a still final frame.\n\noverall_soundscape:\nThe soundscape is sparse: soft steps through paper grass, floating-window creaks, soil patter, one buried vibration, a blue-flower resonance, small dissolving paper clicks, a faint final phone vibration, layered paper-wave swishes, dawn air, and a quiet door closure. The phone vibration stops before the last frame.\n\nnon_diegetic_music:\nN/A. Generate no audience-only music in this clip; the final background track is mixed externally and fades under the door closure.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "短发社畜_角色参考_9x16.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "精神创伤（emo版）.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

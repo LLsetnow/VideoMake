@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 2026081101
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/pink_signal_0-15",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 1.0,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the reusable visual language extracted from the supplied reference image: a horizontal pink screen-printed art-poster system with rough paper grain, magenta and coral ink, dense black halftone dots, cyan and black registration offsets, offset shadow copies, torn brush silhouettes, star and eye motifs, barcode-like line clusters, circular diagrams, and imperfect ink edges. Transfer this graphic process and palette without copying the original person's exact identity, face, layout, or wording.\n<Audio 1> is the 00:00.000-00:15.000 segment of the downloaded track \"偏执 Pt.5 - SASIOVERLXRD x BOBBYNOPEACE Type Beat\", directly reused 1:1 as the complete final audio track for this 15-second segment. Use it as the locked source music driver, preserving its timing, rhythm, dynamics, effects, and stereo balance.\n\nsummary:\n[reference generation + audio reuse] Create an original 15-second 16:9 horizontal experimental motion poster driven by <Audio 1>. Use <Subject 1> as a style and print-process reference only. Build a new recurring faceless black ink silhouette with long graphic hair, a single pale-pink eye shape, and a blocky coat-like form; keep it anonymous and poster-like. Sync all graphic changes, registration jumps, brush wipes, ring expansions, and cuts to audible drum and bass accents from <Audio 1>. Use exact visible text \"PINK SIGNAL\" and \"SHIFT 01\" only. Do not add dialogue, logos, watermarks, subtitles, platform UI, photorealism, or extra realistic people.\n\nretention_analysis:\n<Subject 1> (applies to [Shot 1] through [Shot 5]): partially_preserved - preserve the supplied reference image's pink screen-print grammar, halftone dots, rough paper, black brush marks, magenta/cyan misregistration, collage symbols, and editorial poster discipline, while inventing new anonymous content, composition, and typography.\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete 15-second soundtrack, with no generated replacement music, dialogue, ambience, foley, or independent sound effects.\n\ndetailed_description:\nThe target video is a 16:9 horizontal kinetic screen-print poster. Use dusty blush-pink paper as the base, near-black ink as the main mass, hot magenta and coral as accent inks, and a thin cyan registration ghost. The whole sequence must look physically printed and re-printed: visible halftone dots, dry-brush edges, ink bleed, paper fibers, offset color channels, crop marks, modular rules, circular diagrams, stars, eye symbols, and barcode-like lines. The recurring subject is an original faceless black ink silhouette with long angular hair and a blocky coat shape; keep the silhouette stable while the surrounding print layers mutate. <Audio 1> starts on the first frame and remains uninterrupted. Every cut and major graphic hit is beat-synchronized. No readable text except \"PINK SIGNAL\" and \"SHIFT 01\"; no copied original lettering, no extra characters, no photorealistic skin, no 3D CGI, no glossy gradients, no logos, no watermark, and no platform UI.\n\n[Shot 1] Open on a mostly empty blush-pink paper field with rough fibers and faint registration marks. A torn black brush band crawls in from the lower-left, revealing the upper half of the anonymous ink silhouette at center-right. A cyan offset copy lags one frame behind the black mass, while three tiny magenta dots appear on the first beat. Use a Static Shot with a very small Push In at slow speed; let the subject settle like a freshly printed poster layer.\n\n[Shot 2] At 00:02.600, cut to a modular triptych of close graphic fragments: the pale-pink eye shape, angular hair, and a gloved-looking black hand rendered as halftone cutouts. The three panels slide a few pixels out of registration, then snap back on successive bass accents. Add a small star, an eye icon, and thin barcode-like lines as abstract collage marks, with no other words. Use a fast Truck Right with small amplitude at normal speed; keep every dot crisp and screen-printed.\n\n[Shot 3] At 00:05.400, cut wide to the full silhouette standing inside a giant black circular diagram. The circle expands and contracts in two clean pulses, while magenta and cyan rings briefly separate from the black ring. Pink paper tears open behind the figure to reveal a darker rose field, then closes into a hard rectangular crop. Use a controlled Arc Shot with small amplitude at normal speed; the subject remains a flat cutout, not a living human.\n\n[Shot 4] At 00:08.600, cut closer as broad black ink-brush strokes sweep horizontally across the frame. The silhouette breaks into four vertical misregistered strips, each strip carrying different halftone density and one thin coral edge. A cyan ghost image drifts left, a magenta ghost drifts right, and both collapse back into the central black silhouette on the snare hit. Use a quick Pan Left with small amplitude followed by a short Static Shot; keep the motion graphic and tactile.\n\n[Shot 5] At 00:11.800, cut to the final asymmetric poster arrangement. Place the stable black silhouette on the right third, a large circular diagram and three star marks on the left, exact bold condensed text \"PINK SIGNAL\" across the upper-left, and exact small text \"SHIFT 01\" near the lower-right barcode cluster. The paper texture, pink field, cyan offset, and magenta shadow hold while thin rules and dots make one last beat-synced registration jump. Use a small Push In at slow speed, then hold the locked poster tableau precisely until 00:15.000. Preserve <Audio 1> without interruption.\n\noverall_soundscape:\nN/A. Do not generate dialogue, voiceover, ambience, foley, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve its exact musical content, timing, dynamics, effects, and stereo image. Drive all visible cuts and graphic pulses from its beat without generating replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "chinatsu-constructivist-poster-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_0-15.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

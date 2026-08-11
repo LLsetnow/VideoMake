@@ -1,0 +1,41 @@
+subject_definitions:
+<Picture 1> is the 404 night-exterior reference: wet pavement, the neon sign "404", rain, and the "妄想天使" performance poster; it guides Shot 1.
+<Picture 2> is the 404 indoor-stage reference: microphone, empty seats, hanging lights, and stage geography; it guides Shots 2 and 6.
+<Picture 3> is the 404 backstage reference: one shared doorway, narrow corridor, control area, and practical lights; it guides Shots 3–5.
+<Picture 4> is the identity reference for <Subject 1>, Chinatsu; preserve her face, ash-gray hair, hairstyle, costume, pink backpack, and accessories.
+<Picture 5> is the identity reference for <Subject 2>, Nangong Yu; preserve her face, hairstyle, costume, proportions, and accessories.
+<Picture 6> is the identity reference for <Subject 3>, Airi; preserve her face, hairstyle, costume, proportions, headphones, and accessories.
+<Picture 7> is the generated 9:16 flat hand-drawn poster reference; it guides trio arrangement, title hierarchy, pastel palette, and graphic composition, not literal boundary frames.
+
+summary:
+[reference generation] Create a 15-second 16:9 cinematic animated music-PV demo for the "妄想天使" trio. Keep all six references separate. Use <Picture 7> as the overall key visual while adapting its vertical composition to 16:9; preserve identity, costume construction, and 404 spatial continuity. Use native diegetic rain, one brief static burst, rehearsal clicks, and stage audio. Refs are reusable, not literal frames. No dialogue or singing; no subtitles, watermarks, or extra readable text beyond "404" and "妄想天使".
+
+retention_analysis:
+<Picture 1> (Shot 1): fully_preserved - 404 exterior, rain, neon sign, and poster.
+<Picture 2> (Shots 2, 6): fully_preserved - indoor stage, microphone, lights, and venue geography.
+<Picture 3> (Shots 3–5): fully_preserved - same backstage doorway, control area, corridor, and practical lights.
+<Picture 4> (Shots 3–6): fully_preserved - Chinatsu's identity, hair, costume, proportions, backpack, and accessories.
+<Picture 5> (Shots 5–6): fully_preserved - Nangong Yu's identity, hair, costume, proportions, and accessories.
+<Picture 6> (Shots 4, 6): fully_preserved - Airi's identity, hair, costume, headphones, proportions, and accessories.
+<Picture 7> (Shots 1, 6): partially_preserved - retain trio arrangement, title hierarchy, pastel palette, and graphic balance while adapting the 9:16 image to 16:9 motion.
+
+detailed_description:
+The target is a 16:9 animated music-PV with wet neon, brief CRT transition, practical stage lights, cool backstage shadows, and cyan, magenta, amber accents. Use <Picture 7> for overall group-poster balance. Keep clean anime rendering, stable faces and costumes, beat-synchronized cuts, 404 spatial continuity, and stereo sound. Keep references separate; do not merge characters or add dialogue, subtitles, watermarks, or unrequested logos.
+
+[Shot 1] 00:00–02.5. Low-angle wide exterior combining <Picture 1> with the trio arrangement and title hierarchy from <Picture 7>. Rain covers the pavement below the neon "404" sign; the "妄想天使" poster with small subtitle "404 MUSIC LIVE" hangs by the entrance, and the trio appears only as brief puddle reflections. Slowly push in with small amplitude toward the poster; the sign flickers once. Sound is gentle and rain-led: steady rain, soft transformer hum, and distant city noise. No glitch sound here.
+
+[Shot 2] 00:02.5–05.0. A very brief CRT scanline glitch cuts to the empty 404 interior based on <Picture 2>. Use one restrained static burst for approximately 0.1–0.2 seconds at the cut, then stop it immediately. A microphone is foregrounded against empty seats and a dark stage. Pan right with large amplitude at fast speed from seats to microphone; a stage light sweeps and stops. Then use room reverb, relay clicks, and a muffled low-frequency stage pulse; no character appears.
+
+[Shot 3] 00:05–07.5. Match the microphone pole to a pencil in <Subject 1>'s hand. In the backstage control area from <Picture 3>, Chinatsu sits at the console, crosses out one score line, pauses, and rewrites the first note. Three-quarter close shot; truck left with small amplitude at slow speed from score to her face. Pencil friction, paper movement, and restrained rehearsal clicks; no dialogue.
+
+[Shot 4] 00:07.5–10.0. Match the pencil highlight to a colored ring on <Subject 3>'s headphones. From the same doorway and practical lights in <Picture 3>, Airi enters toward Chinatsu. Pan right with small amplitude at slow speed. Airi hears the revised monitor playback, steps to the console, lifts one earcup, studies the rewritten line, points to it, and exchanges an understanding look with Chinatsu. Door hinge, footsteps, headphone click, paper touch, and one short breath; no dialogue.
+
+[Shot 5] 00:10–12.5. Match the last step in Shot 4 to the same backstage doorway. Nangong Yu enters the same indoor control area carrying a rehearsal sheet with stage-entry marks, guided by <Picture 3>. Keep all three in one continuous indoor space: Chinatsu at console, Airi beside the monitor and mic cable, Nangong Yu by the door. Truck right with small amplitude at slow speed, follow Nangong Yu, then settle on all three. She points to the stage-entry mark and gives a clear silent three-count with her fingers; no clapping. Chinatsu closes the score and picks up her pencil; Airi adjusts headphones and mic cable; all turn toward the door. Footsteps, paper, headphone adjustment, and low rehearsal pulse; no dialogue.
+
+[Shot 6] 00:12.5–15.0. Shot 5's backstage door opens and match-cuts through that same door into the indoor 404 stage based on <Picture 2>. Do not show a street, sky, outdoor neon, or any new exterior. Track backward with small amplitude at slow speed as the trio enters together; stage lights power on one bank at a time while the door and venue geography remain visible. Rain becomes muffled behind walls and gives way to indoor reverb, relay clicks, footsteps, and equipment hum. Chinatsu presses start, Airi moves to the microphone and inhales, and Nangong Yu gives the downbeat with a concise silent hand cue. Build with click track, control-panel sound, synchronized footsteps, fabric rustle, and breath to 00:15, echoing <Picture 7>'s group balance. No singing, spoken counting, or readable lyrics yet.
+
+overall_soundscape:
+Native diegetic sound follows the timeline: gentle rain and distant traffic in Shot 1; soft neon hum; one restrained 0.1–0.2 second CRT static burst only at the Shot 1-to-Shot 2 cut; then room reverb, relay clicks, pencil and paper, door hinge, footsteps, headphone adjustment, control-panel sounds, fabric rustle, rehearsal clicks, and quiet breathing. The 404 stage pulse is diegetic. Generate no dialogue, spoken counting, singing, humming, claps, or crowd noise; rain is muffled after the indoor cut.
+
+non_diegetic_music:
+N/A. Use no audience-only score; keep the audio native, diegetic, restrained, and rehearsal-focused.

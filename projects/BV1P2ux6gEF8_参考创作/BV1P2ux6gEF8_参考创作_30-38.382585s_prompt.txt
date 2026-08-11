@@ -1,0 +1,33 @@
+subject_definitions:
+<Subject 1> is the original faceless dancer-like figure established by <Picture 1>, wearing a cobalt-blue long coat with a sharp red diagonal inner panel, black featureless face and hands, and a balanced graphic silhouette. Preserve this identity, costume colors, body proportions, and featureless face throughout the segment.
+<Picture 1> is the generated 16:9 visual identity and composition anchor reused for character consistency; it is not a source-video frame.
+<Audio 1> is the extracted soundtrack segment from 00:30.000 to 00:38.382585 of the supplied reference video's audio, directly reused 1:1 as this segment's complete final audio track, including any music, speech, vocals, effects, timing, dynamics, and stereo image. No visual frames from the reference video are used.
+
+summary:
+[reference generation + audio reuse] Create the 8.382585-second 16:9 closing segment starring <Subject 1>. Resolve the constructivist sequence through a final cycle of black, warm white, cobalt blue, and signal red geometry, centered emblems, scanline glitches, and precise graphic motion. Use <Picture 1> for visual identity and lock <Audio 1> from 00:00.000 through 00:08.382585. The source video is prompt inspiration only and is not an input; do not reproduce its frames, characters, captions, logos, watermarks, or platform UI.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - the same faceless figure, cobalt coat, red inner panel, black silhouette, and graphic identity remain consistent through the closing transformations.
+<Picture 1> (visual identity and costume reference): fully_preserved - reuse the same figure design and palette as a stable reference, without treating the source image as a literal unchanging frame.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this 8.382585-second segment without generating replacement music, dialogue, ambience, or sound effects.
+
+detailed_description:
+The target video is an original 16:9 constructivist closing passage with flat matte black, warm white, cobalt blue, and signal red fields, thin drafting lines, paper-cut silhouettes, controlled RGB separation, subtle grain, and a clean emblematic finish. Use no readable text, logo, watermark, subtitle, platform UI, or copied source-video frame. <Subject 1> is the only human figure, and <Audio 1> begins on the first frame and stays unchanged across every cut.
+
+[Shot 1] Open on <Subject 1> centered inside a cobalt-and-red radial emblem on a black field. The figure raises one hand toward a thin white arc while the red inner panel catches a sharp diagonal highlight. Use a Static Shot with a small Push In at slow speed.
+
+[Shot 2] At 00:01.550, cut to a warm-white field of tall black bars. <Subject 1> walks between the bars as a cobalt shadow slides laterally and a red rectangle briefly aligns with the coat. Use a smooth Tracking Shot forward at normal speed; keep the geometry sparse.
+
+[Shot 3] At 00:03.100, cut to a top-down black circle with four blue arcs and one red wedge. <Subject 1> stands at the center and extends both arms; the arcs rotate into a single balanced ring. Use a controlled Arc Shot with small amplitude at fast speed.
+
+[Shot 4] At 00:04.650, cut to a fast glitch passage of white scanlines, black fragments, blue afterimages, and red blocks. The central silhouette appears in three successive poses, then resolves into one figure without multiplying the character. Use a fast Pan Left with small amplitude.
+
+[Shot 5] At 00:06.150, cut to a low-angle final architectural frame: <Subject 1> stands on a black platform between two warm-white planes, a cobalt halo behind the shoulders and a red triangular path below. The figure lowers the raised hand and becomes perfectly still. Use a slow Tilt Up with small amplitude.
+
+[Shot 6] At 00:07.250, cut to a centered closing emblem in which the black frame, blue ring, red axis, and white background lock into exact symmetry around <Subject 1>. Hold this iconic silhouette with a barely perceptible Push In until precisely 00:08.382585, then end cleanly on the final frame. Preserve the copied <Audio 1> without interruption.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete soundtrack from 00:00.000 through 00:08.382585. Preserve its exact timing, musical or spoken content, dynamics, effects, and stereo image. Do not generate replacement music.

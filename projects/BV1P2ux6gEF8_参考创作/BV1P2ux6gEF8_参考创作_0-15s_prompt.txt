@@ -1,0 +1,39 @@
+subject_definitions:
+<Subject 1> is the original faceless dancer-like figure shown in <Picture 1>, wearing a cobalt-blue long coat with a sharp red diagonal inner panel, black featureless face and hands, and a balanced graphic silhouette. Preserve this identity, costume colors, body proportions, and featureless face throughout the segment.
+<Picture 1> is the generated 16:9 visual identity and composition anchor for the opening and recurring figure; it is not a source-video frame.
+<Audio 1> is the extracted soundtrack segment from 00:00.000 to 00:15.000 of the supplied reference video's audio, directly reused 1:1 as this segment's complete final audio track, including any music, speech, vocals, effects, timing, dynamics, and stereo image. No visual frames from the reference video are used.
+
+summary:
+[reference generation + audio reuse] Create an original 15-second 16:9 constructivist motion-graphic music-video segment starring <Subject 1>. Use the independently observed visual language of severe black, warm white, cobalt blue, and signal red geometric collage, centered emblems, angular architecture, circular drafting lines, RGB ghosting, scanlines, and fast editorial cuts, while inventing new compositions and actions. Begin from <Picture 1> as a visual identity anchor and lock <Audio 1> from 00:00.000 through 00:15.000. The source video is prompt inspiration only and is not an input; do not reproduce its frames, characters, captions, logos, watermarks, or platform UI.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 9]): fully_preserved - the faceless figure, cobalt coat, red inner panel, black silhouette, and graphic identity remain consistent while the environments and poses change.
+<Picture 1> (visual identity and opening composition anchor for [Shot 1]): partially_preserved - preserve the figure's identity, palette, central balance, and constructivist geometry, but animate and transform the composition into new scenes.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this segment without generating replacement music, dialogue, ambience, or sound effects.
+
+detailed_description:
+The target video is an original 16:9 landscape constructivist motion-graphic sequence. Use matte black, warm white, cobalt blue, and signal red as the dominant flat colors, with thin technical grids, circular drafting arcs, hard-edged silhouettes, paper grain, controlled RGB separation, and brief scanline glitches. The source video is not supplied as a visual input. Do not copy any source frame or recognizable source character. <Subject 1> remains the only recurring human figure, and <Audio 1> begins on the first frame and stays unchanged across every cut.
+
+[Shot 1] The video opens from <Picture 1>: <Subject 1> stands centered on a blue-and-red perspective runway inside a warm-white geometric hall, framed by a huge black arch and a red circle above the head. The figure raises one arm slowly while the coat hem lifts like a paper cutout. Use a Static Shot with a small Push In at slow speed; keep the composition symmetrical and iconic.
+
+[Shot 2] At 00:01.650, cut to a medium three-quarter view of <Subject 1> against stacked black, white, blue, and red architectural planes. Three narrow RGB echoes trail the moving arm for less than a second, then collapse back into the single figure. Use a fast Pan Right with small amplitude and crisp graphic edges.
+
+[Shot 3] At 00:03.300, cut to a very wide view of a simplified city made from black and white towers with blue windows and red blocks. <Subject 1> walks along a thin horizontal platform at the center while white measurement lines sweep from left to right. Use a smooth Tracking Shot at slow speed; keep the figure recognizable but small in frame.
+
+[Shot 4] At 00:05.000, cut to an extreme close-up of the featureless black face and blue collar. Concentric white rings rotate behind the head, and a thin red vertical line passes across the face without creating eyes or facial detail. Use a slow Push In with small amplitude and a single brief chromatic split at the midpoint.
+
+[Shot 5] At 00:06.700, cut overhead to a circular blue platform divided by a red diagonal axis. <Subject 1> turns in place once, the long coat opening into two clean cobalt shapes while black stair-like wedges rotate around the perimeter. Use an Arc Shot with small amplitude at normal speed.
+
+[Shot 6] At 00:08.500, cut to a stark white staircase descending through black space. <Subject 1> walks down three steps toward camera as red rectangular panels slide behind the figure and a blue grid recedes into depth. Use a controlled Tracking Shot backward at slow speed; do not add any second person.
+
+[Shot 7] At 00:10.300, cut to a frontal graphic emblem: blue semicircles, red shards, and black radial blades assemble around <Subject 1> without touching the body. The figure extends both arms and holds the pose while the emblem rotates one quarter turn. Use a small Pull Out at fast speed, with clean layers and no readable text.
+
+[Shot 8] At 00:12.200, cut to abstract horizontal scan bands on black and warm white. The figure appears as three perfectly aligned flat silhouettes for one beat, then the outer two dissolve into colored paper fragments. Use a fast Tilt Up with small amplitude; preserve one central identity.
+
+[Shot 9] At 00:13.600, cut to a wide final tableau repeating the opening balance in a new arrangement: <Subject 1> stands centered in a black doorway, a cobalt halo sits behind the shoulders, and a red triangular path points toward the feet. Use a Static Shot with a tiny Push In, then hold the final emblem precisely until 00:15.000. Preserve the copied <Audio 1> without interruption.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete soundtrack from 00:00.000 through 00:15.000. Preserve its exact timing, musical or spoken content, dynamics, effects, and stereo image. Do not generate replacement music.
