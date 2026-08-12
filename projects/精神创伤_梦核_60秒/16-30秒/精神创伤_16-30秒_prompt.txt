@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is the vertical character reference sheet for the protagonist, showing her short black bob haircut, tired eyes, muted teal oversized office shirt, charcoal pleated skirt, red lanyard, old white sneakers, pale skin, silver ear cuff, and flat dreamcore collage style.
+<Subject 1> is the same short-haired young adult office worker from <Picture 1>. Preserve her face, bob haircut, tired eyes, body proportions, clothing construction, red lanyard, colors, and recognizable identity in every shot.
+<Audio 1> is the first 15 seconds of the downloaded music file "精神创伤（emo版）.mp3" from https://music.163.com/#/album?id=388759463. Use it only as an audio reference and later background-music source; do not copy its timing into the native dialogue, wind, or foley.
+
+summary:
+[reference generation + audio reference] Create a new 15-second 9:16 vertical 2D/2.5D flat-cartoon dreamcore segment for full-film time 00:15–00:30 of "精神创伤". Use <Picture 1> as a reusable identity and style reference, not a literal boundary frame. Use <Audio 1> only as a loose tonal and rhythmic reference while generating native stereo sound; generate the elevator, paper, wind, footsteps, and voiceover from the timeline below. Continue directly from the cream doorway projected by the phone: the late-night office becomes too tall, reflections multiply, the red lanyard behaves like a leash, and an EXIT door opens onto a paper ocean. Keep <Subject 1>, her phone, red lanyard, office lighting direction, and graphic palette consistent. No logos, watermarks, photorealism, or extra characters.
+
+retention_analysis:
+<Picture 1> (used in [Shot 1] through [Shot 6]): fully_preserved - retain the protagonist's face, bob haircut, clothing, red lanyard, palette, and flat-cartoon rendering.
+<Subject 1> (used in [Shot 1] through [Shot 6]): fully_preserved - preserve her identity while transforming the office space around her.
+<Audio 1>: reference - guide only the tonal density and pacing of the later external music mix; do not copy its original signal into this native-audio clip.
+
+detailed_description:
+The target segment is a 9:16 vertical flat 2D/2.5D dreamcore sequence with hard-edged paper collage, muted teal and charcoal office planes, lavender voids, faded coral accents, cream light, slight scanline texture, and impossible but physically readable transformations. Continue from the previous clip's desk doorway; keep the same phone and red lanyard until they transform.
+
+[Shot 1] The segment opens on the cream doorway shape from the previous segment, now projected across the desk and the lower half of the office. The wall clock above the cubicle reads "23:47". <Subject 1> slowly raises her head, eyes reflecting the digits, while the phone remains in her hand and vibrates once. The camera tilts up with small amplitude at slow speed from the glowing desk doorway to the clock and her face; the office ceiling rises unnaturally far above her.
+
+[Shot 2] At 00:02.500, the camera cuts to a vertical elevator interior made from the same office wall colors. <Subject 1> stands centered, holding the phone at chest height. The brushed-metal panels become lavender mirrors, multiplying her into five slightly delayed reflections; every reflection looks down at a separate glowing phone. Use an Arc Shot with small amplitude at slow speed around the real <Subject 1>, while the reflections lag by half a beat. Keep her face and costume identical across all reflections. Use elevator hum, shoe squeak, one vibration, and thin mirror ringing.
+
+[Shot 3] At 00:05.000, cut to a low side view of the elevator floor. The red lanyard slips from <Subject 1>'s neck and extends forward as a flat red leash, passing through the opening doors into an impossibly long corridor of cubicles. She resists for one beat, then takes two reluctant steps. Track backward with small amplitude at slow speed, keeping the leash taut and the real woman in the foreground. The corridor lights repeat like a ruler; footsteps and fabric pull are audible.
+
+[Shot 4] At 00:07.500, cut to a close-up of <Subject 1>'s hand pressing an elevator button labelled "B1". The button sinks like soft paper. The doors open to a purple sky with floating cream clouds instead of a basement. The camera pushes in with small amplitude at fast speed toward the button, then pans right with large amplitude to reveal the impossible opening. The phone vibration stops for the first time; replace it with distant wind and a soft paper fold.
+
+[Shot 5] At 00:10.000, cut to a three-quarter medium shot in the doorway. <Subject 1> steps through the threshold and pushes a sign reading "EXIT". The office floor behind her flips upward into a wide sea of cream memo papers with charcoal lines, while the purple sky fills the lower half of the frame. Use a Tracking Shot with small amplitude at slow speed backward as she exits; her red leash remains attached behind her, then stretches and begins to fray. Wind, paper flutter, and one muted office relay click continue behind the cut.
+
+[Shot 6] At 00:12.500, cut to a wide vertical shot of the paper ocean and lavender sky. <Subject 1> stands at the edge of the flipped office floor, then deliberately steps into open air. Her skirt and bob haircut lift in the wind as the phone slips from her hand and falls upward toward the office instead of downward. The camera pulls out with large amplitude at slow speed, leaving her small in the frame as she begins to descend toward soft cream clouds. End at exactly 00:15.000 with her body crossing below the office edge; a quiet off-screen voiceover from <Subject 1> (S1) begins: <d>[Chinese] 我不想再解释了。</d> while her lips remain completely closed, cut off exactly at the segment end.
+
+overall_soundscape:
+The soundscape carries one final phone vibration from the previous clip, clock-room hum, elevator motor, mirror ringing, shoe squeaks, footsteps, cloth tension, paper folds, wind, paper flutter, and the distant office relay click fading behind the EXIT door. The last wind tone continues under the short off-screen voiceover.
+
+non_diegetic_music:
+N/A. Generate no audience-only music in this clip; preserve clean space for the transition from office hum to open wind.

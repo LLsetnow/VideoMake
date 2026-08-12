@@ -1,0 +1,8 @@
+{
+  "mySetting": "txt,nfo,json,pdf,doc,docx",
+  "mySettingArray": [
+    "txt",
+    "nfo",
+    "json"
+  ]
+}

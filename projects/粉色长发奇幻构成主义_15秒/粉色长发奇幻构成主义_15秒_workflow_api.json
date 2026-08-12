@@ -1,0 +1,308 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 260811715
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/pink_constructivist_fantasy_15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Audio 1> is the first 15 seconds of the downloaded music file \"乱码情绪pt.2.mp3\", obtained from https://music.163.com/#/album?id=372848708 and used as a synchronized audio signal. It is copied directly as the complete final soundtrack; no visual content, character, scene, camera movement, or editing structure is taken from the source.\n\nsummary:\n[audio reuse] Create a new 15-second 9:16 vertical fantasy animation generated from text only. The visual world is a flat 2D/2.5D constructivist moving poster starring an original long pink-haired fantasy heroine. Reuse <Audio 1> exactly from 00:00.000 through 00:15.000 as the complete final audio track. Do not generate dialogue, singing, replacement music, ambience, foley, sound effects, readable text, logos, subtitles, or watermarks.\n\nretention_analysis:\n<Audio 1>: fully_copy - Copy the first 15 seconds of \"乱码情绪pt.2.mp3\" 1:1 as the complete final audio track, preserving its original timing, musical content, vocals if present, dynamics, effects, and stereo image.\n\ndetailed_description:\nThe target video is a 9:16 vertical fantasy animation in a flat 2D/2.5D constructivist poster language. Use hard-edged geometric planes, thick dark contour lines, paper-cut collage, screen-printed color blocks, strong diagonals, modular circles, triangles, diamonds, and controlled layered parallax. The dominant palette is dusty pink, vermilion red, ivory, black, and cobalt blue, with restrained luminous gold only for magical energy. Keep the image graphic and matte: no realistic 3D rendering, glossy materials, soft airbrush, photographic texture, random symbols that resemble letters, logos, watermarks, subtitles, or platform UI.\n\nThe protagonist is one original young adult fantasy heroine with very long straight cotton-candy pink hair divided into clean ribbon-like graphic locks, pale skin, large dark plum eyes, a black high-collar tunic over an ivory blouse, a vermilion sash, cobalt triangular shoulder panels, a short geometric cape, black leggings, magenta boots, and a small five-sided crystal prism. Preserve her face, hair color and length, costume construction, proportions, and color placement in every shot. The same ivory-and-vermilion sky cathedral remains the continuous setting; never add another character.\n\n[Shot 1] The video opens on a centered full-body composition inside the ivory-and-vermilion sky cathedral. The heroine stands still beneath a tall black arch, with seven flat diamond tiles suspended behind her in a vertical rhythm. Her long pink hair hangs like paper ribbons, and the first diamond gives a faint gold pulse. Use a Static Shot with a very small Push In at slow speed. <Audio 1> begins immediately and remains unchanged.\n\n[Shot 2] At 00:01.800, the camera cuts to a three-quarter medium shot. A sharp ivory beam sweeps diagonally from upper left to lower right; the seven diamonds light in sequence along the beam, while the heroine raises her chin and the small prism at her chest catches a pink reflection. Use a Pan Right with small amplitude at fast speed. Keep the shapes crisp and do not add readable symbols or sound effects.\n\n[Shot 3] At 00:03.800, the shot cuts to a full-body side view. The floor folds upward into vermilion triangular steps and the heroine takes two clear steps forward. Her long pink hair separates into a few angular ribbon planes that follow the movement, while cobalt triangles slide laterally in the distant background. Use a Tracking Shot to the right with small amplitude at normal speed; keep the same character and costume.\n\n[Shot 4] At 00:06.000, the shot cuts to a close view of her hand rising into a half-body composition. She catches a five-sided prism in front of her chest; three flat color planes rotate and lock into one crystal, producing a restrained gold cross-shaped highlight on her palm. Use a Push In with small amplitude at fast speed, then hold briefly so the hand, prism, and face stay readable. <Audio 1> continues without interruption.\n\n[Shot 5] At 00:08.300, the shot cuts to a side medium shot. The prism releases three clean planar rays in pink, vermilion, and cobalt. The heroine keeps her side-facing stance as her long pink hair fans outward and becomes two large geometric wing-like planes; the planes flap once like hinged paper panels. Use an Arc Shot with small amplitude at normal speed. Keep the transformation graphic and controlled, with no extra creature or character.\n\n[Shot 6] At 00:10.900, the shot cuts to a frontal medium-wide view. A huge vermilion circular ring opens behind the heroine. She moves forward through its center while seven thin gold lines extend from the prism toward the frame edges, and the surrounding triangles snap into a precise modular arrangement. Use a Pull Out with small amplitude at fast speed, keeping her face and full silhouette centered.\n\n[Shot 7] At 00:13.000, the shot cuts to the final vertical poster composition. The heroine stands front-facing and fully visible at center; her long pink hair forms a symmetrical arc, the five-sided prism hovers at chest height, and the seven diamond tiles form a clean radial frame around her. The gold lines settle, the cape makes one small final movement, and the camera becomes a Static Shot. Hold the stable constructivist poster until exactly 00:15.000. Preserve <Audio 1> continuously across every cut and do not add any new audible layer.\n\noverall_soundscape:\nN/A. Do not generate ambience, footsteps, impacts, foley, magic sound effects, voice, or any independent sound event; all audible content must come from the copied <Audio 1> track.\n\nnon_diegetic_music:\n<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack from 00:00.000 to 00:15.000. Preserve its original rhythm, timing, musical content, vocals if present, dynamics, effects, and stereo image. Do not generate replacement music or restart the track at any cut.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "CR Prompt Text"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "乱码情绪pt.2.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

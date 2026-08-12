@@ -1,0 +1,32 @@
+subject_definitions:
+<Picture 1> is the three-view character identity reference for <Subject 1>, used to preserve her face, hairstyle, costume construction, proportions, colors, crystal ornament and silhouette; it is not a target frame.
+<Subject 1> is Célestine Rosier, a young adult fantasy heroine with extremely long straight pastel pink hair, blunt rounded bangs, pale skin, dark plum eyes, a black high-collar inner tunic, an ivory blouse-dress with voluminous bishop sleeves, a wide wine-red sash, cobalt-blue triangular shoulder panels, a deep wine-red geometric cape, black thigh-high stockings, tall wine-red lace-up boots and a small five-sided faceted prism. Preserve her exact identity and costume in every shot.
+<Audio 1> is the 15-second WAV segment corresponding to 00:45.000–01:00.000 of the supplied source music, directly reused 1:1 as this segment's complete final audio track.
+
+summary:
+[reference generation + audio reuse] Create the final 15-second 9:16 chapter of the Orthelia fantasy story. <Subject 1> accepts the clean ivory gap instead of erasing it, and rebuilds the Sky Cathedral around a new principle: the world may remain alive while containing an unknown blank. Use <Picture 1> for identity consistency and reuse <Audio 1> exactly across this segment. No dialogue, generated ambience, foley, sound effects, readable text, logos, subtitles or watermarks.
+
+retention_analysis:
+<Picture 1> (identity reference): fully_preserved - preserve the three-view character design and all identity-defining visual traits as a reusable reference, not as a literal frame.
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve her face, body proportions, pink hair length, ivory-and-wine costume, cobalt shoulder panels, prism and boots.
+<Audio 1>: fully_copy - reuse the supplied 00:45.000–01:00.000 source segment 1:1 as this segment's complete final audio track.
+
+detailed_description:
+The target video is the final 2D/2.5D constructivist fantasy chapter. Start from the unresolved ivory gap and rebuild the same Sky Cathedral with ivory planes, vermilion support rings, cobalt boundaries, black structural arches and restrained pale-gold calibration lines. The ending should feel like a stable moving poster, not a literal explosion or a glossy 3D transformation. No other character appears. <Audio 1> is copied without interruption as the only audible layer.
+
+[Shot 1] The video opens on the unresolved ivory gap from the previous chapter. <Subject 1> stands in a full-body frontal composition beneath it, her prism dim but intact. She raises her eyes toward the empty space and then places one hand over the prism. Use a Static Shot with a very small Push In at slow speed; hold the silence of the image while <Audio 1> continues.
+
+[Shot 2] At 00:02.900, the camera cuts to a medium close-up. A thin pink line grows from the prism across the ivory gap, followed by a wine-red line and a cobalt line. They do not fill the gap; they outline it and give it a stable boundary. <Subject 1> remains calm, with her hair moving in a slow paper-like wave. Use a small Arc Shot at normal speed, keeping her face and prism readable.
+
+[Shot 3] At 00:06.000, cut to a wide vertical view of the entire Sky Cathedral. The seven diamond facets rise and arrange themselves into a radial frame around <Subject 1>; the seventh facet remains pale and translucent rather than fully colored. A large vermilion ring opens behind her and the surrounding triangles snap into a precise modular pattern. Use a controlled Pull Out with small amplitude at normal speed.
+
+[Shot 4] At 00:09.600, cut to a full-body three-quarter view. <Subject 1> walks forward through the new ring. Her long pink hair opens into a symmetrical arc and the deep wine-red cape makes one clean paper-panel movement. Seven thin pale-gold calibration lines extend from the prism toward the frame edges, then settle without sparks or particles. Use a forward Tracking Shot with small amplitude at slow speed, preserving her full silhouette.
+
+[Shot 5] At 00:12.500, cut to the final vertical poster composition. <Subject 1> stands front-facing and fully visible at center, the five-sided prism hovering at chest height. The seven diamond facets form a precise radial frame, with a deliberate ivory blank at the center of the seventh facet. The black arch behind her retains one fine stable crack. Use a Static Shot with no additional cut; her cape makes one final small movement and the image holds exactly until 00:15.000.
+
+overall_soundscape:
+N/A. Do not generate ambience, footsteps, impacts, foley, voice or magic sound effects. All audible content comes from the copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack for this segment. Preserve its exact source timing, musical content, vocals if present, dynamics, effects and stereo image from local 00:00.000 through 00:15.000. Do not generate replacement music.
+

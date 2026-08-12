@@ -1,0 +1,30 @@
+subject_definitions:
+<Audio 1> is the first 15 seconds of the audio track extracted from the supplied source video. It is used only as a synchronized audio signal; no visual content, frames, camera motion, cuts, or other information from the source video is referenced.
+
+summary:
+[audio reuse] Create a new 15-second 16:9 landscape text-to-video animation driven by geometry, luminous lines, and a restrained science-fiction visual system. Generate all visuals from text only. Reuse <Audio 1> exactly from 00:00.000 to 00:15.000 as the complete final audio track. Do not ingest or reproduce the supplied source video, and do not generate dialogue, replacement music, extra ambience, or extra sound effects.
+
+retention_analysis:
+<Audio 1>: fully_copy - <Audio 1> is copied 1:1 as the complete audio track for this 15-second segment, preserving timing, dynamics, stereo balance, and all original audible content.
+
+detailed_description:
+The target video is a 16:9 landscape, text-generated sci-fi motion-graphics sequence. Use a deep charcoal and midnight-blue background with crisp electric-cyan, violet, white, and occasional amber accents. The visual language is clean geometric abstraction: wireframe cubes, spheres, rings, hexagonal grids, triangular prisms, orbital paths, thin laser lines, modular panels, luminous nodes, and precise vector-like outlines. Use high contrast, subtle bloom, controlled glow, and depth created by layered parallax. Keep the design polished and minimal, with stable geometry and clear silhouettes. Do not show people, animals, landscapes, logos, watermarks, platform UI, or readable text. All audio comes from <Audio 1>; the picture remains silent.
+
+[Shot 1] The video opens on a nearly black 16:9 field with a small cyan point at the center. Thin horizontal and vertical lines extend from it into a sparse coordinate grid. A transparent wireframe cube slowly assembles around the point, face by face, while tiny particles appear only along the line intersections. Use a Static Shot with a very small Push In at slow speed. <Audio 1> starts immediately and remains unchanged.
+
+[Shot 2] At 00:02.500, the camera cuts to a wider view of the same coordinate space. Three concentric rings rotate around the cube, a violet triangular prism slides through the frame, and a bright cyan line traces a precise hexagonal path. Use a smooth Arc Shot with small amplitude at slow speed. The line animation should feel synchronized to the beat without adding visible text or new sound.
+
+[Shot 3] At 00:05.200, the shot cuts to a close view of a floating geometric core made from nested hexagons and a small white sphere. Four laser-thin lines connect the core to distant nodes, then split into a branching circuit pattern. Use a Push In with small amplitude at fast speed followed by a brief Static Shot. Keep edges sharp and avoid chaotic particle noise.
+
+[Shot 4] At 00:08.000, the shot cuts to a long horizontal tunnel built from repeating rectangular frames, diagonal guide lines, and luminous nodes. The camera moves forward through the tunnel with a Tracking Shot at fast speed. Cyan and violet frames pass in measured layers, creating a strong sense of depth while the central axis stays stable.
+
+[Shot 5] At 00:11.000, the tunnel collapses into a single rotating dodecahedron. Its faces open like mechanical shutters, revealing a white-hot core. Thin amber accents briefly appear at the hinges, then return to cyan and violet. Use a Pull Out with small amplitude at normal speed, keeping the object centered and fully visible.
+
+[Shot 6] At 00:13.500, the shot cuts to a clean final composition: the dodecahedron floats inside a large cyan circle, surrounded by six evenly spaced orbit lines and a quiet field of stars. The orbit lines slow to a stop, the core emits one restrained pulse, and the camera becomes a Static Shot. End precisely at 00:15.000 on the stable geometric emblem. Preserve the uninterrupted original audio from <Audio 1> across every shot.
+
+overall_soundscape:
+N/A. Do not generate ambience, foley, impacts, or other independent sound events; all audible content is supplied by <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack from 00:00.000 to 00:15.000. Preserve the original timing, rhythm, dynamics, musical content, vocals if present, and stereo image. Do not generate replacement music.
+

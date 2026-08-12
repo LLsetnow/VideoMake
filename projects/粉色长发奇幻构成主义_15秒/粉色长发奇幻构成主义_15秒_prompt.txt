@@ -1,0 +1,33 @@
+subject_definitions:
+<Audio 1> is the first 15 seconds of the downloaded music file "乱码情绪pt.2.mp3", obtained from https://music.163.com/#/album?id=372848708 and used as a synchronized audio signal. It is copied directly as the complete final soundtrack; no visual content, character, scene, camera movement, or editing structure is taken from the source.
+
+summary:
+[audio reuse] Create a new 15-second 9:16 vertical fantasy animation generated from text only. The visual world is a flat 2D/2.5D constructivist moving poster starring an original long pink-haired fantasy heroine. Reuse <Audio 1> exactly from 00:00.000 through 00:15.000 as the complete final audio track. Do not generate dialogue, singing, replacement music, ambience, foley, sound effects, readable text, logos, subtitles, or watermarks.
+
+retention_analysis:
+<Audio 1>: fully_copy - Copy the first 15 seconds of "乱码情绪pt.2.mp3" 1:1 as the complete final audio track, preserving its original timing, musical content, vocals if present, dynamics, effects, and stereo image.
+
+detailed_description:
+The target video is a 9:16 vertical fantasy animation in a flat 2D/2.5D constructivist poster language. Use hard-edged geometric planes, thick dark contour lines, paper-cut collage, screen-printed color blocks, strong diagonals, modular circles, triangles, diamonds, and controlled layered parallax. The dominant palette is dusty pink, vermilion red, ivory, black, and cobalt blue, with restrained luminous gold only for magical energy. Keep the image graphic and matte: no realistic 3D rendering, glossy materials, soft airbrush, photographic texture, random symbols that resemble letters, logos, watermarks, subtitles, or platform UI.
+
+The protagonist is one original young adult fantasy heroine with very long straight cotton-candy pink hair divided into clean ribbon-like graphic locks, pale skin, large dark plum eyes, a black high-collar tunic over an ivory blouse, a vermilion sash, cobalt triangular shoulder panels, a short geometric cape, black leggings, magenta boots, and a small five-sided crystal prism. Preserve her face, hair color and length, costume construction, proportions, and color placement in every shot. The same ivory-and-vermilion sky cathedral remains the continuous setting; never add another character.
+
+[Shot 1] The video opens on a centered full-body composition inside the ivory-and-vermilion sky cathedral. The heroine stands still beneath a tall black arch, with seven flat diamond tiles suspended behind her in a vertical rhythm. Her long pink hair hangs like paper ribbons, and the first diamond gives a faint gold pulse. Use a Static Shot with a very small Push In at slow speed. <Audio 1> begins immediately and remains unchanged.
+
+[Shot 2] At 00:01.800, the camera cuts to a three-quarter medium shot. A sharp ivory beam sweeps diagonally from upper left to lower right; the seven diamonds light in sequence along the beam, while the heroine raises her chin and the small prism at her chest catches a pink reflection. Use a Pan Right with small amplitude at fast speed. Keep the shapes crisp and do not add readable symbols or sound effects.
+
+[Shot 3] At 00:03.800, the shot cuts to a full-body side view. The floor folds upward into vermilion triangular steps and the heroine takes two clear steps forward. Her long pink hair separates into a few angular ribbon planes that follow the movement, while cobalt triangles slide laterally in the distant background. Use a Tracking Shot to the right with small amplitude at normal speed; keep the same character and costume.
+
+[Shot 4] At 00:06.000, the shot cuts to a close view of her hand rising into a half-body composition. She catches a five-sided prism in front of her chest; three flat color planes rotate and lock into one crystal, producing a restrained gold cross-shaped highlight on her palm. Use a Push In with small amplitude at fast speed, then hold briefly so the hand, prism, and face stay readable. <Audio 1> continues without interruption.
+
+[Shot 5] At 00:08.300, the shot cuts to a side medium shot. The prism releases three clean planar rays in pink, vermilion, and cobalt. The heroine keeps her side-facing stance as her long pink hair fans outward and becomes two large geometric wing-like planes; the planes flap once like hinged paper panels. Use an Arc Shot with small amplitude at normal speed. Keep the transformation graphic and controlled, with no extra creature or character.
+
+[Shot 6] At 00:10.900, the shot cuts to a frontal medium-wide view. A huge vermilion circular ring opens behind the heroine. She moves forward through its center while seven thin gold lines extend from the prism toward the frame edges, and the surrounding triangles snap into a precise modular arrangement. Use a Pull Out with small amplitude at fast speed, keeping her face and full silhouette centered.
+
+[Shot 7] At 00:13.000, the shot cuts to the final vertical poster composition. The heroine stands front-facing and fully visible at center; her long pink hair forms a symmetrical arc, the five-sided prism hovers at chest height, and the seven diamond tiles form a clean radial frame around her. The gold lines settle, the cape makes one small final movement, and the camera becomes a Static Shot. Hold the stable constructivist poster until exactly 00:15.000. Preserve <Audio 1> continuously across every cut and do not add any new audible layer.
+
+overall_soundscape:
+N/A. Do not generate ambience, footsteps, impacts, foley, magic sound effects, voice, or any independent sound event; all audible content must come from the copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack from 00:00.000 to 00:15.000. Preserve its original rhythm, timing, musical content, vocals if present, dynamics, effects, and stereo image. Do not generate replacement music or restart the track at any cut.

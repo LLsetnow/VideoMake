@@ -1,0 +1,35 @@
+subject_definitions:
+<Picture 1> is the exact visual and character reference sheet for the protagonist. Treat it as a strict style bible: hand-drawn 2D editorial illustration, visible graphite-and-ink contours, imperfect line variation, muted gouache and colored-pencil fills, paper grain, printed collage edges, flat layered shapes, restrained shading, and no volumetric rendering. It shows her short black bob haircut, tired eyes, muted teal oversized office shirt, charcoal pleated skirt, red lanyard, old white sneakers, pale skin, silver ear cuff, and flat dreamcore collage style.
+<Subject 1> is the same short-haired young adult office worker from <Picture 1>. Preserve her face, bob haircut, tired eyes, body proportions, clothing construction, red lanyard, colors, and recognizable identity in every shot.
+<Audio 1> is the first 15 seconds of the downloaded music file "精神创伤（emo版）.mp3" from https://music.163.com/#/album?id=388759463. Reuse it 1:1 as the complete final audio track, preserving its exact timing, dynamics, musical content, and stereo image.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical hand-drawn 2D dreamcore animation whose visual language matches <Picture 1> exactly. Use <Picture 1> as both strict character reference and style bible, not as a literal boundary frame. Make it look like a hand-drawn artbook page brought to life: graphite-and-ink linework, organic contours, muted gouache and colored-pencil fills, paper grain, flat cut-paper collage layers, imperfect registration, and restrained hand-painted shading. Absolutely no realistic 3D, CGI, PBR, glossy surfaces, volumetric lighting, photorealistic skin, realistic depth of field, plastic rendering, or game-engine imagery. Use <Audio 1> exactly as the complete final audio track; add no voice, phone vibration, notification chime, foley, ambience, sound effect, or replacement music. The first 15 seconds are a visual notification montage: a phone visibly vibrates, message banners appear, and the office bends around <Subject 1>. Preserve one protagonist, one phone, and one office geography. Use exact visible Chinese message text only where specified. No logos, watermarks, platform UI, or extra characters.
+
+retention_analysis:
+<Picture 1> (used in [Shot 1] through [Shot 7]): fully_preserved - retain the protagonist's face, hair, clothing, red lanyard, palette, and graphic flat-cartoon rendering.
+<Subject 1> (used in [Shot 1] through [Shot 7]): fully_preserved - keep her identity and costume stable while changing pose, framing, and lighting.
+<Audio 1>: fully_copy - copy the first 15 seconds 1:1 as the complete final audio track; preserve original timing, musical content, dynamics, effects, and stereo image.
+
+detailed_description:
+The target segment is a 9:16 hand-drawn 2D dreamcore animation matching <Picture 1>: pencil-and-ink linework, organic frame-by-frame contours, gouache and colored-pencil fills, paper grain, collage borders, dusty teal, charcoal, lavender, faded coral, cream, slight registration wobble, and surreal office geometry. Every frame remains 2D artwork, never a realistic 3D or CG scene. Keep the protagonist readable and the phone as visual anchor. Phone, banners, and waveforms are visual only; all sound comes from <Audio 1>.
+
+[Shot 1] The segment opens on a close-up of a black smartphone lying face-up on a cluttered office desk at night. The lock screen reads "23:41" and a banner reads "老板：明早九点前把方案发我。". <Subject 1>'s pale hand reaches into frame, but the phone visibly vibrates before she touches it. The camera pushes in with small amplitude at slow speed toward the trembling banner; the vibration makes the water glass and paper corners shiver. Do not generate phone audio or spoken words.
+
+[Shot 2] At 00:02.200, the camera cuts to an over-shoulder medium close-up of <Subject 1> in the same cubicle, her short hair hiding one eye as she reads. A second banner appears reading "同事：你还在公司吗？". The phone visibly pulses twice without producing any new sound. Pan right with small amplitude at slow speed from the banner to her fixed eyes; the fluorescent light above her flickers once.
+
+[Shot 3] At 00:04.300, cut to a macro view of the phone's voice-message waveform. A red unread dot expands into a flat red ring around the message text "客户：第三版今晚要看到。". The red waveform spikes visually while the track remains unchanged. The camera zooms in with small amplitude at fast speed as a red paper-cut line travels from the screen toward the edge of frame.
+
+[Shot 4] At 00:06.400, cut to a vertical composition of <Subject 1> seated under the cubicle light while notifications stack around her: "群聊 38 条未读", "日历：加班会议 22:30", and "邮件：请查收附件". Show each phrase exactly as written, but keep the UI abstract and non-branded. The camera tilts down with small amplitude at slow speed from her closed eyes to the phone in both hands; the red lanyard hangs straight down like a measuring line. Do not add notification sounds.
+
+[Shot 5] At 00:08.600, cut to a close-up of the phone held in <Subject 1>'s palm. Three overlapping voice-message waveforms pulse in different colors while the phone visibly vibrates continuously. The camera arcs with small amplitude at fast speed around the phone as the desk background stretches into a repeating grid; the audio remains a direct copy of <Audio 1> with no extra layer.
+
+[Shot 6] At 00:10.800, cut to a centered medium-wide shot of <Subject 1> in the cubicle. She sits perfectly still with her head lowered while cream message bubbles and torn paper rectangles orbit her at different depths. The phone vibrates against her palm, her thumb hovers above the screen, and she never presses a reply button. Use a slow Push In with small amplitude toward her face; the office walls bend inward by a few degrees, fluorescent strips repeating into the distance. Do not generate breathing, vibration, clicks, paper rustle, or office hum.
+
+[Shot 7] At 00:13.000, cut to a low close-up of the desk. <Subject 1> releases the phone; it lands screen-up, and the vibration remains visible. The phone's rectangular glow projects a cream-colored doorway shape onto the desk, and the desk surface folds along that shape as if it were paper. The camera pulls out with small amplitude at slow speed, revealing <Subject 1> frozen behind the new doorway-shaped light. End at exactly 00:15.000 on the held image, with the doorway not yet crossed. Copy <Audio 1> without alteration.
+
+overall_soundscape:
+All audible content is copied from <Audio 1> 1:1; do not generate dialogue, phone vibration, notification chimes, speaker distortion, taps, paper rustle, breathing, ambience, or any independent sound effect.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete final soundtrack from 00:00.000 to 00:15.000. Preserve its original timing, musical content, dynamics, effects, and stereo image. Do not generate replacement music or restart it at any cut.

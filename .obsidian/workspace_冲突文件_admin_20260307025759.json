@@ -1,0 +1,271 @@
+{
+  "main": {
+    "id": "3fd6467422b8198f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1e73616e03d22c2",
+        "type": "tabs",
+        "dimension": 17.907801418439718,
+        "children": [
+          {
+            "id": "9dba8f37bf33f215",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "第二大脑/简历/项目经历/项目.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "项目 的大纲"
+            }
+          }
+        ]
+      },
+      {
+        "id": "59a76c255da1f08c",
+        "type": "tabs",
+        "dimension": 82.09219858156028,
+        "children": [
+          {
+            "id": "59c64e069c2f44d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "第二大脑/简历/项目经历/项目.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "项目"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6220f5a1779562da",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a12a6c96c60a931",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95388314a18be10d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "74bec182ed23b97e",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "0c3c20e2c2068ca0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9b0764d520373530",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 359.51103591918945
+  },
+  "right": {
+    "id": "93b8fb5a0d81a6e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "899f493e1450c6d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f17a4fa0fbad01ac",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "完全模型/模型/PPNC2.0模型编译.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "PPNC2.0模型编译 的反向链接列表"
+            }
+          },
+          {
+            "id": "22898dcf9bf7577c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "完全模型/模型/PPNC2.0模型编译.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "PPNC2.0模型编译 的出链列表"
+            }
+          },
+          {
+            "id": "8654624b7204c80f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "1774ebbb06e47aed",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "cc9b318252c99589",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 610.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "claudian:Open Claudian": false,
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-git:Open Git source control": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "95388314a18be10d",
+  "lastOpenFiles": [
+    "程序员的自我修养/c++基础.md.baiduyun.p.downloading",
+    "第二大脑/简历/其他材料/杭州电子科技大学学生成绩单_徐晨茗.pdf.baiduyun.uploading.cfg",
+    "第二大脑/简历/其他材料/二课成绩单.pdf.baiduyun.uploading.cfg",
+    "第二大脑/简历/项目经历/项目.md.baiduyun.uploading.cfg",
+    "第二大脑/简历/徐晨茗简历_2020306.pdf.baiduyun.uploading.cfg",
+    "第二大脑/简历/徐晨茗简历_2020306.docx.baiduyun.uploading.cfg",
+    "第二大脑/简历/奖状/杭州电子科技大学_徐晨茗_一等奖（第一名）_40987677_page_1.jpg.baiduyun.uploading.cfg",
+    "第二大脑/简历/奖状/杭州电子科技大学_徐晨茗_一等奖（第一名）_40987677.pdf.baiduyun.uploading.cfg",
+    "第二大脑/简历/参考/王伟柳简历.png.baiduyun.uploading.cfg",
+    "第二大脑/简历/参考/李明祥简历.pdf.baiduyun.uploading.cfg",
+    "第二大脑/简历/参考/徐晨茗简历_20241117.jpg.baiduyun.uploading.cfg",
+    "第二大脑/简历/项目经历/项目.md",
+    "第二大脑/简历/奖状/杭州电子科技大学_徐晨茗_一等奖（第一名）_40987677_page_1.jpg",
+    "程序员的自我修养/算法学习/图论.md",
+    "毕业设计/文献阅读.md",
+    "毕业设计/构思.md",
+    "毕业设计/毕业设计知识结构图.canvas",
+    "毕业设计/毕业安排.md",
+    "毕业设计/开题报告/开题报告3.md",
+    "第二大脑/简历/未命名.md",
+    "第二大脑/简历/参考/徐晨茗简历_20241117.jpg",
+    "第二大脑/简历/参考/王伟柳简历.png",
+    "毕业设计/任务书.md",
+    "程序员的自我修养/算法学习/复试事项.md",
+    "程序员的自我修养/程序员的自我修养.md",
+    "程序员的自我修养/c++基础.md",
+    "第二大脑/未命名.md",
+    "程序员的自我修养/算法学习/assets/复试事项/file-20260305220742262.png",
+    "程序员的自我修养/算法学习/机考真题.md",
+    "程序员的自我修养/算法学习/数据结构题.md",
+    "程序员的自我修养/算法学习/前缀和.md",
+    "程序员的自我修养/算法学习/assets/机考真题/file-20260304231754385.png",
+    "程序员的自我修养/算法学习/分治.md",
+    "程序员的自我修养/算法学习/数学与几何.md",
+    "程序员的自我修养/算法学习/时间优化.md",
+    "第二大脑/生活/VR.md",
+    "程序员的自我修养/算法学习/assets/机考真题/file-20260303224102992.png",
+    "程序员的自我修养/算法学习/assets/机考真题/file-20260303222942689.png",
+    "程序员的自我修养/算法学习/BFS算法.md",
+    "程序员的自我修养/算法学习/模拟题.md",
+    "程序员的自我修养/算法学习/力扣刷题.md",
+    "程序员的自我修养/算法学习/ACM 格式输入模板.md",
+    "程序员的自我修养/算法学习/动态规划.md",
+    "files/教你用AI改漫展人物姿势_真实内容总结.md",
+    "程序员的自我修养/算法学习/assets/动态规划/file-20260301190813772.png",
+    "毕业设计/assets/毕业安排/file-20260307000432519.jpg",
+    "毕业设计/assets/毕业安排/file-20260307000432535.png",
+    "地中海饮食.canvas",
+    "MMD制作/概述.canvas",
+    "MMD制作/blender/物理模拟/未命名.canvas"
+  ]
+}

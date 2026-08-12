@@ -1,0 +1,33 @@
+{
+  "models": [
+    {
+      "id": "default-deepseek-r1",
+      "name": "DeepSeek R1",
+      "modelId": "deepseek-reasoner",
+      "apiKey": "sk-c087ba76aedd49af9a6be0b9bb94d951",
+      "apiUrl": "https://api.deepseek.com",
+      "providerUrl": "https://platform.deepseek.com/"
+    },
+    {
+      "id": "default-deepseek-v3",
+      "name": "DeepSeek V3",
+      "modelId": "deepseek-chat",
+      "apiKey": "sk-c087ba76aedd49af9a6be0b9bb94d951",
+      "apiUrl": "https://api.deepseek.com",
+      "providerUrl": "https://platform.deepseek.com/"
+    }
+  ],
+  "promptStats": {
+    "2026-03-09": {
+      "num": 1,
+      "prompt_content": [
+        {
+          "id_timestamp": "1773085980084",
+          "prompt": "你好",
+          "answer": "你好！很高兴见到你！😊 我是DeepSeek，一个AI助手，随时准备为你提供帮助。无论是回答问题、协助思考、解决问题，还是简单的聊天，我都很乐意陪伴你。\n\n有什么我可以为你做的吗？我会尽我所能为你提供详细、贴心的帮助！✨",
+          "model": "default-deepseek-r1"
+        }
+      ]
+    }
+  }
+}

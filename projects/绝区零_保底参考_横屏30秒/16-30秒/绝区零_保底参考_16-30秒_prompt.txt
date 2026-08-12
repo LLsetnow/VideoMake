@@ -1,0 +1,43 @@
+subject_definitions:
+<Picture 1> is 六分街.png, a scene reference for dense blue urban streets, storefront depth, and layered city color.
+<Picture 2> is 厄匹斯港.png, a scene reference for cyan harbor water, railings, open sky, and bright reflections.
+<Picture 3> is 沙滩.png, a scene reference for a warm shoreline, palms, reflective sand, and orange-gold light.
+<Picture 4> is the identity reference for <Subject 1>, Chinatsu: silver-gray wavy hair, large turquoise bow, white blouse, red star-detail tie, pink backpack, white wings, black layered skirt, pink striped warmers, and pink platform shoes. Preserve her face, proportions, costume, colors, and identity.
+<Picture 5> is the identity reference for <Subject 2>, Nangong Yu: short black hair with pink curled sides, red eyes, turquoise halo, white-and-black gothic dress with red accents, white mechanical wing pieces, black stockings, and platform shoes. Preserve her face, proportions, costume, colors, halo, and identity.
+<Picture 6> is the identity reference for <Subject 3>, Airui: pink twin-tail hair with a turquoise streak, white dress with orange and mint details, white wings, speaker-like accessories, pink socks, and white boots. Preserve her face, proportions, costume, colors, and identity.
+<Audio 1> is seconds 15.000–30.000 of the audio extracted from the supplied reference video's first 30 seconds. Reuse it 1:1 as this segment's complete final audio, including all music, vocals, effects, timing, dynamics, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 landscape anime music-video segment starring <Subject 1>, <Subject 2>, and <Subject 3>, the second chapter of a 30-second sequence. Use <Picture 1>, <Picture 2>, and <Picture 3> only as scene/color references; use <Picture 4>, <Picture 5>, and <Picture 6> as separate identity references. Continue the offline-analyzed source video's fast montage grammar with night color, aerial scale, eye/hand inserts, reflective water, graphic motion, and a warm group ending, while creating new scenes and actions. Do not ingest or reproduce the source video, its frames, choreography, text, watermark, or UI. Reuse <Audio 1> exactly; generate no replacement music, dialogue, singing, ambience, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (Shots 1, 4, 6): partially_preserved - retain its dense urban depth and cool storefront color while changing buildings, composition, and text.
+<Picture 2> (Shots 2, 3, 5): partially_preserved - retain its open cyan harbor scale and water reflections while changing camera and action.
+<Picture 3> (Shot 7): partially_preserved - retain its warm shoreline and sunrise color while changing layout and composition.
+<Picture 4> (<Subject 1>, all character shots): fully_preserved - keep Chinatsu's face, hair, bow, wings, backpack, costume, colors, proportions, and shoes.
+<Picture 5> (<Subject 2>, all character shots): fully_preserved - keep Nangong Yu's face, black-and-pink hair, halo, gothic costume, wing pieces, colors, proportions, and shoes.
+<Picture 6> (<Subject 3>, all character shots): fully_preserved - keep Airui's face, pink-and-turquoise hair, costume, wings, accessories, colors, proportions, and shoes.
+<Audio 1>: fully_copy - copy it 1:1 as the whole 15-second final audio track.
+
+detailed_description:
+The target is the second 15 seconds of a 16:9 cel-shaded anime music-video montage with painted backgrounds, indigo, cyan, crimson, and warm-gold shifts, controlled bloom, crisp silhouettes, and rapid but legible cuts. All three characters stay recognizable. <Audio 1> starts on frame one and stays uninterrupted.
+
+[Shot 1] Open in a dark indigo city canyon derived from <Picture 1>. <Subject 1>, <Subject 2>, and <Subject 3> stand as three separated figures on a high pedestrian bridge, marked by turquoise, red, and orange accents. Windows form a deep field; Chinatsu turns, then the others follow one beat later. Use a slow Pull Out with small amplitude.
+
+[Shot 2] At 00:02.300, cut to an extreme close-up of <Subject 2>'s eye and halo reflection. Her eye opens as halo light crosses her cheek; the image expands into her harbor profile from <Picture 2>. Use a fast Push In into the eye followed by a smooth Pull Out; keep her face stable.
+
+[Shot 3] At 00:04.700, cut to <Subject 1> walking through shallow harbor water. Her pink shoes make small ripples; her skirt, striped warmers, bow, backpack, and wings remain readable as cyan light travels across the surface. Use a close side Tracking Shot, then a brief Tilt Up to her face.
+
+[Shot 4] At 00:06.900, cut to <Subject 3> in a narrow urban passage from <Picture 1>. She reaches toward a suspended orange light; it splits into mint shards orbiting her wings and headphones. Her twin-tails move in the air current. Use a small slow Arc Shot with no readable text.
+
+[Shot 5] At 00:09.100, cut to an overhead view of the harbor from <Picture 2>. The three run along separate paths that converge at one bright crossing. Their bow, halo, and pink hair become three color markers against blue water and concrete. Use a fast large-amplitude Pedestal Up, then a gentle Push In as they meet.
+
+[Shot 6] At 00:11.600, cut to dark-blue, white, crimson, and gold planes. Three hand silhouettes reach from different edges; fingertips nearly meet, then the planes flare into a white-gold horizon. This is an original transition with no added sound beyond <Audio 1>.
+
+[Shot 7] At 00:13.000, resolve onto the warm beach from <Picture 3> at sunrise. The three stand shoulder to shoulder on reflective sand, facing the ocean, then turn to camera and take one synchronized step. Sea breeze moves wings and clothing; sunlight rims the bow, halo, pink hair, and white costumes. Use a slow backward Tracking Shot with small amplitude. Hold the final pose until 00:15.000.
+
+overall_soundscape:
+No independent ambience, dialogue, foley, impacts, or sound effects. Every audible element comes from copied <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is the complete audience-only soundtrack from 00:00.000 to 00:15.000. Preserve timing, content, vocals, beat placement, effects, dynamics, and stereo image exactly; generate no replacement music.

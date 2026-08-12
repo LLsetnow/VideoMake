@@ -1,0 +1,32 @@
+subject_definitions:
+<Picture 1> is the three-view character identity reference for <Subject 1>, used to preserve her face, hairstyle, costume construction, proportions, colors, crystal ornament and silhouette; it is not a target frame.
+<Subject 1> is Célestine Rosier, a young adult fantasy heroine with extremely long straight pastel pink hair, blunt rounded bangs, pale skin, dark plum eyes, a black high-collar inner tunic, an ivory blouse-dress with voluminous bishop sleeves, a wide wine-red sash, cobalt-blue triangular shoulder panels, a deep wine-red geometric cape, black thigh-high stockings, tall wine-red lace-up boots and a small five-sided faceted prism. Preserve her exact identity and costume in every shot.
+<Audio 1> is the 15-second WAV segment corresponding to 00:30.000–00:45.000 of the supplied source music, directly reused 1:1 as this segment's complete final audio track.
+
+summary:
+[reference generation + audio reuse] Create the third 15-second 9:16 chapter. <Subject 1> enters the Uncomposed Tide, a blank phenomenon that makes relationships between lines, objects and memories fail. Continue the Sky Cathedral world and show the central revelation: the old order is trying to erase every irregular gap. Use <Picture 1> for character consistency and reuse <Audio 1> exactly. No dialogue, generated ambience, foley, sound effects, readable text, logos, subtitles or watermarks.
+
+retention_analysis:
+<Picture 1> (identity reference): fully_preserved - preserve the character design and identity reference role without treating the sheet as a literal frame.
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve her face, pink hair, ivory-and-wine costume, cobalt shoulder panels, prism and proportions.
+<Audio 1>: fully_copy - reuse the supplied 00:30.000–00:45.000 source segment 1:1 as this segment's complete final audio track.
+
+detailed_description:
+The target video is a darker but still graphic 2D/2.5D constructivist fantasy chapter. The ivory-and-vermilion cathedral is partially erased by the Uncomposed Tide: edges dissolve into blank ivory, black arches lose their endpoints, red platforms detach from their support lines, and color blocks drift without relationships. Keep the palette matte and controlled, with pale gold only when the prism stabilizes a line. No monster, crowd or second character appears; the threat is a spatial phenomenon. <Audio 1> remains the only audible layer.
+
+[Shot 1] The video opens on a wide view of the circular gate above Vermilia. <Subject 1> steps through it and arrives in a cathedral corridor whose left half is sharply constructed while the right half is an almost blank ivory field. The seventh diamond facet flickers but does not light. Use a slow Push In with small amplitude; keep the character small against the unstable architecture.
+
+[Shot 2] At 00:03.000, the shot cuts to a side medium view. The black lines behind <Subject 1> separate from the walls and float like loose drawing strokes. Her long pink hair becomes thin paper ribbons that briefly point in incompatible directions. She stops, lowers one hand, and watches the prism dim. Use a lateral Truck Right with small amplitude at slow speed; preserve her calm face and readable costume.
+
+[Shot 3] At 00:06.200, cut to a close-up of the five-sided prism. Its three colored planes rotate out of alignment, and the pale-gold highlight disappears. In the reflection, the cathedral appears as disconnected ivory, red, cobalt and black fragments, with no readable symbols. Use a very small Push In at normal speed, then hold the prism at the center.
+
+[Shot 4] At 00:09.000, cut to a frontal medium-wide view. <Subject 1> stands in the blank field while the six activated diamond facets go dark one by one. Instead of forcing them back, she opens her hand and releases a small pink plane made from her own memory; the plane becomes a thin line linking her palm to the nearest red wall. Use a slow Pull Out with small amplitude. The action must look deliberate, not explosive.
+
+[Shot 5] At 00:12.300, the camera cuts to a wide overhead view. Pink, vermilion and cobalt planes begin reconnecting around <Subject 1>, but they leave one clean ivory gap in the center of the composition. The seventh facet remains unlit inside that gap. Use a controlled Arc Shot with small amplitude at normal speed, ending on the unresolved blank space and the character standing beneath it until exactly 00:15.000. This gap is the entry state for the final chapter.
+
+overall_soundscape:
+N/A. Do not generate ambience, footsteps, impacts, foley, voice or magic sound effects. All audible content comes from the copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack for this segment. Preserve its exact source timing, musical content, vocals if present, dynamics, effects and stereo image from local 00:00.000 through 00:15.000. Do not generate replacement music.
+

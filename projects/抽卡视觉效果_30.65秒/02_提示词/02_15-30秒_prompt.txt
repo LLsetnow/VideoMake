@@ -1,0 +1,37 @@
+subject_definitions:
+<Audio 1> is the 15-second extracted soundtrack segment from 00:15.000 to 00:30.000 of the supplied reference video's audio, directly reused 1:1 as the complete final audio track for this 15-second segment, including its original music, vocals if present, timing, dynamics, effects, and stereo image. No visual frames from the reference video are used.
+
+summary:
+[audio reuse] Create a new 15-second 16:9 landscape text-to-video segment from text only. Continue an original high-contrast gothic motion-graphic language using matte black, bone white, deep crimson, and restrained electric blue. Continue the visual motif of a blank black card, a faceless porcelain guardian, cathedral geometry, and a luminous blue core, while changing the spaces and viewpoints so the sequence feels like a new editorial passage. Use <Audio 1> as the locked synchronized soundtrack from 00:00.000 through 00:15.000. Do not receive, inspect, or reproduce the reference video as a video input; do not use source frames, source characters, subtitles, logos, watermarks, or platform UI.
+
+retention_analysis:
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this 15-second segment, without generated replacement music, dialogue, ambience, or sound effects.
+
+detailed_description:
+The target video is an original 16:9 landscape continuation of a gothic graphic music-video sequence, generated from text only. Maintain the same hard-edged black, white, and crimson palette with sparse electric-blue energy accents, high-contrast chiaroscuro, angular collage geometry, marble texture, thin white borders, and subtle analog grain. Introduce no recognizable existing character, no literal playing-card text, no readable typography, no logos, no watermarks, no subtitles, and no platform UI. Keep the cuts rapid but legible: every cut below two seconds. <Audio 1> begins on the first frame and remains unchanged across every cut.
+
+[Shot 1] Open on the black card frame from the previous passage floating in a deep crimson void. The faceless porcelain guardian is visible only as a white relief inside the card while a small electric-blue core pulses behind it. Use a Static Shot with a small Push In at slow speed.
+
+[Shot 2] At 00:01.400, cut to a wide underground chapel with black pillars, white floor planes, and red light pouring through a high circular opening. The card descends slowly toward a white pedestal. Use a smooth Pedestal Down with small amplitude at fast speed.
+
+[Shot 3] At 00:02.900, cut to a top-down view of the pedestal. Black triangular panels fold around it like a mechanical flower, revealing thin blue lines beneath the white stone. Use a fast Pull Out with small amplitude.
+
+[Shot 4] At 00:04.400, cut to a mirrored crimson corridor. Repeating white arches stretch into the distance while the guardian's wing silhouette advances toward camera through alternating light and shadow. Use a centered Tracking Shot forward at fast speed.
+
+[Shot 5] At 00:05.900, cut to an extreme close-up of the guardian's blank marble face. One electric-blue slit of light appears where the eyes would be; hair, mouth, and identity remain absent. Use a small Push In at slow speed and keep the surface stone-like.
+
+[Shot 6] At 00:07.400, cut to a rotating array of blank black cards suspended in a white void. Each card flips once, showing only abstract crimson diamonds and blue circles, never letters or numbers. Use an Arc Shot with small amplitude at fast speed.
+
+[Shot 7] At 00:08.900, cut to the guardian standing on a black circular platform surrounded by thin white orbital rings. Crimson shards rise vertically around the platform while blue energy threads connect the rings. Use a large-amplitude Tilt Up at normal speed.
+
+[Shot 8] At 00:10.400, cut to a stark electric-blue graphic chamber. A black cube opens into four floating planes, each plane carrying a white silhouette of the guardian's folded wings. Use a fast Truck Left with small amplitude, keeping the geometry sharp.
+
+[Shot 9] At 00:11.900, cut to the cathedral ceiling. Red curtains collapse upward into a black aperture, exposing a white circular moon-like disc with a blue ring. Use a fast Zoom Out with small amplitude; no stars or extra objects.
+
+[Shot 10] At 00:13.400, cut to a wide symmetrical final tableau: the faceless porcelain guardian stands centered on the white pedestal, framed by black arches, crimson curtains, and one thin electric-blue halo. The card frame closes around the figure like a seal. Use a Static Shot with a tiny Push In and hold the sealed emblem precisely until 00:15.000. Preserve the copied <Audio 1> without interruption.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve its exact timing, musical content, vocal content if present, dynamics, effects, and stereo image. Do not generate replacement music.

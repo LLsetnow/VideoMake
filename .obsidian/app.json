@@ -1,0 +1,17 @@
+{
+  "useMarkdownLinks": true,
+  "newLinkFormat": "relative",
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showUnsupportedFiles": true,
+  "newFileLocation": "current",
+  "showLineNumber": false,
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true
+}

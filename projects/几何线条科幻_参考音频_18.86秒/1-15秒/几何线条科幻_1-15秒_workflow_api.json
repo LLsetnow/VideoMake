@@ -1,0 +1,308 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 481927351
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/geometry_sci-fi_0-15",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Audio 1> is the first 15 seconds of the audio track extracted from the supplied source video. It is used only as a synchronized audio signal; no visual content, frames, camera motion, cuts, or other information from the source video is referenced.\n\nsummary:\n[audio reuse] Create a new 15-second 16:9 landscape text-to-video animation driven by geometry, luminous lines, and a restrained science-fiction visual system. Generate all visuals from text only. Reuse <Audio 1> exactly from 00:00.000 to 00:15.000 as the complete final audio track. Do not ingest or reproduce the supplied source video, and do not generate dialogue, replacement music, extra ambience, or extra sound effects.\n\nretention_analysis:\n<Audio 1>: fully_copy - <Audio 1> is copied 1:1 as the complete audio track for this 15-second segment, preserving timing, dynamics, stereo balance, and all original audible content.\n\ndetailed_description:\nThe target video is a 16:9 landscape, text-generated sci-fi motion-graphics sequence. Use a deep charcoal and midnight-blue background with crisp electric-cyan, violet, white, and occasional amber accents. The visual language is clean geometric abstraction: wireframe cubes, spheres, rings, hexagonal grids, triangular prisms, orbital paths, thin laser lines, modular panels, luminous nodes, and precise vector-like outlines. Use high contrast, subtle bloom, controlled glow, and depth created by layered parallax. Keep the design polished and minimal, with stable geometry and clear silhouettes. Do not show people, animals, landscapes, logos, watermarks, platform UI, or readable text. All audio comes from <Audio 1>; the picture remains silent.\n\n[Shot 1] The video opens on a nearly black 16:9 field with a small cyan point at the center. Thin horizontal and vertical lines extend from it into a sparse coordinate grid. A transparent wireframe cube slowly assembles around the point, face by face, while tiny particles appear only along the line intersections. Use a Static Shot with a very small Push In at slow speed. <Audio 1> starts immediately and remains unchanged.\n\n[Shot 2] At 00:02.500, the camera cuts to a wider view of the same coordinate space. Three concentric rings rotate around the cube, a violet triangular prism slides through the frame, and a bright cyan line traces a precise hexagonal path. Use a smooth Arc Shot with small amplitude at slow speed. The line animation should feel synchronized to the beat without adding visible text or new sound.\n\n[Shot 3] At 00:05.200, the shot cuts to a close view of a floating geometric core made from nested hexagons and a small white sphere. Four laser-thin lines connect the core to distant nodes, then split into a branching circuit pattern. Use a Push In with small amplitude at fast speed followed by a brief Static Shot. Keep edges sharp and avoid chaotic particle noise.\n\n[Shot 4] At 00:08.000, the shot cuts to a long horizontal tunnel built from repeating rectangular frames, diagonal guide lines, and luminous nodes. The camera moves forward through the tunnel with a Tracking Shot at fast speed. Cyan and violet frames pass in measured layers, creating a strong sense of depth while the central axis stays stable.\n\n[Shot 5] At 00:11.000, the tunnel collapses into a single rotating dodecahedron. Its faces open like mechanical shutters, revealing a white-hot core. Thin amber accents briefly appear at the hinges, then return to cyan and violet. Use a Pull Out with small amplitude at normal speed, keeping the object centered and fully visible.\n\n[Shot 6] At 00:13.500, the shot cuts to a clean final composition: the dodecahedron floats inside a large cyan circle, surrounded by six evenly spaced orbit lines and a quiet field of stars. The orbit lines slow to a stop, the core emits one restrained pulse, and the camera becomes a Static Shot. End precisely at 00:15.000 on the stable geometric emblem. Preserve the uninterrupted original audio from <Audio 1> across every shot.\n\noverall_soundscape:\nN/A. Do not generate ambience, foley, impacts, or other independent sound events; all audible content is supplied by <Audio 1>.\n\nnon_diegetic_music:\n<Audio 1> is directly reused 1:1 as the complete audience-only soundtrack from 00:00.000 to 00:15.000. Preserve the original timing, rhythm, dynamics, musical content, vocals if present, and stereo image. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "CR Prompt Text"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_0-15.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

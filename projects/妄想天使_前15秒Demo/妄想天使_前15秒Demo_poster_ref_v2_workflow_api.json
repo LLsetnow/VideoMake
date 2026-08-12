@@ -1,0 +1,363 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1.0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "54",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "55",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "56",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "57",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "58",
+        0
+      ],
+      "ref_images.ref_image_6": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 2026080915
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/wangxiang_tianshi_demo_15s_poster_ref_v2",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the 404 night-exterior reference: wet pavement, the neon sign \"404\", rain, and the \"妄想天使\" performance poster; it guides Shot 1.\n<Picture 2> is the 404 indoor-stage reference: microphone, empty seats, hanging lights, and stage geography; it guides Shots 2 and 6.\n<Picture 3> is the 404 backstage reference: one shared doorway, narrow corridor, control area, and practical lights; it guides Shots 3–5.\n<Picture 4> is the identity reference for <Subject 1>, Chinatsu; preserve her face, ash-gray hair, hairstyle, costume, pink backpack, and accessories.\n<Picture 5> is the identity reference for <Subject 2>, Nangong Yu; preserve her face, hairstyle, costume, proportions, and accessories.\n<Picture 6> is the identity reference for <Subject 3>, Airi; preserve her face, hairstyle, costume, proportions, headphones, and accessories.\n<Picture 7> is the generated 9:16 flat hand-drawn poster reference; it guides trio arrangement, title hierarchy, pastel palette, and graphic composition, not literal boundary frames.\n\nsummary:\n[reference generation] Create a 15-second 16:9 cinematic animated music-PV demo for the \"妄想天使\" trio. Keep all six references separate. Use <Picture 7> as the overall key visual while adapting its vertical composition to 16:9; preserve identity, costume construction, and 404 spatial continuity. Use native diegetic rain, one brief static burst, rehearsal clicks, and stage audio. Refs are reusable, not literal frames. No dialogue or singing; no subtitles, watermarks, or extra readable text beyond \"404\" and \"妄想天使\".\n\nretention_analysis:\n<Picture 1> (Shot 1): fully_preserved - 404 exterior, rain, neon sign, and poster.\n<Picture 2> (Shots 2, 6): fully_preserved - indoor stage, microphone, lights, and venue geography.\n<Picture 3> (Shots 3–5): fully_preserved - same backstage doorway, control area, corridor, and practical lights.\n<Picture 4> (Shots 3–6): fully_preserved - Chinatsu's identity, hair, costume, proportions, backpack, and accessories.\n<Picture 5> (Shots 5–6): fully_preserved - Nangong Yu's identity, hair, costume, proportions, and accessories.\n<Picture 6> (Shots 4, 6): fully_preserved - Airi's identity, hair, costume, headphones, proportions, and accessories.\n<Picture 7> (Shots 1, 6): partially_preserved - retain trio arrangement, title hierarchy, pastel palette, and graphic balance while adapting the 9:16 image to 16:9 motion.\n\ndetailed_description:\nThe target is a 16:9 animated music-PV with wet neon, brief CRT transition, practical stage lights, cool backstage shadows, and cyan, magenta, amber accents. Use <Picture 7> for overall group-poster balance. Keep clean anime rendering, stable faces and costumes, beat-synchronized cuts, 404 spatial continuity, and stereo sound. Keep references separate; do not merge characters or add dialogue, subtitles, watermarks, or unrequested logos.\n\n[Shot 1] 00:00–02.5. Low-angle wide exterior combining <Picture 1> with the trio arrangement and title hierarchy from <Picture 7>. Rain covers the pavement below the neon \"404\" sign; the \"妄想天使\" poster with small subtitle \"404 MUSIC LIVE\" hangs by the entrance, and the trio appears only as brief puddle reflections. Slowly push in with small amplitude toward the poster; the sign flickers once. Sound is gentle and rain-led: steady rain, soft transformer hum, and distant city noise. No glitch sound here.\n\n[Shot 2] 00:02.5–05.0. A very brief CRT scanline glitch cuts to the empty 404 interior based on <Picture 2>. Use one restrained static burst for approximately 0.1–0.2 seconds at the cut, then stop it immediately. A microphone is foregrounded against empty seats and a dark stage. Pan right with large amplitude at fast speed from seats to microphone; a stage light sweeps and stops. Then use room reverb, relay clicks, and a muffled low-frequency stage pulse; no character appears.\n\n[Shot 3] 00:05–07.5. Match the microphone pole to a pencil in <Subject 1>'s hand. In the backstage control area from <Picture 3>, Chinatsu sits at the console, crosses out one score line, pauses, and rewrites the first note. Three-quarter close shot; truck left with small amplitude at slow speed from score to her face. Pencil friction, paper movement, and restrained rehearsal clicks; no dialogue.\n\n[Shot 4] 00:07.5–10.0. Match the pencil highlight to a colored ring on <Subject 3>'s headphones. From the same doorway and practical lights in <Picture 3>, Airi enters toward Chinatsu. Pan right with small amplitude at slow speed. Airi hears the revised monitor playback, steps to the console, lifts one earcup, studies the rewritten line, points to it, and exchanges an understanding look with Chinatsu. Door hinge, footsteps, headphone click, paper touch, and one short breath; no dialogue.\n\n[Shot 5] 00:10–12.5. Match the last step in Shot 4 to the same backstage doorway. Nangong Yu enters the same indoor control area carrying a rehearsal sheet with stage-entry marks, guided by <Picture 3>. Keep all three in one continuous indoor space: Chinatsu at console, Airi beside the monitor and mic cable, Nangong Yu by the door. Truck right with small amplitude at slow speed, follow Nangong Yu, then settle on all three. She points to the stage-entry mark and gives a clear silent three-count with her fingers; no clapping. Chinatsu closes the score and picks up her pencil; Airi adjusts headphones and mic cable; all turn toward the door. Footsteps, paper, headphone adjustment, and low rehearsal pulse; no dialogue.\n\n[Shot 6] 00:12.5–15.0. Shot 5's backstage door opens and match-cuts through that same door into the indoor 404 stage based on <Picture 2>. Do not show a street, sky, outdoor neon, or any new exterior. Track backward with small amplitude at slow speed as the trio enters together; stage lights power on one bank at a time while the door and venue geography remain visible. Rain becomes muffled behind walls and gives way to indoor reverb, relay clicks, footsteps, and equipment hum. Chinatsu presses start, Airi moves to the microphone and inhales, and Nangong Yu gives the downbeat with a concise silent hand cue. Build with click track, control-panel sound, synchronized footsteps, fabric rustle, and breath to 00:15, echoing <Picture 7>'s group balance. No singing, spoken counting, or readable lyrics yet.\n\noverall_soundscape:\nNative diegetic sound follows the timeline: gentle rain and distant traffic in Shot 1; soft neon hum; one restrained 0.1–0.2 second CRT static burst only at the Shot 1-to-Shot 2 cut; then room reverb, relay clicks, pencil and paper, door hinge, footsteps, headphone adjustment, control-panel sounds, fabric rustle, rehearsal clicks, and quiet breathing. The 404 stage pulse is diegetic. Generate no dialogue, spoken counting, singing, humming, claps, or crowd noise; rain is muffled after the indoor cut.\n\nnon_diegetic_music:\nN/A. Use no audience-only score; keep the audio native, diegetic, restrained, and rehearsal-focused.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "404门口-夜景.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "54": {
+    "inputs": {
+      "image": "404舞台.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 54"
+    }
+  },
+  "55": {
+    "inputs": {
+      "image": "404走廊.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 55"
+    }
+  },
+  "56": {
+    "inputs": {
+      "image": "千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 56"
+    }
+  },
+  "57": {
+    "inputs": {
+      "image": "南宫羽_角色三视图.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 57"
+    }
+  },
+  "58": {
+    "inputs": {
+      "image": "爱芮_角色三视图.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 58"
+    }
+  },
+  "59": {
+    "inputs": {
+      "image": "妄想天使_平面手绘海报_9x16_v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Poster Reference Image 59"
+    }
+  }
+}

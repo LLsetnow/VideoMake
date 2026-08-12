@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_constructivist_15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the single anime girl shown in <Picture 1>, with short wavy ash-gray hair, a large turquoise bow, pale pink eyes, a white short-sleeve blouse, a red necktie with small white star details, a pink backpack, white wing-like side accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, pale skin, and pink-and-white platform shoes. Preserve her exact face, hairstyle, body proportions, costume construction, accessory placement, colors, and recognizable identity throughout the target video.\n<Picture 1> is the flat 2D constructivist character poster used as the main visual and opening frame reference. Preserve its 9:16 portrait composition, full-body framing, blocky geometry, thick contour lines, flat color fills, and pink-white-mint palette.\n<Audio 1> is the first 15 seconds of the supplied Hypervoid music track, directly reused 1:1 as the target video's complete final audio track, including its original timing, dynamics, stereo balance, and musical content.\n\nsummary:\n[reference generation + audio reuse] Create a new 15-second 9:16 vertical flat 2D constructivist music video starring <Subject 1>. Start from <Picture 1> as the opening visual reference and animate the poster into a short geometric activation story. Use a blocky paper-cut and screen-print language with thick lines, clean shape fills, pink and white as the dominant colors, and only a small amount of mint green as an activation accent. Reuse <Audio 1> exactly from 00:00.000 to 00:15.000. Do not generate dialogue, singing, replacement music, extra sound effects, readable text, logos, or watermarks.\n\nretention_analysis:\n<Subject 1>: fully_preserved - preserve the character's identity, face, hairstyle, turquoise bow, wings, backpack, red tie, striped sleeves and leg warmers, layered skirt, platform shoes, colors, and full-body silhouette from <Picture 1>.\n<Picture 1>: fully_preserved - preserve the flat poster language, portrait framing, blocky shapes, thick contour lines, and pink-white-mint color relationship while animating the graphic elements.\n<Audio 1>: fully_copy - reuse the first 15 seconds as the complete final audio track without changing its timing, mix, or stereo image.\n\ndetailed_description:\nThe target video is a 9:16 vertical flat 2D constructivist animation built from crisp geometric blocks, thick dark contour lines, paper-cut planes, limited interior linework, and large matte color fills. The character remains the single visual focus. Keep the background mostly soft pink and warm white, with a small amount of mint green used only for the activation line, geometric core, and a few secondary shapes. The image must feel like a moving screen-printed poster, not a 3D render: no volumetric lighting, glossy materials, realistic shadows, soft airbrush, or dimensional surface modeling. Keep <Subject 1> fully visible from hair to platform shoes, with both white wings and the pink backpack readable in every character shot.\n\n[Shot 1] The video opens on <Picture 1> as a nearly static full-body poster. <Subject 1> stands centered inside a modular pink-and-white geometric frame. The camera uses a Static Shot with a very small amplitude Push In at slow speed. A thin mint-green line slides horizontally across the lower part of the frame, passing in front of her shoes without changing the character design. For the first two seconds, the poster remains stable and graphic.\n\n[Shot 2] At 00:02.000, the mint-green line travels upward through the composition. It visibly activates the shoes, leg warmers, layered skirt, wings, backpack, turquoise bow, and eyes in sequence. These parts briefly separate into simple polygonal blocks and then reconnect into the same costume. The camera continues a small Push In at slow speed; the face remains sharp and recognizable.\n\n[Shot 3] At 00:05.000, the pink diagonal background blocks begin sliding from left to right like a geometric conveyor. <Subject 1> takes one clear step forward while keeping the same three-quarter pose and full-body framing. Her wings open as two or three flat paper planes, and the bow, backpack straps, skirt layers, and striped leg warmers respond with simple rhythmic cutout motion. Use a smooth Tracking Shot to the right with small amplitude at normal speed. Do not add another character or prop.\n\n[Shot 4] At 00:09.000, a small mint-green geometric core rises in front of <Subject 1> at chest height. She extends one hand and touches it. At the contact point, clean pink, white, and mint lines expand diagonally across the frame in a brief graphic burst. Use a Push In with small amplitude at fast speed, followed by a Pull Out with small amplitude at fast speed, while keeping her hands and face readable and avoiding motion blur that destroys the outline.\n\n[Shot 5] At 00:12.000, the geometric blocks quickly return to their modular positions around <Subject 1>. The camera becomes a Static Shot. She settles into a confident centered stance, her wings held open and her turquoise bow making one final small movement. The pink-and-white frame locks around her with a restrained mint-green flash, then holds the final poster-like pose without new text. End precisely at 00:15.000 on the clean held frame.\n\noverall_soundscape:\nNo dialogue, voice, or separate environmental ambience is required. Do not add independent foley or sound effects that could alter the source mix; keep the visual activation silent apart from the locked source track.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve its original beat placement, tempo, dynamics, musical content, and stereo image exactly. Do not generate replacement music or extend the audio beyond the first 15 seconds."
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "千夏-构成主义-平面人设-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "Hypervoid.m4a",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

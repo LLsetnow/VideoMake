@@ -1,0 +1,39 @@
+subject_definitions:
+<Subject 1> is the original faceless dancer-like figure established by <Picture 1>, wearing a cobalt-blue long coat with a sharp red diagonal inner panel, black featureless face and hands, and a balanced graphic silhouette. Preserve this identity, costume colors, body proportions, and featureless face throughout the segment.
+<Picture 1> is the generated 16:9 visual identity and composition anchor reused for character consistency; it is not a source-video frame.
+<Audio 1> is the extracted soundtrack segment from 00:15.000 to 00:30.000 of the supplied reference video's audio, directly reused 1:1 as this segment's complete final audio track, including any music, speech, vocals, effects, timing, dynamics, and stereo image. No visual frames from the reference video are used.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 continuation segment starring <Subject 1>. Continue the independently observed black, warm-white, cobalt-blue, and signal-red constructivist motion-graphic language with new spaces, viewpoints, graphic mechanisms, RGB echoes, scanlines, and rhythmic cuts. Use <Picture 1> only for visual identity and costume consistency, and lock <Audio 1> from 00:00.000 through 00:15.000. The source video is prompt inspiration only and is not an input; do not reproduce its frames, characters, captions, logos, watermarks, or platform UI.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 9]): fully_preserved - preserve the same faceless figure, cobalt coat, red inner panel, black silhouette, and graphic identity while changing the spaces, scale, camera, and pose.
+<Picture 1> (visual identity and costume reference): fully_preserved - reuse the same figure design and palette as the stable reference, without treating the source image as a literal unchanging frame.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this segment without generating replacement music, dialogue, ambience, or sound effects.
+
+detailed_description:
+The target video is an original 16:9 constructivist graphic-music continuation with matte black, warm white, cobalt blue, and signal red flat shapes, thin technical grids, circular diagrams, sharp paper-cut silhouettes, subtle analog grain, and restrained RGB ghosting. Keep every cut legible and avoid readable text. The source video is not supplied as a visual input, and no source frame, watermark, caption, or platform UI may appear. <Subject 1> is the only recurring human figure, and <Audio 1> begins on the first frame and stays unchanged across every cut.
+
+[Shot 1] Open on <Subject 1> centered behind a black rectangular grid, with a cobalt circular halo and red diagonal bars sliding slowly across a warm-white field. The figure turns the headless silhouette slightly toward the raised right hand. Use a Static Shot with a small Push In at slow speed; keep the face featureless.
+
+[Shot 2] At 00:01.650, cut to a deep red tunnel made from repeating white arches and black floor planes. <Subject 1> walks toward camera along a cobalt line while the coat opens and closes with each step. Use a centered Tracking Shot forward at fast speed and keep the architecture symmetrical.
+
+[Shot 3] At 00:03.350, cut overhead to a white circular drafting table with blue rings and red triangular sectors. <Subject 1> stands at the exact center and rotates one quarter turn as black wedges fold inward like a mechanical iris. Use a slow Arc Shot with small amplitude.
+
+[Shot 4] At 00:05.050, cut to a side profile silhouette against alternating blue and white vertical panels. A single red seam in the coat traces a clean diagonal while thin black bars strobe behind the figure. Use a fast Truck Left with small amplitude; never create facial features.
+
+[Shot 5] At 00:06.750, cut to a wide warm-white void where one cobalt coat silhouette is accompanied by two narrow offset color echoes. <Subject 1> raises both arms, the echoes lag by a fraction of a second, then snap back into the central figure. Use a controlled Pull Out at normal speed; the echoes are graphic afterimages, not additional people.
+
+[Shot 6] At 00:08.450, cut to a black city horizon with flat red towers, blue windows, and a large white sun disk. <Subject 1> crosses a narrow bridge from left to right while a white scanline follows the feet. Use a smooth Pan Right at slow speed and maintain strong negative space.
+
+[Shot 7] At 00:10.150, cut to a close-up of the cobalt sleeve and black hand drawing a perfect white circle in the air. The circle becomes a red ring, then breaks into four blue arcs that orbit the torso. Use a small Push In at fast speed with crisp vector-like edges.
+
+[Shot 8] At 00:11.900, cut to a rapid abstract passage of red, blue, black, and white blocks sliding past the camera. <Subject 1> is visible for three rhythmic flashes, each time in a different pose: arm extended, coat turning, then both arms lowered. Use a fast Roll Clockwise with small amplitude; keep the figure's identity stable.
+
+[Shot 9] At 00:13.550, cut to a wide final composition: <Subject 1> stands centered on a white platform inside a black frame, a cobalt ring behind the shoulders, and a red triangle pointing upward from the floor. The ring completes one slow rotation and the figure holds still until 00:15.000. Preserve the copied <Audio 1> without interruption.
+
+overall_soundscape:
+N/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete soundtrack from 00:00.000 through 00:15.000. Preserve its exact timing, musical or spoken content, dynamics, effects, and stereo image. Do not generate replacement music.

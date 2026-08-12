@@ -1,0 +1,26 @@
+subject_definitions:
+<Audio 1> is a 5-second conditioning track made from the final 3.858667 seconds of the source video's extracted audio followed by 1.141333 seconds of silence. Only 00:00.000–00:03.858667 of this segment is retained in the final edit; the silence is present only to satisfy the minimum generation window. No visual content or source-video frames are used.
+
+summary:
+[audio reuse] Create the closing 5-second 16:9 landscape text-to-video segment in the same clean geometric science-fiction motion-graphics language as the preceding segment. Generate all visuals from text only, with no reference video input. Use <Audio 1> as the synchronized conditioning signal, then retain only its first 3.858667 seconds in the final assembly. Do not generate dialogue, replacement music, extra ambience, or extra sound effects.
+
+retention_analysis:
+<Audio 1>: partially_copy - the source audio from 00:15.000 to 00:18.858667 is copied into the beginning of this 5-second generation segment; the final 1.141333 seconds are padded silence and are discarded before the final export.
+
+detailed_description:
+The target video is a 5-second closing segment for a 16:9 landscape, text-generated sci-fi geometric animation. Continue the same visual grammar through text alone: deep charcoal and midnight-blue space, luminous cyan and violet linework, crisp white geometry, restrained amber highlights, wireframe construction, transparent layered planes, and precise vector-like motion. Use a coherent abstract world rather than introducing characters, realistic objects, scenery, logos, watermarks, readable text, or platform UI. Keep the central geometry legible and avoid a hard visual reset.
+
+[Shot 1] The segment opens on a dense but orderly field of cyan and violet orbit lines crossing behind a small white polyhedron. The polyhedron rotates slowly while three thin rings align around it. Use a Static Shot with a small Push In at slow speed. <Audio 1> begins at the first frame.
+
+[Shot 2] At 00:01.000, the camera cuts to a wider horizontal composition. The orbit lines expand into a luminous coordinate lattice, then fold inward into a large hexagonal portal. Use a Pull Out with small amplitude at fast speed, keeping the portal centered and the line intersections clean.
+
+[Shot 3] At 00:02.200, the shot cuts inside the portal. Six cyan rays and six violet rays rotate in exact symmetry around a bright core, forming a brief star-shaped geometric aperture. Use a controlled Arc Shot with small amplitude at normal speed. The core emits one restrained pulse; do not create additional sound effects.
+
+[Shot 4] At 00:03.200, the camera cuts back to the wide composition. The aperture closes into a single thin cyan circle, the polyhedron settles at its center, and all secondary particles fade. Use a Static Shot. Hold the final emblem without new objects until the 5-second generation ends; the final edit keeps only the first 3.858667 seconds. Preserve the copied source audio from <Audio 1> through the retained portion.
+
+overall_soundscape:
+N/A. Do not generate ambience, foley, impacts, or any independent sound events; all audible content comes from <Audio 1>, and the padded silence is discarded.
+
+non_diegetic_music:
+The first 3.858667 seconds of <Audio 1> are directly reused 1:1 in the final timeline as the audience-only soundtrack for this closing segment. Preserve timing, dynamics, musical content, vocals if present, and stereo image. The padded silence after 00:03.858667 is not part of the final export.
+

@@ -1,0 +1,308 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 481927351
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/draw_gothic_0-15",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Audio 1> is the first 15 seconds of the extracted soundtrack from the supplied reference video, directly reused 1:1 as the complete final audio track for this 15-second segment, including its original music, vocals if present, timing, dynamics, effects, and stereo image. No visual frames from the reference video are used.\n\nsummary:\n[audio reuse] Create a new 15-second 16:9 landscape text-to-video segment from text only. Use an original high-contrast gothic motion-graphic language: black, white, and deep crimson, with restrained electric-blue accents, cathedral geometry, marble-like figures, tarot-card symbolism, hard graphic lighting, collage cuts, and subtle analog texture. Use <Audio 1> as the locked synchronized soundtrack from 00:00.000 through 00:15.000. Do not receive, inspect, or reproduce the reference video as a video input; do not use source frames, source characters, subtitles, logos, watermarks, or platform UI.\n\nretention_analysis:\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the complete final audio track for this 15-second segment, without generated replacement music, dialogue, ambience, or sound effects.\n\ndetailed_description:\nThe target video is an original 16:9 landscape gothic visual-music montage generated from text only. Use a severe graphic palette of matte black, bone white, deep crimson, and very limited electric blue. Combine cathedral interiors, pointed arches, red fabric, white marble, black tarot-like cards, circular clock geometry, and one original faceless porcelain guardian. Use crisp silhouettes, hard-edged light shafts, restrained film grain, slight chromatic aberration, and fast editorial cuts. Keep every composition clean and iconic. No readable text, logos, watermarks, subtitles, platform UI, or copied source-video frames. <Audio 1> begins on the first frame and remains unchanged across every cut.\n\n[Shot 1] Open inside a monumental black cathedral nave. Tall crimson curtains part around a narrow vertical white beam, and a tiny faceless human silhouette stands centered at the beam's base. Use a Static Shot with a small Push In at slow speed; establish the graphic scale and symmetrical architecture.\n\n[Shot 2] At 00:01.400, cut to an extreme close-up of the crimson curtains. Their folds move like heavy ink waves while a sharp white light slices between them. Use a fast Tilt Down with small amplitude; keep the red, black, and white shapes clean.\n\n[Shot 3] At 00:02.900, cut overhead to a circular stained-glass window seen as a black radial diagram with white gothic spokes and crimson glass sectors. The wheel rotates one quarter turn. Use an Arc Shot with small amplitude at normal speed.\n\n[Shot 4] At 00:04.400, cut to a pale hand in black gloves turning a blank black tarot-like card in a dark void. The card has a thin white border and a small crimson diamond, but no letters or readable symbols. Use a Push In with small amplitude at fast speed.\n\n[Shot 5] At 00:05.900, cut into the card surface as the black paper becomes cracked white marble. A serene winged stone guardian rises from the texture, entirely original and faceless, with folded wings and a crimson shadow behind it. Use a Pull Out with small amplitude at fast speed.\n\n[Shot 6] At 00:07.400, cut to a side view of a black gothic window while white architectural fragments and crimson shards rotate through the foreground. The guardian's silhouette crosses behind the glass for one instant. Use a fast Pan Right with small amplitude; avoid visual clutter.\n\n[Shot 7] At 00:08.900, cut to a silver-black cruciform sculpture hovering above a white stone pedestal in a circular pool of darkness. A single electric-blue rim light traces its edges. Use a slow Push In with small amplitude and hold the object centered.\n\n[Shot 8] At 00:10.400, cut to an abstract crimson clock face made from concentric rings, white tick marks, and black wedges. The rings snap into alignment as if a ritual mechanism is activating. Use a fast Roll Clockwise with small amplitude; all marks remain graphic and non-readable.\n\n[Shot 9] At 00:11.900, cut to a black room containing a luminous electric-blue cube hovering above a white pedestal. Blue scan bands pass behind it, and a crimson reflection appears on the floor. Use a controlled Arc Shot with small amplitude at normal speed.\n\n[Shot 10] At 00:13.400, cut to the original faceless porcelain guardian in a frontal medium shot. Its wings open behind a black card frame while a thin blue line scans from top to bottom and the crimson background fractures into angular panels. Use a small Push In at fast speed, then hold the final iconic silhouette exactly until 00:15.000. Preserve the copied <Audio 1> without interruption.\n\noverall_soundscape:\nN/A. Do not generate dialogue, voice, foley, ambience, impacts, or independent sound effects. Every audible element must come from the locked copied track <Audio 1>.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve its exact timing, musical content, vocal content if present, dynamics, effects, and stereo image. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "CR Prompt Text"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_0-15.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}
