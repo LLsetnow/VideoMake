@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> is the androgynous person shown in <Picture 1>, wearing a fully covered white high-neck jumpsuit with clean geometric seams, short silver hair, a calm expressionless face, and cyan/magenta pulse blocks at the chest, wrists, and ankles. The white grid laboratory, circular aperture, transparent towers, scanlines, and restrained chromatic-aberration treatment are reusable visual traits. Preserve the identity and style; no nudity, no extra people, no logos, no readable text.
+<Audio 1> is the source audio from 00:30.000 to 00:45.000, directly reused 1:1 as the complete final audio track of this segment.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 electro-pop/chiptune sequence using <Picture 1> as a style-and-subject reference, not a literal boundary frame. Reuse <Audio 1> exactly. Make six shots with cuts at local 00:02.224, 00:04.752, 00:07.280, 00:09.808, and 00:12.336, corresponding to global 00:32.224, 00:34.752, 00:37.280, 00:39.808, and 00:42.336. This is the overload phase: the color system multiplies and then blows out to white.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - preserve the same person, costume, laboratory geometry, circular aperture, and cyan/magenta visual code while increasing only the observable pulse density and motion intensity.
+<Audio 1>: fully_copy - copy the complete 00:30.000-00:45.000 source signal 1:1 as this segment's final audio track.
+
+detailed_description:
+Continue the same clean motion-design world with a white/graphite base, cyan and magenta pulse blocks, thin measurement grids, transparent architecture, faint scanlines, subtle grain, and stable figure identity. The soundtrack is exclusively <Audio 1>; do not add any new sound. Cuts must land at the exact detected rhythm targets below.
+
+[Shot 1] The segment begins at global 00:30.000 on a top-down view of the grid floor. <Subject 1> stands at the center while the cyan and magenta blocks jitter in short, measurable steps around the circular mark. Use a slow downward pedestal with the figure locked to the center.
+
+[Shot 2] At 00:02.224, cut to a tight close-up of <Subject 1>'s face. A controlled RGB separation offsets the eyes and jaw by a few pixels; the head turns once toward camera while the expression stays neutral. Use a fast micro push in and stop cleanly on the beat.
+
+[Shot 3] At 00:04.752, cut to a wide laboratory view. Sharp geometric shards orbit <Subject 1> in a precise horizontal ring, alternating cyan and magenta on successive beats. Use a large-amplitude arc shot around the figure at fast speed, with no chaotic handheld shake.
+
+[Shot 4] At 00:07.280, cut to a side tracking view through a stack of colored shutter frames. <Subject 1> walks briskly through the frames as each one flashes once and becomes transparent. Truck right at fast speed while keeping the figure's torso centered and the grid perspective coherent.
+
+[Shot 5] At 00:09.808, cut to a macro view of the pulse blocks assembling into a staircase-like structure. The structure folds around a clean silhouette of <Subject 1>, then fractures into a few rectangular pieces on the next accent. Pull out quickly from macro detail to a medium view; keep edges crisp.
+
+[Shot 6] At 00:12.336, cut to <Subject 1> centered inside an intense cyan-and-magenta field filling the circular aperture. The field overexposes gradually to pure white by the exact end at local 00:15.000, leaving no visible text or title. Preserve <Audio 1> without interruption across the segment.
+
+overall_soundscape:
+All audible content is copied from <Audio 1>. Preserve it exactly and add no dialogue, voiceover, ambience, footsteps, foley, or generated effects.
+
+non_diegetic_music:
+Reuse <Audio 1> 1:1 from global 00:30.000 to 00:45.000, including its kick/snare/hi-hat pattern, synth-bell and arpeggiated accents, dynamics, stereo image, and exact beat timing. Do not generate replacement music.

@@ -1,0 +1,35 @@
+subject_definitions:
+<Subject 1> is the OpenHex brand lockup shown in <Picture 1>: a charcoal-black abstract open-hexagon emblem on the left, the exact wordmark "OpenHex" in a bold rounded sans-serif style, and the exact Chinese tagline "迷 境 智 塔 旗 下" beneath it with generous letter spacing. Preserve the emblem silhouette, wordmark spelling, capitalization, Chinese characters, horizontal alignment, proportions, black-on-warm-light-gray palette, and clean brand restraint.
+<Picture 1> is the user-provided OpenHex logo reference image, used as the visual identity and final lockup anchor. It is not a frame from the Bilibili source video.
+<Audio 1> is the extracted 00:00.000–00:15.000 segment of the previously supplied Bilibili video's audio, directly reused 1:1 as the complete final soundtrack. Preserve its exact timing, dynamics, processed vocal samples, stereo placement, and musical content.
+
+summary:
+[reference generation + audio reuse] Create an original 15-second 16:9 brand-ident animation for OpenHex using <Picture 1> and <Audio 1>. Preserve the supplied logo's emblem, exact "OpenHex" wordmark, exact Chinese tagline "迷 境 智 塔 旗 下", proportions, warm-light-gray background, and charcoal-black palette. Use <Audio 1> from 00:00.000 through 00:15.000 as the locked complete soundtrack. The source Bilibili video is used only for its audio; no source-video frames, captions, watermarks, or platform UI are input.
+
+retention_analysis:
+<Subject 1> (appears throughout [Shot 1]): partially_preserved - preserve the exact brand identity, emblem silhouette, wordmark spelling, Chinese tagline, monochrome palette, and horizontal lockup while allowing the mark to separate, rotate, scale, draw on, and reassemble during the animation.
+<Picture 1> (visual identity reference and final lockup anchor for [Shot 1]): fully_preserved - use the supplied logo as the authoritative reference for the final emblem, typography, spacing, proportions, and background treatment.
+<Audio 1>: fully_copy - reuse the exact 15-second source track as the complete final audio without replacement music, dialogue, ambience, foley, or independent sound effects.
+
+detailed_description:
+The target video is a 15-second 16:9 landscape OpenHex logo motion graphic on the same warm light-gray background as <Picture 1>. Use a restrained monochrome editorial identity: charcoal black, warm light gray, off-white, thin graphite construction lines, crisp anti-aliased 2D graphic edges, and subtle paper-like surface softness. Use one continuous shot with seamless graphic transformations, no hard cuts, no camera shake, no photorealism, no complex 3D space, no neon colors, no random symbols, no extra words, no invented glyphs, no watermark, and no distortion of the final logo. <Audio 1> begins on the first frame and remains unchanged through 00:15.000. Time every reveal, rotation, snap, and settle to the four-on-the-floor kick, clap/snare backbeats, syncopated hats, bass accents, chord stabs, and processed vocal-chop hits in <Audio 1>.
+
+[Shot 1] From 00:00.000 to 00:02.200, begin on a quiet warm-light-gray field. A thin charcoal construction line draws a horizontal baseline, then the open-hexagon emblem from <Picture 1> grows from a small central notch into its full symmetrical silhouette. The emblem gently breathes once on the first two kicks. Use a centered Static Shot with a very small Push In at slow speed; keep the background flat and uncluttered.
+
+From 00:02.200 to 00:04.600, the emblem separates into two clean black contour halves that open like a precise mechanical iris, then reconnect on a clap hit. The inner negative space stays smooth and recognizable as the same open-hexagon idea. Add only thin graphite guide lines that appear for one beat and disappear; do not add a new icon or geometric language unrelated to the logo.
+
+From 00:04.600 to 00:07.000, the emblem rotates exactly one quarter turn in the graphic plane, briefly becoming a centered abstract hexagonal seal. It then rotates back while the left-side emblem returns to its original orientation. Keep the motion flat and orthographic, with crisp edges and restrained elastic easing; no glossy 3D bevels, reflections, or realistic lighting.
+
+From 00:07.000 to 00:09.600, the exact wordmark "OpenHex" draws on from left to right beside the emblem, letter by letter as clean charcoal shapes. The capital O, capital H, and capital X must remain correctly spelled and proportioned. The wordmark settles into the same horizontal relationship and spacing shown in <Picture 1>; do not replace it with another font, translated text, alternate capitalization, or decorative lettering.
+
+From 00:09.600 to 00:11.800, the exact Chinese tagline "迷 境 智 塔 旗 下" appears beneath the wordmark through a restrained baseline reveal, one character position at a time, preserving the visible spaces and the original order. A thin graphite rule briefly aligns the tagline to the wordmark and then fades away. Do not add English subtitles, a slogan translation, punctuation, or any additional Chinese characters.
+
+From 00:11.800 to 00:13.800, the emblem, wordmark, and tagline perform one synchronized micro-scale pulse and a controlled elastic overshoot, then settle into the exact clean lockup of <Picture 1>. Keep all elements horizontally aligned, centered in the wide frame, and surrounded by generous negative space. This is a brand reveal, not a redesign.
+
+From 00:13.800 to 00:15.000, hold the finished OpenHex lockup clearly and motionlessly for the final musical phrase, then apply a very gentle fade to the warm-light-gray background at the final frame while preserving the final audio tail of <Audio 1>. Do not fade the logo early, crop the text, or introduce any closing message.
+
+overall_soundscape:
+N/A. Do not generate room tone, ambience, impacts, foley, transition sounds, or independent sound effects. All audible content must come from the directly copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve the high-energy modern UK House / future-house or tech-house character, four-on-the-floor kick, syncopated hats, snare/clap backbeats, deep synthesized bass, bright chord stabs, processed vocal hook, chopped stereo vocal fragments, exact dynamics, timing, and stereo image. Do not generate replacement music or additional vocals.

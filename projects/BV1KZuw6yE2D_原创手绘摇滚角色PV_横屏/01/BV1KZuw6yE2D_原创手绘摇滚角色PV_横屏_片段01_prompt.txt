@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the original single female vocalist shown in the generated image asset "原创角色_平面手绘_参考图-v2.png": a young adult woman with a softly rounded cute face, large bright expressive eyes, an asymmetrical ink-black bob, one electric-pink streak, a small cyan hair clip, a playful confident half-smile, a cream cropped utility jacket with flat magenta and cyan panels, a black sleeveless top, a red-orange narrow neck scarf, a charcoal pleated skirt with a subtle waveform hem, mismatched ankle boots, over-ear headphones around her neck, a small cassette-player charm, cable-like accessories, and a wired handheld microphone. Preserve her face, hair silhouette, clothing construction, limited palette, proportions, accessories, and single-character identity. The generated image is only a character and style reference, not a literal first frame or last frame.
+<Audio 1> is the first 12.000 seconds of the supplied source song, directly reused 1:1 as this segment's complete soundtrack, including the female Japanese vocal, distorted electric guitar, bass, drums, dynamics, effects, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 12-second 16:9 horizontal hand-drawn flat 2D character-PV segment starring <Subject 1>. Use the visual language learned from offline analysis of the source PV—black and warm paper-cream fields, hot magenta and cyan screen-print blocks, hard graphic cuts, oversized abstract glyph shapes, grid lines, silhouette echoes, halftone grain, and restrained RGB misregistration—but do not use any source-video frame or source-video input. Reuse <Audio 1> exactly from 00:00.000 to 00:12.000, with no generated replacement music or extra lyrics.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - keep the original vocalist's identity, face, asymmetrical black hair with electric-pink streak, cream-magenta-cyan jacket, red-orange scarf, waveform skirt, headphones, cassette charm, microphone, proportions, and flat hand-drawn construction consistent.
+<Audio 1>: fully_copy - reuse the complete supplied 12.000-second segment without time stretching, remixing, replacement vocals, or added sound effects.
+
+detailed_description:
+The target video is a 16:9 horizontal hand-drawn flat 2D music-PV with bold imperfect ink contours, limited screen-print color fills, warm paper texture, black negative space, hot magenta, cyan, red-orange, thin white rules, modular grids, halftone dots, and occasional red/cyan channel offsets. The visual rhythm is a clean graphic interpretation of high-energy Japanese rock: readable silhouette, fast planar transitions, and a small number of deliberate lyric-like marks. Do not reproduce any source-video character, frame, watermark, logo, or platform interface. <Audio 1> begins at the first frame and remains uninterrupted.
+
+[Shot 1] The video opens on a warm paper-cream field with <Subject 1> standing full body near center, microphone lowered in one hand and headphones touched with the other. A black rectangle slides behind her while cyan and magenta blocks snap into a rough poster grid. Her jacket panels, pink hair streak, scarf, headphones, and microphone remain crisp. The camera performs a slow Push In with small amplitude while her free hand lifts toward the headphones and a loose cable draws one clean curve across the lower frame.
+
+[Shot 2] At 00:03.100, the shot cuts to a waist-up three-quarter view. The background becomes near-black with a cream grid and two offset color silhouettes of <Subject 1> trailing one frame behind her. She turns her chin toward camera, taps the headphone cup once, and brings the microphone toward her mouth without visibly singing. A hot-magenta diagonal bar sweeps behind her at fast speed; the camera Trucks Right with small amplitude and then holds for a beat.
+
+[Shot 3] At 00:06.300, the shot cuts to a full-body side profile on a pale cream panel. The character takes two sharp performance steps from left to right; the waveform hem, scarf, hair streak, headphone cable, and jacket edges respond with simple, controlled hand-drawn motion. Cyan circles expand like audio meters while red and black paper strips cross the background. Use a fast Tracking Shot with small amplitude, then a one-beat Static Shot as she plants her feet.
+
+[Shot 4] At 00:09.300, the shot cuts to a close-up of her eyes, pink hair streak, and microphone grille, then pulls out to a centered half-body pose by 00:10.300. Three thin white rules and a small cyan waveform flash once around her silhouette; no readable lyrics appear yet. The camera Pulls Out with small amplitude at slow speed and holds the final graphic arrangement precisely through 00:12.000.
+
+overall_soundscape:
+All vocals, guitars, bass, drums, and source effects already present in <Audio 1> are preserved exactly. Do not add dialogue, foley, crowd noise, room tone, or newly generated impacts.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score from 00:00.000 through 00:12.000. Preserve its Japanese vocal, distorted guitar riff, driving bass, fast kick-and-snare pattern, dynamics, effects, and stereo image without generating replacement music.

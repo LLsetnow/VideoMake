@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the original single female vocalist shown in the generated image asset "原创角色_平面手绘_参考图-v2.png": a softly rounded cute face with large bright expressive eyes, asymmetrical ink-black bob with an electric-pink streak, cyan hair clip, cream jacket with magenta and cyan panels, black top, red-orange scarf, charcoal waveform skirt, mismatched boots, headphones, cassette charm, cable accessories, and wired microphone. Preserve her identity and flat hand-drawn graphic construction. The generated image is only a character/style reference, not a literal frame.
+<Audio 1> is the 12.000-second source-song segment from 00:24.000 to 00:36.000, directly reused 1:1 as this segment's complete soundtrack. It includes the dense rock section, the vocal, and the brief drop to exposed vocal and reverberant keyboard near the end.
+
+summary:
+[reference generation + audio reuse] Create a new 12-second 16:9 horizontal flat hand-drawn character-PV segment starring <Subject 1>. Build from aggressive black, cream, magenta, cyan, and red-orange collage graphics, then deliberately reduce motion when <Audio 1> drops near the final three seconds. The source video remains offline-only visual inspiration; do not upload it or use its frames. Reuse <Audio 1> exactly from 00:00.000 through 00:12.000 of this segment.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve the original vocalist's face, hair streak, jacket panels, scarf, waveform skirt, headphones, cassette charm, microphone, proportions, and hand-drawn flat style.
+<Audio 1>: fully_copy - directly copy this 12.000-second source segment, including the instrumental drop, with no time stretch or generated replacement.
+
+detailed_description:
+The target video is a 16:9 hand-drawn flat 2D music PV with a controlled arc from dense visual pressure to a sparse suspended moment. Use hard-edged paper planes, black negative space, cream grid paper, hot magenta/cyan overprint, red-orange accent marks, dry ink scratches, photocopy texture, and simple radial geometry. Keep <Subject 1> as the only character. Do not add captions, logos, or source-video frames. <Audio 1> is locked and remains the only soundtrack.
+
+[Shot 1] The video opens on a tight close-up of <Subject 1>'s eyes, pink hair streak, cyan clip, and headphone rim, printed in black with offset magenta and cyan edges. Behind her, a radial burst of cream lines expands from a dark center while small red-orange marks pulse with the rock beat. The camera Pushes In with small amplitude at fast speed, then cuts on the visual peak.
+
+[Shot 2] At 00:03.000, the shot cuts to a wide horizontal stage-like collage. <Subject 1> stands full body on a black floor strip, microphone raised, while oversized cream paper rectangles and cyan rings rotate in layered planes. Her skirt waveform, scarf, hair, and headphone cable move in short, rhythmic gestures. Use a large-amplitude Arc Shot at fast speed with a mechanical lateral move and counter-pan; keep her silhouette readable.
+
+[Shot 3] At 00:06.700, the shot cuts to a fragmented three-quarter portrait. Four rectangular crops of <Subject 1>'s face, microphone, hand, and skirt overlap with thin black gaps. The crops slide a few pixels out of registration, then snap together as magenta and cyan edges align. The camera performs a quick Push In followed by a short Static Shot. Keep the motion graphic and planar, never photorealistic.
+
+[Shot 4] At 00:09.000, when <Audio 1> reaches its brief drop toward exposed vocal and reverberant keyboard, the image abruptly clears to a pale cream field with only a small centered half-body <Subject 1>, her microphone lowered and her eyes turned down. The radial lines stop, the color offsets disappear, and a single thin black line slowly draws beneath her. Use a very slow Pull Out with small amplitude and hold this quiet suspended arrangement until 00:12.000, with no new graphic after the hold begins.
+
+overall_soundscape:
+Keep every vocal, guitar, bass, drum, keyboard, and source effect in <Audio 1> unchanged. During the final drop, do not add room tone, breath, footsteps, or new foley; the visual reduction must not alter the copied audio.
+
+non_diegetic_music:
+<Audio 1> is directly reused from 00:00.000 to 00:12.000, preserving the dense distorted-guitar rock arrangement and its brief late drop to exposed female vocal with reverberant keyboard. Do not generate replacement music or a transition effect.

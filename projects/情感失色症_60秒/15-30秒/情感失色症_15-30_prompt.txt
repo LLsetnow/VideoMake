@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> is the androgynous person shown in <Picture 1>, wearing a fully covered white high-neck jumpsuit with clean geometric seams, short silver hair, a calm expressionless face, and small cyan and magenta pulse blocks at the chest, wrists, and ankles. The sterile white grid laboratory, circular aperture, transparent geometric towers, and restrained scanline/chromatic-aberration treatment are reusable visual traits. Preserve this identity and style; no nudity, no extra people, no logos, no readable text.
+<Audio 1> is the source audio from 00:15.000 to 00:30.000, directly reused 1:1 as the target video's complete final audio track for this segment, including exact timing, dynamics, beat placement, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 electro-pop/chiptune visual sequence using <Picture 1> as a style-and-subject reference, not a literal boundary frame. Reuse <Audio 1> exactly. Use six shots with cuts at local 00:02.077, 00:04.605, 00:07.752, 00:10.280, and 00:12.808, corresponding to global 00:17.077, 00:19.605, 00:22.752, 00:25.280, and 00:27.808. Continue the figure's colorless baseline into a first controlled color release.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - preserve the same figure, jumpsuit, laboratory geometry, circular aperture, transparent towers, and pulse-block identity while allowing the color to spread temporarily as the story advances.
+<Audio 1>: fully_copy - copy the complete 00:15.000-00:30.000 source signal 1:1 as this segment's final audio track.
+
+detailed_description:
+Keep the visual grammar continuous with the previous segment: sterile white and graphite surfaces, thin grid lines, transparent blocks, sharp cyan/magenta accents, faint scanlines, controlled film grain, and stable figure identity. The only soundtrack is <Audio 1>; its original audio must remain unchanged. All cuts below are exact beat-synchronized editorial targets.
+
+[Shot 1] The segment begins at global 00:15.000 in a wide side view of the same laboratory. <Subject 1> is still, then raises one hand as a thin black grid line sweeps across the room; the first cyan pulse leaves a short luminous trail on the floor. Use a slow lateral truck that reveals the circular aperture behind the figure.
+
+[Shot 2] At 00:02.077, cut to a low-angle full-body view. <Subject 1> walks across the reflective floor in three measured steps; cyan and magenta bands expand from the ankles and wrists on the beat. Push in with small amplitude at medium speed, keeping the reflection aligned with the body.
+
+[Shot 3] At 00:04.605, cut to a close-up of the chest seam and pulse blocks. A three-dimensional cyan cube grows from the chest mark, rotates once, and is crossed by a magenta line. Use a precise rack focus from the seam to the cube and a tiny clockwise arc; the background grid stays sharp enough to track alignment.
+
+[Shot 4] At 00:07.752, cut to a wide frontal view of the laboratory. <Subject 1> moves through a sequence of transparent rectangular frames; each frame leaves one clean motion echo behind, never a second person. Track backward at steady speed while the room briefly takes on cyan and magenta reflections.
+
+[Shot 5] At 00:10.280, cut to a monochrome stairwell made from the same grid material. <Subject 1> climbs rapidly; every second step transfers a cyan or magenta line onto the wall. Use a fast upward tracking shot with small amplitude and crisp hard-edged shadows.
+
+[Shot 6] At 00:12.808, cut to a centered full-body view inside the circular aperture. <Subject 1> stops in a controlled pose as all color disappears except one thin magenta line across the chest. Hold the symmetry until the segment ends at local 00:15.000, maintaining continuous <Audio 1> across the segment boundary.
+
+overall_soundscape:
+Preserve every audible layer already present in <Audio 1> and add nothing. No dialogue, no voiceover, no footsteps, no room tone, and no generated foley or effects.
+
+non_diegetic_music:
+Reuse <Audio 1> 1:1 from global 00:15.000 to 00:30.000. Preserve its clean electronic-pop/chiptune production, four-on-the-floor rhythm, short synth fills, bassline, stereo image, and exact beat placement. Do not generate replacement music.

@@ -1,0 +1,31 @@
+subject_definitions:
+<Subject 1> is the androgynous person shown in <Picture 1>, wearing a fully covered white high-neck jumpsuit with clean geometric seams, short silver hair, a calm expressionless face, and small cyan and magenta pulse blocks at the chest, wrists, and ankles. The sterile white grid laboratory, circular aperture, transparent geometric towers, and restrained scanline/chromatic-aberration treatment are also part of <Subject 1>'s reusable visual language. Preserve this identity and style; no nudity, no extra people, no logos, no readable text.
+<Audio 1> is the source audio from 00:00.000 to 00:15.000, directly reused 1:1 as the target video's complete final audio track, including its exact stereo mix, beat placement, dynamics, and timing.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 electro-pop/chiptune visual sequence using <Picture 1> as a style-and-subject reference, not as a literal first or last frame. Reuse <Audio 1> exactly from start to finish. Make six clearly observable shots with cuts at 00:03.179, 00:05.227, 00:07.445, 00:10.283, and 00:12.032; each cut must land on the corresponding detected beat or onset. The emotional arc is a colorless baseline beginning to respond to rhythm.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - preserve the same figure, white jumpsuit, sterile grid laboratory, circular aperture, transparent towers, pulse-block motif, and restrained electronic graphic treatment across every shot.
+<Audio 1>: fully_copy - copy the complete 00:00.000-00:15.000 source signal 1:1 as the final audio track of this segment.
+
+detailed_description:
+The target is a clean cinematic motion-design music video: a nearly colorless white laboratory, a centered fully covered figure, precise geometric overlays, cyan/magenta pulse blocks, faint scanlines, subtle film grain, and restrained RGB offset. The source soundtrack is the only music and must remain untouched; do not generate vocals, dialogue, or extra sound effects. The cut times below are exact editorial targets synchronized to <Audio 1>.
+
+[Shot 1] The video opens on a wide centered view of the white grid laboratory. <Subject 1> stands motionless on the circular floor mark inside the large aperture; only the chest block emits one small cyan pulse at the opening chime. The camera holds a static symmetrical composition with a very slow push in. Keep the room predominantly white and graphite.
+
+[Shot 2] At 00:03.179, cut to a side-profile tracking view in a narrow grid corridor. <Subject 1> takes two precise steps; a cyan block advances along the left wall while a magenta block answers on the right. Track laterally with small amplitude at normal speed, keeping the figure crisp against transparent towers.
+
+[Shot 3] At 00:05.227, cut to a close view of <Subject 1>'s gloved hands touching a transparent glass plane. Each touch creates a rectangular cyan or magenta registration mark exactly on a short percussive accent. Pan quickly from one hand to the other, then settle before the next cut; keep the face out of frame.
+
+[Shot 4] At 00:07.445, cut to an overhead view of the circular aperture. <Subject 1> rotates halfway in place while the pulse blocks detach, orbit once, and snap back to the chest and ankles. Pull out with medium amplitude at fast speed, maintaining the precise grid geometry.
+
+[Shot 5] At 00:10.283, cut to a wide corridor filled with transparent rectangular towers. <Subject 1> moves briskly through the center as cyan and magenta blocks multiply in short, clean bursts around the path. Use a fast forward tracking shot; the color remains controlled and never becomes a soft blur.
+
+[Shot 6] At 00:12.032, cut to a centered medium close-up of <Subject 1>'s face and upper torso. The pulse blocks flare cyan and magenta for one rhythmic phrase, then drain back to pale gray and white as the segment ends at 00:15.000. Use a slow push in and finish on a still, expressionless frame. Preserve <Audio 1> continuously across every cut.
+
+overall_soundscape:
+All audible content comes from the directly copied <Audio 1>. Preserve its clean electronic mix and do not add dialogue, breathing, footsteps, room tone, foley, or generated effects.
+
+non_diegetic_music:
+The complete source track in <Audio 1> is directly reused 1:1 from 00:00.000 to 00:15.000. Preserve the 95.34 BPM pulse, four-on-the-floor kick pattern, synth-bell opening, piano-like synth motif, bassline, stereo balance, and every beat/onset used for the cuts. Do not generate replacement music.

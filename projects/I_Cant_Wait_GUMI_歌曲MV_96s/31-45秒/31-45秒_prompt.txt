@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 00:30.000–00:45.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including its breakdown, processed vocal, reverberant synth lead, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 dreamy break section starring <Subject 1>. Begin with the drum-and-bass drop suggested by <Audio 1>, then let the visual space slowly reassemble as the musical energy returns. Use <Picture 1> for identity and graphic language; copy <Audio 1> exactly.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - preserve the character, pastel cyan/purple palette, glass architecture, indigo outline, and star glints while moving into a soft dream space.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve identity, hair, costume, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied breakdown segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video is a floating hand-drawn dream interlude in the visual language of <Picture 1>: pale cyan atmosphere, lavender glass, soft white bloom, thin indigo contours, sparse star flares, slow suspended movement, and a deliberate transition from near-stillness back to dance-pop energy. No readable text or added music.
+
+[Shot 1] The scene opens on <Subject 1> standing inside a vast transparent glass chamber above a pale cyan cloud layer. The frame is wide and quiet, with her small centered figure reflected multiple times in the floor. As the breakdown begins, the camera holds almost static with only a very slow push in. Her hair tips and bag strap drift as if in zero gravity; she closes her eyes and lowers her raised hand.
+
+[Shot 2] At 00:04.900, cut to an extreme close-up of the orange hair clip, green bangs, and one eye. A soft lavender light passes across the frame like a saxophone-shaped ribbon, then breaks into tiny square particles. <Subject 1> opens her eye and turns slightly toward the light. Use a slow tilt down, keeping the drawing clean and avoiding facial distortion.
+
+[Shot 3] At 00:08.900, cut to a medium shot. <Subject 1> floats one step above the glass floor while pale geometric windows unfold behind her. The drum and bass begin returning; she lifts both hands, the yellow vest and green skirt settle, and four star glints appear one by one on the incoming beats. Use a gentle arc shot with small amplitude.
+
+[Shot 4] At 00:12.500, cut wide. The chamber transforms into a bright cyan bridge, with lavender rails and warm yellow light lines converging toward the horizon. <Subject 1> lands, takes one quick step forward, and reaches toward the camera as a thin orange ring expands behind her. End at 00:15.000 on the ring and her forward-facing pose. <Audio 1> remains uninterrupted and unchanged.
+
+overall_soundscape:
+All vocals, breakdown ambience, synth lead, and existing effects in <Audio 1> are preserved through direct audio reuse. Do not generate additional room tone, foley, dialogue, or new effects.
+
+non_diegetic_music:
+The complete supplied 00:30.000–00:45.000 segment from <Audio 1> is directly reused 1:1, including the drum-and-bass drop, reverberant lead, return of the beat, dynamics, timing, and stereo image. Do not generate replacement music.

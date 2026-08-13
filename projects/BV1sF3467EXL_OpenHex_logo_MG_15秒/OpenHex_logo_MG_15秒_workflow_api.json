@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/BV1sF3467EXL_OpenHex_logo_0-15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the OpenHex brand lockup shown in <Picture 1>: a charcoal-black abstract open-hexagon emblem on the left, the exact wordmark \"OpenHex\" in a bold rounded sans-serif style, and the exact Chinese tagline \"迷 境 智 塔 旗 下\" beneath it with generous letter spacing. Preserve the emblem silhouette, wordmark spelling, capitalization, Chinese characters, horizontal alignment, proportions, black-on-warm-light-gray palette, and clean brand restraint.\n<Picture 1> is the user-provided OpenHex logo reference image, used as the visual identity and final lockup anchor. It is not a frame from the Bilibili source video.\n<Audio 1> is the extracted 00:00.000–00:15.000 segment of the previously supplied Bilibili video's audio, directly reused 1:1 as the complete final soundtrack. Preserve its exact timing, dynamics, processed vocal samples, stereo placement, and musical content.\n\nsummary:\n[reference generation + audio reuse] Create an original 15-second 16:9 brand-ident animation for OpenHex using <Picture 1> and <Audio 1>. Preserve the supplied logo's emblem, exact \"OpenHex\" wordmark, exact Chinese tagline \"迷 境 智 塔 旗 下\", proportions, warm-light-gray background, and charcoal-black palette. Use <Audio 1> from 00:00.000 through 00:15.000 as the locked complete soundtrack. The source Bilibili video is used only for its audio; no source-video frames, captions, watermarks, or platform UI are input.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): partially_preserved - preserve the exact brand identity, emblem silhouette, wordmark spelling, Chinese tagline, monochrome palette, and horizontal lockup while allowing the mark to separate, rotate, scale, draw on, and reassemble during the animation.\n<Picture 1> (visual identity reference and final lockup anchor for [Shot 1]): fully_preserved - use the supplied logo as the authoritative reference for the final emblem, typography, spacing, proportions, and background treatment.\n<Audio 1>: fully_copy - reuse the exact 15-second source track as the complete final audio without replacement music, dialogue, ambience, foley, or independent sound effects.\n\ndetailed_description:\nThe target video is a 15-second 16:9 landscape OpenHex logo motion graphic on the same warm light-gray background as <Picture 1>. Use a restrained monochrome editorial identity: charcoal black, warm light gray, off-white, thin graphite construction lines, crisp anti-aliased 2D graphic edges, and subtle paper-like surface softness. Use one continuous shot with seamless graphic transformations, no hard cuts, no camera shake, no photorealism, no complex 3D space, no neon colors, no random symbols, no extra words, no invented glyphs, no watermark, and no distortion of the final logo. <Audio 1> begins on the first frame and remains unchanged through 00:15.000. Time every reveal, rotation, snap, and settle to the four-on-the-floor kick, clap/snare backbeats, syncopated hats, bass accents, chord stabs, and processed vocal-chop hits in <Audio 1>.\n\n[Shot 1] From 00:00.000 to 00:02.200, begin on a quiet warm-light-gray field. A thin charcoal construction line draws a horizontal baseline, then the open-hexagon emblem from <Picture 1> grows from a small central notch into its full symmetrical silhouette. The emblem gently breathes once on the first two kicks. Use a centered Static Shot with a very small Push In at slow speed; keep the background flat and uncluttered.\n\nFrom 00:02.200 to 00:04.600, the emblem separates into two clean black contour halves that open like a precise mechanical iris, then reconnect on a clap hit. The inner negative space stays smooth and recognizable as the same open-hexagon idea. Add only thin graphite guide lines that appear for one beat and disappear; do not add a new icon or geometric language unrelated to the logo.\n\nFrom 00:04.600 to 00:07.000, the emblem rotates exactly one quarter turn in the graphic plane, briefly becoming a centered abstract hexagonal seal. It then rotates back while the left-side emblem returns to its original orientation. Keep the motion flat and orthographic, with crisp edges and restrained elastic easing; no glossy 3D bevels, reflections, or realistic lighting.\n\nFrom 00:07.000 to 00:09.600, the exact wordmark \"OpenHex\" draws on from left to right beside the emblem, letter by letter as clean charcoal shapes. The capital O, capital H, and capital X must remain correctly spelled and proportioned. The wordmark settles into the same horizontal relationship and spacing shown in <Picture 1>; do not replace it with another font, translated text, alternate capitalization, or decorative lettering.\n\nFrom 00:09.600 to 00:11.800, the exact Chinese tagline \"迷 境 智 塔 旗 下\" appears beneath the wordmark through a restrained baseline reveal, one character position at a time, preserving the visible spaces and the original order. A thin graphite rule briefly aligns the tagline to the wordmark and then fades away. Do not add English subtitles, a slogan translation, punctuation, or any additional Chinese characters.\n\nFrom 00:11.800 to 00:13.800, the emblem, wordmark, and tagline perform one synchronized micro-scale pulse and a controlled elastic overshoot, then settle into the exact clean lockup of <Picture 1>. Keep all elements horizontally aligned, centered in the wide frame, and surrounded by generous negative space. This is a brand reveal, not a redesign.\n\nFrom 00:13.800 to 00:15.000, hold the finished OpenHex lockup clearly and motionlessly for the final musical phrase, then apply a very gentle fade to the warm-light-gray background at the final frame while preserving the final audio tail of <Audio 1>. Do not fade the logo early, crop the text, or introduce any closing message.\n\noverall_soundscape:\nN/A. Do not generate room tone, ambience, impacts, foley, transition sounds, or independent sound effects. All audible content must come from the directly copied <Audio 1> track.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve the high-energy modern UK House / future-house or tech-house character, four-on-the-floor kick, syncopated hats, snare/clap backbeats, deep synthesized bass, bright chord stabs, processed vocal hook, chopped stereo vocal fragments, exact dynamics, timing, and stereo image. Do not generate replacement music or additional vocals.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "OpenHex_logo_reference.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "lock_source_0-15.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

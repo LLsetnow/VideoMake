@@ -1,0 +1,4 @@
+interface:
+  display_name: "Beat-Locked Redundant Video Edit"
+  short_description: "Build frame-accurate beat-synced edits"
+  default_prompt: "Use $beat-locked-redundant-video-edit to build a frame-accurate beat-synced edit from generated video assets and locked source audio."

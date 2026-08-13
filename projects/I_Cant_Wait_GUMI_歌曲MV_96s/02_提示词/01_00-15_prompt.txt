@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 00:00.000–00:15.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the four-on-the-floor beat, processed female vocal, synths, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 hand-drawn anime music-video segment starring <Subject 1>. Use the album cover only as a visual reference for character identity and pastel cyan/purple graphic language. Reuse <Audio 1> exactly from beginning to end, with no new dialogue, singing, replacement music, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - preserve its character design, cyan/purple palette, glass-transit setting, thick indigo linework, and star glints while creating new scenes.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve her identity, hair, costume, bag, colors, proportions, and outline consistency.
+<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video is a bright hand-drawn 2D anime music-video opening with flat pastel fills, thick indigo outlines, cyan glass reflections, pale lavender shadows, small star-shaped lens flares, subtle paper grain, and precise four-beat editing. Keep the animation clean and readable; do not add logos, subtitles, or platform UI.
+
+[Shot 1] The scene opens on a glass pedestrian bridge above a soft cyan city. <Subject 1> stands centered in a medium-full shot, one hand raised in a small rhythmic gesture and one eye winking exactly as suggested by <Picture 1>. Pale window frames form a geometric grid behind her. On the first bright beat she shifts her weight, her bag swings once, and tiny star glints appear on the glass. Use a mostly static camera with a gentle push in and a slight handheld pulse.
+
+[Shot 2] At 00:04.600, the camera cuts to a side tracking shot. <Subject 1> walks from left to right through the bridge, her green hair and vest edges moving with a light breeze. The city outside becomes simplified cyan and lavender blocks with no readable text. Her hands mark the beat in two compact gestures while the camera tracks at normal speed.
+
+[Shot 3] At 00:08.700, cut to a close-up of <Subject 1>'s face and upper torso. She turns toward camera, blinks once, then smiles and points past the lens. A turquoise reflection sweeps across her eyes, followed by a small warm-yellow flare on the orange hair clip. Keep the linework crisp and preserve the wink-like friendly expression without lip-syncing or new speech; the vocal remains only inside <Audio 1>.
+
+[Shot 4] At 00:12.200, cut wide to the end of the bridge. <Subject 1> moves toward a glowing cyan doorway, then stops and reaches one hand back toward the camera as the bridge lines converge behind her. Colored paper-like ribbons briefly trace her movement and dissolve into the cyan sky. End on her held reaching pose at 00:15.000. <Audio 1> continues uninterrupted across every cut and is copied unchanged.
+
+overall_soundscape:
+All vocals, beat, synths, and existing effects in <Audio 1> are preserved through the copied audio track. Do not generate additional foley, dialogue, crowd noise, or environmental sound.
+
+non_diegetic_music:
+The complete supplied 00:00.000–00:15.000 music segment from <Audio 1> is directly reused 1:1, preserving its tempo, vocal content, dynamics, beat placement, and stereo image. Do not generate replacement music.

@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the androgynous person shown in <Picture 1>, wearing a fully covered white high-neck jumpsuit with clean geometric seams, short silver hair, a calm expressionless face, and small cyan and magenta pulse blocks at the chest, wrists, and ankles. The sterile white grid laboratory, circular aperture, transparent geometric towers, restrained scanlines, and slight chromatic aberration are reusable visual traits. Preserve this identity and style; no nudity, no extra people, no logos, no readable text.
+<Audio 1> is the source audio for global 54.176 to 56.693, directly reused 1:1 as the complete soundtrack of this single-shot take.
+
+summary:
+[reference generation + audio reuse] Create a new 2.517-second 16:9 single-shot electro-pop/chiptune visual take using <Picture 1> as a style-and-subject reference, not a literal boundary frame. Reuse <Audio 1> exactly. This take is one editorial shot in the 60-second sequence and will be cut at its exact global boundaries after rendering.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - preserve the same figure, jumpsuit, laboratory geometry, circular aperture, transparent towers, pulse-block code, and restrained electronic graphic treatment.
+<Audio 1>: fully_copy - copy the corresponding source signal 1:1 as this take's complete audio track.
+
+detailed_description:
+The take uses a clean cinematic motion-design language: white and graphite base, cyan/magenta pulse blocks, precise grid lines, transparent geometry, faint scanlines, subtle film grain, and stable figure identity. Do not add any cut inside this take, any dialogue, any title, or any new sound. <Audio 1> begins immediately and stays untouched.
+
+[Shot 1] Cut to a frontal medium shot. The figure places one palm on a transparent glass plane; a thin magenta line travels through the grid and fades before the frame edge. Use a static composition with a small push in and no facial expression change.
+
+overall_soundscape:
+All audible content comes from directly copied <Audio 1>. Add no dialogue, voiceover, ambience, footsteps, foley, or generated effects.
+
+non_diegetic_music:
+Reuse <Audio 1> 1:1 for this take, preserving the source electro-pop/chiptune beat, synth motif, bassline, dynamics, stereo balance, and exact timing. Do not generate replacement music.

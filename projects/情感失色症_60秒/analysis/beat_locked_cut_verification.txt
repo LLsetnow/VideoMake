@@ -1,0 +1,32 @@
+情感失色症精准卡点剪辑核验
+规则：每个鼓点区间先量化到24fps整数帧，再使用素材源帧硬切；音频直接来自原始MP3。
+
+分段核验
+edit_01 A019 expected=76 actual=76 expected_duration=3.166667 actual_duration=3.166667 ok=True
+edit_02 A020 expected=49 actual=49 expected_duration=2.041667 actual_duration=2.041667 ok=True
+edit_03 A029 expected=54 actual=54 expected_duration=2.250000 actual_duration=2.250000 ok=True
+edit_04 A031 expected=68 actual=68 expected_duration=2.833333 actual_duration=2.833333 ok=True
+edit_05 A002 expected=42 actual=42 expected_duration=1.750000 actual_duration=1.750000 ok=True
+edit_06 A006 expected=71 actual=71 expected_duration=2.958333 actual_duration=2.958333 ok=True
+edit_07 A024 expected=50 actual=50 expected_duration=2.083333 actual_duration=2.083333 ok=True
+edit_08 A012 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_09 A015 expected=75 actual=75 expected_duration=3.125000 actual_duration=3.125000 ok=True
+edit_10 A017 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_11 A018 expected=60 actual=60 expected_duration=2.500000 actual_duration=2.500000 ok=True
+edit_12 A028 expected=53 actual=53 expected_duration=2.208333 actual_duration=2.208333 ok=True
+edit_13 A033 expected=53 actual=53 expected_duration=2.208333 actual_duration=2.208000 ok=True
+edit_14 A034 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_15 A016 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_16 A001 expected=60 actual=60 expected_duration=2.500000 actual_duration=2.500000 ok=True
+edit_17 A023 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_18 A015 expected=64 actual=64 expected_duration=2.666667 actual_duration=2.666667 ok=True
+edit_19 A006 expected=73 actual=73 expected_duration=3.041667 actual_duration=3.041667 ok=True
+edit_20 A016 expected=75 actual=75 expected_duration=3.125000 actual_duration=3.125000 ok=True
+edit_21 A034 expected=72 actual=72 expected_duration=3.000000 actual_duration=3.000000 ok=True
+edit_22 A017 expected=61 actual=61 expected_duration=2.541667 actual_duration=2.541667 ok=True
+edit_23 A018 expected=79 actual=79 expected_duration=3.291667 actual_duration=3.291667 ok=True
+
+最终文件
+path=/Users/apple/Documents/VideoMake/projects/情感失色症_60秒/output/情感失色症_60秒_beat_locked.mp4
+video=1280x720 fps=24/1 frames=1440 duration=60.000000
+all_segments_ok=True
