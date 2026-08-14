@@ -51,9 +51,9 @@
   - 12 个段内分镜切点已量化到节拍网格（完整 164 点网格，`analysis/v3_beats_full_grid.txt`）：
     S1: 4.27/7.70, S2: 15.99/20.07, S3: 28.82/33.02, S4: 42.46/46.80, S5: 55.01/58.82, S6: 67.28/71.36（段内时间见 `analysis/quantized_inner_cuts.json`）
 - 量化依据：H3 模型对提示词时间戳为近似执行（实测偏移 ±0.3~0.8s），v2 通过二次剪辑把每个检测到的段内切点移动到最近打击点（偏移 ≤0.21s），重拼接帧数不变（305/266/343/314/288/318）
-- 剪辑中间产物：`analysis/beat_edit/`（子段 a/b/c、段内拼接、video_only_v2）
+- 剪辑中间产物（`analysis/trimmed/`、`analysis/beat_edit/` 视频部分）已按 `docs/project-cleanup.md` 分级清理（P3 移入回收站，2026-08-14）；帧级时间轴保留在 `analysis/beat_edit/frame_plan.json`，切点量化依据见 `analysis/quantized_inner_cuts.json`
 
 ## 复现
 1. `opc aigate --start --create --sku "4090D-48G" --area "华东一区" --image-id 1138522483051855872 --image-type 3`
 2. 对每段：`python3 analysis/aigate_helper.py submit <实例URL> <段>/S{i}_workflow_api.json character/波普艺术/微信图片_20260811163716_103_80.png <段>/lock_source_S{i}.wav <段>/output MiniMaxH3/weirdgirl_beat_S{i}`
-3. 按本文件"剪辑"节裁切拼接（`analysis/trimmed/`）
+3. 按本文件"剪辑"节裁切拼接（各段先按目标帧数 305/266/343/314/288/318 用 `-frames:v` 裁切，段内切点按 `analysis/quantized_inner_cuts.json` 拆分后 concat；中间文件已清理，需重跑时按此重建）

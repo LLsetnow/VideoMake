@@ -1,0 +1,58 @@
+项目路径|文件路径|级别|大小|理由
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/output/波普艺术_weird-girl_卡点视频_76s_v1.mp4|P2|69053310|旧版成片(当前交付版为 v2)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/list.txt|P3|690|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S1_trim.mp4|P3|13396113|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S2_trim.mp4|P3|11364114|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S3_trim.mp4|P3|12887502|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S4_trim.mp4|P3|10816985|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S5_trim.mp4|P3|9713938|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S6_trim.mp4|P3|12262185|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/video_only_76.416.mp4|P3|66531394|拼接中间产物(v1 流程)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/all_list.txt|P3|702|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_a.mp4|P3|5193754|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_b.mp4|P3|3285272|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_beat.mp4|P3|12444586|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_c.mp4|P3|4793191|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_a.mp4|P3|4470758|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_b.mp4|P3|4164869|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_beat.mp4|P3|10729691|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_c.mp4|P3|2845261|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_a.mp4|P3|4486550|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_b.mp4|P3|4294425|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_beat.mp4|P3|11956720|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_c.mp4|P3|4095296|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_a.mp4|P3|2883143|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_b.mp4|P3|5018110|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_beat.mp4|P3|10254759|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_c.mp4|P3|2984549|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_a.mp4|P3|2429556|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_b.mp4|P3|2946241|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_beat.mp4|P3|8947712|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_c.mp4|P3|4343593|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_a.mp4|P3|3504795|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_b.mp4|P3|3720628|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_beat.mp4|P3|11576789|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_c.mp4|P3|5047315|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_list.txt|P3|342|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/video_only_v2.mp4|P3|63367790|段内重拼接中间产物
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/qa/cut_frames_01.jpg|P2|200520|v1 逐切点QA图(最终联系表已保留)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/qa/cut_frames_02.jpg|P2|92454|v1 逐切点QA图(最终联系表已保留)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/qa/cut_frames_03.jpg|P2|108801|v1 逐切点QA图(最终联系表已保留)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/qa/cut_frames_04.jpg|P2|108697|v1 逐切点QA图(最终联系表已保留)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/qa/cut_frames_05.jpg|P2|49582|v1 逐切点QA图(最终联系表已保留)
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/1_0-12.725秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/2_12.725-23.812秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/3_23.812-38.092秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/4_38.092-51.177秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/5_51.177-63.158秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/6_63.158-76.416秒/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/.DS_Store|P4|8196|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_卡点视频/analysis/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_卡点视频|projects/波普艺术_weird-girl_主题曲/.DS_Store|P4|6148|系统元数据
+projects/波普艺术_weird-girl_主题曲|projects/波普艺术_weird-girl_主题曲/output/weird-girl_主题曲_复古另类少女流行_v1.mp3|P2|680740|旧版音乐(21s 初版)
