@@ -56,7 +56,7 @@ Inspect a labeled contact sheet when the detector may have confused camera motio
 
 ### 3. Build the beat master timeline
 
-Use existing `opc audio librosa` output when present; otherwise run the project's approved audio analysis first. Select stronger beat/onset candidates and preserve natural paragraph endings. A workflow or generation-segment boundary is itself a visual cut, so it must land on an approved internal cut, not automatically at 15 seconds.
+Use existing `opc music beats` output when present; otherwise run the project's approved audio analysis first. Select stronger beat/onset candidates and preserve natural paragraph endings. A workflow or generation-segment boundary is itself a visual cut, so it must land on an approved internal cut, not automatically at 15 seconds.
 
 Convert every target boundary to the verified FPS before rendering:
 

@@ -66,6 +66,8 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | H3 Skill、提示词和 T8 节点 | [`docs/h3.md`](docs/h3.md) |
 | AIGate 实例、提交、队列和生命周期 | [`docs/aigate.md`](docs/aigate.md) |
 | 剪辑、核验、交付和复现 | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
+| 项目中间产物分级清理 | [`docs/project-cleanup.md`](docs/project-cleanup.md) |
+| 视频发布流程 | [`docs/publishing.md`](docs/publishing.md) |
 | 文档目录约定 | [`docs/AGENTS.md`](docs/AGENTS.md) |
 
 ## 主要目录分工
@@ -81,7 +83,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 
 ## 任务完成语音提示
 
-- 如需用语音提示用户当前任务已完成，可以使用 OPC TTS 合成简短提示音：`mkdir -p temp && opc tts "当前任务已完成" -o temp/task-complete.wav`。
+- 如需用语音提示用户当前任务已完成，可以使用 OPC TTS 合成简短提示音：`mkdir -p temp && opc speech tts "当前任务已完成" -o temp/task-complete.wav`。
 - 合成的音频必须放在仓库根目录的 `temp/` 下；它是临时文件，不得替代项目输出或写入长期素材目录。
 - 合成成功后可以使用 `afplay temp/task-complete.wav` 播放。使用前台命令，待命令返回后再将播放视为完成；`afplay` 使用 macOS 当前默认音频输出设备，并应遵守用户对播放设备的明确要求。
 

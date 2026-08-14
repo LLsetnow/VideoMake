@@ -17,31 +17,75 @@
 
 下载媒体后先检查完整性和格式，再归档到 `videoRef/` 或 `audio/`，不要把下载目录当生成结果目录。cookies 可通过命令参数临时提供，但不得复制到项目、提交版本库或写入说明文件。
 
-## `opc` 下载示例
+## `opc media download` 下载示例
+
+`opc media download` 根据 URL 自动识别平台（bilibili.com / b23.tv / douyin.com / x.com / twitter.com / music.163.com），统一入口下载视频或音频。
 
 ```bash
 # 视频
-opc bili "<Bilibili_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
-opc douyin "<Douyin_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
-opc x "<X_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
+opc media download "<Bilibili_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
+opc media download "<Douyin_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
+opc media download "<X_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
 
 # 音频
-opc bili "<Bilibili_URL>" --audio-only -o "/Users/apple/Documents/VideoMake/audio"
-opc music "<Netease_URL>" -o "/Users/apple/Documents/VideoMake/audio" --bitrate 320
+opc media download "<Bilibili_URL>" --audio-only -o "/Users/apple/Documents/VideoMake/audio"
+opc media download "<Netease_URL>" -o "/Users/apple/Documents/VideoMake/audio" --bitrate 320
+
+# B站/抖音/X 视频内容总结（下载 → ASR → 总结）
+opc media download "<视频_URL>" --summarize -o "projects/<项目名>/analysis"
 ```
 
-需要完整参数时先运行 `opc bili --help`、`opc douyin --help`、`opc x --help` 或 `opc music --help`。
+需要完整参数时先运行 `opc media download --help`。
 
-## `opc audio` 分析
+## `opc music generate` 生成音乐
 
-- `opc audio librosa <音频文件>`：检测鼓点/节拍，用于安排镜头切换、动作节奏和片段拆分。
-- `opc audio <音频文件>`：分析曲风、内容和听感，用于脚本、剪辑和 H3 提示词。
+可以使用 `opc music generate` 调用 MiniMax Music 生成歌曲或纯音乐。使用 `--provider minimax` 指定 MiniMax，并将生成结果保存到 `audio/` 或当前项目的音频目录；API Key 保存在 OPC 的本地配置中，不要写入 VideoMake。
 
 ```bash
-opc audio librosa "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
+# MiniMax 生成纯音乐
+opc music generate --provider minimax \
+  "电影感钢琴与弦乐，逐渐推进，温暖收束" \
+  --model music-3.0-free \
+  --instrumental \
+  -o "/Users/apple/Documents/VideoMake/audio/minimax-instrumental.mp3"
+```
+
+## `opc music` 音频分析
+
+- `opc music beats <音频文件>`：检测鼓点/节拍，用于安排镜头切换、动作节奏和片段拆分。
+- `opc music understand <音频文件>`：分析曲风、内容和听感，用于脚本、剪辑和 H3 提示词。
+
+```bash
+opc music beats "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
   -o "projects/<项目名>/beat_analysis.txt"
-opc audio "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
+opc music understand "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
   -o "projects/<项目名>/music_analysis.txt"
 ```
 
-`librosa` 模式可用 `--beat-strength-threshold` 调整鼓点强度阈值、`--beat-min-interval` 调整最小间隔；需要完整参数时使用 `opc audio --help`。
+`beats` 模式可用 `--beat-strength-threshold` 调整鼓点强度阈值、`--beat-min-interval` 调整最小间隔；需要完整参数时使用 `opc music beats --help`。
+
+## `opc video understand` 视频理解
+
+`opc video understand` 使用 Qwen3-VL 对视频进行内容和时间线分析，适合在生成或剪辑前理解已有视频的镜头语言。它可以辅助识别：
+
+- 主体、场景、构图和画面风格；
+- 景别以及推、拉、摇、移、跟拍、环绕等镜头运动；
+- 主体动作、镜头节奏和关键时间段；
+- 可用于 MiniMax H3 提示词的画面与运镜描述。
+
+本地视频会由 OPC 编码后发送给 Qwen3-VL；也可以传入模型服务能够直接访问的 HTTP(S) 视频 URL。X、Bilibili 等帖子页面 URL 不是直接视频地址，应先用 `opc media download` 下载，再进行分析。API Key 和模型配置保存在 OPC 项目的本地 `.env` 中，不写入 VideoMake。
+
+```bash
+# 直接分析本地视频
+opc video understand "/Users/apple/Documents/VideoMake/videoRef/<参考视频>.mp4"
+
+# 重点分析运镜，并将结果保存到当前项目的 analysis 目录
+opc video understand "/Users/apple/Documents/VideoMake/videoRef/<参考视频>.mp4" \
+  -p "按时间段分析景别、镜头运动类型、运动方向、速度和主体动作" \
+  -o "projects/<项目名>/analysis/video_understanding.txt"
+
+# 查看可用参数
+opc video understand --help
+```
+
+视频分析结果属于项目分析资料，建议保存到 `projects/<项目名>/analysis/`，作为 P1 级复现依据。`opc video understand` 只负责理解和描述，不会自动修改 H3 workflow，也不会自动将视频作为 `<Video N>` 参考输入；如果视频仅用于提示词参考，应保持“分析使用”和“工作流输入”两条路径分离。
