@@ -47,7 +47,7 @@ opc image understand "projects/<项目名>/analysis/<名称>.png" \
   -o "projects/<项目名>/analysis/<名称>_check.txt"
 ```
 - 可复用角色身份图 → `character/<角色名>/`；可复用背景 → `background/`；仅本次任务使用 → 项目 `analysis/` 或任务目录；
-- 备用生图通道统一为 `opc image generate`：默认引擎 `qwen`（阿里云 Qwen Image，用 `ALIYUN_API_KEY`）；`--engine gpt-image` 走 OpenAI GPT-Image（原 `opc gpt-img` 已合并入该命令，需 `GPT_IMAGE_API_KEY`）。
+- 备用生图通道统一为 `opc image generate`：默认引擎 `qwen`（阿里云 Qwen Image，用 `ALIYUN_API_KEY`）；`--engine gpt-image` 走 GPT-Image（经本机 codex CLI 的内置 image_gen 工具调用，需 ChatGPT 账号登录，不需要 API Key；原 `opc gpt-img` 已合并入该命令）。
 
 ## `opc media download` 下载示例
 
