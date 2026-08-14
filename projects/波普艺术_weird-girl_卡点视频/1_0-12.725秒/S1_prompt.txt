@@ -1,0 +1,44 @@
+# S1 (0.000-12.725s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 无伴奏 Intro → 主歌1（"Pink and black in a paper sky..."）
+# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S1.wav（v3 切片 0-12.725s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that opens the target video and anchors its visual identity: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, small star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl" (top left), "STRANGE GIRLS CLUB" (top right, vertical), "SHE'S NOT NORMAL AND THAT'S OKAY." (bottom left) and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a neutral then playful expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Audio 1> is the locked music slice for this segment, retro synth-pop with airy female vocals, bouncy bass and punchy drums at about 110 BPM, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + keyframe completion + audio reuse] The target video animates <Picture 1> from a static poster into life: the halftone texture pulses with the a cappella vocal rhythm, <Subject 1>'s eyes wake up, and <Subject 2>'s symbols lift off the paper and float, with all three shots cut to the beat and <Audio 1> reused as the complete soundtrack.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first-frame anchor): fully_preserved - the opening frame matches the poster exactly, including layout, palette, halftone dots, the girl's pose and all visible texts; later shots retain its style and texts.
+<Subject 1> (appears in [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged while only expression and pose animate.
+<Subject 2> (appears in [Shot 1], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art animation with a pink, black and white palette, halftone dot textures, paper grain and beat-synced cuts at about 110 BPM.
+[Shot 1] The shot begins from <Picture 1>: the full poster, centered and filling the frame, fades in from black as the a cappella vocal begins. The halftone dots across the pink background pulse gently with each vocal syllable, and the small black star near the top-left corner floats up half a centimeter and settles. The camera pushes in toward the poster's center with small amplitude at slow speed. The texts "weird-girl" and "STRANGE GIRLS CLUB" remain static.
+[Shot 2] At 00:04.242, the shot cuts through a graphic match on a cluster of halftone dots that grows into an extreme close-up of <Subject 1>'s face, her dark hair with straight bangs and dark eyes framed by pink paper. Her eyes blink once on the first downbeat; the "weird-girl" text at the left edge of the frame shivers subtly with the vocal. The camera holds a static close-up with a very slow push-in.
+[Shot 3] At 00:08.483, the shot pulls back to a wider view: the star, the heart and the globe from <Subject 2> lift off the poster surface one after another and float in shallow 3D space around <Subject 1>, casting soft halftone shadows. Her expression shifts from neutral to a small confident smirk, and her head tilts two degrees to the right. The camera trucks right at slow speed with small amplitude, keeping the floating symbols layered in front of the pink paper. The segment ends on this composition, cut cleanly on the beat.
+
+overall_soundscape:
+Soft paper rustle and faint print-press clicks pulse with the beat, a light whoosh marks each graphic-match cut, and a subtle vinyl crackle runs throughout.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: retro synth-pop with airy female vocals, bouncy bass and punchy drums at about 110 BPM, with a cappella vocal opening.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 是开场锚定视觉身份的海报参考图——粉色底复古丝网印刷拼贴海报，中央深色齐刘海女孩，黑白网点纹理，星星/爱心/地球仪/螺旋/棋盘格符号，以及可见文字 "weird-girl"（左上）、"STRANGE GIRLS CLUB"（右上竖排）、"SHE'S NOT NORMAL AND THAT'S OKAY."（左下）和日期 "09 21 02"。`<Subject 1>` 是从海报保留的女孩角色：深色齐刘海、深色眼睛与嘴唇，中性到俏皮的表情，网点印刷质感。`<Subject 2>` 是从海报保留的拼贴世界：粉纸背景、网点、颗粒与黑白符号。`<Audio 1>` 是本段锁定音乐切片，约 110 BPM 复古合成器流行（轻快女声），1:1 复用为本段完整音轨。
+- `summary`：任务类型 [reference generation + keyframe completion + audio reuse]（参考生成 + 关键帧锚定 + 音频复用）；把海报从静态唤醒：网点随无伴奏人声脉动、女孩睁眼、符号浮起，三镜卡点，`<Audio 1>` 作完整配乐。
+- `retention_analysis`：`<Picture 1>`（[Shot 1] 首帧锚）fully_preserved——开场帧与海报完全一致，含版式、配色、网点、人物姿态与全部可见文字；`<Subject 1>` 全片 fully_preserved——发型/眼睛/嘴唇/印刷质感不变，仅表情与姿态动画化；`<Subject 2>` fully_preserved——粉纸背景、网点、颗粒与黑白符号保留；`<Audio 1>` fully_copy——整段原样成为最终音轨。
+- `detailed_description`：风格=复古丝网印刷拼贴波普动画，粉黑白配色、网点、纸颗粒、约 110 BPM 卡点剪辑。Shot 1（0-4.242s）：黑场淡入完整海报，网点随人声音节脉动，左上小星星微微浮起又落回，镜头极慢推近，文字静止；Shot 2（4.242s）：经网点簇图形匹配切到女孩面部大特写，第一个强拍眨眼，"weird-girl" 文字随人声轻颤，近景缓推；Shot 3（8.483s）：拉远——星星/爱心/地球仪逐个浮起悬空，女孩表情转为自信浅笑、头微右倾，镜头缓速右移，切点干净落在节拍上。
+- `overall_soundscape`：轻柔纸张沙沙声与印刷机轻响随节拍脉动，每个图形匹配切点一声轻 whoosh，全片轻微唱片噪点。
+- `non_diegetic_music`：`<Audio 1>` 整体复用为观众专属配乐——约 110 BPM 复古合成器流行，轻快女声、跳跃贝斯、干脆鼓点，无伴奏人声开场。

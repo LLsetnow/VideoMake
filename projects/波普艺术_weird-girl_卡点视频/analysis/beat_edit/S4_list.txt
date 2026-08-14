@@ -1,0 +1,3 @@
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_a.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_b.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_c.mp4'

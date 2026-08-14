@@ -1,7 +1,0 @@
-file '中间文件/seg01_00-15.mp4'
-file '中间文件/seg02_15-30.mp4'
-file '中间文件/seg03_30-45.mp4'
-file '中间文件/seg04_45-60.mp4'
-file '中间文件/seg05_60-75.mp4'
-file '中间文件/seg06_75-90.mp4'
-file '中间文件/seg07_90-95.576.mp4'

@@ -1,0 +1,44 @@
+# S3 (23.812-38.092s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 副歌1（"Weird girl..."）+ Anthem（"Strange girls club, we shine like stars"）
+# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S3.wav（v3 切片 23.812-38.092s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that anchors the segment's visual identity: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, an energetic defiant expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols, now fully animated.
+<Audio 1> is the locked music slice for this segment, retro synth-pop with anthemic female vocals, bouncy bass and punchy drums at about 110 BPM, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + audio reuse] The target video is the chorus explosion of the segment: <Subject 1> throws her head back on the downbeat while the "weird-girl" text pulses, a spiral match-cut opens into her dancing profile with zine pages flipping on every beat, and an anthemic pull-back reveals the full collage world with a "STRANGE GIRLS CLUB" banner sliding in, all driven by <Audio 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; only pose, scale and expression animate.
+<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained, with animated bursts and light trails added as new effects.
+<Picture 1> (style and identity anchor): partially_preserved - palette, textures, symbols and texts are kept while the world becomes fully animated.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art animation with a pink, black and white palette, halftone dot textures, paper grain and hard beat-synced cuts at about 110 BPM.
+[Shot 1] On the first downbeat, the camera fast-pushes into <Subject 1> in a medium shot as she throws her head back, dark hair with straight bangs flying, mouth open mid-song in silent performance. Behind her the text "weird-girl" pulses to double size on each strong beat, and halftone dots burst radially from the frame edges. The camera shakes slightly on the downbeat, then settles into a slow push-in.
+[Shot 2] At 00:04.693, a black spiral spins open from frame center, a graphic match on the spiral of <Subject 2>, revealing <Subject 1> in profile, arms raised, dancing with a bouncy two-step. Sheets of paper-cut zine pages flip behind her one per beat, each page showing pink-and-black collage fragments. The camera tracks left at medium speed with small amplitude.
+[Shot 3] At 00:09.387, the black star of <Subject 2> bursts into light trails that stretch across the frame, and the shot pulls back to reveal the full collage world: <Subject 1> stands centered in silhouette against the pink paper sky, a vertical banner reading "STRANGE GIRLS CLUB" slides in from the top right, and stars rain upward past the halftone dots. The camera pull-back continues at medium speed with large amplitude, and the segment ends on this wide composition on the beat.
+
+overall_soundscape:
+Paper rustle and print-press clicks pulse with the beat, a light whoosh marks each match cut, and a subtle vinyl crackle runs throughout.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: retro synth-pop with anthemic female vocals, bouncy bass and punchy drums at about 110 BPM, peaking in the chorus.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 海报参考图（同前）；`<Subject 1>` 女孩：深色齐刘海、深色眼唇、活力反叛表情；`<Subject 2>` 拼贴世界：粉纸、网点、颗粒与黑白符号，进入全动画状态；`<Audio 1>` 本段锁定音乐（副歌女声，约 110 BPM），1:1 复用。
+- `summary`：任务类型 [reference generation + audio reuse]；副歌爆发：强拍甩头 + "weird-girl" 大字脉动，螺旋匹配切进入舞蹈侧影、zine 纸页逐拍翻飞，anthem 拉远展现完整拼贴世界与 "STRANGE GIRLS CLUB" 横幅滑入。
+- `retention_analysis`：`<Subject 1>` 全镜 fully_preserved；`<Subject 2>` fully_preserved（新增爆裂/光迹为新效果，不视为损失）；`<Picture 1>` partially_preserved——风格与文字保留、世界全动画化；`<Audio 1>` fully_copy。
+- `detailed_description`：风格同前，硬卡点。Shot 1（0-4.693s）：第一个强拍镜头快推，女孩甩头（齐刘海长发飞起、张嘴无声跟唱），身后 "weird-girl" 每强拍放大一倍，网点从边缘径向爆裂，强拍轻微震镜后缓推；Shot 2（4.693s）：黑螺旋旋转展开匹配切，女孩侧影双臂上扬、弹跳两步舞，剪贴 zine 纸页每拍翻过一页（粉黑拼贴碎片），镜头中速左移；Shot 3（9.387s）：黑星爆成横贯画面的光迹，拉远展现完整拼贴世界——女孩居中剪影立于粉纸天空下，竖排横幅 "STRANGE GIRLS CLUB" 从右上滑入，星星向上飘过网点，拉远幅度大、中速，段末定格宽景、落在节拍上。
+- `overall_soundscape`：纸沙沙/印刷轻响随拍、匹配切 whoosh、唱片噪点。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——副歌达到峰值。

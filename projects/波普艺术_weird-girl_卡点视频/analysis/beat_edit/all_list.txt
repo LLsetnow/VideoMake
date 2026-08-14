@@ -1,0 +1,6 @@
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S1_beat.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S2_beat.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S3_beat.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S4_beat.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S5_beat.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/beat_edit/S6_beat.mp4'

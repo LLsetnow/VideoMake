@@ -1,0 +1,6 @@
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S1_trim.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S2_trim.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S3_trim.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S4_trim.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S5_trim.mp4'
+file '/Users/apple/Documents/VideoMake/projects/波普艺术_weird-girl_卡点视频/analysis/trimmed/S6_trim.mp4'

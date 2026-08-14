@@ -12,6 +12,8 @@
 
 生成段落边界和提示词 `[Shot]` 时间戳不是自动最终切点。源音频锁定项目应以源音频主时间线为准，使用场景检测、接触表和帧级硬切确认候选边界；拼接按 24fps 计算共享整数帧边界，目标帧数必须与实际时长一致，并重新挂载完整目标源音频。
 
+卡点（beat-locked）视频的剪辑（含段内分镜切点处理）必须读取并遵循 `.codex/skills/beat-locked-redundant-video-edit/SKILL.md`：以锁定源音频为唯一主时钟，生成的视频只作素材池；切点选择强拍/强起音且间距约 2–3 秒；检测到的场景切点只作排除信息，在其周围保留 guard band（约 6 帧）再切；用 `trim=start_frame/end_frame` 帧级裁剪、统一规格后拼接，最后 remux 原始源音频；交付前逐段校验帧数并用 `ffprobe` 核对 FPS、时长、尺寸与音轨。规范实现可参考 `projects/情感失色症_60秒/analysis/` 的 `detect_generated_assets.py` 与 `build_beat_locked_edit.py`。
+
 先验证视频帧数、音频起止、段落边界和输出可读性，再停止或释放 AIGate 实例。必要时使用 `ffprobe`、接触表和帧计数进行验证。
 
 ## 最终输出

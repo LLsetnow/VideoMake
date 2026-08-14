@@ -1,0 +1,32 @@
+# 波普艺术 weird-girl 主题曲（60 秒版）— MiniMax Music 生成提示词 v2
+
+## 生成信息
+- 日期：2026-08-14
+- 版本：v2，目标时长约 60 秒（完整歌曲结构）
+- 来源图片：`character/波普艺术/微信图片_20260811163716_103_80.png`
+- 风格：与 v1 相同——复古另类少女流行 Pop，少量人声（主歌+副歌），带器乐段落
+- 服务商/模型：MiniMax Music（`music-3.0-free`）
+
+## 英文执行提示词（提交给 MiniMax）
+
+```
+Retro alternative-girl pop song about 60 seconds long, theme music
+for a "weird girl" pop-art poster. Playful, defiant and quirky, like
+a teenage zine brought to life. Pink-and-black retro screen-print
+collage vibe: warm vintage analog synths, jangly electric guitar,
+bouncy bass, punchy drums, lo-fi tape warmth with soft vinyl crackle.
+Around 108 BPM, bright major-key pop with a sassy nonconformist
+attitude. Female vocals, airy and playful, with instrumental breaks.
+Confident, cute but rebellious mood - "she's not normal and that's
+okay". Follow the song structure tags in the lyrics.
+```
+
+## 歌词结构（见 60s_lyrics.txt）
+
+Intro(器乐) → Verse 1 → Chorus → Verse 2 → Chorus → Bridge → Inst → Outro
+
+## 中文说明
+
+60 秒完整歌曲：两段主歌+两段副歌+桥段+器乐间奏+结尾；
+延续海报文案主题（weird girl / strange girls club / pink and black, stars and hearts）；
+复古合成器+电吉他+跳跃贝斯，约 108 BPM。

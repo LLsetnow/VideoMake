@@ -17,6 +17,38 @@
 
 下载媒体后先检查完整性和格式，再归档到 `videoRef/` 或 `audio/`，不要把下载目录当生成结果目录。cookies 可通过命令参数临时提供，但不得复制到项目、提交版本库或写入说明文件。
 
+## `image-gen` 生成图像（codex + gpt-image）
+
+角色、背景和分镜参考图统一使用本机 `codex exec` 生成：codex 内置 `image_gen__imagegen` 工具（由 gpt-image 驱动，需 ChatGPT 账号登录，本机已验证 codex-cli 0.147+ 可用）。
+
+关键命令格式（注意：codex exec 的位置参数 prompt 在某些版本会失效并报 `No prompt provided via stdin`，必须用 `-` 让提示词走 stdin）：
+
+```bash
+# 带参考图（-i 可重复传多张，保持角色/风格一致）
+printf '%s' "<生成提示词>" | codex exec -i "/绝对路径/参考图.png" - 2>&1 | tail
+
+# 纯文字生图
+printf '%s' "<生成提示词>" | codex exec - 2>&1 | tail
+```
+
+提示词要点：
+
+- 明确风格、配色、构图、画幅比例和用途（角色身份图/背景/分镜参考）；
+- 在提示词里要求 codex 把图片保存到目标路径（如 `projects/<项目名>/analysis/<名称>.png`）并报告实际路径；
+- 需要角色一致性时用 `-i` 附加角色参考图，并说明"延续参考图的角色与风格"。
+
+输出与归档：
+
+- 输出通常为 1536×1024 PNG；生成后用视觉模型核验风格与内容符合要求再归档，读图使用 `opc image understand <图片> [-p 提问] [-o 输出文件]`（旧命令 `opc read-img` 已移除）：
+
+```bash
+opc image understand "projects/<项目名>/analysis/<名称>.png" \
+  -p "确认风格与参考角色一致性，并简短描述画面" \
+  -o "projects/<项目名>/analysis/<名称>_check.txt"
+```
+- 可复用角色身份图 → `character/<角色名>/`；可复用背景 → `background/`；仅本次任务使用 → 项目 `analysis/` 或任务目录；
+- 备用生图通道统一为 `opc image generate`：默认引擎 `qwen`（阿里云 Qwen Image，用 `ALIYUN_API_KEY`）；`--engine gpt-image` 走 OpenAI GPT-Image（原 `opc gpt-img` 已合并入该命令，需 `GPT_IMAGE_API_KEY`）。
+
 ## `opc media download` 下载示例
 
 `opc media download` 根据 URL 自动识别平台（bilibili.com / b23.tv / douyin.com / x.com / twitter.com / music.163.com），统一入口下载视频或音频。

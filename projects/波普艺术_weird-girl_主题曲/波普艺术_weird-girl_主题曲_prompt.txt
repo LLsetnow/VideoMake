@@ -1,0 +1,39 @@
+# 波普艺术 weird-girl 主题曲 — MiniMax Music 生成提示词
+
+## 生成信息
+- 日期：2026-08-14
+- 来源图片：`character/波普艺术/微信图片_20260811163716_103_80.png`
+- 图片内容：复古丝网印刷/拼贴风格另类少女海报（粉黑主色调，"weird-girl" /
+  "STRANGE GIRLS CLUB" / "SHE'S NOT NORMAL AND THAT'S OKAY."，星星、爱心、地球仪等拼贴符号）
+- 服务商/模型：MiniMax Music（`music-3.0-free`，限免模型）
+- 风格选择：复古另类少女流行 Pop，少量人声
+
+## 英文执行提示词（提交给 MiniMax）
+
+```
+Retro alternative-girl pop theme song for a "weird girl" pop-art poster.
+Playful, defiant and quirky, like a teenage zine brought to life.
+Pink-and-black retro screen-print collage vibe: warm vintage analog
+synths, jangly electric guitar, bouncy bass, punchy drums, lo-fi tape
+warmth with soft vinyl crackle. Around 108 BPM, bright major-key pop
+with a sassy nonconformist attitude. Sparse female vocals: light vocal
+chops, airy humming and a few short sung phrases echoing in the mix,
+mostly instrumental. Confident, cute but rebellious mood — "she's not
+normal and that's okay".
+```
+
+## 歌词（少量人声，极简短句）
+
+```
+Weird girl, weird girl
+She's not normal, and that's okay
+Strange girls club
+Pink and black, stars and hearts
+Weird girl, weird girl
+```
+
+## 中文说明
+
+风格：复古另类少女流行（retro alternative-girl pop），带俏皮反叛感；
+配器：复古模拟合成器 + 清亮电吉他 + 跳跃贝斯 + 干脆鼓点，磁带低保真质感；
+情绪：自信、非主流、可爱但叛逆；人声稀疏（轻唱、哼唱、短句点缀）。
