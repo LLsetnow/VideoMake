@@ -1,0 +1,37 @@
+subject_definitions:
+<Subject 1> is the abstract geometric motion-graphics system established by <Picture 1>: a black Swiss grid, a central white elastic oval, fluorescent-yellow circle, lavender-purple rounded capsule, electric-blue starburst, thin black lines, and a restrained dark ink-green metallic cylinder. Preserve the limited palette, flat vector surfaces, crisp edges, generous white space, centered editorial composition, and precise Swiss-grid discipline while the shapes transform.
+<Picture 1> is a generated 16:9 visual composition anchor for the opening state and the recurring geometric design language. It is not a frame from the supplied Bilibili video.
+<Audio 1> is the extracted 00:00.000–00:15.000 segment of the supplied Bilibili video's audio, directly reused 1:1 as the complete final soundtrack. Preserve its exact timing, dynamics, processed vocal samples, stereo placement, and musical content; no replacement score or extra sound is allowed.
+
+summary:
+[reference generation + audio reuse] Create an original 15-second 16:9 abstract geometric MG animation from <Picture 1> and <Audio 1>. Use <Picture 1> as a visual style and composition anchor, and lock <Audio 1> from 00:00.000 through 00:15.000. The supplied Bilibili video is used only to extract its audio; no source-video frames, characters, captions, logos, watermarks, or platform UI are input or reproduced.
+
+retention_analysis:
+<Subject 1> (appears throughout [Shot 1]): partially_preserved - preserve the defined palette, grid discipline, flat vector finish, crisp geometry, white negative space, and shape identity while allowing the shapes to squash, stretch, morph, rotate, split, and reassemble into new compositions.
+<Picture 1> (opening visual anchor for [Shot 1]): partially_preserved - preserve its clean white field, centered oval, black grid construction, limited colors, and balanced editorial layout, then animate and transform the arrangement.
+<Audio 1>: fully_copy - reuse the trimmed 15-second source audio as the complete final audio track without generating replacement music, dialogue, ambience, foley, or independent sound effects.
+
+detailed_description:
+The target video is a 15-second 16:9 landscape motion-graphics piece in a pure-white field with large negative space. Use modern editorial design and Swiss-grid composition: flat vector surfaces, razor-clean edges, accurate alignment, restrained layering, and only fluorescent yellow, lavender purple, electric blue, black, dark ink green, and white. Treat <Picture 1> as the opening visual anchor. Use one continuous shot with seamless shape morphs and mask reveals, no hard cuts, no camera shake, no realistic environment, no complex 3D space, no particles, smoke, heavy shadows, random colors, broken topology, or unreadable text. <Audio 1> starts on the first frame and remains unchanged to 00:15.000. Every major motion must land on the audible four-on-the-floor kick, clap/snare backbeats, syncopated hats, bass accents, bright chord stabs, and processed stereo vocal-chop hits in <Audio 1>.
+
+[Shot 1] From 00:00.000 to 00:02.200, begin exactly from <Picture 1>: a black rectangular grid unfolds from the left and right into a centered architectural frame while the large white oval in the middle elastically expands and compresses, visibly squeezing the grid lines without breaking them. Hold a centered Static Shot with a barely perceptible Push In at slow speed; keep the background pure white and the grid mathematically legible. On each first kick, the oval performs one controlled squash-and-stretch cycle.
+
+From 00:02.200 to 00:04.600, a fluorescent-yellow circle enters from the upper left and bounces along a clean horizontal grid line, compressing at each landing and stretching during each lift. On a strong beat it touches the central oval, flashes into an electric-blue four-point starburst, and holds a crisp silhouette for one beat. Use a small lateral Pan Right at fast speed only as the graphic layers translate; keep the camera stable and the composition centered.
+
+From 00:04.600 to 00:07.000, use a precise mask reveal and continuous shape correspondence: the blue starburst contracts through its center and becomes a lavender-purple rounded capsule card. The capsule slides across the oval, rotates a quarter turn on a chord stab, compresses on the kick, and rebounds with elastic easing. Keep the capsule flat and clean, with no text or icon inside it.
+
+From 00:07.000 to 00:09.600, the capsule squeezes and rotates into a fluorescent-yellow organic fluid ribbon, then the ribbon contracts into a perfect yellow circle at center. Maintain one continuous morph with no dissolve and no topology break. The black grid briefly bends around the circle, then re-aligns to the Swiss grid on the next beat. Use a controlled Pull Out with small amplitude at normal speed so the negative space remains dominant.
+
+From 00:09.600 to 00:11.800, a dark ink-green metallic cylinder with a restrained brushed sheen travels horizontally from left to right through the centered yellow circle. It physically occludes the circle, passes through its center, and cleanly slices the composition into two graphic halves using a crisp mask edge; the cylinder must remain a simple horizontal object, not a realistic scene or deep 3D environment.
+
+From 00:11.800 to 00:13.800, the separated circle halves, blue starburst, purple capsule, black grid rectangles, and thin black lines rapidly reassemble through rhythmic match-morphs into one original geometric logo. Use fast but readable elastic easing, precise alignment, and a restrained overshoot that settles after one beat. Do not introduce any brand mark or existing logo.
+
+From 00:13.800 to 00:14.650, hold the finished centered mark in a clean wide composition. After a brief musical pause, reveal the exact black title "MiniMax H3" beneath the mark in a minimal bold sans-serif treatment, perfectly spelled, sharply rendered, and horizontally aligned. Keep the title static and highly legible; no extra words, symbols, captions, or invented glyphs.
+
+From 00:14.650 to 00:15.000, let the title and geometric mark perform a tiny elastic settle, then fade cleanly to pure white while preserving the final audio tail of <Audio 1>. No additional sound or visual effect is generated.
+
+overall_soundscape:
+N/A. Do not generate room tone, ambience, impacts, foley, particles, transition sounds, or independent sound effects. All audible content must come from the directly copied <Audio 1> track.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve the high-energy modern UK House / future-house or tech-house character, four-on-the-floor kick, syncopated hats, snare/clap backbeats, deep synthesized bass, bright chord stabs, processed "Oh-oh-oh" vocal hook, chopped stereo vocal fragments, exact dynamics, timing, and stereo image. Do not generate replacement music or additional vocals.

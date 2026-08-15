@@ -1,0 +1,46 @@
+# S6 (63.158-76.416s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 收尾副歌（"Weird girl, weird girl, that's okay" 重复渐出）
+# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S6.wav（v3 切片 63.158-76.416s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that closes the segment: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a joyful expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Subject 3> is the paper-cut silhouette girl group from the previous segments: flat black paper-cut figures of young girls with identical bangs in halftone screen-print style.
+<Audio 1> is the locked music slice for this segment, retro synth-pop with layered closing female vocals, bouncy bass and punchy drums at about 110 BPM fading to the end, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + keyframe completion + audio reuse] The target video is the finale: a star-burst match-cut opens a wide collage arena where <Subject 1> and <Subject 3> dance together, a descending overhead shot gathers them into a circle with hands up on the beat, and the animated world collapses back into the flat <Picture 1> poster which holds as the last frame before fading to black, with <Audio 1> reused as the complete soundtrack.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged.
+<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Subject 3> (appears in [Shot 1], [Shot 2]): partially_preserved - the silhouette girls keep the halftone screen-print aesthetic and bang hairstyle from <Picture 1>.
+<Picture 1> ([Shot 3] last-frame anchor): fully_preserved - the final frame returns exactly to the original poster, including layout, palette, halftone dots, the girl's pose and all visible texts.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art animation with a pink, black and white palette, halftone dot textures, paper grain and beat-synced cuts at about 110 BPM.
+[Shot 1] A black star bursts open at frame center, a graphic match on the star of <Subject 2>, revealing a wide collage arena: <Subject 1> and <Subject 3>, the paper-cut silhouette girls, dance in formation on a pink paper floor, stars and hearts raining upward like confetti past halftone dots. The camera tracks right at medium speed with small amplitude, framing the whole group.
+[Shot 2] At 00:04.402, the camera transitions to an overhead view and descends slowly (pedestal down) as the dancers gather into a circle around <Subject 1> at center. On the downbeat they all throw their hands up together; halftone confetti bursts outward. The eye and globe symbols float at the frame edges. The camera continues descending with small amplitude until the group fills the lower half of the frame.
+[Shot 3] At 00:08.802, the animated world collapses inward: the paper-cut dancers, symbols and light trails shrink and flatten back into the pink print, reassembling the exact original poster, with <Subject 1> back in her center pose and the texts "weird-girl", "STRANGE GIRLS CLUB" and "SHE'S NOT NORMAL AND THAT'S OKAY." in place. The shot ends on <Picture 1> as the still last frame; a vinyl crackle swells and the frame fades to black as the music fades out.
+
+overall_soundscape:
+Paper rustle and print-press clicks pulse with the beat, a light whoosh marks each match cut, a vinyl crackle swells through the final collapse, and the end fades to silence.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: retro synth-pop with layered closing female vocals, bouncy bass and punchy drums at about 110 BPM, fading out with the final frame.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 收尾海报参考图（同前，作为末帧锚）；`<Subject 1>` 女孩（欢快表情）；`<Subject 2>` 拼贴世界；`<Subject 3>` 前段纸片剪影女孩群；`<Audio 1>` 本段锁定音乐（层叠收尾女声渐弱），1:1 复用。
+- `summary`：任务类型 [reference generation + keyframe completion + audio reuse]；终章：星爆匹配切打开拼贴"竞技场"群舞、俯视下降镜头聚成圆圈齐举手、动画世界塌缩回平面海报并以原海报定格为末帧、黑场淡出。
+- `retention_analysis`：`<Subject 1>` 全镜 fully_preserved；`<Subject 2>` fully_preserved；`<Subject 3>` partially_preserved；`<Picture 1>`（[Shot 3] 末帧锚）fully_preserved——末帧精确回到原海报（版式/配色/网点/姿态/全部文字）；`<Audio 1>` fully_copy。
+- `detailed_description`：风格同前。Shot 1（0-4.402s）：黑星爆开（图形匹配切）揭示宽景拼贴竞技场——女孩与纸片剪影群在粉纸地面上编队齐舞，星星爱心如纸屑逆向上飘，镜头中速小幅右移；Shot 2（4.402s）：转俯视机位缓慢下降，舞者聚成圆圈、女孩居中，强拍全体齐举手，网点纸屑向外爆开，眼睛与地球仪符号浮于边缘，镜头持续缓降至群像占满下半画面；Shot 3（8.802s）：动画世界向内塌缩——纸片舞者、符号、光迹缩小压平回粉色印刷面，重新拼合出与原海报完全一致的构图，女孩回到居中姿态，三处文字归位，末帧定格为 `<Picture 1>`；唱片噪点渐强，随音乐渐出淡出黑场。
+- `overall_soundscape`：纸沙沙/印刷轻响随拍、匹配切 whoosh、塌缩段噪点渐强、结尾淡出至静默。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——约 110 BPM 层叠收尾女声，随末帧渐出。

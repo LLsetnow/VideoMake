@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music-video segment, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 00:15.000–00:30.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the four-on-the-floor beat, processed female vocal, synths, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 hand-drawn anime dance-pop segment in which <Subject 1> rides through a bright floating transit city. Use <Picture 1> for identity and visual grammar, and reuse <Audio 1> exactly with no new vocals, replacement music, or extra sound effects. The first 7 seconds are a corrected replacement for the problematic 00:15.000–00:22.000 portion: the character must never walk in place.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - transfer its character design, cyan sky, lavender reflections, indigo outline, and playful star accents into new transit-city scenes.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve her face, hair, costume, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video uses the same clean hand-drawn anime language as <Picture 1>, with flat pastel color blocks, glass surfaces, cyan and violet reflections, warm yellow costume accents, indigo outlines, paper grain, and crisp movement changes on strong musical beats. No readable signage, subtitles, logos, or UI. The character's locomotion must be physically legible: never show treadmill walking, in-place walking, repeated alternating leg cycles, sliding feet, or walking without spatial displacement.
+
+[Shot 1] The scene opens inside a moving elevated train made of pale glass and white geometric frames. <Subject 1> is seated securely on a window bench in a three-quarter medium shot, with both feet planted on the floor and her dark shoulder bag resting beside her. She taps the glass twice with one fingertip, lifts her other hand into a small two-count wave, and turns her head toward cyan buildings that visibly glide outside the window. Her shoulders sway once with the beat, but she stays seated; no walking, no standing, and no leg cycling. The camera makes a gentle lateral tracking move with small amplitude and keeps her face, hair, and costume readable.
+
+[Shot 2] At 00:03.715, cut to a fixed exterior side view of the same transparent train crossing a sky bridge. The train itself travels clearly from left to right past two foreground bridge pillars, with strong parallax and continuous background displacement. <Subject 1> remains seated at the window, visible from the waist up, turns her head toward camera, and gives one clean wave before looking forward. Her torso stays anchored to the seat and her legs remain still; do not make her walk, run, march, or step in place. Turquoise and lavender light bands sweep along the train body on the beat while the camera tracks the train with medium speed, preserving the visible left-to-right travel.
+
+[Shot 3] At 00:09.200, cut to a wide floating-city plaza. <Subject 1> stands on a pale circular platform surrounded by cyan sky, small star glints, and simplified pastel towers. She performs one clear stationary dance pose: feet remain planted while she pivots her upper body once, lifts her bag strap, and sends thin orange and green hand-drawn ribbons into a clean spiral. The camera arcs laterally with small amplitude at normal speed, countering her upper-body turn so she stays centered. Do not introduce looping locomotion.
+
+[Shot 4] At 00:12.600, cut to a low-angle view through a glass roof. <Subject 1> leans toward the lens, then points upward as the city geometry rotates behind her. The colored ribbons snap into a bright starburst and leave a clean cyan frame. End at 00:15.000 with her looking upward. <Audio 1> remains continuous and unchanged across the cuts.
+
+overall_soundscape:
+All vocals, drums, bass, synths, and existing effects in <Audio 1> are preserved exactly. Do not create train announcements, crowd noise, dialogue, or additional foley.
+
+non_diegetic_music:
+The complete supplied 00:15.000–00:30.000 segment from <Audio 1> is directly reused 1:1 with its original tempo, vocal content, dynamics, timing, and stereo balance. Do not generate replacement music.

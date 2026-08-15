@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 01:00.000–01:15.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including its second breakdown, processed vocal, Japanese vocal section, returning beat, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 hand-drawn anime music-video segment that moves from a quiet glass-aquarium break into a renewed rhythmic performance by <Subject 1>. Use <Picture 1> for identity and visual language, and copy <Audio 1> exactly with no newly generated vocals, replacement music, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - retain its character design, cyan/purple light, glass structure, indigo outlines, pale yellow accents, and star glints in a more spacious aquarium setting.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve her face, hair, costume, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video keeps the cover's flat hand-drawn 2D look but introduces translucent water, mirrored glass, floating bubbles, cyan bloom, lavender shadows, and warm yellow highlights. The first half is slow and suspended for the breakdown; the second half becomes more rhythmic as the Japanese vocal section and beat return. No readable text or subtitles.
+
+[Shot 1] The scene opens in a vast transparent aquarium corridor. <Subject 1> stands in profile beside a curved glass wall, her green hair and bag strap drifting gently while pale fish-like light shapes pass behind her. The floor reflects her indigo outline. She touches the glass with one fingertip and looks toward a distant cyan glow. Use a static medium-full shot with a very slow push in.
+
+[Shot 2] At 00:05.000, cut to a close-up through the glass. Bubbles move upward across <Subject 1>'s face; she closes one eye in a soft wink, then follows a lavender ribbon of light with her gaze. Keep the mouth still and let the exact vocal remain inside <Audio 1>. Use a slow tilt upward with shallow layered reflections.
+
+[Shot 3] At 00:09.600, cut to a mirrored corridor as the rhythm returns. <Subject 1> steps forward between repeated cyan reflections, raises both hands, and makes a small alternating gesture on the beat. Orange and green line trails echo her hands, while the camera tracks backward at normal speed.
+
+[Shot 4] At 00:12.600, cut to a bright circular pool of light. <Subject 1> turns once toward camera, her skirt and hair following naturally, then lifts the orange hair clip side of her face into a playful wink. A four-point star glint expands behind her and freezes through 00:15.000. <Audio 1> remains continuous and unchanged.
+
+overall_soundscape:
+All vocals, breakdown space, synths, beat, and effects in <Audio 1> are preserved exactly. Do not add water sounds, speech, foley, dialogue, or replacement ambience.
+
+non_diegetic_music:
+The complete supplied 01:00.000–01:15.000 segment from <Audio 1> is directly reused 1:1, preserving its breakdown, bilingual vocal performance, returning beat, timing, dynamics, and stereo image. Do not generate replacement music.

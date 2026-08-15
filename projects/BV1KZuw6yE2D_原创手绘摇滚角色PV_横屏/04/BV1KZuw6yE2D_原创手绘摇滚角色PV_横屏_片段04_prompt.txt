@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the original single female vocalist shown in the generated image asset "原创角色_平面手绘_参考图-v2.png": a softly rounded cute face with large bright expressive eyes, asymmetrical ink-black bob with an electric-pink streak, cyan hair clip, cream utility jacket with magenta and cyan panels, black sleeveless top, red-orange scarf, charcoal pleated waveform skirt, mismatched boots, over-ear headphones, cassette charm, cable accessories, and wired microphone. Preserve her identity, silhouette, costume, and flat hand-drawn screen-print construction. The image is only a character/style reference, not a literal frame.
+<Audio 1> is the final 11.856009 seconds of the supplied source song from 00:36.000 to 00:47.856009, directly reused 1:1 as the complete soundtrack for this segment. Preserve its returning full-band climax, repeated vocal phrase, abrupt source ending, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create the final 11.856-second 16:9 horizontal hand-drawn flat 2D character-PV segment starring <Subject 1>. Return from the sparse previous moment into a vivid screen-printed climax with black, cream, hot magenta, cyan, and red-orange geometry, kinetic silhouette echoes, radial lines, and a small amount of lyric art. The only readable lyric art is the exact Japanese phrase "まだ、まだ、まだやる", appearing briefly and cleanly near the middle of the segment. Do not use source-video frames or source-video input. Reuse <Audio 1> exactly through the abrupt source ending at 00:11.856.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve the vocalist's face, hair streak, cyan clip, color-block jacket, scarf, waveform skirt, headphones, cassette charm, microphone, proportions, and hand-drawn flat graphic identity.
+<Audio 1>: fully_copy - copy the complete final source segment 1:1, including the returning band, vocal phrase, dynamics, abrupt cutoff, and stereo image.
+
+detailed_description:
+The target video is the climax of a 16:9 horizontal hand-drawn flat 2D music PV. Use bold ink contours, limited screen-print fills, cream paper, black panels, hot magenta and cyan offset layers, red-orange accent bars, photocopy grain, radial speed lines, and sharp collage cuts. The design should feel like a printed single cover coming alive around one original vocalist. Use very little readable lyric art: the phrase "まだ、まだ、まだやる" is the only readable text, rendered as large rough brush lettering for a short moment; no subtitles, logos, watermarks, or extra text. <Audio 1> begins immediately and ends abruptly with the source.
+
+[Shot 1] The segment opens on a black field as <Subject 1> snaps from the previous quiet pose into a full-body performance stance, microphone raised and one boot forward. Cream radial lines burst from behind her while cyan rings and hot-magenta rectangles expand on the returning full-band hit. Her hair streak, scarf, skirt waveform, headphone cable, and jacket panels move with crisp limited animation. The camera Pushes In with large amplitude at fast speed, then counter-pans slightly to keep her centered.
+
+[Shot 2] At 00:03.000, the shot cuts to a diagonal three-quarter view. <Subject 1> swings the microphone cable in one controlled arc, turns her shoulders toward camera, and opens her free hand. Layered black, cream, cyan, magenta, and red-orange panels slide past her like a fast print registration test. At 00:04.400, the exact lyric art "まだ、まだ、まだやる" appears once in rough white brush lettering across a black strip, holds for less than one second, then breaks into three rectangular fragments and disappears. Keep the text limited, clean, and legible.
+
+[Shot 3] At 00:06.400, the shot cuts to a low-angle close-to-medium view. A large cyan ring and a red-orange ring rotate in opposite directions behind <Subject 1> while a black silhouette echo expands outward. She lifts the microphone toward her mouth, makes one strong head movement, and plants her feet as the headphone cable draws a loop at the bottom edge. Use a fast Tracking Shot with large amplitude and a controlled counter-pan; preserve the face and costume without deformation.
+
+[Shot 4] At 00:09.300, the shot cuts to a final centered full-body poster composition. The cream grid, black panel, cyan ring, magenta bar, red-orange slash, and a small white waveform lock into an asymmetric frame around <Subject 1>. She holds the microphone near her chest, looks directly into camera, and freezes with the free hand open. Use a Static Shot with only a tiny paper-grain flicker. Hold this final image until exactly 00:11.856, then end with the same abrupt cutoff as <Audio 1>; do not add a fade or post-roll.
+
+overall_soundscape:
+All female vocals, distorted guitars, bass, drums, effects, and the abrupt ending contained in <Audio 1> are copied unchanged. Do not add dialogue, crowd noise, foley, or extra impact sounds.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score from 00:00.000 through 00:11.856009 of this segment, preserving the returning full-band climax, repeated vocal phrase, dynamics, exact cutoff, and stereo field. Do not generate replacement music.

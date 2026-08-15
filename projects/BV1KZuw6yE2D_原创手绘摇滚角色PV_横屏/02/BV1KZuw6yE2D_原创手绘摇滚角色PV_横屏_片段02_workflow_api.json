@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 640102
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/BV1KZuw6yE2D_原创手绘摇滚角色PV_横屏_片段02",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 12.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 1.0,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the original single female vocalist shown in the generated image asset \"原创角色_平面手绘_参考图-v2.png\": a softly rounded cute face with large bright expressive eyes, an asymmetrical ink-black bob with one electric-pink streak, cyan hair clip, cream utility jacket with magenta and cyan panels, black sleeveless top, red-orange scarf, charcoal pleated waveform skirt, mismatched ankle boots, over-ear headphones, cassette-player charm, cable accessories, and wired microphone. Preserve her identity and graphic flat-drawn costume design in every shot. The generated image is only a character/style reference, not a literal frame.\n<Audio 1> is the 12.000-second source-song segment from 00:12.000 to 00:24.000, directly reused 1:1 as the complete soundtrack for this segment, with all vocals, instruments, timing, dynamics, and stereo balance unchanged.\n\nsummary:\n[reference generation + audio reuse] Create a new 12-second 16:9 horizontal hand-drawn flat 2D character-PV segment starring <Subject 1>. Continue the offline-analyzed high-contrast lyric-PV language through modular grids, black panels, paper-cream fields, magenta/cyan overprint, fragmented portrait crops, and kinetic abstract glyphs. Use no source-video frames, no source-video input, and no extra character. Reuse <Audio 1> exactly from 00:00.000 through 00:12.000 of this segment.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve the vocalist's face, black-and-pink hair, cream color-block jacket, scarf, waveform skirt, headphones, cassette charm, microphone, proportions, and flat hand-drawn line quality.\n<Audio 1>: fully_copy - copy the supplied 12.000-second source segment exactly with no generated replacement audio or extra effects.\n\ndetailed_description:\nThe target video is a 16:9 hand-drawn flat 2D music PV that treats <Subject 1> as a printed poster figure inside a moving collage. Use rough ink contours, paper fibers, black and cream geometric planes, hot magenta and cyan registration shifts, red-orange accents, photocopy grain, thin white grid lines, and hard rhythmic cuts. The design must remain clean enough to read the character silhouette. Do not add readable subtitles or logos in this segment; use only non-readable graphic glyphs and short blocks. <Audio 1> is the only audible source.\n\n[Shot 1] The segment opens on a black rectangular panel with <Subject 1> shown as a cream-and-cyan full-body cut-paper figure standing slightly left of center. A narrow cream grid scrolls vertically behind her while magenta paper fragments assemble around her shoulders and boots. She raises the microphone, shifts her weight once, and lets the headphone cable swing a small arc. The camera is a Static Shot with a tiny Shake Slightly at each graphic hit.\n\n[Shot 2] At 00:02.800, the shot cuts to a close-up of her hand, wired microphone, scarf knot, and waveform skirt edge. The microphone cable becomes a thick black line that traces a geometric loop across the frame. Two cyan circles and one red-orange slash appear like hand-drawn equalizer marks. The camera Pushes In with small amplitude at fast speed, then stops sharply on the beat.\n\n[Shot 3] At 00:05.700, the shot cuts to a wide cream field with three staggered poster panels. The center panel contains <Subject 1> in a three-quarter stance; the left and right panels contain simplified black-and-magenta silhouette echoes with no facial detail. She pivots her shoulders, steps forward once, and turns the microphone toward camera. Use a fast Truck Left with small amplitude as the panels slide in opposite directions, maintaining a flat cut-paper construction.\n\n[Shot 4] At 00:08.900, the shot cuts to a low-angle half-body view. A large black circle expands behind her head, a cyan ring rotates in the opposite direction, and small magenta rectangles flicker at the edges. She lowers the microphone and looks just past camera while the pink streak and scarf move in a short gust. The camera Tilts Up with small amplitude at slow speed, then settles into a graphic freeze. Hold the final arrangement cleanly until 00:12.000.\n\noverall_soundscape:\nPreserve all vocals, guitar, bass, drums, and source effects contained in <Audio 1>. Do not add footsteps, crowd ambience, speech, foley, or independent impacts.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only score from 00:00.000 to 00:12.000 of this segment. Preserve its original vocal delivery, fast rock instrumentation, beat placement, dynamics, effects, and stereo image."
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "原创角色_平面手绘_参考图-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "02.m4a",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 12.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

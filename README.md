@@ -4,6 +4,10 @@ VideoMake 是一个面向 AIGC 短视频制作的素材与工作流仓库，当�
 
 仓库地址：[github.com/LLsetnow/VideoMake](https://github.com/LLsetnow/VideoMake)
 
+## 示例视频
+
+[Bilibili 示例视频](https://space.bilibili.com/39493006/upload/video)
+
 ## 当前项目
 
 | 项目 | 内容 |
@@ -87,6 +91,16 @@ opc aigate --help
 `opc aigate` 的 CLI 实现和云扉 AIGate 实例管理逻辑不在本仓库中维护，详见 [LLsetnow/OPC](https://github.com/LLsetnow/OPC)。如需安装或配置该命令，请按照 OPC 仓库中的说明操作；AIGate Token 等凭据应保存在 OPC 的本地 `.env` 中，不要写入本项目。
 
 生成完成后，检查输出视频的时长、帧率、画幅、角色一致性、音频同步和片段衔接，不要只以任务提交成功作为生成成功的判断。
+
+如需在生成或剪辑前理解参考视频的内容和运镜，可使用 OPC 的 `video understand` 命令：
+
+```bash
+opc video understand "/绝对路径/参考视频.mp4" \
+  -p "按时间段分析镜头运动、景别、构图和主体动作" \
+  -o "projects/<项目名>/analysis/video_understanding.txt"
+```
+
+该命令调用 Qwen3-VL，输出视频内容、镜头运动和时间线分析；它只生成分析文本，不会自动把参考视频接入 MiniMax H3 工作流。详细说明见 [`docs/media-assets.md`](docs/media-assets.md) 的“`opc video understand` 视频理解”章节。
 
 ## 工作流约定
 

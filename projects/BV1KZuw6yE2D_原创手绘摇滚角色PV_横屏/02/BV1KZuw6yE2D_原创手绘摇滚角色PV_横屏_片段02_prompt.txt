@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the original single female vocalist shown in the generated image asset "原创角色_平面手绘_参考图-v2.png": a softly rounded cute face with large bright expressive eyes, an asymmetrical ink-black bob with one electric-pink streak, cyan hair clip, cream utility jacket with magenta and cyan panels, black sleeveless top, red-orange scarf, charcoal pleated waveform skirt, mismatched ankle boots, over-ear headphones, cassette-player charm, cable accessories, and wired microphone. Preserve her identity and graphic flat-drawn costume design in every shot. The generated image is only a character/style reference, not a literal frame.
+<Audio 1> is the 12.000-second source-song segment from 00:12.000 to 00:24.000, directly reused 1:1 as the complete soundtrack for this segment, with all vocals, instruments, timing, dynamics, and stereo balance unchanged.
+
+summary:
+[reference generation + audio reuse] Create a new 12-second 16:9 horizontal hand-drawn flat 2D character-PV segment starring <Subject 1>. Continue the offline-analyzed high-contrast lyric-PV language through modular grids, black panels, paper-cream fields, magenta/cyan overprint, fragmented portrait crops, and kinetic abstract glyphs. Use no source-video frames, no source-video input, and no extra character. Reuse <Audio 1> exactly from 00:00.000 through 00:12.000 of this segment.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve the vocalist's face, black-and-pink hair, cream color-block jacket, scarf, waveform skirt, headphones, cassette charm, microphone, proportions, and flat hand-drawn line quality.
+<Audio 1>: fully_copy - copy the supplied 12.000-second source segment exactly with no generated replacement audio or extra effects.
+
+detailed_description:
+The target video is a 16:9 hand-drawn flat 2D music PV that treats <Subject 1> as a printed poster figure inside a moving collage. Use rough ink contours, paper fibers, black and cream geometric planes, hot magenta and cyan registration shifts, red-orange accents, photocopy grain, thin white grid lines, and hard rhythmic cuts. The design must remain clean enough to read the character silhouette. Do not add readable subtitles or logos in this segment; use only non-readable graphic glyphs and short blocks. <Audio 1> is the only audible source.
+
+[Shot 1] The segment opens on a black rectangular panel with <Subject 1> shown as a cream-and-cyan full-body cut-paper figure standing slightly left of center. A narrow cream grid scrolls vertically behind her while magenta paper fragments assemble around her shoulders and boots. She raises the microphone, shifts her weight once, and lets the headphone cable swing a small arc. The camera is a Static Shot with a tiny Shake Slightly at each graphic hit.
+
+[Shot 2] At 00:02.800, the shot cuts to a close-up of her hand, wired microphone, scarf knot, and waveform skirt edge. The microphone cable becomes a thick black line that traces a geometric loop across the frame. Two cyan circles and one red-orange slash appear like hand-drawn equalizer marks. The camera Pushes In with small amplitude at fast speed, then stops sharply on the beat.
+
+[Shot 3] At 00:05.700, the shot cuts to a wide cream field with three staggered poster panels. The center panel contains <Subject 1> in a three-quarter stance; the left and right panels contain simplified black-and-magenta silhouette echoes with no facial detail. She pivots her shoulders, steps forward once, and turns the microphone toward camera. Use a fast Truck Left with small amplitude as the panels slide in opposite directions, maintaining a flat cut-paper construction.
+
+[Shot 4] At 00:08.900, the shot cuts to a low-angle half-body view. A large black circle expands behind her head, a cyan ring rotates in the opposite direction, and small magenta rectangles flicker at the edges. She lowers the microphone and looks just past camera while the pink streak and scarf move in a short gust. The camera Tilts Up with small amplitude at slow speed, then settles into a graphic freeze. Hold the final arrangement cleanly until 00:12.000.
+
+overall_soundscape:
+Preserve all vocals, guitar, bass, drums, and source effects contained in <Audio 1>. Do not add footsteps, crowd ambience, speech, foley, or independent impacts.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score from 00:00.000 to 00:12.000 of this segment. Preserve its original vocal delivery, fast rock instrumentation, beat placement, dynamics, effects, and stereo image.

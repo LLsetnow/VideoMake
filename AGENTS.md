@@ -26,6 +26,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 │   └── qa/                   # ffprobe、接触表、帧数和拼接核验资料
 ├── workflows/                # 既有/共享的 ComfyUI 工作流模板
 ├── videoOutput/              # 指向项目 output 成品的统一软链接入口
+├── temp/                     # 临时任务提示音等临时文件
 └── docs/                     # 拆分后的长期规则、流程和专题知识
 ```
 
@@ -43,6 +44,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | `qa/` | 帧数、音频、场景检测、接触表和拼接结果等验证证据。 |
 | `workflows/` | 跨项目复用的模板和历史共享工作流；新项目应复制后再修改。 |
 | `videoOutput/` | 只放指向 `projects/<项目名>/output/` 的软链接，不存放第二份视频实体。 |
+| `temp/` | 只存放临时任务提示音等可随时重建的临时文件，不作为项目交付物或长期素材目录。 |
 | `docs/` | 详细规则和长期文档；不放视频、音频、图片或 workflow JSON。 |
 
 新项目必须在 `projects/<项目名>/` 中保存自己的工作流、提示词和结果。项目较长时，再按时间序列拆成独立子项目；每个子项目都应能独立提交和复现。角色、背景、通用音频和参考视频等可复用资产分别归档到对应资产目录，不为每个项目重复复制。
@@ -64,6 +66,8 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | H3 Skill、提示词和 T8 节点 | [`docs/h3.md`](docs/h3.md) |
 | AIGate 实例、提交、队列和生命周期 | [`docs/aigate.md`](docs/aigate.md) |
 | 剪辑、核验、交付和复现 | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
+| 项目中间产物分级清理 | [`docs/project-cleanup.md`](docs/project-cleanup.md) |
+| 视频发布流程 | [`docs/publishing.md`](docs/publishing.md) |
 | 文档目录约定 | [`docs/AGENTS.md`](docs/AGENTS.md) |
 
 ## 主要目录分工
@@ -76,6 +80,12 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 - `workflows/AGENTS.md`：共享 ComfyUI 模板和 JSON 校验。
 - `videoOutput/AGENTS.md`：最终成品软链接的统一入口。
 - `docs/AGENTS.md`：说明文档自身的组织规则。
+
+## 任务完成语音提示
+
+- 如需用语音提示用户当前任务已完成，可以使用 OPC TTS 合成简短提示音：`mkdir -p temp && opc speech tts "当前任务已完成" -o temp/task-complete.wav`。
+- 合成的音频必须放在仓库根目录的 `temp/` 下；它是临时文件，不得替代项目输出或写入长期素材目录。
+- 合成成功后可以使用 `afplay temp/task-complete.wav` 播放。使用前台命令，待命令返回后再将播放视为完成；`afplay` 使用 macOS 当前默认音频输出设备，并应遵守用户对播放设备的明确要求。
 
 ## H3 全局约束
 

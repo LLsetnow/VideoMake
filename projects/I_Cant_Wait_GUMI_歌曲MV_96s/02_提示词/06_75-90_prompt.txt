@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 01:15.000–01:30.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the high-energy vocal, four-on-the-floor beat, synth riser, filter sweep, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 final-build music-video segment starring <Subject 1>. The movement grows from a determined walk into a fast run through a luminous glass city as the music rises. Use <Picture 1> for strict character identity and copy <Audio 1> exactly without new vocals, replacement music, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - retain the cover's green-haired character, cyan sky, glass frames, indigo linework, pale yellow costume, and star accents while expanding the space into a luminous final-build city.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve identity, hair, clothing, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 15-second build segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video is a bright hand-drawn 2D anime final-build sequence using the cover's cyan, lavender, yellow, green, and indigo palette. Layer transparent glass bridges, large concentric rings, paper-like color streaks, star flares, and clean motion lines, increasing visual density toward the end without losing <Subject 1>'s face or costume. No readable text, logos, subtitles, or UI.
+
+[Shot 1] The scene opens with <Subject 1> walking alone through a long cyan glass tunnel. The camera tracks backward in front of her at normal speed. She looks directly toward the lens, grips her bag strap, and takes three measured steps while rising light bands pass over her face and vest. Her hair and skirt move with the tunnel wind.
+
+[Shot 2] At 00:04.500, cut to a side tracking shot on a high transparent bridge. <Subject 1> accelerates into a run from left to right. The city below becomes cyan and lavender streaks; orange and green hand-drawn ribbons follow her arms and bag. Use a fast tracking shot with large amplitude while keeping her silhouette stable.
+
+[Shot 3] At 00:08.900, cut to a frontal low-angle view. <Subject 1> runs toward camera, slows, and reaches one hand forward as concentric cyan and yellow rings expand behind her. Her green hair lifts in the wind; the orange hair clip catches a star flare. The camera pushes in at fast speed, then counter-pans slightly to keep her centered.
+
+[Shot 4] At 00:12.600, cut to a wide aerial view of the bridge and floating city. <Subject 1> is small but clearly readable at the center as multiple luminous rings stack behind her and the skyline pulses brighter. The camera pulls out rapidly, then holds on the final reaching pose through 00:15.000. <Audio 1> remains uninterrupted and unchanged.
+
+overall_soundscape:
+All vocals, drums, synth riser, filter sweep, and existing effects in <Audio 1> are preserved exactly. Do not add running footsteps, dialogue, crowd noise, or new foley.
+
+non_diegetic_music:
+The complete supplied 01:15.000–01:30.000 segment from <Audio 1> is directly reused 1:1, preserving its high-energy vocal, tempo, rising synth, filter movement, dynamics, timing, and stereo image. Do not generate replacement music.

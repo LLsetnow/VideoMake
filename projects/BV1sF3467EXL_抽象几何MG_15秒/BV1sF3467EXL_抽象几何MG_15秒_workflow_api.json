@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/BV1sF3467EXL_abstract_geometry_gpt-image2_0-15s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the abstract geometric motion-graphics system established by <Picture 1>: a black Swiss grid, a central white elastic oval, fluorescent-yellow circle, lavender-purple rounded capsule, electric-blue starburst, thin black lines, and a restrained dark ink-green metallic cylinder. Preserve the limited palette, flat vector surfaces, crisp edges, generous white space, centered editorial composition, and precise Swiss-grid discipline while the shapes transform.\n<Picture 1> is a generated 16:9 visual composition anchor for the opening state and the recurring geometric design language. It is not a frame from the supplied Bilibili video.\n<Audio 1> is the extracted 00:00.000–00:15.000 segment of the supplied Bilibili video's audio, directly reused 1:1 as the complete final soundtrack. Preserve its exact timing, dynamics, processed vocal samples, stereo placement, and musical content; no replacement score or extra sound is allowed.\n\nsummary:\n[reference generation + audio reuse] Create an original 15-second 16:9 abstract geometric MG animation from <Picture 1> and <Audio 1>. Use <Picture 1> as a visual style and composition anchor, and lock <Audio 1> from 00:00.000 through 00:15.000. The supplied Bilibili video is used only to extract its audio; no source-video frames, characters, captions, logos, watermarks, or platform UI are input or reproduced.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): partially_preserved - preserve the defined palette, grid discipline, flat vector finish, crisp geometry, white negative space, and shape identity while allowing the shapes to squash, stretch, morph, rotate, split, and reassemble into new compositions.\n<Picture 1> (opening visual anchor for [Shot 1]): partially_preserved - preserve its clean white field, centered oval, black grid construction, limited colors, and balanced editorial layout, then animate and transform the arrangement.\n<Audio 1>: fully_copy - reuse the trimmed 15-second source audio as the complete final audio track without generating replacement music, dialogue, ambience, foley, or independent sound effects.\n\ndetailed_description:\nThe target video is a 15-second 16:9 landscape motion-graphics piece in a pure-white field with large negative space. Use modern editorial design and Swiss-grid composition: flat vector surfaces, razor-clean edges, accurate alignment, restrained layering, and only fluorescent yellow, lavender purple, electric blue, black, dark ink green, and white. Treat <Picture 1> as the opening visual anchor. Use one continuous shot with seamless shape morphs and mask reveals, no hard cuts, no camera shake, no realistic environment, no complex 3D space, no particles, smoke, heavy shadows, random colors, broken topology, or unreadable text. <Audio 1> starts on the first frame and remains unchanged to 00:15.000. Every major motion must land on the audible four-on-the-floor kick, clap/snare backbeats, syncopated hats, bass accents, bright chord stabs, and processed stereo vocal-chop hits in <Audio 1>.\n\n[Shot 1] From 00:00.000 to 00:02.200, begin exactly from <Picture 1>: a black rectangular grid unfolds from the left and right into a centered architectural frame while the large white oval in the middle elastically expands and compresses, visibly squeezing the grid lines without breaking them. Hold a centered Static Shot with a barely perceptible Push In at slow speed; keep the background pure white and the grid mathematically legible. On each first kick, the oval performs one controlled squash-and-stretch cycle.\n\nFrom 00:02.200 to 00:04.600, a fluorescent-yellow circle enters from the upper left and bounces along a clean horizontal grid line, compressing at each landing and stretching during each lift. On a strong beat it touches the central oval, flashes into an electric-blue four-point starburst, and holds a crisp silhouette for one beat. Use a small lateral Pan Right at fast speed only as the graphic layers translate; keep the camera stable and the composition centered.\n\nFrom 00:04.600 to 00:07.000, use a precise mask reveal and continuous shape correspondence: the blue starburst contracts through its center and becomes a lavender-purple rounded capsule card. The capsule slides across the oval, rotates a quarter turn on a chord stab, compresses on the kick, and rebounds with elastic easing. Keep the capsule flat and clean, with no text or icon inside it.\n\nFrom 00:07.000 to 00:09.600, the capsule squeezes and rotates into a fluorescent-yellow organic fluid ribbon, then the ribbon contracts into a perfect yellow circle at center. Maintain one continuous morph with no dissolve and no topology break. The black grid briefly bends around the circle, then re-aligns to the Swiss grid on the next beat. Use a controlled Pull Out with small amplitude at normal speed so the negative space remains dominant.\n\nFrom 00:09.600 to 00:11.800, a dark ink-green metallic cylinder with a restrained brushed sheen travels horizontally from left to right through the centered yellow circle. It physically occludes the circle, passes through its center, and cleanly slices the composition into two graphic halves using a crisp mask edge; the cylinder must remain a simple horizontal object, not a realistic scene or deep 3D environment.\n\nFrom 00:11.800 to 00:13.800, the separated circle halves, blue starburst, purple capsule, black grid rectangles, and thin black lines rapidly reassemble through rhythmic match-morphs into one original geometric logo. Use fast but readable elastic easing, precise alignment, and a restrained overshoot that settles after one beat. Do not introduce any brand mark or existing logo.\n\nFrom 00:13.800 to 00:14.650, hold the finished centered mark in a clean wide composition. After a brief musical pause, reveal the exact black title \"MiniMax H3\" beneath the mark in a minimal bold sans-serif treatment, perfectly spelled, sharply rendered, and horizontally aligned. Keep the title static and highly legible; no extra words, symbols, captions, or invented glyphs.\n\nFrom 00:14.650 to 00:15.000, let the title and geometric mark perform a tiny elastic settle, then fade cleanly to pure white while preserving the final audio tail of <Audio 1>. No additional sound or visual effect is generated.\n\noverall_soundscape:\nN/A. Do not generate room tone, ambience, impacts, foley, particles, transition sounds, or independent sound effects. All audible content must come from the directly copied <Audio 1> track.\n\nnon_diegetic_music:\n<Audio 1> is directly reused as the complete audience-only soundtrack from 00:00.000 through 00:15.000. Preserve the high-energy modern UK House / future-house or tech-house character, four-on-the-floor kick, syncopated hats, snare/clap backbeats, deep synthesized bass, bright chord stabs, processed \"Oh-oh-oh\" vocal hook, chopped stereo vocal fragments, exact dynamics, timing, and stereo image. Do not generate replacement music or additional vocals.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "geometric_mg_first_frame_gpt-image2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "lock_source_0-15.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

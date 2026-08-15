@@ -1,0 +1,26 @@
+情感失色症：生成视频镜头检测摘要
+检测器：FFmpeg scdet + 局部峰值 + 最短镜头/最小间隔过滤
+目标帧率：24 fps；转场保护：6 frames；最短可用素材：0.8s
+
+primary_4090D-48G	00-15_00001-audio.mp4	24fps	361 frames	15.042s	threshold=2.500	peaks=68@2.833s/9.642,122@5.083s/8.807,171@7.125s/12.551,231@9.625s/10.862,268@11.167s/8.588
+primary_4090D-48G	15-30_00001-audio.mp4	24fps	358 frames	14.917s	threshold=2.880	peaks=46@1.917s/7.320,102@4.250s/9.124,170@7.083s/6.637,226@9.417s/8.277,282@11.750s/2.979
+primary_4090D-48G	30-45_00001-audio.mp4	24fps	358 frames	14.917s	threshold=4.425	peaks=50@2.083s/11.900,110@4.583s/12.029,232@9.667s/13.782
+primary_4090D-48G	45-60_00001-audio.mp4	24fps	361 frames	15.042s	threshold=2.500	peaks=70@2.917s/10.482
+legacy_short_4090D-48G	shot_01_00001-audio.mp4	24fps	90 frames	3.750s	threshold=2.500	peaks=
+legacy_short_4090D-48G	shot_02_00001-audio.mp4	24fps	53 frames	2.208s	threshold=2.500	peaks=
+legacy_short_4090D-48G	shot_03_00001-audio.mp4	24fps	55 frames	2.292s	threshold=2.740	peaks=43@1.792s/4.523
+legacy_short_batch	shot_01_00001-audio.mp4	24fps	90 frames	3.750s	threshold=2.500	peaks=
+legacy_short_batch	shot_02_00001-audio.mp4	24fps	53 frames	2.208s	threshold=2.500	peaks=
+legacy_short_batch	shot_03_00001-audio.mp4	24fps	53 frames	2.208s	threshold=2.500	peaks=
+legacy_short_batch	shot_04_00001-audio.mp4	24fps	73 frames	3.042s	threshold=2.500	peaks=23@0.958s/4.160
+legacy_short_batch	shot_05_00001-audio.mp4	24fps	53 frames	2.208s	threshold=2.500	peaks=
+legacy_short_batch	shot_06_00001-audio.mp4	24fps	73 frames	3.042s	threshold=2.500	peaks=
+legacy_short_batch	shot_07_00001-audio.mp4	24fps	53 frames	2.208s	threshold=2.500	peaks=
+legacy_short_batch	shot_08_00001-audio.mp4	24fps	73 frames	3.042s	threshold=2.500	peaks=
+legacy_short_batch	shot_09_00001-audio.mp4	24fps	90 frames	3.750s	threshold=2.500	peaks=25@1.042s/7.648
+legacy_short_batch	shot_10_00001-audio.mp4	24fps	73 frames	3.042s	threshold=2.500	peaks=
+
+视频数量：17
+素材片段数量：34
+可用于鼓点剪辑：31
+已写入：/Users/apple/Documents/VideoMake/projects/情感失色症_60秒/analysis/asset_manifest.csv

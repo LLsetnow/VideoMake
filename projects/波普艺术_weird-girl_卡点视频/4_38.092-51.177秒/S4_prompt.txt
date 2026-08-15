@@ -1,0 +1,46 @@
+# S4 (38.092-51.177s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 do-do-do 段 + 副歌回归（"Weird girl, weird girl, that's okay" 呼应式）
+# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S4.wav（v3 切片 38.092-51.177s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that anchors the segment's visual identity: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a playful confident expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Subject 3> is the paper-cut silhouette girl group, new characters in the same halftone screen-print style: flat black paper-cut figures of young girls with identical bangs, created from the collage aesthetic of <Picture 1>.
+<Audio 1> is the locked music slice for this segment, retro synth-pop with call-and-response female vocals, bouncy bass and punchy drums at about 110 BPM, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + audio reuse] The target video continues the funky middle of the song: a spinning globe match-cut reveals <Subject 1> shimmying inside a bubble of floating hearts, a halftone-cluster match-cut lands on her face close-up winking on the beat, and a wide chorus shot introduces <Subject 3>, a group of paper-cut girls dancing in sync with her, all driven by <Audio 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; only pose and expression animate.
+<Subject 2> (appears in [Shot 1], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Subject 3> (appears in [Shot 3]): partially_preserved - the silhouette girls inherit the halftone screen-print aesthetic and bang hairstyle of <Picture 1>'s girl while being new flat paper-cut figures.
+<Picture 1> (style and identity anchor): partially_preserved - palette, textures, symbols and texts are kept while the world is fully animated.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art animation with a pink, black and white palette, halftone dot textures, paper grain and beat-synced cuts at about 110 BPM.
+[Shot 1] A black globe with a lat-long grid spins up from frame bottom, a graphic match on the globe of <Subject 2>. As it spins it reveals <Subject 1> inside a floating bubble of small hearts and stars, doing a playful shoulder shimmy on each beat, her dark hair with straight bangs bouncing. The camera tilts up from a low angle with small amplitude at slow speed.
+[Shot 2] At 00:04.362, a cluster of halftone dots condenses at frame center and blooms into an extreme close-up of <Subject 1>'s face, a graphic match on the halftone texture of <Subject 2>. She winks on the downbeat, dark lips curved in a smirk, and mouths along with the music without singing aloud. The camera holds a static close-up with a very slow push-in.
+[Shot 3] At 00:08.723, the shot cuts to a wide view: <Subject 1> leads <Subject 3>, a line of flat black paper-cut silhouette girls with identical bangs, all dancing in sync with a bouncy side-step on the beat. Stars fall like confetti past the halftone dots, the heart and the eye symbols float at the edges, and the camera cranes up slightly with small amplitude. The segment ends on this group formation, cut cleanly on the beat.
+
+overall_soundscape:
+Paper rustle and print-press clicks pulse with the beat, a light whoosh marks each match cut, and a subtle vinyl crackle runs throughout.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: retro synth-pop with call-and-response female vocals, bouncy bass and punchy drums at about 110 BPM.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 海报参考图（同前）；`<Subject 1>` 女孩（俏皮自信表情）；`<Subject 2>` 拼贴世界（符号可漂浮旋转）；`<Subject 3>` 纸片剪影女孩群——与海报女孩同款齐刘海、网点印刷美学的新平面纸片人物；`<Audio 1>` 本段锁定音乐（呼应式女声，约 110 BPM），1:1 复用。
+- `summary`：任务类型 [reference generation + audio reuse]；放克中段：地球仪匹配切揭示女孩在漂浮爱心泡泡里抖肩、网点簇匹配切落在她卡点眨眼的面部特写、宽景副歌段落引入纸片女孩群与她同步齐舞。
+- `retention_analysis`：`<Subject 1>` 全镜 fully_preserved；`<Subject 2>` fully_preserved；`<Subject 3>`（[Shot 3]）partially_preserved——继承海报女孩的印刷美学与齐刘海，但是新平面纸片形象；`<Picture 1>` partially_preserved；`<Audio 1>` fully_copy。
+- `detailed_description`：风格同前。Shot 1（0-4.362s）：黑色经纬地球仪从画面底部旋转升起（图形匹配切），揭示女孩在爱心/星星泡泡里随拍俏皮抖肩、齐刘海弹动，低机位缓速上摇；Shot 2（4.362s）：网点簇在中心凝聚绽放成面部大特写（纹理匹配切），强拍眨眼、深唇坏笑、对嘴跟唱不出声，静态特写缓推；Shot 3（8.723s）：切宽景——女孩领队，一排同款齐刘海的黑色纸片剪影女孩随拍齐步侧跳，星星如纸屑飘落，爱心与眼睛符号浮在边缘，镜头小幅缓升，段末定格队形、干净落在节拍上。
+- `overall_soundscape`：纸沙沙/印刷轻响随拍、匹配切 whoosh、唱片噪点。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——呼应式女声、约 110 BPM。

@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/I_Cant_Wait_GUMI_60-75",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the square album-cover image for \"I Can't Wait (feat. GUMI)\", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.\n<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.\n<Audio 1> is the exact 01:00.000–01:15.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including its second breakdown, processed vocal, Japanese vocal section, returning beat, dynamics, timing, and stereo balance.\n\nsummary:\n[reference generation + audio reuse] Create a 15-second horizontal 16:9 hand-drawn anime music-video segment that moves from a quiet glass-aquarium break into a renewed rhythmic performance by <Subject 1>. Use <Picture 1> for identity and visual language, and copy <Audio 1> exactly with no newly generated vocals, replacement music, or extra sound effects.\n\nretention_analysis:\n<Picture 1> (visual reference for all shots): partially_preserved - retain its character design, cyan/purple light, glass structure, indigo outlines, pale yellow accents, and star glints in a more spacious aquarium setting.\n<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve her face, hair, costume, bag, colors, proportions, and outline.\n<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.\n\ndetailed_description:\nThe target video keeps the cover's flat hand-drawn 2D look but introduces translucent water, mirrored glass, floating bubbles, cyan bloom, lavender shadows, and warm yellow highlights. The first half is slow and suspended for the breakdown; the second half becomes more rhythmic as the Japanese vocal section and beat return. No readable text or subtitles.\n\n[Shot 1] The scene opens in a vast transparent aquarium corridor. <Subject 1> stands in profile beside a curved glass wall, her green hair and bag strap drifting gently while pale fish-like light shapes pass behind her. The floor reflects her indigo outline. She touches the glass with one fingertip and looks toward a distant cyan glow. Use a static medium-full shot with a very slow push in.\n\n[Shot 2] At 00:05.000, cut to a close-up through the glass. Bubbles move upward across <Subject 1>'s face; she closes one eye in a soft wink, then follows a lavender ribbon of light with her gaze. Keep the mouth still and let the exact vocal remain inside <Audio 1>. Use a slow tilt upward with shallow layered reflections.\n\n[Shot 3] At 00:09.600, cut to a mirrored corridor as the rhythm returns. <Subject 1> steps forward between repeated cyan reflections, raises both hands, and makes a small alternating gesture on the beat. Orange and green line trails echo her hands, while the camera tracks backward at normal speed.\n\n[Shot 4] At 00:12.600, cut to a bright circular pool of light. <Subject 1> turns once toward camera, her skirt and hair following naturally, then lifts the orange hair clip side of her face into a playful wink. A four-point star glint expands behind her and freezes through 00:15.000. <Audio 1> remains continuous and unchanged.\n\noverall_soundscape:\nAll vocals, breakdown space, synths, beat, and effects in <Audio 1> are preserved exactly. Do not add water sounds, speech, foley, dialogue, or replacement ambience.\n\nnon_diegetic_music:\nThe complete supplied 01:00.000–01:15.000 segment from <Audio 1> is directly reused 1:1, preserving its breakdown, bilingual vocal performance, returning beat, timing, dynamics, and stereo image. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "I_Cant_Wait_专辑封面.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "lock_source_60-75.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

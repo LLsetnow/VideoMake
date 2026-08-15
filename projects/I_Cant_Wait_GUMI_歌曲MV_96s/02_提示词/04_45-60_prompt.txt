@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 00:45.000–01:00.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the returning four-on-the-floor beat, processed vocal, bright synths, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 energetic hand-drawn anime music-video segment in which <Subject 1> performs simple, readable hand-dance gestures on a geometric neon rooftop. Use <Picture 1> for character continuity and visual grammar, and copy <Audio 1> exactly without new vocals, replacement music, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - retain its green-haired character, cyan/purple palette, pale yellow costume accents, indigo outlines, and star motifs in a new rooftop stage.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve identity, costume, bag, hair, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video is a bright, graphic hand-drawn anime performance sequence with flat cyan, violet, pink, and warm-yellow shapes, thick indigo linework, translucent rooftop glass, paper grain, small star glints, and clean beat-synced cuts. The choreography is compact and physically coherent; do not add readable text, logos, subtitles, or platform UI.
+
+[Shot 1] The scene opens on a transparent rooftop stage above a cyan city at dusk. <Subject 1> stands center frame with her dark shoulder bag at her side. She taps one foot, crosses her hands near her chest, then opens them outward on the first musical accents. Violet rails and orange light strips form a simple geometric frame. Use a medium-full shot with a slow push in and subtle rhythmic camera vibration.
+
+[Shot 2] At 00:04.700, cut to a medium close-up. <Subject 1> performs a two-count finger-point gesture, winks, and turns her head toward a bright off-screen light. Warm-yellow and pink reflections slide over her white shirt and vest while her green hair bounces once. Use a smooth lateral truck shot with small amplitude, keeping her eyes and outline crisp.
+
+[Shot 3] At 00:08.900, cut to a full-body low-angle view. <Subject 1> takes three small dance steps across the glass roof, pivots, and lets the bag swing in a controlled arc. Thin cyan and orange line ribbons follow the hands but never obscure her face. The camera tracks backward at normal speed while the skyline pulses between lavender and cyan.
+
+[Shot 4] At 00:12.700, cut to an overhead view. <Subject 1> looks up and makes a final star-shaped hand pose; the stage geometry forms a luminous four-point frame around her. The camera pulls out quickly, then holds the composition through 00:15.000. <Audio 1> continues seamlessly across all cuts and remains the only audible soundtrack.
+
+overall_soundscape:
+All vocals, beat, synths, and effects already present in <Audio 1> are preserved exactly. Do not generate crowd noise, stage ambience, dialogue, or additional foley.
+
+non_diegetic_music:
+The complete supplied 00:45.000–01:00.000 segment from <Audio 1> is directly reused 1:1 with its original vocal content, tempo, dynamics, timing, and stereo balance. Do not generate replacement music.

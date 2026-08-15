@@ -1,0 +1,27 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 01:30.000–01:35.576 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the final riser, reverberant vocal sample, extended synth note, abrupt ending, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 5.576-second horizontal 16:9 climax-and-cutoff segment starring <Subject 1>. Build a final luminous gesture, then end exactly with the abrupt source ending in <Audio 1>; do not add a fade, outro, new vocal, replacement music, or extra sound effect.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - preserve the cover character, cyan glass language, indigo outline, pale yellow accents, and star glints while escalating into a white-hot final image.
+<Subject 1> (appears in [Shot 1] through [Shot 3]): fully_preserved - preserve her identity, hair, costume, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 5.576-second tail segment 1:1 as the complete audio track and preserve its abrupt cutoff.
+
+detailed_description:
+The target video is a compact hand-drawn anime climax in the cover's cyan, lavender, yellow, green, and indigo language. Use fast clean motion, concentric light rings, paper-like streaks, and controlled bloom. The ending must be an abrupt cut at 00:05.576 with no fade or extra tail.
+
+[Shot 1] The scene opens on <Subject 1> at the center of a transparent bridge, facing away from camera with one shoulder turned back. A bright cyan ring rises behind her as the final build enters. She turns her head toward camera and begins extending one hand. Use a fast push in with medium amplitude; keep her green hair, orange clip, pale yellow vest, and dark bag recognizable.
+
+[Shot 2] At 00:02.200, cut to a frontal medium close-up. <Subject 1> completes the reach toward the lens and opens her hand. Indigo linework, cyan rings, warm yellow flare, and lavender glass reflections stack rapidly around her without covering her face. The camera arcs slightly and then locks to her eyes as the reverberant vocal and synth rise continue inside <Audio 1>.
+
+[Shot 3] At 00:04.500, cut to a wide white-cyan silhouette of <Subject 1> framed by a final four-point star. The image blooms toward white for a fraction of a second, then freezes on the reaching pose. End exactly at 00:05.576 with the abrupt cutoff from <Audio 1>; no fade-out, no extra frame, and no new sound.
+
+overall_soundscape:
+All final riser, vocal sample, synth note, timing, and abrupt cutoff in <Audio 1> are preserved exactly. Do not add ambience, foley, dialogue, or an ending tail.
+
+non_diegetic_music:
+The complete supplied 01:30.000–01:35.576 segment from <Audio 1> is directly reused 1:1, preserving the final build, reverberant vocal sample, extended synth note, abrupt cutoff, dynamics, and stereo image. Do not generate replacement music or a fade.

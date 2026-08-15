@@ -1,0 +1,44 @@
+# S5 (51.177-63.158s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 尾段主歌（"Collage dreams on a screen-print page..."）
+# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S5.wav（v3 切片 51.177-63.158s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that anchors the segment's visual identity: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a relaxed confident expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Audio 1> is the locked music slice for this segment, retro synth-pop with confident female vocals, bouncy bass and punchy drums at about 110 BPM, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + audio reuse] The target video is the confident final verse: a checkerboard tile match-cut reveals <Subject 1> leaning on a giant letter "N" of the visible text "SHE'S NOT NORMAL AND THAT'S OKAY.", a macro shot shows paper-cut hands placing a heart onto the collage world, and a power-pose shot ends with the slogan text glowing while the camera pulls back, all driven by <Audio 1>.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; only pose and expression animate.
+<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Picture 1> (style and identity anchor): partially_preserved - palette, textures, symbols and texts are kept while the world is fully animated.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art animation with a pink, black and white palette, halftone dot textures, paper grain and beat-synced cuts at about 110 BPM.
+[Shot 1] A black checkerboard tile flips open from frame center, a graphic match on the checkerboard of <Subject 2>. Behind it, <Subject 1> leans relaxed against a giant black letter "N", one leg crossed, arms crossed, the full slogan "SHE'S NOT NORMAL AND THAT'S OKAY." running in black print beside her. Her dark hair with straight bangs hangs still; she raises one eyebrow on the downbeat. The camera pushes in slowly with small amplitude.
+[Shot 2] At 00:03.993, the shot cuts to a macro close-up: a hand in black halftone paper-cut style holds silver scissors and cuts a small pink heart out of paper, then places it onto the collage surface with a soft pat. Halftone dots and paper fibers are clearly visible. The camera holds a static macro shot; on the beat, the pasted heart pulses once.
+[Shot 3] At 00:07.983, the shot cuts to <Subject 1> in a power pose, fists raised, chin up, dark lips in a confident smile. The slogan text "SHE'S NOT NORMAL AND THAT'S OKAY." glows with a warm pink backlight, stars burst around her, and the camera pulls back with medium amplitude at slow speed to frame her full figure against the pink paper world. The segment ends on this composition, cut cleanly on the beat.
+
+overall_soundscape:
+Paper rustle, scissor snips and print-press clicks pulse with the beat, a light whoosh marks each match cut, and a subtle vinyl crackle runs throughout.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: retro synth-pop with confident female vocals, bouncy bass and punchy drums at about 110 BPM.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 海报参考图（同前）；`<Subject 1>` 女孩（松弛自信表情）；`<Subject 2>` 拼贴世界；`<Audio 1>` 本段锁定音乐（自信女声，约 110 BPM），1:1 复用。
+- `summary`：任务类型 [reference generation + audio reuse]；自信尾段：棋盘格翻转匹配切揭示女孩斜倚在巨大字母"N"上（配 "SHE'S NOT NORMAL AND THAT'S OKAY." 标语）、微距剪纸贴爱心、力量姿态收尾并让标语发光拉远。
+- `retention_analysis`：`<Subject 1>` 全镜 fully_preserved；`<Subject 2>` fully_preserved；`<Picture 1>` partially_preserved；`<Audio 1>` fully_copy。
+- `detailed_description`：风格同前。Shot 1（0-3.993s）：黑色棋盘格从中心翻开（图形匹配切），女孩松弛斜倚巨大黑字"N"，翘腿抱臂，身边是完整标语 "SHE'S NOT NORMAL AND THAT'S OKAY."，强拍挑眉，镜头缓推；Shot 2（3.993s）：微距特写——黑色网点纸片手拿银剪刀剪出一颗粉色爱心贴上拼贴表面，网点与纸纤维清晰可见，静态微距、贴上的爱心随拍脉动一次；Shot 3（7.983s）：切到女孩力量姿态——握拳抬颌、深唇自信微笑，标语文字散发暖粉背光，星星在身边爆开，镜头中幅度缓速拉远框出她全身，段末定格、干净落在节拍上。
+- `overall_soundscape`：纸沙沙、剪刀咔嚓与印刷轻响随拍脉动，匹配切 whoosh，唱片噪点。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐。

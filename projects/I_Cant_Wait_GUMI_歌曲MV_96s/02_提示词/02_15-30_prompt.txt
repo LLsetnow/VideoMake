@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the square album-cover image for "I Can't Wait (feat. GUMI)", used as the visual identity, composition, line-art, color-palette, and character reference for the target music video, not as a literal first or last frame.
+<Subject 1> is the green-haired anime girl from <Picture 1>, with short layered green hair and long side locks, a small orange hair clip, a white shirt, a pale yellow vest with star patches, a green skirt, white socks, orange shoes, a dark shoulder bag, and a friendly winking expression. Preserve her recognizable face, hair silhouette, clothing colors, accessories, proportions, and clean indigo outline in every shot.
+<Audio 1> is the exact 00:15.000–00:30.000 segment of the source song, directly reused 1:1 as the target segment's complete audio track, including the four-on-the-floor beat, processed female vocal, synths, dynamics, timing, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a 15-second horizontal 16:9 hand-drawn anime dance-pop segment in which <Subject 1> moves through a bright floating transit city. Use <Picture 1> for identity and visual grammar, and reuse <Audio 1> exactly with no new vocals, replacement music, or extra sound effects.
+
+retention_analysis:
+<Picture 1> (visual reference for all shots): partially_preserved - transfer its character design, cyan sky, lavender reflections, indigo outline, and playful star accents into new transit-city scenes.
+<Subject 1> (appears in [Shot 1] through [Shot 4]): fully_preserved - preserve her face, hair, costume, bag, colors, proportions, and outline.
+<Audio 1>: fully_copy - reuse the supplied 15-second audio segment 1:1 as the complete audio track.
+
+detailed_description:
+The target video uses the same clean hand-drawn anime language as <Picture 1>, with flat pastel color blocks, glass surfaces, cyan and violet reflections, warm yellow costume accents, indigo outlines, paper grain, and fast but legible beat-synced cuts. No readable signage, subtitles, logos, or UI.
+
+[Shot 1] The scene opens inside a moving elevated train made of pale glass and white geometric frames. <Subject 1> stands near the center aisle, one hand on a rail and the other making a small two-count gesture. Cyan buildings slide behind the windows as soft rectangular reflections. The camera performs a smooth lateral tracking shot with small amplitude; the bag swings naturally with the train motion.
+
+[Shot 2] At 00:04.800, cut to an exterior side view of the same train crossing a transparent sky bridge. <Subject 1> is visible through the windows, walking two steps and turning her shoulders toward camera. Turquoise and lavender light bands travel along the train body on each beat. Use a fast tracking shot while keeping her hair silhouette and costume readable.
+
+[Shot 3] At 00:09.200, cut to a wide floating-city plaza. <Subject 1> steps onto a pale circular platform surrounded by cyan sky, small star glints, and simplified pastel towers. She pivots once, lifts her bag strap, and sends thin orange and green hand-drawn ribbons around her in a clean spiral. The camera arcs laterally with small amplitude at normal speed, countering her turn so she stays centered.
+
+[Shot 4] At 00:12.600, cut to a low-angle view through a glass roof. <Subject 1> leans toward the lens, then points upward as the city geometry rotates behind her. The colored ribbons snap into a bright starburst and leave a clean cyan frame. End at 00:15.000 with her looking upward. <Audio 1> remains continuous and unchanged across the cuts.
+
+overall_soundscape:
+All vocals, drums, bass, synths, and existing effects in <Audio 1> are preserved exactly. Do not create train announcements, crowd noise, dialogue, or additional foley.
+
+non_diegetic_music:
+The complete supplied 00:15.000–00:30.000 segment from <Audio 1> is directly reused 1:1 with its original tempo, vocal content, dynamics, timing, and stereo balance. Do not generate replacement music.

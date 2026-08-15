@@ -1,0 +1,29 @@
+subject_definitions:
+<Subject 1> is the androgynous person shown in <Picture 1>, wearing a fully covered white high-neck jumpsuit with clean geometric seams, short silver hair, a calm expressionless face, and cyan/magenta pulse blocks at the chest, wrists, and ankles. The white grid laboratory, circular aperture, transparent towers, scanlines, and restrained chromatic-aberration treatment are reusable visual traits. Preserve the identity and style; no nudity, no extra people, no logos, no readable text.
+<Audio 1> is the source audio from 00:45.000 to 01:00.000, directly reused 1:1 as the complete final audio track of this segment.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 16:9 electro-pop/chiptune sequence using <Picture 1> as a style-and-subject reference, not a literal boundary frame. Reuse <Audio 1> exactly. Use five shots with cuts at local 00:03.021, 00:06.179, 00:09.176, and 00:11.693, corresponding to global 00:48.021, 00:51.179, 00:54.176, and 00:56.693. This is the recovery and fade phase: the overload clears, then nearly all color disappears.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve the same figure, costume, sterile grid laboratory, circular aperture, transparent towers, and pulse-block motif while reducing the visible color and motion toward stillness.
+<Audio 1>: fully_copy - copy the complete 00:45.000-01:00.000 source signal 1:1 as this segment's final audio track.
+
+detailed_description:
+Continue the established white/graphite motion-design world with precise grids, transparent architecture, restrained scanlines, subtle grain, and the same stable figure. The source track <Audio 1> is the only music and must remain untouched; do not add dialogue or new sound. Cuts must land at the exact rhythm targets below.
+
+[Shot 1] The segment begins at global 00:45.000 from the white overexposure, then resolves into a close-up of the stitched white jumpsuit at the chest and wrist. One small cyan pulse remains, while all magenta disappears. Use a slow downward tilt from the chest to the hand.
+
+[Shot 2] At 00:03.021, cut to a wide empty laboratory. <Subject 1> stands small inside the circular aperture while transparent blocks drift away one by one, each leaving a brief cyan glint. Dolly backward at slow speed with large amplitude, making the negative space expand.
+
+[Shot 3] At 00:06.179, cut to a side profile in a dark graphite void that still carries the laboratory grid as thin lines. Only the white outline of <Subject 1> and one tiny cyan mark remain. Track left at slow speed; the figure takes one quiet step and stops.
+
+[Shot 4] At 00:09.176, cut to a frontal medium shot. <Subject 1> places one palm on a transparent glass plane; a thin magenta line travels through the grid and fades before reaching the frame edge. Use a static composition with a small push in and no facial expression change.
+
+[Shot 5] At 00:11.693, cut to the final wide symmetrical view of the circular aperture. <Subject 1> stands centered and motionless; the world is fully desaturated except for one faint cyan pixel near the chest. Hold a static shot until the exact end at local 00:15.000 / global 01:00.000. Do not add a title card or visible text. Preserve <Audio 1> continuously to the final frame.
+
+overall_soundscape:
+Preserve all audible content already present in <Audio 1> and add nothing. No dialogue, voiceover, footsteps, room tone, foley, or generated effects.
+
+non_diegetic_music:
+Reuse <Audio 1> 1:1 from global 00:45.000 to 01:00.000. Preserve its exact tempo, beat placement, short synth fills, bassline, dynamics, and stereo balance. Do not generate replacement music.
