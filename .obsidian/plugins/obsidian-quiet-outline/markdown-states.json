@@ -10291,5 +10291,187 @@
       }
     },
     "expandedKeys": []
+  },
+  "prompts/模版.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 1,
+        "ch": 0
+      },
+      "to": {
+        "line": 1,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "prompts/文生图案例.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 1,
+        "ch": 0
+      },
+      "to": {
+        "line": 1,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/文生图案例.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 7
+      },
+      "to": {
+        "line": 0,
+        "ch": 7
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/公共模版.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 20
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/案例.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw videos.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "CLAUDE.md": {
+    "scroll": 83.19110275689223,
+    "cursor": {
+      "from": {
+        "line": 96,
+        "ch": 48
+      },
+      "to": {
+        "line": 96,
+        "ch": 48
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/media-assets.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 27
+      },
+      "to": {
+        "line": 6,
+        "ch": 27
+      }
+    },
+    "expandedKeys": []
+  },
+  "projects/千夏_夏_三人短片/项目记录.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 18
+      },
+      "to": {
+        "line": 5,
+        "ch": 18
+      }
+    },
+    "expandedKeys": []
+  },
+  "projects/千夏_复合构成主义_15秒/01_素材/素材清单.md": {
+    "scroll": 0.39603960396039606,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 84
+      },
+      "to": {
+        "line": 5,
+        "ch": 84
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南.md": {
+    "scroll": 62.518943170488534,
+    "cursor": {
+      "from": {
+        "line": 45,
+        "ch": 104
+      },
+      "to": {
+        "line": 45,
+        "ch": 104
+      }
+    },
+    "expandedKeys": []
+  },
+  "character/AGENTS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 0
+      },
+      "to": {
+        "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
   }
 }

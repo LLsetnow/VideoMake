@@ -1,0 +1,455 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": "integrated_multimodal_description: [Shot 1] Live-action, photorealistic cinematic superhero action at golden hour in Manhattan, presented with high-contrast sunlight, realistic atmospheric haze, sharp architectural detail, and energetic blockbuster cinematography. A third-person wide tracking shot follows Spider-Man from slightly above and behind as he swings at extreme speed through a deep urban canyon formed by towering glass-and-steel skyscrapers. He wears his iconic fitted red-and-blue suit with raised black web patterns, a black spider emblem, and large reflective white eye lenses. His identity, costume details, anatomy, and body proportions remain visually consistent throughout the complete video.\n\nSpider-Man hangs beneath a single taut web line attached high above the frame. His legs trail naturally behind him as gravity pulls his body downward through the center of the avenue. The camera performs a large-amplitude tracking shot at fast speed, closely following his descending trajectory while the buildings stretch upward on both sides. Warm sunlight flashes across windows, metal façades, and the white lenses of his mask. Far below, streams of yellow taxis, buses, and pedestrians establish the enormous height and speed of the swing.\n\nAs Spider-Man approaches the lowest point of the arc, he releases the existing line, folds his body into a compact forward dive, and falls rapidly toward the street. The camera descends with him, producing strong depth and parallax as foreground fire escapes and rooftop structures rush past. He turns his torso toward the right-hand skyscraper, extends his right arm in the classic web-shooting pose, and fires one thin white web strand toward the upper corner of the building. The strand attaches with a sharp snap, pulls taut, and redirects his fall into a powerful forward swing.\n\n[Shot 2] At 00:03.200, the camera cuts seamlessly into Spider-Man's first-person POV at the exact moment the newly attached web line takes his weight. His red-gloved right hand, forearm, and the stretched web line are visible along the upper-right side of the frame, while his left hand occasionally enters the lower-left edge for balance. The viewpoint accelerates forward at fast speed, swinging only a few meters from reflective glass windows. Reflections of the city, sunlight, and Spider-Man's passing silhouette race across the building façade.\n\nThe POV tilts downward with large amplitude as he drops toward the avenue, revealing rapidly approaching traffic far below, then tilts upward at fast speed as the web pulls him through the lowest point of the pendulum arc. The viewpoint banks sharply left around the corner of a skyscraper and rolls slightly clockwise, creating a physically coherent sense of centrifugal force without losing visual orientation. His free left hand reaches forward, fingers forming the web-shooting gesture as the camera rushes through a narrow opening between two buildings. Bright sunlight bursts into the frame as he clears the gap and rises toward the open sky.\n\n[Shot 3] At 00:06.400, the camera cuts back to an exterior third-person wide side view as Spider-Man reaches the apex of the swing high above the Manhattan avenue. He releases the web line and launches into open air. His momentum carries him forward while he begins a controlled backward somersault, knees folding toward his torso before his body extends into a dynamic aerial pose.\n\nBullet time begins immediately at 00:06.400. Spider-Man's rotation slows to an extremely low speed while the surrounding world appears nearly frozen. The released web strand undulates behind him in a graceful curve; suspended dust particles, small pieces of paper, and several startled pigeons remain almost motionless in the air. The camera performs a large-amplitude 270-degree arc shot around Spider-Man at very slow speed, moving from his left side, across his front, and toward his right rear shoulder. Manhattan's skyline rotates smoothly behind him while bands of golden sunlight travel across the raised texture of his suit and the curved surfaces of his reflective eye lenses. Strong foreground-to-background parallax preserves the scale of the city even though time is nearly stationary.\n\nAt 00:08.800, bullet time ends with an abrupt return to normal speed. Spider-Man completes the backward rotation, straightens his body, and turns toward the direction of travel. He thrusts his left arm outward and fires a fresh web strand toward the upper-left corner of an off-screen building. The line attaches and instantly pulls him forward. His body accelerates into another long swing while the camera rapidly pulls out with large amplitude, revealing the immense Manhattan skyline, the glowing avenue below, and Spider-Man becoming a smaller silhouette between the skyscrapers. The final image holds the dynamic wide composition as he swings toward the sunlit distance at exactly 10.00 seconds.\n\noverall_soundscape: Powerful rushing wind rises and falls according to Spider-Man's speed, layered with distant Manhattan traffic, scattered car horns, and faint street activity far below. Each web shot produces a crisp mechanical release, a sharp attachment snap, and the elastic tension of the strand taking Spider-Man's weight. During bullet time, the wind and city ambience stretch into a deep, muffled slow-motion texture; at 00:08.800, full-speed wind, traffic, and web tension return with a sudden impact.\n\nnon_diegetic_music: From 00:00.000 to 00:06.400, a fast 140-BPM orchestral-electronic action score combines rapid staccato strings, low brass pulses, taiko drums, and a synchronized electronic bass ostinato, with additional percussion and rising synthesizer layers entering during the first-person sequence. At 00:06.400, the drums and rhythmic strings stop abruptly for bullet time, leaving a sustained low sub-bass tone, reversed metallic textures, widely spaced piano notes, and a slowly rising brass chord. At 00:08.800, the full orchestra and electronic percussion return with a strong impact, followed by ascending brass, rapid strings, and one final synchronized orchestral hit at 00:10.000.",
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "T2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 6,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 123456789
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/stable_4v4a",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "38": {
+    "inputs": {
+      "width": [
+        "39",
+        0
+      ],
+      "height": [
+        "39",
+        1
+      ],
+      "upscale_method": "lanczos",
+      "keep_proportion": "stretch",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 32,
+      "device": "cpu",
+      "image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  },
+  "39": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 1,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "二采分辨率"
+    }
+  },
+  "40": {
+    "inputs": {
+      "pixels": [
+        "38",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "41": {
+    "inputs": {
+      "video_latent": [
+        "40",
+        0
+      ],
+      "audio_latent": [
+        "11",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "43": {
+    "inputs": {
+      "noise_seed": 123456789
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "44": {
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "45": {
+    "inputs": {
+      "noise": [
+        "43",
+        0
+      ],
+      "guider": [
+        "44",
+        0
+      ],
+      "sampler": [
+        "47",
+        0
+      ],
+      "sigmas": [
+        "48",
+        0
+      ],
+      "latent_image": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "47": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "48": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "50": {
+    "inputs": {
+      "av_latent": [
+        "45",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "51": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/stable_4v4a",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "50",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  }
+}
