@@ -2,12 +2,12 @@
 
 ## 资产目录
 
-- `audio/`：通用音乐、驱动音频、参考音频；锁定源音频项目的源轨必须保持不变。
-- `background/`：可复用背景图案和场景背景。
-- `character/<角色名>/`：角色身份图、三视图、面部/全身/服装/姿态/场景参考图及角色音色。
-- `videoRef/`：仅用于研究风格、动作、镜头或效果的参考视频。
+- `ref/audio/`：通用音乐、驱动音频、参考音频；锁定源音频项目的源轨必须保持不变。
+- `ref/background/`：可复用背景图案和场景背景。
+- `ref/character/<角色名>/`：角色身份图、三视图、面部/全身/服装/姿态/场景参考图及角色音色。
+- `ref/videoRef/`：仅用于研究风格、动作、镜头或效果的参考视频。
 
-如果视频有人物口播或台词，优先接入对应角色目录的音色参考。例如千夏使用 `character/千夏/千夏音色6秒.mp3`；不要把其他角色音色误接入当前角色。
+如果视频有人物口播或台词，优先接入对应角色目录的音色参考。例如千夏使用 `ref/character/千夏/千夏音色6秒.mp3`；不要把其他角色音色误接入当前角色。
 
 所有角色、背景和分镜参考图均使用 `image-gen` 生成，必须是 ComfyUI/Aigate 可读取的栅格图像（PNG、JPG 或 WEBP）。不要将多个角色合并为一张参考图；多个角色使用独立图片和独立 `Load Image` 节点。
 
@@ -15,7 +15,56 @@
 
 参考视频默认只用于风格、动作、镜头或效果分析，不要自动作为最终素材或上传到工作流；只有任务明确要求时才接入视频参考节点。
 
-下载媒体后先检查完整性和格式，再归档到 `videoRef/` 或 `audio/`，不要把下载目录当生成结果目录。cookies 可通过命令参数临时提供，但不得复制到项目、提交版本库或写入说明文件。
+下载媒体后先检查完整性和格式，再归档到 `ref/videoRef/` 或 `ref/audio/`，不要把下载目录当生成结果目录。cookies 可通过命令参数临时提供，但不得复制到项目、提交版本库或写入说明文件。
+
+## macOS 本地生成深度图（Depth Anything V2 Small · Core ML F16）
+
+这套流程直接在当前 macOS 环境运行，不依赖 ComfyUI，适合为单张姿态图、角色参考图或场景图生成同尺寸的灰度深度图。模型和虚拟环境属于本机运行时资源，位于 `.runtime/` 下，不提交到版本库。
+
+### 当前运行时
+
+- 模型：`.runtime/depth_anything_v2_small_f16/DepthAnythingV2SmallF16.mlpackage`
+- Python 环境：`.runtime/depth_anything_v2_small_f16/venv/`
+- 生成脚本：`tools/depth_anything_macos.py`
+- 依赖清单：`tools/requirements-depth-anything-macos.txt`
+- 已验证版本：Python 3.9.6、`coremltools==9.0`、`numpy==2.0.2`、`Pillow==11.3.0`
+
+### 安装或重建环境
+
+从仓库根目录执行；如果虚拟环境已经存在，只需重新执行依赖安装即可：
+
+```bash
+python3 -m venv .runtime/depth_anything_v2_small_f16/venv
+.runtime/depth_anything_v2_small_f16/venv/bin/python -m pip install \
+  -r tools/requirements-depth-anything-macos.txt
+```
+
+模型包必须存在于上述 `.mlpackage` 路径。脚本会使用 Core ML 的全部可用计算单元加载模型。
+
+### 生成深度图
+
+输出文件建议使用原文件名加 `_depth` 后缀，避免覆盖原图：
+
+```bash
+INPUT="/Users/apple/Documents/VideoMake/ref/pose/截图_20260829-232615.png"
+OUTPUT="/Users/apple/Documents/VideoMake/ref/pose/截图_20260829-232615_depth.png"
+
+.runtime/depth_anything_v2_small_f16/venv/bin/python \
+  tools/depth_anything_macos.py "$INPUT" -o "$OUTPUT"
+```
+
+也可以替换 `INPUT` 和 `OUTPUT` 处理其他图片。路径包含空格时，保持变量和参数外层的双引号。
+
+### 处理方式与结果检查
+
+脚本会将输入图按比例放入 Core ML 的固定输入尺寸 `518×392`，推理后取有效深度值的第 1～99 百分位进行归一化，再裁去留白并恢复到原图尺寸。输出为 8 位单通道灰度 PNG（Pillow 模式 `L`）。
+
+```bash
+sips -g pixelWidth -g pixelHeight "$INPUT" "$OUTPUT"
+file "$OUTPUT"
+```
+
+完成标准：输出文件存在，宽高与输入图一致，`file` 显示为 PNG、8-bit grayscale。该结果是相对深度可视化图，不是带真实物理距离单位的 metric depth；不同图片之间的灰度值不应直接当作绝对距离比较。
 
 ## `image-gen` 生成图像（codex + gpt-image）
 
@@ -46,7 +95,7 @@ opc image understand "projects/<项目名>/analysis/<名称>.png" \
   -p "确认风格与参考角色一致性，并简短描述画面" \
   -o "projects/<项目名>/analysis/<名称>_check.txt"
 ```
-- 可复用角色身份图 → `character/<角色名>/`；可复用背景 → `background/`；仅本次任务使用 → 项目 `analysis/` 或任务目录；
+- 可复用角色身份图 → `ref/character/<角色名>/`；可复用背景 → `ref/background/`；仅本次任务使用 → 项目 `analysis/` 或任务目录；
 - 备用生图通道统一为 `opc image generate`：默认引擎 `qwen`（阿里云 Qwen Image，用 `ALIYUN_API_KEY`）；`--engine gpt-image` 走 GPT-Image（经本机 codex CLI 的内置 image_gen 工具调用，需 ChatGPT 账号登录，不需要 API Key；原 `opc gpt-img` 已合并入该命令）。
 
 ## `opc media download` 下载示例
@@ -55,13 +104,13 @@ opc image understand "projects/<项目名>/analysis/<名称>.png" \
 
 ```bash
 # 视频
-opc media download "<Bilibili_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
-opc media download "<Douyin_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
-opc media download "<X_URL>" -o "/Users/apple/Documents/VideoMake/videoRef"
+opc media download "<Bilibili_URL>" -o "/Users/apple/Documents/VideoMake/ref/videoRef"
+opc media download "<Douyin_URL>" -o "/Users/apple/Documents/VideoMake/ref/videoRef"
+opc media download "<X_URL>" -o "/Users/apple/Documents/VideoMake/ref/videoRef"
 
 # 音频
-opc media download "<Bilibili_URL>" --audio-only -o "/Users/apple/Documents/VideoMake/audio"
-opc media download "<Netease_URL>" -o "/Users/apple/Documents/VideoMake/audio" --bitrate 320
+opc media download "<Bilibili_URL>" --audio-only -o "/Users/apple/Documents/VideoMake/ref/audio"
+opc media download "<Netease_URL>" -o "/Users/apple/Documents/VideoMake/ref/audio" --bitrate 320
 
 # B站/抖音/X 视频内容总结（下载 → ASR → 总结）
 opc media download "<视频_URL>" --summarize -o "projects/<项目名>/analysis"
@@ -71,7 +120,7 @@ opc media download "<视频_URL>" --summarize -o "projects/<项目名>/analysis"
 
 ## `opc music generate` 生成音乐
 
-可以使用 `opc music generate` 调用 MiniMax Music 生成歌曲或纯音乐。使用 `--provider minimax` 指定 MiniMax，并将生成结果保存到 `audio/` 或当前项目的音频目录；API Key 保存在 OPC 的本地配置中，不要写入 VideoMake。
+可以使用 `opc music generate` 调用 MiniMax Music 生成歌曲或纯音乐。使用 `--provider minimax` 指定 MiniMax，并将生成结果保存到 `ref/audio/` 或当前项目的音频目录；API Key 保存在 OPC 的本地配置中，不要写入 VideoMake。
 
 ```bash
 # MiniMax 生成纯音乐
@@ -79,7 +128,7 @@ opc music generate --provider minimax \
   "电影感钢琴与弦乐，逐渐推进，温暖收束" \
   --model music-3.0-free \
   --instrumental \
-  -o "/Users/apple/Documents/VideoMake/audio/minimax-instrumental.mp3"
+  -o "/Users/apple/Documents/VideoMake/ref/audio/minimax-instrumental.mp3"
 ```
 
 ## `opc music` 音频分析
@@ -88,9 +137,9 @@ opc music generate --provider minimax \
 - `opc music understand <音频文件>`：分析曲风、内容和听感，用于脚本、剪辑和 H3 提示词。
 
 ```bash
-opc music beats "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
+opc music beats "/Users/apple/Documents/VideoMake/ref/audio/<音频文件>.mp3" \
   -o "projects/<项目名>/beat_analysis.txt"
-opc music understand "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3" \
+opc music understand "/Users/apple/Documents/VideoMake/ref/audio/<音频文件>.mp3" \
   -o "projects/<项目名>/music_analysis.txt"
 ```
 
@@ -109,10 +158,10 @@ opc music understand "/Users/apple/Documents/VideoMake/audio/<音频文件>.mp3"
 
 ```bash
 # 直接分析本地视频
-opc video understand "/Users/apple/Documents/VideoMake/videoRef/<参考视频>.mp4"
+opc video understand "/Users/apple/Documents/VideoMake/ref/videoRef/<参考视频>.mp4"
 
 # 重点分析运镜，并将结果保存到当前项目的 analysis 目录
-opc video understand "/Users/apple/Documents/VideoMake/videoRef/<参考视频>.mp4" \
+opc video understand "/Users/apple/Documents/VideoMake/ref/videoRef/<参考视频>.mp4" \
   -p "按时间段分析景别、镜头运动类型、运动方向、速度和主体动作" \
   -o "projects/<项目名>/analysis/video_understanding.txt"
 
