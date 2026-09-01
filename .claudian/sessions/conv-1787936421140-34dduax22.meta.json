@@ -1,0 +1,21 @@
+{
+  "id": "conv-1787936421140-34dduax22",
+  "providerId": "codex",
+  "title": "补充视频项目到当前文档",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787936421143,
+  "updatedAt": 1788104571794,
+  "lastResponseAt": 1788037640334,
+  "sessionId": null,
+  "currentNote": "模版与案例/案例.md",
+  "usage": {
+    "inputTokens": 91582,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 84736,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 91582,
+    "percentage": 35,
+    "model": "gpt-5.6-luna"
+  }
+}

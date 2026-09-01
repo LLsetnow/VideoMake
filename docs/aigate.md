@@ -1,5 +1,7 @@
 # AIGate 生成与实例生命周期
 
+本文件用于执行 [`project-workflow.md`](project-workflow.md) 中的云端生成步骤。提交前确认提示词和工作流符合 [`h3.md`](h3.md)，任务完成后按 [`editing-delivery.md`](editing-delivery.md) 核验输出，再决定是否停止或释放实例。
+
 ## 资源和 GPU 规则
 
 通过 `opc aigate` 查询资源、创建云端 ComfyUI 实例、提交 workflow_api 并下载结果。GPU 只允许 48G 显存的 RTX 4090 或 RTX 4090D；通常优先 `4090-48G`，禁止 RTX 5090 和任何 24G 显存实例。

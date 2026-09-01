@@ -1,0 +1,26 @@
+{
+  "id": "conv-1788188051610-gjiyjueho",
+  "providerId": "codex",
+  "title": "说明 MiniMax 首尾帧提示词写法",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788188051611,
+  "updatedAt": 1788264640078,
+  "lastResponseAt": 1788188119137,
+  "sessionId": "01a05850-5558-73f0-9036-06179856a8c3",
+  "providerState": {
+    "threadId": "01a05850-5558-73f0-9036-06179856a8c3",
+    "sessionFilePath": "/Users/apple/.codex/sessions/2026/08/31/rollout-2026-08-31T22-54-14-01a05850-5558-73f0-9036-06179856a8c3.jsonl",
+    "transcriptRootPath": "/Users/apple/.codex/sessions"
+  },
+  "currentNote": "模版与案例/提示词模版.md",
+  "usage": {
+    "inputTokens": 38480,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 37248,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 38480,
+    "percentage": 15,
+    "model": "gpt-5.5"
+  }
+}

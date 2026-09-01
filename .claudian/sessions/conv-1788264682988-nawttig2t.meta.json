@@ -1,0 +1,26 @@
+{
+  "id": "conv-1788264682988-nawttig2t",
+  "providerId": "codex",
+  "title": "计算 10s 480p 币与 standard API 价格表",
+  "titleGenerationStatus": "success",
+  "createdAt": 1788264682990,
+  "updatedAt": 1788267607389,
+  "lastResponseAt": 1788267607389,
+  "sessionId": "01a05ce1-9755-78e0-b854-2bad78da96da",
+  "providerState": {
+    "threadId": "01a05ce1-9755-78e0-b854-2bad78da96da",
+    "sessionFilePath": "/Users/apple/.codex/sessions/2026/09/01/rollout-2026-09-01T20-11-23-01a05ce1-9755-78e0-b854-2bad78da96da.jsonl",
+    "transcriptRootPath": "/Users/apple/.codex/sessions"
+  },
+  "currentNote": "模版与案例/nsfw指南/nsfw指南.md",
+  "usage": {
+    "inputTokens": 96659,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 93568,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 96659,
+    "percentage": 37,
+    "model": "gpt-5.5"
+  }
+}

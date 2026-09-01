@@ -1,5 +1,7 @@
 # `ref/Resources.md` 资产库索引与使用方法
 
+本文件说明如何使用资产索引；资产生成、下载、深度图和媒体分析见 [`media-assets.md`](media-assets.md)，项目阶段和目录安排见 [`project-workflow.md`](project-workflow.md)。
+
 ## 文档定位
 
 [`ref/Resources.md`](../ref/Resources.md) 是 VideoMake 的可复用视频资产库索引，不是生成结果目录，也不是某一个项目的工作流。它集中记录参考图的文件路径、图像内容说明和适用用途，方便在制作 MiniMax H3 视频前快速选择人物、服装、背景和姿势参考。

@@ -1,0 +1,21 @@
+{
+  "id": "conv-1787933771462-bwdakbx5a",
+  "providerId": "codex",
+  "title": "翻译成中文版",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787933771462,
+  "updatedAt": 1787942468854,
+  "lastResponseAt": 1787942468854,
+  "sessionId": null,
+  "currentNote": "模版与案例/nsfw指南.md",
+  "usage": {
+    "inputTokens": 107949,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 106240,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 107949,
+    "percentage": 42,
+    "model": "gpt-5.6-luna"
+  }
+}

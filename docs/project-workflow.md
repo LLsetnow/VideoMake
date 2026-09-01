@@ -1,5 +1,7 @@
 # 项目结构与生成流程
 
+本文件是制作流程主线。资产选择见 [`resources.md`](resources.md) 和 [`media-assets.md`](media-assets.md)；H3、生成、交付和发布阶段分别衔接 [`h3.md`](h3.md)、[`aigate.md`](aigate.md)、[`runninghub.md`](runninghub.md)、[`editing-delivery.md`](editing-delivery.md) 和 [`publishing.md`](publishing.md)。
+
 ## 项目目录
 
 每次开始新的视频生成项目，先在 `projects/` 下创建一个能看出角色、主题或场景的总文件夹，例如：
@@ -72,8 +74,10 @@ projects/<项目名>/
 
 ### 5. 生成提示词和工作流
 
-按 [`docs/h3.md`](h3.md) 走 H3 Skill 路由；将确认后的英文提示词和完整中文翻译保存到当前项目或子项目。按 [`docs/aigate.md`](aigate.md) 修改并提交 workflow，使用 JSON 校验工具确认格式。
+按 [`docs/h3.md`](h3.md) 走 H3 Skill 路由；将确认后的英文提示词和完整中文翻译保存到当前项目或子项目。根据运行环境选择 [`docs/aigate.md`](aigate.md) 或 [`docs/runninghub.md`](runninghub.md) 提交 workflow，使用 JSON 校验工具确认格式。
 
 ### 6. 生成、剪辑和交付
 
-按 [`docs/aigate.md`](aigate.md) 创建/提交实例，按 [`docs/editing-delivery.md`](editing-delivery.md) 进行帧级剪辑、源音频核验、最终输出归档和 `videoOutput/` 软链接检查。
+按所选平台完成工作流提交和结果下载；AIGate 任务按 [`docs/aigate.md`](aigate.md) 管理实例，RunningHub 任务按 [`docs/runninghub.md`](runninghub.md) 记录 workflowId 和任务 ID。随后按 [`docs/editing-delivery.md`](editing-delivery.md) 进行帧级剪辑、源音频核验、最终输出归档和 `videoOutput/` 软链接检查。
+
+交付核验完成后，发布流程见 [`publishing.md`](publishing.md)；项目归档和中间产物评估见 [`project-cleanup.md`](project-cleanup.md)。

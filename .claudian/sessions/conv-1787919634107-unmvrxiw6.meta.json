@@ -1,0 +1,21 @@
+{
+  "id": "conv-1787919634107-unmvrxiw6",
+  "providerId": "codex",
+  "title": "下载并分析视频，编写 MiniMax H3 提示词",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787919634108,
+  "updatedAt": 1787924391501,
+  "lastResponseAt": 1787922925995,
+  "sessionId": null,
+  "currentNote": "模版与案例/参考视频.md",
+  "usage": {
+    "inputTokens": 122996,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 120576,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 122996,
+    "percentage": 48,
+    "model": "gpt-5.6-luna"
+  }
+}

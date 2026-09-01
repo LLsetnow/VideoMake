@@ -6,7 +6,6 @@
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
-  "titleGenerationLocale": "",
   "titleGenerationModel": "",
   "excludedTags": [],
   "mediaFolder": "",
@@ -15,28 +14,24 @@
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
   "customContextLimits": {},
-  "customModelAliases": {},
   "keyboardNavigation": {
     "scrollUpKey": "w",
     "scrollDownKey": "s",
     "focusInputKey": "i"
   },
-  "requireCommandOrControlEnterToSend": false,
   "locale": "en",
   "providerConfigs": {
     "claude": {
-      "enabled": true,
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
       "enableChrome": false,
       "enableBangBash": false,
+      "enableOpus1M": false,
+      "enableSonnet1M": false,
       "customModels": "",
-      "defaultModel": "opus",
       "lastModel": "haiku",
-      "modelEnvironmentType": "",
-      "titleModelEnvironmentType": "",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -45,17 +40,13 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {},
-      "customModels": "",
-      "discoveredModels": [],
-      "modelAliases": {},
-      "visibleModels": null,
-      "enableUltraEffort": false,
+      "customModels": "gpt-5.6-luna\ngpt-5.6-terra\ngpt-5.6-sol",
       "reasoningSummary": "detailed",
       "environmentVariables": "",
-      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 0,
-      "catalogFingerprint": "",
-      "installationMethodsByHost": {},
+      "environmentHash": "",
+      "installationMethodsByHost": {
+        "Mac": "native-windows"
+      },
       "wslDistroOverridesByHost": {}
     },
     "opencode": {
@@ -96,31 +87,42 @@
     }
   },
   "settingsProvider": "claude",
-  "lastSelectedChatModel": {
-    "providerId": "claude",
-    "model": "haiku"
-  },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "haiku"
+    "codex": "gpt-5.5"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "high"
+    "codex": "medium"
   },
-  "savedProviderServiceTier": {},
-  "savedProviderThinkingBudget": {},
+  "savedProviderServiceTier": {
+    "codex": "default"
+  },
+  "savedProviderThinkingBudget": {
+    "codex": "off",
+    "claude": "off"
+  },
   "savedProviderPermissionMode": {
     "claude": "yolo",
     "codex": "yolo"
   },
-  "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",
-  "maxWarmAgentProcesses": 5,
+  "maxTabs": 3,
+  "tabBarPosition": "input",
   "enableAutoScroll": true,
   "deferMathRenderingDuringStreaming": true,
-  "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
+  "hiddenProviderCommands": {},
+  "titleGenerationLocale": "",
+  "customModelAliases": {},
+  "requireCommandOrControlEnterToSend": false,
+  "lastSelectedChatModel": {
+    "providerId": "claude",
+    "model": "haiku"
+  },
+  "pendingProviderSessionInvalidations": {},
+  "maxWarmAgentProcesses": 5,
+  "expandFileEditsByDefault": false,
   "enableDualPane": true,
   "dualPaneSide": "right",
   "restoreTabsOnStartup": true,
@@ -129,8 +131,5 @@
   "collabGitPath": "",
   "sessionManagerOrganization": "list",
   "sessionManagerSort": "last-updated",
-  "pinnedLinkedContentPaths": [],
-  "hiddenProviderCommands": {},
-  "maxTabs": 3,
-  "tabBarPosition": "input"
+  "pinnedLinkedContentPaths": []
 }

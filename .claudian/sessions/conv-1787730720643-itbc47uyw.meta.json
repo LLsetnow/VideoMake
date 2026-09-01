@@ -1,0 +1,20 @@
+{
+  "id": "conv-1787730720643-itbc47uyw",
+  "providerId": "codex",
+  "title": "Explain why pushing to GitHub is wrong",
+  "titleGenerationStatus": "success",
+  "createdAt": 1787730720646,
+  "updatedAt": 1787919561235,
+  "lastResponseAt": 1787731949763,
+  "sessionId": null,
+  "usage": {
+    "inputTokens": 38450,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 37760,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 38450,
+    "percentage": 15,
+    "model": "gpt-5.6-luna"
+  }
+}

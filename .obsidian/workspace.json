@@ -4,16 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "1077a0e222cfdfc8",
+        "id": "2585f8ba6956e724",
         "type": "tabs",
         "children": [
           {
-            "id": "8fbb886c025bfc34",
+            "id": "de0ed1d5d88be117",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模版与案例/nsfw指南.md",
+                "file": "模版与案例/nsfw指南/案例/30s情节/Case7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Case7"
+            }
+          },
+          {
+            "id": "638adb28f2570f52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ref/Resources.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Resources"
+            }
+          },
+          {
+            "id": "ed3a84084f03f4e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模版与案例/nsfw指南/nsfw指南.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,20 +50,21 @@
             }
           },
           {
-            "id": "8fc37362281120c5",
+            "id": "f067d48de49105a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模版与案例/公共模版.md",
+                "file": "模版与案例/nsfw指南/案例/首帧参考/02_脱衣+体位.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "公共模版"
+              "title": "02_脱衣+体位"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "AIGate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +114,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "书签"
             }
@@ -170,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模版与案例/nsfw指南.md",
+                "file": "模版与案例/nsfw指南/nsfw指南.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -237,7 +269,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 456.11328125
+    "width": 425.4765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,52 +292,52 @@
   },
   "active": "9ca05a79b9110a11",
   "lastOpenFiles": [
-    "videoOutput/nsfw/stable_4v4a_00154-audio.mp4",
-    "videoOutput/nsfw/stable_4v4a_00149-audio.mp4",
-    "videoOutput/nsfw/stable_4v4a_00146-audio.mp4",
-    "模版与案例/nsfw指南.md",
-    "模版与案例/案例.md",
-    "模版与案例/公共模版.md",
-    "character/其他/2.jpg",
-    "character/其他/1.jpg",
-    "character/其他/pussy_副本.png",
-    "character/其他/65346.jpg",
-    "character/其他/55123.jpg",
-    "character/其他/55.jpg",
-    "character/其他/33.jpg",
-    "character/其他/22.jpg",
-    "character/其他/无标题.jpg",
-    "character/其他/6327895898863637041.jpg",
-    "ref/pose",
-    "ref/clothes",
-    "ref/audio/青春的幻象_前15秒.wav",
-    "ref/audio/海螺H3_前10秒.wav",
-    "ref/audio/One Last Kiss.m4a",
-    "ref/audio/NEONAPSE.mp3",
-    "ref/audio/Hypervoid.m4a",
-    "ref/audio/AGENTS.md",
-    "ref/audio",
-    "ref/videoRef/AGENTS.md",
-    "CLAUDE.md",
-    "character/AGENTS.md",
-    "docs/media-assets.md",
-    "projects/千夏_复合构成主义_15秒/01_素材/素材清单.md",
-    "projects/千夏_夏_三人短片/项目记录.md",
-    "projects/粉色波谱错位影刷_30秒/README.md",
-    "学业/毕业设计/论文修改.md",
-    "学业/毕业设计/毕业安排.md",
-    "学业/毕业设计/构思.md",
-    "学业/毕业设计/论文构思.md",
-    "学业/毕业设计/文献阅读.md",
-    "影视/AIGC/工作流.md",
-    "影视/AIGC/MiniMax H3 完全指南.md",
-    "第二大脑/生活/看番/2026夏季.md",
-    "影视/AIGC/MiniMax H3 各模式-模型·节点·提示词.md",
-    "影视/AIGC/MiniMax H3 提示词写作思路.md",
-    "程序员的自我修养/计算机网络/Nginx与Caddy.md",
-    "第二大脑/生活/看番/CLAUDE.md",
-    "第二大脑/报销.md",
-    "程序员的自我修养/计算机网络/网络代理/代理协议对比补充.md",
+    "docs/runninghub.md",
+    "docs/h3.md",
+    "workflows/AGENTS.md",
+    "projects/I_Cant_Wait_GUMI_歌曲MV_96s/制作记录.md",
+    "docs/aigate.md",
+    "docs/pose-assets-workflow.md",
+    "docs/publishing.md",
+    "docs/project-workflow.md",
+    "模版与案例/nsfw指南/nsfw指南.md",
+    "模版与案例/nsfw指南/案例/首帧参考/02_脱衣+体位.md",
+    "ref/Resources.md",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901054446717.mp4",
+    "模版与案例/nsfw指南/案例/30s情节/Case7.md",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901053313696.mp4",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901053245438.png",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901053127604.mp4",
+    "模版与案例/nsfw指南/案例/30s情节/Case1.md",
+    "模版与案例/nsfw指南/案例/首帧参考/01_脱衣至裸体（5s单镜头）.md",
+    "模版与案例/nsfw指南/案例/首帧参考/16_首帧脱衣_兽耳白衣装（5s单镜头）.md",
+    "模版与案例/nsfw指南/案例/首帧参考/17_连招_拖移下探抽插（5s单镜头）.md",
+    "模版与案例/nsfw指南/案例/首帧参考/15_首帧脱衣_粉羽天使装（5s单镜头）.md",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901051734284.mp4",
+    "模版与案例/nsfw指南/案例/首帧参考/assets/02_脱衣+体位/file-20260901050551547.mp4",
+    "ref/character/湿润兔",
+    "ref/character/未命名文件夹",
+    "ref/character/星之迟迟/6055228620176822358.jpg",
+    "ref/character/星之迟迟/6055228620176822355.jpg",
+    "ref/character/星之迟迟/6055228620176822354.jpg",
+    "ref/character/星之迟迟/8.jpg",
+    "ref/character/星之迟迟/7.jpg",
+    "ref/character/星之迟迟/6.jpg",
+    "ref/character/蜜汁猫裘/16.jpg",
+    "ref/character/蜜汁猫裘/15.jpg",
+    "ref/character/蜜汁猫裘/14.jpg",
+    "ref/character/星之迟迟",
+    "ref/character/蜜汁猫裘",
+    "ref/character/喵喵球球/4 X 上的 喵喵球球指挥官 httpst.couaz94D8ZYG X.mp4",
+    "模版与案例/nsfw指南/案例/30s情节/Case2.md",
+    "模版与案例/nsfw指南/案例/30s情节/Case0.md",
+    "模版与案例/nsfw指南/案例/首帧参考/3.md",
+    "模版与案例/nsfw指南/案例/首帧参考/02_自我刺激（5s单镜头）.md",
+    "模版与案例/提示词模版.md",
+    "模版与案例/参考视频.md",
+    "模版与案例/nsfw指南/案例/30s情节/Case6.md",
+    "模版与案例/nsfw指南/案例/30s情节/Case8.md",
+    "模版与案例/nsfw指南/案例/首帧参考/14_被迫哀求（5s单镜头）.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "学业/雅思/未命名.canvas"

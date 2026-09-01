@@ -10352,25 +10352,25 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 3,
-        "ch": 20
+        "line": 8,
+        "ch": 0
       },
       "to": {
-        "line": 3,
+        "line": 8,
         "ch": 0
       }
     },
     "expandedKeys": []
   },
   "模版与案例/案例.md": {
-    "scroll": 0,
+    "scroll": 122.46779448621554,
     "cursor": {
       "from": {
-        "line": 4,
+        "line": 207,
         "ch": 0
       },
       "to": {
-        "line": 4,
+        "line": 207,
         "ch": 0
       }
     },
@@ -10391,15 +10391,15 @@
     "expandedKeys": []
   },
   "CLAUDE.md": {
-    "scroll": 83.19110275689223,
+    "scroll": 82.4342105263158,
     "cursor": {
       "from": {
-        "line": 96,
-        "ch": 48
+        "line": 97,
+        "ch": 47
       },
       "to": {
-        "line": 96,
-        "ch": 48
+        "line": 97,
+        "ch": 47
       }
     },
     "expandedKeys": []
@@ -10447,15 +10447,15 @@
     "expandedKeys": []
   },
   "模版与案例/nsfw指南.md": {
-    "scroll": 62.518943170488534,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 45,
-        "ch": 104
+        "line": 12,
+        "ch": 0
       },
       "to": {
-        "line": 45,
-        "ch": 104
+        "line": 12,
+        "ch": 0
       }
     },
     "expandedKeys": []
@@ -10470,6 +10470,1686 @@
       "to": {
         "line": 11,
         "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "character/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "character/人物描述.md": {
+    "scroll": 23.49671052631579,
+    "cursor": {
+      "from": {
+        "line": 24,
+        "ch": 10
+      },
+      "to": {
+        "line": 24,
+        "ch": 4
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/运镜.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 8,
+        "ch": 0
+      },
+      "to": {
+        "line": 8,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "ref/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "ref/sources.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "ref/Resources.md": {
+    "scroll": 690.9893453637934,
+    "cursor": {
+      "from": {
+        "line": 695,
+        "ch": 88
+      },
+      "to": {
+        "line": 695,
+        "ch": 10
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/绝区零.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 0
+      },
+      "to": {
+        "line": 5,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "ref/character/人物描述.md": {
+    "scroll": 2.831508138301067,
+    "cursor": {
+      "from": {
+        "line": 8,
+        "ch": 29
+      },
+      "to": {
+        "line": 8,
+        "ch": 29
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw_temp_20.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 2,
+        "ch": 20
+      },
+      "to": {
+        "line": 2,
+        "ch": 20
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/h3.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 0
+      },
+      "to": {
+        "line": 5,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "projects/苍蓝_六分街_可爱觉醒_10秒/analysis/multishot_plan.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 24
+      },
+      "to": {
+        "line": 6,
+        "ch": 24
+      }
+    },
+    "expandedKeys": []
+  },
+  "projects/巨构_光井递归_竖屏30秒/analysis/aigate_runs.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 1,
+        "ch": 0
+      },
+      "to": {
+        "line": 1,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw_案例2_地铁车厢.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 9
+      },
+      "to": {
+        "line": 11,
+        "ch": 9
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例2_地铁车厢.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 25,
+        "ch": 0
+      },
+      "to": {
+        "line": 25,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/a.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 26,
+        "ch": 10
+      },
+      "to": {
+        "line": 26,
+        "ch": 4
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw_案例3_海边沙滩.md": {
+    "scroll": 54.416898728302236,
+    "cursor": {
+      "from": {
+        "line": 64,
+        "ch": 50
+      },
+      "to": {
+        "line": 64,
+        "ch": 50
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw_案例4_泳池.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 21,
+        "ch": 105
+      },
+      "to": {
+        "line": 21,
+        "ch": 105
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例4_泳池.md": {
+    "scroll": 52.72243107769424,
+    "cursor": {
+      "from": {
+        "line": 60,
+        "ch": 0
+      },
+      "to": {
+        "line": 60,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例3_海边沙滩.md": {
+    "scroll": 54.99906015037594,
+    "cursor": {
+      "from": {
+        "line": 62,
+        "ch": 0
+      },
+      "to": {
+        "line": 62,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例5_便利店更衣室.md": {
+    "scroll": 12.436695831188883,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 0
+      },
+      "to": {
+        "line": 19,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例6_出租车.md": {
+    "scroll": 5.261513157894737,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 118
+      },
+      "to": {
+        "line": 15,
+        "ch": 118
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例1_地铁车厢.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 1,
+        "ch": 0
+      },
+      "to": {
+        "line": 1,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例1_室内.md": {
+    "scroll": 3.902734375,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 28
+      },
+      "to": {
+        "line": 16,
+        "ch": 39
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例16_KTV.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 0
+      },
+      "to": {
+        "line": 16,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw场景/nsfw_场景20_对镜自拍·身材展示（单镜头版）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/提示词模版.md": {
+    "scroll": 16.878837719298247,
+    "cursor": {
+      "from": {
+        "line": 24,
+        "ch": 110
+      },
+      "to": {
+        "line": 24,
+        "ch": 110
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例7_校园天台.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 13,
+        "ch": 111
+      },
+      "to": {
+        "line": 13,
+        "ch": 111
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例9_海滩茅屋.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 61
+      },
+      "to": {
+        "line": 19,
+        "ch": 61
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw_案例10_公园长椅.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 20,
+        "ch": 0
+      },
+      "to": {
+        "line": 20,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw场景/nsfw_场景01_晨昏在床上.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/侧卧抬腿阳具自慰-仰视_竖图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 8,
+        "ch": 21
+      },
+      "to": {
+        "line": 8,
+        "ch": 21
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/坐姿面部射精-阴茎对准脸部_正面_横图.md": {
+    "scroll": 18.369970775451378,
+    "cursor": {
+      "from": {
+        "line": 22,
+        "ch": 81
+      },
+      "to": {
+        "line": 22,
+        "ch": 88
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/女上位-坐姿蛙式_正面_竖图.md": {
+    "scroll": 4.12719298245614,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 10
+      },
+      "to": {
+        "line": 4,
+        "ch": 10
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-第一人称俯视_竖图.md": {
+    "scroll": 15.987244897959183,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 55
+      },
+      "to": {
+        "line": 15,
+        "ch": 55
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-俯侧视角_横图_视频帧.md": {
+    "scroll": 0.4118404118404118,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 57
+      },
+      "to": {
+        "line": 15,
+        "ch": 57
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-俯视_竖图.md": {
+    "scroll": 14.994269221116038,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 59
+      },
+      "to": {
+        "line": 15,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-毛绒连体衣_横图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 0
+      },
+      "to": {
+        "line": 14,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-M字抬腿_第一人称俯视_横图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 0
+      },
+      "to": {
+        "line": 5,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交抬腿-侧面_横图_视频帧.md": {
+    "scroll": 1.3667763157894737,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/跪姿口交-绿发猫耳_正面_竖图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 54
+      },
+      "to": {
+        "line": 14,
+        "ch": 54
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士式性交-侧面_横图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 23,
+        "ch": 683
+      },
+      "to": {
+        "line": 23,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/跪姿口交-站立男性_侧面_竖图.md": {
+    "scroll": 5.043196544276458,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 54
+      },
+      "to": {
+        "line": 12,
+        "ch": 54
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/跪姿口交-站立男性_侧面_竖图_泳池.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/后入式性交-跪趴_背面_竖图.md": {
+    "scroll": 10.829373650107991,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 53
+      },
+      "to": {
+        "line": 19,
+        "ch": 53
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/后入式性交-跪趴_背面_竖图_海边沙滩.md": {
+    "scroll": 21.626488601565157,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/后入式性交-坐姿抬腿_竖图.md": {
+    "scroll": 12.666175024582104,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 52
+      },
+      "to": {
+        "line": 14,
+        "ch": 52
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/蓝发蛙式抬腿手淫-镜面自拍_竖图.md": {
+    "scroll": 8.729347476695596,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 59
+      },
+      "to": {
+        "line": 16,
+        "ch": 59
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/猫娘女上位-手捂嘴_竖图_实拍.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/猫娘女上位-手捂嘴_竖图_实拍_动作体位.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 17
+      },
+      "to": {
+        "line": 0,
+        "ch": 17
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/面部射精-精液喷射脸部_正面_横图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 0
+      },
+      "to": {
+        "line": 14,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/女上位-正面仰视_竖图.md": {
+    "scroll": 0.5472547254725473,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 10
+      },
+      "to": {
+        "line": 4,
+        "ch": 10
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/女上位-正面仰视_v2_竖图.md": {
+    "scroll": 21.757437577474764,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/女上位-坐姿前倾_正面_横图.md": {
+    "scroll": 4.261513157894737,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 53
+      },
+      "to": {
+        "line": 15,
+        "ch": 53
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/口交/跪姿口交-站立男性_侧面_竖图.md": {
+    "scroll": 6.612573099415204,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 57
+      },
+      "to": {
+        "line": 12,
+        "ch": 57
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/传教士/传教士式性交-侧面_横图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/DoggyStyle/后入式性交-坐姿抬腿_竖图.md": {
+    "scroll": 11.376106194690266,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 0
+      },
+      "to": {
+        "line": 14,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/Cumshot/坐姿面部射精-阴茎对准脸部_正面_横图.md": {
+    "scroll": 24.607769423558896,
+    "cursor": {
+      "from": {
+        "line": 25,
+        "ch": 861
+      },
+      "to": {
+        "line": 25,
+        "ch": 861
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/Masturbation/蓝发蛙式抬腿手淫-镜面自拍_竖图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/混合动作/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/混合动作/Case1.md": {
+    "scroll": 0.7976158222703874,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/Missionary/侧卧抬腿阳具自慰-仰视_竖图.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/Missionary/传教士式性交-侧面_横图.md": {
+    "scroll": 0.06480648064806481,
+    "cursor": {
+      "from": {
+        "line": 27,
+        "ch": 674
+      },
+      "to": {
+        "line": 27,
+        "ch": 8
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/CowGirl/猫娘女上位-手捂嘴_竖图_实拍.md": {
+    "scroll": 4.977068793619143,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/CowGirl/女上位-正面仰视_竖图.md": {
+    "scroll": 5.074561403508772,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/CowGirl/女上位-坐姿前倾_正面_横图.md": {
+    "scroll": 4.261513157894737,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/CowGirl/女上位-坐姿蛙式_正面_竖图.md": {
+    "scroll": 19.484505139941472,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/01-Natsume-泳池幻想角色视频.md": {
+    "scroll": 101.60338345864662,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/02-rioko-车内自拍短视频.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/03-抖音卡点舞-人物动作与服装参考.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/04-笑鸥内八比耶吐舌互动视频-动作与风格文字参考.md": {
+    "scroll": 0.0072007200720072,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/混合动作/Case2.md": {
+    "scroll": 177.3061017929439,
+    "cursor": {
+      "from": {
+        "line": 182,
+        "ch": 322
+      },
+      "to": {
+        "line": 182,
+        "ch": 322
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/混合动作/Case3.md": {
+    "scroll": 92.15789473684211,
+    "cursor": {
+      "from": {
+        "line": 114,
+        "ch": 20
+      },
+      "to": {
+        "line": 113,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/assets/参考视频/《绝区零》铃：虽然我哥两年谈了38个，但罪不至死啊.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/《绝区零》铃：虽然我哥两年谈了38个，但罪不至死啊.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/参考视频/05-《绝区零》铃：虽然我哥两年谈了38个，但罪不至死啊.md": {
+    "scroll": 36.66228070175438,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/混合动作/Case4.md": {
+    "scroll": 143.96177944862154,
+    "cursor": {
+      "from": {
+        "line": 105,
+        "ch": 49
+      },
+      "to": {
+        "line": 105,
+        "ch": 49
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/写实场景/Case6.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/写实场景/Case5.md": {
+    "scroll": 75.85252192982456,
+    "cursor": {
+      "from": {
+        "line": 87,
+        "ch": 21
+      },
+      "to": {
+        "line": 87,
+        "ch": 21
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/nsfw指南.md": {
+    "scroll": 25.49008785762559,
+    "cursor": {
+      "from": {
+        "line": 59,
+        "ch": 0
+      },
+      "to": {
+        "line": 59,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case5.md": {
+    "scroll": 147.64160401002505,
+    "cursor": {
+      "from": {
+        "line": 170,
+        "ch": 0
+      },
+      "to": {
+        "line": 170,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case1.md": {
+    "scroll": 5.60997914913853,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 51
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case2.md": {
+    "scroll": 78.53014114232951,
+    "cursor": {
+      "from": {
+        "line": 133,
+        "ch": 0
+      },
+      "to": {
+        "line": 132,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case4.md": {
+    "scroll": 210.67996011964107,
+    "cursor": {
+      "from": {
+        "line": 234,
+        "ch": 44
+      },
+      "to": {
+        "line": 234,
+        "ch": 44
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case3.md": {
+    "scroll": 228.06008574536614,
+    "cursor": {
+      "from": {
+        "line": 225,
+        "ch": 0
+      },
+      "to": {
+        "line": 225,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case0.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 2,
+        "ch": 44
+      },
+      "to": {
+        "line": 2,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/体位案例/CowGirl/猫娘女上位-手捂嘴_竖图_实拍.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case12.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "AGENTS.md": {
+    "scroll": 79.5202850877193,
+    "cursor": {
+      "from": {
+        "line": 87,
+        "ch": 13
+      },
+      "to": {
+        "line": 87,
+        "ch": 13
+      }
+    },
+    "expandedKeys": []
+  },
+  "videoOutput/AGENTS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/resources.md": {
+    "scroll": 67.41173245614036,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/AGENTS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 0
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "README.md": {
+    "scroll": 75.57730263157895,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "tools/AIGate-Qwen3.8-DSH-手动启动指南.md": {
+    "scroll": 9.108652900688298,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case6.md": {
+    "scroll": 161.39580093312597,
+    "cursor": {
+      "from": {
+        "line": 180,
+        "ch": 44
+      },
+      "to": {
+        "line": 180,
+        "ch": 44
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/01_脱衣至裸体（5s单镜头）.md": {
+    "scroll": 20.442105263157895,
+    "cursor": {
+      "from": {
+        "line": 32,
+        "ch": 32
+      },
+      "to": {
+        "line": 32,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/05_就地剥光（5s单镜头）.md": {
+    "scroll": 52.17547952306895,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 150
+      },
+      "to": {
+        "line": 9,
+        "ch": 150
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/02_自我刺激（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 0
+      },
+      "to": {
+        "line": 16,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/03_画外阴具插入抽插（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 19
+      },
+      "to": {
+        "line": 16,
+        "ch": 19
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/04_走进偷拍男女交合（5s单镜头）.md": {
+    "scroll": 39.10526315789474,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 0
+      },
+      "to": {
+        "line": 14,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case7.md": {
+    "scroll": 163.0537486957818,
+    "cursor": {
+      "from": {
+        "line": 170,
+        "ch": 44
+      },
+      "to": {
+        "line": 170,
+        "ch": 44
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/06_强制跪爬（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 19
+      },
+      "to": {
+        "line": 15,
+        "ch": 19
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/15_首帧脱衣_粉羽天使装（5s单镜头）.md": {
+    "scroll": 9.70840108401084,
+    "cursor": {
+      "from": {
+        "line": 17,
+        "ch": 24
+      },
+      "to": {
+        "line": 17,
+        "ch": 24
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/10_蒙眼堵嘴（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 21
+      },
+      "to": {
+        "line": 11,
+        "ch": 21
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/11_强制侍奉（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 149
+      },
+      "to": {
+        "line": 9,
+        "ch": 149
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/16_首帧脱衣_兽耳白衣装（5s单镜头）.md": {
+    "scroll": 4.074561403508772,
+    "cursor": {
+      "from": {
+        "line": 10,
+        "ch": 0
+      },
+      "to": {
+        "line": 10,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/14_被迫哀求（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/09_烙印为物（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 118
+      },
+      "to": {
+        "line": 9,
+        "ch": 118
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/17_连招_拖移下探抽插（5s单镜头）.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 10,
+        "ch": 0
+      },
+      "to": {
+        "line": 10,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/30s情节/Case8.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/未命名.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/2.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 8
+      },
+      "to": {
+        "line": 5,
+        "ch": 8
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/3.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 1,
+        "ch": 0
+      },
+      "to": {
+        "line": 1,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "模版与案例/nsfw指南/案例/首帧参考/02_脱衣+体位.md": {
+    "scroll": 9.261444051304732,
+    "cursor": {
+      "from": {
+        "line": 21,
+        "ch": 42
+      },
+      "to": {
+        "line": 21,
+        "ch": 42
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/project-workflow.md": {
+    "scroll": 59.186951754385966,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 12
+      },
+      "to": {
+        "line": 6,
+        "ch": 12
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/publishing.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "docs/aigate.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 2
+      },
+      "to": {
+        "line": 0,
+        "ch": 8
+      }
+    },
+    "expandedKeys": []
+  },
+  "projects/I_Cant_Wait_GUMI_歌曲MV_96s/制作记录.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 2
+      },
+      "to": {
+        "line": 9,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "workflows/AGENTS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 10,
+        "ch": 51
+      },
+      "to": {
+        "line": 10,
+        "ch": 51
       }
     },
     "expandedKeys": []
