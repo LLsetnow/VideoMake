@@ -4,18 +4,18 @@
 
 ## 文档定位
 
-[`ref/Resources.md`](../ref/Resources.md) 是 VideoMake 的可复用视频资产库索引，不是生成结果目录，也不是某一个项目的工作流。它集中记录参考图的文件路径、图像内容说明和适用用途，方便在制作 MiniMax H3 视频前快速选择人物、服装、背景和姿势参考。
+[`ref/Resources.md`](../ref/Resources.md) 是 VideoMake 的通用可复用视频资产总入口；角色、服装、背景和姿势条目分别维护在 [`ref/character/character.md`](../ref/character/character.md)、[`ref/clothes/clothes.md`](../ref/clothes/clothes.md)、[`ref/background/background.md`](../ref/background/background.md) 和 [`ref/pose/pose.md`](../ref/pose/pose.md)。这些文件都不是生成结果目录，也不是某一个项目的工作流，而是记录参考图的文件路径、图像内容说明和适用用途，方便在制作 MiniMax H3 视频前快速选择参考资产。
 
-索引中的图片实体保存在 `ref/` 下的对应资产目录；`Resources.md` 负责说明“这张图是什么、应该约束什么、不能误用什么”。使用时必须同时确认索引描述和实际文件，不能只根据文件名猜用途。
+索引中的图片实体保存在 `ref/` 下的对应资产目录；`Resources.md` 负责统一导航，各分类 Markdown 负责说明“这张图是什么、应该约束什么、不能误用什么”。使用时必须同时确认索引描述和实际文件，不能只根据文件名猜用途。
 
 ## 资产分类
 
-| 分类 | 目录 | 主要用途 | 使用时锁定的内容 |
-| --- | --- | --- | --- |
-| `character` | `ref/character/` | 角色身份、脸部、发型、服装、场景或音色参考 | 按条目用途选择；身份图主要锁定脸部、发型和角色识别特征 |
-| `clothes` | `ref/clothes/` | 独立服装或搭配参考 | 服装款式、材质、颜色、结构和装饰，不自动替换角色身份 |
-| `background` | `ref/background/` | 场景、建筑、舞台和环境参考 | 空间结构、陈设、色彩、时间和光线；不自动引入图中的人物或文字 |
-| `pose` | `ref/pose/` | 姿势、构图、人物相对位置和镜头角度参考 | 身体朝向、四肢位置、主体位置、景别、视角和透视关系 |
+| 分类 | 目录 | 独立索引 | 主要用途 | 使用时锁定的内容 |
+| --- | --- | --- | --- | --- |
+| `character` | `ref/character/` | [`character.md`](../ref/character/character.md) | 角色身份、脸部、发型、服装、场景或音色参考 | 按条目用途选择；身份图主要锁定脸部、发型和角色识别特征 |
+| `clothes` | `ref/clothes/` | [`clothes.md`](../ref/clothes/clothes.md) | 独立服装或搭配参考 | 服装款式、材质、颜色、结构和装饰，不自动替换角色身份 |
+| `background` | `ref/background/` | [`background.md`](../ref/background/background.md) | 场景、建筑、舞台和环境参考 | 空间结构、陈设、色彩、时间和光线；不自动引入图中的人物或文字 |
+| `pose` | `ref/pose/` | [`pose.md`](../ref/pose/pose.md) | 姿势、构图、人物相对位置和镜头角度参考 | 身体朝向、四肢位置、主体位置、景别、视角和透视关系 |
 
 ### `character`
 
@@ -78,9 +78,9 @@ Use the clothing reference only for the outfit design, materials, colors, and co
 
 不要因为一张图同时包含人物和背景，就默认它能同时承担所有职责。优先使用用途明确的参考图；需要混合职责时，在提示词中明确每张图的范围。
 
-### 2. 在 `Resources.md` 中定位条目
+### 2. 在对应资源 Markdown 中定位条目
 
-使用角色名、服装名、场景名或姿势关键词搜索。条目中的图片链接、描述和“用途”说明应一起阅读：
+使用角色名、服装名、场景名或姿势关键词搜索；角色、服装、背景和姿势条目分别在对应的独立索引中，`Resources.md` 只负责导航。条目中的图片链接、描述和“用途”说明应一起阅读：
 
 - 图片链接确认实际资产文件；
 - `[人物描述]` 或 `[English Translation]` 可用于构造身份文字约束；
@@ -89,7 +89,7 @@ Use the clothing reference only for the outfit design, materials, colors, and co
 
 ### 3. 确认文件真实存在和格式
 
-索引路径以 `ref/Resources.md` 所在位置为基准。接入前至少确认文件存在、格式可读、方向和比例正确：
+索引路径以 `ref/` 为基准。接入前至少确认文件存在、格式可读、方向和比例正确：
 
 ```bash
 test -f "/Users/apple/Documents/VideoMake/ref/<分类>/<文件名>"
@@ -101,7 +101,7 @@ file "/Users/apple/Documents/VideoMake/ref/<分类>/<文件名>"
 
 ### 4. 分配 H3 参考标签
 
-`<Picture N>`、`<Video N>` 和 `<Audio N>` 的编号由当前工作流的实际上传顺序决定，不由 `Resources.md` 的章节顺序决定。每次调整上传顺序，都要同步检查：
+`<Picture N>`、`<Video N>` 和 `<Audio N>` 的编号由当前工作流的实际上传顺序决定，不由资源 Markdown 的章节顺序决定。每次调整上传顺序，都要同步检查：
 
 - 提示词中的标签；
 - ComfyUI `Load Image`、视频和音频节点；
@@ -164,7 +164,7 @@ copy the pose reference's face, hair, clothing, background, text, or watermark.
 
 ### 使用索引内的姿势模板
 
-`Resources.md` 在 `pose` 开头提供了可复用的结构模板。其核心含义是：把姿势图绑定到一个明确的参考主体，再在 `detailed_description` 中说明动作起始状态和镜头位置：
+`pose/pose.md` 提供了可复用的姿势结构模板。其核心含义是：把姿势图绑定到一个明确的参考主体，再在 `detailed_description` 中说明动作起始状态和镜头位置：
 
 ```text
 subject_definitions:
@@ -230,8 +230,8 @@ The environment and lighting are [description].
 ## 新增或更新资产时的维护规则
 
 1. 将可复用实体归档到 `ref/` 对应分类，不把一次性项目素材混入资源库。
-2. 在 `Resources.md` 增加一个清晰的标题、图片链接和用途说明。
-3. 图片路径使用相对于 `ref/Resources.md` 的相对路径，例如 `character/角色名/文件.png`。
+2. 在对应的独立资源 Markdown 中增加一个清晰的标题、图片链接和用途说明：角色写入 `character/character.md`，服装写入 `clothes/clothes.md`，背景写入 `background/background.md`，姿势写入 `pose/pose.md`。
+3. 分类索引中的图片链接使用相对于该 Markdown 所在目录的路径；项目或工作流记录资产时，统一使用 `ref/<分类>/...` 路径。
 4. 姿势条目如果有深度图，应同时登记彩色图和 `_depth` 图，并说明两者的职责。
 5. 新增人物描述时，区分通用五官、发型、服装和配饰；不要让通用五官描述隐含某一套衣服。
 6. 生成或迁移资产后确认文件真实存在、格式可读、链接可打开；不要覆盖已验证资产。
@@ -239,7 +239,7 @@ The environment and lighting are [description].
 
 ## 交付前检查清单
 
-- [ ] 已从 `Resources.md` 选择了职责明确的参考图。
+- [ ] 已从对应的独立资源 Markdown（`character/character.md`、`clothes/clothes.md`、`background/background.md` 或 `pose/pose.md`）选择了职责明确的参考图。
 - [ ] 每个参考文件真实存在，格式、比例和方向符合任务。
 - [ ] `<Picture N>`、`<Video N>`、`<Audio N>` 与实际上传顺序一致。
 - [ ] 提示词已声明人物、服装、背景和姿势参考各自负责的内容。

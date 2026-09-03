@@ -33,6 +33,6 @@ readlink /Users/apple/Documents/VideoMake/videoOutput/最终成品.mp4
 
 ## 复现记录
 
-每次生成至少保留：故事/镜头编号和用途；角色、背景、参考图、参考视频和音频；workflow_api 路径；H3 模式、提示词路径和主要节点配置；AIGate 实例与 GPU，或 RunningHub `workflowId` 与任务 ID；seed、分辨率、时长和帧数；结果路径及是否剪辑/裁切/替换音频；项目 `output/` 真实成品路径和 `videoOutput/` 软链接路径。
+每次生成至少保留：故事/镜头编号和用途；角色、背景、参考图、参考视频和音频；workflow_api 路径；H3 模式、提示词路径和主要节点配置；AIGate 实例与 GPU，或 RunningHub `workflowId`（如使用）与任务 ID；seed、分辨率、时长和帧数；结果路径及是否剪辑/裁切/替换音频；项目 `output/` 真实成品路径和 `videoOutput/` 软链接路径。
 
 修改时优先复制并版本化工作流和提示词，不覆盖已验证版本。生成失败时先区分输入路径、节点/模型缺失、JSON/API 参数、显存/时长约束以及提示词与参考内容不一致，再针对原因修改。

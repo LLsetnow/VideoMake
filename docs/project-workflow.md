@@ -78,6 +78,6 @@ projects/<项目名>/
 
 ### 6. 生成、剪辑和交付
 
-按所选平台完成工作流提交和结果下载；AIGate 任务按 [`docs/aigate.md`](aigate.md) 管理实例，RunningHub 任务按 [`docs/runninghub.md`](runninghub.md) 记录 workflowId 和任务 ID。随后按 [`docs/editing-delivery.md`](editing-delivery.md) 进行帧级剪辑、源音频核验、最终输出归档和 `videoOutput/` 软链接检查。
+按所选平台完成工作流提交和结果下载；AIGate 任务按 [`docs/aigate.md`](aigate.md) 管理实例，RunningHub 任务按 [`docs/runninghub.md`](runninghub.md) 记录 workflowId（如使用）和任务 ID。随后按 [`docs/editing-delivery.md`](editing-delivery.md) 进行帧级剪辑、源音频核验、最终输出归档和 `videoOutput/` 软链接检查。
 
 交付核验完成后，发布流程见 [`publishing.md`](publishing.md)；项目归档和中间产物评估见 [`project-cleanup.md`](project-cleanup.md)。

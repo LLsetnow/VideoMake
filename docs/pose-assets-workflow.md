@@ -1,6 +1,6 @@
 # 姿势参考图识别、归档、重命名与索引流程
 
-本文用于把“彩色原图 + 对应深度图”整理为可复用的 `pose` 姿势参考资产，并同步登记到 [`ref/Resources.md`](../ref/Resources.md)。流程适用于一批深度图文件名带有 `_depth` 后缀、原图保存在同级或关联目录的情况。
+本文用于把“彩色原图 + 对应深度图”整理为可复用的 `pose` 姿势参考资产，并同步登记到 [`ref/pose/pose.md`](../ref/pose/pose.md)。流程适用于一批深度图文件名带有 `_depth` 后缀、原图保存在同级或关联目录的情况。
 
 ## 流程目标
 
@@ -8,7 +8,7 @@
 
 - `ref/pose/color/` 下的一张彩色原图；
 - `ref/pose/depth/` 下的一张同名 `_depth.png` 深度图；
-- `ref/Resources.md` 中的原图引用、深度图引用和姿势提示词描述；
+- `ref/pose/pose.md` 中的原图引用、深度图引用和姿势提示词描述；
 - 基于画面内容、动作、身体位置和镜头关系生成的稳定文件名。
 
 深度图只承担空间层次和姿势结构辅助职责。姿势提示词只描述身体朝向、四肢位置、主体位置、镜头角度、景别和透视，不写入角色身份、发型、脸部特征、服装、材质、颜色、背景、文字、水印或与姿势无关的道具信息。
@@ -21,7 +21,7 @@
 | 原始深度图 | `ref/character/<角色或来源>/depth/` |
 | 姿势彩色图归档 | `ref/pose/color/` |
 | 姿势深度图归档 | `ref/pose/depth/` |
-| 资产索引和提示词 | `ref/Resources.md` |
+| 资产索引和提示词 | `ref/pose/pose.md` |
 
 以本批次为例：
 
@@ -30,12 +30,12 @@
 深度图：   ref/character/其他角色/nude/depth/<文件名>_depth.png
 目标原图： ref/pose/color/<重命名后的文件名>.jpg
 目标深度： ref/pose/depth/<重命名后的文件名>_depth.png
-索引：     ref/Resources.md → ## pose
+索引：     ref/pose/pose.md → ## pose
 ```
 
 ## 1. 前置检查与范围确认
 
-处理前先阅读根目录和目标目录最近的 `AGENTS.md`，确认 `ref/`、`docs/` 和 `Resources.md` 的规则。检查当前工作区状态，不要因为批处理顺手清理、覆盖或暂存其他用户改动。
+处理前先阅读根目录和目标目录最近的 `AGENTS.md`，确认 `ref/`、`docs/` 和 `pose.md` 的规则。检查当前工作区状态，不要因为批处理顺手清理、覆盖或暂存其他用户改动。
 
 ```bash
 git status --short
@@ -247,9 +247,9 @@ mv "$TARGET_DEPTH_DIR/<旧文件名>_depth.png" \
 
 两次操作必须成对完成。不要只改彩色图名称，也不要把深度图改成没有 `_depth` 后缀的普通图片名。
 
-## 7. 写入并引用 `Resources.md`
+## 7. 写入并引用 `pose.md`
 
-姿势资产应写在 `ref/Resources.md` 的 `## pose` 下，按已有分类放置；无法归入既有类别时使用 `### 其他`。每个条目至少包含标题、彩色原图、深度图和提示词描述：
+姿势资产应写在 `ref/pose/pose.md` 的 `## pose` 下，按已有分类放置；无法归入既有类别时使用 `### 其他`。每个条目至少包含标题、彩色原图、深度图和提示词描述：
 
 ```markdown
 #### <重命名后的文件名>.jpg
@@ -261,14 +261,111 @@ mv "$TARGET_DEPTH_DIR/<旧文件名>_depth.png" \
 
 注意事项：
 
-- `Resources.md` 位于 `ref/`，所以图片链接使用相对于 `ref/` 的 `pose/color/...` 和 `pose/depth/...`；
+- `pose.md` 位于 `ref/pose/`，但动作库沿用相对于 `ref/` 的 `pose/color/...` 和 `pose/depth/...` 链接约定；
 - 标题、彩色图 basename、深度图 basename 和实际文件必须完全一致；
 - 提示词使用英文执行描述时，保持只描述姿势、身体位置和镜头关系；
 - 不要在没有实际工作流输入的情况下擅自加入 `<Picture N>`、`<Subject N>` 或 `<Video N>`；
-- 如果当前工作流接入姿势图，标签编号必须按照实际上传顺序维护，而不是按照 `Resources.md` 的章节顺序猜测；
+- 如果当前工作流接入姿势图，标签编号必须按照实际上传顺序维护，而不是按照 `pose.md` 的章节顺序猜测；
 - 深度图是结构辅助，不应作为普通彩色参考图、身份参考图或风格参考图使用。
 
-## 8. 完成后的核验
+## 8. 与动作库保持一致
+
+### 唯一事实源
+
+网页端动作库不单独维护一份动作内容。`ref/pose/pose.md` 的 `## pose` 区块是唯一事实源，每个完整的 `####` 条目代表一个动作，条目内同时保存：
+
+- 一个 `pose/color/` 原图链接；
+- 一个 `pose/depth/` 深度图链接；
+- 对应的姿势提示词。
+
+如果资产尚未齐全，可以保留临时条目，但标题必须明确标注“待补”或“仅深度图”，不能把它当作完整动作发布。动作库会保留并显示这类条目的缺失状态，补齐文件和链接后再变成可用的完整动作。
+
+RH Workflow Desk 启动或请求动作库时，会读取 `pose.md` 的 SHA-256。哈希变化时自动重新解析并原子写入 `RH_CLI/web/data/prompt-actions.json`；该 JSON 只是可重建缓存，不能作为第二个编辑入口，也不要直接手工修改。动作图片仍从 `VideoMake/ref/pose/` 原目录读取，不会复制到 RH_CLI。
+
+动作库为每条记录生成稳定 ID，并暴露原图和深度图两个查看入口。页面可以在“原图 / 深度图”之间切换、点击放大，并显示配对状态。当前支持的状态为：
+
+| 状态 | 含义 | 处理方式 |
+| --- | --- | --- |
+| `paired` | 两张图片都存在，basename 完全匹配 | 可正常使用 |
+| `missing_color` | 深度图存在，但原图不存在 | 补回原图或修正链接 |
+| `missing_depth` | 原图存在，但深度图不存在 | 生成并登记对应 `_depth.png` |
+| `mismatched` | 两张图片都存在，但 basename 不一致 | 修正文件名或 Markdown 链接，不得强行配对 |
+| `missing_both` | 两张图片都不存在 | 检查目录、链接和大小写 |
+
+动作库中的“原图 + 深度图”只表示文件和链接校验通过，不代表深度值具有真实物理距离含义；深度图仍应遵守本文前面的尺寸和 `PNG、8-bit grayscale` 要求。
+
+### 新增动作的标准顺序
+
+以后扩展动作时，只修改素材目录和 `pose.md`，按以下顺序操作：
+
+1. 确定一个不会与现有资产重复的最终 basename，例如 `侧坐-一腿屈起_三分之四视角_竖图`。
+2. 将彩色原图放入 `ref/pose/color/`，将同一张图生成的深度图直接放入 `ref/pose/depth/`；不再使用深度图分类子目录，深度图只在 basename 末尾增加 `_depth`。
+3. 在 `pose.md` 对应的 pose 分类中新增一个 `####` 条目，在同一个条目中紧邻登记原图、深度图和提示词。
+4. 运行文件、尺寸、格式和链接核验；打开动作库后点击“重新扫描”，确认显示“原图 + 深度图”。
+
+推荐的条目格式如下：
+
+```markdown
+#### 侧坐-一腿屈起_三分之四视角_竖图.jpg
+
+![200](pose/color/侧坐-一腿屈起_三分之四视角_竖图.jpg)![200](pose/depth/侧坐-一腿屈起_三分之四视角_竖图_depth.png)
+
+> [Shot 1]
+
+> The subject sits in a three-quarter side pose. One knee is raised and bent toward the chest, the opposite leg extends diagonally across the lower frame, and the camera uses a close three-quarter view.
+```
+
+不要直接编辑 `RH_CLI/web/data/prompt-actions.json`，不要只新增原图或只新增深度图，也不要把一对图片拆到两个不同的 `####` 条目。已有动作一旦被加入组状态，尽量不要修改其最终 basename；动作 ID 基于资源路径生成，重命名会被视为新动作，旧组状态可能无法找到原动作。
+
+### 发布或提交前的最小配对检查
+
+下面的检查从每个 `####` 条目中提取两类图片，验证完整条目链接存在、每类恰好一张，并确认去掉 `_depth` 后 basename 相同。明确标记为“待补”的临时条目会单独列出，不会被误报为完整配对：
+
+```bash
+python3 - <<'PY'
+from pathlib import Path
+import re
+
+resources_path = Path("ref/pose/pose.md")
+resources = resources_path.read_text(encoding="utf-8")
+pose_block = resources.split("## pose", 1)[1]
+pose_block = re.split(r"^## ", pose_block, maxsplit=1, flags=re.MULTILINE)[0]
+entries = re.split(r"^#### ", pose_block, flags=re.MULTILINE)[1:]
+errors = []
+pending = []
+
+for entry in entries:
+    title, body = entry.split("\n", 1)
+    links = re.findall(r"!\[[^\]]*\]\((pose/(color|depth)/[^)]+)\)", body)
+    colors = [path for path, kind in links if kind == "color"]
+    depths = [path for path, kind in links if kind == "depth"]
+    label = title.strip()
+    if len(colors) != 1 or len(depths) != 1:
+        if "待补" in label or "仅深度图" in label:
+            pending.append(label)
+            continue
+        errors.append(f"{label}: 需要恰好 1 个 color 和 1 个 depth")
+        continue
+    color_key = Path(colors[0]).stem
+    depth_key = Path(depths[0]).stem.removesuffix("_depth")
+    if color_key != depth_key:
+        errors.append(f"{label}: basename 不匹配: {colors[0]} <> {depths[0]}")
+    for link in (colors[0], depths[0]):
+        if not (resources_path.parent / link).is_file():
+            errors.append(f"{label}: 文件不存在: {link}")
+
+if errors:
+    print(*errors, sep="\n")
+    raise SystemExit(1)
+print(f"pose entries: {len(entries)}")
+print(f"pending entries: {len(pending)}")
+if pending:
+    print(*[f"PENDING: {label}" for label in pending], sep="\n")
+print("all complete color/depth pairs are valid")
+PY
+```
+
+## 9. 完成后的核验
 
 ### 文件和配对核验
 
@@ -289,7 +386,7 @@ shasum -a 256 \
 从 `## pose` 开始检查新增条目，确认每个条目都有一条彩色图链接、一条深度图链接，且路径可以打开：
 
 ```bash
-rg -n -C 2 '^#### |pose/(color|depth)/' ref/Resources.md
+rg -n -C 2 '^#### |pose/(color|depth)/' ref/pose/pose.md
 ```
 
 也可以用下面的 Python 标准库检查新增 `pose` 区块中的本地链接：
@@ -299,7 +396,7 @@ python3 - <<'PY'
 from pathlib import Path
 import re
 
-resources = Path("ref/Resources.md").read_text(encoding="utf-8")
+resources = Path("ref/pose/pose.md").read_text(encoding="utf-8")
 pose_block = resources[resources.index("## pose"):]
 links = re.findall(r"\]\((pose/(?:color|depth)/[^)]+)\)", pose_block)
 missing = [link for link in links if not (Path("ref") / link).is_file()]
@@ -314,8 +411,8 @@ PY
 
 ### 文档和工作区核验
 
-- 检查新增文档和 `Resources.md` 没有尾随空格、断裂代码围栏或错误相对路径；
-- 检查旧数字文件名没有继续出现在 `Resources.md` 的新增条目中；
+- 检查新增文档和 `pose.md` 没有尾随空格、断裂代码围栏或错误相对路径；
+- 检查旧数字文件名没有继续出现在 `pose.md` 的新增条目中；
 - 检查原始目录仍然存在，且没有被覆盖、删除或移动；
 - 最后查看 `git diff --stat` 和 `git status --short`，只确认本次流程产生的文档、索引和目标资产；
 - 若需要提交，只暂存本次任务相关路径，不要把 `.env`、cookies、认证文件、临时目录或其他未相关改动一并加入。
@@ -328,6 +425,6 @@ PY
 - 每对原图和深度图都已放入 `ref/pose/color/` 与 `ref/pose/depth/`；
 - 彩色图和深度图使用同一最终 basename，深度图保留 `_depth` 后缀；
 - 文件名能表达动作、身体位置和镜头关系，且不夹带人物身份或背景特征；
-- `Resources.md` 每个条目都同时引用彩色图和深度图，并附有姿势提示词；
+- `pose.md` 每个条目都同时引用彩色图和深度图，并附有姿势提示词；
 - 所有链接、格式、尺寸、哈希和工作区范围均已核验；
 - 原始素材保持不变，可根据映射关系回溯。

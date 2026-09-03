@@ -24,21 +24,21 @@ rh check
 
 ## 提交单个工作流
 
-工作流必须是 ComfyUI **API 格式**导出的节点字典，`workflowId` 是 RunningHub 工作流页面 URL 末尾的数字：
+工作流必须是 ComfyUI **API 格式**导出的节点字典。直接提交完整 workflow JSON 时不需要 `workflowId`；如果使用已发布模板或已有配置映射，再通过 `--workflow-id` 指定 RunningHub 工作流页面 URL 末尾的数字：
 
 ```bash
 cd /Users/apple/Documents/VideoMake
 rh workflow run \
   "projects/<项目名>/<项目名>_workflow_api.json" \
-  --workflow-id "<WORKFLOW_ID>" \
   -o "projects/<项目名>/output/"
 ```
+
+`--workflow-id` 是可选的。完整 API 工作流可以直接提交；RunningHub 官方接口在传入 `workflow` 时会以该完整 JSON 为准。若本机已有 workflowId 映射，CLI 仍会兼容读取。
 
 单图片工作流可以使用 `--input`，它会上传图片并自动注入第一个 `LoadImage` 节点：
 
 ```bash
 rh workflow run "projects/<项目名>/<工作流>.json" \
-  -w "<WORKFLOW_ID>" \
   --input "<图片路径>" \
   -o "projects/<项目名>/output/"
 ```
@@ -49,7 +49,6 @@ H3 工作流通常需要锁定音频和一张或多张参考图。使用可重�
 
 ```bash
 rh workflow run "projects/<项目名>/<工作流>.json" \
-  -w "<WORKFLOW_ID>" \
   --file "37:image=<参考图路径>" \
   --file "52:audio=<锁定音频路径>" \
   -o "projects/<项目名>/output/"
@@ -62,8 +61,10 @@ rh workflow run "<workflow.json>" -w "<WORKFLOW_ID>" \
   --file "37:image=<角色参考图>" \
   --file "60:image=<场景背景图>" \
   --file "52:audio=<本段音频>" \
-  -o "<项目>/output/"
+    -o "<项目>/output/"
 ```
+
+也可以不带 `-w` 直接提交完整 API 工作流。`--access-password`、`--webhook-url`、`--retain-seconds`、`--personal-queue` 和 `--no-add-metadata` 分别对应 RunningHub 高级任务接口的通用可选参数。
 
 `--set "nodeId:field=value"` 可临时覆盖 seed、时长或其他普通节点参数；它只修改本次提交内存中的工作流，不改写项目 JSON：
 
@@ -88,4 +89,4 @@ RunningHub 的工作流环境仍必须具备该工作流所需的自定义节点
 
 ## 复现记录
 
-项目 README 或 QA 记录中至少保存：提交路径、RunningHub `workflowId`、实际输入文件、节点映射、seed、输出目录和任务 ID。不要把 API Key 写入记录。
+项目 README 或 QA 记录中至少保存：提交路径、RunningHub `workflowId`（如使用）、实际输入文件、节点映射、seed、输出目录和任务 ID。不要把 API Key 写入记录。

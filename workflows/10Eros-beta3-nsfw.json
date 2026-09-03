@@ -1,0 +1,332 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "10Eros_Max_h3_TURBO-hybrid_beta3_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "UNet加载器"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "加载CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "加载VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "auto",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "64",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "65",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "66",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "基本引导器"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "随机噪波"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "自定义采样器（高级）"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/stable_4v4a",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 2
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "数学表达式"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "分辨率选择器"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Mem Eff Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the facial identity, hairstyle, and hair color of the female character, defined by <Picture 1>. Lock her softly rounded facial contours, generally close to an oval face, with a naturally rounded chin and subtle cheekbones. Lock her medium-to-large almond-shaped eyes with slightly upturned outer corners, gray-brown irises, dark pupils, and naturally long eyelashes. Lock her fine naturally arched dark-brown eyebrows, partly obscured by the bangs. Lock her small nose with a straight bridge, rounded tip, and subtly tapered nose wings. Lock her medium-full lips with a soft M-shaped cupid's bow, a slightly thinner upper lip and fuller lower lip, natural pink color, and a slight sheen. Lock her even fair complexion with fine skin texture and a faint pink flush on the cheeks. Lock her deep brown medium-to-long hair, thick and voluminous, with a natural parting at the top, thick straight bangs covering the forehead, layered textured hair on both sides, and ends that curl naturally falling below shoulders to chest level. Preserve her facial identity, hairstyle, and hair color consistency throughout the video; do not inherit the background, clothing, or body pose from <Picture 1>.\n\n<Subject 2> is the body and figure of the female character, defined by <Picture 2>. Lock her extremely full hourglass figure, very full bust above D-cup, huge breast volume with natural droop, large breasts with prominent pink areola and obvious nipples, deep cleavage, smooth fine skin with light reflection highlights. Lock her body proportions, waist-to-hip ratio, limb length, and overall feminine curves. Preserve body consistency throughout the video; do not inherit facial features, clothing, or background from <Picture 2>.\n\n<Subject 3> is the vulva reference for the female character, defined by <Picture 3>. Lock the external genital anatomy: full symmetrical labia majora, prominently protruding pink labia minora with clear natural folds, clitoral hood covering the clitoris, narrow slit vaginal opening, fair surrounding skin, and neatly trimmed pubic area. Use this reference for consistent pussy depiction during intercourse; do not inherit background or pose from <Picture 3>.\n\n<Subject 4> is the sex position and camera angle reference, defined by <Picture 4>. Use this depth map to lock the missionary position body layout, leg-raising posture, penis insertion angle, and first-person overhead POV camera perspective. Do not inherit the character's face, clothing, or scene from <Picture 4>.\n\nsummary:\n[reference generation] The target video is a 10-second vertical (9:16) two-shot missionary-position intercourse scene featuring a young woman whose facial identity comes from <Subject 1>, body from <Subject 2>, and vulva anatomy from <Subject 3>. The male partner never shows his face—only his lower body, penis, and part of his arms are visible. [Shot 1] opens with an overhead POV shot: the woman lies on her back on a white bed, legs raised in an M-shape, knees bent toward the ceiling, both feet visible in the foreground. The man's hands grip her thighs as his penis enters her vagina from below, beginning penetration. [Shot 2] cuts to a side angle: the woman lies flat, legs spread, the man positioned above her, thrusting rhythmically. Her breasts bounce violently with each thrust, nipples prominently visible. She gasps and moans with each penetration.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2]): fully_preserved - the woman's facial identity, hairstyle, and hair color are fully retained throughout the video. Her face is visible in both shots, showing expressions of pleasure.\n<Subject 2> (appears in [Shot 1], [Shot 2]): fully_preserved - the woman's extremely full hourglass figure, D+ cup breasts with natural droop, and feminine curves are fully retained throughout the video.\n<Subject 3> (appears in [Shot 1], [Shot 2]): partially_preserved - the vulva anatomy (labia majora, labia minora, vaginal opening) is visible during penetration in both shots.\n<Subject 4> (appears in [Shot 1]): partially_preserved - the missionary M-leg-raised body layout and overhead POV angle are retained for positional reference.\n\ndetailed_description:\nThe target video is shot in a cinematic photorealistic style with warm bedroom lighting, soft ambient illumination, white bedding, and an intimate sensual atmosphere. Vertical 9:16 aspect ratio.\n\n[Shot 1] The scene opens in a dimly lit bedroom with warm ambient lighting. White bedding covers the bed, with white pillows at the head. The woman, combining <Subject 1> and <Subject 2>, lies on her back on the bed. Her deep brown medium-to-long hair spreads across the white pillow, thick straight bangs covering her forehead, layered textured hair cascading over the pillow surface. Her face is visible: softly rounded oval facial contours, medium-to-large almond-shaped eyes with slightly upturned outer corners and gray-brown irises, fine naturally arched dark-brown eyebrows partly obscured by bangs, small nose with straight bridge, medium-full lips with soft M-shaped cupid's bow and natural pink color, and even fair complexion with faint pink flush on cheeks.\n\nShe lies completely naked on the bed, both legs raised high and bent at the knees toward the ceiling in an M-shape, knees spread wide apart, both feet sole-facing the camera in the foreground. Her thighs form an open V-shape, fully exposing her vulva area between her spread legs. The vulva anatomy matches <Subject 3>: full symmetrical labia majora, prominently protruding pink labia minora, clitoral hood, and narrow slit vaginal opening, all clearly visible from the overhead angle. Her extremely full breasts rest naturally on her chest, D+ cup volume with natural droop, pink areola and prominent nipples visible against her fair skin.\n\nThe man's hands enter the frame from below, gripping her inner thighs on both sides, fingers spread wide, pulling her legs apart further. His forearms and hands are visible, with light skin tone. His penis enters the frame from the bottom center of the screen, thick and erect, the龟头 (glans) dark pink and glistening with pre-ejaculate fluid. The penis moves upward toward her vaginal opening, the龟头 aligning with <Subject 3> vulva reference. The penis slowly penetrates her vagina, pushing between her labia majora and entering the narrow slit vaginal opening. The labia minora compress around the entering penis as it slides in. The penetration is slow and deliberate, the penis shaft disappearing into her vagina incrementally.\n\nThe woman's facial expression shifts as penetration begins: her almond-shaped eyes widen slightly, her M-shaped lips part, and a soft gasp escapes. Her fair skin flushes more deeply with a pink tint across her cheeks. Her breasts shift with the movement, nipples becoming more erect and prominent. The warm bedroom lighting catches the glistening pre-ejaculate fluid on the penis and the moist sheen on her vulva area. The camera maintains a static overhead POV position throughout the 5-second duration, capturing the complete M-leg-raised missionary setup and the penetration from above.\n\n[Shot 2] At 00:05.000, the camera cuts to a side angle medium shot, capturing the complete missionary intercourse scene. The woman lies flat on her back on the white bed, head on the pillow, legs spread wide and slightly elevated, feet resting on the mattress. Her deep brown hair cascades over the pillow, bangs partially covering her forehead. Her face shows an expression of intense pleasure: eyes half-closed with heavy lids, lips parted wider with her tongue slightly visible, soft moans audible with each thrust. Her softly rounded oval face is flushed with a deep pink tint across her cheeks and nose.\n\nHer extremely full breasts bounce violently with each thrust, the D+ cup volume swinging up and down with natural droop. Both nipples are prominently visible, dark pink and erect, glistening in the warm bedroom lighting. The deep cleavage between her breasts shifts dramatically with each movement. Her body shakes slightly from the force of the thrusts.\n\nThe man is positioned above her, kneeling between her spread legs. His lower body and part of his torso are visible, but his head and face remain above the frame, never showing. His penis is fully inserted into her vagina, the base of the shaft visible just outside her vulva, surrounded by her compressed labia majora and protruding pink labia minora. He thrusts rhythmically, his hips moving forward and backward with steady cadence, the penis sliding in and out of her vagina. Each thrust causes her breasts to bounce, her body to shake, and her vulva to compress around the entering and exiting shaft.\n\nHer right hand rises and grips the man's lower back/hip area, fingers digging into his skin. Her left hand rests on her own chest, fingers lightly touching her left breast. The white bedding wrinkles and shifts beneath their bodies with each thrust. The camera maintains a static side position throughout the 5-second duration, capturing the full missionary thrusting action, her bouncing breasts, and her pleasured facial expressions.\n\noverall_soundscape:\nIn [Shot 1], the quiet bedroom has a soft ambient room tone. The soft rustling of white bedding is audible as the woman's legs move into position. The wet friction sound of the penis entering her vagina becomes prominent as penetration begins, the labia compressing around the shaft creating a moist squelching sound. The woman's soft gasps start as the龟头 enters her vaginal opening, her breathing deepening with each increment of penetration. In [Shot 2], the wet thrusting sounds dominate: rhythmic squelching and slapping sounds as the penis slides in and out of her vagina, synchronized with the man's hip thrusts. The woman's moans become louder and more frequent, interspersed with gasps and sighs. Her heavy breathing provides a continuous background layer. The soft slapping of her bouncing breasts against her chest creates rhythmic skin-on-skin sounds. The white bedding produces continuous rustling sounds beneath their bodies. The man's thrusts create a steady rhythmic pounding cadence throughout the 5-second duration.\n\nnon_diegetic_music:\nN/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "幼女脸_正脸_无头饰.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_0-15.wav"
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "加载音频"
+    }
+  },
+  "64": {
+    "inputs": {
+      "image": "1.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "65": {
+    "inputs": {
+      "image": "人体_外阴特写.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  },
+  "66": {
+    "inputs": {
+      "image": "传教士式性交-M字抬腿_第一人称俯视_横图_depth.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "加载图像"
+    }
+  }
+}

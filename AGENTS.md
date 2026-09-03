@@ -11,10 +11,13 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 ```text
 .
 ├── AGENTS.md                 # 全局代理规则和项目文件结构说明
-├── audio/                    # 通用音乐、源音频、驱动音频和参考音频
-├── background/               # 可复用背景图案和场景背景
-├── character/<角色名>/       # 角色身份图、服装/场景参考图和角色音色
-├── videoRef/                 # 只用于风格、动作、镜头或效果研究的参考视频
+├── ref/                      # 可复用的角色、背景、音频和参考媒体
+│   ├── audio/                # 通用音乐、源音频、驱动音频和参考音频
+│   ├── background/           # 可复用背景图案和场景背景
+│   ├── character/<角色名>/   # 角色身份图、服装/场景参考图和角色音色
+│   ├── clothes/              # 可复用服装参考图
+│   ├── pose/                 # 可复用姿态参考图
+│   └── videoRef/             # 只用于风格、动作、镜头或效果研究的参考视频
 ├── projects/<项目名>/        # 每个视频项目的完整工作区
 │   ├── README.md             # 可选：项目目标、时间线和复现入口
 │   ├── *_prompt.txt          # 可执行的英文 H3 提示词
@@ -47,7 +50,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | `temp/` | 只存放临时任务提示音等可随时重建的临时文件，不作为项目交付物或长期素材目录。 |
 | `docs/` | 详细规则和长期文档；不放视频、音频、图片或 workflow JSON。 |
 
-新项目必须在 `projects/<项目名>/` 中保存自己的工作流、提示词和结果。项目较长时，再按时间序列拆成独立子项目；每个子项目都应能独立提交和复现。角色、背景、通用音频和参考视频等可复用资产分别归档到对应资产目录，不为每个项目重复复制。
+新项目必须在 `projects/<项目名>/` 中保存自己的工作流、提示词和结果。项目较长时，再按时间序列拆成独立子项目；每个子项目都应独立提交和复现。角色、背景、通用音频和参考视频等可复用资产分别归档到 `ref/` 下对应资产目录，不为每个项目重复复制。
 
 ## 阅读规则
 
@@ -59,24 +62,29 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 
 ## 规则索引
 
-| 主题 | 详细文档 |
-| --- | --- |
-| 项目结构、时长、鼓点卡点、标准流程 | [`docs/project-workflow.md`](docs/project-workflow.md) |
-| 角色、背景、音频、参考视频和下载/分析 | [`docs/media-assets.md`](docs/media-assets.md) |
-| H3 Skill、提示词和 T8 节点 | [`docs/h3.md`](docs/h3.md) |
-| AIGate 实例、提交、队列和生命周期 | [`docs/aigate.md`](docs/aigate.md) |
-| 剪辑、核验、交付和复现 | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
-| 项目中间产物分级清理 | [`docs/project-cleanup.md`](docs/project-cleanup.md) |
-| 视频发布流程 | [`docs/publishing.md`](docs/publishing.md) |
-| 文档目录约定 | [`docs/AGENTS.md`](docs/AGENTS.md) |
+| 主题                           | 详细文档                                                   |
+| ---------------------------- | ------------------------------------------------------ |
+| 说明文档导航                       | [`docs/README.md`](docs/README.md)                     |
+| 项目结构、时长、鼓点卡点、标准流程            | [`docs/project-workflow.md`](docs/project-workflow.md) |
+| 角色、背景、音频、参考视频和下载/分析          | [`docs/media-assets.md`](docs/media-assets.md)         |
+| 姿势参考图匹配、归档、重命名与索引            | [`docs/pose-assets-workflow.md`](docs/pose-assets-workflow.md) |
+| H3 Skill、提示词和 T8 节点          | [`docs/h3.md`](docs/h3.md)                             |
+| 绝区零视频提示词与角色参考                | [`docs/绝区零.md`](docs/绝区零.md)                           |
+| `ref/Resources.md` 资产索引与使用方法 | [`docs/resources.md`](docs/resources.md)               |
+| AIGate 实例、提交、队列和生命周期         | [`docs/aigate.md`](docs/aigate.md)                     |
+| RunningHub CLI 工作流提交                 | [`docs/runninghub.md`](docs/runninghub.md)              |
+| 剪辑、核验、交付和复现                  | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
+| 项目中间产物分级清理                   | [`docs/project-cleanup.md`](docs/project-cleanup.md)   |
+| 视频发布流程                       | [`docs/publishing.md`](docs/publishing.md)             |
+| 文档目录约定                       | [`docs/AGENTS.md`](docs/AGENTS.md)                     |
 
 ## 主要目录分工
 
-- `audio/AGENTS.md`：通用音频、锁定源音频和音乐分析。
-- `background/AGENTS.md`：可复用背景和栅格参考图。
-- `character/AGENTS.md`：角色身份图、服装/场景图和角色音色。
+- `ref/audio/AGENTS.md`：通用音频、锁定源音频和音乐分析。
+- `ref/background/AGENTS.md`：可复用背景和栅格参考图。
+- `ref/character/AGENTS.md`：角色身份图、服装/场景图和角色音色。
 - `projects/AGENTS.md`：项目目录、提示词、工作流生成、AIGate、剪辑和结果归档。
-- `videoRef/AGENTS.md`：仅用于研究的参考视频及其下载归档。
+- `ref/videoRef/AGENTS.md`：仅用于研究的参考视频及其下载归档。
 - `workflows/AGENTS.md`：共享 ComfyUI 模板和 JSON 校验。
 - `videoOutput/AGENTS.md`：最终成品软链接的统一入口。
 - `docs/AGENTS.md`：说明文档自身的组织规则。

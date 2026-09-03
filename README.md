@@ -20,16 +20,19 @@ VideoMake 是一个面向 AIGC 短视频制作的素材与工作流仓库，当�
 
 ```text
 .
-├── audio/                 # 通用音频和音频片段
-├── background/            # 可复用的背景与场景素材
-├── character/             # 角色身份参考图、服装版本、场景图和音色
-│   ├── 千夏/
-│   ├── 南宫羽/
-│   ├── 爱芮/
-│   ├── 蕾米埃尔/
-│   └── 铃/
+├── ref/                   # 可复用的角色、背景、音频和参考媒体
+│   ├── audio/             # 通用音频和音频片段
+│   ├── background/        # 可复用的背景与场景素材
+│   ├── character/         # 角色身份参考图、服装版本、场景图和音色
+│   │   ├── 千夏/
+│   │   ├── 南宫羽/
+│   │   ├── 爱芮/
+│   │   ├── 蕾米埃尔/
+│   │   └── 铃/
+│   ├── clothes/
+│   ├── pose/
+│   └── videoRef/          # 风格、动作和镜头参考视频
 ├── projects/              # 按任务归档的工作流、提示词和生成结果
-├── videoRef/              # 风格、动作和镜头参考视频
 ├── AGENTS.md              # 项目协作与素材管理约定
 └── README.md
 ```
@@ -56,7 +59,7 @@ cd VideoMake
 
 ### 2. 准备生成环境
 
-运行工作流前，需要在本地或 Aigate 实例中准备：
+运行工作流前，需要在本地 ComfyUI、Aigate 实例或 RunningHub 工作流环境中准备：
 
 - ComfyUI；
 - `comfyui-minimax-h3-audio-T8` 自定义节点；
@@ -82,11 +85,22 @@ python -m json.tool \
 
 ### 4. 运行与复核
 
-根据使用的环境，通过 ComfyUI API 或来自 [OPC](https://github.com/LLsetnow/OPC) 仓库的 `opc aigate` 提交工作流。具体 CLI 参数以当前环境的帮助信息为准：
+根据使用的环境，通过本地 ComfyUI API、来自 [OPC](https://github.com/LLsetnow/OPC) 的 `opc aigate`，或来自 [RH_CLI](https://github.com/LLsetnow/RH_CLI) 的 `rh workflow run` 提交工作流。具体 CLI 参数以当前环境的帮助信息为准：
 
 ```bash
 opc aigate --help
 ```
+
+通过 RunningHub 提交原始 ComfyUI 工作流：
+
+```bash
+rh workflow run "projects/<项目名>/<工作流>_workflow_api.json" \
+  --file "37:image=<参考图路径>" \
+  --file "52:audio=<音频路径>" \
+  -o "projects/<项目名>/output/"
+```
+
+完整的 RunningHub 配置、完整 API 工作流、节点映射和多媒体上传说明见 [`docs/runninghub.md`](docs/runninghub.md)；AIGate 实例生命周期仍见 [`docs/aigate.md`](docs/aigate.md)。如果使用已发布模板，也可以通过 `--workflow-id` 指定或按文件名映射 workflowId。
 
 `opc aigate` 的 CLI 实现和云扉 AIGate 实例管理逻辑不在本仓库中维护，详见 [LLsetnow/OPC](https://github.com/LLsetnow/OPC)。如需安装或配置该命令，请按照 OPC 仓库中的说明操作；AIGate Token 等凭据应保存在 OPC 的本地 `.env` 中，不要写入本项目。
 
@@ -112,14 +126,14 @@ opc video understand "/绝对路径/参考视频.mp4" \
 - 新任务放在 `projects/` 下，不要把新项目的工作流、提示词和输出散落到根目录。
 - 修改已验证的工作流时，优先复制并版本化文件，保留原始结果和可复现信息。
 
-完整的项目文件结构、素材管理、H3 提示词和工作流规则见 [`AGENTS.md`](AGENTS.md)。
+完整的项目文件结构、素材管理、H3 提示词和工作流规则见 [`AGENTS.md`](AGENTS.md)；按制作阶段查找说明文档可从 [`docs/README.md`](docs/README.md) 开始。
 
 ## 素材说明
 
-- `character/` 中的图片用于角色身份、服装、姿态或场景参考。
-- `background/` 中的图片用于可复用背景或场景条件。
-- `audio/` 中的音频用于音乐、音频驱动或参考输入；角色专属音色保存在对应角色目录中。
-- `videoRef/` 中的视频仅作为风格、动作、镜头或效果参考，使用前请确认其授权和分发范围。
+- `ref/character/` 中的图片用于角色身份、服装、姿态或场景参考。
+- `ref/background/` 中的图片用于可复用背景或场景条件。
+- `ref/audio/` 中的音频用于音乐、音频驱动或参考输入；角色专属音色保存在对应角色目录中。
+- `ref/videoRef/` 中的视频仅作为风格、动作、镜头或效果参考，使用前请确认其授权和分发范围。
 - `projects/*/output/` 中保存生成结果和中间结果，重跑任务时建议使用新目录或版本化文件名。
 
 本仓库不应提交 API 密钥、登录令牌、实例凭据或其他敏感信息。公开发布包含第三方素材的项目时，请自行确认素材的版权、授权和平台分发限制。

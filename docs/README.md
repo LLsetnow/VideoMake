@@ -34,9 +34,9 @@ AIGate 生成
 | 主题 | 文档 | 适合什么时候阅读 |
 | --- | --- | --- |
 | 项目结构与完整流程 | [`project-workflow.md`](project-workflow.md) | 新建项目、拆分长视频、安排时间线和标准制作流程 |
-| 资产索引使用 | [`resources.md`](resources.md) | 从 `ref/Resources.md` 选择角色、服装、背景和姿势参考 |
+| 资产索引使用 | [`resources.md`](resources.md) | 从 `ref/Resources.md` 总入口进入角色、服装、背景和姿势独立索引 |
 | 资产生成、下载与分析 | [`media-assets.md`](media-assets.md) | 生成参考图、下载媒体、生成深度图、分析音频或参考视频 |
-| 姿势参考图归档与索引 | [`pose-assets-workflow.md`](pose-assets-workflow.md) | 生成/匹配深度图与原图、归档到 `ref/pose`、按内容重命名并更新 `Resources.md` |
+| 姿势参考图归档与索引 | [`pose-assets-workflow.md`](pose-assets-workflow.md) | 生成/匹配深度图与原图、归档到 `ref/pose`、按内容重命名并更新 `ref/pose/pose.md` |
 | H3 提示词与 T8 节点 | [`h3.md`](h3.md) | 选择 H3 模式、编写提示词、配置参考标签和检查节点 |
 | AIGate 实例生命周期 | [`aigate.md`](aigate.md) | 查询 GPU、创建实例、提交工作流、下载结果和停止/释放实例 |
 | RunningHub CLI 工作流提交 | [`runninghub.md`](runninghub.md) | 通过 `rh workflow run` 上传输入、提交 API 工作流和下载结果 |
@@ -53,7 +53,11 @@ AIGate 生成
 - 资产入口：[`resources.md`](resources.md)
 - 资产目录、图片检查、深度图和媒体分析：[`media-assets.md`](media-assets.md)
 - 姿势参考图批处理、重命名和索引：[`pose-assets-workflow.md`](pose-assets-workflow.md)
-- 实际资产索引：[`ref/Resources.md`](../ref/Resources.md)
+- 实际资产总入口：[`ref/Resources.md`](../ref/Resources.md)
+- 角色索引：[`ref/character/character.md`](../ref/character/character.md)
+- 服装索引：[`ref/clothes/clothes.md`](../ref/clothes/clothes.md)
+- 背景索引：[`ref/background/background.md`](../ref/background/background.md)
+- 姿势索引：[`ref/pose/pose.md`](../ref/pose/pose.md)
 
 ### 提示词与生成
 
