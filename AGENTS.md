@@ -64,6 +64,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | 项目结构、时长、鼓点卡点、标准流程 | [`docs/project-workflow.md`](docs/project-workflow.md) |
 | 角色、背景、音频、参考视频和下载/分析 | [`docs/media-assets.md`](docs/media-assets.md) |
 | H3 Skill、提示词和 T8 节点 | [`docs/h3.md`](docs/h3.md) |
+| 子 Agent 提示词与批量单图视频 | [`docs/how-to-write-prompts.md`](docs/how-to-write-prompts.md) |
 | AIGate 实例、提交、队列和生命周期 | [`docs/aigate.md`](docs/aigate.md) |
 | 剪辑、核验、交付和复现 | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
 | 项目中间产物分级清理 | [`docs/project-cleanup.md`](docs/project-cleanup.md) |

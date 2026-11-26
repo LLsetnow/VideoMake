@@ -68,8 +68,53 @@ projects/<项目名>/
 
 ### 5. 生成提示词和工作流
 
-按 [`docs/h3.md`](h3.md) 走 H3 Skill 路由；将确认后的英文提示词和完整中文翻译保存到当前项目或子项目。按 [`docs/aigate.md`](aigate.md) 修改并提交 workflow，使用 JSON 校验工具确认格式。
+按 [`docs/h3.md`](h3.md) 走 H3 Skill 路由；将确认后的英文提示词和完整中文翻译保存到当前项目或子项目。批量图生视频的父 Agent 指令、四镜模板和单图提示词规范见 [`how-to-write-prompts.md`](how-to-write-prompts.md)。按 [`docs/aigate.md`](aigate.md) 修改并提交 workflow，使用 JSON 校验工具确认格式。
 
 ### 6. 生成、剪辑和交付
 
 按 [`docs/aigate.md`](aigate.md) 创建/提交实例，按 [`docs/editing-delivery.md`](editing-delivery.md) 进行帧级剪辑、源音频核验、最终输出归档和 `videoOutput/` 软链接检查。
+
+## 批量单图单视频流程
+
+当一批参考图需要各自生成一个视频时，按“一张图、一个提示词、一个工作流、一个任务、一个输出目录”的边界处理。不要把多张图放进同一个 H3 上下文，也不要用上一个任务残留的输入路径覆盖当前任务。
+
+### 1. 建立批次清单
+
+为整批建立 `projects/<批次名>/batch_manifest.json`，记录批次 ID、工作流模板、默认画幅、分辨率、时长、采样参数和每张图的输入顺序。每张图再建立 `reference/<序号>.png` 与同序号子目录。
+
+单图目录至少包含：
+
+```text
+projects/<批次名>/<三位序号>/
+├── source.png
+├── shots.json
+├── prompt_en.txt
+├── prompt_zh.txt
+├── workflow_api.json
+├── task_request.json
+├── manifest.json
+├── output/
+└── qa/
+```
+
+### 2. 先完成一张样片
+
+批量首采默认并发为 `1`。先提交第一张图，检查四镜动作、人物连续性、男性脸部是否出画、男性是否静音、女生喘息是否清楚、实际时长和解码结果。样片未通过时先修正提示词或工作流，不把错误配置复制到其余图片。
+
+提示词模板和音画验收要求见 [`how-to-write-prompts.md`](how-to-write-prompts.md)。
+
+### 3. 生成独立任务请求
+
+每张图分别生成任务请求，并明确 `execution_target`。使用 RH 流程时，通过 RH Workflow Desk 本地 Web API 提交，不直接调用 RunningHub 创建任务接口。请求中的本地 `workflow_id`、远程 `remote_workflow_id`、Prompt Group、输入文件和输出目录必须属于当前图片。
+
+### 4. 有界并发
+
+样片通过后可以按账号额度扩大并发，但必须为每个任务保留独立状态。允许并行上传、排队或轮询，不允许并发任务共享同一个可变 workflow 文件、同一提示词文件或同一输出目录。
+
+### 5. 状态恢复
+
+总 manifest 的每图状态至少包含 `pending`、`prepared`、`queued`、`running`、`done`、`failed`。恢复批次时先检查实际文件和任务记录。已完成并通过 QA 的条目跳过，运行中的条目继续轮询，失败条目只重试自身。
+
+### 6. 批量验收
+
+每张完成视频都要检查 MP4 可完整解码、时长、画幅、分辨率、镜头数、人物连续性、动作连续性和音轨。批量结束时报告完成数、失败数、跳过数、成功文件路径、失败阶段、本地 task ID 和远程 task ID。`202` 只表示本地任务入队，不等于视频生成成功。
