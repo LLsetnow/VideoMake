@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is the first frame of [Shot 1] and the exact opening composition: a 9:16 vertical view of the clearly adult fictional woman seated on a dark marble bar counter.
+<Subject 1> is the clearly adult fictional woman in <Picture 1>, with a silver-white bob, side braid, pale skin, blue eyes, full proportions, glossy black bunny ears, a white collar with a black bow tie, white cuffs, black fishnet stockings, and glossy black high heels.
+<Subject 2> is her fitted glossy black latex bunny bodice.
+<Subject 3> is the upscale dim bar interior in <Picture 1>, with black shelves, bottles, violet-magenta highlights, and a dark marble counter.
+
+summary:
+[keyframe completion + reference generation] A single continuous 10-second vertical take begins exactly from <Picture 1>. <Subject 1> removes her bodice and stockings, then enters a gradual first-person view belonging to a clearly adult fictional man who remains completely behind the camera. Only his hands and the lower edge of his pelvis enter the frame during consensual vaginal intercourse. No part of the man's head, face, hair, neck, shoulders, or upper torso is ever visible.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first frame): fully_preserved - the opening framing, seated pose, costume, counter, lighting, and bar composition match the reference.
+<Subject 1> (appears throughout [Shot 1]): fully_preserved - her face, silver-white bob, side braid, blue eyes, bunny ears, and black heels stay consistent.
+<Subject 2> ([Shot 1] opening): partially_preserved - the latex bodice and fishnet stockings are fully present at the beginning and completely removed mid-take.
+<Subject 3> (appears throughout [Shot 1]): fully_preserved - the shelves, bottles, marble counter, color lighting, and luxury bar atmosphere remain stable.
+
+detailed_description:
+Photorealistic cinematic live-action with glossy editorial lighting, realistic skin and fabric detail, and a shallow depth of field. The target is one uninterrupted 9:16 vertical shot with gentle handheld movement, a controlled push-in, and no cuts, fades, jumps, or slow motion. All visible people are explicitly adults.
+
+[Shot 1] The video begins exactly on <Picture 1>. <Subject 1> sits on the dark marble counter within <Subject 3>, holding the stemmed glass near her mouth with the tip of her tongue visible. She takes a shallow sip, lowers the glass, and sets it down with a clear click while looking into the lens. The camera pushes in slowly and slightly lowers the top edge so her face, chest, waist, and seated legs remain visible.
+
+From 00:01.000 to 00:03.600, she lifts both thin shoulder straps of <Subject 2> away from her chest and peels the glossy bodice down past her breasts and waist. Latex stretches and snaps softly. She slides forward, raises first one knee and then the other to pull the fishnet stockings down, steps out of the heels for only an instant, then places the heels back on while remaining seated. She pushes the bunny suit and stockings offscreen with her foot. By 00:03.800 she is fully nude except for the bunny ears and black heels, and none of the removed clothing returns.
+
+At 00:03.900 she lies backward and slides her hips toward the front edge of the counter. Her face and breasts occupy the upper half of the vertical frame while her spread thighs frame the lower half. The camera tilts down and settles into the first-person view of the unseen adult man. He remains entirely behind the camera at every frame. His face, ears, hair, jaw, neck, shoulders, chest, and upper torso must never enter the image, not even partially at the edges; the frame crops him below the waist.
+
+From 00:04.400, the man's two hands enter from the bottom corners and grip the backs of her thighs, holding her legs open. The base of his pelvis and his erect penis enter through the bottom center, anatomically connected to the unseen male body, and visibly penetrate her vagina in a consensual first-person view. Her eyes widen and her mouth opens in a sharp gasp on the first inward thrust.
+
+From 00:05.000 to 00:07.300, his hands support her hips while he performs a steady rhythm of deep visible thrusts. Her breasts, inner thighs, and heels move naturally with each stroke. She reaches down and rests both hands over his forearms. From 00:07.300 through the final frame, the thrusting becomes faster but controlled. Her hips rise to meet him, her legs wrap toward the bottom edge of the frame, and her face, parted lips, chest, and joined hips remain clearly visible. She moans softly and holds eye contact with the camera. The male face and head remain completely absent through the final frame.
+
+overall_soundscape:
+Quiet bar room tone, a faint refrigeration hum, and distant glass clinks continue throughout. Latex stretch and snap, clothing sliding off, the glass touching marble, bare skin contact, rhythmic wet friction, the woman's sharp first gasp and continuing breathy moans, and the unseen man's low breathing remain synchronized with the action.
+
+non_diegetic_music:
+N/A

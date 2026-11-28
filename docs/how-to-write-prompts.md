@@ -49,6 +49,7 @@
 工作流设置：
 - 参考图节点使用当前模板对应的 LoadImage 节点。
 - 提示词节点使用当前模板对应的 multiline text 节点。
+- 每个提交给 RunningHub 的输入文件不超过 4 MB，按严格 4,000,000 bytes 检查。超限图片先缩小或转码，再生成任务请求。
 - 分辨率设为 9:16、0.9 MP。
 - 时长设为 15 秒。
 - 模型、LoRA、采样和精化参数沿用当前已经跑通的 V7 配置，不随机更换。
@@ -210,7 +211,7 @@ projects/<批次名>/
 总 manifest 至少记录：
 
 - `batch_id`
-- 输入图相对路径和哈希
+- 输入图相对路径、哈希和字节数
 - 每图状态 `pending`、`prepared`、`queued`、`running`、`done`、`failed`
 - 本地 RH task ID
 - RunningHub 远程 task ID
@@ -234,7 +235,10 @@ workflow: 当前图片的独立 API 节点图
 workflow_input_config: manual 或与当前工作流一致的模式
 prompt_group: 当前图片实际使用的媒体和提示词组
 output_dir: 当前图片独立输出目录
+file_size_limit: 4 MB (4,000,000 bytes)
 ```
+
+提交前必须对当前图片的全部输入文件执行大小检查。单个文件超过 4 MB 时，先缩小、转码或压缩并重新检查画面内容，再提交该图片的任务。具体检查方法见 [`runninghub.md`](runninghub.md) 的“单个输入文件限制”。
 
 本地 API 返回 `202` 只表示任务进入 RH Workflow Desk 队列。必须继续轮询本地任务状态，并最终检查 RunningHub 远程任务和下载后的实际 MP4。
 

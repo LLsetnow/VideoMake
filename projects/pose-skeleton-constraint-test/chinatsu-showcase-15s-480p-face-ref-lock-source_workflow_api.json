@@ -1,0 +1,405 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "54",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "55",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "56",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "57",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "58",
+        0
+      ],
+      "ref_audios": {
+        "ref_audio_0": [
+          "53",
+          0
+        ]
+      },
+      "ref_images.ref_image_6": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/chinatsu_showcase_480p_lock_source",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Chinatsu from <Picture 1>, with silver-gray wavy hair, a turquoise bow, light eyes, black hair clips, a white blouse, red tie, black choker, white angel wings, pink winged backpack, striped arm and leg warmers, black layered skirt, thigh straps, white socks, and pink platform shoes. Preserve her face, proportions, costume, accessories, and 2D style in every shot.\n<Subject 2> is the upright near-frontal pose from <Picture 2>: one hand beside the face, the opposite arm bent outward, and a slight weight shift.\n<Subject 3> is the close standing pose from <Picture 3>: slight forward lean, one hand across the upper chest, the other arm bent at the side, uneven shoulders.\n<Subject 4> is the side-lean pose from <Picture 4>: shifted hips, one hand near the shoulder, the opposite arm along the hip, one leg bearing the weight.\n<Subject 5> is the close raised-arm pose from <Picture 5>: weight on one leg, one arm raised near the shoulder, the opposite arm reaching outward.\n<Subject 6> is the seated pose from <Picture 6>: one knee raised, the other leg bent lower in frame, one hand beside the face.\n<Picture 1> is a three-view character sheet for Chinatsu's identity, costume, proportions, accessories, and 2D style; exclude its layout and multiple views.\n<Picture 2> is a hidden skeleton pose reference for Shot 1; never render its black background, colored bones, or keypoints.\n<Picture 3> is a hidden skeleton pose reference for Shot 2; never render it as an overlay.\n<Picture 4> is a hidden skeleton pose reference for Shot 3; never render it as an overlay.\n<Picture 5> is a hidden skeleton pose reference for Shot 4; never render it as an overlay.\n<Picture 6> is a hidden skeleton pose reference for Shot 5; never render it as an overlay.\n<Audio 1> is the first 15 seconds of SCARED LONELY FUNK from the user's NetEase Cloud Music album, directly reused 1:1 as the complete final audio track.\n\nsummary:\n[reference generation + audio reuse] Create a 15-second 9:16 vertical Chinatsu showcase in a clean bright studio. Preserve <Subject 1>, use Picture 2 through Picture 6 only as hidden pose references for five cute beats, and reuse <Audio 1> exactly from 00:00.000 through 00:15.000. Borrow only the playful pacing of the supplied Bilibili reference; do not reproduce its performer, frames, UI, or watermark.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve Chinatsu's identity, costume, accessories, proportions, and rendering.\n<Subject 2> (appears in [Shot 1]): fully_preserved - preserve its hand, arm, torso, and weight-shift geometry.\n<Subject 3> (appears in [Shot 2]): fully_preserved - preserve its forward lean, chest-hand placement, and uneven shoulders.\n<Subject 4> (appears in [Shot 3]): fully_preserved - preserve its side lean, shifted hips, and asymmetrical limbs.\n<Subject 5> (appears in [Shot 4]): fully_preserved - preserve its one-leg weight and raised-arm silhouette.\n<Subject 6> (appears in [Shot 5]): fully_preserved - preserve its raised knee, lower bent leg, and hand beside the face.\n<Picture 1>: partially_preserved - transfer the character design while excluding the turnaround-sheet layout.\n<Picture 2>: fully_preserved - preserve pose geometry as hidden control data; exclude all skeleton artwork.\n<Picture 3>: fully_preserved - preserve pose geometry as hidden control data; exclude all skeleton artwork.\n<Picture 4>: fully_preserved - preserve pose geometry as hidden control data; exclude all skeleton artwork.\n<Picture 5>: fully_preserved - preserve pose geometry as hidden control data; exclude all skeleton artwork.\n<Picture 6>: fully_preserved - preserve pose geometry as hidden control data; exclude all skeleton artwork.\n<Audio 1>: fully_copy - reuse the supplied 15-second source clip as the only final audio track.\n\ndetailed_description:\nThe target is a polished 2D anime showcase in 9:16. Use a seamless pure-white to pale mint studio background, soft even lighting, a faint grounding shadow, crisp linework, and gentle cel shading. Keep one coherent Chinatsu with stable anatomy and opaque clothing; no text, logos, watermarks, props, extra people, sparkle overlays, or visible skeletons. <Picture 1> supplies identity and costume; Picture 2 through Picture 6 supply only hidden pose geometry.\n\n[Shot 1] At 00:00.000, <Subject 1> is centered in a medium-full-body frontal view. Starting with relaxed arms, she follows <Subject 2> by lifting one hand beside her cheek while the other arm bends outward. On the first clear pulse she gives a tiny two-finger wave, blinks once, and smiles. Her bow and skirt edge make a restrained bounce. Use a Static Shot with a very slow small-amplitude Push In; keep wings, backpack straps, and shoes visible.\n\n[Shot 2] At 00:03.797, cut on the beat to a closer frontal view using <Subject 3>. Chinatsu leans slightly forward, places one hand across her upper chest, taps once with her fingertips, then opens the free hand toward the viewer. Tilt her head briefly. Use a small-amplitude Arc Shot at slow speed, ending in a neat three-quarter angle. Keep face, hair ornaments, tie, and arm warmers unchanged.\n\n[Shot 3] At 00:06.613, cut to a medium-full three-quarter view using <Subject 4>. Chinatsu shifts her hips and leans gently to one side, points the weight-bearing foot inward, and raises the hand near her shoulder into a small finger-heart gesture while the opposite arm follows the hip. She sways back toward center and settles into the lean. Use a smooth small-amplitude Truck Right at slow speed; keep wings and skirt stable.\n\n[Shot 4] At 00:09.824, cut to a medium close-up using <Subject 5>. Chinatsu shifts onto one leg, raises one bent arm near shoulder level, and reaches the other arm outward. She gives a small wave, winks once on the next synth accent, and keeps the raised-arm silhouette readable. Use a gentle small-amplitude Push In at slow speed. No text or graphic effects.\n\n[Shot 5] At 00:12.064, cut to a medium-full view using <Subject 6> on the same pale studio floor. Chinatsu lowers into a compact one-knee-up pose, keeps one hand beside her face, and makes two small cat-paw taps with the free hand. At 00:13.205 she gives a tiny shoulder bounce; near 00:14.667 she makes a final playful wink, then holds the pose and soft smile until 00:15.000. Use a very small slow Pull Out to reveal the knee, wings, and shoes. Keep the staging wholesome and presentation-like, never reclining or suggestive. Preserve <Audio 1> continuously across all cuts.\n\noverall_soundscape:\nNo newly generated dialogue, foley, ambience, or sound effects; the only audible track is the directly reused music from <Audio 1>.\n\nnon_diegetic_music:\n<Audio 1> is directly reused 1:1 from 00:00.000 to 00:15.000 as the complete audience-only music track. Preserve its original tempo, vocal content, four-on-the-floor pulse, synth accents, dynamics, and stereo image. Do not generate replacement music or extend the track.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/pose-skeleton-constraint-test/audio/SCARED_LONELY_FUNK_0-15s.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  },
+  "54": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/skeleton/站立-一手抬至脸侧_正面_竖图_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose skeleton · Shot 1"
+    }
+  },
+  "55": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/skeleton/站立-一手覆胸_近景_竖图_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose skeleton · Shot 2"
+    }
+  },
+  "56": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/skeleton/站立-身体侧倾_正面_竖图_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose skeleton · Shot 3"
+    }
+  },
+  "57": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/skeleton/站立-单臂抬起_近景_竖图_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose skeleton · Shot 4"
+    }
+  },
+  "58": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/skeleton/坐姿-单膝抬起手靠近脸部_正面_竖图_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Pose skeleton · Shot 5"
+    }
+  },
+  "59": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Face reference · Chinatsu"
+    }
+  }
+}

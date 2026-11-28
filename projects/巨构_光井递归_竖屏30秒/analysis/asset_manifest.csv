@@ -1,0 +1,4 @@
+asset_id,source_group,source_path,prompt_path,fps,width,height,total_frames,duration_seconds,safe_start_frame,safe_end_frame,scene_detection_note,usable
+JG-00-10,primary,output/00-10秒/jg_lightwell_00-10s_2pass_final_00001-audio.mp4,00-10秒/巨构_光井递归_00-10秒_prompt.txt,24,768,1376,243,10.125,0,243,"scdet peaks are camera/light changes; no semantic cut; retain full one-take range",yes
+JG-10-20,primary,output/10-20秒/jg_lightwell_10-20s_2pass_final_00001-audio.mp4,10-20秒/巨构_光井递归_10-20秒_prompt.txt,24,768,1376,243,10.125,0,243,"scdet peaks are tunnel light/motion changes; no semantic cut; retain full one-take range",yes
+JG-20-30,primary,output/20-30秒/jg_lightwell_20-30s_2pass_final_00001-audio.mp4,20-30秒/巨构_光井递归_20-30秒_prompt.txt,24,768,1376,243,10.125,0,243,"scdet peaks are aperture/light changes; no semantic cut; retain full one-take range",yes

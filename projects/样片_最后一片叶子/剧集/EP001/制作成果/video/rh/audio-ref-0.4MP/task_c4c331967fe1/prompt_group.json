@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "group": {
+    "id": "task-group-2b70c622f4ac",
+    "name": "任务提交时组装台",
+    "updated_at": 1788572219384,
+    "items": [
+      {
+        "instance_id": "ep001-shot-020-media-1",
+        "kind": "media",
+        "media_path": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/输入/参考图/loc-tenement-interior-1900-1910.jpg",
+        "media_name": "Picture 1 · loc-tenement-interior-1900-1910.jpg",
+        "media_kind": "image",
+        "media_mime": "image/jpeg"
+      },
+      {
+        "instance_id": "ep001-shot-020-media-2",
+        "kind": "media",
+        "media_path": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-JOHNSY-BASE.png",
+        "media_name": "Picture 2 · IMG-EP001-JOHNSY-BASE.png",
+        "media_kind": "image",
+        "media_mime": "image/png"
+      },
+      {
+        "instance_id": "ep001-shot-020-media-3",
+        "kind": "media",
+        "media_path": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-SUE-BASE.png",
+        "media_name": "Picture 3 · IMG-EP001-SUE-BASE.png",
+        "media_kind": "image",
+        "media_mime": "image/png"
+      },
+      {
+        "instance_id": "ep001-shot-020-prompt",
+        "kind": "text",
+        "text": "subject_definitions: <Picture 1> is the uploaded 地理 reference at order 1. <Subject 1> is the early-1900s Greenwich Village top-floor artist studio in <Picture 1>, with a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture. <Picture 2> is the uploaded 身份 reference at order 2. <Subject 2> is Johnsy in <Picture 2>, with a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity. <Picture 3> is the uploaded 身份 reference at order 3. <Subject 3> is Sue in <Picture 3>, with a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse.\nsummary: [reference generation] The target video is a single vertical period-drama shot in the early-1900s New York artist-apartment world. Johnsy follows Sue's pointing hand and discovers that the last leaf never moves. The shot uses <Subject 1>, <Subject 2>, <Subject 3> as its visual references.\nretention_analysis: <Picture 1> (reference image order 1): fully_preserved - its 地理 role is retained as the input reference for this shot. <Picture 2> (reference image order 2): fully_preserved - its 身份 role is retained as the input reference for this shot. <Picture 3> (reference image order 3): fully_preserved - its 身份 role is retained as the input reference for this shot. <Subject 1> (appears in [Shot 1]): fully_preserved - a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 2> (appears in [Shot 1]): fully_preserved - a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 3> (appears in [Shot 1]): fully_preserved - a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse remain stable; the approved motion changes only the shot's stated action and endpoint.\ndetailed_description: The target video is a realistic live-action period drama in a vertical 9:16 frame, with restrained natural light, tactile period materials, and observational camera movement. <Subject 1> holds <Subject 2> propped against the bed with <Subject 3> beside her, one hand pointing toward the window. At 0.00 to 1.80 seconds Johnsy lifts her eyes to Sue's hand while the weakened rain remains on the glass. From 1.80 to 4.80 seconds her gaze travels from Sue to the final leaf beyond the window; a small wind passes across the vine, yet the leaf stays fixed at the same point on the wall. From 4.80 to 6.40 seconds Johnsy's breath pauses, then deepens as the realization becomes visible in her face. Sue (S2) asks softly: <d>[Chinese] 你有没有想过，它为什么从来不动？</d> From 6.40 to 7.00 seconds the camera finishes its slow push onto the leaf reflected in Johnsy's eyes. One continuous take with no cut. No non-diegetic subtitles, captions, or dialogue text overlays appear at any moment. Continuity locks: pale ivory cotton nightdress; faded blue-green high-collar blouse; narrow top-floor artist studio with a tall rain-streaked window and exposed brick; final olive-green leaf on a wet brown vine.\noverall_soundscape: Rain reduced to a thin window sheen, a small gust on the vine, Johnsy's breath pausing and deepening, and Sue's quiet voice in the room.\nnon_diegetic_music: N/A",
+        "translated_text": "subject_definitions: <Picture 1> is the uploaded 地理 reference at order 1. <Subject 1> is the early-1900s Greenwich Village top-floor artist studio in <Picture 1>, with a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture. <Picture 2> is the uploaded 身份 reference at order 2. <Subject 2> is Johnsy in <Picture 2>, with a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity. <Picture 3> is the uploaded 身份 reference at order 3. <Subject 3> is Sue in <Picture 3>, with a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse.\nsummary: [reference generation] The target video is a single vertical period-drama shot in the early-1900s New York artist-apartment world. Johnsy follows Sue's pointing hand and discovers that the last leaf never moves. The shot uses <Subject 1>, <Subject 2>, <Subject 3> as its visual references.\nretention_analysis: <Picture 1> (reference image order 1): fully_preserved - its 地理 role is retained as the input reference for this shot. <Picture 2> (reference image order 2): fully_preserved - its 身份 role is retained as the input reference for this shot. <Picture 3> (reference image order 3): fully_preserved - its 身份 role is retained as the input reference for this shot. <Subject 1> (appears in [Shot 1]): fully_preserved - a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 2> (appears in [Shot 1]): fully_preserved - a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 3> (appears in [Shot 1]): fully_preserved - a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse remain stable; the approved motion changes only the shot's stated action and endpoint.\ndetailed_description: The target video is a realistic live-action period drama in a vertical 9:16 frame, with restrained natural light, tactile period materials, and observational camera movement. <Subject 1> holds <Subject 2> propped against the bed with <Subject 3> beside her, one hand pointing toward the window. At 0.00 to 1.80 seconds Johnsy lifts her eyes to Sue's hand while the weakened rain remains on the glass. From 1.80 to 4.80 seconds her gaze travels from Sue to the final leaf beyond the window; a small wind passes across the vine, yet the leaf stays fixed at the same point on the wall. From 4.80 to 6.40 seconds Johnsy's breath pauses, then deepens as the realization becomes visible in her face. Sue (S2) asks softly: <d>[Chinese] 你有没有想过，它为什么从来不动？</d> From 6.40 to 7.00 seconds the camera finishes its slow push onto the leaf reflected in Johnsy's eyes. One continuous take with no cut. No non-diegetic subtitles, captions, or dialogue text overlays appear at any moment. Continuity locks: pale ivory cotton nightdress; faded blue-green high-collar blouse; narrow top-floor artist studio with a tall rain-streaked window and exposed brick; final olive-green leaf on a wet brown vine.\noverall_soundscape: Rain reduced to a thin window sheen, a small gust on the vine, Johnsy's breath pausing and deepening, and Sue's quiet voice in the room.\nnon_diegetic_music: N/A",
+        "translation_disabled": true,
+        "generated_type": "workflow-specific"
+      }
+    ]
+  }
+}

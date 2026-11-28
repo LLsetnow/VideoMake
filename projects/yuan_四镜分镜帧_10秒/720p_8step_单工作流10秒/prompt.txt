@@ -1,0 +1,31 @@
+subject_definitions:
+<Picture 1> is the opening frame of Shot 1 at 00:00.000, establishing the rear three-quarter composition, two adult characters, pose, and visible support points.
+<Picture 2> is the opening frame of Shot 2 at 00:02.500, establishing the overhead foot-end POV composition, two adult characters, pose, and visible support points.
+<Picture 3> is the opening frame of Shot 3 at 00:05.000, establishing the woman-on-top bed-side profile composition, two adult characters, pose, and visible support points.
+<Picture 4> is the opening frame of Shot 4 at 00:07.500, establishing the man-on-top close bed-side profile composition, two adult characters, pose, and visible support points.
+
+summary:
+[reference generation + keyframe completion] A 10-second montage of the same two fictional consenting adults having sex, hard cutting at 00:02.500, 00:05.000 and 00:07.500. Begin each shot with its corresponding picture and continue the ongoing act immediately.
+
+retention_analysis:
+<Picture 1> fully_preserved — match its own shot opening in composition, identity, light and pose.
+<Picture 2> fully_preserved — match its own shot opening in composition, identity, light and pose.
+<Picture 3> fully_preserved — match its own shot opening in composition, identity, light and pose.
+<Picture 4> fully_preserved — match its own shot opening in composition, identity, light and pose.
+
+detailed_description:
+Photorealistic 16:9. Four fixed-camera shots lasting 2.5 seconds each. Make instantaneous hard cuts to the next image composition, without morphing or dissolving between poses.
+
+[Shot 1] Begin on <Picture 1>. Yuan stays on her hands and knees. Her partner kneels behind, with his hands holding her hips. The act is already in progress in the opening frame. Keeping her hands and knees planted, he draws his pelvis back a short distance and thrusts forward again along the bed plane, with his penis remaining inside her vagina. Repeat a compact cycle. Keep the exact side-rear camera and their positions in frame.
+
+[Shot 2] At 00:02.500, hard cut directly to <Picture 2> as the opening frame. Hold the overhead foot-end POV. Yuan lies face-up with both knees bent and apart; the partner’s hands keep their original hold on her thighs. His penis is already inside her vagina. His pelvis withdraws slightly and pushes forward twice along the same axis. The thighs respond a little while her head stays on the pillow. Keep the camera fixed.
+
+[Shot 3] At 00:05.000, hard cut directly to <Picture 3> as the opening frame. Maintain the full mattress-level profile. Yuan is already astride the supine man, his penis already inside her vagina. Keep her knees and hands supported at their starting points. Her pelvis rolls a small distance forward toward his abdomen, then back, and repeats. His head and shoulders remain on the pillow and his arms stay apart from hers. Keep the white top, the visible hand positions and the framing of the opening image.
+
+[Shot 4] At 00:07.500, hard cut directly to <Picture 4> as the opening frame. Keep the close bed-side profile of the two adults. Yuan remains on her back with bent knees. Her partner kneels between her thighs, his hand supporting his upper body beside her shoulder and his penis already inside her vagina. His pelvis moves back and forward twice along the bed plane while his shoulders remain the same height. Maintain the original contact of her hand against his neck.
+
+overall_soundscape:
+Keep room tone continuous across all three cuts. Close breathing and soft mattress and sheet sounds follow each shot. No dialogue.
+
+non_diegetic_music:
+N/A

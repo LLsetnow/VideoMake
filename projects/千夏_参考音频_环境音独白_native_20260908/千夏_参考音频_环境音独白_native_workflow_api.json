@@ -1,0 +1,313 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_audio_reference_ambient_monologue_test",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 5.16
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Chinatsu, the anime girl defined by the connected character image <Picture 1>. Preserve her pale silver-gray softly wavy hair, heavy straight bangs, mint-green star-shaped bow, multicolored eyes, heart-shaped hair ornaments, black dangling earrings, fair skin, white blouse, red tie, black choker, and pink backpack straps. Keep her face, identity, anatomy, colors, and costume stable.\n<Audio 1> is a 5.160-second reference recording containing Chinatsu's Chinese monologue with a quiet indoor room tone and a low air-conditioner hum. It is an audio reference for <Subject 1> (S1): use it for voice timbre, measured delivery, spoken-word pacing, and the relationship between the voice and the environment, but do not copy its waveform or use it as the final audio track.\n\nsummary:\n[reference generation + audio reference] Create a single continuous 5.160-second vertical 9:16 anime close-up of <Subject 1>. Use the character image for stable identity and use <Audio 1> only as a reference for Chinatsu's voice delivery and quiet indoor ambience. Generate a new native stereo audio track that contains the exact monologue spoken by <Subject 1> and a restrained room tone beneath it. Do not directly reuse, time-copy, or remix the reference recording.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - preserve Chinatsu's face, hair, bow, eyes, earrings, skin, costume, proportions, and recognizable identity while adding only natural facial motion required for speaking.\n<Audio 1>: reference - use the recording as a reference for the speaker's timbre, delivery, monologue pacing, quiet room tone, and low air-conditioner hum; generate a new native audio track instead of copying the source signal.\n\ndetailed_description:\nThe target video is a single continuous front-facing medium close-up in polished anime rendering. Place <Subject 1> centered against a softly lit quiet interior with a pale wall and a slightly blurred window area, keeping the mouth unobstructed and the eyes clearly visible. Use stable frontal lighting, clean facial rendering, and a nearly static camera with a very small natural breathing motion and a subtle slow Push In. No cuts, no profile view, no hand covering the mouth, no subtitles, no readable text, no extra characters, and no watermark.\n\n[Shot 1] The shot opens on <Subject 1>, Chinatsu, facing the camera with a calm, attentive expression and closed lips. The young anime woman (S1) speaks on camera in a clear, gentle Chinese voice whose timbre and measured delivery are guided by <Audio 1>. From 00:00.000 through 00:05.160, animate visible lips, jaw, cheeks, and small eye motion in close temporal alignment with the newly generated spoken performance. The exact monologue is: <d>[Chinese] 你好，我是千夏。今天我们来测试一下原声对白的口型同步。</d> Keep the voice intelligible and centered, with a restrained quiet-room ambience underneath it. The generated ambience should suggest the same kind of indoor air-conditioner hum heard in <Audio 1>, but it must be newly synthesized rather than copied. End on a natural calm expression immediately after the final syllable at 00:05.160.\n\noverall_soundscape:\nGenerate a subtle quiet indoor room tone with a low continuous air-conditioner hum, guided by the ambience in <Audio 1> but not copied from it. Keep this environment layer clearly below the new Chinatsu monologue. Do not add music, footsteps, foley, extra voices, or unrelated sound effects.\n\nnon_diegetic_music:\nN/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/千夏_参考音频_环境音独白_native_20260908/input/千夏_环境音+独白_参考音频.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 5.16,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  }
+}

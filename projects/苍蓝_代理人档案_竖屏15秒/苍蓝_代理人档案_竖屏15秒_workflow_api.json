@@ -1,0 +1,321 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "canglan_agent_profile_15s_lock_source_v2",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the square three-view identity reference for <Subject 1>, used only to preserve character identity, costume construction, colors, proportions, and accessories; it is not a target frame or a scene reference.\n<Subject 1> is the original anime street-DJ girl \"苍蓝\" (Canglan): cyan-to-white gradient twin-tails tied with large white star clips and pink ribbons, bright cyan eyes, a white oversized hoodie with cyan trim and a pink heart patch reading \"AZ\", a cyan pleated skirt, white thigh-high socks with lace trim, chunky white sneakers with cyan glowing soles, cyan-and-white cat-ear headphones around her neck, star earrings, and a small cyan cat plush keychain. Preserve her exact face, hair, proportions, costume, palette, and accessories in every shot.\n<Audio 1> is the 15-second instrumental electronic track generated with the MiniMax music provider, directly reused 1:1 as the target video's complete final soundtrack, including its timing, beats, dynamics, and stereo balance.\n\nsummary:\n[reference generation + audio reuse] Create a new 15-second 9:16 original anime game-character agent-profile video starring <Subject 1>, using <Picture 1> for identity and costume consistency and <Audio 1> as the locked source soundtrack. Translate the offline-analyzed reference profile video's reveal grammar into an original sequence: equipment detail, upward costume scan, eye-lock close-up, full-body hero reveal, emblem insert, and final archive-card hold. Do not copy the reference video's character, frames, watermark, logos, text, music, or exact composition.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - keep her face, cyan-white twin-tails, white star clips, pink ribbons, \"AZ\" heart patch, cyan skirt, lace socks, glowing sneakers, headphones, earrings, and cat keychain stable and recognizable throughout.\n<Picture 1> (identity reference only): fully_preserved - preserve the three-view character design information while replacing the white reference sheet with an original dark holographic archive environment.\n<Audio 1>: fully_copy - reuse the complete 15-second MiniMax-generated signal 1:1 as the final audio track; do not generate replacement music or add extra sound layers.\n\ndetailed_description:\nThe target video is a 9:16 cel-shaded anime game-character profile in an original urban-pop archive style: crisp line art, saturated cyan, white, and pink accents, dark graphite surfaces, holographic scanlines, controlled chromatic aberration, and clean collectible-card composition. The public reference was used only to study the reveal rhythm; do not reproduce its character, layout, watermark, logos, or wording. All visual cuts and motion accents must follow <Audio 1>'s attacks and beat changes, while <Audio 1> remains the only audible track.\n\n[Shot 1] During 00.000-02.543, begin in near-black cyan light with an extreme low-angle close-up of <Subject 1>'s chunky white sneaker, cyan glowing sole, lace-trimmed thigh-high sock, and the lower edge of her cyan skirt. The shoe settles once as a scanline passes across the sole. The camera holds with a small breathing push-in, then starts a slow vertical tilt upward; keep the background abstract, metallic, and unreadable.\n\n[Shot 2] At 00:02.543, cut on a narrow cyan light streak to a vertical medium detail view from skirt to chest. <Subject 1> lightly brushes the pink belt strap and the small cyan cat plush keychain swings once; the white hoodie, cyan trim, headphone ear-cups, star earrings, and pink \"AZ\" heart patch become clear. The camera tracks upward at medium speed with small amplitude, ending at her collar and headphone lights as they activate.\n\n[Shot 3] At 00:05.364, hard cut to a three-quarter face close-up. <Subject 1> turns her head toward the lens and locks eyes with a confident, playful smile; a bright reflection travels across her cyan irises and one star-shaped hair clip flashes. Use a fast Push In with small amplitude and a brief controlled digital micro-shake, then hold the eye contact for the next beat. No dialogue, subtitles, or watermark.\n\n[Shot 4] At 00:08.046, cut through a cyan scan bar to a full-body hero composition. <Subject 1> stands centered in a dark holographic archive chamber, one hand raised in a peace sign and the other resting near her headphones, twin-tails and skirt moving in a small fan of air. Pull out slowly with medium amplitude to reveal a luminous vertical frame and abstract data blocks. Show only these exact readable labels: \"AGENT FILE\", \"CANG LAN\", \"STARBEAT\", and \"ID: CL-07\"; no other readable text, logos, or fake interface clutter.\n\n[Shot 5] At 00:10.728, cut to a centered macro insert of the pink \"AZ\" heart patch and a cyan star emblem. A scanning beam traces the heart outline, the star pulses once, and a thin mechanical ring locks around it. Use a mostly static shot with a tiny clockwise Arc Shot and a sharp highlight on the beat; this graphic is an identity anchor, not a new object or logo.\n\n[Shot 6] At 00:12.875, cut back to a final vertical archive card. The upper two-thirds hold <Subject 1> in a clean three-quarter full-body pose, while the lower third contains restrained cyan-pink bars and the exact labels \"CANG LAN\", \"AGENT FILE\", \"AZ\", and \"STATUS: READY\". The camera performs a very slow Pull Out with small amplitude as a holographic frame settles around her; the star clips, twin-tails, hoodie, skirt, shoes, headphones, and cat plush remain visible. Hold the completed card cleanly until 00:15.000, ending on a stable cyan scanline and no fade to unrelated content.\n\noverall_soundscape:\nPreserve <Audio 1> exactly as the complete synchronized soundtrack. Do not add dialogue, voiceover, footsteps, room tone, foley, crowd noise, or additional sound effects; all visual pulses, scans, and cuts are visual responses to the existing audio.\n\nnon_diegetic_music:\n<Audio 1> is directly reused 1:1 as the audience-only score: a short cyberpunk electronic archive track with cold synthesizer pulses, low bass, sparse metallic percussion, glitch texture, a clear mid-track impact, and a clean digital emblem resolve. Do not generate replacement music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "canglan_threeview_v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "canglan_agent_profile_minimax_15s_v2.wav",
+      "audioUI": ""
+    },
+    "_meta": {
+      "title": "Load Audio (MiniMax lock source)"
+    }
+  },
+  "53": {
+    "class_type": "TrimAudioDuration",
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Trim Audio Duration (15 seconds)"
+    }
+  }
+}

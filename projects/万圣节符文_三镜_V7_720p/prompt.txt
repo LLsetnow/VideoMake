@@ -1,0 +1,27 @@
+subject_definitions:
+<Picture 1> is the opening-frame reference for [Shot 1]. It establishes the tilted low-angle composition, the seated pose with one leg raised, the armchair, the rug, and the glowing Halloween pumpkins.
+<Subject 1> is the adult cosplayer in <Picture 1>, with silver-white bangs and a side braid, a black choker, a white headpiece, and black thigh-high stockings.
+<Subject 2> is the set of three yellow paper talismans in <Picture 1>, each with red markings. Two are attached vertically over her breasts, one on screen left and one on screen right. The third covers her vulva.
+
+summary:
+[keyframe completion + reference generation] A ten-second vertical sequence in three shots. <Subject 1> peels off the three paper talismans one at a time, starting with the screen-left chest talisman, then the screen-right chest talisman, then the lower talisman. Each paper strip comes away intact and ends on the rug.
+
+retention_analysis:
+<Picture 1> fully_preserved — match its pose, camera angle, set arrangement, and lighting at the opening.
+<Subject 1> fully_preserved — keep the same face, hairstyle, headpiece, choker, and stockings across all three shots.
+<Subject 2> partially_preserved — preserve the three distinct paper strips, their color and markings, while changing their placement from her body to the rug.
+
+detailed_description:
+Photorealistic Halloween interior with warm pumpkin light and a cool blue rim along her hair. Keep both cuts on the same side of the camera axis, preserving the screen-left and screen-right positions.
+
+[Shot 1] Begin on <Picture 1> with all three talismans attached. The camera pushes in slowly by a small amount, keeping the slight tilt. <Subject 1> relaxes her raised hand gesture and reaches across her chest. Her thumb and forefinger catch the upper corner of the screen-left talisman. The corner lifts first, the paper bows outward, and the adhesive releases gradually down the strip. Her supporting hand stays planted on the rug. End with the first strip pinched visibly away from her chest and two strips still attached.
+
+[Shot 2] At 00:03.000, hard cut to a steady, slightly closer medium shot from the same side. The screen-left talisman is already in her hand. She sets it on the rug beside her bent knee, then pinches the upper corner of the screen-right chest talisman. She pulls slowly outward and down. The loose end curls toward her knuckles as the final edge releases with a light crackle. End with the second strip in her hand, the first on the rug, and only the lower strip still attached.
+
+[Shot 3] At 00:06.000, hard cut to a slightly wider medium shot from the same side, keeping her face, the working hand, and the rug in frame. She lowers her raised leg a little and sets the second strip beside the first. She catches a corner of the last talisman and peels it off in one smooth pull, keeping the paper intact. She sets it beside the first two and lifts her eyes toward the camera. Hold briefly on her expression and the three separate paper strips resting together on the rug.
+
+overall_soundscape:
+Quiet indoor room tone continues across both cuts. A soft fabric rustle accompanies the leg adjustment. Each peel has its own short adhesive-release sound, followed by a faint paper rustle as the strip is set down. No dialogue.
+
+non_diegetic_music:
+N/A

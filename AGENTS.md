@@ -11,10 +11,13 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 ```text
 .
 ├── AGENTS.md                 # 全局代理规则和项目文件结构说明
-├── audio/                    # 通用音乐、源音频、驱动音频和参考音频
-├── background/               # 可复用背景图案和场景背景
-├── character/<角色名>/       # 角色身份图、服装/场景参考图和角色音色
-├── videoRef/                 # 只用于风格、动作、镜头或效果研究的参考视频
+├── ref/                      # 可复用的角色、背景、音频和参考媒体
+│   ├── audio/                # 通用音乐、源音频、驱动音频和参考音频
+│   ├── background/           # 可复用背景图案和场景背景
+│   ├── character/<角色名>/   # 角色身份图、服装/场景参考图和角色音色
+│   ├── clothes/              # 可复用服装参考图
+│   ├── pose/                 # 可复用姿态参考图
+│   └── videoRef/             # 只用于风格、动作、镜头或效果研究的参考视频
 ├── projects/<项目名>/        # 每个视频项目的完整工作区
 │   ├── README.md             # 可选：项目目标、时间线和复现入口
 │   ├── *_prompt.txt          # 可执行的英文 H3 提示词
@@ -47,7 +50,7 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 | `temp/` | 只存放临时任务提示音等可随时重建的临时文件，不作为项目交付物或长期素材目录。 |
 | `docs/` | 详细规则和长期文档；不放视频、音频、图片或 workflow JSON。 |
 
-新项目必须在 `projects/<项目名>/` 中保存自己的工作流、提示词和结果。项目较长时，再按时间序列拆成独立子项目；每个子项目都应能独立提交和复现。角色、背景、通用音频和参考视频等可复用资产分别归档到对应资产目录，不为每个项目重复复制。
+新项目必须在 `projects/<项目名>/` 中保存自己的工作流、提示词和结果。项目较长时，再按时间序列拆成独立子项目；每个子项目都应独立提交和复现。角色、背景、通用音频和参考视频等可复用资产分别归档到 `ref/` 下对应资产目录，不为每个项目重复复制。
 
 ## 阅读规则
 
@@ -59,25 +62,31 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 
 ## 规则索引
 
-| 主题 | 详细文档 |
-| --- | --- |
-| 项目结构、时长、鼓点卡点、标准流程 | [`docs/project-workflow.md`](docs/project-workflow.md) |
-| 角色、背景、音频、参考视频和下载/分析 | [`docs/media-assets.md`](docs/media-assets.md) |
-| H3 Skill、提示词和 T8 节点 | [`docs/h3.md`](docs/h3.md) |
+| 主题                           | 详细文档                                                   |
+| ---------------------------- | ------------------------------------------------------ |
+| 说明文档导航                       | [`docs/README.md`](docs/README.md)                     |
+| 项目结构、时长、鼓点卡点、标准流程            | [`docs/project-workflow.md`](docs/project-workflow.md) |
+| 角色、背景、音频、参考视频和下载/分析          | [`docs/media-assets.md`](docs/media-assets.md)         |
+| 姿势参考图匹配、归档、重命名与索引            | [`docs/pose-assets-workflow.md`](docs/pose-assets-workflow.md) |
+| H3 Skill、提示词和 T8 节点          | [`docs/h3.md`](docs/h3.md)                             |
 | 子 Agent 提示词与批量单图视频 | [`docs/how-to-write-prompts.md`](docs/how-to-write-prompts.md) |
-| AIGate 实例、提交、队列和生命周期 | [`docs/aigate.md`](docs/aigate.md) |
-| 剪辑、核验、交付和复现 | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
-| 项目中间产物分级清理 | [`docs/project-cleanup.md`](docs/project-cleanup.md) |
-| 视频发布流程 | [`docs/publishing.md`](docs/publishing.md) |
-| 文档目录约定 | [`docs/AGENTS.md`](docs/AGENTS.md) |
+| H3 工作流与 Prompt Group Agent      | [`docs/h3-workflow-prompt-group-agent.md`](docs/h3-workflow-prompt-group-agent.md) |
+| 绝区零视频提示词与角色参考                | [`docs/绝区零.md`](docs/绝区零.md)                           |
+| `ref/Resources.json` 资产索引与使用方法 | [`docs/resources.md`](docs/resources.md)               |
+| AIGate 实例、提交、队列和生命周期         | [`docs/aigate.md`](docs/aigate.md)                     |
+| RunningHub CLI 工作流提交                 | [`docs/runninghub.md`](docs/runninghub.md)              |
+| 剪辑、核验、交付和复现                  | [`docs/editing-delivery.md`](docs/editing-delivery.md) |
+| 项目中间产物分级清理                   | [`docs/project-cleanup.md`](docs/project-cleanup.md)   |
+| 视频发布流程                       | [`docs/publishing.md`](docs/publishing.md)             |
+| 文档目录约定                       | [`docs/AGENTS.md`](docs/AGENTS.md)                     |
 
 ## 主要目录分工
 
-- `audio/AGENTS.md`：通用音频、锁定源音频和音乐分析。
-- `background/AGENTS.md`：可复用背景和栅格参考图。
-- `character/AGENTS.md`：角色身份图、服装/场景图和角色音色。
+- `ref/audio/AGENTS.md`：通用音频、锁定源音频和音乐分析。
+- `ref/background/AGENTS.md`：可复用背景和栅格参考图。
+- `ref/character/AGENTS.md`：角色身份图、服装/场景图和角色音色。
 - `projects/AGENTS.md`：项目目录、提示词、工作流生成、AIGate、剪辑和结果归档。
-- `videoRef/AGENTS.md`：仅用于研究的参考视频及其下载归档。
+- `ref/videoRef/AGENTS.md`：仅用于研究的参考视频及其下载归档。
 - `workflows/AGENTS.md`：共享 ComfyUI 模板和 JSON 校验。
 - `videoOutput/AGENTS.md`：最终成品软链接的统一入口。
 - `docs/AGENTS.md`：说明文档自身的组织规则。
@@ -95,6 +104,9 @@ VideoMake 用于制作 AIGC 视频，当前重点是使用 MiniMax H3 生成带�
 - 明确的多镜头、分镜、切镜或蒙太奇任务必须先完成镜头数量和逐镜确认；只有 `multishot_plan_status: confirmed` 才能格式化最终提示词。
 - H3 生成边界和最终剪辑边界不是同一概念。生成段是素材容器，提示词中的 `[Shot]` 时间戳只是意图；最终切点必须经场景检测、接触表或帧级检查确认。
 - 默认工作流分辨率为 `0.9 MP`/`720p`，除非任务明确覆盖；源音频锁定任务使用 `audio_mode: lock_source`，最终输出按实际帧率和音频核验。
+- 使用 10Eros V7 且画面涉及人物动作、位移、转身、手势、脱衣或身体表演时，采样固定为 **5 步低分辨率 + 3 步高分辨率 + 1 步 sigma 精化**：`124.steps: 8`、`235.transition_step: 5`、`235.lowres_scale: 0.4`、`147.extra_steps: 1`。这是同一条 8 步基础调度的前 5 步低分辨率、后 3 步高分辨率，不是两套独立采样器；最终总评估次数为 9。
+- 用户要求“先 480p、review 后再上采样”时，480p 初采必须先完成基础 QA 并交用户明确确认；确认前不得提交、采用或交付上采样结果。详细闸门见 [`docs/h3-workflow-prompt-group-agent.md`](docs/h3-workflow-prompt-group-agent.md) §8.5。
+- 用户说“走 rh 流程”时，必须按 [`docs/h3-workflow-prompt-group-agent.md`](docs/h3-workflow-prompt-group-agent.md) 的流程执行，并通过 RH_CLI 本地 Web App API `POST http://127.0.0.1:8766/api/tasks` 提交 workflow；不得直接调用 `rh workflow run` 或 RunningHub `/task/openapi/create`。只有用户明确指定直接 RunningHub CLI/API 时，才使用对应的独立文档流程。
 
 ## 交付前检查
 

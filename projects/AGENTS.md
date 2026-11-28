@@ -6,7 +6,7 @@
 - 单个本地工作流为 2–15 秒；不要机械填满 15 秒，也不要拆出低于 2 秒的尾段。工作流段落优先落在已确认的自然切点或鼓点切点。
 - 先完成故事/镜头脚本和媒体用途，再进入 `minimax-h3-creative-director`；明确多镜头任务必须确认逐镜计划后再格式化提示词。
 - workflow 中的 Picture/Video/Audio 标签必须与实际独立输入节点一致；默认 `0.9 MP`/`720p`，除非任务明确覆盖。
-- 使用 AIGate 前先查询并优先创建 48G 4090/4090D 实例；不使用 5090/24G，不因已有实例而自动复用。生成后检查实际文件，不以提交成功为完成。
+- 使用 AIGate 前先查询并优先创建 48G 4090/4090D 实例；不使用 5090/24G，不因已有实例而自动复用。用户说“走 rh 流程”时，按 [`../docs/h3-workflow-prompt-group-agent.md`](../docs/h3-workflow-prompt-group-agent.md) 通过 RH_CLI 本地 Web App API `POST http://127.0.0.1:8766/api/tasks` 提交，不得直接使用 `rh workflow run` 或 RunningHub API。只有用户明确要求直接 RunningHub CLI/API 时，才按 [`../docs/runninghub.md`](../docs/runninghub.md) 执行。无论哪条路径，生成后都要检查实际文件，不以提交成功为完成。
 - 最终成品留在项目 `output/`，再在 `videoOutput/` 建立并验证软链接；确认输出已下载和核验后才停止/释放实例。
 
 详细流程：[`docs/project-workflow.md`](../docs/project-workflow.md)、[`docs/h3.md`](../docs/h3.md)、[`docs/aigate.md`](../docs/aigate.md)、[`docs/editing-delivery.md`](../docs/editing-delivery.md)。

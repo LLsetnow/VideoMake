@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "group": {
+    "id": "task-group-c84949255bb3",
+    "name": "任务提交时组装台",
+    "updated_at": 1788568629840,
+    "items": [
+      {
+        "instance_id": "ep001-shot-005-media-1",
+        "kind": "media",
+        "media_path": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-SUE-BASE.png",
+        "media_name": "Picture 1 · IMG-EP001-SUE-BASE.png",
+        "media_kind": "image",
+        "media_mime": "image/png"
+      },
+      {
+        "instance_id": "ep001-shot-005-media-2",
+        "kind": "media",
+        "media_path": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-SHOT-005-START.png",
+        "media_name": "Picture 2 · IMG-EP001-SHOT-005-START.png",
+        "media_kind": "image",
+        "media_mime": "image/png"
+      },
+      {
+        "instance_id": "ep001-shot-005-prompt",
+        "kind": "text",
+        "text": "subject_definitions: <Picture 1> is the uploaded 身份 reference at order 1. <Subject 1> is Sue in <Picture 1>, with a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse. <Picture 2> is the accepted opening frame for [Shot 1], fixing the approved starting composition, visible positions, and initial state for this shot.\nsummary: [keyframe completion + reference generation] The target video is a single vertical period-drama shot in the early-1900s New York artist-apartment world. Sue hears Behrman's cough below, says his name, and leaves the upper landing for help. The opening is anchored by <Picture 2> and preserves <Subject 1>.\nretention_analysis: <Picture 1> (reference image order 1): fully_preserved - its 身份 role is retained as the input reference for this shot. <Picture 2> (opening frame of [Shot 1]): fully_preserved - the supplied starting composition, visible placement, and initial state open the shot. <Subject 1> (appears in [Shot 1]): fully_preserved - a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse remain stable; the approved motion changes only the shot's stated action and endpoint.\ndetailed_description: The target video is a realistic live-action period drama in a vertical 9:16 frame, with restrained natural light, tactile period materials, and observational camera movement. The shot begins from <Picture 2>, with <Subject 1> gripping the illustration board at the upper landing above the shadowed lower studio. At 0.00 to 1.40 seconds a rough cough and a glass bottle knock rise from below. At 1.40 to 2.40 seconds Sue (S2), a young woman with a warm low voice, says softly: <d>[Chinese] 贝尔曼。</d> She tightens both hands around the board. From 2.40 to 4.80 seconds she turns and moves quickly down the stairs, keeping one hand near the rail and the board close to her body. From 4.80 to 5.00 seconds she clears the upper frame while the dark lower stairwell holds the cough. Use a slight downward tracking movement that follows her first steps; one continuous take with no cut. No non-diegetic subtitles, captions, or dialogue text overlays appear at any moment. Continuity locks: faded blue-green high-collar blouse.\noverall_soundscape: Rough cough from the lower room, a glass bottle knocking against a work surface, stair wood creaks, quick footfalls, and Sue's single quiet word.\nnon_diegetic_music: N/A",
+        "translated_text": "subject_definitions: <Picture 1> is the uploaded 身份 reference at order 1. <Subject 1> is Sue in <Picture 1>, with a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse. <Picture 2> is the accepted opening frame for [Shot 1], fixing the approved starting composition, visible positions, and initial state for this shot.\nsummary: [keyframe completion + reference generation] The target video is a single vertical period-drama shot in the early-1900s New York artist-apartment world. Sue hears Behrman's cough below, says his name, and leaves the upper landing for help. The opening is anchored by <Picture 2> and preserves <Subject 1>.\nretention_analysis: <Picture 1> (reference image order 1): fully_preserved - its 身份 role is retained as the input reference for this shot. <Picture 2> (opening frame of [Shot 1]): fully_preserved - the supplied starting composition, visible placement, and initial state open the shot. <Subject 1> (appears in [Shot 1]): fully_preserved - a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse remain stable; the approved motion changes only the shot's stated action and endpoint.\ndetailed_description: The target video is a realistic live-action period drama in a vertical 9:16 frame, with restrained natural light, tactile period materials, and observational camera movement. The shot begins from <Picture 2>, with <Subject 1> gripping the illustration board at the upper landing above the shadowed lower studio. At 0.00 to 1.40 seconds a rough cough and a glass bottle knock rise from below. At 1.40 to 2.40 seconds Sue (S2), a young woman with a warm low voice, says softly: <d>[Chinese] 贝尔曼。</d> She tightens both hands around the board. From 2.40 to 4.80 seconds she turns and moves quickly down the stairs, keeping one hand near the rail and the board close to her body. From 4.80 to 5.00 seconds she clears the upper frame while the dark lower stairwell holds the cough. Use a slight downward tracking movement that follows her first steps; one continuous take with no cut. No non-diegetic subtitles, captions, or dialogue text overlays appear at any moment. Continuity locks: faded blue-green high-collar blouse.\noverall_soundscape: Rough cough from the lower room, a glass bottle knocking against a work surface, stair wood creaks, quick footfalls, and Sue's single quiet word.\nnon_diegetic_music: N/A",
+        "translation_disabled": true,
+        "generated_type": "workflow-specific"
+      }
+    ]
+  }
+}

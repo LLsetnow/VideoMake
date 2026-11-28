@@ -1,6 +1,6 @@
 # S4 (38.092-51.177s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
 # 对应音乐：v3 do-do-do 段 + 副歌回归（"Weird girl, weird girl, that's okay" 呼应式）
-# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
 # 锁定音频：lock_source_S4.wav（v3 切片 38.092-51.177s）
 
 ### English Prompt

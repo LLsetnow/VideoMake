@@ -1,0 +1,479 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "auto",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "75",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "76",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "96",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/输入/参考图/loc-tenement-interior-1900-1910.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref0"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 7
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions: <Picture 1> is the uploaded 地理 reference at order 1. <Subject 1> is the early-1900s Greenwich Village top-floor artist studio in <Picture 1>, with a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture. <Picture 2> is the uploaded 身份 reference at order 2. <Subject 2> is Johnsy in <Picture 2>, with a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity. <Picture 3> is the uploaded 身份 reference at order 3. <Subject 3> is Sue in <Picture 3>, with a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse.\nsummary: [reference generation] The target video is a single vertical period-drama shot in the early-1900s New York artist-apartment world. Johnsy names the future painting and draws the board within reach. The shot uses <Subject 1>, <Subject 2>, <Subject 3> as its visual references.\nretention_analysis: <Picture 1> (reference image order 1): fully_preserved - its 地理 role is retained as the input reference for this shot. <Picture 2> (reference image order 2): fully_preserved - its 身份 role is retained as the input reference for this shot. <Picture 3> (reference image order 3): fully_preserved - its 身份 role is retained as the input reference for this shot. <Subject 1> (appears in [Shot 1]): fully_preserved - a narrow iron bed, a tall rain-streaked window, exposed brick, faded curtains, and period furniture remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 2> (appears in [Shot 1]): fully_preserved - a pale young woman with a short tousled dark-brown bob and the project's pale ivory nightdress continuity remain stable; the approved motion changes only the shot's stated action and endpoint. <Subject 3> (appears in [Shot 1]): fully_preserved - a young woman with warm brown pinned-up hair and a faded blue-green high-collar blouse remain stable; the approved motion changes only the shot's stated action and endpoint.\ndetailed_description: The target video is a realistic live-action period drama in a vertical 9:16 frame, with restrained natural light, tactile period materials, and observational camera movement. <Subject 1> holds <Subject 2> upright with the bowl in her hands and <Subject 3> just behind her side. At 0.00 to 1.50 seconds Johnsy's gaze moves from the bowl rim to Sue, and Sue releases a small breath of a smile. From 1.50 to 4.20 seconds Johnsy (S1) says: <d>[Chinese] 我以前是不是说过，想去画那不勒斯海湾？</d> Sue (S2) answers gently: <d>[Chinese] 你说过很多次。</d> From 4.20 to 6.40 seconds Johnsy draws the wooden painting board toward herself, keeping the bowl supported in her other hand. From 6.40 to 7.00 seconds she sits steady with her fingers touching the board edge and the final leaf behind her. Use a calm eye-level lateral track from the bowl to the board; one continuous take with no cut. No non-diegetic subtitles, captions, or dialogue text overlays appear at any moment. Continuity locks: pale ivory cotton nightdress; faded blue-green high-collar blouse; narrow top-floor artist studio with a tall rain-streaked window and exposed brick; final olive-green leaf on a wet brown vine.\noverall_soundscape: Quiet daylight room tone, a small relieved breath, bowl and fabric movement, the board sliding over the bed cover, and a faint softened street hush.\nnon_diegetic_music: N/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/stable_4v4a",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-JOHNSY-BASE.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref1"
+    }
+  },
+  "76": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/样片_最后一片叶子/剧集/EP001/制作成果/images/IMG-EP001-SUE-BASE.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref2"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "96": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/depth/仰躺-双膝屈曲外展_正面_竖图_depth.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref3"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  },
+  "97": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref4"
+    }
+  }
+}

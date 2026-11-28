@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is The fictional adult woman Junye, whose face and hair are defined by <Picture 1>. Lock her gently rounded oval face, dark brown almond eyes with natural double eyelids and slightly raised outer corners, medium-length eyelashes, fine arched dark brown eyebrows, straight moderately high nose bridge, natural pink medium-full lips with a subtle Cupid's bow, fair even skin with faint blush, and a chin-length straight dark brown bob with a side part and subtle highlights. She wears no accessories.
+
+summary:
+[reference generation] <Subject 1> initiates a kiss with her partner and reclines onto a pillow.
+
+retention_analysis:
+<Subject 1> fully_preserved — preserve her face and hair throughout both shots.
+
+detailed_description:
+Photorealistic 16:9 bedroom scene at night. Warm practical bedside lamp on screen left, cool rain-streaked window on screen right, ivory sheets. The adult male partner has short dark hair, medium olive skin and a lean build. Keep both faces distinct and the screen direction consistent.
+
+[Shot 1] Bedside medium two-shot. <Subject 1> in a white shirt sits on the edge of the bed; her partner in a charcoal shirt stands in front of her. He leans down and pauses. She takes his hand and draws him in for a kiss. The camera slowly pushes in, keeping both profiles visible.
+
+[Shot 2] At 00:05.000, cut to a headboard-side close shot at shoulder height. He takes off his charcoal shirt. <Subject 1> opens her final button and sets her shirt at the foot of the bed. They kiss again and she reclines onto the pillow. He braces his left hand beside her right shoulder and they hold eye contact.
+
+overall_soundscape:
+Steady rain against glass, the brush of shirts, fabric dropping onto the bed and close breathing. No dialogue.
+
+non_diegetic_music:
+N/A

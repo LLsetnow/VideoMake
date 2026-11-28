@@ -1,0 +1,25 @@
+subject_definitions:
+<Picture 1> is the opening-frame reference for [Shot 1]. It establishes the tilted low-angle framing, the seated pose with one leg raised, the armchair, rug, pumpkin lights, and all three attached paper talismans.
+<Subject 1> is the adult cosplayer in <Picture 1>, with silver-white bangs and side braid, a white headpiece, a black choker, and black thigh-high stockings.
+<Subject 2> is the set of three yellow paper talismans with red markings: one over each breast and one covering the vulva.
+
+summary:
+[keyframe completion + reference generation] A five-second vertical sequence has exactly two shots. All three talismans remain attached throughout [Shot 1]. A single hard cut at 00:01.000 reveals <Subject 1> with all three talismans already gone in the first frame of [Shot 2]. Their removal takes place entirely between shots.
+
+retention_analysis:
+<Picture 1> fully_preserved — match its original framing, seated pose, room arrangement, and three attached talismans at the start.
+<Subject 1> fully_preserved — preserve her identity, hair, headpiece, choker, stockings, and body proportions across the edit.
+<Subject 2> partially_preserved — show all three attached throughout [Shot 1]. All three are absent for the full duration of [Shot 2].
+
+detailed_description:
+Photorealistic vertical Halloween interior. Warm pumpkin lights illuminate the rug and the chair, with a cool blue rim along her silver hair.
+
+[Shot 1] Begin on <Picture 1>. Hold the original tilted low angle and pose for one second. Her raised hand stays beside her face and her other hand supports her on the rug. She blinks once. All three strips stay attached through the final frame of this shot.
+
+[Shot 2] At 00:01.000, make a single instantaneous hard cut to a slightly closer and more level medium shot from the same side. In the very first frame after the cut, both breasts and the vulva are already uncovered. All three paper talismans are completely absent at once and stay absent for the rest of the video. Match her seated position, raised leg, and hand positions across the cut. Both hands remain clear of the areas the papers covered. Hold this new framing until the end as she lowers her chin slightly and looks back into the lens. Keep her face and all three former talisman positions visible in the same frame.
+
+overall_soundscape:
+Continuous quiet room tone and a faint rustle of fabric as she settles in the second shot. No dialogue or paper sound.
+
+non_diegetic_music:
+N/A

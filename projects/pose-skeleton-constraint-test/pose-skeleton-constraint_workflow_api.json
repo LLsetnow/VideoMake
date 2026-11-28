@@ -1,0 +1,298 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "54",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/pose_skeleton_constraint",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 5
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the adult human subject inspired by <Picture 1>. Preserve the subject's general proportions, long dark hair, near-frontal viewpoint, and relaxed upper-body presence, but render the final subject in a simple opaque fitted outfit so the motion test remains non-explicit.\n<Subject 2> is the target full-body pose encoded by <Picture 2>: an upright near-frontal stance, one hand held beside the face, the opposite arm bent outward, a vertical torso, a slightly asymmetric shoulder and hip line, and legs continuing downward in the frame. The colored lines and keypoint dots are motion-control information only.\n<Picture 1> is the original color reference image for the subject's broad appearance, camera viewpoint, framing, and bathroom-window composition; it is not a first-frame lock.\n<Picture 2> is a DWPose/OpenPose-style skeleton map for the target pose and body-joint layout; it is a strict pose reference, not visible artwork in the target video.\n\nsummary:\n[reference generation] Generate a five-second single-shot pose-control test using <Subject 1> from <Picture 1> and the body configuration from <Picture 2>. The target should render a natural adult human in the original vertical composition while following the skeleton's joint locations and limb orientations throughout the shot.\n\nretention_analysis:\n<Subject 1>: partially_preserved - the broad appearance, proportions, viewpoint, and composition are transferred from <Picture 1>, while the final wardrobe is changed to an opaque outfit.\n<Subject 2>: fully_preserved - the target body configuration, shoulder and hip alignment, hand positions, limb directions, and lower-body placement from <Picture 2> must remain stable throughout the test.\n<Picture 1>: partially_preserved - use it as a visual and compositional reference without treating it as an exact first frame or copying non-essential details.\n<Picture 2>: fully_preserved - preserve its pose geometry as motion-control data, but never show the black background, colored skeleton lines, or keypoint dots in the rendered video.\n\ndetailed_description:\nLive-action, photorealistic, non-explicit pose-control evaluation footage in a vertical 9:16 composition. Use the bathroom window, horizontal wooden fence, pale daylight, and bathtub arrangement from <Picture 1> only as broad scene and framing references. Keep the camera at a stable near-frontal eye-level viewpoint with a medium-full-body composition, and keep the subject centered slightly to the right so the raised hand and both legs remain visible. The final subject wears a simple opaque fitted outfit with natural skin, hair, and facial detail; do not render nudity, sexual activity, extra people, or graphic content.\n\n[Shot 1] The shot opens with <Subject 1> already aligned to the exact pose geometry from <Picture 2>. The head remains near the upper center, the torso stays vertical, one hand is held beside the face, the opposite arm is bent outward, the shoulders and hips retain the same slight asymmetry, and both legs continue toward the bottom edge with the same spacing and directions as the skeleton map. The colored pose lines and keypoint dots from <Picture 2> are never visible in the scene. Hold a Static Shot for the entire test; do not pan, zoom, tilt, cut, or change the camera height.\n\nFrom the opening through 2.00 seconds, the subject holds the skeleton-defined stance with only subtle breathing, a small natural blink, and minimal fabric movement. These micro-movements must not move the head, shoulders, elbows, wrists, hips, knees, or ankles away from the corresponding skeleton joints. From 2.00 to 4.20 seconds, allow one small natural adjustment of the fingers beside the face and a barely perceptible weight shift while preserving the same torso axis, shoulder line, hip line, arm bend, leg angles, and overall silhouette. The hand must remain beside the face rather than dropping or crossing the body. During the final 0.80 seconds, settle back into the original skeleton-aligned pose and hold it clearly until the last frame. Maintain one person, two arms, two legs, stable anatomy, consistent scale, and continuous lighting for the full shot.\n\noverall_soundscape:\nQuiet indoor room tone continues under the shot with a faint ventilation hum and distant outdoor ambience through the closed window. Soft fabric movement and restrained breathing accompany the small pose-preserving adjustments, with no dialogue or abrupt impacts.\n\nnon_diegetic_music:\nN/A\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "pose_constraint_subject.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image · Picture 1 · subject"
+    }
+  },
+  "54": {
+    "inputs": {
+      "image": "pose_constraint_skeleton.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image · Picture 2 · skeleton pose control"
+    }
+  }
+}

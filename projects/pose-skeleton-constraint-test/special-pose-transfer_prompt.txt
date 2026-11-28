@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the anime character defined by <Picture 1>, with short silver-gray wavy hair, a large turquoise bow, light eyes, a white short-sleeve blouse, a red star-patterned tie, a black choker, white wing accessories, a pink backpack, pink-and-white striped arm warmers, a black layered skirt, pink thigh straps, white over-the-knee socks, pink-and-white striped leg warmers, and pink platform shoes. Preserve this character's face, hairstyle, costume construction, colors, accessories, body proportions, and anime rendering style.
+<Subject 2> is the special target pose encoded by <Picture 2>: a centered seated or reclined configuration with the torso near the middle, both legs bent and lifted toward the camera, both knees opened widely, the feet pointing toward the lower left and lower right foreground, and both hands raised near the shoulders. The colored lines and keypoint dots are motion-control information only.
+<Picture 1> is a three-view full-body character reference sheet for the identity and costume of <Subject 1>. It is not a storyboard, not a first-frame lock, and its standing presentation and white sheet layout must not constrain the target pose.
+<Picture 2> is a DWPose/OpenPose-style skeleton map used only as a strict body-pose and limb-position reference for <Subject 2>. Its black background, colored lines, and keypoint dots must not be rendered in the final video.
+
+summary:
+[reference generation] Generate a five-second single-shot vertical anime character test in which <Subject 1> keeps the identity and costume from <Picture 1> while adopting the unusual lifted-leg pose from <Picture 2>. The pose reference overrides the character sheet's default standing presentation. The test must show one recognizable character, a readable full-body pose, stable camera framing, and no visible skeleton artwork.
+
+retention_analysis:
+<Subject 1>: fully_preserved - preserve the character identity, face, hair, costume, accessories, proportions, and anime style from <Picture 1>.
+<Subject 2>: fully_preserved - preserve the centered torso, raised bent legs, wide knee separation, feet aimed toward the lower corners, raised hands, and overall silhouette from <Picture 2> throughout the shot.
+<Picture 1>: partially_preserved - transfer the character design from the three-view sheet while converting it into one coherent single-view video subject and excluding the sheet layout and standing pose.
+<Picture 2>: fully_preserved - preserve its pose geometry as hidden motion-control information while excluding every skeleton line, dot, and black-background artifact from the rendered image.
+
+detailed_description:
+High-quality 2D anime animation with clean linework, soft cel shading, detailed hair and fabric, stable anatomy, and a simple pale studio background. Use a vertical 9:16 frontal composition with a slightly elevated camera angle and enough space to show the head, torso, both raised knees, both feet, and both hands. <Picture 1> supplies character identity and costume only; do not show three simultaneous views, a turnaround sheet, a white presentation board, or the original standing pose. <Picture 2> supplies the special pose only; do not display its black background, colored bones, keypoint dots, or any overlay.
+
+[Shot 1] The shot opens with <Subject 1> as one single full-body anime character already arranged in the exact lifted-leg pose of <Subject 2>. The torso stays centered and slightly reclined, the hips remain below the torso, both thighs and lower legs are bent and lifted toward the camera, both knees open widely, and the feet point diagonally toward the lower-left and lower-right foreground as shown by the skeleton. Both hands are raised near the shoulders with elbows bent. Keep the silver-gray hair, turquoise bow, white blouse, red star-patterned tie, pink backpack, white wings, black layered skirt, striped arm warmers and leg warmers, socks, and pink platform shoes consistent with <Picture 1>. The face remains recognizable, the costume stays opaque and fully rendered, and the character remains one coherent body rather than a pasted collage.
+
+Hold a Static Shot for the entire five seconds. From the opening through 2.00 seconds, the character maintains the unusual skeleton-defined configuration with only a small blink, subtle breathing, and restrained hair, wing, or fabric movement. These micro-movements must not lower either knee, straighten either leg, bring the knees together, drop either hand, or rotate the torso away from the skeleton layout. From 2.00 to 4.20 seconds, allow a tiny natural adjustment of the fingers near the shoulders and a barely perceptible shift of the supported hips, while keeping both legs elevated, the knees wide apart, the feet aimed toward opposite lower corners, and the torso centered. During the final 0.80 seconds, settle back into the initial special pose and hold it clearly until the last frame. Do not replace the pose with standing, walking, running, or a conventional seated pose. Do not add another character, extra limbs, a chair, a prop, a camera move, a cut, readable text, or a skeleton overlay.
+
+overall_soundscape:
+Quiet studio room tone continues under the animation with faint fabric movement and restrained breathing-like ambience. No dialogue, impacts, or abrupt sound events are present.
+
+non_diegetic_music:
+N/A

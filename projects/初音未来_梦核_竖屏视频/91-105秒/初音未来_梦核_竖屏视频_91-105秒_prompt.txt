@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> is Hatsune Miku, the anime girl shown in <Picture 1>, with signature turquoise twin-tails, blue-green eyes, and her default outfit: a black cropped jacket, white puffy sleeves with white arm warmers, a black necktie, a dark pleated skirt, and thigh-high black boots. Preserve her exact face, hairstyle, body proportions, costume details, and colors from the reference image in every shot.
+<Subject 2> is the pastel residential street shown in <Picture 2>: a straight cement road receding to a vanishing point, identical modular houses in saturated pink, mint green, lemon yellow, and cream on both sides, perfectly flat lawns, and a single distant street lamp. Preserve the scene's layout, colors, lighting, and uncanny dreamcore mood in every shot.
+<Audio 1> is the complete audio track of this segment, directly reused 1:1 as the target video's complete final audio track, including all music, rhythm, ambience, dynamics, and stereo balance.
+
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical dreamcore music-video segment starring <Subject 1> inside <Subject 2>: five handheld shots of her walking the endless pastel street and pausing to look back. Reuse <Audio 1> exactly from beginning to end, without generating new dialogue, singing, music, or sound effects.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - the character's identity and all defining visual features from <Picture 1> remain consistent throughout the entire segment.
+<Subject 2> (appears in [Shot 1] through [Shot 5]): fully_preserved - the scene's layout, colors, lighting, and uncanny dreamcore mood from <Picture 2> remain consistent throughout the entire segment.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the segment's complete final audio track.
+
+detailed_description:
+The target video is a 9:16 vertical dreamcore music-video segment shot on a low-fidelity handheld camera: heavy film grain and digital noise, soft focus, slight motion blur, natural handheld shake with breathing movement, and a nostalgic early-2000s digital camcorder look. The atmosphere stays grounded, liminal, and slightly uncanny - do not make the scene heavenly, divine, or paradise-like, and no glowing clouds or sacred light. The edit rhythm follows the existing pulse of <Audio 1>, with a new shot roughly every three seconds.
+[Shot 1] The shot opens on an empty handheld one-point-perspective shot of <Subject 2>, the pastel street: the straight road receding to a vanishing point, identical saturated pink, mint, yellow, and cream houses on both sides, flat lawns, and the single distant street lamp; no one in frame; slow handheld push in.
+[Shot 2] At 00:03.000, <Subject 1> walks down the center of the road away from the camera, full body visible, her dark outfit standing out against the pastel houses; handheld tracking shot at slow speed with natural shake.
+[Shot 3] At 00:06.000, cut to a medium handheld shot of her stopping mid-road and slowly turning her head to look at the rows of identical houses on both sides.
+[Shot 4] At 00:09.000, cut to a closer shot of her face, a faint puzzled expression as she looks at the houses; the colors of the street are slightly overexposed and grainy.
+[Shot 5] At 00:12.000, cut to a full-body wide handheld shot of her continuing toward the vanishing point, growing small; the camera slowly pulls back, the identical houses stretching into the distance.
+
+overall_soundscape:
+A quiet, roomy ambience continues throughout the segment: faint distant hum, soft water or air sounds, and a low analog hiss beneath the copied music.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only score. Preserve its exact timing, tempo, beat placement, dynamics, and stereo image from 00:00.000 to the end of the segment. Do not generate replacement music.

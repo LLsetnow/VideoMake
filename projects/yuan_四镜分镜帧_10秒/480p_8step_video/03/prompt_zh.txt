@@ -1,0 +1,13 @@
+subject_definitions:
+<Picture 1> 为第一镜实际开场帧，确定两位成年角色、姿势、支撑点、机位和灯光。
+summary:
+[参考生成 + 关键帧对齐] 从该帧直接延续 2.5 秒，同一对自愿参与的虚构成年人。
+retention_analysis:
+<Picture 1> fully_preserved，保持开场构图、人物身份、光线、服装和支撑点。
+detailed_description:
+横屏写实，固定机位，镜内无切镜。
+[Shot 1] 从 <Picture 1> 起镜。保持床侧全幅侧拍。Yuan 跨跪在仰卧男方上方，首帧已在性交过程中。女方手和膝的支撑点固定，骨盆向男方腹部方向小幅前移再后退。男方头肩留在枕上，前臂不与女方交叠。保持白上衣、手的位置和首帧取景。
+overall_soundscape:
+轻微室内底噪、近处呼吸和床单摩擦。无对白。
+non_diegetic_music:
+无

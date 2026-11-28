@@ -1,0 +1,27 @@
+subject_definitions:
+<Picture 1> is the opening frame of Shot 1 at 00:00.000: the bedside kneeling oral composition, side profile, two adult characters, with the woman's mouth on the man's penis and her right hand on his outer thigh.
+<Picture 2> is the opening frame of Shot 2 at 00:03.375: the bed-side three-quarter woman-on-top composition, two adult characters, his penis already inside her vagina, his hands on her waist.
+<Picture 3> is the opening frame of Shot 3 at 00:06.750: the bed-side three-quarter missionary composition, two adult characters, her raised knee and his hand on her thigh, his penis already inside her vagina.
+
+summary:
+[reference generation + keyframe completion] A 10-second three-shot sequence of the same two fictional consenting adults having sex in one hotel room, hard cutting at 00:03.375 and 00:06.750. Each shot begins exactly on its corresponding picture and continues the ongoing act immediately.
+
+retention_analysis:
+<Picture 1> fully_preserved — Shot 1 opens on this frame with the same composition, identity, clothing, light and mouth contact.
+<Picture 2> fully_preserved — Shot 2 opens on this frame with the same composition, identity, clothing, light and body positions.
+<Picture 3> fully_preserved — Shot 3 opens on this frame with the same composition, identity, clothing, light and body positions.
+
+detailed_description:
+Photorealistic 16:9 adult drama, natural skin texture and practical lighting, same rain-night hotel room in every shot: white rumpled bedding, an amber bedside lamp on the left, a dark green satin slip dress slipping off the shoulders, and cool blue rain-streaked window light behind. Yuan is 25, fair-skinned, with a dark-brown high ponytail, straight bangs and dark almond eyes; her partner is around 30, lean, olive-skinned, with short dark hair and an open dark shirt. Three locked-off shots of 3.375 seconds each. Cuts are instantaneous hard cuts; no dissolve, no morph, no blend between poses.
+
+[Shot 1] Begin on <Picture 1>. The camera stays at mattress height on a fixed side profile. Yuan kneels on the rug beside the bed, back slightly arched, head tilted up, lips sealed around the tip of his penis; her right hand rests on his outer thigh, her left hand hangs near the bed frame. Her partner stands at the bedside so only his abdomen, hip, thigh and the base of his penis are in frame; his face stays outside the shot. She draws her head back a few centimeters and takes him in again twice at an unhurried pace; her jaw and throat move, her fingers press into his thigh, and his pelvis rocks once. The amber lamp stays steady, the window rain keeps running.
+
+[Shot 2] At 00:03.375, hard cut directly to <Picture 2>. The camera holds the same bed-side three-quarter angle. Yuan kneels astride her supine partner, his penis already inside her vagina; his hands grip her waist and her right hand rests on his chest. His head stays on the pillow, turned toward her. She rolls her pelvis forward toward his abdomen and back twice in a small, controlled arc; her ponytail sways, the green satin bunches at her waist, and the mattress dips under her knees. Keep her hands, his hands and their leg positions exactly as in the opening frame.
+
+[Shot 3] At 00:06.750, hard cut directly to <Picture 3>. Camera locked on the bed-side three-quarter view. Yuan lies on her back with one knee raised high and the other leg folded; her partner kneels between her thighs, one hand braced on her raised thigh, his penis already inside her vagina, his shoulders lowered over her. He draws his hips back and thrusts forward twice along the bed plane while his shoulder height stays constant. Her raised foot shifts slightly, her hand tightens on the sheet, and her face stays turned toward the camera. The lamp and window light remain unchanged.
+
+overall_soundscape:
+Continuous rain on the window and low hotel room tone across all three shots. Close breathing throughout; soft wet oral sounds and a faint fabric rustle in Shot 1; mattress creak and skin contact in Shots 2 and 3. No dialogue.
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is Chinatsu, the same anime game character whose identity is defined by <Picture 1>, <Picture 2>, and <Picture 3>. Preserve her pale silver-gray softly wavy medium-length hair, heavy straight bangs, mint-green bow, black geometric hair ornaments, pink-and-mint clips, black dangling earrings, large multicolored eyes, softly rounded face, fair skin, and stable anime anatomy. Only render this anime character; never render a live-action person or the source performer.
+<Picture 1> is the literal first frame of this 5.125-second segment: the sunny yellow cable-knit sweater, pale-blue neck scarf, dark cocoa-brown shorts, brown ribbed leg warmers, pale-blue knee-high boots, hand lifting the pale-blue waist layer, and yellow-blue-brown color cards must match exactly.
+<Picture 2> is the literal last frame of this 5.125-second segment at global 00:11.125: the newly generated Chinatsu tail-frame reference with the sky-blue outdoor jacket, warm-brown shoulder yoke, forest-green top, warm-brown pleated skort, pale nude sandals, and front-facing near-front fashion pose must match exactly. Do not treat it as a general style reference.
+<Picture 3> is the face-only identity reference for Chinatsu's eyes, bangs, hair framing, earrings, bow silhouette, and facial proportions; exclude its crop and background.
+<Video 1> is a silent derived depth-plus-DWPose structural control video for this 5.125-second segment. Use it only for per-frame body pose geometry, turning direction, hand and limb directions, gesture timing, depth order, and fixed vertical camera framing. Never render its black background, grayscale depth body, colored skeleton, keypoints, source performer, clothing, room, watermark, or technical overlay.
+<Audio 1> is the exact 00:06.000-00:11.125 audio cut from the supplied reference video and must be directly reused as the complete final audio for this segment.
+
+summary:
+[literal first-frame to last-frame boundary transition + continuous final motion + locked source audio] Create a single continuous 5.125-second vertical 9:16 polished anime fashion transition. Begin exactly on <Picture 1> and finish exactly on <Picture 2> at global 00:11.125. Use <Video 1> only for hidden body movement and camera structure, use <Picture 3> only for face identity, and reuse <Audio 1> 1:1 with audio_mode lock_source. No generated music, dialogue, replacement sound, real human, or source performer.
+
+retention_analysis:
+<Picture 1>: fully_preserved as the literal first frame and opening yellow-blue-brown wardrobe state.
+<Picture 2>: fully_preserved as the literal last frame and final sky-blue-green-brown wardrobe state.
+<Picture 3>: fully_preserved for face and hair identity only.
+<Video 1>: partially_preserved for hidden continuous motion, timing, depth, and framing; exclude all visible control artwork and human imagery.
+<Audio 1>: fully_copy and continuous from the supplied source cut.
+
+detailed_description:
+Use crisp high-end anime rendering, refined cel shading, stable anatomy, detailed fabric, a clean white studio, centered vertical fashion-catalog composition, and soft frontal light. No cuts, no extra people, no live-action human, no text, no logos, no watermark, no picture-in-picture, and no visible depth or skeleton maps.
+[Shot 1] At 00:00.000, match <Picture 1> exactly. During 00:00.000-00:01.200, continue the yellow look's hand-to-waist gesture while following the full-body turning mechanics of <Video 1>; the feet, hips, waist, shoulders, arms, head, and legs must change orientation continuously. During 00:01.200-00:02.400, perform one continuous rotational color-wipe transition into the sky-blue jacket, forest-green top, warm-brown skort, and pale sandals while the body keeps turning; do not replace movement with a static clothing morph. During 00:02.400-00:04.650, complete the visible turn through a clear side profile and return toward the front, with coordinated hip, shoulder, leg, and arm motion matching <Video 1>; keep the character anime-only and keep the camera locked. During 00:04.650-00:05.125, settle naturally into the exact front-facing near-front fashion pose and wardrobe of <Picture 2> at global 00:11.125. There must be no back-facing or rear three-quarter final pose, no freeze before the final moment, and no artificial static hold inside this generated segment. Keep the reference audio unchanged.
+
+overall_soundscape:
+Use only the directly reused source audio from <Audio 1> for this segment. Add no new ambience, foley, dialogue, singing, or sound effects. <Video 1> contributes no audio.
+
+non_diegetic_music:
+<Audio 1> is the complete audience-only source track for 00:06.000-00:11.125. Reuse it 1:1 without time stretch, remix, replacement, or extension.

@@ -1,0 +1,314 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "96",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 20261125
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/Yuan_雨夜酒店_三体位_8step参考图_v2/output/yuan_rain_hotel_oral_side_8step_v4.png"
+    },
+    "_meta": {
+      "title": "Picture 1 · 00:00.000"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 10
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the opening frame of Shot 1 at 00:00.000: the bedside kneeling oral composition, side profile, two adult characters, with the woman's mouth on the man's penis and her right hand on his outer thigh.\n<Picture 2> is the opening frame of Shot 2 at 00:03.375: the bed-side three-quarter woman-on-top composition, two adult characters, his penis already inside her vagina, his hands on her waist.\n<Picture 3> is the opening frame of Shot 3 at 00:06.750: the bed-side three-quarter missionary composition, two adult characters, her raised knee and his hand on her thigh, his penis already inside her vagina.\n\nsummary:\n[reference generation + keyframe completion] A 10-second three-shot sequence of the same two fictional consenting adults having sex in one hotel room, hard cutting at 00:03.375 and 00:06.750. Each shot begins exactly on its corresponding picture and continues the ongoing act immediately.\n\nretention_analysis:\n<Picture 1> fully_preserved — Shot 1 opens on this frame with the same composition, identity, clothing, light and mouth contact.\n<Picture 2> fully_preserved — Shot 2 opens on this frame with the same composition, identity, clothing, light and body positions.\n<Picture 3> fully_preserved — Shot 3 opens on this frame with the same composition, identity, clothing, light and body positions.\n\ndetailed_description:\nPhotorealistic 16:9 adult drama, natural skin texture and practical lighting, same rain-night hotel room in every shot: white rumpled bedding, an amber bedside lamp on the left, a dark green satin slip dress slipping off the shoulders, and cool blue rain-streaked window light behind. Yuan is 25, fair-skinned, with a dark-brown high ponytail, straight bangs and dark almond eyes; her partner is around 30, lean, olive-skinned, with short dark hair and an open dark shirt. Three locked-off shots of 3.375 seconds each. Cuts are instantaneous hard cuts; no dissolve, no morph, no blend between poses.\n\n[Shot 1] Begin on <Picture 1>. The camera stays at mattress height on a fixed side profile. Yuan kneels on the rug beside the bed, back slightly arched, head tilted up, lips sealed around the tip of his penis; her right hand rests on his outer thigh, her left hand hangs near the bed frame. Her partner stands at the bedside so only his abdomen, hip, thigh and the base of his penis are in frame; his face stays outside the shot. She draws her head back a few centimeters and takes him in again twice at an unhurried pace; her jaw and throat move, her fingers press into his thigh, and his pelvis rocks once. The amber lamp stays steady, the window rain keeps running.\n\n[Shot 2] At 00:03.375, hard cut directly to <Picture 2>. The camera holds the same bed-side three-quarter angle. Yuan kneels astride her supine partner, his penis already inside her vagina; his hands grip her waist and her right hand rests on his chest. His head stays on the pillow, turned toward her. She rolls her pelvis forward toward his abdomen and back twice in a small, controlled arc; her ponytail sways, the green satin bunches at her waist, and the mattress dips under her knees. Keep her hands, his hands and their leg positions exactly as in the opening frame.\n\n[Shot 3] At 00:06.750, hard cut directly to <Picture 3>. Camera locked on the bed-side three-quarter view. Yuan lies on her back with one knee raised high and the other leg folded; her partner kneels between her thighs, one hand braced on her raised thigh, his penis already inside her vagina, his shoulders lowered over her. He draws his hips back and thrusts forward twice along the bed plane while his shoulder height stays constant. Her raised foot shifts slightly, her hand tightens on the sheet, and her face stays turned toward the camera. The lamp and window light remain unchanged.\n\noverall_soundscape:\nContinuous rain on the window and low hotel room tone across all three shots. Close breathing throughout; soft wet oral sounds and a faint fabric rustle in Shot 1; mattress creak and skin contact in Shots 2 and 3. No dialogue.\n\nnon_diegetic_music:\nN/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "Yuan_ThreePoses_10s_720p_8step",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 8,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "h3ErosMax_beta5_turbo_lora_v1_rank_128_bf16.safetensors",
+      "strength_model": 0.5,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "10Eros_Max_h3_hybrid_beta5.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "96": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/Yuan_雨夜酒店_三体位_8step参考图_v2/output/yuan_rain_hotel_cowgirl_front_8step_v7.png"
+    },
+    "_meta": {
+      "title": "Picture 2 · 00:02.500"
+    }
+  },
+  "97": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/Yuan_雨夜酒店_三体位_8step参考图_v2/output/yuan_rain_hotel_missionary_side_8step_v6.png"
+    },
+    "_meta": {
+      "title": "Picture 3 · 00:05.000"
+    }
+  }
+}

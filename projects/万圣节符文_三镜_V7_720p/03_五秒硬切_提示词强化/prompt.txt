@@ -1,0 +1,25 @@
+subject_definitions:
+<Picture 1> anchors the opening of [Shot 1]: the tilted wide view of an adult cosplayer seated on the Halloween rug, one leg raised, with three yellow paper talismans attached.
+<Subject 1> is that adult cosplayer, with silver-white bangs and a side braid, a white headpiece, a black choker, and black thigh-high stockings.
+<Subject 2> is the three talismans from <Picture 1>, one over each breast and one covering the vulva.
+
+summary:
+[keyframe completion + reference generation] Two separately framed takes are joined by a single editorial hard cut at 00:01.000. The last frame of the first take has exactly three talismans. The very next frame belongs to the second take and has zero. Hold that second state for the remaining four seconds.
+
+retention_analysis:
+<Picture 1> fully_preserved — use its pose, framing, lighting, and prop arrangement for the opening.
+<Subject 1> fully_preserved — retain her identity, proportions, hair, headpiece, choker, and stockings in both takes.
+<Subject 2> partially_preserved — all three papers are attached in every frame of [Shot 1]. The complete second take begins and ends with zero papers.
+
+detailed_description:
+Photorealistic Halloween set with the same armchair, rug, warm pumpkin lights, and blue rim light in both takes. The edit changes the camera framing and the paper count at the same instant.
+
+[Shot 1] Begin on <Picture 1>. Hold a tilted wide shot from 00:00.000 until just before 00:01.000. Both yellow chest papers and the lower yellow paper are clearly visible in their original positions. Her raised hand holds its gesture near her face, and her other hand stays on the rug. She blinks once. The final frame of this shot still contains all three attached papers.
+
+[Shot 2] At 00:01.000, hard cut directly to a level medium-wide view from the same side, with the cosplayer noticeably larger in frame and the curtain edge upright. The camera angle changes in one frame. The first frame from this camera already shows both breasts and the vulva uncovered, with zero talismans anywhere in the shot. Hold her seated pose and keep her face and all three former paper positions visible. Her raised hand stays beside her face and her other hand stays planted on the rug. She lowers her chin slightly, looks into the lens, and holds that position to the end. Keep the zero-paper state from the first frame of this shot to the last.
+
+overall_soundscape:
+A quiet indoor room tone continues underneath the cut. A faint fabric movement accompanies her settling in the second take.
+
+non_diegetic_music:
+N/A

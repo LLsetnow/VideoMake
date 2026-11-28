@@ -1,0 +1,33 @@
+subject_definitions:
+<Picture 1> is the square three-view identity reference for <Subject 1>, used only to preserve character identity, costume construction, colors, proportions, and accessories; it is not a target frame or a scene reference.
+<Subject 1> is the original anime street-DJ girl "苍蓝" (Canglan): cyan-to-white gradient twin-tails tied with large white star clips and pink ribbons, bright cyan eyes, a white oversized hoodie with cyan trim and a pink heart patch reading "AZ", a cyan pleated skirt, white thigh-high socks with lace trim, chunky white sneakers with cyan glowing soles, cyan-and-white cat-ear headphones around her neck, star earrings, and a small cyan cat plush keychain. Preserve her exact face, hair, proportions, costume, palette, and accessories in every shot.
+<Audio 1> is the 15-second instrumental electronic track generated with the MiniMax music provider, directly reused 1:1 as the target video's complete final soundtrack, including its timing, beats, dynamics, and stereo balance.
+
+summary:
+[reference generation + audio reuse] Create a new 15-second 9:16 original anime game-character agent-profile video starring <Subject 1>, using <Picture 1> for identity and costume consistency and <Audio 1> as the locked source soundtrack. Translate the offline-analyzed reference profile video's reveal grammar into an original sequence: equipment detail, upward costume scan, eye-lock close-up, full-body hero reveal, emblem insert, and final archive-card hold. Do not copy the reference video's character, frames, watermark, logos, text, music, or exact composition.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 6]): fully_preserved - keep her face, cyan-white twin-tails, white star clips, pink ribbons, "AZ" heart patch, cyan skirt, lace socks, glowing sneakers, headphones, earrings, and cat keychain stable and recognizable throughout.
+<Picture 1> (identity reference only): fully_preserved - preserve the three-view character design information while replacing the white reference sheet with an original dark holographic archive environment.
+<Audio 1>: fully_copy - reuse the complete 15-second MiniMax-generated signal 1:1 as the final audio track; do not generate replacement music or add extra sound layers.
+
+detailed_description:
+The target video is a 9:16 cel-shaded anime game-character profile in an original urban-pop archive style: crisp line art, saturated cyan, white, and pink accents, dark graphite surfaces, holographic scanlines, controlled chromatic aberration, and clean collectible-card composition. The public reference was used only to study the reveal rhythm; do not reproduce its character, layout, watermark, logos, or wording. All visual cuts and motion accents must follow <Audio 1>'s attacks and beat changes, while <Audio 1> remains the only audible track.
+
+[Shot 1] During 00.000-02.543, begin in near-black cyan light with an extreme low-angle close-up of <Subject 1>'s chunky white sneaker, cyan glowing sole, lace-trimmed thigh-high sock, and the lower edge of her cyan skirt. The shoe settles once as a scanline passes across the sole. The camera holds with a small breathing push-in, then starts a slow vertical tilt upward; keep the background abstract, metallic, and unreadable.
+
+[Shot 2] At 00:02.543, cut on a narrow cyan light streak to a vertical medium detail view from skirt to chest. <Subject 1> lightly brushes the pink belt strap and the small cyan cat plush keychain swings once; the white hoodie, cyan trim, headphone ear-cups, star earrings, and pink "AZ" heart patch become clear. The camera tracks upward at medium speed with small amplitude, ending at her collar and headphone lights as they activate.
+
+[Shot 3] At 00:05.364, hard cut to a three-quarter face close-up. <Subject 1> turns her head toward the lens and locks eyes with a confident, playful smile; a bright reflection travels across her cyan irises and one star-shaped hair clip flashes. Use a fast Push In with small amplitude and a brief controlled digital micro-shake, then hold the eye contact for the next beat. No dialogue, subtitles, or watermark.
+
+[Shot 4] At 00:08.046, cut through a cyan scan bar to a full-body hero composition. <Subject 1> stands centered in a dark holographic archive chamber, one hand raised in a peace sign and the other resting near her headphones, twin-tails and skirt moving in a small fan of air. Pull out slowly with medium amplitude to reveal a luminous vertical frame and abstract data blocks. Show only these exact readable labels: "AGENT FILE", "CANG LAN", "STARBEAT", and "ID: CL-07"; no other readable text, logos, or fake interface clutter.
+
+[Shot 5] At 00:10.728, cut to a centered macro insert of the pink "AZ" heart patch and a cyan star emblem. A scanning beam traces the heart outline, the star pulses once, and a thin mechanical ring locks around it. Use a mostly static shot with a tiny clockwise Arc Shot and a sharp highlight on the beat; this graphic is an identity anchor, not a new object or logo.
+
+[Shot 6] At 00:12.875, cut back to a final vertical archive card. The upper two-thirds hold <Subject 1> in a clean three-quarter full-body pose, while the lower third contains restrained cyan-pink bars and the exact labels "CANG LAN", "AGENT FILE", "AZ", and "STATUS: READY". The camera performs a very slow Pull Out with small amplitude as a holographic frame settles around her; the star clips, twin-tails, hoodie, skirt, shoes, headphones, and cat plush remain visible. Hold the completed card cleanly until 00:15.000, ending on a stable cyan scanline and no fade to unrelated content.
+
+overall_soundscape:
+Preserve <Audio 1> exactly as the complete synchronized soundtrack. Do not add dialogue, voiceover, footsteps, room tone, foley, crowd noise, or additional sound effects; all visual pulses, scans, and cuts are visual responses to the existing audio.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the audience-only score: a short cyberpunk electronic archive track with cold synthesizer pulses, low bass, sparse metallic percussion, glitch texture, a clear mid-track impact, and a clean digital emblem resolve. Do not generate replacement music.

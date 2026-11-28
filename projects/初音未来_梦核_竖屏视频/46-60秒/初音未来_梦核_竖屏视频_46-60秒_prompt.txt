@@ -1,0 +1,25 @@
+subject_definitions:
+<Subject 1> is Hatsune Miku, the anime girl shown in <Picture 1>, with signature turquoise twin-tails, blue-green eyes, and her default outfit: a black cropped jacket, white puffy sleeves with white arm warmers, a black necktie, a dark pleated skirt, and thigh-high black boots. Preserve her exact face, hairstyle, body proportions, costume details, and colors from the reference image in every shot.
+<Subject 2> is the vintage train carriage shown in <Picture 2>: cream-yellow interior walls, rows of cobalt-blue vinyl bench seats, overhead luggage racks, and a floor completely overgrown with knee-high wild grass and white daisies, with blurred countryside passing outside the windows. Preserve the scene's layout, colors, lighting, and uncanny dreamcore mood in every shot.
+<Audio 1> is the complete audio track of this segment, directly reused 1:1 as the target video's complete final audio track, including all music, rhythm, ambience, dynamics, and stereo balance.
+
+[reference generation + audio reuse] Create a new 15-second 9:16 vertical dreamcore music-video segment starring <Subject 1> inside <Subject 2>: five handheld shots of her walking through the flower-covered carriage and sitting on a blue seat. Reuse <Audio 1> exactly from beginning to end, without generating new dialogue, singing, music, or sound effects.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - the character's identity and all defining visual features from <Picture 1> remain consistent throughout the entire segment.
+<Subject 2> (appears in [Shot 1] through [Shot 5]): fully_preserved - the scene's layout, colors, lighting, and uncanny dreamcore mood from <Picture 2> remain consistent throughout the entire segment.
+<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the segment's complete final audio track.
+
+detailed_description:
+The target video is a 9:16 vertical dreamcore music-video segment shot on a low-fidelity handheld camera: heavy film grain and digital noise, soft focus, slight motion blur, natural handheld shake with breathing movement, and a nostalgic early-2000s digital camcorder look. The atmosphere stays grounded, liminal, and slightly uncanny - do not make the scene heavenly, divine, or paradise-like, and no glowing clouds or sacred light. The edit rhythm follows the existing pulse of <Audio 1>, with a new shot roughly every three seconds.
+[Shot 1] The shot opens on an empty handheld one-point-perspective shot of <Subject 2>, the train carriage: cream-yellow walls, rows of cobalt-blue seats, and the floor overgrown with wild grass and white daisies; blurred countryside drifts past the windows; no one in frame.
+[Shot 2] At 00:03.000, <Subject 1> walks along the aisle, stepping carefully through the grass and flowers, full body visible; her boots part the daisies; handheld tracking shot at slow speed with natural shake.
+[Shot 3] At 00:06.000, cut to a medium handheld shot of her stopping mid-aisle and looking down at the flowers around her ankles; she slowly bends and touches a white daisy.
+[Shot 4] At 00:09.000, cut to a close-up of her fingers gently touching the daisy petals while wildflowers frame the foreground; the camera is grainy and slightly out of focus, drifting slowly.
+[Shot 5] At 00:12.000, cut to a medium shot of her sitting on one of the cobalt-blue seats, legs together, looking out the window at the blurred landscape; the handheld camera settles with a soft wobble and slow push in.
+
+overall_soundscape:
+A quiet, roomy ambience continues throughout the segment: faint distant hum, soft water or air sounds, and a low analog hiss beneath the copied music.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 as the complete audience-only score. Preserve its exact timing, tempo, beat placement, dynamics, and stereo image from 00:00.000 to the end of the segment. Do not generate replacement music.

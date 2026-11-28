@@ -1,0 +1,27 @@
+subject_definitions:
+<Picture 1> is the opening-frame reference at 0.00 seconds, establishing the woman alone on the bed, the low tilted camera angle, the white bedding, and the window light.
+<Subject 1> is the fictional adult woman in <Picture 1>. Preserve her face, pink bangs and braid, black cap, green gloves and thigh bands, and glossy black thigh-high boots. The entering partner is a fictional adult man in his early thirties with short dark hair.
+
+summary:
+[reference generation + keyframe completion] A ten-second vertical handheld take begins on <Picture 1>. The man enters from off-screen right, pauses for <Subject 1>'s response, and joins her on the bed. They begin consensual intercourse within the same continuous shot.
+
+retention_analysis:
+<Picture 1> fully_preserved — match the opening pose, low camera height, diagonal composition, room layout, and window light.
+<Subject 1> fully_preserved — keep her face, hair, accessories, and body proportions consistent as she shifts her weight.
+
+detailed_description:
+Photorealistic vertical footage with natural window light. One continuous low handheld shot, with small camera corrections as the second person enters.
+
+[Shot 1] Begin on <Picture 1>. In the first two seconds, <Subject 1> hears the man approach and looks toward screen right. He enters from that side, placing one hand on the mattress beside her before bringing his near knee onto the bed. The mattress dips under his weight, and a wrinkle draws toward his palm. The camera drifts slightly left to keep her face visible beside his shoulder.
+
+From seconds two to four, their eyes meet and he pauses. She nods, takes his forearm with her raised gloved hand, and draws him closer. She lowers her raised knee slightly outward and leans back onto her supporting hand. He kneels between her thighs and braces one palm beside her hip. Keep her face, his bracing hand, and both their hips visible in the low three-quarter framing.
+
+From seconds four to eight, he brings his pelvis into line with hers and slowly penetrates her. His knees and supporting palm stay planted as his pelvis draws back a short distance and moves forward again along the same shallow path. Her gloved fingers tighten on his forearm on the first forward motion, then relax. Two short, breathy moans follow her visible exhales. The camera eases closer with a slight handheld sway, holding both faces in the upper part of the frame.
+
+Over the last two seconds, they slow. She lifts her chin to meet his gaze, and he lowers his forehead close to hers while keeping his weight supported on the mattress. She lets out one longer, soft moan on the final exhale. End while they are still close, with the window light and camera angle continuous from the opening.
+
+overall_soundscape:
+Quiet bedroom room tone, a soft footstep off-screen right, and a mattress creak when his knee takes weight. Close breathing and light sheet movement follow their visible actions. Two short wordless moans during intercourse and one longer moan near the end.
+
+non_diegetic_music:
+N/A

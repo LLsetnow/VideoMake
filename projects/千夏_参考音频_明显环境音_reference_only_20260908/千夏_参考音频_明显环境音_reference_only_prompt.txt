@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is Chinatsu, the anime girl defined by the connected character image <Picture 1>. Preserve her pale silver-gray softly wavy hair, heavy straight bangs, mint-green star-shaped bow, multicolored eyes, heart-shaped hair ornaments, black dangling earrings, fair skin, white blouse, red tie, black choker, and pink backpack straps. Keep her face, identity, anatomy, colors, and costume stable.
+<Audio 1> is the 5.160-second primary audio reference for <Subject 1> (S1). It contains the exact Chinese monologue plus a clearly audible, continuous rainy-window environment: bright high-frequency rain, low indoor room tone, and a soft air-conditioner hum. Use it through the primary source-audio reference path for voice timbre, exact spoken words, delivery timing, and a clearly present environmental layer, but generate a new final audio track instead of copying the waveform.
+
+summary:
+[reference generation + audio reference] Create a single continuous 5.160-second vertical 9:16 anime medium close-up of <Subject 1>. Use the character image for stable identity and use <Audio 1> as the primary source-audio reference. Generate a new native stereo soundtrack with two clearly audible layers: an intelligible Chinatsu monologue in front and a prominent rainy-window environment with room tone and a soft air-conditioner hum underneath. Do not output a dry voice-only track and do not copy the reference waveform 1:1.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - preserve Chinatsu's face, hair, bow, eyes, earrings, skin, costume, proportions, and recognizable identity while adding only natural facial motion required for speaking.
+<Audio 1>: reference - use the primary source recording as a strong reference for Chinatsu's voice, exact monologue timing, rain texture, room tone, and air-conditioner hum; generate a new final signal with the same audible two-layer relationship rather than copying the source waveform.
+
+detailed_description:
+The target video is a single continuous front-facing medium close-up in polished anime rendering. Place <Subject 1> centered inside a quiet room beside a large softly blurred window; visible rain streaks and diffuse gray daylight behind the glass establish the rainy environment without distracting from her mouth. Keep the mouth unobstructed and the eyes clearly visible. Use stable frontal lighting, clean facial rendering, and a nearly static camera with only subtle breathing motion and a very small slow Push In. No cuts, no profile view, no hand covering the mouth, no subtitles, no readable text, no extra characters, and no watermark.
+
+[Shot 1] The shot opens on <Subject 1>, Chinatsu, facing the camera with a calm attentive expression and closed lips. The young anime woman (S1) speaks on camera in a clear, gentle Chinese voice guided by the primary reference <Audio 1>. From 00:00.000 through 00:05.160, animate lips, jaw, cheeks, and small eye motion in close temporal alignment with the newly generated speech. The exact monologue is: <d>[Chinese] 你好，我是千夏。今天我们来测试一下原声对白的口型同步。</d> Keep every word intelligible and keep the generated voice in the foreground. At the same time, maintain a clearly audible continuous rain layer against the window, with a soft indoor room tone and low air-conditioner hum underneath; the environment must remain distinctly audible during the whole shot and must not disappear into silence. The rain and room tone are newly generated from <Audio 1>'s reference, not directly copied. End on a natural calm expression immediately after the final syllable at 00:05.160.
+
+overall_soundscape:
+The final soundtrack must contain a prominent, continuous rainy-window environment: bright rain texture, soft room tone, and a low air-conditioner hum. Keep this environment clearly audible beneath but separate from the centered Chinatsu monologue; do not suppress it into a barely perceptible noise floor. Do not add music, footsteps, extra voices, or unrelated foley.
+
+non_diegetic_music:
+N/A

@@ -1,0 +1,491 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+    "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Audio 1> is the first 15.000 seconds of the extracted stereo soundtrack from the supplied Douyin reference video, directly reused 1:1 as the complete final soundtrack. Preserve its exact timing, electronic groove, percussive bass, bright bell-like hook, processed vocal accent, dynamics, and stereo placement. It is not a dialogue or voiceover track.\n\nsummary:\n[audio reuse] Create a new 15-second 9:16 live-action Japanese TV-drama running sequence with one uninterrupted take and no cuts. Translate the offline-studied running-camera grammar into an original scene: a woman runs across an ordinary Tokyo shopping street toward a station entrance while the camera tracks laterally, foreground traffic and pedestrians intermittently block the view, focus drifts to reflections and quickly returns to her, and a distant pursuer is revealed only near the end. Use <Audio 1> unchanged from 00:00.000 through 00:15.000; do not use the source video's frames, character, text, watermark, or video stream as an input.\n\nretention_analysis:\n<Audio 1>: fully_copy - reuse the complete 15.000-second source audio 1:1 as the final audio track without time stretching, remixing, replacement music, dialogue, foley, or additional sound effects.\n\ndetailed_description:\nThe target video is a 9:16 vertical live-action Japanese TV-drama sequence in one continuous, unbroken take. Use natural late-afternoon overcast light after a light rain, wet pavement reflections, restrained teal-and-amber color, realistic motion blur, shallow but physically consistent focus, and a documentary-like handheld tracking feel that remains smooth enough to preserve the runner's body and face. The scene is original and must not reproduce any source frame, character, readable sign, logo, subtitle, watermark, or platform interface. No cuts, fades, teleportation, impossible zooms, sliding feet, fused limbs, or costume changes.\n\n[Shot 1] The entire video is one uninterrupted take. From 00:00.000 to 00:03.800, a late-twenties Japanese woman in a slightly rumpled white button-up shirt, muted navy midi skirt, thin beige cardigan, black low-heeled loafers, and a dark leather shoulder bag runs from left to right along a wet Tokyo shopping street. Keep her face, hairstyle, clothing, bag, and body proportions consistent. Begin in a medium close side-tracking view with her slightly left of center; a passing vehicle and translucent umbrella occupy the foreground as soft moving occluders. The camera tracks right at her speed, preserving a natural forward lean, asymmetric arm swing, hair lifting behind her, and the bag strap pulling with believable weight. Her eyes scan ahead, and her lips part with visible exertion, but there is no generated voice.\n\nFrom 00:03.800 to 00:06.600, the camera widens gradually without cutting as she crosses a zebra crossing in front of a small café and convenience storefronts. Blurred pedestrians pass between the lens and the runner, creating parallax while the background remains readable as an ordinary Japanese street but contains no legible text. The camera briefly lags half a step behind, then catches up with a subtle handheld correction. She looks over her right shoulder for one beat, tightens her grip on the shoulder-bag strap, and accelerates across the crossing.\n\nFrom 00:06.600 to 00:09.000, a glass storefront and a dark vertical street pole pass through the foreground. Let focus fall briefly onto her distorted reflection in the glass, then rack focus back to her real face as she reappears, keeping her running direction and screen position coherent. The camera continues a lateral tracking shot with a small vertical bounce caused by the operator running alongside her. At the 00:08.696 beat, she leaves the open street and cuts diagonally into a narrow side lane without a camera cut; the camera pre-pans toward the lane entrance so the movement feels physically anticipated.\n\nFrom 00:09.000 to 00:11.600, the source track enters its stronger second section. The camera accelerates with her and moves closer to a medium shot as her hair, cardigan hem, skirt, and bag respond to the increased speed. Foreground shop pillars streak past. She glances once toward the dark lane behind her, then faces forward and runs harder toward the distant station entrance, whose lights are visible but carry no readable lettering.\n\nFrom 00:11.600 to 00:13.600, the camera briefly loses her behind a near foreground pillar, hesitates for a fraction of a second, and then re-captures her as she emerges farther right. In the deep background, reveal one indistinct adult figure turning into the lane several seconds behind her; keep the figure small, partially obscured, and non-violent so the threat is conveyed only through spatial distance. Maintain realistic perspective, occlusion, and inertia. Do not suddenly place the pursuer beside her.\n\nFrom 00:13.600 to 00:15.000, the camera pulls back while continuing to track right, transforming the medium view into a wide vertical composition. The woman becomes smaller as she runs toward the glowing station entrance at the end of the lane; foreground pedestrians move normally, the distant figure remains far behind, and the wet street, shop windows, and overhead wires expand around them. Hold the final wide composition through the last frame on the 00:14.547 strong beat. <Audio 1> starts on the first frame and remains uninterrupted throughout.\n\noverall_soundscape:\nAll audible content must come from the copied <Audio 1> track. Do not generate dialogue, voiceover, breathing, footsteps, traffic, rain, crowd noise, room tone, or independent sound effects; the visual running rhythm and focus changes are synchronized to the locked source audio but add no new audio layer.\n\nnon_diegetic_music:\n<Audio 1> is directly reused 1:1 as the complete audience-only score from 00:00.000 through 00:15.000. Preserve its exact electronic percussion, bell-like hook, processed vocal accent, timing, dynamics, and stereo image without generating replacement music.\n",
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 6,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 123456789
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "douyin_japanese_run_2mp_firstpass",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "38": {
+    "inputs": {
+      "width": [
+        "39",
+        0
+      ],
+      "height": [
+        "39",
+        1
+      ],
+      "upscale_method": "lanczos",
+      "keep_proportion": "stretch",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 32,
+      "device": "cpu",
+      "image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  },
+  "39": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 2,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "二采分辨率"
+    }
+  },
+  "40": {
+    "inputs": {
+      "pixels": [
+        "38",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "41": {
+    "inputs": {
+      "video_latent": [
+        "40",
+        0
+      ],
+      "audio_latent": [
+        "11",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "43": {
+    "inputs": {
+      "noise_seed": 123456789
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "44": {
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "45": {
+    "inputs": {
+      "noise": [
+        "43",
+        0
+      ],
+      "guider": [
+        "44",
+        0
+      ],
+      "sampler": [
+        "47",
+        0
+      ],
+      "sigmas": [
+        "48",
+        0
+      ],
+      "latent_image": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "47": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "48": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "50": {
+    "inputs": {
+      "av_latent": [
+        "45",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "51": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "douyin_japanese_run_2mp_2pass",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "50",
+        0
+      ],
+      "audio": [
+        "50",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "source_audio_0-15.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio (lock source)"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0.0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration (15 seconds)"
+    }
+  }
+}

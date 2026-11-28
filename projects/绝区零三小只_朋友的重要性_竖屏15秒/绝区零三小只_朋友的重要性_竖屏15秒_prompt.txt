@@ -1,0 +1,39 @@
+subject_definitions:
+<Subject 1> (S1) is Chinatsu. Use <Picture 4> for full-body costume and <Picture 7> for front-face identity: softly rounded face, multicolored eyes, pale mint-silver hair, heavy bangs, and black geometric clips. Preserve her white shirt/red heart tie, wings/pink backpack, black layered skirt, striped warmers, socks, and pink-white platforms.
+<Subject 2> (S2) is Nangong Yu. Use <Picture 5> for full-body costume and <Picture 8> for front-face identity: pale face, crimson star-highlight eyes, dark bob with coral-pink side buns, pink bows, mint ribbons, and translucent mint halo. Preserve her white corset/red striped tie, black sleeves, mechanical shoulder details, red-pink accents, stockings, and platforms.
+<Subject 3> (S3) is Airei. Use <Picture 6> for full-body costume and <Picture 9> for front-face identity: pink twin-tails with a mint streak, black horn ornaments, orange-black headphones, and blue-violet eyes. Preserve her white mecha DJ dress with orange X, wings, orange bow, mint halo device, pink striped socks, and white platforms.
+<Picture 1> is 404Bar.png, a compact neon urban bar/table reference. <Picture 2> is 404舞台.png, a small performance-stage reference. <Picture 3> is 六分街.png, a colorful urban-street reference. <Picture 4>-<Picture 6> are separate full-body references; <Picture 7>-<Picture 9> are separate front-face references. Never merge them. Identity lock: S1 only silver-mint hair; S2 only black/coral hair with mint halo; S3 only pink twin-tails with orange headphones. No duplicates or swaps.
+<Audio 1> is the exact 15-second 00:15.000-00:30.000 excerpt of pupsies' official track "misery." from supplied NetEase album 373463974 (song 3375858474). It is locked final audio: preserve its high-intensity electronic-pop/hyperpop texture, female vocal, distorted synths, pulse, dynamics, and stereo balance exactly; do not generate replacement sound.
+
+summary:
+[reference generation + audio reuse] Create an original 15-second vertical 9:16 friendship montage in Zenless Zone Zero Cartoon rendering style. Its central visual idea is headcount contrast: make the difference between exactly one person alone and exactly three friends together unmistakable. Adapt the supplied Bilibili reference's rhythm of 1 person to 3 people, repeated in several settings, without copying its people, frames, text, or live-action appearance. Use all nine picture references for scene, full-body, and front-face consistency. Study the source video offline only; do not upload it. Reuse <Audio 1> exactly.
+
+retention_analysis:
+<Subject 1>: fully_preserved - <Picture 4> fixes body costume; <Picture 7> fixes front face, eyes, hairline, bangs, and expressions.
+<Subject 2>: fully_preserved - <Picture 5> fixes body costume; <Picture 8> fixes front face, eyes, hairline, bangs, and expressions.
+<Subject 3>: fully_preserved - <Picture 6> fixes body costume; <Picture 9> fixes front face, eyes, hairline, bangs, and expressions.
+<Picture 1>-<Picture 3>: partially_preserved - retain each scene's visual atmosphere while changing composition.
+<Picture 4>-<Picture 6>: fully_preserved - separate full-body costume and silhouette references.
+<Picture 7>-<Picture 9>: fully_preserved - separate front-face identity references.
+<Audio 1>: fully_copy - copy the exact 15.000-second 00:15.000-00:30.000 source-song segment 1:1, including music, female vocal, timing, dynamics, and stereo balance.
+
+detailed_description:
+The target is a vertical 9:16 montage in Zenless Zone Zero Cartoon rendering style: crisp linework, cel shading, saturated cyan, violet, coral, mint, amber, subtle parallax, and playful timing. The headcount is the story: a one-person shot has only one subject and no background people; a three-person shot has exactly S1, S2, and S3, no fourth person, no duplicate, no swap. All three faces must remain readable. No readable text, logos, watermarks, subtitles, or live-action imagery. Use <Audio 1> from frame one to 00:15.000.
+
+[Shot 1] From 00:00.000 to 00:02.961, show exactly one person: <Subject 1> alone at a roadside shelter or urban street edge derived from <Picture 3>, beside a long empty bench. Keep the negative space and empty seats obvious; no other people. She looks toward the unused seats, quiet and slightly expectant. Use a Static Shot with a small slow Push In toward her face, keeping <Picture 7> identity clear.
+
+[Shot 2] At 00:02.961, hard cut on a clear beat to exactly three people in the same general street composition: <Subject 1>, <Subject 2>, and <Subject 3> sit or stand together in a compact row, filling the previously empty space. Keep their identities distinct: silver-mint S1, black/coral S2, pink-twin-tailed S3. The 1-to-3 count change must be instantly legible. Use a mostly Static Shot with a small Truck Right; hold long enough to read all three faces.
+
+[Shot 3] At 00:05.503, cut back to exactly one person and continue until 00:07.523: <Subject 1> alone at an outdoor table derived from <Picture 1>, with two clearly empty chairs and untouched place settings. No background pedestrians. She waits and glances between the empty chairs. Use a centered medium shot and a restrained slow Push In; preserve her front-face identity.
+
+[Shot 4] At 00:07.523, hard cut on the next clear beat. Replace the empty chairs with exactly three people: S1, S2, and S3 sit around the table and react together with a quick toast, laugh, or shared surprised gesture. Keep every face visible, the trio count unmistakable, and no fourth person. Use a fast small Push In, then briefly hold the three-person composition. Generate no new voice or sound effect.
+
+[Shot 5] At 00:09.044, cut to exactly one person and continue until 00:11.064: <Subject 1> alone on a large hay bale beside an open lakeside field, with wide negative space and distant hills inspired only by the source video's composition. No other people. She looks down at the bale, then toward the empty horizon. Use a wide Static Shot with a slow small Pan, making one-versus-empty-space unmistakable.
+
+[Shot 6] At 00:11.064, hard cut on a clear beat to exactly three in a fixed left-to-right order: S2 with black/coral hair and mint halo, S1 with silver-mint hair and white wings, S3 with pink twin-tails and orange headphones. They push one hay bale. Keep all full bodies and faces readable; never duplicate S3 or omit S1. Use a stable wide Tracking Shot, then hold the three-person lineup until 00:15.000.
+
+overall_soundscape:
+Generate no independent ambience, dialogue, singing, foley, impacts, or sound effects. Every audible layer comes from copied <Audio 1>, including its original song and female vocal. Do not add any new voice or reaction sound.
+
+non_diegetic_music:
+The original "misery." excerpt in <Audio 1> is the complete soundtrack from 00:00.000 to 00:15.000. Preserve its female vocal, electronic beat, distorted bass and synth texture, timing, dynamics, and stereo balance exactly; add no music.

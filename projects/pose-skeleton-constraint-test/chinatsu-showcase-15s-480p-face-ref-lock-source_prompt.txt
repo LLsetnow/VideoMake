@@ -1,0 +1,54 @@
+subject_definitions:
+<Subject 1> is Chinatsu from <Picture 1>: silver-gray wavy hair, turquoise bow, light eyes, black clips, white blouse, red tie, black choker, white angel wings, pink winged backpack, striped warmers, black layered skirt, thigh straps, white socks, and pink platform shoes. Preserve identity, proportions, costume, accessories, and 2D style.
+<Subject 2> is <Picture 2>'s upright near-frontal pose: one hand beside the face, the other arm bent outward, slight weight shift.
+<Subject 3> is <Picture 3>'s close standing pose: slight forward lean, one hand across the upper chest, other arm bent at the side, uneven shoulders.
+<Subject 4> is <Picture 4>'s side-lean pose: shifted hips, one hand near the shoulder, other arm along the hip, one weight-bearing leg.
+<Subject 5> is <Picture 5>'s close raised-arm pose: weight on one leg, one arm near the shoulder, the other reaching outward.
+<Subject 6> is <Picture 6>'s seated pose: one knee raised, the other leg bent lower in frame, one hand beside the face.
+<Subject 7> is Chinatsu's face and hair identity from <Picture 7>; preserve eyes, bangs, earrings, bow silhouette, and facial proportions.
+<Picture 1> is Chinatsu's three-view identity, costume, proportion, accessory, and 2D-style sheet; exclude its layout.
+<Picture 2> is a hidden skeleton pose reference for Shot 1; never render its artwork.
+<Picture 3> is a hidden skeleton pose reference for Shot 2; never render its artwork.
+<Picture 4> is a hidden skeleton pose reference for Shot 3; never render its artwork.
+<Picture 5> is a hidden skeleton pose reference for Shot 4; never render its artwork.
+<Picture 6> is a hidden skeleton pose reference for Shot 5; never render its artwork.
+<Picture 7> is a close face reference for Chinatsu's identity and hairstyle; exclude its crop/background.
+<Audio 1> is the user's first 15 seconds of SCARED LONELY FUNK from NetEase Cloud Music, reused 1:1 as the complete final audio track.
+
+[reference generation + audio reuse] Create a 15-second 9:16 vertical Chinatsu showcase in a clean bright studio. Preserve <Subject 1> and <Subject 7>, use Picture 2 through Picture 6 only as hidden pose references for five cute beats, and reuse <Audio 1> from 00:00.000 through 00:15.000. Borrow only the supplied Bilibili reference's playful pacing; do not reproduce its performer, frames, UI, or watermark.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve Chinatsu's identity, costume, accessories, proportions, and rendering.
+<Subject 2> (appears in [Shot 1]): fully_preserved - preserve its hand, arm, torso, and weight-shift geometry.
+<Subject 3> (appears in [Shot 2]): fully_preserved - preserve its lean, chest-hand placement, and uneven shoulders.
+<Subject 4> (appears in [Shot 3]): fully_preserved - preserve its side lean, shifted hips, and asymmetric limbs.
+<Subject 5> (appears in [Shot 4]): fully_preserved - preserve its one-leg weight and raised-arm silhouette.
+<Subject 6> (appears in [Shot 5]): fully_preserved - preserve its raised knee, lower bent leg, and hand beside the face.
+<Subject 7> (appears in [Shot 1] through [Shot 5]): fully_preserved - preserve Chinatsu's face, eyes, bangs, earrings, bow silhouette, and proportions.
+<Picture 1>: partially_preserved - transfer the character design while excluding the sheet layout.
+<Picture 2>: fully_preserved - preserve pose geometry as hidden control data; exclude skeleton artwork.
+<Picture 3>: fully_preserved - preserve pose geometry as hidden control data; exclude skeleton artwork.
+<Picture 4>: fully_preserved - preserve pose geometry as hidden control data; exclude skeleton artwork.
+<Picture 5>: fully_preserved - preserve pose geometry as hidden control data; exclude skeleton artwork.
+<Picture 6>: fully_preserved - preserve pose geometry as hidden control data; exclude skeleton artwork.
+<Picture 7>: fully_preserved - use its face and hairstyle for identity; exclude its crop and white background.
+<Audio 1>: fully_copy - reuse the supplied 15-second source clip as the only final audio track.
+
+detailed_description:
+Create a polished 2D anime showcase in 9:16. Use a seamless pure-white to pale mint studio background, even lighting, grounding shadow, crisp linework, and cel shading. Keep one coherent Chinatsu with stable anatomy and opaque clothing; no text, logos, watermarks, props, people, sparkle overlays, or visible skeletons. <Picture 1> supplies identity and costume, <Picture 7> supplies face and hair identity, and Picture 2 through Picture 6 supply hidden pose geometry only.
+
+[Shot 1] At 00:00.000, <Subject 1> is centered in a medium-full frontal view. She follows <Subject 2> by lifting one hand beside her cheek while the other arm bends outward. On the pulse she gives a tiny two-finger wave, blinks, and smiles. Her bow and skirt make a small bounce. Use a Static Shot with a very slow small-amplitude Push In; keep wings, backpack straps, and shoes visible.
+
+[Shot 2] At 00:03.797, cut on the beat to a frontal close view using <Subject 3>. Chinatsu leans forward, places one hand across her upper chest, taps once, then opens the free hand toward the viewer. Tilt her head briefly. Use a small-amplitude Arc Shot at slow speed, ending in a neat three-quarter angle. Keep face, hair ornaments, tie, and arm warmers unchanged.
+
+[Shot 3] At 00:06.613, cut to a medium-full three-quarter view using <Subject 4>. Chinatsu shifts her hips and leans to one side, points the weight-bearing foot inward, and makes a small finger-heart near her shoulder while the other arm follows the hip. She sways toward center and settles into the lean. Use a smooth small-amplitude Truck Right at slow speed; keep wings and skirt stable.
+
+[Shot 4] At 00:09.824, cut to a medium close-up using <Subject 5>. Chinatsu shifts onto one leg, raises one bent arm near shoulder level, and reaches the other outward. She gives a small wave and winks on the next synth accent; keep the raised-arm silhouette readable. Use a gentle small-amplitude Push In at slow speed. No text or graphic effects.
+
+[Shot 5] At 00:12.064, cut to a medium-full view using <Subject 6> on the same pale floor. Chinatsu lowers into a compact one-knee-up pose, keeps one hand beside her face, and makes two cat-paw taps with the other. At 00:13.205 she gives a shoulder bounce; near 00:14.667 she makes a final wink, then holds the pose and smile until 00:15.000. Use a very small slow Pull Out to reveal the knee, wings, and shoes. Keep it wholesome and presentation-like, never reclining or suggestive. Preserve <Audio 1> continuously across all cuts.
+
+overall_soundscape:
+No new dialogue, foley, ambience, or sound effects; the only audible track is the reused music from <Audio 1>.
+
+non_diegetic_music:
+<Audio 1> is reused 1:1 from 00:00.000 to 00:15.000 as the complete audience-only music track. Preserve its tempo, vocal content, four-on-the-floor pulse, synth accents, dynamics, and stereo image. Do not replace or extend it.

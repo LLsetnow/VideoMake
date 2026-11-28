@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the young anime girl shown in <Picture 1>, with silver-gray wavy hair, a large turquoise bow, a white short-sleeve blouse, a red necktie with white star details, a pink backpack with white wing accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, and pink platform shoes. Preserve her exact face, hairstyle, proportions, costume details, colors, and recognizable identity.
+<Audio 1> is a 5.16-second mixed source recording containing Chinatsu's exact Chinese monologue together with clearly audible continuous rainfall, rainy-window texture, indoor room tone, and a soft low electrical hum. Use it as the single drive-audio source for voice identity, exact words, delivery timing, and environmental texture. Remix the source into a new final soundtrack while retaining both the intelligible voice and the continuous environment.
+
+summary:
+[reference generation + audio reference] Create a new 5.16-second 9:16 vertical talking-character video with <Subject 1> in front of a rainy window. Use only <Audio 1> as the source-audio drive. Generate a new remixed stereo soundtrack that keeps Chinatsu's monologue clear and preserves a prominent, continuous rainy indoor environment underneath it. Do not output a dry voice-only track, do not add music, and do not use a second audio reference.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - keep the identity and defining visual features from <Picture 1> consistent.
+<Audio 1>: reference - remix the single source recording into a new final signal while retaining the exact Chinese words, Chinatsu voice character, delivery timing, and the clearly audible rain, room tone, and low hum.
+
+detailed_description:
+The target is a single continuous front-facing medium close-up of <Subject 1> standing indoors beside a large rainy window at dusk. Raindrops and blurred city lights are visible through the glass. Keep her face large enough for reliable lip synchronization, her mouth unobstructed, and her eyes clearly visible. She looks toward the camera with a calm, friendly expression, natural blinking, subtle breathing, and small head and shoulder movements. Keep the shot stable with a very slow Push In and no cuts. The rain outside continues throughout the entire 5.16 seconds.
+
+[Shot 1] <Subject 1> faces the camera and speaks as the young female speaker (S1) in the clear Chinatsu voice guided by <Audio 1>. Animate her lips, jaw, cheeks, and small eye motion in close temporal alignment with the remixed speech. Preserve every word of the source dialogue exactly: <d>[Chinese] 你好，我是千夏。今天我们来测试一下原声对白的口型同步。</d> Keep the voice centered and intelligible. At the same time, retain a prominent continuous rainy-window environment, indoor room tone, and soft low hum from <Audio 1> from 00:00.000 through 00:05.160, including during brief pauses in the dialogue. Do not replace the environment with generic music, do not suppress it into an inaudible noise floor, and do not add any extra voices or sound effects. End on a natural calm expression immediately after the final syllable.
+
+overall_soundscape:
+The remixed final soundtrack contains continuous diegetic rainfall against the window, soft indoor room tone, and a low electrical hum derived from <Audio 1>. Keep this environment clearly audible beneath the centered Chinatsu voice throughout the full 5.16 seconds, with no silent environmental gaps. No music, extra dialogue, or unrelated foley.
+
+non_diegetic_music:
+N/A. Do not add music.

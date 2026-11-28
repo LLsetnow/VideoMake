@@ -1,0 +1,32 @@
+subject_definitions:
+<Subject 1> is Remiel, defined by original-skin image <Picture 1> and face image <Picture 2>. Preserve her pale peach-pink short bob, gray headband, silver star clips, large violet eyes with yellow-pink heart highlights, fair skin, soft pink lips, white-and-pale-purple off-shoulder outfit, gray shoulder armor, blue tassel cuffs, asymmetrical purple skirt, oversized bow, large white wings, white thigh-high socks, and silver heels. Keep the white, pale purple, pink, and silver palette. Never change her original skin to swimwear or casual clothing.
+<Subject 2> is Zhe, defined by outfit image <Picture 3> and face image <Picture 4>. Preserve his short gray-blue layered hair, light gray-green eyes, gentle anime features, dark navy diamond-knit sweater over white collar and black turtleneck, light blue-gray jeans, brown shoulder bag, and olive-brown shoes. Remiel and Zhe are an established couple. Show wholesome, non-explicit closeness through a brief hand or wrist touch, soft eye contact, a cheek gesture, shared drink, and shoulder lean. Zhe appears partially when specified; never morph either character or costume.
+
+summary:
+[reference generation] Create a 15-second vertical 9:16 multi-shot beach-play video in the Zenless Zone Zero Cartoon rendering style. Use <Picture 1> and <Picture 2> for Remiel's stable full-body and face identity; use <Picture 3> and <Picture 4> for Zhe's stable outfit and face identity. Use six direct cuts of about 2.1–2.8 seconds: volleyball preparation, the spike contact moment, shallow-water play, a Remiel face close-up with tender cheek touch, shared smoothies, and a couple ending. Keep Remiel in the original skin. Generate native synchronized stereo action audio only: waves, volleyball, splashes, fabric, and smoothie sounds. No intelligible dialogue, subtitles, readable signs, logos, or watermarks.
+
+retention_analysis:
+<Subject 1> appears in all six shots: fully_preserved - keep Remiel's identity, face, pink hair, violet heart-highlight eyes, clips, headband, original white-and-pale-purple angel costume, wings, socks, heels, and palette; change only pose, expression, and beach action.
+<Subject 2> appears in [Shot 2]–[Shot 6]: fully_preserved - keep Zhe's identity, gray-blue hair, gray-green eyes, navy sweater, white collar, black turtleneck, jeans, shoulder bag, shoes, and gentle expression. Partial framing is intentional: use only his forearm, shoulder, hand, profile, or upper body where requested.
+Audio reference: none. Use native synchronized action sound; do not invent dialogue or a recognizable character voice.
+
+detailed_description:
+Zenless Zone Zero Cartoon rendering style: polished 2D anime, crisp linework, soft cel shading, dimensional game-cinematic light, saturated summer color, clean vertical 9:16 framing. Bright New Eridu coastal leisure beach with pale sand, blue water, curved seawall, parasols, a small unbranded smoothie cart, and distant industrial-modern skyline. Keep lighting and beach continuity coherent. No readable text, captions, logos, watermarks, extra characters, dissolves, or montage blur.
+
+[Shot 1] From 00:00.000 to 00:02.400, medium-wide full-body view of <Subject 1> beside a beach volleyball net, slightly left of center. Her original skin, wings, pink hair, purple accents, heels, sand, and sea are readable. She tosses a violet-and-white volleyball, takes one careful step, and draws back her arm for a spike. Make a short smooth Tracking Shot. End with the ball at its apex and her weight loaded for the cut.
+
+[Shot 2] At 00:02.400, cut to a dynamic medium close-up. Around 00:03.550, <Subject 1> jumps and strikes the volleyball; show crisp palm contact, slight ball compression, sand grains, and a clear motion trail. Her wings flare and ribbons snap. From the right edge, show only <Subject 2>'s forearm, hand, and a sliver of navy sleeve reaching toward the ball. Add a tiny impact shake, then stabilize. No duplicate ball or deformed fingers.
+
+[Shot 3] At 00:04.800, cut to a low medium two-shot at the waterline. The volleyball skips toward foam. <Subject 1> enters ankle-deep water and splashes; <Subject 2> enters from the right, visible from torso to knees, and gently catches her wrist to steady her. They share a shy glance, then release and move toward the ball. Keep the contact brief and tender. Track laterally with feet, splash, and Remiel's wings readable.
+
+[Shot 4] At 00:07.200, cut to a shoulders-up face close-up of <Subject 1>. Water droplets sparkle; <Subject 2>'s shoulder and hand are soft at the right edge. Remiel closes her eyes against spray, opens them with a small embarrassed closed-lip smile, and leans slightly as <Subject 2> brushes a droplet from her cheek. Prioritize <Picture 2> for her face, hair, headband, clips, violet eyes, and heart highlights. No teeth, broad open mouth, or speech. Make a small slow Push In.
+
+[Shot 5] At 00:09.700, cut to a medium shot beside the unbranded smoothie cart. Each character holds a cold violet-and-citrus smoothie. <Subject 2> offers a cup and steadies the straw; <Subject 1> takes a small sip, their fingertips touch, and he takes the next sip while she gives a teasing sideways glance. Use a short gentle Arc Shot. Show condensation and ice, no readable packaging, alcohol, or sexualized behavior.
+
+[Shot 6] At 00:12.300, cut to a wider waterline payoff. The volleyball and two smoothies rest on dry sand. <Subject 2> holds the ball under one arm; <Subject 1> leans her shoulder against his upper arm, and his free hand briefly meets hers. Their wings frame both faces. They exchange one quiet look, turn toward camera, and hold a relaxed happy pose as foam recedes. Use a small slow Pull Out to reveal sea, seawall, and New Eridu skyline. Hold the final pose for the last half-second; no new characters enter.
+
+overall_soundscape:
+Native synchronized stereo sound: rolling waves, foam on sand, light sea breeze, volleyball toss and palm impact, one bounce, soft footsteps, two small splashes, water droplets, wing and fabric rustle, smoothie cup handoff, straw and ice. Keep every sound aligned to the six cuts. No intelligible speech, sung vocal, or recognizable character voice.
+
+non_diegetic_music:
+N/A

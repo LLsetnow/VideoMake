@@ -1,0 +1,3047 @@
+{
+  "version": 6,
+  "kind": "character",
+  "kind_label": "人物",
+  "references": [
+    {
+      "id": "character-2d0734d2f3fd",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "A softly rounded oval face with a gently tapered yet rounded chin; large, round-almond eyes with slightly upturned outer corners, vivid multicolored irises featuring yellow, orange, pink, teal, and blue highlights, dark pupils, and clearly defined eyelashes; fine, natural eyebrows with a shallow gentle arch, in dark brown or black; a small, delicate nose with a soft bridge and petite tip; small, softly shaped lips in a natural pale-pink tone with a neutral mouth line; an even fair complexion with fine skin texture and a faint rosy flush on the cheeks; an overall bright, cute, lively, and approachable facial presence.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-a77fa25a0315",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "A 1:1 front-facing 2D-anime 3D character headshot, looking directly at the camera in a centered, symmetrical composition against a pure white background with soft, even lighting. The character has layered medium-length pale mint-green and silver-green hair with a natural part, heavy straight bangs, and softly curled layered ends on both sides. A black geometric hair clip, pink heart detail, crossed pink-and-mint hair ornaments, and a black pixel-style rectangular clip are visible on the right side, along with black dangling earrings. The white shirt collar and red tie at the shoulders are retained as clothing identifiers. Use as a reference for the character's face, hairstyle, hair accessories, and identity.",
+      "image_path": "千夏/千夏_正脸头像_v4.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-a1f1f9d8f468",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "音色",
+      "text": "",
+      "image_path": "",
+      "audio_path": "千夏/千夏音色6秒.mp3"
+    },
+    {
+      "id": "character-b1fbc0e1727a",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "原皮",
+      "text": "A character turnaround sheet showing a front half-body view, a side full-body view, and a back full-body view on a white background. The character is Chinatsu, with medium-length silver-gray softly wavy hair, a mint-green bow hair clip and black butterfly-and-cross hair clip on the right side, and light-colored eyes. Outfit: a cute-cool Decora idol style, consisting of a white short-sleeved shirt, a red tie with a heart motif, a black choker, a pair of small white angel wings, and a pink angel-wing backpack on the back; pink-and-white striped fingerless arm warmers extending above the elbows; a black multilayered tutu skirt with a wide white belt; a pink thigh strap and small shoulder bag on the left thigh; white distressed over-the-knee socks; pink-and-white striped leg warmers; pink-and-white platform shoes; and black ankle straps with mint-green bows. Palette: silver gray, white, black, pink, and mint green. Use as a character identity and clothing reference.",
+      "image_path": "千夏/千夏-全身三视图-方形-v2.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4152e28235fe",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "KFC 联名服",
+      "text": "A Chinatsu KFC collaboration outfit turnaround sheet showing front, side, and back views on a white background. She has pale mint-green hair, a large teal bow, black X-shaped and square hair clips, and yellow eyes. Outfit: a cute Lolita fast-food collaboration style, with a pink bodysuit printed with KFC-style cartoon graphics—a sunglass-wearing cartoon chicken, a small pink animal, and a red cartoon car; pink-and-white striped arm warmers extending above the elbows with black straps; pink thigh straps with metal hardware and heart charms; pale-blue spotted knee-high socks layered with pink-and-white striped thigh-high socks; and pink-and-teal platform shoes with teal bow decorations. Palette: pink, mint green, teal, pale blue, and white. Use as a character identity and clothing reference for the KFC collaboration version.",
+      "image_path": "千夏/千夏_KFC三视图.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-b61caa8b7137",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "千夏",
+      "tags": [
+        "人物",
+        "三视图",
+        "裸体"
+      ],
+      "source_tags": [
+        "三视图",
+        "裸体"
+      ],
+      "title": "裸体",
+      "text": "A 3D-rendered female character turnaround sheet showing front, side, and back views on a white background. The character is Chinatsu, with medium-length silver-gray softly wavy hair, a large mint-green bow, light-colored eyes, and small horns. She is nude, retaining only the following accessories: pink-and-white striped arm warmers with black edging, pink thigh straps with heart and bow decorations, pale-blue spotted over-the-knee socks, pink-and-white striped leg warmers, and pink-and-white platform shoes with mint-green bows. Use as a nude character turnaround, body-proportion, and accessory reference.",
+      "image_path": "千夏/千夏-nude.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-44b854ca36b0",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "南宫羽",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "音色",
+      "text": "",
+      "image_path": "",
+      "audio_path": "南宫羽/南宫羽音色6秒.mp3"
+    },
+    {
+      "id": "character-c76a35555af3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "南宫羽",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "原皮",
+      "text": "A character turnaround sheet of Nangong Yu showing front, side, and back views on a white background. She has short black hair with two pink curled side buns, straight bangs, red eyes, and a floating mint-green angel halo above her head. Outfit: a gothic angel idol style with a white fitted corset top, a red striped tie and red polka-dot chest ornament, black long sleeves with fluffy black fur cuffs and mint-green bows, white spiked mechanical shoulder armor with circular holes, red-and-pink jagged-pattern shorts, black over-the-knee socks with red studded garter straps, and black spiked platform sandals with mint-green bows. The back of the top has red X-shaped lacing. Palette: black, white, red, and mint green. Use as a character identity and clothing reference.",
+      "image_path": "南宫羽/南宫羽_角色三视图.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c73def0f8d14",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "南宫羽",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "**Subject:** Front-facing bust portrait of an anime-style female character (VTuber avatar).\n\n**Appearance:**\n- **Face:** Pale complexion with large, vivid crimson-red irises featuring four-pointed star highlights; straight, dark bangs across forehead; small ahoge (cowlick) at crown; neutral, slightly serious expression.\n- **Hair:** Jet-black bob cut transitioning into voluminous, coral-pink curled drills/twin-tails on both sides; decorated with oversized salmon-pink bows at the crown of each drill and smaller mint-green ribbon bows trailing down the lengths.\n\n**Accessories:**\n- **Halo:** A translucent mint-green geometric nimbus (compass-rose design with pointed extensions) floating above the head.\n- **Neckwear:** Thin black choker.\n- **Pendant:** A black cat-faced brooch with angular white eyes and angry expression, accented by a mint-green bow at the base, resting against a high, pointed light-gray collar resembling a lab coat.\n\n**Pose & Composition:** Symmetrical, centered chest-up shot; subject faces viewer directly with level gaze; shoulders squared.\n\n**Background:** Solid pure white/transparent void with no environmental detail.\n\n**Lighting:** Flat, even studio lighting with soft ambient occlusion beneath the chin and hair; minimal shadowing consistent with 2D cel-shaded illustration.\n\n**Style:** Clean digital anime/manga aesthetic with crisp lineart, saturated colors, and smooth gradient shading characteristic of modern VTuber model references.\n\n**Visible Text:** None present.",
+      "image_path": "南宫羽/exec-e658e3d5-6076-41ee-bc9f-d6ca9c6c0063.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e0ca221d7cf8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "爱芮",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "音色",
+      "text": "",
+      "image_path": "",
+      "audio_path": "爱芮/爱芮音色6秒.mp3"
+    },
+    {
+      "id": "character-99eee32e6f44",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "爱芮",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "原皮",
+      "text": "A character turnaround sheet of Airei showing front, side, and back views on a white background. She has pink twin-tails with a mint-green streak, black horn-shaped hair ornaments, orange-and-black headphones, and blue-violet eyes. Outfit: a mecha DJ idol style with a white puff-sleeved short dress, an orange X-shaped chest ornament and black rows of fasteners, mint-green crystal wrist guards, circular speaker-like mecha components at the sides of the skirt, a pair of white angel wings on the back, a large orange bow with trailing ribbons, and a mint-green star-shaped halo device behind the head; pink vertically striped socks with mint-green bows and white platform ankle boots. Palette: pink, white, mint green, and orange. Use as a character identity and clothing reference.",
+      "image_path": "爱芮/爱芮_角色三视图.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-0f673e223469",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "爱芮",
+      "tags": [
+        "人物",
+        "三视图",
+        "裸体"
+      ],
+      "source_tags": [
+        "三视图",
+        "裸体"
+      ],
+      "title": "裸体",
+      "text": "A 3D-rendered female character turnaround sheet showing front, side, and back views on a white background. The character is Airei, with pink twin-tails featuring a mint-green highlight, black headphones, and blue eyes. She is nude, retaining only the following accessories: silver-white mecha arm sleeves with mint-green bows, pink striped socks with mint-green bows, and white mecha high-heeled boots with mint-green bows and orange laces. Use as a nude character turnaround, body-proportion, and accessory reference.",
+      "image_path": "爱芮/爱芮-nude.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-2277d371547e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "爱芮",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "Front-facing anime portrait of a pink-haired character with large twin ponytails, black striped bows, long black side ornaments, and a turquoise horn-like headpiece. She has bright turquoise star-patterned eyes and wears a white collared outfit with black shoulder straps.",
+      "image_path": "爱芮/爱芮-正脸大头照.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e85ca50fdc36",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蕾米埃尔",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "原皮",
+      "text": "A character turnaround sheet of Remiel showing front, side, and back views on a white background. She has pale peach-pink short hair with shoulder-length softly curled bangs, purple eyes, a star hair clip on top, a purple bow headband at the side, and a large purple bow headpiece with white pleats and metal details at the back. Outfit: a fantasy angel style with a white-and-pale-purple off-shoulder fitted top, gray layered shoulder armor, loose puff sleeves with blue tassel cuffs; a pale-purple layered asymmetrical mini skirt with an oversized purple bow at the back; large white wings fully spread; white thigh-high socks; and silver stiletto heels. Palette: white, pale purple, pink, and silver. Use as a character identity and clothing reference.",
+      "image_path": "蕾米埃尔/蕾米埃尔_角色三视图.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d948c5f797dd",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蕾米埃尔",
+      "tags": [
+        "人物",
+        "三视图",
+        "裸体"
+      ],
+      "source_tags": [
+        "三视图",
+        "裸体"
+      ],
+      "title": "裸体",
+      "text": "A 3D-rendered female character turnaround sheet showing front, side, and back views on a white background. The character is Remiel, with medium-length pink hair, purple eyes, a silver star hair clip, and a purple bow headband. She is nude, retaining only the following accessories: white wings on the back, white over-the-knee socks, and silver high heels. The back view shows a purple bow headpiece and white pleated decoration. Use as a nude character turnaround, body-proportion, and accessory reference.",
+      "image_path": "蕾米埃尔/蕾米埃尔.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-30c162d932b1",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蕾米埃尔",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "**Description:** Front-facing anime portrait of a pink-haired woman with a short bob, a gray headband, silver star-shaped hair clips, and large violet eyes with yellow-pink heart highlights. She wears a white frilled collar against a clean white background.",
+      "image_path": "蕾米埃尔/exec-e724fa5d-a2fb-4858-b259-213277a73a94.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-02737b61381d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "铃",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "泳装皮",
+      "text": "A character turnaround sheet of Ling showing front, side, and back views on a white background. She has short dark-blue hair, red-orange tassel braids on both sides of her head, and blue eyes; a dark-blue bucket hat with white polka dots and red-orange decorations inside. Outfit: a summer beach-casual style with a white cropped short-sleeved top featuring a \"sea3\" art print on the front and a yellow rectangular logo on the back; orange high-waisted fitted shorts with a belt, blue buttoned pockets, and a circular badge; a green necklace and matching bracelets on both wrists; and black flip-flops with orange straps, worn barefoot. Palette: dark blue, white, orange, and green. Use as a character identity and clothing reference.",
+      "image_path": "铃/铃_角色三视图.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-983f427e7b3c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "JK 制服少女",
+      "tags": [
+        "人物",
+        "三视图",
+        "服装参考"
+      ],
+      "source_tags": [
+        "三视图",
+        "服装参考"
+      ],
+      "title": "JK制服",
+      "text": "A character turnaround sheet showing front, side, and back views of an original Japanese school-uniform character on a white background. She has long straight dark-brown hair, dark-brown round eyes, and no hair accessories. Outfit: a Japanese school-uniform style with a fitted navy blazer and gold buttons, a white shirt, a burgundy satin bow tie, and a knee-length gray pleated skirt; she holds a blue music player or headphone controller in her right hand and carries a black backpack and a black guitar case with a zippered pocket. Palette: navy, white, gray, and burgundy. Use as a character identity and clothing reference.",
+      "image_path": "jk少女/character_turnaround_3view_v2.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-66bcf38c7651",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "初音未来",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "三视图",
+      "text": "A three-view character design sheet for the virtual singer Hatsune Miku, showing front, side, and back views. The character has long teal-green twin-tails and black headphone-style hair ornaments with pink accents; she wears a white puff-sleeved blouse, a sleeveless black vest, cyan trim, a black tie, and a black pleated mini skirt, paired with black boots and cyan details. The background is a pale cyan-to-blue-white gradient, with teal green, black, white, and pink as the main colors.",
+      "image_path": "初音未来/初音未来_三视图_1x1_v1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-1c94178131e0",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "塞莱斯汀·罗西耶",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "人设图",
+      "text": "A flat 2D anime-style character scene. A pink-haired character stands facing the camera, wearing white high-neck clothing, a dark-red cape, black over-the-knee socks, and red boots, with blue-and-red geometric shoulder decorations. The background contains a pink arched doorway, a dark space, colorful hanging crystals, and a red geometric floor pattern. The overall palette is pink, white, dark red, black, and beige.",
+      "image_path": "塞莱斯汀·罗西耶/pink_constructivist_first_frame.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-10c7d50ac065",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "塞莱斯汀·罗西耶",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "三视图",
+      "text": "An anime-style female character turnaround sheet showing front, side, and back views against a beige background. The character is Celestine Rosier, with very long straight pink hair reaching the waist, straight bangs, and large dark-red eyes. Outfit: a white puff-sleeved top, black high-neck layer, blue-and-red diamond-shaped gemstone ornament at the chest, blue shoulder armor, a red belt, a black mini skirt, a dark-red long cape with blue lining, black over-the-knee socks, and burgundy lace-up ankle boots. Palette: pink, white, black, red, and blue. Use as a character identity and clothing reference.",
+      "image_path": "塞莱斯汀·罗西耶/celestine_rosier_三视图角色参考.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3247f9b052cc",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "哲",
+      "tags": [
+        "人物",
+        "三视图"
+      ],
+      "source_tags": [
+        "三视图"
+      ],
+      "title": "学院皮",
+      "text": "A 1:1 square character design sheet on a solid white background, with complete front, right-side, and back full-body views arranged horizontally. The proportions are consistent and the character stands in a neutral pose, making the sheet suitable as a reference for identity, clothing structure, and turnaround design. The character is a young male anime figure with short gray-blue fluffy layered hair and bangs, and light gray-green eyes. He wears a dark navy diamond-knit sweater over a white pointed-collar shirt and black turtleneck; the cuffs have white ribbed construction, with subtle gold details at the cuffs and waist. He wears light blue-gray straight-leg jeans with distressed knees and a small unbranded patch, carries a brown canvas or leather shoulder bag with a circular tool container and strap structure visible from the back, and wears olive-brown low-top shoes with dark soles and small red-and-white details. Overall, this is a high-detail anime 3D character design sheet with even lighting and no text, logos, watermarks, or extra scene elements.",
+      "image_path": "哲/哲_角色三视图_1x1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-142b3d887c96",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "哲",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "A 1:1 front-facing anime 3D character headshot, centered and looking directly at the camera against a pure white background with soft, even lighting. The character is a young male with short gray-blue fluffy layered hair, natural bangs, and a small tuft at the crown; light gray-green eyes, delicate features, and a gentle expression. He wears a dark navy diamond-knit sweater over a white pointed-collar shirt and black turtleneck, with subtle gold details at the collar. Use as a reference for the face, hairstyle, upper-body clothing, and identity.",
+      "image_path": "哲/哲_大头照.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-fd3611305ea8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yasal",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "A round-oval face with smooth, softly rounded contours and a gentle chin without pronounced angles; medium-sized almond-shaped eyes with slightly upturned outer corners, pale blue-gray irises, subtle double eyelids, long natural eyelashes, and soft pink eyeshadow; naturally arched, medium-thickness black eyebrows that are neatly groomed; a straight, slender nose with a defined bridge and a slightly rounded tip; full lips with an M-shaped cupid's bow, pale pink lip gloss, a soft hydrated look, and gently upturned corners; an even fair complexion with smooth, dewy skin; an overall fresh, innocent, cute appearance with minimal makeup.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e923305018d2",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yasal",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "精灵耳面部",
+      "text": "A realistic close-up portrait of a person with light-blonde curly hair styled in an updo, wearing a silver crystal-and-pearl tiara, a pearl necklace, dangling earrings, and elf-ear accessories with orange-brown tips. The character has blue irises and refined makeup. The background is clean and bright. Use as a reference for the face, hairstyle, and elf-ear accessories.",
+      "image_path": "Yasal/HDskIcIbkAAuyr3.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-40029b023c0c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yasal",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "黑发面部",
+      "text": "A front-facing realistic half-body portrait. The character has jet-black shoulder-length hair with straight bangs, wears a silver barrette on the right side, and is dressed in a white collared shirt while standing upright and facing the camera. The background is a pale-gray solid plane, with a simple palette of black, white, gray, and natural skin tones.",
+      "image_path": "Yasal/exec-10bf9109-04b1-4aba-810b-6f89b3793cc9.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-cf9a7cd20416",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yasal",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "红发猫耳面部",
+      "text": "A front-facing realistic half-body portrait. The character has a red bob haircut with straight bangs, plush cat-ear hair accessories with pink inner lining, a wide black collar, and a black top. The makeup has a Japanese cosplay-inspired style. The background is neutral gray, with red, black, pink, and gray as the main colors.",
+      "image_path": "Yasal/exec-ff86d0c7-77b2-47b7-8a21-731982b5329d.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-2ba9b47a0f55",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "An oval face with smooth contours, rounded cheekbones, and a softly tapered chin; medium-sized almond-shaped eyes with slightly upturned outer corners, light-blue irises, and a gentle gaze; fine eyebrows that are mostly straight with a slight curve, in dark brown or black; a straight nose with a medium-height bridge and a small, refined tip; medium-full M-shaped lips in a light pink tone with a clearly defined lip line; an even fair complexion with a soft pink blush on the cheeks; an overall fresh, pure, gentle, and approachable appearance.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-228058f739bc",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物",
+        "服装参考"
+      ],
+      "source_tags": [
+        "服装参考"
+      ],
+      "title": "薄荷色蝴蝶结服装",
+      "text": "A realistic digital full-body character illustration. The character has shoulder-length black hair, straight bangs, and light-colored eyes, and wears a mint-and-white sailor-style outfit with a large pink polka-dot bow at the chest, a lace neckline, and a layered skirt. The image uses a white background and a front-facing composition. Use as a reference for the clothing and character appearance.",
+      "image_path": "Yudiii/ComfyUI_00186_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-6918bd6dd3a4",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物",
+        "服装参考"
+      ],
+      "source_tags": [
+        "服装参考"
+      ],
+      "title": "制服",
+      "text": "A realistic character turnaround sheet showing front, side, and back views of the same character. The character has short black hair with straight bangs and wears a white top with a dark school-style skirt. The image uses a simple gray-and-white background with even lighting. Use as a reference for character proportions and clothing structure.",
+      "image_path": "Yudiii/ComfyUI_00188_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-7639da916f79",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "A front-facing realistic character headshot. The character has straight black shoulder-length hair with eyebrow-length bangs and wears a light-gray turtleneck sweater while looking directly at the camera. The background is a pale gray-white solid plane, with a clean symmetrical composition. Use as a reference for the face, hairstyle, and clothing neckline.",
+      "image_path": "Yudiii/yudiii-正脸.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8ca7592647d9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物",
+        "服装参考",
+        "泳衣"
+      ],
+      "source_tags": [
+        "服装参考",
+        "泳衣"
+      ],
+      "title": "红色十字连体泳衣",
+      "text": "A realistic half-body front-facing portrait of a woman in a vertical composition, approximately 9:16. She has black shoulder-length hair with straight bangs, light-blue eyes, pink blush, and natural pink lips. She wears a red high-cut one-piece swimsuit with a halter deep-V design: wide red panels on both sides, a white cross motif on each breast, a central deep V extending to the navel, and white piping. The material has a glossy finish. The background is a pale-gray wall with a white bed or sofa, under bright, soft lighting. Use as a clothing and swimsuit-style reference.",
+      "image_path": "Yudiii/ComfyUI_00181_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-58bb9cee1d57",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "Yudiii",
+      "tags": [
+        "人物",
+        "裸体",
+        "服装参考"
+      ],
+      "source_tags": [
+        "裸体",
+        "服装参考"
+      ],
+      "title": "红色比基尼",
+      "text": "A realistic full-body front-facing portrait of a woman in a vertical composition, approximately 9:16. She has black shoulder-length hair with straight bangs, light-blue eyes, pink blush, and natural pink lips. She wears a red bikini with a red triangle-cup top and black thin halter straps, and red triangle briefs with black thin side straps and silver metal rings. The material has a glossy finish, and the breasts are naturally quite exposed. The background is pure white with bright, even lighting. Use as a swimwear and bikini-style reference.",
+      "image_path": "Yudiii/ComfyUI_00191_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-720d4a8cff94",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "yuan",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "[English Translation] A standard oval face with smooth, gentle contours, a full forehead, and a moderately tapered jawline; large, wide-open eyes with relatively long eye openings, clear blue irises, a direct gaze, and long, curled eyelashes; long, softly shaped eyebrows with an understated arch and a naturally gentle line; a delicate nose with a straight bridge, rounded tip, and subtly tapered nose wings; clearly defined lips with a pronounced M-shaped cupid's bow, a slightly prominent central lip cushion, healthy pale-pink color, and straight corners; an even fair complexion with fine skin texture and a faint rosy flush on the cheeks; an overall fresh, elegant, gentle, and tranquil facial presence.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-f8594691b67a",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "yuan",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "洛琪希cos面部",
+      "text": "A front-facing half-body portrait. The character wears a shoulder-length pale blue-gray wig with straight bangs and a white ring-shaped hair ornament, a white crew-neck top, and has blue eyes and a calm expression. The background is evenly lit pale gray. Use as a reference for the wig and character styling.",
+      "image_path": "yuan/exec-818c4d60-82c2-4d92-b8ba-1956fc788c89.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-de88129611d8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "yuan",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "原皮面部",
+      "text": "A realistic female upper-body portrait. The character has dark-brown long hair in a high ponytail with straight bangs, wears a white top with a blue underlayer and a delicate necklace, and turns her head slightly toward the camera. The background shows blurred outdoor greenery and architecture under bright, soft lighting. Use as a reference for the hairstyle and casual clothing.",
+      "image_path": "yuan/截图_20260825-210258.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4abf0c5d72df",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "玉靥姬",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "A general facial reference for a female character: a standard oval face with soft, fluid contours and a gently rounded, tapered jawline; a luminous fair complexion with delicate skin texture and a subtle natural flush; large, round, slightly upturned almond-shaped eyes with pale gray or blue-gray irises, bright black pupils, and a clear forward gaze; naturally relaxed eyebrows forming a shallow curve; a straight, slender nose bridge with subtly tapered nose wings and a small, rounded tip; medium-thickness lips with a distinct M-shaped cupid's bow, a natural pale-pink color, and straight corners; an overall fresh, refined, ethereal appearance with harmonious, symmetrical facial proportions.\n[English Translation] A standard oval face with soft, fluid contours and a gently rounded, tapered jawline; a luminous fair complexion with delicate skin texture and a subtle natural flush on the cheeks; large, round eyes with a slightly upturned almond shape, pale gray or blue-gray irises, bright black pupils, and a clear direct gaze; naturally relaxed eyebrows with no pronounced arch, forming a gentle shallow curve; a straight, slender nose bridge with subtly tapered nose wings and a small, rounded tip; medium-thickness lips with a distinct M-shaped cupid's bow, a natural pale-pink color, and straight corners; an overall fresh, refined, ethereal appearance with harmonious, symmetrical facial proportions.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8f8145302e8c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "玉靥姬",
+      "tags": [
+        "人物",
+        "五官参考"
+      ],
+      "source_tags": [
+        "五官参考"
+      ],
+      "title": "面部",
+      "text": "A front-facing half-body realistic portrait. The character has dark brown-black long straight hair styled in symmetrical twin-tails with straight bangs and looks directly at the camera. The composition is a centered headshot against a clean, bright background. Use as a reference for the hairstyle, face, and front-facing expression.",
+      "image_path": "玉靥姬/玉靥姬-正脸.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-9fdee5d413ff",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "五官描述",
+      "text": "A slightly rounded oval face with smooth contours, balanced width-to-height proportions, and an overall harmonious, soft appearance; medium-sized almond-shaped eyes with dark-brown irises, natural double eyelids, slightly upturned outer corners, and medium-length eyelashes; fine, naturally arched dark-brown eyebrows that are neatly groomed; a medium-sized nose with a straight, slightly high bridge and proportionate nostrils; medium-full lips in a natural pink tone, with a subtly M-shaped upper lip and a soft, full appearance; an even fair complexion with a healthy glow and a faint blush on the cheeks; an overall fresh, gentle, elegant appearance.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3ab97af55432",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "场景参考"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "场景参考"
+      ],
+      "title": "汉堡场景人物",
+      "text": "A realistic half-body character scene. The character has dark-brown long straight hair with straight bangs, wears a gray knit top with gray long sleeves, and holds a double-patty hamburger while facing the camera. The background is an indoor dining space with visible leopard-print decoration, using brown, gray, black, and natural skin tones as the main colors.",
+      "image_path": "菌烨/G4aSoo5akAAV0_1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-763092b043dd",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "礼服"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "礼服"
+      ],
+      "title": "银灰礼服人物",
+      "text": "A realistic half-body character portrait. The character has a dark-brown short curly bob with the ends curling inward and wears a silver-gray one-shoulder gown with translucent petals, sequins, and dimensional embellishments at the shoulder and chest. The background is simple, with silver gray, dark brown, and multicolored decorations as the main palette. Use as a formalwear and styling reference.",
+      "image_path": "菌烨/G6-OjvtbIAAAkUo.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3b6e16853278",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "近景",
+        "真人",
+        "泳衣"
+      ],
+      "source_tags": [
+        "近景",
+        "真人",
+        "泳衣"
+      ],
+      "title": "蓝紫服装人物",
+      "text": "A realistic character clothing reference. The character has dark-brown short hair with layered bangs and wears a metallic blue-purple one-piece swimsuit in a stage outfit that combines dark and bright colors. The image uses a close-up composition. Use as a reference for clothing material, color palette, and character styling.",
+      "image_path": "菌烨/HOPFg2wa0AAuGzX.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4e7cda0dd976",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "title": "棕色短发头像",
+      "text": "A front-facing realistic portrait. The character has a dark brown-black inward-curled bob with airy bangs, wears a white turtleneck sweater, and looks directly at the camera. The background is a pale-gray solid plane under even, soft lighting. Use as a reference for the face, hairstyle, and sweater neckline.",
+      "image_path": "菌烨/exec-711c372d-0fbd-4b45-88bb-f817e0194625.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-bfac2776b9c4",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "前倾",
+        "浴室",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "前倾",
+        "浴室",
+        "裸体参考"
+      ],
+      "title": "浴室裸体写真",
+      "text": "A realistic vertical upper-body portrait of a woman, approximately 9:16. She has dark-brown short curly hair with airy bangs, light-colored eyes, and a smiling expression. She is nude with a full figure and fair skin. Her body leans slightly forward; her right hand is raised near the head and neck, while her left hand supports her balance on the edge of a bathtub. The setting is a bathroom with a white bathtub, pale-gray stone or tiled walls, and a window providing natural light. Use as a body-proportion and body-shape reference.",
+      "image_path": "菌烨/ComfyUI_00162_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-6c6f60e37cf8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "菌烨",
+      "tags": [
+        "人物",
+        "半身",
+        "浴室",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "半身",
+        "浴室",
+        "裸体参考"
+      ],
+      "title": "大理石浴室半身写真",
+      "text": "A realistic vertical half-body portrait of a woman, approximately 3:4. She has dark-brown medium-length curly hair with straight bangs, blue eyes, a smiling expression, and a silver heart-pendant necklace. **Her breasts are extremely full, larger than a D-E cup, with very large volume, pink areolas, prominent nipples, natural downward sag, and deep cleavage. The breast skin is smooth and fine with glossy highlights from the light. She gently touches her right-side hair with her left hand while her right arm hangs naturally. She wears light-blue jeans, partially lowered to the thighs. The setting is a marble bathroom or corridor with white marble walls, black decorative lines, green marble baseboards, and warm recessed downlights. Use as a bust and indoor portrait reference.**",
+      "image_path": "菌烨/ComfyUI_00161_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-dc316533f682",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "通用五官描述",
+      "text": "[English Translation] A round face with softly curved contours, a slightly rounded chin, and full cheeks, creating a youthful and approachable appearance; medium-sized almond-shaped eyes with slightly upturned outer corners, vivid blue irises, dark pupils, and soft pink-purple eyeshadow; fine, naturally arched eyebrows in light brown or black, neatly groomed; a small nose with a slightly upturned tip, a low bridge, and narrow nostrils; naturally pink M-shaped lips, with a slightly thinner upper lip and fuller lower lip, soft and gently glossy; an even fair complexion with a faint pink blush on the cheeks; an overall sweet, innocent, approachable appearance.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-b2a1e34c380e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "半身",
+        "JK制服",
+        "服装参考"
+      ],
+      "source_tags": [
+        "半身",
+        "JK制服",
+        "服装参考"
+      ],
+      "title": "JK 制服头像",
+      "text": "A front-facing half-body portrait. The character has blue-gray medium-length hair with straight bangs, wears a black-and-white bow hair clip, a white collared shirt, a large dark-blue bow, and a blue-black plaid pleated skirt. The background is a pale-gray solid plane, creating a Japanese school-uniform style.",
+      "image_path": "小菜刀夫斯基/ComfyUI_00207_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8207083a9722",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "半身",
+        "角色身份",
+        "发型参考"
+      ],
+      "source_tags": [
+        "半身",
+        "角色身份",
+        "发型参考"
+      ],
+      "title": "浅蓝发头像",
+      "text": "A front-facing half-body portrait. The character has pale-blue medium-length hair with straight bangs and slightly curled ends, wears black bow hair clips on both sides, and is dressed in a gray turtleneck knit top. The background is a pale-gray solid plane, creating a soft character-portrait style.",
+      "image_path": "小菜刀夫斯基/exec-107eb0a6-c737-4a75-b4cd-ff633a972c0c.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-26d93b95d573",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "五官参考"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "五官参考"
+      ],
+      "title": "棕发头像",
+      "text": "A front-facing chest-up realistic portrait. The character has dark brown-black shoulder-length hair with airy bangs and naturally curled ends, wears a white turtleneck sweater, and looks directly at the camera. The background is a pale gray-white solid plane under even, soft lighting. Use as a reference for the face, hairstyle, and sweater neckline.",
+      "image_path": "小菜刀夫斯基/exec-2ed887e5-d2de-4c14-a170-691f9e721fd7.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-927fee09f8c2",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "JK制服",
+        "服装参考"
+      ],
+      "source_tags": [
+        "三视图",
+        "JK制服",
+        "服装参考"
+      ],
+      "title": "制服三视图",
+      "text": "A 3D-rendered female character turnaround sheet showing front, side, and back views. The character has dark-brown shoulder-length hair with straight bangs and wears a white short-sleeved collared shirt, a large dark-blue bow, a blue-black plaid pleated skirt, white socks, and black leather shoes. The background is a gray gradient. Use as a reference for a Japanese school-uniform silhouette and proportions.",
+      "image_path": "小菜刀夫斯基/小菜刀夫斯基_制服_三视图_1x1_v1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e012a5466b6d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "3D",
+        "服装参考"
+      ],
+      "source_tags": [
+        "三视图",
+        "3D",
+        "服装参考"
+      ],
+      "title": "蓝发渔夫帽服装三视图",
+      "text": "A 3D-rendered female character turnaround sheet with a front close-up, side full-body view, and back full-body view against a pale-gray background. The character has dark-blue short twin-tails, a black bucket hat with an orange cord decoration, and blue eyes. Outfit: a white off-shoulder top with black straps, an orange flower shoulder ornament, and an abstract star print on the front; a dark-blue pleated skirt with orange buttons and orange trim; white ankle socks; and black-and-white platform shoes. Palette: white, dark blue, and orange. Use as a character clothing turnaround reference.",
+      "image_path": "小菜刀夫斯基/exec-99e31c3e-4ed2-4a0f-8e9a-47c9446eb613.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c2fff28bfedf",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "3D",
+        "服装参考"
+      ],
+      "source_tags": [
+        "三视图",
+        "3D",
+        "服装参考"
+      ],
+      "title": "辣妹装三视图",
+      "text": "A 3D-rendered female character turnaround sheet with a front close-up, side full-body view, and back full-body view against a pale-gray background. The character has dark-brown medium-length hair with straight bangs, large blue eyes, gold hoop earrings, and a delicate necklace. Outfit: a black leather cropped jacket with a zipper, a fitted white cropped underlayer, a dark-gray denim mini skirt with a black belt and silver buckle, black sheer tights, and black platform ankle boots. Palette: black, white, and dark gray. Use as a character styling and clothing turnaround reference.",
+      "image_path": "小菜刀夫斯基/小菜刀夫斯基_辣妹装_三视图_1x1_v1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-2fa52747370e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "3D",
+        "身体比例"
+      ],
+      "source_tags": [
+        "三视图",
+        "3D",
+        "身体比例"
+      ],
+      "title": "粉发三视图",
+      "text": "A 3D-rendered female character turnaround sheet showing front, side, and back views. The character has a pink high ponytail with straight bangs and wears a pink one-piece outfit. The image emphasizes the hairstyle, body proportions, and clothing silhouette against a simple gray background. Use as a character design reference.",
+      "image_path": "小菜刀夫斯基/exec-83d46faf-39cf-4d65-a3f7-4816246d037c.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-876afa9f2d54",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "裸体参考",
+        "身体比例"
+      ],
+      "source_tags": [
+        "三视图",
+        "裸体参考",
+        "身体比例"
+      ],
+      "title": "粉发裸体三视图",
+      "text": "A 3D-rendered female character turnaround sheet with a front close-up, side full-body view, and back full-body view against a pale-gray background. The character has long pink hair in a high ponytail with straight bangs and brown eyes. She is nude, with the image emphasizing her face, body proportions, and hairstyle. Use as a nude character turnaround and body-proportion reference.",
+      "image_path": "小菜刀夫斯基/ComfyUI_00156_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-45a49bef52a8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "小菜刀夫斯基",
+      "tags": [
+        "人物",
+        "三视图",
+        "裸体参考",
+        "配件参考"
+      ],
+      "source_tags": [
+        "三视图",
+        "裸体参考",
+        "配件参考"
+      ],
+      "title": "蓝发渔夫帽裸体三视图",
+      "text": "A 3D-rendered female character turnaround sheet with a front close-up, side full-body view, and back full-body view against a pale-gray background. The character has dark-blue short twin-tails, a black bucket hat with an orange cord decoration, and blue eyes. She is nude; the side and back views show white ankle socks and black-and-white platform shoes. Use as a nude character turnaround, body-proportion, and accessory reference.",
+      "image_path": "小菜刀夫斯基/ComfyUI_00160_.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-2ee72b7e1cc3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "幼女脸",
+      "tags": [
+        "人物"
+      ],
+      "source_tags": [],
+      "title": "通用五官描述",
+      "text": "[English Translation] Softly rounded facial contours, generally close to an oval face, with a naturally rounded chin and subtle cheekbones; medium-to-large almond-shaped eyes with slightly upturned outer corners, gray-brown irises, dark pupils, and naturally long eyelashes; fine, naturally arched dark-brown eyebrows, partly obscured by the bangs; a small nose with a straight bridge, rounded tip, and subtly tapered nose wings; medium-full lips with a soft M-shaped cupid's bow, a slightly thinner upper lip and fuller lower lip, natural pink color, and a slight sheen; an even fair complexion with fine skin texture and a faint pink flush on the cheeks; an overall youthful, gentle, delicate, approachable appearance.",
+      "image_path": "",
+      "audio_path": ""
+    },
+    {
+      "id": "character-5b90f0eb646c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "幼女脸",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "title": "正脸头像",
+      "text": "A 1:1 front-facing realistic character headshot, looking directly at the camera in a centered, symmetrical composition against a pure white background with soft, even lighting. The character has dark-brown medium-length to long hair with abundant volume, a natural part at the crown, heavy straight bangs, and layered wispy strands on both sides; the ends curl naturally and fall below the shoulders and in front of the chest. The current image has no headwear, hair clips, earrings, or other accessories. Use as a reference for the face and hairstyle.",
+      "image_path": "幼女脸/幼女脸_正脸_无头饰.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d1dea005feea",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "近景",
+        "人体局部",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "近景",
+        "人体局部",
+        "裸体参考"
+      ],
+      "title": "微信图片_20260831001415_156_80.jpg",
+      "text": "**Description:** Extreme close-up of pale skin and body folds, with a small pink-and-white striped triangular detail partially visible near the lower center. The crop is highly abstract, with soft lighting and no visible text.",
+      "image_path": "其他/微信图片_20260831001415_156_80.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-050278de0219",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "source_tags": [
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "title": "人体_外阴特写.jpg",
+      "text": "**Description:** Macro close-up of adult female external genital anatomy, centered in the frame. The image shows pink skin and natural surface texture under soft, diffuse lighting, with no surrounding environment or visible text.",
+      "image_path": "其他/人体_外阴特写.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-0c857999d2c1",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "裸体参考",
+        "身体比例",
+        "前倾"
+      ],
+      "source_tags": [
+        "裸体参考",
+        "身体比例",
+        "前倾"
+      ],
+      "title": "人体体型参考",
+      "text": "A realistic vertical medium shot of a nude adult female torso, approximately 9:10, cropped above the chin. She has an even fair complexion with a natural warm tone and a very full hourglass figure. **Her breasts are extremely full, C-D cup or larger, with large volume, visibly natural sag, pink areolas, prominent pink nipples, and a symmetrical appearance.** Her body leans slightly forward; her right hand is raised near the head and neck, while her left hand supports her balance on the edge of a freestanding white bathtub. The bathroom has pale-gray stone or tiled walls, black pump bottles on the counter, and a window providing natural side light. The overall tone is warm off-white, with fine skin texture and natural light transitions. A slight low angle emphasizes the body curves. Use as a realistic body-proportion and body-shape reference.",
+      "image_path": "其他/人体_浴缸_体型参考_竖版_v1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4fbff0a000d9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "半身",
+        "哥特",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "半身",
+        "哥特",
+        "裸体参考"
+      ],
+      "title": "紫发耳机造型",
+      "text": "A realistic vertical upper-body portrait of a woman, approximately 2:3. She has long light-purple twin-tails, a black lace bow headband with black ribbons, black over-ear headphones resting around her neck with a gold control knob, silver cross earrings, blue-gray eyes, orange eyeshadow, pink blush, and pink lips. **Her breasts are full and prominent with large volume; the areolas are covered by two white square stickers, one on each side, with the sticker edges visible at the nipple positions and a natural downward curve. Her body is nude, with black leather thigh straps decorated with multiple metal buckles and chains, and black cutout thigh-high stockings.** The background is pure white with bright lighting and a slight pink halo. Use as a character styling and gothic headphone-outfit reference.",
+      "image_path": "其他/紫发_耳机哥特_造型参考_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-59f9eb6a9674",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "裸体参考",
+        "身体比例",
+        "室内"
+      ],
+      "source_tags": [
+        "裸体参考",
+        "身体比例",
+        "室内"
+      ],
+      "title": "人体体型参考 1",
+      "text": "A realistic vertical medium shot of a nude adult female torso, approximately 9:10, with the head cropped out. She has fair skin and a full hourglass figure. **Her breasts are extremely full, larger than a D cup, with very large volume, noticeably natural sag, large pink areolas, prominent nipples, close-set breasts forming deep cleavage, and smooth, fine skin.** Her abdomen is flat and her navel is small. She stands naturally with her right arm hanging down and her left hand raised near her head. The indoor background has gray curtains and an orange sofa. Use as a realistic body-proportion and body-shape reference.",
+      "image_path": "其他/人体_室内_体型参考_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ebc9b3c1f726",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "全身",
+        "裸体参考",
+        "道具参考"
+      ],
+      "source_tags": [
+        "全身",
+        "裸体参考",
+        "道具参考"
+      ],
+      "title": "人体体型参考 2",
+      "text": "A realistic full-body nude mirror selfie of a woman in a vertical composition, approximately 9:16. Her head is obscured by a white circle. She holds a yellow garment with fluffy cuffs in each hand, and a silver smartphone with a pink ring grip in her left hand. She has a full figure and fair skin. **Her breasts are full and prominent, approximately C-D cup, with large volume, pink areolas, prominent nipples, natural downward sag, and deep cleavage. The vulva is visible, with full labia majora, slightly protruding labia minora, neatly trimmed pubic hair, and a faintly visible clitoris.** The indoor background includes gray curtains, a windowsill, an orange decorative box, and black high heels. Use as a full-body and body-shape reference.",
+      "image_path": "其他/人体_镜面自拍_全身参考_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-321f6adca69c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "二次元",
+        "天使",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "二次元",
+        "天使",
+        "裸体参考"
+      ],
+      "title": "二次元海滩天使角色",
+      "text": "A 2D anime-style upper-body female illustration in a vertical composition, approximately 9:16. She has short pink hair, white wings, and a nude body. **Her breasts are extremely full in an exaggerated anime style, with huge volume, pink areolas, prominent nipples, and the breasts pressed closely together to form deep cleavage; the skin has a sheen of water droplets or sweat.** She holds a blue popsicle in each hand and has blue fingernails. The background is a beach with blue sky, white clouds, sand, and ocean, and water droplets or sweat are visible on the body. Use as a character styling and visual-style reference.",
+      "image_path": "其他/天使_海滩_二次元插画_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c857965b7943",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "source_tags": [
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "title": "人体外阴特写",
+      "text": "A realistic front-facing close-up of a female vulva in a small image, 206 × 236 px. **The vulva is shown directly from the front, with full symmetrical labia majora, naturally protruding pink labia minora, clearly visible folds, a covered clitoral hood, a narrow vaginal opening, fair fine surrounding skin, and neatly trimmed pubic hair. The overall anatomy is natural with an even skin tone.** Use as an anatomical detail reference.",
+      "image_path": "其他/人体_外阴特写_细节参考_v1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-bbad7e90f177",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "跪姿",
+        "前倾",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "跪姿",
+        "前倾",
+        "裸体参考"
+      ],
+      "title": "银色胶带束缚造型",
+      "text": "A realistic full-body kneeling female portrait in a vertical composition, approximately 3:4. She has black shoulder-length hair with straight bangs, her face partly obscured by hair, and her head lowered in a downward-looking pose. **Her breasts are extremely full, larger than a D cup, with very large volume, light-brown areolas, prominent nipples, natural downward sag, and deep cleavage. Her breasts are bound with silver satin tape crossing the shoulders and upper chest; her arms and torso are also fixed with tape.** **In a side-seated kneeling pose, the vulva's outline is faintly visible, with full labia majora, slightly protruding labia minora, and neatly trimmed pubic hair.** Her knees rest on a white circular pedestal; her thighs and calves are also wrapped and fixed with silver tape, and her hands are clasped in front of her knees with her wrists bound. The background is a solid gray gradient, with a watermark reading \"PHOTOGRAPHER Baisi\" at the bottom. Use as a bondage-art and body reference.",
+      "image_path": "其他/黑bob_银胶带束缚_艺术写真_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-f39c7d7c6a9e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "躺姿",
+        "近景",
+        "解剖参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "近景",
+        "解剖参考"
+      ],
+      "title": "绳缚仰卧特写",
+      "text": "A realistic close-up of a female in a prone or supine pose, in a horizontal composition approximately 16:9. **One breast is visible, full and prominent, with a pale-pink areola and prominent nipple; the side of the breast is bound with gray braided rope.** **The vulva has full symmetrical labia majora, distinctly protruding deep-pink labia minora, a clearly visible clitoral hood, a narrow vaginal opening, neatly trimmed pubic hair, and a pronounced crease between the buttocks and thighs.** Gray braided rope runs from the inner thigh to the buttocks, creating a bondage composition. The background is gray carpet or fabric, with sunlight from above casting striped shadows. A bottom watermark reads \"PHOTOGRAPHER Baisi\". Use as a rope-bondage art and anatomical-detail reference.",
+      "image_path": "其他/人体_绳缚仰卧_细节特写_横版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ee72fc138dc4",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "近景",
+        "裸体参考",
+        "配件参考"
+      ],
+      "source_tags": [
+        "近景",
+        "裸体参考",
+        "配件参考"
+      ],
+      "title": "银发十字架束缚造型",
+      "text": "A realistic vertical upper-body close-up of a woman, approximately 9:10. She has long pale silver-blue hair with a side braid, a gold cross necklace, and a pearl navel piercing. **Her breasts are extremely full, larger than a D-E cup, with very large volume, large dark-brown areolas, prominent nipples, natural downward sag, and very deep cleavage; a small black mole is visible on the side of the left breast. Her breasts are pressed outward by the pose, creating an exaggerated sense of volume.** Her abdomen is flat and her navel is small, with white pearl and silver metal navel jewelry. The indoor background has a bookshelf filled with dark books, and light comes from the left. A bottom watermark reads \"PHOTOGRAPHER Baisi\". Use as a bust and bondage-art reference.",
+      "image_path": "其他/银发_十字架_胸部特写_竖版_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d132448611d7",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他",
+      "tags": [
+        "人物",
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "source_tags": [
+        "近景",
+        "人体局部",
+        "解剖参考"
+      ],
+      "title": "人体外阴特写",
+      "text": "A realistic front-facing close-up of a female vulva in a small image, 234 × 294 px. **The vulva is shown directly from the front, with full symmetrical labia majora, distinctly protruding pink labia minora, clearly visible folds, a covered clitoral hood, a narrow vaginal opening, fair surrounding skin, and neatly trimmed pubic hair. White mesh fabric is pulled aside from both sides, revealing the full vulva.** Use as an anatomical detail reference.",
+      "image_path": "其他/人体_外阴特写_网状布料_v1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-339355e3a318",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "全身",
+        "cosplay",
+        "天使"
+      ],
+      "source_tags": [
+        "全身",
+        "cosplay",
+        "天使"
+      ],
+      "title": "1.jpg",
+      "text": "**Subject:** A cosplayer portraying a pink-haired anime-style female character with angelic features.\n\n**Appearance:** The subject has short, voluminous bubblegum-pink hair styled with two small silver star-shaped hair clips. She has pointed elf-like ears, pale skin, and wears subtle makeup with defined eyeliner and soft pink lipstick. Her expression is neutral-to-slightly smiling with direct eye contact toward the camera.\n\n**Clothing & Accessories:** She wears an elaborate white costume featuring:\n- Large, layered white feathered angel wings attached to the back\n- A white corset-style bodice with puff sleeves, off-the-shoulder design, and a prominent white bow at the collar with lavender/purple ribbon accents\n- An asymmetrical short white skirt with sheer paneling\n- A long, flowing piece of sheer lavender fabric draped from the waist\n- White thigh-high stockings and silver-grey high-heeled pumps with bow details\n- A delicate silver garter strap on the left thigh\n\n**Pose:** The subject is reclining against a sport motorcycle in a three-quarter seated position—her right leg is bent with foot resting on the motorcycle seat, while her left leg extends downward to touch the red carpeted floor. Her right hand is raised gracefully near shoulder height with fingers elegantly splayed; her left hand rests lightly against her upper chest. Her torso twists slightly toward the camera.\n\n**Composition:** Full-body shot captured from a slightly low angle, emphasizing the legs and creating a dynamic diagonal line. The subject dominates the foreground, with the motorcycle serving as both prop and seating. The wings spread outward, framing the composition.\n\n**Background:** An indoor exhibition hall or convention center environment with a red carpet marked with white geometric lines. Behind the subject is a black and red sport motorcycle (visible gold-rimmed wheels, chain drive, and \"DUNLOP\" tire lettering). The distant background features blurred overhead lighting fixtures, dark ceiling panels, and indistinct booth signage with partially visible text including Chinese characters and English letters (possibly \"TOYOTA\" or similar automotive branding). Other attendees are visible as out-of-focus shapes in the deep background.\n\n**Lighting:** Bright, even artificial lighting from overhead ceiling fixtures creates minimal shadows, highlighting the texture of the feathered wings and the sheen of the costume fabric. Professional photography lighting ensures the white costume remains well-exposed without blowing out details.\n\n**Style:** High-quality cosplay photography with vibrant color saturation, sharp focus on the subject, and shallow depth of field blurring the background. The aesthetic combines fantasy/angelic elements with modern motorsport context.\n\n**Visible Text:**\n- Motorcycle tire: \"**DUNLOP**\" and \"**",
+      "image_path": "其他角色/1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3dd68f2903d2",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "躺姿",
+        "真人",
+        "内衣"
+      ],
+      "source_tags": [
+        "躺姿",
+        "真人",
+        "内衣"
+      ],
+      "title": "6197204369078424307.jpg",
+      "text": "**Description:** Adult woman with a short wavy brown bob reclining on a white bed in black lace lingerie. One bare foot is prominent in the foreground, while cream curtains form the background. Warm indoor lighting, a soft photographic look, and a watermark in the lower-right corner are visible.",
+      "image_path": "其他角色/6197204369078424307.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-03ba89e24a75",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "半身",
+        "二次元",
+        "哥特"
+      ],
+      "source_tags": [
+        "半身",
+        "二次元",
+        "哥特"
+      ],
+      "title": "exec-19040326-50c1-428e-9cb6-4159bd82bb78.png",
+      "text": "**Subject:** Bust portrait of an anime-style female character presenting as a \"dark maid\" or gothic lolita archetype.\n\n**Appearance:** The character has a youthful face with pale skin and a neutral, slightly stern expression. She has short, choppy black hair with vibrant red underlayers visible at the nape and sides. Her eyes are large and vivid red with detailed orange-yellow iris patterns and prominent white catchlights; a small dark mole sits beneath her left eye (viewer's right).\n\n**Clothing & Accessories:** She wears a hybrid of maid attire and dark armor: a traditional white frilled maid headdress with voluminous ruffles is overlaid with an aggressive black metallic crown-like headpiece featuring sharp, geometric spikes and angular filigree. Mechanical-looking silver clasps frame her ears. Her outfit consists of a black high-collared garment with a spiked, armored choker at the throat, crossed black leather straps across the chest, and oversized white ruffled bows or epaulets at the shoulders.\n\n**Pose & Composition:** Front-facing, centered bust shot with direct eye contact; the figure is symmetrically framed from mid-chest up against negative space.\n\n**Background:** Pure white, isolated background with no environmental detail—characteristic of a model sheet or reference image.\n\n**Lighting:** Even, diffuse studio lighting with soft shadows beneath the chin and hair, emphasizing the three-dimensional form without dramatic directional source.\n\n**Style:** Clean digital anime/manga illustration with crisp lineart, cel-shading combined with soft gradient rendering on skin and hair, and high-contrast color palette (black, white, red).\n\n**Text:** No text or typography is visible in the image.",
+      "image_path": "其他角色/exec-19040326-50c1-428e-9cb6-4159bd82bb78.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-24dd44d18895",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "半身",
+        "二次元",
+        "兽耳"
+      ],
+      "source_tags": [
+        "半身",
+        "二次元",
+        "兽耳"
+      ],
+      "title": "exec-9b5b05c4-50bf-47c3-aa1c-7321a687e400.png",
+      "text": "**Subject:** Front-facing bust portrait of an anime-style female character with lupine (wolf/dog) features.\n\n**Appearance:** Long, straight black hair cut with blunt bangs across the forehead; hair appears styled into side braids or low buns behind the ears. She has large, erect triangular black animal ears with gray inner fur positioned atop her head. Her eyes are a vivid red-orange with detailed pupils and highlights, set against pale skin with a neutral, calm expression and minimal facial detail.\n\n**Clothing & Accessories:** She wears formal attire consisting of a crisp white collared dress shirt, a slim black necktie, and a dark blue structured jacket featuring shoulder epaulets with metallic button details. A golden-yellow scarf or sash is draped around her neck over the jacket, bearing partial white text or insignia (appearing as a stylized \"U\" or similar character).\n\n**Pose & Composition:** Symmetrical, centered chest-up portrait facing directly forward with level gaze; shoulders squared to the viewer.\n\n**Background:** Solid, clean white void with no environmental details—typical of character reference sheet formatting.\n\n**Lighting:** Soft, even frontal illumination with subtle ambient occlusion under the chin and hair shadows, creating gentle dimension without harsh contrast.\n\n**Style:** Digital anime/manga illustration with clean lineart, cel-shading combined with soft gradient rendering on skin and hair, and a polished, game-character-design aesthetic.\n\n**Visible Text:** Partial white alphanumeric marking visible on the left side of the yellow scarf (resembling \"U\" or \"C\").",
+      "image_path": "其他角色/exec-9b5b05c4-50bf-47c3-aa1c-7321a687e400.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-82605d480cbc",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "半身",
+        "二次元",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "二次元",
+        "猫娘"
+      ],
+      "title": "exec-a98880ce-4f45-4a04-aa35-06311f73d26b.png",
+      "text": "**Subject:** Bust-up portrait of an anime-style female character (Diona from *Genshin Impact*).\n\n**Appearance:** She has long, flowing pastel-pink hair styled in twin tails with loose strands framing her face. Two large, pointed golden-yellow cat ears protrude from the top of her head, each secured at the base with a rectangular bronze-colored buckle. Her eyes are large and expressive with green-to-yellow gradient irises and prominent upper eyelashes; a small dark mole sits beneath her left eye. On the right side of her face (viewer's left), three miniature bow-shaped hair clips are pinned vertically in black, lime-green, and yellow. She wears ornate gold circular earrings with embossed designs.\n\n**Clothing & Accessories:** She wears a structured blue collar or shoulder armor piece featuring gold diamond-shaped studs along the edges and white ruffled fabric visible underneath at the shoulders. Around her neck is a wide black choker with gold trim, attached to a heavy gold chain that holds a large, geometric diamond-shaped pendant with an interlocking square design in the center.\n\n**Pose & Composition:** Front-facing, centered portrait with the subject looking directly at the viewer, offering a subtle, gentle closed-mouth smile. The framing cuts off at mid-chest level, emphasizing facial features and upper costume details against a clean background.\n\n**Background:** Solid plain white/empty background with no environmental details.\n\n**Lighting:** Soft, even studio lighting with minimal shadowing, creating a flat but polished look typical of character reference assets. Subtle shading defines hair volume and facial contours without dramatic contrast.\n\n**Style:** Clean anime/manga digital illustration style characteristic of modern gacha games (miHoYo/HoYoverse aesthetic), featuring crisp line work, cel-shading with soft gradient transitions, and vibrant saturated colors.\n\n**Visible Text:** None present in the image.",
+      "image_path": "其他角色/exec-a98880ce-4f45-4a04-aa35-06311f73d26b.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e4d744eb7681",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "站立",
+        "浴室",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "站立",
+        "浴室",
+        "裸体参考"
+      ],
+      "title": "1.jpg",
+      "text": "**Description:** Adult nude woman with long brown hair taking a mirror selfie in a bright bathroom. She holds a smartphone in front of her face; a freestanding gray bathtub, black-framed window, cloudy sky, and horizontal wooden privacy screen appear behind her. Natural daylight illuminates the scene.",
+      "image_path": "其他角色/nude/1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d802a97c7a26",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "躺姿",
+        "抬腿",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "抬腿",
+        "裸体参考"
+      ],
+      "title": "17.jpg",
+      "text": "**Description:** Adult nude woman reclining on a black sofa with both legs raised toward the camera. Pale lace-trimmed stockings or garters frame the lower legs, creating a strong foreground perspective. The image uses a close, low-angle composition with cool indoor lighting.",
+      "image_path": "其他角色/nude/17.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-a5ad07a92d8a",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "躺姿",
+        "抬腿",
+        "裸体参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "抬腿",
+        "裸体参考"
+      ],
+      "title": "18.jpg",
+      "text": "**Description:** Adult woman with long black hair and a red bunny-ear headband reclining nude on a green pool table. One leg is raised toward the camera, while warmly lit shelves of liquor bottles fill the softly blurred bar background. The image has a saturated red-orange color palette and shallow depth of field.",
+      "image_path": "其他角色/nude/18.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-157f4f10b44d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "室内",
+        "裸体参考",
+        "配件参考"
+      ],
+      "source_tags": [
+        "室内",
+        "裸体参考",
+        "配件参考"
+      ],
+      "title": "19.jpg",
+      "text": "**Description:** Adult woman with long black hair posing nude in front of a wooden bar, wearing a glossy red bunny-ear headband and white wrist cuffs. A red bow accessory appears near one thigh, with bottles and bar fixtures behind her. Warm amber lighting and a slightly tilted portrait composition define the scene.",
+      "image_path": "其他角色/nude/19.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e083a7976aea",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "躺姿",
+        "海滩",
+        "兽耳"
+      ],
+      "source_tags": [
+        "躺姿",
+        "海滩",
+        "兽耳"
+      ],
+      "title": "2.jpg",
+      "text": "**Description:** Anime-style female character with long dark hair, large black wolf-like ears, and reddish eyes reclining on a sandy beach. A small black round creature with antennae sits to the left, while starfish, shells, a coin-like object, and shallow turquoise water appear in the background. The illustration uses soft pastel shading and bright highlights.",
+      "image_path": "其他角色/nude/2.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-6d21fed47a1a",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "躺姿",
+        "裸体参考",
+        "道具参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "裸体参考",
+        "道具参考"
+      ],
+      "title": "22.jpg",
+      "text": "**Description:** Adult woman with long black hair and a large red bow or bunny-ear headpiece lying across a green pool table. Her bent legs and arms create a diagonal overhead composition, with billiard balls, a cue, and a smartphone scattered around her. Warm wooden bar elements appear at the edges of the frame.",
+      "image_path": "其他角色/nude/22.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-5f991b9652db",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "坐姿",
+        "二次元",
+        "兽耳"
+      ],
+      "source_tags": [
+        "坐姿",
+        "二次元",
+        "兽耳"
+      ],
+      "title": "3.jpg",
+      "text": "**Description:** Anime-style blonde female character with large fox- or cat-like ears, red-and-gold eyes, and long hair tied with red ribbons. She sits in a bright, softly lit interior with a neutral expression; a round badge with small Asian characters is attached near her left ear. The pastel illustration has warm highlights and soft linework.",
+      "image_path": "其他角色/nude/3.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-1de7265b195d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "真人",
+        "cosplay",
+        "泳池"
+      ],
+      "source_tags": [
+        "真人",
+        "cosplay",
+        "泳池"
+      ],
+      "title": "5.jpg",
+      "text": "**Description:** Cosplay-style adult woman with blonde hair and long mint-green extensions posing beside a large yellow inflatable ring in a swimming-pool setting. She wears a large white flower hair accessory, a shell necklace, and a white thigh strap. Sunlight reflects across the tiled pool area, with colorful inflatables visible in the background.",
+      "image_path": "其他角色/nude/5.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d7f983217d22",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "精灵耳"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "精灵耳"
+      ],
+      "title": "6314334204619068160.jpg",
+      "text": "**Description:** Adult elf-themed woman shown in a close portrait, with a short pastel-pink bob, a pointed prosthetic ear, pink-red eyes, and a small metallic hair ornament. She wears a pale lavender collar with white trim and a star-shaped pendant. Warm indoor lighting and a softly blurred room create a portrait-photography look.",
+      "image_path": "其他角色/nude/6314334204619068160.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e586872e7bbd",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "title": "6327895898863636821.jpg",
+      "text": "**Description:** Adult elf- or fox-themed woman with long white hair, fluffy pointed ears, golden decorative headpieces, amber eyes, and red facial markings. She poses in a close selfie-style portrait with one hand raised near her shoulder; a gold-and-red chest ornament and thin necklace are visible. The background is a softly blurred blue-gray interior.",
+      "image_path": "其他角色/nude/6327895898863636821.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-74d42351589f",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "二次元",
+        "室内",
+        "角色身份"
+      ],
+      "source_tags": [
+        "二次元",
+        "室内",
+        "角色身份"
+      ],
+      "title": "无标题.jpg",
+      "text": "**Description:** Anime illustration of a pink-haired woman with dark curved horns, a red bunny-ear headband, and a white collar with a burgundy bow. She poses indoors in front of large windows showing blue sky and city buildings; small white sound-effect marks are visible around her.",
+      "image_path": "其他角色/nude/无标题.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-f36ad2c67a49",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "其他角色",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "无标题_副本.jpg",
+      "text": "**Description:** Cosplay photograph of a pale green-haired woman with colorful hair clips, a teal bow, and a black choker, seated on a light floor near a window. Pink-and-white striped leg warmers, a white ruffled garment, and pink platform shoes are arranged around her.",
+      "image_path": "其他角色/nude/无标题_副本.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e4a5f287e1eb",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "4.jpg",
+      "text": "**Description:** Close-up cosplay portrait of a woman with long silver hair, fluffy white animal ears, blue-gray eyes, and ornate gold hair and neck accessories. She poses against a brightly colored red-and-yellow backdrop with one hand near her face.",
+      "image_path": "喵喵球球/4.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c9a7bf511a53",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "4_1.jpg",
+      "text": "**Subject:** A cosplayer portraying a fantasy game character (visually consistent with Ganyu from *Genshin Impact*) in a close-up portrait.\n\n**Appearance:** The subject has fair skin with subtle shimmer highlighting the nose and cheekbones, large blue contact lenses with defined black eyeliner and glitter accents, and silver-white hair styled in a bob cut with wispy bangs across the forehead. Prominent, fluffy white goat-like horns protrude from atop the head.\n\n**Clothing & Accessories:** The costume includes ornate gold floral hair clips (resembling orchids) securing a flowing blue ribbon on the left side; a gold choker necklace with blue gemstone detailing at the throat; and hints of a light blue garment with gold trim at the collar. The subject’s right hand displays a French-tip manicure with dark red or burgundy polish on accent nails.\n\n**Pose:** Front-facing, head-and-shoulders composition with the subject’s right hand raised delicately near the jawline, fingers slightly curled in a gentle gesture.\n\n**Composition:** Tightly cropped portrait centered on the face, filling most of the frame with the subject’s head and upper torso, creating an intimate, direct-to-camera perspective.\n\n**Background:** A softly blurred, colorful backdrop featuring bold red geometric shapes (partial letters or graphics) against warm yellow and orange tones, suggesting a convention booth or promotional event setting.\n\n**Lighting:** Bright, diffused frontal lighting typical of studio cosplay photography, creating soft shadows under the chin and catchlights in the eyes, with additional sparkle effects on the skin suggesting cosmetic glitter or digital enhancement.\n\n**Style:** High-detail anime-inspired cosplay photography with polished makeup aesthetics emphasizing large, expressive eyes and ethereal coloring.\n\n**Visible Text:** No legible text is present within the image frame; only abstract graphic elements appear in the background.",
+      "image_path": "喵喵球球/4_1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c79ef5689119",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "cosplay",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "cosplay",
+        "猫娘"
+      ],
+      "title": "HQYb65KaUAA4oqH.jpg",
+      "text": "**Subject:** A female cosplayer portraying an anthropomorphic cat-girl character.\n\n**Appearance:** She has long, straight black hair with purple undertones and blunt bangs. Her face features distinctive red whisker markings on her cheeks, winged eyeliner, and red lipstick. She wears large, fluffy black cat ears with purple inner fur atop her head. A black ribbon choker encircles her neck. Her fingernails are painted dark blue or black.\n\n**Clothing & Accessories:** She wears a black bikini set; the top is triangular with thin straps, featuring a shimmering metallic texture and ornate black lace appliqués at the center. The matching bottoms have decorative geometric-patterned embellishments on the hip sides. A long, furry tail in dark brown/black with purple tips extends behind her.\n\n**Pose:** Reclining relaxedly in a wooden lounge chair, she leans back with her right arm raised overhead (hand resting near the cat ears) and left hand lifted toward her shoulder/chest area, fingers slightly curled. Her body is angled slightly to her left with legs extended forward.\n\n**Composition:** Medium vertical shot framing from mid-thigh upward, centered on the subject with the wooden chair back visible behind her.\n\n**Background:** An indoor setting with plain beige/cream walls, natural wood-toned bamboo or wooden furniture, and minimal greenery visible at the far left edge. The environment appears to be a studio or softly lit room with neutral tones.\n\n**Lighting:** Warm, directional natural light streaming from the right side, creating soft shadows and highlighting the contours of her figure and the shimmer of the bikini fabric.\n\n**Style:** Professional cosplay/glamour photography with anime-aesthetic influences, characterized by high contrast, warm color grading, and polished presentation.\n\n**Visible Text:** None.",
+      "image_path": "喵喵球球/HQYb65KaUAA4oqH.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-b09757bfc081",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "title": "exec-62efdd58-4260-40a2-96a0-48924ffef9c1.png",
+      "text": "**Subject:** A front-facing portrait of a youthful female figure with anthropomorphic animal features.\n\n**Appearance:** The subject has pale, fair skin with a smooth, porcelain-like texture and delicate facial features. She possesses large, expressive blue-gray eyes with prominent upper eyelashes, thin arched eyebrows, a small nose, and closed lips forming a subtle, gentle smile. Her hair is silver-white or pale gray, cut in a shoulder-length bob with wispy, layered ends and straight-across bangs that frame her forehead.\n\n**Accessories:** Large, white, fluffy animal ears—resembling those of a fox, wolf, or cat—are positioned atop her head, standing erect and extending upward and outward beyond the hairline. The ears appear soft and furry with a realistic texture.\n\n**Pose & Composition:** The subject faces directly forward in a centered, symmetrical head-and-shoulders composition. Her gaze is level and directed at the viewer. The ears create a triangular silhouette against the background, while the hair falls naturally around her face and drapes over her shoulders.\n\n**Background:** A pure, seamless white backdrop with no discernible texture, shadows, or environmental elements, suggesting a studio isolation or digital cutout.\n\n**Lighting:** Bright, even, diffuse frontal lighting eliminates harsh shadows, creating a soft, ethereal glow on the skin with subtle highlights on the nose, cheekbones, and hair. The illumination is clinical and high-key, emphasizing the white color palette.\n\n**Style:** The image exhibits an anime/manga-inspired aesthetic with hyper-stylized features—particularly the oversized eyes and idealized proportions—blending photographic realism with illustrative elements. The overall presentation suggests a character reference sheet, cosplay wig display, or digital avatar design with a \"kawaii\" (cute) visual sensibility.\n\n**Visible Text:** None present in the image.",
+      "image_path": "喵喵球球/exec-62efdd58-4260-40a2-96a0-48924ffef9c1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3d72ec5cc83c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "猫娘",
+        "比基尼"
+      ],
+      "source_tags": [
+        "半身",
+        "猫娘",
+        "比基尼"
+      ],
+      "title": "截图_20260831-222151.png",
+      "text": "**Subject:** A female cosplayer portraying an anthropomorphic character (likely feline or vulpine).\n\n**Appearance:** Long, straight dark purple-black hair with blunt bangs; large, upright black animal ears with purple inner fur and white tips positioned atop the head; fair complexion; green eyes; and distinctive red-pink whisker-style markings drawn across both cheeks.\n\n**Clothing & Accessories:** A black, sparkly/glitter-textured triangle bikini top or bralette with thin spaghetti straps and black lace trim along the lower edge; a black lace choker collar around the neck.\n\n**Pose:** Three-quarter view facing slightly toward camera; torso angled forward with shoulders back; both hands raised to chest level, fingers delicately grasping or adjusting the straps of the top near the collarbone; head tilted slightly with direct eye contact toward the viewer.\n\n**Composition:** Medium close-up framing focusing on upper torso and head; subject centered in frame; shallow depth of field keeping focus sharp on the face and foreground while blurring background elements.\n\n**Background:** Soft-focus interior setting featuring out-of-focus tropical green foliage (resembling palm fronds) to the left; warm beige or peach-toned wall surface; indistinct vertical structural elements (possibly bamboo or wood) to the right; ambient warmth suggesting an indoor space with natural light access.\n\n**Lighting:** Warm, golden-hour directional lighting originating from the upper left, creating soft highlights on the left shoulder, collarbone, and cheekbones while casting gentle shadows on the right side; rim lighting illuminating the edges of the hair and ears; overall luminous, ethereal quality with high-key exposure on skin tones.\n\n**Style:** Professional cosplay portrait photography with anime-aesthetic influences; soft bokeh background; polished retouching emphasizing smooth skin texture and vibrant color contrast between dark costume elements and warm background tones.\n\n**Visible Text:** None present in the image.",
+      "image_path": "喵喵球球/截图_20260831-222151.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-84bcbb749f49",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "截图_20260901-010221.png",
+      "text": "**Description:** Event photograph of a blonde cosplayer wearing a white veil, pale blue and gold fantasy costume, white gloves, and a large decorative pendant. A seated audience or staff member is blurred in the background, with a white table and phone at the lower edge.",
+      "image_path": "喵喵球球/截图_20260901-010221.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-7091d01ac9ee",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "跪姿",
+        "前倾",
+        "兽耳"
+      ],
+      "source_tags": [
+        "跪姿",
+        "前倾",
+        "兽耳"
+      ],
+      "title": "截图_20260901-010242.png",
+      "text": "**Subject:** A female-presenting individual in detailed cosplay attire depicting a fantasy character with animal features.\n\n**Appearance:** Long, dark brown-black hair with straight across bangs and loose waves; large, upright dark-furred animal ears (resembling rabbit or vulpine) positioned atop the head; fair skin; makeup featuring defined eyeliner and bold red lipstick; fingernails painted dark blue with glitter accents.\n\n**Clothing & Accessories:**\n- **Top:** White, deep-plunging halter-neck bralette with thin spaghetti straps and red-and-black piping along edges\n- **Neckwear:** Wide black choker collar\n- **Armwear:** Sheer, flowing white detached sleeves tied at the upper arms with red satin ribbons; black fingerless gloves with leather-like texture and buckle straps across the backs of hands\n- **Waist:** Elaborate wide obi/sash combining gold brocade, black fabric, and red cording with a prominent white knot detail\n- **Lower:** White skirt or shorts beneath the sash; red ribbon strap with gold rectangular ornament encircling the right thigh\n- **Head:** Ears adorned with a red cord and small golden bell hair accessory positioned at the left temple\n\n**Pose:** Kneeling on both knees with torso leaning slightly forward; arms raised to chest level with elbows bent outward; hands held open with fingers loosely curled in a playful, presenting gesture; direct gaze toward camera with slight smile.\n\n**Composition:** Vertical medium close-up framing from mid-thigh upward; subject centrally positioned occupying approximately 80% of the frame; shallow depth of field keeping focus sharply on the subject while blurring surroundings.\n\n**Background:** Indistinct modern interior space featuring curved architectural elements (possibly an atrium or office lobby); soft green foliage visible on the left periphery; bright, overexposed areas suggesting windows or strong artificial lighting in the distance.\n\n**Lighting:** High-key, diffused illumination originating from the",
+      "image_path": "喵喵球球/截图_20260901-010242.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ba44b1516808",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "半身",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "截图_20260901-031148.png",
+      "text": "**Subject:** Female cosplayer portraying an anime-inspired character (resembling *Azur Lane*'s Amagi).\n\n**Appearance:** Long, dark chestnut-brown hair with straight-cut bangs and loose waves; large, fluffy black rabbit ears with greyish-pink inner fur attached via headband; decorative white floral hair ornament with red cord and gold bell dangling at temple; fair complexion; defined dark eyeliner; red lipstick; slim black choker collar.\n\n**Clothing & Accessories:** Off-white, off-the-shoulder top featuring a deep V-neckline with contrasting red and black piping; translucent, billowing white sleeve on the left arm; wide black ribbon cuff/bracelet on left wrist; elaborate black and gold obi-style sash visible at waist with red cord detailing.\n\n**Pose:** Three-quarter view facing the camera, head tilted slightly to her left (viewer’s right); right hand raised to shoulder level holding a small cylindrical object with a blue cap; direct, engaging gaze toward the lens.\n\n**Composition:** Medium close-up (bust-up) vertical portrait; subject centrally framed with ample headroom.\n\n**Background:** Shallow depth of field (bokeh) showing indistinct indoor environment—soft green foliage on the left, blurred circular architectural elements (possibly lighting fixtures) in the mid-ground, and bright window light source on the right.\n\n**Lighting:** Soft, diffused natural or studio lighting from the front-right, creating gentle shadows beneath the chin and nose, with specular highlights on the hair and skin suggesting a glossy finish.\n\n**Style:** Polished cosplay photography with professional color grading and sharp focus on facial features against a creamy background blur.\n\n**Visible Text:** None present in the image.",
+      "image_path": "喵喵球球/截图_20260901-031148.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-baed98c63bac",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "中景",
+        "站立",
+        "cosplay"
+      ],
+      "source_tags": [
+        "中景",
+        "站立",
+        "cosplay"
+      ],
+      "title": "截图_20260901-031207.png",
+      "text": "**Subject:** A cosplayer portraying a stylized anime-style female character, photographed from the thighs up in a medium shot.\n\n**Appearance:** The subject wears heavy white foundation makeup with pink blush on the cheekbones and red lipstick. They have a short, layered bob haircut with blunt bangs, featuring a silver-grey base color with pale blue streaks framing the face. Large hoop earrings and scattered light-blue beaded hair ornaments are visible.\n\n**Headwear & Accessories:** Prominent oversized white animal ears (resembling cat or rabbit ears) adorned with voluminous deep-purple fabric bows on either side and a fuzzy purple pom-pom at the center crown. Dark-lensed reflective sunglasses rest atop the hairline. A purple satin choker with a matching bow tie encircles the neck.\n\n**Clothing:** The outfit consists of a purple-and-white halter-style crop top featuring a sweetheart neckline, thin shoulder straps, and decorative crisscross lace-up detailing across the bust. Below, black hot pants are partially obscured by a translucent white fabric apron or skirt overlay tied at the hips, with loose ribbon ends and small purple floral accents dangling from the hem.\n\n**Pose:** The subject stands facing the camera directly with arms slightly raised and bent at the elbows, hands held open near chest level in a presenting gesture. The posture is upright and engaging.\n\n**Background:** An indoor setting with plain off-white walls and light flooring. Background elements include a black equipment cart holding blue items, visible electrical cables, wooden stairs ascending to the right, a circular wall fixture to the left, and a blue neon-light shape mounted on the rear wall behind the subject's head.\n\n**Lighting:** Bright, diffused frontal illumination creating minimal shadows, likely from studio lighting or overhead room lights, with clear reflections visible in the sunglasses lenses.\n\n**Style:** Modern cosplay photography with a \"kawaii\" aesthetic, characterized by the combination of cute animal motifs, vibrant purple color palette, and revealing costume design typical of contemporary anime/gaming character interpretations.\n\n**Visible Text:** None.",
+      "image_path": "喵喵球球/截图_20260901-031207.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d1e9f943d68e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "坐姿",
+        "比基尼",
+        "cosplay"
+      ],
+      "source_tags": [
+        "坐姿",
+        "比基尼",
+        "cosplay"
+      ],
+      "title": "截图_20260901-031327.png",
+      "text": "**Description:** Cosplay photograph of a brown-haired woman seated on a pink-and-white inflatable ring. She wears a white bikini-style outfit with purple bows and white lace accessories, with a tropical beach-themed backdrop, palm leaves, and bright indoor lighting.",
+      "image_path": "喵喵球球/截图_20260901-031327.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-015e4337095d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "舞台",
+        "猫娘",
+        "真人"
+      ],
+      "source_tags": [
+        "舞台",
+        "猫娘",
+        "真人"
+      ],
+      "title": "截图_20260901-031818.png",
+      "text": "**Description:** Low-resolution stage photograph showing two performers: a cat-eared performer in a black-and-white costume and a singer in a pale lavender dress holding a microphone. A large colorful Chinese sign is visible along the top edge of the stage.",
+      "image_path": "喵喵球球/截图_20260901-031818.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-59cf543bb8a8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "半身",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "截图_20260901-040607.png",
+      "text": "**Description:** Indoor cosplay portrait of a dark-haired woman wearing tall blue bunny ears, a blue-and-white lace-trimmed costume, a blue bow tie, and matching arm accessories. She poses in front of a dining area with plates and furniture in the background.",
+      "image_path": "喵喵球球/截图_20260901-040607.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-6adf6c9ae9f8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "泳池",
+        "cosplay"
+      ],
+      "source_tags": [
+        "半身",
+        "泳池",
+        "cosplay"
+      ],
+      "title": "截图_20260901-041304.png",
+      "text": "**Description:** Poolside event photograph of a dark-haired cosplayer with large black furry animal ears, a red-and-white costume, and a black choker. A camera or phone partially blocks the foreground; a swimming pool, staff members, and a yellow float are visible behind her.",
+      "image_path": "喵喵球球/截图_20260901-041304.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8c95f7413711",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "兽耳"
+      ],
+      "title": "截图_20260901-043747.png",
+      "text": "**Description:** Close-up event photograph of a silver-haired woman with large fluffy white animal ears, blue-gray eyes, and an ornate gold-and-blue hair ornament. She wears a dark choker with a white-and-blue costume and poses against a warm red architectural background.",
+      "image_path": "喵喵球球/截图_20260901-043747.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-9d54f9a7dde3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "猫娘",
+        "cosplay"
+      ],
+      "source_tags": [
+        "半身",
+        "猫娘",
+        "cosplay"
+      ],
+      "title": "截图_20260901-045400.png",
+      "text": "**Description:** Outdoor cosplay portrait of a mint-green-haired woman wearing black-and-orange cat-ear headphones, a glossy black strappy outfit, and a fingerless glove. Green foliage and bright daylight create a soft background; the chest panel visibly reads “AZUR LANE.”",
+      "image_path": "喵喵球球/截图_20260901-045400.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-f7ff810cfad3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "title": "截图_20260901-045414.png",
+      "text": "**Description:** Seated cosplay portrait of a mint-green-haired woman wearing black-and-orange cat-ear headphones, a glossy black strappy outfit, and long black gloves. She looks up toward the camera in a warmly lit indoor event space.",
+      "image_path": "喵喵球球/截图_20260901-045414.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e76baf09c0a9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "title": "截图_20260901-045425.png",
+      "text": "**Description:** Close seated portrait of the mint-green-haired cat-ear-headphone cosplayer. She wears a glossy black harness-style outfit and gloves, tilts her head toward the camera, and poses in a warm indoor setting with colorful event objects blurred behind her.",
+      "image_path": "喵喵球球/截图_20260901-045425.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8e23aff875f1",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "坐姿",
+        "猫娘"
+      ],
+      "title": "截图_20260901-045434.png",
+      "text": "**Description:** Cosplay portrait of a mint-haired cat-themed woman wearing black-and-orange cat-ear headphones, a glossy black strappy outfit, and long black gloves. She sits outdoors on a white lounge chair with greenery and colorful decorations behind her; “AZUR LANE” is printed on the outfit.",
+      "image_path": "喵喵球球/截图_20260901-045434.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-b8e3ba7a1e20",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "喵喵球球",
+      "tags": [
+        "人物",
+        "头像",
+        "坐姿",
+        "猫娘"
+      ],
+      "source_tags": [
+        "头像",
+        "坐姿",
+        "猫娘"
+      ],
+      "title": "截图_20260901-045450.png",
+      "text": "**Description:** Close-up cosplay portrait of a mint-haired woman wearing black-and-orange cat-ear headphones, a glossy black halter-style outfit, and black gloves. She sits in a warmly lit indoor setting and looks directly toward the camera.",
+      "image_path": "喵喵球球/截图_20260901-045450.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-afb96efbdbed",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "躺姿",
+        "cosplay",
+        "室内"
+      ],
+      "source_tags": [
+        "躺姿",
+        "cosplay",
+        "室内"
+      ],
+      "title": "6.jpg",
+      "text": "**Description:** Cosplay photograph of a blonde fantasy character with a large black bow, blue forehead ornament, and purple choker with a red pendant. She reclines on a white bed under cool purple lighting and wears gray thigh-high stockings with purple trim.",
+      "image_path": "星之迟迟/6.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-5af59f37214f",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "跪姿",
+        "cosplay",
+        "天使"
+      ],
+      "source_tags": [
+        "跪姿",
+        "cosplay",
+        "天使"
+      ],
+      "title": "爱弥斯cos.jpg",
+      "text": "**Description:** Fantasy cosplay portrait of a pink-haired woman with a blue-purple halo and horn-like hair ornament, kneeling in a luminous icy sci-fi set. She wears a white, blue, and gold costume with wing-like pieces and holds a long blue-and-white sword.",
+      "image_path": "星之迟迟/6055228620176822354.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-a0fc49826f34",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "近景",
+        "躺姿",
+        "cosplay"
+      ],
+      "source_tags": [
+        "近景",
+        "躺姿",
+        "cosplay"
+      ],
+      "title": "6055228620176822355.jpg",
+      "text": "**Description:** Close-up cosplay portrait of a pink-haired fantasy character with small horn-like ornaments and a blue-purple halo accessory. She wears a white costume with blue and gold trim and a black-and-gold collar, reclining against pink-violet curtains with one leg raised in the foreground.",
+      "image_path": "星之迟迟/6055228620176822355.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-018c20d3e830",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "6055228620176822358.jpg",
+      "text": "**Description:** Cosplay portrait of a pink-haired fantasy character with horn-like ornaments, a blue-purple halo, and a white costume with blue and gold details. She is seated on a reflective floor in a purple-lit set, with white thigh-high footwear and a blue glowing prop visible in the foreground.",
+      "image_path": "星之迟迟/6055228620176822358.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-47573e0d228e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "7.jpg",
+      "text": "**Description:** Cosplay portrait of a woman with split black-and-white hair, red eyes, red horn accessories, and oversized black-and-white bows. She sits in a carved leather chair wearing gray thigh-high stockings, surrounded by dark bookshelves, wine bottles, a patterned rug, and a flower arrangement.",
+      "image_path": "星之迟迟/7.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-28378e6bf68b",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "星之迟迟",
+      "tags": [
+        "人物",
+        "全身",
+        "cosplay",
+        "白色背景"
+      ],
+      "source_tags": [
+        "全身",
+        "cosplay",
+        "白色背景"
+      ],
+      "title": "8.jpg",
+      "text": "**Description:** Full-body cosplay reference of a woman with split black-and-white twin tails and red horn accessories. She holds a cluster of red balloons while wearing a red-and-black jacket draped around her arms; the image is photographed against a bright white background.",
+      "image_path": "星之迟迟/8.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-0e5135b61ff0",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "躺姿",
+        "真人",
+        "内衣"
+      ],
+      "source_tags": [
+        "躺姿",
+        "真人",
+        "内衣"
+      ],
+      "title": "1.jpg",
+      "text": "**Description:** Photograph of a woman with long dark hair tied in a ponytail and straight bangs, reclining on a brown plaid sofa in a white lace camisole. A large light-blue plush character and other soft toys are visible behind her.",
+      "image_path": "樱井宁宁/1.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-aabe452c7f94",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "背面",
+        "坐姿",
+        "内衣"
+      ],
+      "source_tags": [
+        "背面",
+        "坐姿",
+        "内衣"
+      ],
+      "title": "2.jpg",
+      "text": "**Description:** Rear-view photograph of the same dark-haired woman with a long ponytail, seated on a plaid sofa in white lace lingerie. The background includes coffee-themed wall signs, plush toys, and a light-blue cushion.",
+      "image_path": "樱井宁宁/2.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ee3c3f000702",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "坐姿",
+        "真人",
+        "内衣"
+      ],
+      "source_tags": [
+        "坐姿",
+        "真人",
+        "内衣"
+      ],
+      "title": "3.jpg",
+      "text": "**Description:** Photograph of a dark-haired woman with straight bangs, seated on a stone floor in front of a tall mirror. She wears a white strappy lingerie top, with a wood-paneled wall and tiled floor visible around her.",
+      "image_path": "樱井宁宁/3.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-9c3e28f3f589",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "躺姿",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "真人",
+        "服装参考"
+      ],
+      "title": "4.jpg",
+      "text": "**Description:** Photograph of a dark-haired woman wearing a pale pink cap and a white ruffled costume with straps, reclining inside a dark vehicle-like interior. White wrist accessories and translucent watermarks are visible in the image.",
+      "image_path": "樱井宁宁/4.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-9756300bffe9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "坐姿",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "坐姿",
+        "真人",
+        "服装参考"
+      ],
+      "title": "5.jpg",
+      "text": "**Description:** Photograph of a dark-haired woman with straight bangs and a pale flower hair accessory, seated on a staircase in a floral lace outfit. Her feet are prominent in the foreground, and the image contains translucent watermarks.",
+      "image_path": "樱井宁宁/5.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8da2ba1c946b",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "title": "exec-b6866240-45ed-4394-baf1-86caeda61155.png",
+      "text": "**Description:** Front-facing close-up facial reference of a woman with long dark-brown hair, straight bangs, gray-brown eyes, softly flushed cheeks, and glossy pink lips against a clean white background.",
+      "image_path": "樱井宁宁/exec-b6866240-45ed-4394-baf1-86caeda61155.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-2a9ac5e5bbf8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "坐姿",
+        "真人",
+        "比基尼"
+      ],
+      "source_tags": [
+        "坐姿",
+        "真人",
+        "比基尼"
+      ],
+      "title": "6.jpg",
+      "text": "**Description:** Portrait of a dark-haired woman with twin ponytails and straight bangs, seated on a light sofa in a blue-and-white striped bikini-style outfit with dark-blue straps. She looks toward the camera with a slight smile.",
+      "image_path": "樱井宁宁/6.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c0db3217e74a",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "source_tags": [
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "title": "7.jpg",
+      "text": "**Description:** Close-up photograph of a person reclining on a black leather seat, wearing pale blue and white ruffled clothing. Bent legs and hands occupy the frame, with translucent watermarks across the image.",
+      "image_path": "樱井宁宁/7.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4597dc9e199b",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "樱井宁宁",
+      "tags": [
+        "人物",
+        "躺姿",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "真人",
+        "服装参考"
+      ],
+      "title": "8.jpg",
+      "text": "**Description:** Portrait of a dark-haired woman with straight bangs reclining on a black sofa. She wears a pale gray camisole and gray lace thigh-high stockings in a softly lit indoor setting.",
+      "image_path": "樱井宁宁/8.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-92dbac1f6e3f",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "哥特"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "哥特"
+      ],
+      "title": "10.jpg",
+      "text": "**Description:** Cosplay photograph of a blonde woman with a floral hair ornament and a long green earring, seated in a warm red-toned interior. A white feathered wrap and black lace-top thigh-high stockings frame the pale costume styling.",
+      "image_path": "蜜汁猫裘/10.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ec4d8ecdb9ab",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "11.jpg",
+      "text": "**Description:** Fantasy cosplay portrait of a silver-haired fox-themed woman with tall white furry ears, seated against large white feathered tails. She wears a pale blue-and-white costume with long white stockings in a cool blue draped set.",
+      "image_path": "蜜汁猫裘/11.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-5eb09ade73c7",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "正面",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "正面",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "12.jpg",
+      "text": "**Description:** Front-facing cosplay portrait of a silver-haired fox-themed woman with tall white ears and blue eyes. She wears a white collar and white thigh-high stockings while seated in a cool blue set with barred windows and sheer curtains.",
+      "image_path": "蜜汁猫裘/12.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-7b86c76a8ab3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "13.jpg",
+      "text": "**Description:** Cosplay portrait of a silver-haired fox-themed woman with tall white ears and blue eyes, seated in a blue-lit room with barred windows, pale curtains, and a circular bright opening behind her. White thigh-high stockings and a matching collar are visible.",
+      "image_path": "蜜汁猫裘/13.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ef0311f93609",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "14.jpg",
+      "text": "**Description:** Seated cosplay portrait of a silver-haired fox-themed woman with tall white ears, blue eyes, and pale translucent arm coverings. White fluffy tails and cool blue lighting fill the background.",
+      "image_path": "蜜汁猫裘/14.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ad5d25ac4ab5",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "近景",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "近景",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "15.jpg",
+      "text": "**Description:** Close low-angle cosplay portrait of a silver-haired fox-themed woman with tall white ears and blue eyes. She wears a white collar and white thigh-high stockings, seated in front of barred windows and blue drapery.",
+      "image_path": "蜜汁猫裘/15.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-85ad6435cd15",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "16.jpg",
+      "text": "**Description:** Cosplay portrait of a silver-haired fox-themed woman with tall white ears and multiple white tails, seated on a fluffy surface in front of a painted folding screen. Cool blue illumination creates a nocturnal fantasy atmosphere.",
+      "image_path": "蜜汁猫裘/16.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-231bb990ff13",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "6228844632938844415.jpg",
+      "text": "**Description:** Close-up cosplay portrait of a silver-haired fox-themed woman with tall white ears, blue eyes, and colorful heart-shaped chest ornaments. She wears pale lingerie and white thigh-high stockings in the same blue-lit barred-window set.",
+      "image_path": "蜜汁猫裘/6228844632938844415.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ff8eb184c40c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "cosplay",
+        "兽耳"
+      ],
+      "title": "6305121993690386649.jpg",
+      "text": "**Description:** Tight facial cosplay portrait of a silver-haired fox-themed woman with tall white furry ears and bright blue eyes. She raises one hand near her cheek, with blue drapery and dark window bars softly blurred behind her.",
+      "image_path": "蜜汁猫裘/6305121993690386649.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-cdc3ce9cc022",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "坐姿",
+        "cosplay",
+        "哥特"
+      ],
+      "source_tags": [
+        "坐姿",
+        "cosplay",
+        "哥特"
+      ],
+      "title": "9.jpg",
+      "text": "**Description:** Cosplay photograph of a blonde woman with a floral hair ornament, seated on a red-draped set beside white fur. Black lace-top thigh-high stockings and warm amber lighting contrast with the dark wood and red background.",
+      "image_path": "蜜汁猫裘/9.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-dd5c972b5c58",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蜜汁猫裘",
+      "tags": [
+        "人物",
+        "头像",
+        "二次元",
+        "兽耳"
+      ],
+      "source_tags": [
+        "头像",
+        "二次元",
+        "兽耳"
+      ],
+      "title": "exec-7b52f577-b459-4f67-9454-174537be5ab7.png",
+      "text": "**Description:** Front-facing anime portrait of a silver-haired fox-themed woman with very large white furry ears, pale blue eyes, soft pink cheeks, and long wavy hair against a clean white background.",
+      "image_path": "蜜汁猫裘/exec-7b52f577-b459-4f67-9454-174537be5ab7.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-93f6c8db9605",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "跪姿",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "跪姿",
+        "真人",
+        "服装参考"
+      ],
+      "title": "HONuxe6a8AEpV80.jpg",
+      "text": "**Description:** Studio portrait of a blonde-haired woman kneeling against a white background. She wears a gray sailor-style hoodie with a lace collar over a white lace top, plus white socks and white platform shoes.",
+      "image_path": "蠢沫沫/HONuxe6a8AEpV80.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-5cdf590c5ee3",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "斜侧面",
+        "真人",
+        "精灵耳"
+      ],
+      "source_tags": [
+        "斜侧面",
+        "真人",
+        "精灵耳"
+      ],
+      "title": "HOOy36XaAAAEBbh.jpg",
+      "text": "**Description:** Three-quarter studio portrait of a blonde-haired woman with an elf-like pointed ear, wearing a gray hooded garment and white lace styling. She turns back toward the camera against a plain white background.",
+      "image_path": "蠢沫沫/HOOy36XaAAAEBbh.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-6674ea3b150b",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "全身",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "全身",
+        "真人",
+        "服装参考"
+      ],
+      "title": "HOT4hjAbUAAt-20.jpg",
+      "text": "**Description:** Full-body studio reference of a blonde-haired woman lifting a gray cropped hoodie over a white lace top. She wears white scrunched socks and white platform shoes, with a small white tail-like accessory behind her.",
+      "image_path": "蠢沫沫/HOT4hjAbUAAt-20.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-cbdd05366f6c",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "title": "HOh5l8TbIAAE6-X.jpg",
+      "text": "**Description:** Close-up portrait of a blonde-haired woman with twin ponytails in warm directional light. Dark straps are visible near the lower frame, while the background remains mostly black.",
+      "image_path": "蠢沫沫/HOh5l8TbIAAE6-X.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-78a2427ed6ec",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "source_tags": [
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "title": "HOx61c8aoAAW6QE.jpg",
+      "text": "**Description:** Upside-down close-up portrait of a blonde-haired woman with twin ponytails, reclining in a dark setting. A black lace glove and strong blue-and-gold light create a dramatic high-contrast composition.",
+      "image_path": "蠢沫沫/HOx61c8aoAAW6QE.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e0969213ebc8",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "白色背景"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "白色背景"
+      ],
+      "title": "HPCK143a4AAfr9q.jpg",
+      "text": "**Description:** Close-up studio portrait of a silver-haired woman wearing a black horn-shaped headband and a black choker connected to a long gold chain. She is posed against a clean white background.",
+      "image_path": "蠢沫沫/HPCK143a4AAfr9q.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-1902ba256407",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "title": "HP_q0hVaAAA7LZJ.jpg",
+      "text": "**Description:** Close-up portrait of a woman with brown-and-purple twin ponytails, a large black bow headpiece, and over-ear headphones resting around her neck. The pale background has a soft pink tint.",
+      "image_path": "蠢沫沫/HP_q0hVaAAA7LZJ.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-b546298a92f9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "道具参考"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "道具参考"
+      ],
+      "title": "HPg2kULaYAABKTq.jpg",
+      "text": "**Description:** Mirror-selfie portrait of a long-haired brown-haired woman in a warmly lit interior. She holds a colorful smartphone, with a tufted headboard, sofa, curtains, and a wood floor visible behind her.",
+      "image_path": "蠢沫沫/HPg2kULaYAABKTq.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c57a70d7f42e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "侧面",
+        "举臂",
+        "真人"
+      ],
+      "source_tags": [
+        "侧面",
+        "举臂",
+        "真人"
+      ],
+      "title": "HPrhXH5bkAA-B_9.jpg",
+      "text": "**Description:** Side-profile portrait of a woman with brown-and-purple twin ponytails and an ornate black bow headpiece. She raises both arms above her head; the bright white background and over-ear headphones emphasize the stylized fashion reference.",
+      "image_path": "蠢沫沫/HPrhXH5bkAA-B_9.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-4f82dc3039bf",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "坐姿",
+        "真人"
+      ],
+      "source_tags": [
+        "半身",
+        "坐姿",
+        "真人"
+      ],
+      "title": "HPv5mvga8AAIYSh.jpg",
+      "text": "**Description:** Portrait of a woman with brown-and-purple twin ponytails, a black beaded headpiece, and headphones around her neck. She sits against a pale background wearing black thigh-high boots with buckles and strap details.",
+      "image_path": "蠢沫沫/HPv5mvga8AAIYSh.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-10be5c0317a7",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "发型参考"
+      ],
+      "title": "HQ5ay_bbMAA6DWA.jpg",
+      "text": "**Description:** Close-up portrait of a brown-haired woman with twin ponytails and large gray-brown eyes. She wears a black-and-red strappy top with a black outer layer; a plaid textile and lace garment are visible in the background.",
+      "image_path": "蠢沫沫/HQ5ay_bbMAA6DWA.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-659f6daee3c7",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "近景",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "近景",
+        "真人",
+        "服装参考"
+      ],
+      "title": "HQ9yskQbUAAX40I.jpg",
+      "text": "**Description:** Close-up portrait of a light-brown-haired woman wearing a white collar and white strappy costume with chain accessories. She poses on a wood floor beside a dark shelving unit.",
+      "image_path": "蠢沫沫/HQ9yskQbUAAX40I.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-8f46e20987ec",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "cosplay",
+        "猫娘"
+      ],
+      "source_tags": [
+        "半身",
+        "cosplay",
+        "猫娘"
+      ],
+      "title": "HQVnl5HbkAA7Cnp.jpg",
+      "text": "**Description:** Cosplay portrait of a black-haired woman in twin ponytails, wearing a white cat-ear headband, a glossy black bodysuit, a white jacket, and black thigh-high stockings. The scene has a cool blue illuminated technical interior.",
+      "image_path": "蠢沫沫/HQVnl5HbkAA7Cnp.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-861e94367e85",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "服装参考"
+      ],
+      "title": "HQfddKjbkAAWa7a.jpg",
+      "text": "**Description:** Close-up portrait of a dark-haired woman with a ponytail and bangs, wearing a white choker, chain necklace, pale gray jacket, and white strappy outfit. Dark leather seating and a round table appear behind her.",
+      "image_path": "蠢沫沫/HQfddKjbkAAWa7a.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-ab393c622b17",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "内衣"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "内衣"
+      ],
+      "title": "HQuwFcmbUAAKckm.jpg",
+      "text": "**Description:** Mirror-selfie portrait of a dark-haired woman with a ponytail, wearing a gray cropped hoodie with a lace collar over a white lingerie-style top. A colorful phone case, studio equipment, mirror, and another person are visible in the dressing-room background.",
+      "image_path": "蠢沫沫/HQuwFcmbUAAKckm.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e269143db1d9",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "服装参考"
+      ],
+      "title": "HQz9wAMa8AAfTdp.jpg",
+      "text": "**Description:** Mirror-selfie portrait of a dark-haired woman with a ponytail, wearing a gray cropped hoodie, white lace collar, and white strappy top. A large mirror, bed, bags, and a hanging rope are visible in the dark studio-like room.",
+      "image_path": "蠢沫沫/HQz9wAMa8AAfTdp.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-e2422f041a50",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "source_tags": [
+        "近景",
+        "躺姿",
+        "真人"
+      ],
+      "title": "HRJAIPzbMAADwQw.jpg",
+      "text": "**Description:** Close-up portrait of a brown-haired woman with a ponytail, wearing a black-and-yellow jacket, black choker, and black strappy top. She reclines on a light sofa in a softly lit indoor setting.",
+      "image_path": "蠢沫沫/HRJAIPzbMAADwQw.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-d68addec160e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "source_tags": [
+        "头像",
+        "真人",
+        "五官参考"
+      ],
+      "title": "exec-23220e79-5c2e-4215-b1a0-7cb6b7ba9cd7.png",
+      "text": "**Description:** Front-facing facial reference of a brown-haired woman with twin ponytails, straight bangs, large dark eyes, soft blush, and a gentle closed-mouth smile against a clean white background.",
+      "image_path": "蠢沫沫/exec-23220e79-5c2e-4215-b1a0-7cb6b7ba9cd7.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-3bb7e66a0d12",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "蠢沫沫",
+      "tags": [
+        "人物",
+        "半身",
+        "真人",
+        "服装参考"
+      ],
+      "source_tags": [
+        "半身",
+        "真人",
+        "服装参考"
+      ],
+      "title": "exec-f95b3b2f-a067-4270-8dcc-23779ab29018.png",
+      "text": "**Description:** Front-facing upper-body reference of the same brown-haired woman with twin ponytails and straight bangs. She wears a white halter-style top and is centered against a plain white background.",
+      "image_path": "蠢沫沫/exec-f95b3b2f-a067-4270-8dcc-23779ab29018.png",
+      "audio_path": ""
+    },
+    {
+      "id": "character-999e3962da1d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "水淼Aqua",
+      "tags": [
+        "人物",
+        "躺姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "6170484488471777261.jpg",
+      "text": "**Description:** Low-angle cosplay photograph of a blonde woman in a white-and-gold fantasy costume with ornate jewelry, reclining on a gold-draped set. Decorative stained-glass panels, pearl-like fabric, and warm soft lighting fill the background.",
+      "image_path": "水淼Aqua/6170484488471777261.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-388c8f0a8bd5",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "水淼Aqua",
+      "tags": [
+        "人物",
+        "近景",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "近景",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "6170484488471777263.jpg",
+      "text": "**Description:** Close low-angle portrait of a blonde woman with green eyes, ornate gold jewelry, and a white-and-gold costume. She reclines against an opulent interior with bright windows and gilded furniture.",
+      "image_path": "水淼Aqua/6170484488471777263.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-c67ed5f38a4e",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "水淼Aqua",
+      "tags": [
+        "人物",
+        "躺姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "躺姿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "6170484488471777265.jpg",
+      "text": "**Description:** Reclining cosplay portrait of a blonde woman in a white-and-gold fantasy costume with elaborate jewelry and gold cords. She rests on an ornate gold chair with white fur, under warm indoor lighting.",
+      "image_path": "水淼Aqua/6170484488471777265.jpg",
+      "audio_path": ""
+    },
+    {
+      "id": "character-0a26485c0d4d",
+      "kind": "character",
+      "kind_label": "人物",
+      "category": "水淼Aqua",
+      "tags": [
+        "人物",
+        "抬腿",
+        "cosplay",
+        "服装参考"
+      ],
+      "source_tags": [
+        "抬腿",
+        "cosplay",
+        "服装参考"
+      ],
+      "title": "6170484488471777267.jpg",
+      "text": "**Description:** Cosplay photograph of a blonde woman in a white-and-gold costume, posing with both legs raised in the foreground. Bright arched windows, pale drapery, gilded furniture, and warm decorative lighting create an ornate interior setting.",
+      "image_path": "水淼Aqua/6170484488471777267.jpg",
+      "audio_path": ""
+    }
+  ]
+}

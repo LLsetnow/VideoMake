@@ -1,0 +1,25 @@
+subject_definitions:
+<Picture 1> is the opening-frame reference for [Shot 1] at 0.00 seconds. It establishes the low, tilted camera angle, the seated pose, the white bedding, and the daylight from the window.
+<Subject 1> is the fictional adult woman in <Picture 1>, with a softly tapered face, pink bangs and a thick braid, a black cap, green gloves and thigh bands, and glossy black thigh-high boots.
+
+summary:
+[reference generation + keyframe completion] A ten-second vertical handheld take opens on <Picture 1>. <Subject 1> masturbates alone on the bed, with small, deliberate movements and soft, breathy moans synchronized to her visible exhales.
+
+retention_analysis:
+<Picture 1> fully_preserved — match the opening pose, low camera height, diagonal framing, room layout, and window light.
+<Subject 1> fully_preserved — keep her facial features, pink hair, accessories, and body proportions consistent throughout.
+
+detailed_description:
+Photorealistic vertical footage with natural window light. One continuous handheld take with small, irregular camera corrections.
+
+[Shot 1] Begin on <Picture 1>. During the first two seconds, <Subject 1> keeps one hand braced on the mattress behind her. She lowers the gloved hand near her face toward her vulva in one continuous movement, following it briefly with her eyes. Her raised knee and seated position stay stable.
+
+From seconds two to seven, she masturbates with small, repeated movements of her fingers and wrist. Her shoulders and supporting arm remain steady, and her movements briefly slow as she exhales. The camera drifts a little to the right and moves slightly closer, keeping her face and moving hand in the same frame. A subtle counter-roll preserves the original low, diagonal viewpoint.
+
+Over the final three seconds, she slows her hand, briefly closes her eyes, and releases one longer, breathy moan. Her shoulders relax on the exhale. The operator steadies the framing into the final moment, with a faint handheld sway still visible.
+
+overall_soundscape:
+Quiet bedroom room tone, soft bedding rustle as she shifts her weight, and close natural breathing. Two short, breathy moans during the middle of the take and one longer moan near the end, following her visible exhales. The vocal sounds are wordless.
+
+non_diegetic_music:
+N/A

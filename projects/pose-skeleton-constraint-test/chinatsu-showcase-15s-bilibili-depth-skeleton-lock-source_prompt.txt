@@ -1,0 +1,35 @@
+subject_definitions:
+<Subject 1> is Chinatsu from <Picture 1>, with silver-gray wavy hair, a turquoise bow, light eyes, black hair clips, a white blouse, red tie, black choker, white angel wings, pink winged backpack, striped arm and leg warmers, black layered skirt, thigh straps, white socks, and pink platform shoes. Preserve her face, proportions, costume, accessories, and 2D anime rendering in every shot.
+<Picture 1> is the full-body three-view character sheet for Chinatsu's identity, costume, proportions, accessories, and 2D style; use it only for identity and design, never reproduce its sheet layout or multiple views.
+<Picture 2> is the close frontal face reference for Chinatsu's eyes, bangs, hair framing, facial proportions, and expression design; exclude its crop and background.
+<Video 1> is a silent 24fps derived motion-control video made from the supplied Bilibili reference: every frame combines an 8-bit Depth Anything V2 grayscale depth map with its same-frame RGB DWPose skeleton. Use it only as hidden structural guidance for body joints, limb directions, gesture timing, blocking, camera trajectory, framing scale, and depth layers. Never render its depth field, skeleton lines, keypoints, source performer, clothing, room, furniture, props, UI, text, logo, or watermark.
+<Audio 1> is the first 15 seconds of SCARED LONELY FUNK from the user's NetEase Cloud Music album, directly reused 1:1 as the complete final audio track.
+
+summary:
+[full-reference motion transfer + locked-source audio] Create a 15-second 9:16 vertical Chinatsu showcase in a clean bright studio. Preserve <Subject 1> and the facial identity from <Picture 2>. Use <Video 1> as hidden per-frame motion, camera, and depth control: follow its readable action trajectory and playful timing, while replacing the source performer and environment with Chinatsu. Preserve <Audio 1> exactly from 00:00.000 through 00:15.000. The reference video is approximately 10.0417 seconds; after its final readable gesture, extend the last cute pose into a stable polished hold until 00:15.000. Use five clearly separated performance beats, with restrained match cuts only where they support the reference trajectory.
+
+retention_analysis:
+<Subject 1>: fully_preserved - preserve Chinatsu's identity, face, hair, costume, accessories, anatomy, proportions, wings, and 2D rendering.
+<Picture 1>: partially_preserved - transfer its character design while excluding the turnaround-sheet layout and duplicate views.
+<Picture 2>: fully_preserved - preserve facial structure, eyes, bangs, hair framing, and expression identity while excluding its crop and background.
+<Video 1>: partially_preserved - preserve per-frame joint geometry, limb direction, gesture timing, body blocking, camera trajectory, framing scale, and depth ordering; exclude all source appearance and technical map artwork.
+<Audio 1>: fully_copy - reuse the supplied 15-second source clip as the only final audio track, without replacement or extension.
+
+detailed_description:
+The target is a polished 2D anime character showcase in 9:16. Use a seamless pure-white to very pale mint studio background, soft even lighting, a faint grounding shadow, crisp linework, gentle cel shading, and clean negative space. Keep one coherent Chinatsu with stable anatomy, opaque clothing, consistent wings and backpack straps, and readable hands. No text, logos, watermarks, props, extra people, furniture, room details, sparkle overlays, visible skeletons, depth-map artifacts, or picture-in-picture source frames. <Video 1> is invisible structural control, never a visual layer.
+
+[Shot 1] 00:00.000-00:03.000. Begin from the opening posture and framing trajectory encoded by <Video 1>. Chinatsu is centered in a medium-full-body view, settles her weight, lifts one hand beside her cheek, gives a tiny two-finger wave, blinks once, and smiles. Let her bow and skirt edge make a restrained bounce. Preserve the source motion arc and depth ordering while keeping the studio background minimal.
+
+[Shot 2] 00:03.000-00:06.000. Continue the next readable gesture from <Video 1> with a smooth match cut to a closer frontal or three-quarter framing. Chinatsu leans slightly forward, places one hand across her upper chest, taps once with her fingertips, then opens the free hand toward the viewer. Add a brief head tilt and a warm small smile. Keep face, hair ornaments, tie, wings, and arm warmers unchanged.
+
+[Shot 3] 00:06.000-00:09.000. Follow <Video 1>'s middle body-blocking and camera depth change into a medium-full three-quarter view. Chinatsu shifts her hips and leans gently to one side, points the weight-bearing foot inward, raises one hand near her shoulder into a small finger-heart gesture, and lets the opposite arm follow the hip. She sways back toward center and settles cleanly.
+
+[Shot 4] 00:09.000-00:12.000. Continue the raised-arm trajectory and framing scale encoded by <Video 1>. Chinatsu shifts onto one leg, raises one bent arm near shoulder level, reaches the other arm outward, gives a small wave, and winks once on the next musical accent. Keep the silhouette readable, the camera movement small and smooth, and the pale studio free of graphic effects.
+
+[Shot 5] 00:12.000-00:15.000. Resolve the final action from <Video 1> into a wholesome medium-full presentation pose. Chinatsu lowers into a compact one-knee-up pose, keeps one hand beside her face, makes two small cat-paw taps with the free hand, and gives a tiny shoulder bounce. Near 00:14.300 she makes one final playful wink, then holds the cute pose and soft smile through 00:15.000. Keep wings, knee, socks, and platform shoes visible. The staging is wholesome and presentation-like, never reclining or suggestive. Preserve <Audio 1> continuously across all five beats.
+
+overall_soundscape:
+No newly generated dialogue, foley, ambience, or sound effects; the only audible track is the directly reused music from <Audio 1>. The derived <Video 1> is silent and must contribute no source audio.
+
+non_diegetic_music:
+<Audio 1> is directly reused 1:1 from 00:00.000 to 00:15.000 as the complete audience-only music track. Preserve its original tempo, vocal content, four-on-the-floor pulse, synth accents, dynamics, and stereo image. Do not generate replacement music, do not time-stretch it, and do not extend it beyond the supplied 15-second clip.

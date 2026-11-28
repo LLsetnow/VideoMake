@@ -1,0 +1,474 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "75",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "98",
+        0
+      ],
+      "ref_videos.ref_video_0": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "千夏原皮 · 全身参考"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 12.033333
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Chinatsu, whose original-skin full-body design comes from <Picture 1> and whose face and hair identity comes from <Picture 2>. Preserve her softly rounded oval face and tapered rounded chin; large round-almond eyes with slightly upturned corners, vivid yellow-orange-pink-teal-blue iris highlights, dark pupils, defined lashes, arched brows, small nose, pale-pink lips, fair skin, and faint rosy cheeks. Preserve her pale silver-gray softly wavy medium-length hair, heavy straight bangs, mint-green bow, black butterfly-and-cross ornament, crossed pink-and-mint clips, black pixel-style clip, and black dangling earrings. Preserve the original-skin outfit: white shirt, red heart-motif tie, black choker, small white angel wings, pink angel-wing backpack, striped fingerless arm warmers, black multilayered tutu skirt with wide white belt, pink thigh strap and side pouch, distressed white over-the-knee socks, striped leg warmers, and pink-and-white platform shoes with mint bows.\n<Subject 2> is the 404 Livehouse stage shown in <Picture 3>. Preserve its dark cool-blue venue, trusses, two mirrored disco balls, cyan/pink/yellow neon tubes, blue screen, speakers, monitors, star guitar, red barrier, and pink cat banners as environmental design. This is the performance location, not a flat plate.\n<Video 1> is the silent 864x480, 24fps structural reference prepared from the uploaded landscape video. Use it only for the pose sequence, body turns, gesture timing, camera path, framing changes, depth order, lighting rhythm, and overall movement density. Do not reproduce its white-clay figure, specific face, hairstyle, identity, monochrome material, source background treatment, watermark, technical artifacts, or original soundtrack.\n\nsummary:\n[reference generation] Create a new 12.25-second 16:9 landscape 480p high-end 3D anime music-video performance starring <Subject 1> on <Subject 2>. Use <Picture 1> for the original-skin costume, wings, backpack, proportions, and accessories; use <Picture 2> for the stable face, hair, eyes, and facial accessories; use <Picture 3> for the 404 Livehouse stage environment and lighting design; use <Video 1> only for motion, camera, pose timing, and visual rhythm. Re-stage the solo performance as one continuous take with no hard cuts, preserving Chinatsu's original colors and identity. Generate fresh synchronized native stereo audio; do not reuse the source video's soundtrack or any recognizable melody.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - retain Chinatsu's face, multicolored eyes, silver-gray hair, mint bow, hair ornaments, earrings, original-skin outfit, wings, backpack, body proportions, and recognizable 3D anime identity; only pose, expression, and camera relationship change.\n<Subject 2> (appears throughout [Shot 1]): fully_preserved - retain the 404 Livehouse layout, trusses, disco balls, blue screen, speakers, star guitar, red barrier, pink banners, and cool neon atmosphere; adapt depth around the performer.\n<Video 1> (pose sequence, timing, camera path, framing, depth order, and lighting rhythm): partially_preserved - transfer its observable movement structure and temporal rhythm while replacing the source figure, material, identity, exact background treatment, watermark, technical artifacts, and audio.\n\ndetailed_description:\nThe target is a high-end 3D anime music-video performance in a 16:9 landscape frame, placing <Subject 1> on <Subject 2>'s center platform with real stage depth rather than a pasted background. The lighting effect is a cool blue overhead wash from the trusses, narrow cyan-white spot beams through soft haze from behind and above, magenta and yellow neon accents on side trusses, moving pinpoints from the two mirrored disco balls, and a pale rim light tracing Chinatsu's hair, wings, cheek, and shoulders. Let the red barrier and pink banners add low warm foreground contrast while the central screen stays a soft blue glow. Keep her fully colored in silver-gray, white, black, pink, and mint; never turn her into monochrome clay. No split panels, skeletons, tracking marks, watermarks, or separate title card; stage signage stays naturally integrated and secondary. One continuous take, no hard cuts or scene changes.\n\n[Shot 1] At 00:00.000, <Subject 1> stands alone in a slightly off-center three-quarter rear full-body composition on the center stage, matching <Video 1>'s opening spatial relationship without copying its character. Shoulders relaxed, arms natural, one foot behind the other. Begin a slow, small-amplitude Arc Shot toward her side. She shifts weight and turns her torso; hair, bow, wings, backpack, warmers, and skirt respond with subtle secondary motion.\n\nFrom approximately 00:02.500 to 00:05.500, continue the uninterrupted arc into a side-to-front medium-full view. <Subject 1> turns her shoulders toward the lens, raises one forearm across her chest, opens it outward, and lets the other follow a beat later. Her expression stays cute and composed, with stable eyes and mouth. Add gentle lateral Tracking Shot and small slow Push In, preserving <Video 1>'s timing. The cyan-white beam sweeps through haze while magenta and yellow accents remain on the trusses.\n\nFrom approximately 00:05.500 to 00:08.200, make a controlled Tilt Down toward her legs and ease back upward. She performs a compact step-and-sway: one foot slides diagonally, ankles briefly cross, and skirt layers flare then settle. Keep shoes, warmers, socks, thigh strap, and floor contact readable; no limb duplication or costume merging.\n\nFrom approximately 00:08.200 to 00:10.400, rise into a dramatic medium close-up. <Subject 1> lifts one arm above her head, tilts her face, and looks toward the lens; multicolored irises, pale-pink lips, bangs, clips, and earrings stay consistent. Use a small slow Push In with a clean hair-and-cheek rim highlight and soft disco-ball sparkles behind her.\n\nFrom approximately 00:10.400 to 00:12.250, the camera performs a smooth Pull Out with a small Arc Shot toward a front three-quarter full-body view. <Subject 1> completes the turn to face the camera, lowers the raised arm into a balanced finishing pose, and holds still for the final half second. Her wings and pink backpack settle naturally behind her. End on one stable, confident character pose with no extra person, no fade to black, and no title card.\n\noverall_soundscape:\nFresh venue room tone, faint ventilation, restrained shoe/floor contact, cloth and skirt rustle, hair/wing movement, and subtle backpack/accessory sounds follow the gestures. No dialogue, singing, character voice, or reused source audio.\n\nnon_diegetic_music:\nGenerate a fresh audience-only electronic dance-pop instrumental at moderate-fast tempo, with tight kick/snare, bright synth stabs, light bass, and sparse accents following camera arcs and pose changes. No vocals; do not copy the source melody, recording, or arrangement.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_stay_tonight_landscape_480p",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "千夏面部参考"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v1.2_768p_bf16.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "97": {
+    "inputs": {
+      "video": "/Users/apple/Documents/VideoMake/projects/千夏_StayTonight_横屏_480p_20260911/reference/StayTonight_reference_864x480_24fps_silent.mp4",
+      "force_rate": 24,
+      "force_size": "Disabled",
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "StayTonight 参考视频 · 24fps 静音结构参考"
+    }
+  },
+  "98": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/background/绝区零/404舞台.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "404 Livehouse 舞台场景参考"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the solitary adult traveler shown in <Picture 1>, wearing a simple off-white Tang-Song inspired long robe with a gray waist sash and tied black hair. Preserve the traveler's silhouette, robe construction, fabric texture, hair arrangement, body proportions, and restrained appearance throughout the video; the traveler never speaks and remains seen from behind or in distant three-quarter rear view.\n<Subject 2> is the original sky-palace corridor environment shown in <Picture 2>, with monumental vermilion pillars, restrained Tang-Song roof brackets, a dark polished reflective stone floor, cloud seas, distant temple silhouettes, and warm rays breaking through thin clouds. Preserve the architectural material language and cloud-palace atmosphere while allowing a new camera path and original spatial composition.\n\nsummary:\n[reference generation] Create a new 10-second 16:9 cinematic one-take video using <Picture 1> for the traveler's identity and clothing and <Picture 2> for the sky-palace environment. The traveler walks alone through a vast corridor suspended above a sea of clouds. Adapt the tutorial's two-stage logic into one H3 generation: lock a high-quality wide composition first, then create motion through a slow rear tracking push-in, long-lens spatial compression, robe movement, drifting clouds, and reflective light. No plot, no dialogue, no acting performance, no extra people, no readable text, no logos, no watermark, and no direct copy of any source frame.\n\nretention_analysis:\n<Picture 1> (<Subject 1>, all shots): fully_preserved - retain the traveler's off-white robe, gray sash, tied black hair, small distant silhouette, and rear-view identity.\n<Picture 2> (<Subject 2>, all shots): partially_preserved - retain the vermilion-pillared sky-palace, reflective floor, cloud sea, distant temples, warm sun rays, and realistic architectural material, while changing the exact framing and spatial arrangement into an original composition.\n\ndetailed_description:\nThe target video is a photorealistic cinematic 16:9 wide shot with restrained ancient Chinese architecture, warm early-golden light, realistic stone and wood textures, soft atmospheric haze, and a quiet monumental scale. Use one continuous take from beginning to end with no cuts, no transitions, and no sudden change of lens or location. Keep <Subject 1> and <Subject 2> visually consistent.\n\n[Shot 1] The opening composition is guided by <Picture 2>: a low, wide rear view looks down the long reflective corridor of <Subject 2>, with vermilion pillars receding toward a deep vanishing point on the right side of the frame, cloud seas opening beyond the left railing, and distant temple silhouettes suspended in mist. <Subject 1> appears very small near the far middle of the corridor, seen from behind in the off-white robe from <Picture 1>. For the first 02.500 seconds, the camera holds the monumental scale while <Subject 1> begins walking forward at a slow, natural pace.\n\nFrom 00:02.500 to 00:07.500, the camera performs a smooth rear tracking shot and slow push in at steady slow speed, following <Subject 1> along the corridor without overtaking the traveler. Use a long-lens compressed perspective to make the repeating pillars, floor reflections, and cloud layers stack into powerful depth. The robe hem and long sash move gently in the high-altitude wind; footsteps create small ripples in the reflected light. Clouds drift slowly below the railing, while warm rays move across the polished floor and pillars. Keep the traveler small enough to preserve the overwhelming scale.\n\nFrom 00:07.500 to 00:10.000, continue the same uninterrupted forward motion. The camera eases slightly closer and makes a very small rightward pan, revealing more of the distant suspended temples through thinning mist while keeping <Subject 1> centered near the vanishing point. End on a stable wide composition with the traveler still walking into the luminous depth of the corridor; do not create a dramatic pose, title card, or ending cut.\n\noverall_soundscape:\nHigh-altitude wind moves softly through the open corridor, with distant cloud movement, quiet fabric rustle, and measured footsteps on polished stone. Add faint wooden architecture creaks and one very distant temple bell near the final seconds, keeping the sound sparse and natural.\n\nnon_diegetic_music:\nA sparse instrumental score uses low sustained strings, soft guqin plucks, and widely spaced resonant tones at a slow tempo. Keep the music restrained, with a gradual low-volume swell during the forward push and no vocals, dramatic drop, or abrupt ending.\n",
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 1,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "60",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "61",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 6,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 2026081501
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/zhongshi_sky_palace_2pass_draft",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 10
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "38": {
+    "inputs": {
+      "width": [
+        "39",
+        0
+      ],
+      "height": [
+        "39",
+        1
+      ],
+      "upscale_method": "lanczos",
+      "keep_proportion": "stretch",
+      "pad_color": "0, 0, 0",
+      "crop_position": "center",
+      "divisible_by": 32,
+      "device": "cpu",
+      "image": [
+        "11",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJv2",
+    "_meta": {
+      "title": "Resize Image v2"
+    }
+  },
+  "39": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 1,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "二采分辨率"
+    }
+  },
+  "40": {
+    "inputs": {
+      "pixels": [
+        "38",
+        0
+      ],
+      "vae": [
+        "4",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "41": {
+    "inputs": {
+      "video_latent": [
+        "40",
+        0
+      ],
+      "audio_latent": [
+        "11",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "43": {
+    "inputs": {
+      "noise_seed": 2026081501
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "44": {
+    "inputs": {
+      "model": [
+        "17",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "45": {
+    "inputs": {
+      "noise": [
+        "43",
+        0
+      ],
+      "guider": [
+        "44",
+        0
+      ],
+      "sampler": [
+        "47",
+        0
+      ],
+      "sigmas": [
+        "48",
+        0
+      ],
+      "latent_image": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "47": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "48": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "50": {
+    "inputs": {
+      "av_latent": [
+        "45",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "51": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/zhongshi_sky_palace_2pass",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "50",
+        0
+      ],
+      "audio": [
+        "50",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "60": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "white_robe_traveler_reference.png"
+    },
+    "_meta": {
+      "title": "Load Image (character)"
+    }
+  },
+  "61": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "sky_palace_corridor_reference.png"
+    },
+    "_meta": {
+      "title": "Load Image (scene)"
+    }
+  }
+}

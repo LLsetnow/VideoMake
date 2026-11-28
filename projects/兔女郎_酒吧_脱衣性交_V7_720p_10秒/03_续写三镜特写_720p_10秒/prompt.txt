@@ -1,0 +1,29 @@
+subject_definitions:
+<Picture 1> is the exact last frame of the preceding video and the continuity reference for this direct continuation, showing the already-nude clearly adult fictional woman being penetrated on the dark marble bar counter.
+<Subject 1> is the clearly adult fictional woman in <Picture 1>, with a silver-white bob, side braid, pale skin, blue eyes, full proportions, glossy black bunny ears, a white collar with a black bow tie, and white wrist cuffs.
+<Subject 2> is the clearly adult fictional man in <Picture 1>, defined by his bare muscular torso and hips. Preserve his body scale and same-scene continuity, but keep his entire head, face, hair, neck, and shoulders outside the target video's frame.
+<Subject 3> is the upscale dim bar interior in <Picture 1>, with black shelves, bottles, violet-magenta highlights, the stemmed glass, and a dark marble counter.
+
+summary:
+[reference generation] A 10-second, three-shot vertical continuation begins from the exact sexual state in <Picture 1> and immediately develops the same consensual act. Close-ups move from <Subject 1>'s face to the visible penetration and then to a stronger final position on the bar. <Subject 2> remains physically connected to the action while his face is cropped out.
+
+retention_analysis:
+<Picture 1> (continuity reference for [Shot 1]): partially_preserved - her identity, nudity, partner, bar, lighting, and sexual end-state continue, while the camera immediately reframes into closer shots.
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - her face, silver-white bob, side braid, blue eyes, bunny ears, bow tie, and white cuffs remain consistent.
+<Subject 2> (appears in [Shot 1], [Shot 2], [Shot 3]): partially_preserved - his bare torso, hips, hands, and sexual continuity remain; his face and head are intentionally excluded from every target frame.
+<Subject 3> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the bar shelves, bottles, glass, marble counter, violet-magenta lighting, and luxury atmosphere remain unchanged.
+
+detailed_description:
+Photorealistic cinematic live-action with glossy editorial lighting, realistic skin, shallow depth of field, and restrained handheld movement. This is an immediate continuation with no story reset, no wardrobe reset, and no return of the removed bunny suit or fishnet stockings. Use three hard cuts at 00:03.300 and 00:06.600. Every visible person is explicitly an adult.
+
+[Shot 1] The video opens in an extreme close-up derived from the final state of <Picture 1>. The frame is tight on <Subject 1>'s parted lips, flushed cheeks, blue eyes, silver-white bob, bare upper chest, black bow tie, and glossy bunny ears. She is already being penetrated. Her breath is hot and uneven, her eyes briefly lower, then return to the lens. A large adult male hand slides into the frame from the right and rests over her shoulder, keeping <Subject 2> physically present while his face remains completely outside the frame. At 00:02.400, her mouth visibly forms one short line: she whispers in a breathy young female voice, <d>[Chinese] 别停。</d> Her face begins to turn toward the unseen man as the cut arrives.
+
+[Shot 2] At 00:03.300, hard cut to a low side close-up centered on her hips, thigh, the man's supporting hands, and the visible point of penetration. <Subject 2> lifts her nearer leg higher and settles it against his upper arm while continuing a firm rhythm of inward and outward strokes. The marble counter and one nearby glass remain in focus at the edge. <Subject 1>'s hand grips the edge of the counter, her heel taps once, and the inner thigh visibly tenses on each thrust. Her breasts remain just inside the upper edge of the frame and move with the impact. The man's torso enters only below the chest; no face, neck, or shoulder enters the image.
+
+[Shot 3] At 00:06.600, hard cut to a vertical medium close-up from a low frontal angle. <Subject 1> leans forward, braces one hand on <Subject 2>'s bare shoulder, and pulls his hips closer with her other hand. The man remains cropped at the lower neck, with his head and face entirely outside the top-right edge. His pelvis presses flush to hers as he increases the rhythm. Her mouth opens with each stroke, her eyes close for a moment, then reopen toward the lens. Her back arches, her bunny ears tilt, and her free hand knocks softly against the marble. From 00:08.300 through the final frame, the thrusts become deeper and faster but remain controlled. She wraps one leg around him and holds eye contact while breathing out a sustained soft moan. End with their hips still joined and the motion continuing, without revealing the man's face.
+
+overall_soundscape:
+The dim bar continues with quiet room tone, faint refrigeration hum, and sparse distant glass clinks. Skin-on-skin impacts, rhythmic wet friction, the marble counter creaking slightly, a heel tapping the bar, his low breathing, her first whispered line and continuing gasps and soft moans remain synchronized to the visible action.
+
+non_diegetic_music:
+N/A

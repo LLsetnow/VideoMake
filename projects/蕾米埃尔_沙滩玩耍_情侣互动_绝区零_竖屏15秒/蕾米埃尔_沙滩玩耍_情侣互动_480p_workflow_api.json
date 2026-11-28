@@ -1,0 +1,466 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "75",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "76",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "96",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/蕾米埃尔/蕾米埃尔_角色三视图.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "蕾米埃尔原皮全身参考"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Remiel, defined by original-skin image <Picture 1> and face image <Picture 2>. Preserve her pale peach-pink short bob, gray headband, silver star clips, large violet eyes with yellow-pink heart highlights, fair skin, soft pink lips, white-and-pale-purple off-shoulder outfit, gray shoulder armor, blue tassel cuffs, asymmetrical purple skirt, oversized bow, large white wings, white thigh-high socks, and silver heels. Keep the white, pale purple, pink, and silver palette. Never change her original skin to swimwear or casual clothing.\n<Subject 2> is Zhe, defined by outfit image <Picture 3> and face image <Picture 4>. Preserve his short gray-blue layered hair, light gray-green eyes, gentle anime features, dark navy diamond-knit sweater over white collar and black turtleneck, light blue-gray jeans, brown shoulder bag, and olive-brown shoes. Remiel and Zhe are an established couple. Show wholesome, non-explicit closeness through a brief hand or wrist touch, soft eye contact, a cheek gesture, shared drink, and shoulder lean. Zhe appears partially when specified; never morph either character or costume.\n\nsummary:\n[reference generation] Create a 15-second vertical 9:16 multi-shot beach-play video in the Zenless Zone Zero Cartoon rendering style. Use <Picture 1> and <Picture 2> for Remiel's stable full-body and face identity; use <Picture 3> and <Picture 4> for Zhe's stable outfit and face identity. Use six direct cuts of about 2.1–2.8 seconds: volleyball preparation, the spike contact moment, shallow-water play, a Remiel face close-up with tender cheek touch, shared smoothies, and a couple ending. Keep Remiel in the original skin. Generate native synchronized stereo action audio only: waves, volleyball, splashes, fabric, and smoothie sounds. No intelligible dialogue, subtitles, readable signs, logos, or watermarks.\n\nretention_analysis:\n<Subject 1> appears in all six shots: fully_preserved - keep Remiel's identity, face, pink hair, violet heart-highlight eyes, clips, headband, original white-and-pale-purple angel costume, wings, socks, heels, and palette; change only pose, expression, and beach action.\n<Subject 2> appears in [Shot 2]–[Shot 6]: fully_preserved - keep Zhe's identity, gray-blue hair, gray-green eyes, navy sweater, white collar, black turtleneck, jeans, shoulder bag, shoes, and gentle expression. Partial framing is intentional: use only his forearm, shoulder, hand, profile, or upper body where requested.\nAudio reference: none. Use native synchronized action sound; do not invent dialogue or a recognizable character voice.\n\ndetailed_description:\nZenless Zone Zero Cartoon rendering style: polished 2D anime, crisp linework, soft cel shading, dimensional game-cinematic light, saturated summer color, clean vertical 9:16 framing. Bright New Eridu coastal leisure beach with pale sand, blue water, curved seawall, parasols, a small unbranded smoothie cart, and distant industrial-modern skyline. Keep lighting and beach continuity coherent. No readable text, captions, logos, watermarks, extra characters, dissolves, or montage blur.\n\n[Shot 1] From 00:00.000 to 00:02.400, medium-wide full-body view of <Subject 1> beside a beach volleyball net, slightly left of center. Her original skin, wings, pink hair, purple accents, heels, sand, and sea are readable. She tosses a violet-and-white volleyball, takes one careful step, and draws back her arm for a spike. Make a short smooth Tracking Shot. End with the ball at its apex and her weight loaded for the cut.\n\n[Shot 2] At 00:02.400, cut to a dynamic medium close-up. Around 00:03.550, <Subject 1> jumps and strikes the volleyball; show crisp palm contact, slight ball compression, sand grains, and a clear motion trail. Her wings flare and ribbons snap. From the right edge, show only <Subject 2>'s forearm, hand, and a sliver of navy sleeve reaching toward the ball. Add a tiny impact shake, then stabilize. No duplicate ball or deformed fingers.\n\n[Shot 3] At 00:04.800, cut to a low medium two-shot at the waterline. The volleyball skips toward foam. <Subject 1> enters ankle-deep water and splashes; <Subject 2> enters from the right, visible from torso to knees, and gently catches her wrist to steady her. They share a shy glance, then release and move toward the ball. Keep the contact brief and tender. Track laterally with feet, splash, and Remiel's wings readable.\n\n[Shot 4] At 00:07.200, cut to a shoulders-up face close-up of <Subject 1>. Water droplets sparkle; <Subject 2>'s shoulder and hand are soft at the right edge. Remiel closes her eyes against spray, opens them with a small embarrassed closed-lip smile, and leans slightly as <Subject 2> brushes a droplet from her cheek. Prioritize <Picture 2> for her face, hair, headband, clips, violet eyes, and heart highlights. No teeth, broad open mouth, or speech. Make a small slow Push In.\n\n[Shot 5] At 00:09.700, cut to a medium shot beside the unbranded smoothie cart. Each character holds a cold violet-and-citrus smoothie. <Subject 2> offers a cup and steadies the straw; <Subject 1> takes a small sip, their fingertips touch, and he takes the next sip while she gives a teasing sideways glance. Use a short gentle Arc Shot. Show condensation and ice, no readable packaging, alcohol, or sexualized behavior.\n\n[Shot 6] At 00:12.300, cut to a wider waterline payoff. The volleyball and two smoothies rest on dry sand. <Subject 2> holds the ball under one arm; <Subject 1> leans her shoulder against his upper arm, and his free hand briefly meets hers. Their wings frame both faces. They exchange one quiet look, turn toward camera, and hold a relaxed happy pose as foam recedes. Use a small slow Pull Out to reveal sea, seawall, and New Eridu skyline. Hold the final pose for the last half-second; no new characters enter.\n\noverall_soundscape:\nNative synchronized stereo sound: rolling waves, foam on sand, light sea breeze, volleyball toss and palm impact, one bounce, soft footsteps, two small splashes, water droplets, wing and fabric rustle, smoothie cup handoff, straw and ice. Keep every sound aligned to the six cuts. No intelligible speech, sung vocal, or recognizable character voice.\n\nnon_diegetic_music:\nN/A\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/蕾米埃尔_沙滩玩耍_情侣互动_480p_v2",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/蕾米埃尔/exec-e724fa5d-a2fb-4858-b259-213277a73a94.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "蕾米埃尔面部参考"
+    }
+  },
+  "76": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/哲/哲_角色三视图_1x1.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "哲学院皮全身参考"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "96": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/哲/哲_大头照.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "哲面部参考"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  }
+}

@@ -1,6 +1,6 @@
 # S6 (63.158-76.416s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
 # 对应音乐：v3 收尾副歌（"Weird girl, weird girl, that's okay" 重复渐出）
-# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
 # 锁定音频：lock_source_S6.wav（v3 切片 63.158-76.416s）
 
 ### English Prompt

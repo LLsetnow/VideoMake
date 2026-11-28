@@ -1,0 +1,202 @@
+{
+  "version": 5,
+  "kind": "background",
+  "references": [
+    {
+      "id": "background-a3adc97a9fb4",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "404 Live Bar",
+      "text": "Scene description: Interior reference for the 404 Live Bar. Intended use: music bar and backstage social space; suitable for character interactions and moments between rehearsals. Palette: dark blue, black, red, and warm yellow; indoor night lighting. Visual elements: a central bar counter; a 404 LIVEBAR neon sign overhead; instruments, speakers, shelves, records, and warm pendant lights along the walls; industrial metal structures, a red counter, a dark background, and mixed blue and warm-yellow lighting.",
+      "image_path": "绝区零/404Bar.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-09e7e5b03b69",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "404 售票处",
+      "text": "Scene description: Interior reference for the 404 ticket booth. Intended use: performance entrance and ticketing area; suitable for pre-debut preparations, fan-support goods, and ticketing shots. Palette: warm yellow, red, dark gray, and cyan-blue; warm indoor lighting. Visual elements: a front-facing ticket counter; a circular 404ERROR logo in the background; vending machines, posters, ticketing equipment, cardboard boxes, Bangboo decorations, and red barrier ropes; warm ceiling lights against dark gray walls, creating a lived-in and slightly crowded underground music venue.",
+      "image_path": "绝区零/404售票处.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-a1331a81a9e4",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "404 Stage",
+      "text": "Zenless Zone Zero scene · empty stage with no characters, 16:9 landscape. An indoor 404 ERROR Livehouse performance stage in a dark, cool-toned palette: lighting trusses, two mirrored disco balls, cyan/pink/yellow neon light sticks, and a central screen displaying “404 ERROR” (“404 ERROR LIVEHOUSE”); speakers, monitors, and a star-shaped guitar on the stage. Four pink fan banners hang from the red barrier at the front, printed with a white cat wearing headphones and a lightning-bolt logo. Atmosphere: idol/band performance, ideal for stage scenes. Intended use: scene background or first frame.",
+      "image_path": "绝区零/404舞台.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-c51b9bc92e4b",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "404 走廊",
+      "text": "Scene description: Reference for the 404 corridor and staircase. Intended use: backstage circulation and transitional space; suitable for character running, onstage entrances and exits, and poster montages. Palette: dark gray, red, warm yellow, and highly saturated poster colors; indoor transitional lighting. Visual elements: a staircase extending downward; the handrail can create strong perspective lines; dense performance posters on both sides, red handrails, equipment carts, and a green EXIT sign; warm ceiling lights illuminating the narrow space, with wall posters forming continuous visual texture.",
+      "image_path": "绝区零/404走廊.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-ded392e576cc",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "404 门口夜景",
+      "text": "Scene description: Nighttime reference for the 404 entrance. Intended use: short-film opening and exterior establishing shots; suitable for the night before a debut in the rain. Palette: cool blue, cyan-white, and a small amount of pink; rainy-night neon. Visual elements: an arched 404ERROR neon sign; glass entrance and wall posters; graffiti walls, city buildings, a subway entrance sign, sloped pavement, and puddles along the roadside; a blue-dominant night scene with cyan-white neon reflected on the wet street.",
+      "image_path": "绝区零/404门口-夜景.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-bc9082956462",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "HIA 大门",
+      "text": "Scene description: Architectural reference for the HIA main gate. Intended use: exterior shots of a large institution and modern architectural transitions; suitable for conveying urban scale. Palette: black, dark gray, orange, and red; warm daylight. Visual elements: a black geometric slanted facade; a central red glass entrance; spherical pendant lights, orange linear lights, signage at the entrance, and an open plaza; rugged industrial architecture with warm orange lighting, suitable for low-angle shots looking upward.",
+      "image_path": "绝区零/HIA大门.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-dc631aa2f218",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "Random Play 门口",
+      "text": "Zenless Zone Zero scene · empty establishing shot, 16:9 landscape. A retro video-rental/record-store entrance in warm dusk light: red brick walls and a yellow storefront; a black sign with handwritten white “Random Play” lettering and play ▶/pause ⏸ icons, plus the small text “SALES/RENTALS · VCR RENTALS · OPEN 365 DAYS”; VHS poster displays and an old television in the window. On the left are a poster wall, a no-parking sign, and a bicycle; on the right are a metal staircase, green shipping containers, stacked tires, a yellow bicycle, and cardboard boxes. Paved-tile ground, with a crane and building silhouettes in the distance. Atmosphere: relaxed street life at dusk. Intended use: scene background.",
+      "image_path": "绝区零/RandomPlay门口.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-899f6d6468dd",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "六分街",
+      "text": "Zenless Zone Zero scene · daytime Sixth Street, 16:9 landscape. An everyday urban street under a clear sky: on the left, a snack stall with a yellow-striped awning, a vertical “Koi Noodle Shop” sign, plastic crates, and a suited man in a hat reading a newspaper; in the center, an asphalt road with a zebra crossing and “1-9” road markings, a utility pole tangled with wires, distant high-rises, a “Xiuxiu Shopping” sign, shipping containers, a graffiti wall, and on the right, a red storefront with a vertical anime-style “Cooking Warrior” banner, a poster wall, a red awning, and a few passerby NPCs. Atmosphere: ordinary daytime street life. Intended use: scene background.",
+      "image_path": "绝区零/六分街.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-e53d82a72925",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "六分街 141 便利店",
+      "text": "Scene description: Street reference for the 141 convenience store. Intended use: convenience store in an urban neighborhood; suitable for daytime Sixth Street or city transitions. Palette: blue, gold, gray, and white; cool daytime city light. Visual elements: blue-and-gold storefront signage; large 141 / ONE FOUR ONE branding; a street-facing glass door; shelves, drinks, snacks, and merchandise outside; low-rise urban buildings, gray sidewalks, roadside vehicles, and Bangboo displays.",
+      "image_path": "绝区零/六分街141便利店.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-0e1f957eb208",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "厄匹斯港",
+      "text": "Scene description: Harbor reference for Lumina Square Port. Intended use: seaside exploration and urban wide shots; suitable for moments of inspiration and emotional breathing space. Palette: sky blue, sea blue, white, and yellow; bright sunny harbor light. Visual elements: open sea, sailboats, dock railings, and a distant city skyline; fish advertisements, boats, port equipment, and a pale seaside promenade; a wide horizontal sea-and-sky composition suitable for broad pans, sea breeze, and distant silhouettes.",
+      "image_path": "绝区零/厄匹斯港.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-64e2a3d7040e",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "咖啡厅二楼",
+      "text": "Scene description: Reference for a second-floor café terrace. Intended use: creative and dialogue space at dusk; suitable for Qianxia writing songs or a three-person discussion. Palette: orange, gold, pink, brown, and blue-violet; sunset light. Visual elements: a wooden terrace, round table, striped sun umbrella, and urban waterfront view; seating, railings, distant high-rises, and reflections on the water; long shadows and warm backlight, suitable for static close-ups and slow push-ins.",
+      "image_path": "绝区零/咖啡厅二楼.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-532838ab8292",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "度假村木栈道",
+      "text": "Scene description: Reference for a resort boardwalk. Intended use: bright seaside activities and the area in front of an outdoor stage; suitable for an upbeat montage. Palette: turquoise green, white, blue, and yellow; sunny seaside light. Visual elements: a central Fantasy Bar beverage cart; wooden boardwalk and white canopies; palm trees, swim rings, a menu board, steps, and tropical stalls; open, bright, and visually rich, suitable for rapid lateral movement and characters moving through the scene.",
+      "image_path": "绝区零/度假村-1.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-aa85f17c65fa",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "沙滩与灯塔",
+      "text": "Scene description: Reference for a beach and lighthouse. Intended use: seaside wide shots and an open-ended finale; suitable for dream imagery or a breathing shot at the end. Palette: golden yellow, sea blue, and green; sunset beach light. Visual elements: a broad shoreline, calm sea, palm trees, and a distant lighthouse; a lifeguard hut, parasols, shallows, and rocks; large expanses of sky and water, suitable for silhouettes, slow pull-outs, and golden haze.",
+      "image_path": "绝区零/沙滩.png",
+      "audio_path": ""
+    },
+    {
+      "id": "background-6e7feca3e777",
+      "kind": "background",
+      "kind_label": "背景",
+      "category": "绝区零",
+      "tags": [
+        "背景"
+      ],
+      "source_tags": [],
+      "title": "沙滩舞台",
+      "text": "Zenless Zone Zero scene · beach music festival stage, 16:9 landscape. A golden sunset sky, palm trees on both sides, and colorful triangular pennants; the stage screen displays a white “R” logo, with a blue curtain banner below reading “Night” and “MID SUM MER” (midsummer night); DJ booth, speakers, and guitar. On the left are a surfboard, lifebuoy, and signs reading “RECEPTION/BEACH”; balloons and flags are on the right, with light trails in the distance. Note: the image includes two small NPCs (a pink-haired girl in a swimsuit and a black-haired girl in a hat pushing a suitcase); exclude them in the prompt if they are not needed. Atmosphere: summer outdoor idol performance. Intended use: scene background.",
+      "image_path": "绝区零/沙滩舞台.png",
+      "audio_path": ""
+    }
+  ]
+}

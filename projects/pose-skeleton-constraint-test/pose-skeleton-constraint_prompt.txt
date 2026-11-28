@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the adult human subject inspired by <Picture 1>. Preserve the subject's general proportions, long dark hair, near-frontal viewpoint, and relaxed upper-body presence, but render the final subject in a simple opaque fitted outfit so the motion test remains non-explicit.
+<Subject 2> is the target full-body pose encoded by <Picture 2>: an upright near-frontal stance, one hand held beside the face, the opposite arm bent outward, a vertical torso, a slightly asymmetric shoulder and hip line, and legs continuing downward in the frame. The colored lines and keypoint dots are motion-control information only.
+<Picture 1> is the original color reference image for the subject's broad appearance, camera viewpoint, framing, and bathroom-window composition; it is not a first-frame lock.
+<Picture 2> is a DWPose/OpenPose-style skeleton map for the target pose and body-joint layout; it is a strict pose reference, not visible artwork in the target video.
+
+summary:
+[reference generation] Generate a five-second single-shot pose-control test using <Subject 1> from <Picture 1> and the body configuration from <Picture 2>. The target should render a natural adult human in the original vertical composition while following the skeleton's joint locations and limb orientations throughout the shot.
+
+retention_analysis:
+<Subject 1>: partially_preserved - the broad appearance, proportions, viewpoint, and composition are transferred from <Picture 1>, while the final wardrobe is changed to an opaque outfit.
+<Subject 2>: fully_preserved - the target body configuration, shoulder and hip alignment, hand positions, limb directions, and lower-body placement from <Picture 2> must remain stable throughout the test.
+<Picture 1>: partially_preserved - use it as a visual and compositional reference without treating it as an exact first frame or copying non-essential details.
+<Picture 2>: fully_preserved - preserve its pose geometry as motion-control data, but never show the black background, colored skeleton lines, or keypoint dots in the rendered video.
+
+detailed_description:
+Live-action, photorealistic, non-explicit pose-control evaluation footage in a vertical 9:16 composition. Use the bathroom window, horizontal wooden fence, pale daylight, and bathtub arrangement from <Picture 1> only as broad scene and framing references. Keep the camera at a stable near-frontal eye-level viewpoint with a medium-full-body composition, and keep the subject centered slightly to the right so the raised hand and both legs remain visible. The final subject wears a simple opaque fitted outfit with natural skin, hair, and facial detail; do not render nudity, sexual activity, extra people, or graphic content.
+
+[Shot 1] The shot opens with <Subject 1> already aligned to the exact pose geometry from <Picture 2>. The head remains near the upper center, the torso stays vertical, one hand is held beside the face, the opposite arm is bent outward, the shoulders and hips retain the same slight asymmetry, and both legs continue toward the bottom edge with the same spacing and directions as the skeleton map. The colored pose lines and keypoint dots from <Picture 2> are never visible in the scene. Hold a Static Shot for the entire test; do not pan, zoom, tilt, cut, or change the camera height.
+
+From the opening through 2.00 seconds, the subject holds the skeleton-defined stance with only subtle breathing, a small natural blink, and minimal fabric movement. These micro-movements must not move the head, shoulders, elbows, wrists, hips, knees, or ankles away from the corresponding skeleton joints. From 2.00 to 4.20 seconds, allow one small natural adjustment of the fingers beside the face and a barely perceptible weight shift while preserving the same torso axis, shoulder line, hip line, arm bend, leg angles, and overall silhouette. The hand must remain beside the face rather than dropping or crossing the body. During the final 0.80 seconds, settle back into the original skeleton-aligned pose and hold it clearly until the last frame. Maintain one person, two arms, two legs, stable anatomy, consistent scale, and continuous lighting for the full shot.
+
+overall_soundscape:
+Quiet indoor room tone continues under the shot with a faint ventilation hum and distant outdoor ambience through the closed window. Soft fabric movement and restrained breathing accompany the small pose-preserving adjustments, with no dialogue or abrupt impacts.
+
+non_diegetic_music:
+N/A
