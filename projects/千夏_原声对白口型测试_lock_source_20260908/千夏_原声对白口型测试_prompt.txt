@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is Chinatsu, the anime girl defined by the connected character image <Picture 1>. Preserve her pale silver-gray softly wavy hair, heavy straight bangs, mint-green star-shaped bow, multicolored eyes, heart-shaped hair ornaments, black dangling earrings, fair skin, white blouse, red tie, black choker, and pink backpack straps. Keep her face, identity, anatomy, colors, and costume stable.
+<Audio 1> is the exact 5.160-second spoken dialogue recording generated with Chinatsu's dedicated GPT-SoVITS voice for <Subject 1> (S1). Reuse <Audio 1> 1:1 as the complete final audio track, including its exact words, pauses, timing, pitch, timbre, and dynamics.
+
+summary:
+[reference generation + audio reuse] Create a single continuous 5.160-second vertical 9:16 anime character lip-sync test. Use <Picture 1> for Chinatsu's stable identity and use <Audio 1> as the locked source audio. The purpose is to test visible mouth articulation against the original Chinatsu voice recording. Do not generate replacement speech, extra dialogue, music, or sound effects.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - preserve Chinatsu's face, hair, bow, eyes, earrings, skin, costume, proportions, and identity while adding only natural facial motion required for speaking.
+<Audio 1>: fully_copy - reuse the complete original Chinatsu TTS recording 1:1 as the final audio track without re-synthesis, paraphrase, time stretch, remix, or replacement.
+
+detailed_description:
+The target video is a single continuous front-facing medium close-up in polished anime rendering with a clean soft-white background and stable even frontal lighting. Keep Chinatsu's mouth unobstructed and centered in frame. No cuts, no camera angle change, no profile view, no hand covering the mouth, no subtitles, no readable text, no extra characters, no music, no ambience, no foley, and no watermark.
+
+[Shot 1] The shot opens on <Subject 1>, Chinatsu, facing the camera with a calm neutral expression and closed lips. Use a nearly static camera with only a very small natural breathing motion and a subtle slow Push In. From 00:00.000 through 00:05.160, <Subject 1> (S1) speaks on camera and visibly articulates continuously in sync with the exact phonetic timing of <Audio 1>. Preserve the original recording as the only audible track. The exact spoken content is: <d>[Chinese] 你好，我是千夏。今天我们来测试一下原声对白的口型同步。</d> Show natural jaw, lips, cheeks, and small eye motion while keeping the face identity stable. End on a calm closed-mouth expression immediately after the final syllable at 00:05.160.
+
+overall_soundscape:
+Use only the directly reused spoken audio from <Audio 1>. Add no new ambience, breathing, foley, dialogue, or sound effects.
+
+non_diegetic_music:
+N/A

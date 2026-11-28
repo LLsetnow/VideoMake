@@ -1,0 +1,165 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_ablitrated_v1.6_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "5": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "shift": 3.1,
+      "sampling": "flow"
+    }
+  },
+  "6": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": "生成一张 16:9 横屏、电影感写实摄影的雨夜酒店客房双人剧照。图1是虚构成年女性 Yuan 的身份参考，只继承她的鹅蛋脸、深棕色高马尾、直刘海、深色杏眼、白皙肤色和柔和五官；不要继承原图背景、白色上衣、蓝色内搭、项链和头部倾斜。\n\n场景：同一间雨夜酒店客房，白色床单自然褶皱，暖琥珀色床头灯与窗帘缝透入的冷蓝色雨夜光交织。两名明确自愿的成年人；女性 Yuan 25 岁，男性伴侣约 30 岁，短深色头发、橄榄肤色、精瘦体型。Yuan 穿深绿色缎面吊带睡裙，肩带滑落，裙摆堆在腰间，胸部裸露，赤足；男性穿敞开的深色衬衫，露出胸口。保持自然人体比例、正确关节方向、真实皮肤纹理和合理透视，女方脸部清晰对焦，性接触自然可见但不要夸张放大。画面亲密、自愿、写实，单幅画面；不要动漫感、不要拼图、不要分镜、不要文字。\n\n本张采用女上位、床侧四分之三视角：男性仰躺在白色床单上，头在画面右侧枕头上，双腿向画面左下自然伸直；Yuan 双膝分跨在他髋部两侧跪坐，身体前倾，一只手撑在他的胸口，脸转向镜头；他的双手扶在她的腰侧，阴茎已经插入她的阴道。两人的侧脸和上半身都清楚可见，男性短深色头发，Yuan 深棕色高马尾、直刘海。\n\n镜头取景只需容纳两人上半身到膝盖：Yuan 的头部、肩颈、躯干、髋部和跪着的双膝，以及男性从头部到髋部的身体。两人的小腿和脚不要在画面里出现，避免脚部重叠；画面下缘落在床单上。构图自然、留白合理，人物不贴边，头顶上方留出空隙。人体结构真实：两个人、四条腿、四条手臂和正常数量的手指；Yuan 的臀部、大腿与阴部解剖自然，不出现多余臀瓣、多余腿或第三只脚。胸部自然，不夸张放大。"
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "14",
+        0
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 20261183,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "videomake/yuan-rain-hotel-3pose-v2-8step/cowgirl_front_v7"
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "videomake/yuan-rain-hotel-3pose-v2-8step/yuan_identity.png"
+    }
+  },
+  "11": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 1280,
+      "height": 720,
+      "batch_size": 1
+    }
+  },
+  "12": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": ""
+    }
+  },
+  "13": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "6",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "14": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "12",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  }
+}

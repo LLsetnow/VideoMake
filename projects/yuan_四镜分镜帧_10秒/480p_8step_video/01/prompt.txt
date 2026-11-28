@@ -1,0 +1,18 @@
+subject_definitions:
+<Picture 1> is the actual opening frame of Shot 1, showing Yuan and her adult male partner, their pose, support points, camera and light.
+
+summary:
+[reference generation + keyframe completion] A 2.5-second continuous shot starts exactly on <Picture 1> and continues the ongoing consensual act between the same fictional adults.
+
+retention_analysis:
+<Picture 1> fully_preserved — match the opening composition, identities, light, wardrobe state and body placement.
+
+detailed_description:
+Photorealistic 16:9, fixed camera, no internal cuts.
+[Shot 1] Begin on <Picture 1>. Yuan stays on her hands and knees. Her partner kneels behind, with his hands holding her hips. The act is already in progress in the opening frame. Keeping her hands and knees planted, he draws his pelvis back a short distance and thrusts forward again along the bed plane, with his penis remaining inside her vagina. Repeat a compact cycle. Keep the exact side-rear camera and their positions in frame.
+
+overall_soundscape:
+Soft room tone, close breathing and faint sheet movement. No dialogue.
+
+non_diegetic_music:
+N/A

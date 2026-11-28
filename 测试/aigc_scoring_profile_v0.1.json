@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.1",
+  "profile_id": "i2v_single_shot_visual_v0.1",
+  "created_date": "2026-10-02",
+  "implementation_status": "specification",
+  "score_label": "Q_visual",
+  "score_range": [0, 100],
+  "human_mos_calibrated": false,
+  "scope": {
+    "generation_mode": "image_to_video",
+    "shot_mode": "single_shot",
+    "audio_in_total": false,
+    "requires_reference": true,
+    "requires_generation_prompt": true
+  },
+  "normalization": {
+    "batch_min_max": false,
+    "retain_raw_values": true,
+    "reject_non_finite": true,
+    "record_clipping": true,
+    "missing_required_dimension": "null_total",
+    "per_video_weight_renormalization": false
+  },
+  "gates": {
+    "file_exists": "required",
+    "video_stream_exists": "required",
+    "full_video_decode": "required",
+    "expected_specification": "read_from_manifest",
+    "audio_decode_if_required": "required",
+    "black_freeze_silence": "diagnostic",
+    "failure_total": null
+  },
+  "dimensions": {
+    "reference_fidelity": {
+      "symbol": "R",
+      "weight": 0.2,
+      "required": true,
+      "backend": "measure_first_frame_fidelity.py",
+      "raw_metric": "ssim_luma",
+      "normalization": "100 * clamp(raw, 0, 1)",
+      "preprocessing": {
+        "frame_index": 0,
+        "fit": "cover",
+        "max_side": 480,
+        "resampling": "Lanczos",
+        "color_component": "BT.709 luma",
+        "window_type": "uniform",
+        "window_size": 11
+      }
+    },
+    "visual_quality": {
+      "symbol": "V",
+      "weight": 0.2,
+      "required": true,
+      "backend": "VideoScore2",
+      "raw_metric": "visual_quality_hard_grade",
+      "accepted_values": [1, 2, 3, 4, 5],
+      "normalization": "25 * (raw - 1)"
+    },
+    "temporal_consistency": {
+      "symbol": "T",
+      "weight": 0.15,
+      "required": true,
+      "backend": "VBench",
+      "raw_metric": "subject_consistency",
+      "normalization": "100 * clamp(raw, 0, 1)"
+    },
+    "motion_smoothness": {
+      "symbol": "M",
+      "weight": 0.1,
+      "required": true,
+      "backend": "VBench",
+      "raw_metric": "motion_smoothness",
+      "normalization": "100 * clamp(raw, 0, 1)"
+    },
+    "prompt_alignment": {
+      "symbol": "A",
+      "weight": 0.2,
+      "required": true,
+      "backend": "VideoScore2",
+      "raw_metric": "text_to_video_alignment_hard_grade",
+      "accepted_values": [1, 2, 3, 4, 5],
+      "normalization": "25 * (raw - 1)"
+    },
+    "physical_consistency": {
+      "symbol": "P",
+      "weight": 0.1,
+      "required": true,
+      "backend": "VideoScore2",
+      "raw_metric": "physical_common_sense_consistency_hard_grade",
+      "accepted_values": [1, 2, 3, 4, 5],
+      "normalization": "25 * (raw - 1)"
+    },
+    "aesthetic_quality": {
+      "symbol": "E",
+      "weight": 0.05,
+      "required": true,
+      "backend": "VBench",
+      "raw_metric": "aesthetic_quality",
+      "normalization": "100 * clamp(raw, 0, 1)",
+      "raw_is_already_divided_by_10": true
+    }
+  },
+  "backends": {
+    "VideoScore2": {
+      "model_id": "TIGER-Lab/VideoScore2",
+      "model_revision": null,
+      "protocol": "project_greedy_hard_grade_v0.1",
+      "do_sample": false,
+      "infer_fps": 2.0,
+      "official_probability_weighted_score_used": false,
+      "official_example_device": "cuda",
+      "installed_locally": false
+    },
+    "VBench": {
+      "repository": "https://github.com/Vchitect/VBench",
+      "repository_revision": null,
+      "mode": "custom_input",
+      "use_per_video_results": true,
+      "preprocessing": "pinned_official_per_dimension",
+      "leaderboard_normalization_used": false,
+      "installed_locally": false
+    }
+  },
+  "execution_contract": {
+    "pin_model_revisions_before_scoring": true,
+    "record_weight_hashes": true,
+    "freeze_judge_prompt": true,
+    "record_sampling_indices_and_timestamps": true,
+    "record_device_dtype_and_dependency_versions": true,
+    "record_input_and_profile_sha256": true,
+    "status_values": ["ok", "not_run", "not_applicable", "failed"]
+  },
+  "diagnostics": [
+    "VBench.dynamic_degree",
+    "VBench.background_consistency",
+    "black_segments",
+    "freeze_segments",
+    "silence_segments",
+    "aspect_ratio_and_crop_difference"
+  ],
+  "efficiency": {
+    "qte_reference_per_second": "clamp(ssim_luma, 0, 1)^2 / platform_generation_seconds",
+    "qte_visual_per_second": "(Q_visual / 100)^2 / platform_generation_seconds",
+    "per_minute_multiplier": 60,
+    "pipeline_runtime": "sum_of_generation_stages",
+    "evaluation_seconds_in_generation_runtime": false,
+    "non_positive_or_missing_runtime": "null_qte"
+  }
+}

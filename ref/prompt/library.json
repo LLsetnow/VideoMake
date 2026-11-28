@@ -1,0 +1,1089 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "block-eb58f4962187",
+      "category": "结构与模式",
+      "tags": [],
+      "title": "任务综述",
+      "text": "summary:"
+    },
+    {
+      "id": "block-aa59c9802e99",
+      "category": "结构与模式",
+      "tags": [],
+      "title": "细节描述",
+      "text": "detailed_description:"
+    },
+    {
+      "id": "block-a10969505ab4",
+      "category": "结构与模式",
+      "tags": [],
+      "title": "景观声音",
+      "text": "overall_soundscape:"
+    },
+    {
+      "id": "block-05a9822787dc",
+      "category": "结构与模式",
+      "tags": [],
+      "title": "背景配乐",
+      "text": "non_diegetic_music:"
+    },
+    {
+      "id": "h3-i2va-alignment",
+      "category": "结构与模式",
+      "tags": [
+        "首尾帧"
+      ],
+      "title": "首帧对齐",
+      "text": "detailed_description:\n[Shot 1] For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced."
+    },
+    {
+      "id": "h3-fl2va-alignment",
+      "category": "结构与模式",
+      "tags": [
+        "首尾帧"
+      ],
+      "title": "首尾帧对齐",
+      "text": "How the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 2) aligns with the 6.00-second mark of the target video."
+    },
+    {
+      "id": "h3-l2va-alignment",
+      "category": "结构与模式",
+      "tags": [
+        "首尾帧"
+      ],
+      "title": "尾帧对齐",
+      "text": "How the reference pictures align with the target video — <Picture 1> (from [Shot 1]) aligns with the 6.00-second mark of the target video."
+    },
+    {
+      "id": "block-9091afb298c2",
+      "category": "对象与留存",
+      "tags": [],
+      "title": "对象定义",
+      "text": "subject_definitions:"
+    },
+    {
+      "id": "h3-subject-definitions",
+      "category": "对象与留存",
+      "tags": [],
+      "title": "首帧对象定义",
+      "text": "subject_definitions:\n<Picture 1> is the first frame of [Shot 1], the opening still of the target video; the exact environment, background, lighting, camera composition, and the woman's appearance and pose all begin from this image and must be preserved without change at 0.00 seconds.\n<Subject 2> is a reference for the character's pose, defined by <Picture 2>.\n<Subject 3> is a reference for the character's vulva, defined by <Picture 3>.\n<Subject 4> is a reference for the character's body shape, defined by <Picture 4>.\n<Subject 5> is a reference for the character's face, defined by <Picture 5>."
+    },
+    {
+      "id": "9370a35edecb",
+      "category": "对象与留存",
+      "tags": [],
+      "title": "保留分析",
+      "text": "retention_analysis:\n<Picture 1> appears in [Shot 1], fully_preserved.\n<Subject 2> appears in [Shot 1], fully_preserved.\n<Subject 3> appears in [Shot 1], fully_preserved.\n<Subject 4> appears in [Shot 1], fully_preserved.\n<Subject 5> appears in [Shot 1], fully_preserved."
+    },
+    {
+      "id": "2d3ae8b9f2cd",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "固定镜头",
+      "text": "The camera is locked off on a tripod at a fixed distance and angle, holding the pair in a consistent frame throughout the shot, with nothing moving except the actors, the sheets, and the light."
+    },
+    {
+      "id": "616d2bdae18b",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "模拟手持",
+      "text": "The camera moves with an organic handheld sway, gently drifting and re-framing as the actors move, as if held by an operator standing just out of frame, occasionally slipping off-axis and recovering."
+    },
+    {
+      "id": "665b2c7a1d9e",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "推镜",
+      "text": "The camera slowly pushes in toward the pair, tightening the frame from a full shot into a medium close-up, the background softening and falling away as the intimacy closes in."
+    },
+    {
+      "id": "6a757ce41f3f",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "拉镜",
+      "text": "The camera slowly pulls back from an intimate close-up, widening the frame until the whole bed and room are visible, the pair receding into the wider space."
+    },
+    {
+      "id": "7355ee21aacf",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "环绕",
+      "text": "The camera arcs in a slow smooth orbit around the pair, keeping them centered as the background and light sweep past, the scene revealed from every angle without a cut."
+    },
+    {
+      "id": "7663cbbf86a1",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "俯视",
+      "text": "The camera looks down from a high angle, as if from the ceiling, framing the pair on the bed in a top-down view, the bodies spread out across the sheets."
+    },
+    {
+      "id": "7e733b2112f6",
+      "category": "镜头与运动",
+      "tags": [],
+      "title": "仰视",
+      "text": "The camera looks up from a low angle placed near the floor or beside the mattress, framing the pair rising into the frame with the ceiling and light beyond."
+    },
+    {
+      "id": "8fb552cf43ae",
+      "category": "镜头与运动",
+      "tags": [
+        "特殊"
+      ],
+      "title": "希区柯克变焦",
+      "text": "The camera executes a dolly-zoom, its physical position and focal length shifting in opposite directions so the pair stay the same size in frame while the background stretches and compresses, space distorting with a sickening lurch of vertigo."
+    },
+    {
+      "id": "93530842d92f",
+      "category": "镜头与运动",
+      "tags": [
+        "特殊"
+      ],
+      "title": "盗梦空间旋转",
+      "text": "The camera rolls in a continuous 360-degree turn around a vertical axis, the horizon spinning as the scene rotates; the pair stay locked against the wall and the room while the floor, ceiling, and furniture sweep past in a slow zero-gravity spin."
+    },
+    {
+      "id": "9f5b1c7a4c77",
+      "category": "镜头与运动",
+      "tags": [
+        "特写"
+      ],
+      "title": "部位聚焦",
+      "text": "The camera isolates a single part of the body, a breast, the curve of a hip, or a mouth, in a tight close-up, the shallow depth of field dissolving everything else into a soft blur while the focus rakes slowly across the skin."
+    },
+    {
+      "id": "aec45302417b",
+      "category": "镜头与运动",
+      "tags": [
+        "做爱"
+      ],
+      "title": "私处特写",
+      "text": "The camera tightens into an extreme close-up on the genitals, the coupling filling the frame in sharp wet focus, skin glistening and sliding, the rest of the bodies blurring into the background."
+    },
+    {
+      "id": "c4caa9188b74",
+      "category": "镜头与运动",
+      "tags": [
+        "做爱"
+      ],
+      "title": "结合部特写",
+      "text": "The camera holds a close frame at the point where the two bodies meet, capturing the joining from the side of the coupling, the depth of each thrust, skin sliding on skin, and the wet slap of the bodies coming together."
+    },
+    {
+      "id": "fb6c38595175",
+      "category": "镜头与运动",
+      "tags": [
+        "特写"
+      ],
+      "title": "表情特写",
+      "text": "The camera frames her face in close-up, capturing every flicker of expression, parted lips, rolled-back eyes, bitten lip, trembling jaw, as pleasure overtakes her, the background dissolving into a soft blur."
+    },
+    {
+      "id": "056055f30e73",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "卧室",
+      "text": "A private bedroom at night: a large bed with rumpled white sheets in the center, a bedside lamp glowing warm, sheer curtains half-drawn over a soft-blurred city skyline, a few clothes already shed on the floor beside the bed."
+    },
+    {
+      "id": "1260a117b00f",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "酒店房间",
+      "text": "A hotel room at night: a wide king bed with crisp white bedding, dark wood furniture, city lights glowing through floor-to-ceiling windows, a suitcase half-open on the bench, the door closed behind them."
+    },
+    {
+      "id": "13ad8aeb62d7",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "浴室",
+      "text": "A marble bathroom: steam curling off a running shower, water beading on the mirror, the tiled floor glistening with droplets, warm light from above making the wet surfaces glow."
+    },
+    {
+      "id": "15a74e30e2d1",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "客厅沙发",
+      "text": "A living room at night: a low couch against a wall of shelves, cushions scattered, a coffee table with a tipped glass, a floor lamp casting a pool of warm light, the curtains closed against the street."
+    },
+    {
+      "id": "177c034bd3b4",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "办公室",
+      "text": "A private office after hours: a large desk with papers spread across it, a leather chair pushed back, glass walls reflecting the desk lamp, the city lights dimmed to a haze outside, a single warm lamp left on."
+    },
+    {
+      "id": "1852d0700d9f",
+      "category": "场景",
+      "tags": [
+        "环境"
+      ],
+      "title": "车内",
+      "text": "The back seat of a parked car at night: seats reclined, headrests down, the dashboard glowing faintly, city light passing in soft moving streaks across the windows."
+    },
+    {
+      "id": "29e96778f69a",
+      "category": "场景",
+      "tags": [
+        "光线"
+      ],
+      "title": "暖光氛围",
+      "text": "Warm amber light from a bedside lamp wraps the scene in a soft glow, long gentle shadows, skin lit in honey tones, the air thick and intimate."
+    },
+    {
+      "id": "3746656a3427",
+      "category": "场景",
+      "tags": [
+        "光线"
+      ],
+      "title": "冷调夜光",
+      "text": "Cool blue light from the city outside the window spills across the bed, the scene washed in shadowed blues and silvers, faces half-lit, the mood quiet and hushed."
+    },
+    {
+      "id": "3beb6d323296",
+      "category": "场景",
+      "tags": [
+        "光线"
+      ],
+      "title": "窗光侧逆",
+      "text": "Soft daylight from a side window rakes across the bodies, a thin rim of light outlining every curve, the room falling into deep shadow, dust drifting in the beam."
+    },
+    {
+      "id": "3e9a1eafb152",
+      "category": "场景",
+      "tags": [
+        "光线"
+      ],
+      "title": "烛光",
+      "text": "A few candles flicker at the edge of the frame, their small flames casting warm dancing light across the skin, the shadows breathing in and out with each draft."
+    },
+    {
+      "id": "4032495b0a73",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实",
+      "text": "Shot in a photorealistic cinematic style: true-to-life skin texture with visible pores and flush, natural imperfections, realistic wet-skin sheen and fabric, shallow depth of field, fine film grain, natural color grading."
+    },
+    {
+      "id": "07f65428f555",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实·胶片",
+      "text": "Shot on 35mm motion-picture film: visible organic grain, soft halation around the highlights, warm analog color response, shallow depth of field, and a gentle anamorphic flare."
+    },
+    {
+      "id": "4349322f533b",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实·柔光",
+      "text": "A soft-focus romantic look: gentle bloom on the highlights, diffused warm light, smooth glowing skin, dreamy shallow depth of field, the whole scene wrapped in a warm intimate haze."
+    },
+    {
+      "id": "4e43314b79fa",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实·暗调",
+      "text": "A dark, high-contrast cinematic look: low-key lighting, hard-edged shadows swallowing half the frame, one strong source of light, deep blacks, and a moody intimate tension."
+    },
+    {
+      "id": "65054993ffb7",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实·复古DV",
+      "text": "Shot on a 2000s consumer camcorder: slightly flat lighting, visible motion blur, mild compression artifacts, the casual found-footage feel of an unpolished home video."
+    },
+    {
+      "id": "79677e4a25e0",
+      "category": "画面风格",
+      "tags": [],
+      "title": "写实·自然光",
+      "text": "Lit by natural available light only, window daylight and a single practical lamp, honest unglamorous exposure, documentary realism, the scene feeling unposed and intimate."
+    },
+    {
+      "id": "4d0393fad328",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元",
+      "text": "Rendered in a 2D anime style: clean confident line art, cel-shaded coloring with soft gradient shading, expressive anime eyes with bright highlights, slightly stylized lighting with crisp speculars, the polished look of a high-end animation studio."
+    },
+    {
+      "id": "84fc48603aba",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·经典赛璐璐",
+      "text": "Drawn in a 90s cel animation style: flat confident cel shading with hard shadow edges, a limited saturated palette, hand-painted backgrounds, slight film grain and a soft analog glow."
+    },
+    {
+      "id": "856f6ed806e2",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·现代新番",
+      "text": "Modern high-end anime animation: rich multi-layered gradients, dramatic volumetric lighting, highly detailed hair and fabric rendering, smooth motion and cinematic framing."
+    },
+    {
+      "id": "d4d3a8be70d6",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·吉卜力",
+      "text": "A hand-drawn animation style: soft watercolor backgrounds, gentle rounded line work, warm natural palettes, quiet painterly light and an everyday intimate atmosphere."
+    },
+    {
+      "id": "d78fdf2b8289",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·厚涂",
+      "text": "A thick-paint anime illustration look: layered painterly strokes, semi-realistic proportions with anime faces, rich texture and strong color contrast, the quality of a high-end game key visual."
+    },
+    {
+      "id": "ec9693725a81",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·漫画",
+      "text": "A manga-panel style: bold clean inking, screentones and halftone shading, expressive speed lines, black and white with a few selective color accents."
+    },
+    {
+      "id": "ff2857adf126",
+      "category": "画面风格",
+      "tags": [],
+      "title": "二次元·80s复古",
+      "text": "A 80s retro anime style: pastel gradient skies, VHS-era grain and color bleed, big expressive eyes, soft neon glows, a nostalgic lo-fi warmth."
+    },
+    {
+      "id": "55ee94bccbd5",
+      "category": "对白",
+      "tags": [
+        "正常",
+        "中文"
+      ],
+      "title": "正常对白·中文",
+      "text": "The soft-voiced young woman (S1) whispers against his lips: <d>[Chinese] 今晚，哪儿也别去，就留在我身边。</d>"
+    },
+    {
+      "id": "57e37e9602c8",
+      "category": "对白",
+      "tags": [
+        "正常",
+        "日文"
+      ],
+      "title": "正常对白·日文",
+      "text": "The soft-voiced young woman (S1) whispers against his lips: <d>[Japanese] 今夜は、どこにも行かないで。私のそばにいて。</d>"
+    },
+    {
+      "id": "8374d98d432d",
+      "category": "对白",
+      "tags": [
+        "情话",
+        "中文"
+      ],
+      "title": "污言对白·中文",
+      "text": "The man (S2) growls low against her ear: <d>[Chinese] 看着我，别闭眼……告诉我，你到底有多想要这个。</d>"
+    },
+    {
+      "id": "891ecaead14f",
+      "category": "对白",
+      "tags": [
+        "情话",
+        "日文"
+      ],
+      "title": "污言对白·日文",
+      "text": "The man (S2) growls low against her ear: <d>[Japanese] ちゃんと見て、目を閉じるな。それくらい好きなの？教えて。</d>"
+    },
+    {
+      "id": "8f3a1c7e5b92",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "白噪音",
+      "text": "A steady, soft broadband white-noise bed, like an unobtrusive air purifier or distant static, filling the silence evenly without rhythm or tonal emphasis."
+    },
+    {
+      "id": "3d7a9e1c5f84",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "空调低鸣",
+      "text": "The low continuous hum of an air conditioner or ventilation system, with a faint mechanical vibration underneath, constant and unobtrusive in the background."
+    },
+    {
+      "id": "a6c2f9e4b781",
+      "category": "声音",
+      "tags": [
+        "人声"
+      ],
+      "title": "远处低声人语",
+      "text": "Indistinct distant human voices murmuring beyond the room, occasional fragments blending into an unintelligible conversational texture, with no clearly audible words."
+    },
+    {
+      "id": "5b8e1d3c7a60",
+      "category": "声音",
+      "tags": [
+        "人声"
+      ],
+      "title": "人群环境声",
+      "text": "A diffuse crowd murmur with overlapping conversations, soft footsteps, and occasional indistinct laughter, creating a believable public-space atmosphere without any intelligible dialogue."
+    },
+    {
+      "id": "c9f3a7e1d582",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "城市夜声",
+      "text": "A distant nighttime city soundscape: muted traffic rolling along wet streets, a far-off horn, occasional tire hiss, and a soft urban hum behind the scene."
+    },
+    {
+      "id": "1e6b4c8a9d73",
+      "category": "声音",
+      "tags": [
+        "环境音",
+        "自然",
+        "雨声"
+      ],
+      "title": "细雨声",
+      "text": "Fine rain pattering steadily against the window and roof, with tiny droplets running down the glass and a soft damp hush filling the surrounding space."
+    },
+    {
+      "id": "7a2d5f9c1e84",
+      "category": "声音",
+      "tags": [
+        "环境音",
+        "自然",
+        "雷声"
+      ],
+      "title": "雷雨声",
+      "text": "Heavy rain sweeping across the surroundings, punctuated by distant rolling thunder and an occasional low rumble, powerful but softened by the enclosed space."
+    },
+    {
+      "id": "d4f8b1c6a392",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "夜风声",
+      "text": "A gentle night breeze moving through leaves and slipping around the building, with soft fluctuating gusts and a quiet open-air hush, never becoming a musical tone."
+    },
+    {
+      "id": "9c5e2a7f1b63",
+      "category": "声音",
+      "tags": [
+        "环境音",
+        "自然",
+        "海浪"
+      ],
+      "title": "海浪声",
+      "text": "Slow ocean waves folding onto the shore in a regular breathing rhythm, foam receding over wet sand, with a wide calm coastal ambience and no music."
+    },
+    {
+      "id": "2b7d6e1a4f95",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "鸟鸣声",
+      "text": "Sparse natural birdsong from varying distances, small calls answering one another among light leaves and open air, gentle and realistic without sounding arranged or melodic."
+    },
+    {
+      "id": "f1a8c3d7e562",
+      "category": "声音",
+      "tags": [
+        "环境音"
+      ],
+      "title": "森林虫鸣",
+      "text": "A layered nighttime forest ambience of crickets, faint insects, distant frogs, and occasional leaves shifting in the breeze, deep and natural with no dominant single sound."
+    },
+    {
+      "id": "block-0c34a4e3b484",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "通用做爱声音",
+      "text": "Overall sound landscape:\nwet rhythmic thrusting sounds, and the slapping of skin—his lower body against her buttocks and skin-on-skin movement —layer with the woman's moans growing louder and her heavy continuous breathing, No male voice is audible at any point in the video."
+    },
+    {
+      "id": "241e843add85",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "床单声",
+      "text": "The sheets rustle and whip with every thrust, the fabric sliding under their hips and crumpling against the edge of the mattress."
+    },
+    {
+      "id": "2944428f4e6f",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "弹簧吱呀声",
+      "text": "The mattress springs creak and groan under their weight, the bed frame letting out a low creak with each impact."
+    },
+    {
+      "id": "500687117a97",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "枕头与床头声",
+      "text": "A pillow flung aside and stuffing puffing as it hits the floor, and the headboard giving a muffled thump as her back strikes it."
+    },
+    {
+      "id": "68d43df31f8a",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "人声"
+      ],
+      "title": "女性喘息",
+      "text": "Her breathing quickens into heavy continuous panting, ragged inhales and short gasps between thrusts, no moans."
+    },
+    {
+      "id": "78800656b244",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "人声"
+      ],
+      "title": "男性喘息",
+      "text": "His breathing grows deep and ragged, a low chest-rumble and short gasps that rise in pitch with each impact, no words."
+    },
+    {
+      "id": "7e9701fc2ae9",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "人声"
+      ],
+      "title": "双人喘息",
+      "text": "The two of them panting in tandem, her rapid shallow gasps layered over his deeper heavier chest-heaving, their breaths overlapping and falling out of sync."
+    },
+    {
+      "id": "9145515b43c9",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "肉声"
+      ],
+      "title": "臀部撞击声",
+      "text": "A wet, heavy slap of skin against skin with every impact, his pelvis striking her buttocks in a deep resonant slap that keeps time with the thrusts."
+    },
+    {
+      "id": "93fa1ba1195b",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "肉声"
+      ],
+      "title": "湿黏摩擦声",
+      "text": "Wet slaps and slick friction, thick liquid sliding and gurgling, a soft squelch of skin slipping on skin at each entry and exit."
+    },
+    {
+      "id": "96a040c51a61",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "肉声"
+      ],
+      "title": "胸部撞击声",
+      "text": "A soft, dull thump as her breast strikes his chest, the impact fluttering against the sheet."
+    },
+    {
+      "id": "99e2b95c5ca4",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "肉声"
+      ],
+      "title": "射精声",
+      "text": "A wet burst deep inside her, a few deep gurgling pulses and the slide of liquid, her body shuddering with it."
+    },
+    {
+      "id": "9d016c88677a",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "男声喉音",
+      "text": "His muffled grunts and low moans, guttural hahs and strained exhales that climb in pitch with each thrust, no full words."
+    },
+    {
+      "id": "ce2545f7d3ef",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "女声呻吟",
+      "text": "Her moans and cries, soft whimpers building into long trembling cries that rise with the rhythm of the thrusts, no words."
+    },
+    {
+      "id": "d8a7f66c8dd7",
+      "category": "声音",
+      "tags": [
+        "音效"
+      ],
+      "title": "双声呻吟",
+      "text": "Her moans and his low grunts braided together, the two of them crying out in and out of sync, their voices climbing together toward the finish."
+    },
+    {
+      "id": "fb250b9587ca",
+      "category": "声音",
+      "tags": [
+        "音效",
+        "自慰"
+      ],
+      "title": "女性自慰声",
+      "text": "The wet slap of her own hand working through her soaking folds, skin slipping against her thigh, the sheets rustling as she rocks her hips, all layered under her muffled moans and ragged breathing."
+    },
+    {
+      "id": "7c1e9a5d3f82",
+      "category": "背景配乐",
+      "tags": [
+        "浪漫"
+      ],
+      "title": "浪漫弦乐",
+      "text": "A delicate romantic string score led by soft legato violins and a low warm cello, slowly swelling with the emotional intensity while leaving plenty of space for natural dialogue and room sounds."
+    },
+    {
+      "id": "b6d2f8a14c90",
+      "category": "背景配乐",
+      "tags": [
+        "慵懒"
+      ],
+      "title": "慢节奏爵士",
+      "text": "A slow, smoky jazz arrangement with brushed drums, upright bass, muted piano chords, and a restrained saxophone melody, creating a relaxed late-night sensual mood at a low volume."
+    },
+    {
+      "id": "e3a71c9f5d24",
+      "category": "背景配乐",
+      "tags": [
+        "放松"
+      ],
+      "title": "轻柔 Lo-fi",
+      "text": "A mellow lo-fi instrumental with a muted drum groove, soft electric-piano chords, subtle tape hiss, and a rounded bass line, steady and unobtrusive, giving the scene a private modern warmth."
+    },
+    {
+      "id": "91f4b7c2e6a8",
+      "category": "背景配乐",
+      "tags": [
+        "电子"
+      ],
+      "title": "梦幻氛围电子",
+      "text": "A weightless ambient-electronic score built from slow pads, distant shimmering tones, and a soft sub-bass pulse, gradually deepening the dreamlike atmosphere without a pronounced beat or distracting lead melody."
+    },
+    {
+      "id": "5e8c3a7d1f60",
+      "category": "背景配乐",
+      "tags": [
+        "复古"
+      ],
+      "title": "复古合成器",
+      "text": "A restrained retro synth score with analog pads, a mellow arpeggio, gentle chorus, and a slow electronic pulse, evoking a warm neon-lit night while remaining cinematic and understated."
+    },
+    {
+      "id": "c7a2e9d4f185",
+      "category": "背景配乐",
+      "tags": [
+        "吉他"
+      ],
+      "title": "温暖原声吉他",
+      "text": "A warm fingerpicked acoustic-guitar instrumental with soft harmonics, light room ambience, and a slow intimate rhythm, tender and natural, supporting the human emotion without sounding like a commercial song."
+    },
+    {
+      "id": "2f6b1d8a4c73",
+      "category": "背景配乐",
+      "tags": [
+        "悬疑"
+      ],
+      "title": "暗调悬疑低音",
+      "text": "A minimal dark cinematic score with a sustained low drone, sparse piano strikes, faint textural pulses, and a slow-building tension, keeping the volume restrained and never overwhelming the scene's foreground sounds."
+    },
+    {
+      "id": "block-6d7c0f0e20c1",
+      "category": "去衣",
+      "tags": [],
+      "title": "通用去衣",
+      "text": "When the woman lowered her hand, it brushed against her clothes, exposing her breasts. Then remove the underwear."
+    },
+    {
+      "id": "239c8127c82e",
+      "category": "去衣",
+      "tags": [
+        "衬衫"
+      ],
+      "title": "衬衫",
+      "text": "He unbuttons the front placket from top to bottom with one hand while the other slides down inside the shirt to her waist; then he grips the hem in both hands and eases it up off her shoulders, and she draws her arms out through the sleeves one at a time, the shirt dropping to the floor."
+    },
+    {
+      "id": "52212a11d871",
+      "category": "去衣",
+      "tags": [
+        "长裙"
+      ],
+      "title": "长裙",
+      "text": "She grips the hem with both hands and works the dress up over her thighs and hips, then slips it off her shoulders and draws her arms out of the bodice; the fabric cascades down her back and legs and pools at her ankles, leaving her bare."
+    },
+    {
+      "id": "575efdda931c",
+      "category": "去衣",
+      "tags": [
+        "短裙"
+      ],
+      "title": "短裙",
+      "text": "He unfastens the buckle and clips at her waist, then slides both hands under the hem and pulls the skirt down over her hips; she bends her knees one after the other to let it pass, and the skirt slides off her legs and drops at her feet."
+    },
+    {
+      "id": "6ad8115fd46b",
+      "category": "去衣",
+      "tags": [
+        "牛仔裤"
+      ],
+      "title": "牛仔裤",
+      "text": "He works the zipper down the fly and undoes the button, then grips the waistband in both hands and peels the denim down; she bends her knees as the jeans pass her thighs, and the pants bunch at her ankles as she steps out of them."
+    },
+    {
+      "id": "9b37e4eefadb",
+      "category": "去衣",
+      "tags": [
+        "内衣"
+      ],
+      "title": "内衣",
+      "text": "He reaches behind her to unclip the back of the bra and lifts it over her head; then he slips both hands under the waistband and inside her panties, fingers gripping the fabric on either side of her hips, and pulls down as she bends her knees — one leg first, then the other — the panties sliding off her body to the floor."
+    },
+    {
+      "id": "bcc88502f1da",
+      "category": "去衣",
+      "tags": [
+        "丝袜"
+      ],
+      "title": "丝袜",
+      "text": "He pinches the welt at the top of the stocking with thumb and forefinger and rolls it down her thigh, then peels the silk off her calf and slips it off her foot, the rolled stocking left in his hand."
+    },
+    {
+      "id": "c4c4cd2552be",
+      "category": "去衣",
+      "tags": [
+        "和服"
+      ],
+      "title": "和服",
+      "text": "He loosens the knot of the obi and lets the sash fall to the floor, then slides his hands under the open front of the robe and pulls it apart; the robe slips off her shoulders and she drops her arms out of the sleeves, the fabric pooling around her feet."
+    },
+    {
+      "id": "ea99a5c6be91",
+      "category": "去衣",
+      "tags": [
+        "铠甲"
+      ],
+      "title": "铠甲",
+      "text": "He unbuckles the shoulder straps and lifts the breastplate off her torso; he loosens the waist belt and lets the lower plates slide down her hips, and she steps out of the leg guards; the armor lies in pieces on the floor, leaving only her bare skin."
+    },
+    {
+      "id": "block-d1eb3823e509",
+      "category": "性交动作",
+      "tags": [
+        "进入"
+      ],
+      "title": "屏外深入",
+      "text": "The penis extends out from beyond the screen. and is directly facing the vaginal opening, ready to be inserted after."
+    },
+    {
+      "id": "003152394a72",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "传教士",
+      "text": "The man lies on his back with the woman over him facing him, hips flush; he slides one hand under her pelvis to lift and angle her while the other grips her thigh, and thrusts upward into her as she rocks down to meet him, their eyes locked."
+    },
+    {
+      "id": "12b3ff40edad",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "女上位",
+      "text": "The woman straddles the man's waist sitting upright, riding him; she sets the pace, bobbing her hips up and down with her hands braced on his chest, while he grips her hips and lifts them to take every thrust deeper."
+    },
+    {
+      "id": "18227e8ada0f",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "后入",
+      "text": "The woman crouches on hands and knees and the man kneels behind her; he enters her from behind, his hands gripping her hips and lower back, driving forward into her as her body rises and falls with each push."
+    },
+    {
+      "id": "468167a36750",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "侧入",
+      "text": "The pair lies on their sides facing each other, her upper leg lifted and hooked over his waist; he slides into her from the side, their bodies pressed close, and thrusts slowly against each other."
+    },
+    {
+      "id": "5f8326fd90b3",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "站姿"
+      ],
+      "title": "站姿",
+      "text": "The two stand face to face; he lifts her against his body, one hand braced between her shoulder blades while she wraps her legs around his waist, and he thrusts upward into her from below."
+    },
+    {
+      "id": "66a4fe043b74",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "站姿"
+      ],
+      "title": "站姿前入",
+      "text": "The two stand face to face, her body flush against his; he braces one hand between her shoulder blades and the other on the side of her hip, thrusting forward into her from the front as she wraps her legs around his waist and pushes back."
+    },
+    {
+      "id": "327403447fdd",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "站姿"
+      ],
+      "title": "站姿后入",
+      "text": "The woman bends forward at the waist, her hands braced on his chest; the man stands directly behind her, grips her hips, and drives forward into her from behind, her body arching against his with each push."
+    },
+    {
+      "id": "82fdec3325be",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "站姿"
+      ],
+      "title": "站姿侧入",
+      "text": "The two stand side by side; he lifts one of her legs and draws it up along the side of his hip, entering her from the side at a shallow angle as she leans back, his hand braced on the outside of her raised thigh."
+    },
+    {
+      "id": "631acba14e83",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "口交"
+      ],
+      "title": "69",
+      "text": "The pair twists into opposite directions, the woman straddling the man while bending low, so each takes the other's genitals into their mouth, tongues and lips working at them at the same time."
+    },
+    {
+      "id": "68d7c2eb8876",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "反骑",
+      "text": "The woman mounts the man from behind, straddling his waist with her back to his face; she rides him gripping his shoulders, and he reaches around to grip her hips and answer her rhythm."
+    },
+    {
+      "id": "6c66a3e3e6cf",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "莲花坐",
+      "text": "The woman sits in the man's lap facing him, legs wrapped around his hips with her ankles crossed behind his back; he thrusts upward into her from within her seated legs as she wraps around him."
+    },
+    {
+      "id": "77b2e0d2c756",
+      "category": "性交动作",
+      "tags": [
+        "体位"
+      ],
+      "title": "俯卧式后入",
+      "text": "The woman lies face-down with her hips arched; the man enters her from behind while she presses her hands into the sheets, driving into her as her buttocks rise with each thrust."
+    },
+    {
+      "id": "bc057ff019d3",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "多人"
+      ],
+      "title": "一女双男",
+      "text": "The woman stands in the middle of the two men, one facing her from the front and one behind her; the man in front holds her waist and thrusts into her from the front while the man behind grips her hips and drives into her from behind, the three bodies pressed together as both take her at once."
+    },
+    {
+      "id": "ef27c1a4bb2f",
+      "category": "性交动作",
+      "tags": [
+        "体位",
+        "多人"
+      ],
+      "title": "两女一男",
+      "text": "The man lies in the middle of the two women, one straddling his waist from above and one kneeling at his feet; the woman on top rides him while the woman behind leans over his lower back and enters him from behind, the man taking both of them at the same time."
+    },
+    {
+      "id": "949322f9aad7",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "口交",
+      "text": "The man kneels before the woman and takes her into his mouth; he works her with his lips and tongue as she arches over him, one of his hands in her hair and the other on her inner thigh."
+    },
+    {
+      "id": "16eee285088c",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "口交·基础",
+      "text": "The woman kneels between his thighs and takes him into her mouth; she draws him in and out in a slow, steady rhythm, her lips sealed around the shaft, her head bobbing in time as her free hand strokes from the base."
+    },
+    {
+      "id": "80cd7bda6662",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "深喉",
+      "text": "The woman tilts her head back and takes all of him into her open mouth; the length of him disappears into her throat, the back of her throat visibly bulges as she swallows him down, and she holds him deep with a slow, gulping rhythm."
+    },
+    {
+      "id": "b0fda8fabbd3",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "舔龟头",
+      "text": "The woman's lips part around his base and her tongue works on his head; she licks the glans in small circling motions, tracing the rim and the tip with the flat of her tongue while her mouth stays hugging the head."
+    },
+    {
+      "id": "ca4e3174f758",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "舔阴茎侧边",
+      "text": "Her tongue strokes the length of the shaft from base to tip; she licks the sides of him up and down, dragging her tongue flat across the flesh with each pass, and her lips trail along after her tongue."
+    },
+    {
+      "id": "f88a841799a7",
+      "category": "性交动作",
+      "tags": [
+        "做爱",
+        "口交"
+      ],
+      "title": "吸吮",
+      "text": "She seals her lips around him and sucks with a firm, wet seal, her tongue swirling inside against the underside of the shaft while the suction makes the veins stand out on his skin."
+    },
+    {
+      "id": "fbdcf1cad32d",
+      "category": "性交动作",
+      "tags": [
+        "口交"
+      ],
+      "title": "手口并用",
+      "text": "She takes him into her mouth while her free hand pumps the base, fingers gripping and stroking in time with her mouth; the two rhythms weave together as her head works him deeper and deeper."
+    },
+    {
+      "id": "a9eb034dd92a",
+      "category": "性交动作",
+      "tags": [
+        "做爱"
+      ],
+      "title": "进入",
+      "text": "Their hips meet and the penetration begins slowly, the first slow entry drawing a gasp from her, then a full, steady stroke completes it as the two bodies sink together."
+    },
+    {
+      "id": "a9ec5781feb8",
+      "category": "性交动作",
+      "tags": [
+        "过程"
+      ],
+      "title": "缓慢深顶",
+      "text": "The thrusts are slow and deep, each stroke driving to the bottom of her and holding for a beat before pulling almost all the way out and re-entering, the pace heavy and deliberate."
+    },
+    {
+      "id": "dfd43d299fa9",
+      "category": "性交动作",
+      "tags": [
+        "过程"
+      ],
+      "title": "猛烈抽插",
+      "text": "The thrusts quicken into hard, fast pounding; her hips snap back against him with every strike, the slaps of skin growing sharper as the pace turns frantic."
+    },
+    {
+      "id": "e6f9f4e011bc",
+      "category": "性交动作",
+      "tags": [
+        "高潮"
+      ],
+      "title": "普通高潮",
+      "text": "She tightens around him as her hips arch off the bed and her whole body tenses through the orgasm, then she goes soft and limp against him, breathing hard."
+    },
+    {
+      "id": "ef09012b0ef1",
+      "category": "性交动作",
+      "tags": [],
+      "title": "拔出",
+      "text": "He withdraws slowly, drawing out of her with a wet, pulling sound as the two bodies separate, leaving her glistening and trembling."
+    },
+    {
+      "id": "9a7084087d71",
+      "category": "性交动作",
+      "tags": [
+        "前戏"
+      ],
+      "title": "拥抱",
+      "text": "The two press into a deep full-body embrace, arms locked around each other's backs, her face buried in his neck, his hand cradling the back of her head, both of them breathing into each other's skin."
+    },
+    {
+      "id": "9cca864137ec",
+      "category": "性交动作",
+      "tags": [
+        "前戏"
+      ],
+      "title": "亲吻",
+      "text": "The two press into a deep kiss, his hand sliding into her hair to hold her head, her hands gripping the front of his shirt, their mouths moving from a slow gentle press to an open, devouring claim."
+    },
+    {
+      "id": "9fe65e18bb7c",
+      "category": "性交动作",
+      "tags": [
+        "前戏"
+      ],
+      "title": "纠缠",
+      "text": "The two bodies tangle together on the bed, rolling over each other, limbs wrapped around limbs, knees pressed between thighs, hands gripping shoulders and hair, the two of them yielding and fighting into one breathless heap of limbs."
+    },
+    {
+      "id": "d529eba4b817",
+      "category": "性交动作",
+      "tags": [
+        "高潮"
+      ],
+      "title": "潮吹",
+      "text": "She tightens and arches off the bed as a visible gush of liquid spurts from her at the height of her climax, droplets flying in the light, her thighs clamping around his hip as the waves keep rolling over her."
+    },
+    {
+      "id": "f861447b0cfa",
+      "category": "性交动作",
+      "tags": [
+        "高潮"
+      ],
+      "title": "抽搐",
+      "text": "Her whole body convulses through the orgasm, muscles twitching and jerking in quick shudders, her back bowing hard, fingers digging into his shoulders, a long trembling wave running through her limbs."
+    }
+  ]
+}

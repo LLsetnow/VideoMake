@@ -1,0 +1,461 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "75",
+        0
+      ],
+      "ref_videos.ref_video_0": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "千夏原皮 · 全身参考"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 13.266667
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Chinatsu, the same anime character defined by <Picture 1> for her original-skin full-body design and by <Picture 2> for her face and hair identity. Lock her softly rounded oval face with a gently tapered rounded chin, large round-almond eyes with slightly upturned outer corners, vivid multicolored irises with yellow, orange, pink, teal, and blue highlights, dark pupils, clearly defined eyelashes, fine gently arched dark eyebrows, a small delicate nose, small pale-pink lips, fair even skin with a faint rosy cheek flush, and a bright cute approachable presence. Lock her medium-length pale silver-gray softly wavy hair, heavy straight bangs, large mint-green bow, black butterfly-and-cross hair ornaments, pink-and-mint crossed clips, black pixel-style rectangular clip, and black dangling earrings. Her original-skin outfit is a white short-sleeved shirt with a red heart-motif tie, black choker, small white angel wings, pink angel-wing backpack, pink-and-white striped fingerless arm warmers, black multilayered tutu skirt with a wide white belt, pink thigh strap and small side pouch, distressed white over-the-knee socks, pink-and-white striped leg warmers, and pink-and-white platform shoes with mint-green bows.\n<Video 1> is a silent derived structural reference made from the uploaded vertical dance video. Each frame combines normalized grayscale depth with bright DWPose body, face, and hand skeleton lines and keypoints. Use it only for pose geometry, depth layering, gesture timing, blocking, fixed-camera framing, turning direction, and movement rhythm. Do not reproduce its depth field, skeleton artwork, keypoints, live-action appearance, identity, clothing, soundtrack, watermark, room details, or technical overlays.\n\nsummary:\n[reference generation] Create a new 13.267-second vertical 9:16 polished anime performance starring <Subject 1>. Use <Picture 1> for Chinatsu's original-skin costume, wings, backpack, proportions, and accessories; use <Picture 2> for her stable face, hair, eyes, and facial accessories; use <Video 1> only as a derived depth-and-skeleton motion, pose, turning, depth-layering, and camera reference. Re-stage the same readable single-take choreography in an original high-end anime rendering while keeping the centered indoor vertical composition and the source movement timing. Generate fresh synchronized native stereo audio with an upbeat electronic dance-pop instrumental and clean room/action sounds; do not reuse any source or control-video audio.\n\nretention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - preserve Chinatsu's identity, face, multicolored eyes, pale silver-gray hair, mint bow, hair ornaments, black earrings, original-skin white/red/black/pink/mint outfit, angel wings, pink backpack, proportions, and anime rendering; only her pose, gesture, facing direction, and expression change with the referenced motion.\n<Video 1> (derived depth, skeleton, choreography, timing, framing, turning direction, and indoor composition): partially_preserved - preserve detected joints, limb directions, depth order, single-take movement, rhythm, blocking, camera scale, and turning arc, while replacing technical maps, skeleton artwork, live-action appearance, room contents, and control-video artifacts with <Subject 1> and new audio.\n<Picture 1> (original-skin character and wardrobe reference): fully_preserved - retain the original-skin costume construction, palette, wings, backpack, accessories, and body design information without treating the image as a literal first or last frame.\n<Picture 2> (face and hair identity reference): fully_preserved - retain Chinatsu's facial structure, multicolored irises, pale silver-gray hair, bangs, hair clips, bow, earrings, and recognizable identity across every pose and facing direction.\n\ndetailed_description:\nModern high-end anime animation: rich gradients, volumetric lighting, detailed hair and fabric, smooth motion, stable anatomy, and cinematic framing. Create a polished anime game-character performance in a clean vertical 9:16 frame with crisp linework, refined cel shading, soft highlights, and a restrained indoor room with a pale gray wall, softly lit shelving shapes, and gentle cool frontal lighting. Reconstruct one coherent anime character; never display the depth map, skeleton lines, keypoints, tracking marks, split panels, labels, readable text, logos, watermark, or source-video overlays. Use one continuous take with no cuts or scene changes. Keep the tripod camera fixed at eye level, framing <Subject 1> from head to upper thighs with enough space for her hands and hair.\n\n[Shot 1] Over the full 13.267-second derived-reference-driven dance, <Subject 1> performs alone in the center of the frame. At 00:00.000, begin in a near-frontal standing pose with one hand raised beside her face and the other arm low, matching the structural reference while replacing the live-action performer with Chinatsu. During approximately 00:00.000-00:02.500, she makes a small cute hand gesture beside her cheek, blinks once, tilts her head slightly, and settles her weight while the mint bow, hair, wings, backpack, skirt layers, and striped warmers respond with restrained secondary motion. During approximately 00:02.500-00:05.000, she lowers the raised hand, points or presents one hand toward the viewer for a beat, then brings both arms inward across the upper torso; preserve the detected hand-to-camera depth and limb directions with anatomically coherent fingers.\n\nFrom approximately 00:05.000-00:07.500, she continues the same rhythmic arm phrase, shifts her hips subtly, and turns her shoulders into a three-quarter view without changing character identity or costume. From approximately 00:07.500-00:10.000, she rotates smoothly farther to the side and then toward a rear three-quarter view, letting both arms travel down and back in the same low relaxed trajectory; preserve the source turning direction, silhouette, and depth ordering. From approximately 00:10.000-00:12.000, she holds the rear three-quarter orientation with a gentle hip sway and turns her head back toward the camera, keeping her face, hair clips, bow, earrings, wings, and backpack coherent rather than introducing a second character. From approximately 00:12.000-00:13.267, she completes the turn-and-glance phrase, settles into a poised rear three-quarter finish, and holds briefly with a calm cute closed-mouth expression. Keep the camera fixed throughout; no cuts, zooms, scene changes, extra people, nudity, suggestive action, visible control graphics, or readable source text.\n\noverall_soundscape:\nThe low continuous hum of an indoor ventilation system remains quiet and unobtrusive. Add soft cloth movement, light hair and wing-feather rustle, subtle backpack and accessory movement, and restrained hand and body sounds synchronized to the choreography. There is no intelligible dialogue, no singing, no character voice, and no reused source or control-video audio.\n\nnon_diegetic_music:\nGenerate a fresh upbeat electronic dance-pop instrumental at a moderate-fast tempo, with a clean kick-and-snare pulse, bright synth plucks, a light bass groove, and small rhythmic accents that follow the derived choreography without copying any source melody or recording. Keep it audience-only, with no vocals.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_douyin_depth_skeleton_480p_20260906",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "千夏面部参考"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  },
+  "97": {
+    "inputs": {
+      "video": "/Users/apple/Documents/VideoMake/projects/千夏_抖音舞蹈参考_深度骨骼_480p_20260906/reference/depth_skeleton_control_480p_24fps.mp4",
+      "force_rate": 24,
+      "force_size": "Disabled",
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "深度 + 骨骼控制视频 · 24fps · 单人体"
+    }
+  }
+}

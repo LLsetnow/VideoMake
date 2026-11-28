@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is The fictional adult woman Junye, whose face and hair are defined by <Picture 1>. Lock her gently rounded oval face, dark brown almond eyes with natural double eyelids and slightly raised outer corners, medium-length eyelashes, fine arched dark brown eyebrows, straight moderately high nose bridge, natural pink medium-full lips with a subtle Cupid's bow, fair even skin with faint blush, and a chin-length straight dark brown bob with a side part and subtle highlights. She wears no accessories.
+<Subject 2> is the woman-on-top kneeling straddle geometry derived from the grayscale depth reference <Picture 2>.
+
+summary:
+[reference generation] Junye rides the same reclining adult male partner in an ongoing act of consensual sex.
+
+retention_analysis:
+<Subject 1> fully_preserved — retain Junye's face and hair.
+<Subject 2> partially_preserved — follow the straddle geometry, rendering natural colors.
+
+detailed_description:
+Photorealistic 16:9 in the same warm rain-lit bedroom, ivory sheets. A locked foot-side three-quarter medium shot shows Junye's face in the upper half of the frame and the male partner's head and shoulders visibly resting on the pillow. He has short dark hair and medium olive skin.
+
+[Shot 1] Open with <Subject 1> already on top, kneeling astride the man as he lies on his back. His penis is already inside her vagina. Her palms brace on his chest and her knees remain planted on either side of his hips. She rocks her pelvis forward toward his abdomen then back through a short repeated cycle while he remains supine. End during the next forward rock.
+
+overall_soundscape:
+Steady rain on the glass, close breathing and sheets brushing in sync. No dialogue.
+
+non_diegetic_music:
+N/A

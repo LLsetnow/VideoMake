@@ -1,0 +1,44 @@
+# S8 (85-95s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 片尾演职员表（黑场 → 拼贴风格滚动字幕 → 最终黑场）
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S8.wav（v3 淡出尾音 + 演职员表环境音，约 10s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image retained as the visual anchor for the credits: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a playful mischievous expression, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Audio 1> is the locked audio for the credits roll: soft vinyl tail crackle, a faint tape-stop effect and ambient paper-shuffle texture over approximately 10 seconds, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + keyframe bookends + audio reuse] The target video is a pop-art credits roll: <Picture 1> peels back like a torn poster to reveal a scrolling credits strip in retro screen-print typography, <Subject 1> peeks in from behind the poster edges to wave goodbye, <Subject 2>'s symbols scatter like falling confetti during the scroll, and the credits strip rolls shut as the poster slams back into place with a final vinyl snap, with <Audio 1> reused as the complete soundtrack.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first-frame anchor, [Shot 3] last-frame anchor): fully_preserved - the opening frame and closing frame both match the poster exactly, including layout, palette, halftone dots, the girl's neutral pose and all visible texts.
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; only pose and expression animate for the credits interaction.
+<Subject 2> (appears in [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art credits sequence with a pink, black and white palette, halftone dot textures, paper grain and a playful winding-down pace.
+[Shot 1] The shot begins from <Picture 1>: the full poster, centered and filling the frame, held static for one beat. Then the top-right corner of the poster peels back like torn paper, revealing a black credits strip underneath. The credits text is in a bold retro screen-print font, white text on black paper, reading "STRANGE GIRLS CLUB" at the top, followed by "Directed by the weird-girl" and "Starring everyone who didn't fit in". The camera holds static as the poster flap peels open further, showing more of the credits strip beneath.
+[Shot 2] At 00:03.000, the poster is now mostly peeled back to one side: <Subject 1> appears from behind the torn edge, waving goodbye with one hand while her dark hair with straight bangs swings. The credits strip continues scrolling upward at steady speed, listing "Music: retro synth-pop", "Art: halftone dreams", "Vibe: unapologetically strange". Meanwhile, <Subject 2>'s symbols — stars, hearts, globes and spirals — rain down like confetti from the top of the frame, spinning and bouncing off the poster surface in halftone style. The camera tilts up slowly to follow the scrolling credits.
+[Shot 3] At 00:06.000, the credits scroll finishes and the black strip rolls shut like a venetian blind. <Subject 1> ducks behind the poster edge with a mischievous grin, and the poster slams back into place with a crisp paper-snap, restoring the exact original <Picture 1> composition. The halftone dots pulse once, the girl's expression returns to neutral, and the frame holds as the final still poster. A vinyl needle-lift sound marks the hard cut to black.
+
+overall_soundscape:
+Soft vinyl tail crackle runs throughout, paper peeling and tearing whispers during the poster peel, a rhythmic paper-roll sound accompanies the credits scroll, confetti symbols tap against the paper surface, and a crisp vinyl needle-lift punctuates the final poster slam.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: vinyl tail crackle, faint tape-stop effect and ambient paper-shuffle texture over approximately 10 seconds of closing credits ambience.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 演职员表视觉锚点海报参考图（同全片海报）；`<Subject 1>` 女孩（俏皮淘气的表情）；`<Subject 2>` 拼贴世界；`<Audio 1>` 本段锁定音频——唱片尾噪、磁带减速效果与环境纸沙沙纹理，约 10 秒演职员表留白，1:1 复用。
+- `summary`：任务类型 [reference generation + keyframe bookends + audio reuse]（参考生成 + 首尾帧锚定 + 音频复用）；波普演职员表：`<Picture 1>` 海报撕开一角露出滚动字幕条、女孩从海报后探出头挥手告别、拼贴符号如雨飘落、字幕条卷合海报拍回原位并以唱片提针声硬切黑场。
+- `retention_analysis`：`<Picture 1>`（[Shot 1] 首帧锚 + [Shot 3] 末帧锚）fully_preserved——开场帧与收尾帧均与海报完全一致；`<Subject 1>` 全镜 fully_preserved——形象不变，仅姿态表情为演职员表互动而动画化；`<Subject 2>` fully_preserved；`<Audio 1>` fully_copy。
+- `detailed_description`：风格=复古丝网印刷拼贴波普演职员表，粉黑白配色、网点、纸颗粒，轻快收尾节奏。Shot 1（0-3.000s）：黑场淡入完整海报静止一拍，海报右上角如撕纸般翻开，露出黑色演职员表条——白色粗体复古字体、"STRANGE GIRLS CLUB" 标题、"Directed by the weird-girl"、"Starring everyone who didn't fit in"；镜头静态，海报翻开越来越多；Shot 2（3.000s）：海报大部分翻到一侧——女孩从撕口后探出头挥手再见，齐刘海摆动，字幕条匀速上滚（"Music: retro synth-pop" / "Art: halftone dreams" / "Vibe: unapologetically strange"），同时拼贴符号（星星/爱心/地球仪/螺旋）如网点纸屑从上方飘落旋转弹跳，镜头缓慢仰跟随字幕滚动；Shot 3（6.000s）：字幕滚完，黑色条如百叶窗卷合——女孩俏皮微笑钻回海报后，海报"啪"地拍回原位恢复精确的 `<Picture 1>` 构图，网点脉动一次，女孩表情回到中性，末帧定格为静止海报，唱片提针声硬切黑场。
+- `overall_soundscape`：轻柔唱片尾噪贯穿、海报撕开纸张声、字幕滚动节奏性纸卷声、符号纸屑拍打纸面声、最后清脆唱片提针声。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——唱片尾噪 + 磁带减速 + 纸沙沙环境音，约 10 秒演职员表留白。

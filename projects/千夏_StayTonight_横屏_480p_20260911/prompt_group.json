@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "id": "task-group-qianxia-stay-tonight-landscape-480p-20260911",
+  "name": "千夏·StayTonight参考·横屏·480p",
+  "updated_at": 1789131643059,
+  "items": [
+    {
+      "instance_id": "stay-tonight-subject-structure",
+      "kind": "fixed",
+      "block_id": "block-9091afb298c2",
+      "snapshot": {
+        "tags": [],
+        "title": "对象定义",
+        "text": "subject_definitions:"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-original-skin",
+      "kind": "reference",
+      "reference_id": "character-b1fbc0e1727a",
+      "reference_kind": "character",
+      "snapshot": {
+        "tags": [
+          "人物",
+          "三视图"
+        ],
+        "title": "原皮",
+        "text": "A character turnaround sheet showing a front half-body view, a side full-body view, and a back full-body view on a white background. The character is Chinatsu, with medium-length silver-gray softly wavy hair, a mint-green bow hair clip and black butterfly-and-cross hair clip on the right side, and light-colored eyes. Outfit: a cute-cool Decora idol style, consisting of a white short-sleeved shirt, a red tie with a heart motif, a black choker, a pair of small white angel wings, and a pink angel-wing backpack on the back; pink-and-white striped fingerless arm warmers extending above the elbows; a black multilayered tutu skirt with a wide white belt; a pink thigh strap and small shoulder bag on the left thigh; white distressed over-the-knee socks; pink-and-white striped leg warmers; pink-and-white platform shoes; and black ankle straps with mint-green bows. Palette: silver gray, white, black, pink, and mint green. Use as a character identity and clothing reference.",
+        "image_path": "千夏/千夏-全身三视图-方形-v2.png",
+        "audio_path": "",
+        "media_type": "image"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-face",
+      "kind": "reference",
+      "reference_id": "character-a77fa25a0315",
+      "reference_kind": "character",
+      "snapshot": {
+        "tags": [
+          "人物",
+          "五官参考"
+        ],
+        "title": "面部",
+        "text": "A 1:1 front-facing 2D-anime 3D character headshot, looking directly at the camera in a centered, symmetrical composition against a pure white background with soft, even lighting. The character has layered medium-length pale mint-green and silver-green hair with a natural part, heavy straight bangs, and softly curled layered ends on both sides. A black geometric hair clip, pink heart detail, crossed pink-and-mint hair ornaments, and a black pixel-style rectangular clip are visible on the right side, along with black dangling earrings. The white shirt collar and red tie at the shoulders are retained as clothing identifiers. Use as a reference for the character's face, hairstyle, hair accessories, and identity.",
+        "image_path": "千夏/千夏_正脸头像_v4.png",
+        "audio_path": "",
+        "media_type": "image"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-stage",
+      "kind": "reference",
+      "reference_id": "background-a1331a81a9e4",
+      "reference_kind": "background",
+      "snapshot": {
+        "tags": [
+          "背景"
+        ],
+        "title": "404 Stage",
+        "text": "Zenless Zone Zero scene · empty 404 Livehouse performance stage in a dark cool-toned palette: overhead lighting trusses, two mirrored disco balls, cyan/pink/yellow neon light tubes, central blue screen, speakers, monitors, star-shaped guitar, red front barrier, and pink cat fan banners. Use as the performance location and lighting reference.",
+        "image_path": "绝区零/404舞台.png",
+        "audio_path": "",
+        "media_type": "image"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-stage-lighting",
+      "kind": "text",
+      "text": "<Subject 2> is the 404 Livehouse stage from <Picture 3>. Preserve the cool blue overhead wash, cyan-white beams through haze, magenta and yellow side-truss accents, moving disco-ball pinpoints, pale rim light on Chinatsu, and low warm contrast from the red barrier and pink banners. Keep the central screen as a soft blue secondary glow; stage signage remains integrated and secondary.",
+      "translation_disabled": true,
+      "generated_type": "scene_lighting_direction"
+    },
+    {
+      "instance_id": "stay-tonight-video",
+      "kind": "media",
+      "media_path": "/Users/apple/Documents/VideoMake/projects/千夏_StayTonight_横屏_480p_20260911/reference/StayTonight_reference_864x480_24fps_silent.mp4",
+      "media_name": "StayTonight 结构参考视频 · 864x480 · 24fps 静音",
+      "media_kind": "video",
+      "media_mime": "video/mp4"
+    },
+    {
+      "instance_id": "stay-tonight-subject-text",
+      "kind": "text",
+      "text": "<Subject 1> is Chinatsu, whose original-skin full-body design comes from <Picture 1> and whose face and hair identity comes from <Picture 2>. Preserve her softly rounded oval face with a gently tapered rounded chin, large round-almond eyes with slightly upturned outer corners, vivid multicolored irises with yellow, orange, pink, teal, and blue highlights, dark pupils, defined eyelashes, gently arched dark eyebrows, a small delicate nose, small pale-pink lips, fair even skin, and a faint rosy cheek flush. Preserve her medium-length pale silver-gray softly wavy hair, heavy straight bangs, large mint-green bow, black butterfly-and-cross hair ornament, pink-and-mint crossed clips, black pixel-style rectangular clip, and black dangling earrings. Preserve the original-skin outfit: white short-sleeved shirt, red heart-motif tie, black choker, small white angel wings, pink angel-wing backpack, pink-and-white striped fingerless arm warmers, black multilayered tutu skirt with a wide white belt, pink thigh strap and side pouch, distressed white over-the-knee socks, pink-and-white striped leg warmers, and pink-and-white platform shoes with mint-green bows.\n<Video 1> is the silent 864x480, 24fps structural reference prepared from the uploaded landscape video. Use it only for the pose sequence, body turns, gesture timing, camera path, framing changes, depth order, lighting rhythm, and overall movement density. Do not reproduce its white-clay figure, specific face, hairstyle, identity, monochrome material, source background treatment, watermark, technical artifacts, or original soundtrack.",
+      "translation_disabled": true,
+      "generated_type": "subject_definitions"
+    },
+    {
+      "instance_id": "stay-tonight-summary-structure",
+      "kind": "fixed",
+      "block_id": "block-eb58f4962187",
+      "snapshot": {
+        "tags": [],
+        "title": "任务综述",
+        "text": "summary:"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-summary",
+      "kind": "text",
+      "text": "[reference generation] Create a new 12.25-second 16:9 landscape 480p high-end 3D anime music-video performance starring <Subject 1>. Use <Picture 1> for the original-skin costume, wings, backpack, proportions, and accessories; use <Picture 2> for the stable face, hair, eyes, and facial accessories; use <Video 1> only for motion, camera, pose timing, and visual rhythm. Re-stage its readable figure performance in a dark studio with dramatic directional light while keeping Chinatsu's original colors and identity. Use one continuous take with no hard cuts. Generate fresh synchronized native stereo audio; do not reuse the source video's soundtrack or any recognizable melody.",
+      "translation_disabled": true,
+      "generated_type": "summary"
+    },
+    {
+      "instance_id": "stay-tonight-retention",
+      "kind": "text",
+      "text": "retention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - retain Chinatsu's face, multicolored eyes, silver-gray hair, mint bow, hair ornaments, earrings, original-skin outfit, wings, backpack, body proportions, and recognizable 3D anime identity; only pose, expression, and camera relationship change.\n<Video 1> (pose sequence, timing, camera path, framing, depth order, and lighting rhythm): partially_preserved - transfer its observable movement structure and temporal rhythm while replacing the source figure, material, identity, exact background treatment, watermark, technical artifacts, and audio.",
+      "translation_disabled": true,
+      "generated_type": "retention_analysis"
+    },
+    {
+      "instance_id": "stay-tonight-detail-structure",
+      "kind": "fixed",
+      "block_id": "block-aa59c9802e99",
+      "snapshot": {
+        "tags": [],
+        "title": "细节描述",
+        "text": "detailed_description:"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-detail",
+      "kind": "text",
+      "text": "The target video is a polished high-end 3D anime music-video performance in a 16:9 landscape frame: crisp facial features, refined cel shading, detailed hair and fabric, controlled secondary motion, stable anatomy, and strong directional studio lighting. Use a dark charcoal studio void with a matte floor, soft haze, a narrow pool of light, and bright rim light separating the character from the background. Keep <Subject 1> fully colored in her original silver-gray, white, black, pink, and mint palette; do not turn her into a monochrome clay figure. Never show reference labels, split panels, skeletons, tracking marks, readable text, logos, or watermarks. Use one continuous take with no hard cuts or scene changes.\n\n[Shot 1] At 00:00.000, <Subject 1> stands alone in a three-quarter rear full-body composition, slightly off center, matching <Video 1>'s opening spatial relationship without copying its character. Her shoulders are relaxed, arms hang naturally, and one foot is set slightly behind the other. The camera begins with a slow Arc Shot from rear three-quarter toward her side at small amplitude and slow speed. As the camera moves, she shifts her weight and begins a restrained torso turn; her silver-gray hair, mint bow, earrings, wings, backpack, striped arm warmers, and layered skirt respond with subtle secondary motion.\n\nFrom approximately 00:02.500 to 00:05.500, continue the same uninterrupted arc into a side-to-front medium-full view. <Subject 1> turns her shoulders toward the lens, raises one forearm across her upper chest, then opens the arm outward while the other arm follows a beat later. Her expression remains cute and composed, with stable eyes and mouth. The camera adds a gentle lateral Tracking Shot and a small slow Push In, preserving the movement timing and foreshortening from <Video 1> while keeping her costume construction and accessories intact.\n\nFrom approximately 00:05.500 to 00:08.200, the camera makes a controlled Tilt Down toward her legs and then eases back upward. She performs a compact step-and-sway phrase: one foot slides diagonally, the ankles briefly cross, and the skirt layers flare before settling. Keep both shoes, leg warmers, socks, thigh strap, and the floor contact readable; no limb duplication or costume merging.\n\nFrom approximately 00:08.200 to 00:10.400, the camera rises into a dramatic medium close-up. <Subject 1> lifts one arm above her head, tilts her face slightly, and looks toward the lens; the bright multicolored irises, pale-pink lips, bangs, clips, and black earrings remain consistent. Use a small slow Push In with a clean rim highlight along her hair and cheek.\n\nFrom approximately 00:10.400 to 00:12.250, the camera performs a smooth Pull Out with a small Arc Shot toward a front three-quarter full-body view. <Subject 1> completes the turn to face the camera, lowers the raised arm into a balanced finishing pose, and holds still for the final half second. Her wings and pink backpack settle naturally behind her. End on one stable, confident character pose with no extra person, no fade to black, and no title card.",
+      "translation_disabled": true,
+      "generated_type": "detailed_description"
+    },
+    {
+      "instance_id": "stay-tonight-sound-structure",
+      "kind": "fixed",
+      "block_id": "block-a10969505ab4",
+      "snapshot": {
+        "tags": [],
+        "title": "景观声音",
+        "text": "overall_soundscape:"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-sound",
+      "kind": "text",
+      "text": "Dark studio room tone with a faint low ventilation hum continues throughout. Add restrained shoe contact and floor movement, soft cloth and skirt rustle, light hair and wing-feather movement, and subtle backpack and accessory sounds synchronized to the gestures. There is no intelligible dialogue, no singing, no character voice, and no reused source-video audio.",
+      "translation_disabled": true,
+      "generated_type": "overall_soundscape"
+    },
+    {
+      "instance_id": "stay-tonight-music-structure",
+      "kind": "fixed",
+      "block_id": "block-05a9822787dc",
+      "snapshot": {
+        "tags": [],
+        "title": "背景配乐",
+        "text": "non_diegetic_music:"
+      }
+    },
+    {
+      "instance_id": "stay-tonight-music",
+      "kind": "text",
+      "text": "Generate a fresh audience-only electronic dance-pop instrumental at a moderate-fast tempo, with a tight kick-and-snare pulse, bright synth stabs, a light bass groove, and sparse rhythmic accents that follow the camera arcs and pose changes. Use no vocals and do not copy the source video's melody, recording, or arrangement.",
+      "translation_disabled": true,
+      "generated_type": "non_diegetic_music"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is The fictional adult woman Junye, whose face and hair are defined by <Picture 1>. Lock her gently rounded oval face, dark brown almond eyes with natural double eyelids and slightly raised outer corners, medium-length eyelashes, fine arched dark brown eyebrows, straight moderately high nose bridge, natural pink medium-full lips with a subtle Cupid's bow, fair even skin with faint blush, and a chin-length straight dark brown bob with a side part and subtle highlights. She wears no accessories.
+
+summary:
+[reference generation] <Subject 1> shares consensual sex with her partner before their foreheads come together.
+
+retention_analysis:
+<Subject 1> fully_preserved — preserve her face and hair throughout both shots.
+
+detailed_description:
+Photorealistic 16:9 bedroom scene at night. Warm practical bedside lamp on screen left, cool rain-streaked window on screen right, ivory sheets. The adult male partner has short dark hair, medium olive skin and a lean build. Keep both faces distinct and the screen direction consistent.
+
+[Shot 1] Begin in a medium side two-shot with <Subject 1> on the pillow and her partner's left hand braced beside her right shoulder. Both shirts lie at the foot of the bed. She bends her knees and guides him closer with her right hand on his shoulder. He pauses; she nods and they begin having sex. The bedside lamp outlines their shoulders.
+
+[Shot 2] At 00:04.000, cut to a high oblique angle near the headboard. <Subject 1> remains on the same pillow with her hand on his shoulder. He remains braced on his left hand. Their movement becomes steady and the sheet pulls taut in time. The pace slows in the final seconds and he lowers his forehead to hers.
+
+overall_soundscape:
+Steady rain against glass, soft mattress creaks, sheet friction and close breathing. No dialogue.
+
+non_diegetic_music:
+N/A

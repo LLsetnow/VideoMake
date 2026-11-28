@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is The fictional adult woman Junye, whose face and hair are defined by <Picture 1>. Lock her gently rounded oval face, dark brown almond eyes with natural double eyelids and slightly raised outer corners, medium-length eyelashes, fine arched dark brown eyebrows, straight moderately high nose bridge, natural pink medium-full lips with a subtle Cupid's bow, fair even skin with faint blush, and a chin-length straight dark brown bob with a side part and subtle highlights. She wears no accessories.
+
+summary:
+[reference generation] <Subject 1> settles under the covers alongside her partner after sex.
+
+retention_analysis:
+<Subject 1> fully_preserved — preserve her face and hair throughout both shots.
+
+detailed_description:
+Photorealistic 16:9 bedroom scene at night. Warm practical bedside lamp on screen left, cool rain-streaked window on screen right, ivory sheets. The adult male partner has short dark hair, medium olive skin and a lean build. Keep both faces distinct and the screen direction consistent.
+
+[Shot 1] Start with their foreheads touching and <Subject 1>'s right hand resting on his shoulder. She closes her eyes and exhales, then lets her fingers relax and release. He stops and rolls onto his side beside her. The camera lowers slightly so both faces settle into the same plane of focus.
+
+[Shot 2] At 00:04.000, cut to a medium two-shot from the foot of the bed, keeping the discarded shirts at the edge of frame. <Subject 1> pulls the duvet to their chests and turns into his embrace. He rests a hand on her upper arm and she takes his hand. Hold still for the last two seconds as their breathing settles and rain trails down the window.
+
+overall_soundscape:
+Steady rain against glass, mattress settling, duvet rustle and gradually quieter breathing. No dialogue.
+
+non_diegetic_music:
+N/A

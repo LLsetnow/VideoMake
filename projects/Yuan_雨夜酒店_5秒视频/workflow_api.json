@@ -1,0 +1,463 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": false,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 20261125
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/Yuan_雨夜酒店_双人关键帧_Qwen2511/output/yuan-qwen2511-v3-8step.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref0"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 5
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the exact first frame of [Shot 1]: a 16:9 first-person top-down view from the man's point of view, showing the adult woman Yuan lying on her back with her knees raised wide in an M shape, the green satin slip dress bunched around her waist, her chest exposed, and the man's forearms and hands entering from the bottom edge. Preserve the exact opening composition, body positions, lighting, bed, background, and visible clothing state at 0.00 seconds.\n<Subject 1> is the adult woman Yuan in <Picture 1>. She is in her mid-twenties with a dark-brown high ponytail, straight bangs, large dark almond-shaped eyes, a small straight nose, full glossy pink lips, fair smooth skin, and a soft face. Preserve her identity, facial proportions, eye color, bangs, ponytail, body proportions, exposed chest, and green satin clothing state throughout the shot; change only her motion and expression.\n<Subject 2> is the adult man, defined by text only. He is in his early thirties with a fit build and open dark shirt, visible only as his forearms, hands, shoulders, and hips at the bottom edge of the frame. His face remains out of frame. Preserve his partial framing and physical continuity.\n<Subject 3> is the hotel-room environment in <Picture 1>: white rumpled bedding, dark wood headboard, warm amber bedside lamps, and cold blue rain light through the window. Preserve the room layout and light without adding new furniture, text, or visible logos.\n\nsummary:\n[keyframe completion + reference generation] The target video is a 5-second horizontal 16:9 cinematic live-action single take of a consensual intimate encounter between two adults. It begins exactly from <Picture 1>, then the man begins a slow, steady rhythm while <Subject 1> reacts with eye contact, breathing, and small body movements. The shot stays in the same first-person top-down composition and ends on her flushed face and hands gripping his forearms. No cuts.\n\nretention_analysis:\n<Picture 1> ([Shot 1] first frame): fully_preserved - the exact opening composition, camera angle, pose, lighting, background, and clothing state are retained at 0.00 seconds.\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, dark-brown high ponytail, straight bangs, dark eyes, fair skin, body proportions, exposed chest, and green satin slip dress remain consistent.\n<Subject 2> (appears in [Shot 1]): fully_preserved - his partial body framing, forearms, hands, shoulders, hips, open dark shirt, and face-out-of-frame treatment remain consistent.\n<Subject 3> (appears in [Shot 1]): fully_preserved - the white bedding, dark wood headboard, warm amber lamps, and cold rain-window light remain stable.\n\ndetailed_description:\nThe target video is cinematic photorealistic live-action with realistic skin texture, natural film grain, warm low-key bedside light mixed with cold blue rain light, shallow depth of field, and a horizontal 16:9 frame at 24 FPS. Both people are adults and clearly willing. The shot is one continuous take with no cuts, no camera repositioning, and no change of room.\n\n[Shot 1] At 0.00 seconds the video opens exactly from <Picture 1>. <Subject 1> lies on her back with her dark-brown ponytail spread across the pillow, straight bangs framing her face, and her dark eyes looking up into the lens. Her green satin slip dress is bunched around her waist, the straps slipped off her shoulders, her chest exposed. Her knees are bent wide in an M shape, her feet toward the bottom corners, and her hips centered below <Subject 2>. His hands grip the backs of her thighs, holding them wide, while his torso and open dark shirt remain at the bottom edge with his face out of frame.\n\nFrom 0.30 to 1.20 seconds, <Subject 2> draws his hips back a fraction and presses forward again; his erect penis moves slowly inside her vagina. Her body rocks with the motion, her breasts shift, and her back begins to arch. Her hands slide down to grip his forearms. From 1.20 to 2.60 seconds, the rhythm settles into a slow, steady pace. The bed creaks softly, her lips part, her breathing quickens, and she keeps eye contact with the lens. Her hips rise slightly to meet each forward press.\n\nFrom 2.60 to 3.90 seconds, the rhythm deepens but remains controlled. <Subject 1> tilts her head back against the pillow, then looks into the lens again as her cheeks flush. Her fingers tighten on his forearms, her knees tremble, and the green satin fabric shifts against her waist. <Subject 2> lowers his chest closer, his shoulders entering slightly more at the bottom edge, while his face stays out of frame. The camera holds the fixed first-person top-down angle with a subtle handheld tremor, then leans forward with small amplitude at slow speed, keeping her face, raised knees, and their joined hips visible.\n\nFrom 3.90 to 5.00 seconds, <Subject 1> pulls him closer and her mouth opens in a soft moan; her eyes flutter but return to the lens. The motion continues at the same intimate pace, her body language responsive and consenting, and the final frame holds on her flushed face, parted lips, and hands gripping his forearms. Keep natural anatomy and correct limb count; no extra arms, no duplicated feet, no face morph, no sudden clothing change, no cut, and no on-screen text.\n\noverall_soundscape:\nQuiet hotel-room tone and rain ticking against the window continue throughout the shot. The mattress creaks, satin and bedding rustle, skin meets skin in a steady rhythm, and wet sounds accompany each slow movement. Her breathing quickens into soft moans while his low breaths remain audible; there is no spoken dialogue and no male voice.\n\nnon_diegetic_music:\nN/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/yuan_rain_hotel_5s",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/其他/人体_室内_体型参考_竖版_v1.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref1"
+    }
+  },
+  "76": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/其他/人体_外阴特写.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref2"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "96": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/pose/depth/仰躺-双膝屈曲外展_正面_竖图_depth.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref3"
+    }
+  },
+  "97": {
+    "inputs": {
+      "image": ""
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref4"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  }
+}

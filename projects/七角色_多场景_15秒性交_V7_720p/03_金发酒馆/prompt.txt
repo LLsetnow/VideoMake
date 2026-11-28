@@ -1,0 +1,31 @@
+subject_definitions:
+<Picture 1> is the opening frame of [Shot 1] and the identity, costume, and location reference: a clearly adult fictional woman with long honey-blonde hair, large gold-and-white rabbit ears, pink-brown eyes, a white and gold bunny costume, and a black bow tie, leaning into the frame inside a rustic warmly lit tavern.
+<Subject 1> is the clearly adult fictional woman in <Picture 1>. Preserve her long blonde hair, large gold-and-white ears, soft facial features, pink-brown eyes, blush, body proportions, and playful expression.
+<Subject 2> is her white-and-gold bunny costume with a black bow tie and gold sleeve cuffs.
+<Subject 3> is the rustic tavern in <Picture 1>, with rough wood walls, amber sunlight, bottles on shelves, a wooden bar, and warm shadows.
+<Subject 4> is a clearly adult fictional man defined by text only. Only his hands, forearms, torso edge, pelvis, and thighs may enter. His face, head, shoulders, and voice remain outside every shot.
+
+summary:
+[keyframe completion + reference generation] A 15-second vertical three-shot sequence begins exactly from <Picture 1>. <Subject 1> removes <Subject 2> beside the tavern bar and has consensual vaginal sex with <Subject 4>. Her rabbit ears, facial reactions, and rhythmic body movement carry the sequence.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first frame): fully_preserved - the face, blonde hair, rabbit ears, costume, bow tie, bar, sunlight, and warm tavern background match the reference.
+<Subject 1> (all shots): fully_preserved - her face, blonde hair, gold-and-white ears, eyes, blush, and proportions remain consistent.
+<Subject 2> ([Shot 1]): partially_preserved - the white-and-gold costume is worn at the opening and removed by 00:03.700; it does not return.
+<Subject 3> (all shots): fully_preserved - the rustic walls, bottles, wooden bar, and amber light remain unchanged.
+<Subject 4> (from [Shot 2]): fully_preserved - only his body edge is visible and his face never appears.
+
+detailed_description:
+Photorealistic cinematic live-action with warm amber window light, textured wood, realistic skin and fabric, and a lively handheld camera. Both people are clearly adults. Her mouth remains relaxed and never opens wide: her jaw stays loose, her lips stay slightly parted during gasps and moans, and there is no exaggerated jaw drop. Use three shots with hard cuts at exactly 00:05.000 and 00:10.000. No fades, no slow motion, and no interruption of the woman's facial performance.
+
+[Shot 1] 00:00.000-00:05.000. The video begins exactly on <Picture 1>. Medium-close vertical framing. She tilts her head, smiles directly into the lens, and taps one fingernail against the black bow tie. The camera pushes in at a playful walking pace as she pulls the bow loose, opens the white-and-gold costume at the front, and slides it off her shoulders. Her rabbit ears bob and one ear folds forward. She shimmies the costume past her hips and lets it drop behind the bar. Her smile breaks into a surprised gasp when a male hand enters from the lower left and lifts her knee.
+
+[Shot 2] 00:05.000-00:10.000. Hard cut. Low side angle behind the wooden bar. <Subject 1> stands bent forward over the counter, supporting herself on both forearms while <Subject 4>'s hands and torso edge enter behind her. From 00:05.400 his erect penis visibly penetrates her vagina from behind in a consensual standing position. The camera dollies from her ankles to her shoulders in one smooth rising move. Glasses clink, her rabbit ears bounce, and her lips part around a long gasp as the thrusts begin. She turns her face toward the lens, cheeks flushed and eyes half closed.
+
+[Shot 3] 00:10.000-00:15.000. Hard cut. Frontal medium close from the customer side of the bar. She has lifted herself onto the wooden counter, legs spread, the man's pelvis entering from below the frame edge. His hands grip her hips while the penetration and continuous thrusting remain visible. The camera begins close on her face, then arcs halfway around her shoulder without losing her eyes. Her breasts and rabbit ears bounce with the rhythm. From 00:12.500 her expression shifts from a teasing grin to an overwhelmed breathy moan with her lips only slightly parted. She reaches forward, grabs the edge of the bar, and holds the final reaction as her breathing stutters.
+
+overall_soundscape:
+Quiet tavern room tone, a faint wooden creak, glasses touching the counter, fabric dropping onto wood, skin contact, and rhythmic wet friction stay synchronized with the action. The only human vocal sounds are the woman's bright gasps and breathy moans. The man is completely silent, with no speech, breathing, or grunts.
+
+non_diegetic_music:
+N/A

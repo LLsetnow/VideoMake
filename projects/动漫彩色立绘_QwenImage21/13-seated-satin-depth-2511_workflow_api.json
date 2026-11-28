@@ -1,0 +1,179 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_ablitrated_v1.6_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "5": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "shift": 3.1,
+      "sampling": "flow"
+    }
+  },
+  "6": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": "将图一的灰度深度图转换成真实手机摄影。图一决定取景、左右方向、人物深浅和身体姿势：成年女性坐在铺布的矮台上，一侧膝盖高高屈起位于画面右侧，另一侧膝盖向画面左边伸出，小腿向下折，手掌支撑在身侧。保持参考轮廓与透视。图二仅参考五官和深色马尾。24岁成年东亚女性，神态安静。艺术家工作室的窗边，她用厚实不透明的深墨绿色丝缎裹身，从胸前包到骨盆并遮盖大腿内侧，肩膀、手臂和小腿露出，真实丝缎褶皱顺着屈膝垂落。自然皮肤纹理，暖灰墙壁，柔和侧窗光，中性白平衡。单人竖幅彩色全身写真。",
+      "image2": [
+        "15",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "14",
+        0
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 216741,
+      "steps": 4,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "videomake/qwen2511/13-seated-satin-depth-2511"
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "videomake/pose/seated-pose-depth-9c7aae8d.png"
+    }
+  },
+  "11": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 832,
+      "height": 1248,
+      "batch_size": 1
+    }
+  },
+  "12": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": "",
+      "image2": [
+        "15",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "6",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "14": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "12",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "15": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "videomake/qwen21-anime/aigc-face-reference.png"
+    }
+  }
+}

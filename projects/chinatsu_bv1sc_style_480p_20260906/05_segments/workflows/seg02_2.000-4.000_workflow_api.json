@@ -1,0 +1,378 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "60",
+        0
+      ],
+      "ref_audios": {
+        "ref_audio_0": [
+          "53",
+          0
+        ]
+      },
+      "ref_videos.ref_video_0": [
+        "97",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "59",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "chinatsu_bv1sc_segment02_2-4_lock_source",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 2.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is Chinatsu, the same anime game character whose identity is defined by <Picture 1>, <Picture 2>, and <Picture 3>. Preserve her pale silver-gray softly wavy medium-length hair, heavy straight bangs, mint-green bow, black geometric hair ornaments, pink-and-mint clips, black dangling earrings, large multicolored eyes, softly rounded face, fair skin, and stable anime anatomy.\n<Picture 1> is the literal first frame of this 2.000-second segment: the coral-orange jacket, pale-aqua top, pink pleated skirt, pale-aqua socks, coral-pink shoes, folded-arm pose, and coral-pink-aqua color cards must match exactly.\n<Picture 2> is the literal last frame of this 2.000-second segment: the light-blue denim jacket, red hooded sweatshirt, pale-blue wide-leg cropped trousers, red-and-white canvas sneakers, black utility bag, hands-in-pockets pose, and blue-red color cards must match exactly.\n<Picture 3> is the face-only identity reference for Chinatsu's eyes, bangs, hair framing, earrings, bow silhouette, and facial proportions; exclude its crop and background.\n<Video 1> is a silent derived depth-plus-DWPose structural control video for this segment. Use it only for pose geometry, hand and limb directions, turning direction, gesture timing, depth order, and fixed vertical camera framing. Never render its grayscale depth, skeleton lines, keypoints, source performer, clothing, room, watermark, or technical overlay.\n<Audio 1> is the exact 00:02.000-00:04.000 audio cut from the supplied reference video and must be directly reused as the complete final audio for this segment.\n\nsummary:\n[literal first-frame to last-frame boundary transition + locked source audio] Create a 2.000-second vertical 9:16 polished anime fashion transition. Begin exactly on <Picture 1> and finish exactly on <Picture 2>. Use <Video 1> only for hidden source movement and camera structure, use <Picture 3> only for face identity, and reuse <Audio 1> 1:1 with audio_mode lock_source. No generated music, dialogue, or replacement sound.\n\nretention_analysis:\n<Picture 1>: fully_preserved as the literal first frame and opening coral-aqua-pink wardrobe state.\n<Picture 2>: fully_preserved as the literal last frame and closing blue-red-denim wardrobe state.\n<Picture 3>: fully_preserved for face and hair identity only.\n<Video 1>: partially_preserved for hidden motion, timing, depth, and framing; exclude all visible control artwork.\n<Audio 1>: fully_copy and continuous from the supplied source cut.\n\ndetailed_description:\nUse crisp high-end anime rendering, refined cel shading, stable anatomy, detailed fabric, white studio space, tilted color cards, centered vertical fashion-catalog composition, and soft frontal light. No cuts, no extra people, no text, no logos, no watermark, no picture-in-picture, and no visible depth or skeleton maps.\n[Shot 1] At 00:00.000, match <Picture 1> exactly. During 00:00.000-00:00.700, preserve the source turn and relaxed fashion pose from <Video 1>. During 00:00.700-00:01.700, execute one continuous rotational color-wipe transition into the light-blue denim jacket, red hoodie, pale-blue trousers, and red sneakers; keep hands, bag, face, hair, and limbs coherent. During 00:01.700-00:02.000, settle both hands into the pockets and land exactly on <Picture 2> as the final frame. Keep the reference audio unchanged.\n\noverall_soundscape:\nUse only the directly reused source audio from <Audio 1>. Add no new ambience, foley, dialogue, singing, or sound effects. <Video 1> contributes no audio.\n\nnon_diegetic_music:\n<Audio 1> is the complete audience-only source track for 00:00.000-00:02.000. Reuse it 1:1 without time stretch, remix, replacement, or extension.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/chinatsu_bv1sc_style_480p_20260906/02_character_refs/chinatsu_key_02_coral_aqua_pink.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/chinatsu_bv1sc_style_480p_20260906/05_segments/audio/seg02_2.000-4.000_source.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 2.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  },
+  "59": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/chinatsu_bv1sc_style_480p_20260906/02_character_refs/chinatsu_face_identity.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Face reference · Chinatsu"
+    }
+  },
+  "97": {
+    "inputs": {
+      "video": "/Users/apple/Documents/VideoMake/projects/chinatsu_bv1sc_style_480p_20260906/05_segments/control/seg02_2.000-4.000_control.mp4",
+      "force_rate": 24,
+      "force_size": "Disabled",
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "Bilibili 深度 + 骨骼参考视频 · 24fps"
+    }
+  },
+  "60": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/chinatsu_bv1sc_style_480p_20260906/02_character_refs/chinatsu_key_04_blue_red_denim.png"
+    },
+    "_meta": {
+      "title": "Literal last frame"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  }
+}

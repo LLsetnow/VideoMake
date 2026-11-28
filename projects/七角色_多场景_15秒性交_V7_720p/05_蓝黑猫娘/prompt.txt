@@ -1,0 +1,31 @@
+subject_definitions:
+<Picture 1> is the opening frame of [Shot 1] and the identity, costume, and location reference: a clearly adult fictional catgirl with short black hair, electric-blue streaks, large teal cat ears, a long fluffy blue-and-purple tail, teal eyes, glossy skin, white gloves, and a blue fur-trimmed outfit in a dark cozy bedroom.
+<Subject 1> is the clearly adult fictional woman in <Picture 1>. Preserve her black-and-blue hair, teal cat ears, teal eyes, soft face, glossy skin, body proportions, fluffy tail, and playful expression.
+<Subject 2> is her blue fur-trimmed top, white gloves, and black collar.
+<Subject 3> is the dark cozy bedroom in <Picture 1>, with warm practical lights, soft textiles, a low bed, and deep blue shadows.
+<Subject 4> is a clearly adult fictional man defined by text only. Only his hands, forearms, torso edge, pelvis, and thighs may enter. His face, head, shoulders, and voice remain outside.
+
+summary:
+[keyframe completion + reference generation] A 15-second vertical three-shot sequence begins exactly from <Picture 1>. <Subject 1> removes <Subject 2> on the bed and has consensual vaginal sex with <Subject 4>. The sequence uses overhead, rear three-quarter, and intimate side angles, with her cat ears and tail reacting to every movement.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first frame): fully_preserved - her face, black-and-blue hair, teal eyes, cat ears, glossy skin, fluffy tail, and bedroom lighting match the reference.
+<Subject 1> (all shots): fully_preserved - her ears, eyes, hair, tail, body proportions, and expressions remain consistent.
+<Subject 2> ([Shot 1]): partially_preserved - the blue fur-trimmed top and gloves are worn at the opening and removed by 00:03.700; the collar remains.
+<Subject 3> (all shots): fully_preserved - the dark bedroom, warm practical light, low bed, and blue shadows remain consistent.
+<Subject 4> (from [Shot 2]): fully_preserved - only his body edge is shown and his face never appears.
+
+detailed_description:
+Photorealistic cinematic live-action with warm bedside light, cool blue shadows, realistic fur, skin, and fabric, and agile camera movement. Both people are clearly adults. Her mouth remains relaxed and never opens wide: her jaw stays loose, her lips stay slightly parted during gasps and moans, and there is no exaggerated jaw drop. Use three shots with hard cuts at exactly 00:05.000 and 00:10.000. No fades, no slow motion, and no loss of the woman's facial expression.
+
+[Shot 1] 00:00.000-00:05.000. The video begins exactly on <Picture 1>. Close medium vertical framing. She lowers her white-gloved hand from her shoulder, tilts her head, and gives the lens a mischievous smile. The camera descends slowly from above as she pulls off one glove, then the other, and opens the blue fur-trimmed top. She shrugs it down her arms and rolls onto her stomach, letting the top fall away. Her tail lifts and curls behind her. She glances back over her shoulder, ears rotating toward a male hand that enters from the bottom-right and settles on the blanket beside her.
+
+[Shot 2] 00:05.000-00:10.000. Hard cut. Rear three-quarter medium shot at mattress height. She is on her hands and knees, back arched, tail sweeping upward while <Subject 4>'s hands and torso edge enter behind her. From 00:05.500 he visibly penetrates her vagina from behind in a consensual position. The camera handholds with small lateral movement, matching the bed's motion. Her ears flatten and spring back, her fingers dig into the blanket, and she looks over her shoulder with widened eyes and a sharp gasp.
+
+[Shot 3] 00:10.000-00:15.000. Hard cut. Side close medium, camera low across the bed and pushing slowly toward her face. Her body stays connected to the man's rhythm; only his waist, forearm, and thigh remain visible at the edge. Her tail wraps once around his forearm, then slides free. Sweat glistens on her skin. From 00:12.300 the thrusts quicken, her lips stay softly parted, and she reaches back to hold his wrist. She turns her face to the lens, ears twitching, and lets out a long shaky breath before her eyes flutter and hold the final gaze.
+
+overall_soundscape:
+A quiet bedroom room tone, fabric shifting, mattress springs tightening, the soft brush of fur, skin contact, and rhythmic wet friction stay synchronized to the action. The only human vocal sounds are the woman's gasps, small needy whimpers, and breathy moans. The man is completely silent, with no voice, breathing, or grunts.
+
+non_diegetic_music:
+N/A

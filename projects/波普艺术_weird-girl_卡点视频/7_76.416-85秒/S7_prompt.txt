@@ -1,0 +1,44 @@
+# S7 (76.416-85s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 尾声黑场后的彩蛋 Stinger（黑场淡入 → 海报复活眨眼 → 文字跳动 → 黑场）
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S7.wav（v3 淡出尾音 + 额外 5 秒静默，约 10s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image that opens and closes this stinger: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, a sly knowing smirk, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Audio 1> is the locked audio for this stinger: a vinyl tail crackle and a soft record-lift sound over about 10 seconds of post-credits ambience, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + keyframe bookends + audio reuse] The target video is a post-credits stinger: <Picture 1> fades in from black as the first frame, the girl's eyes blink once and she smirks at the viewer while the "weird-girl" text bounces playfully, the eye symbol of <Subject 2> winks open, then the shot freezes back to the flat poster and cuts to black on a record-lift sound, with <Audio 1> reused as the complete soundtrack.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first-frame anchor, [Shot 3] last-frame anchor): fully_preserved - both the opening and closing frames match the poster exactly, including layout, palette, halftone dots, the girl's neutral pose and all visible texts.
+<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; only micro-expression animates.
+<Subject 2> (appears in [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art stinger with a pink, black and white palette, halftone dot textures, paper grain and a slow playful pace.
+[Shot 1] The shot begins from <Picture 1>: the full poster, centered and filling the frame, fades in from black over one beat. The halftone dots across the pink background breathe gently, pulsing in and out with a soft rhythm. The camera holds a static medium shot with an imperceptibly slow push-in. The girl's expression remains neutral, matching the original poster.
+[Shot 2] At 00:03.000, the shot holds on the same frame but the magic happens: <Subject 1>'s dark eyes blink once slowly, then her lips curve into a sly knowing smirk that wasn't in the original poster. The "weird-girl" text at the top-left bounces upward one centimeter and drops back with a springy bounce. Simultaneously, the small eye symbol near the center-right of <Subject 2> animates: it opens wide and winks once. The camera stays static, letting the micro-animations play.
+[Shot 3] At 00:06.000, all animated elements freeze: the smirk flattens back to the original neutral expression, the "weird-girl" text settles to its static position, the eye symbol closes, and the shot locks back to the exact original <Picture 1> poster. The halftone dots hold their last pulse. A vinyl record-lift sound marks the cut as the frame cuts sharply to black.
+
+overall_soundscape:
+Soft vinyl tail crackle runs throughout, a paper rustle whispers during the micro-animations, a springy boing accompanies the text bounce, and a crisp record-lift sound punctuates the final cut to black.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: vinyl tail crackle, soft record-lift ambience over approximately 10 seconds of post-credits quiet.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 彩蛋开场与收尾海报参考图（同全片海报）；`<Subject 1>` 女孩（狡黠心照的微笑表情）；`<Subject 2>` 拼贴世界；`<Audio 1>` 本段锁定音频——唱片尾噪与轻提针环境音，约 10 秒彩蛋留白，1:1 复用。
+- `summary`：任务类型 [reference generation + keyframe bookends + audio reuse]（参考生成 + 首尾帧锚定 + 音频复用）；彩蛋 Stinger：黑场淡入 `<Picture 1>` 原海报、女孩眨眼 + 狡黠微笑、"weird-girl" 文字弹簧弹跳、眼睛符号 wink、最后冻结回原海报并硬切黑场。
+- `retention_analysis`：`<Picture 1>`（[Shot 1] 首帧锚 + [Shot 3] 末帧锚）fully_preserved——开场帧与收尾帧均与海报完全一致（版式/配色/网点/中性姿态/全部文字）；`<Subject 1>` 全镜 fully_preserved——形象不变，仅微表情动画；`<Subject 2>` fully_preserved；`<Audio 1>` fully_copy。
+- `detailed_description`：风格=复古丝网印刷拼贴波普彩蛋，粉黑白配色、网点、纸颗粒，慢节奏。Shot 1（0-3.000s）：黑场淡入完整海报，网点轻柔呼吸脉动，镜头静态极慢推近，女孩表情保持原海报中性；Shot 2（3.000s）：同一画面——女孩缓慢眨眼一次然后露出狡黠心照微笑（原海报没有），左上 "weird-girl" 文字弹起一厘米再弹簧回弹，右中眼睛符号睁眼 wink 一次，镜头静态让微动画自行展开；Shot 3（6.000s）：所有动画元素冻结——微笑回到中性、文字落位、眼睛符号闭合，画面锁回精确的 `<Picture 1>` 原海报，网点停住，唱片提针声硬切黑场。
+- `overall_soundscape`：轻柔唱片尾噪贯穿、微动画段纸沙沙、文字弹跳弹簧 boing、最后硬切清脆唱片提针声。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——唱片尾噪 + 轻提针环境音，约 10 秒彩蛋静默。

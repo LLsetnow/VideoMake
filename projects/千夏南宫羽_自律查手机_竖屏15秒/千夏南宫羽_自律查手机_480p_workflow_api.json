@@ -1,0 +1,481 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "76",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "75",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "52",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏-全身三视图-方形-v2.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref0"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏音色6秒.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "ref0 (Chinatsu voice)"
+    }
+  },
+  "53": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/ref/character/南宫羽/南宫羽音色6秒.mp3",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "ref1 (Nangong Yu voice)"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> (S1) is Chinatsu, whose identity, face, hair, accessories, and core costume are referenced by connected images <Picture 1> and <Picture 2>: a cute-cool Decora idol with a softly rounded oval face, large round-almond eyes with multicolored highlights, fine dark brows, a small nose, pale-pink lips, fair skin with a faint rosy flush, pale mint-silver softly wavy hair with heavy straight bangs, black geometric hair clips with pink and mint details, black dangling earrings, a white short-sleeved shirt, a red heart-motif tie, a black choker, small white angel wings, a pink backpack, striped arm warmers, and a black layered tutu skirt. She is timid and wary around strangers. Her voice, guided by <Audio 1>, is a soft low-volume, slightly breathy young female voice with hesitant pauses, short careful phrases, and a polite nervous cadence. For every spoken frame, use only a tiny closed-mouth lip-line motion with no visible mouth interior or teeth; never use a wide-open mouth or an exaggerated shout.\n<Subject 2> (S2) is Nangong Yu, whose identity and costume are referenced by connected image <Picture 3>: a gothic angel idol with a pale complexion, vivid crimson eyes with four-pointed star highlights, straight dark bangs, a short jet-black bob with coral-pink curled twin side buns, salmon-pink bows, mint ribbons, a translucent mint-green halo, a black choker, a cat pendant, a white corset top, a red striped tie, black sleeves with fluffy cuffs and mint bows, white mechanical shoulder details, and red-and-pink lower-body accents. Her voice, guided by <Audio 2>, is calm, low, measured, completely deadpan, and restrained in mouth movement.\n<Audio 1> is the voice-timbre reference for <Subject 1> (S1), containing a short spoken sample. Use only its timbre, pitch range, breathiness, and delivery; do not copy its words or recording.\n<Audio 2> is the voice-timbre reference for <Subject 2> (S2), containing a short spoken sample. Use only its timbre, pitch range, and deadpan delivery; do not copy its words or recording.\n\nsummary:\n[reference generation + audio reference] Create a 15-second vertical 9:16 animated comedy skit using <Subject 1> and <Subject 2> for stable character identity, face, hair, accessories, and core costume. Use <Picture 1>, <Picture 2>, and <Picture 3> for visual consistency, and use <Audio 1> and <Audio 2> only as voice-timbre references for the corresponding speakers. Use three direct cuts in one compact bright anime livestream studio, with newly generated native synchronized dialogue and physical sound effects. The joke is a self-discipline challenge that immediately defeats itself; keep all visible phone content unreadable and add no subtitles, captions, logos, or watermarks.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1] and [Shot 3]): fully_preserved - preserve Chinatsu's identity, face, hair colors and accessories, core outfit, timid wary personality, soft hesitant voice delivery, and small restrained speech mouth shapes while adapting her pose and the studio setting.\n<Subject 2> (appears in [Shot 1], [Shot 2], and [Shot 3]): fully_preserved - preserve Nangong Yu's identity, facial structure, black-and-coral hair, halo, core gothic angel outfit, and deadpan voice delivery while adapting her pose and the studio setting.\n<Audio 1> reference - guide only Chinatsu's vocal timbre and timid delivery; do not copy the source words or recording.\n<Audio 2> reference - guide only Nangong Yu's vocal timbre and deadpan delivery; do not copy the source words or recording.\n\ndetailed_description:\nPolished vertical 9:16 2D-anime with subtle 3D depth, crisp linework, soft cel shading, and a bright compact livestream studio. A pale desk, an unbranded black smartphone, a warm key light, and a soft cyan fill create a simple readable stage. Keep both characters' identity, hair, accessories, colors, and core clothing stable across every cut. All speech uses tiny closed-mouth lip-line motion with no visible mouth interior or teeth; never animate an open-mouth vowel, wide mouth, or shout. No readable text appears on the phone or in the room.\n\n[Shot 1] A vertical medium two-shot frames <Subject 1> on the left and <Subject 2> on the right at the small desk. The black smartphone rests in <Subject 1>'s hand with its screen angled toward her body. Chinatsu keeps her shoulders slightly tucked, glances at Nangong Yu, and raises a small fist close to her chest as if trying to be brave. After a tiny inhale, <Subject 1> (S1) speaks using the vocal timbre from <Audio 1>, in a very soft, hesitant, slightly breathy voice: <d>[Chinese] 我决定今天开始自律！</d> Use only tiny closed-mouth lip motion; show no mouth interior or teeth. Nangong Yu watches without moving, neutral and skeptical. The camera makes a slow Push In with small amplitude at normal speed, ending as Chinatsu timidly waits for praise. The room remains quiet except for faint studio hum and fabric rustle.\n\n[Shot 2] At 00:04.800, the camera cuts to a vertical medium close-up of <Subject 2>. Chinatsu's shoulder and the phone edge stay blurred in the foreground. Nangong Yu slowly raises one finger, points at the phone, and leans forward a few centimeters. <Subject 2> (S2) speaks using the vocal timbre from <Audio 2>, in a low, measured, completely deadpan voice: <d>[Chinese] 很好。第一步，放下手机。</d> The camera holds a Static Shot with a tiny slow Zoom In toward her eyes, treating the obvious advice with absurd seriousness. Her fingertip taps the phone case once. Chinatsu freezes in the foreground, too nervous to react.\n\n[Shot 3] At 00:08.900, an action cut follows the phone's downward movement back to <Subject 1>. In a vertical medium close-up, Chinatsu carefully places the phone face-down, keeps a tiny proud smile for half a beat, then her eyes widen with a genuine new problem. She immediately grabs the phone again, turns it upright, and starts searching as if conducting a serious investigation. Using the soft timid delivery guided by <Audio 1>, <Subject 1> (S1) says with a small nervous rush and restrained mouth movement: <d>[Chinese] 等一下，我先查一下怎么放下手机。</d> Keep her mouth as a small closed line, never wide open. A quick search beep sounds. The camera Pushes In with small amplitude at fast speed during the pickup, then holds. Nangong Yu remains in the background at frame right, slowly turns her eyes toward the camera, and gives a tiny silent sigh. End on Chinatsu earnestly staring at the phone while the contradiction is fully visible.\n\noverall_soundscape:\nLow indoor studio ambience continues throughout. The phone case taps softly on the desk, followed by one short search or notification beep, light clothing movement, and a restrained sigh from Nangong Yu at the end. Keep physical sounds crisp but below the dialogue.\n\nnon_diegetic_music:\nN/A\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "0.4"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/千夏南宫羽_自律查手机_480p",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "75": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/南宫羽/南宫羽_角色三视图.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref1"
+    }
+  },
+  "76": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "ref1 (Chinatsu face)"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "94",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "87",
+        2
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "87",
+        3
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "h3ErosMax_beta4.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "__rh_meta__": {
+    "workflowId": "2094755110367227906",
+    "accountId": "account_9946f5228811"
+  }
+}

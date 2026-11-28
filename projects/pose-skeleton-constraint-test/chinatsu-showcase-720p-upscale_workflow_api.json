@@ -1,0 +1,328 @@
+{
+  "51": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/chinatsu_showcase_720p_upscale",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "86",
+        0
+      ],
+      "audio": [
+        "90",
+        2
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "72": {
+    "inputs": {
+      "value": "1"
+    },
+    "class_type": "Float",
+    "_meta": {
+      "title": "megapixels"
+    }
+  },
+  "82": {
+    "inputs": {
+      "sampler_name": "res_multistep"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "83": {
+    "inputs": {
+      "model": [
+        "102",
+        0
+      ],
+      "conditioning": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "84": {
+    "inputs": {
+      "scheduler": "beta",
+      "steps": 4,
+      "denoise": 0.2,
+      "model": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "BasicScheduler"
+    }
+  },
+  "85": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "megapixels",
+      "mode.megapixels": [
+        "72",
+        0
+      ],
+      "align": 32,
+      "device": "cuda",
+      "precision": "fp16",
+      "enable_chunking": "cuda",
+      "latent": [
+        "91",
+        0
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "Minimax H3 Latent Upscaler (3D)"
+    }
+  },
+  "86": {
+    "inputs": {
+      "av_latent": [
+        "89",
+        0
+      ],
+      "video_vae": [
+        "99",
+        0
+      ],
+      "audio_vae": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "88": {
+    "inputs": {
+      "video_latent": [
+        "85",
+        0
+      ],
+      "audio_latent": [
+        "93",
+        0
+      ]
+    },
+    "class_type": "PT_H3ConcatAVLatent",
+    "_meta": {
+      "title": "PT H3 Concat AV Latent"
+    }
+  },
+  "89": {
+    "inputs": {
+      "noise": [
+        "94",
+        0
+      ],
+      "guider": [
+        "83",
+        0
+      ],
+      "sampler": [
+        "82",
+        0
+      ],
+      "sigmas": [
+        "84",
+        0
+      ],
+      "latent_image": [
+        "88",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "90": {
+    "inputs": {
+      "video": "/Users/apple/Documents/VideoMake/projects/pose-skeleton-constraint-test/output/chinatsu-showcase-15s-480p-face-ref-lock-source/chinatsu_showcase_480p_face_ref_final.mp4",
+      "force_rate": 0,
+      "force_size": "Disabled",
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    },
+    "class_type": "VHS_LoadVideo",
+    "_meta": {
+      "title": "加载视频"
+    }
+  },
+  "91": {
+    "inputs": {
+      "pixels": [
+        "90",
+        0
+      ],
+      "vae": [
+        "99",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "93": {
+    "inputs": {
+      "audio": [
+        "90",
+        2
+      ],
+      "vae": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "VAEEncodeAudio",
+    "_meta": {
+      "title": "VAE Encode Audio"
+    }
+  },
+  "94": {
+    "inputs": {
+      "noise_seed": 6666
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "95": {
+    "inputs": {
+      "conditioning": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "ConditioningZeroOut",
+    "_meta": {
+      "title": "Conditioning Zero Out"
+    }
+  },
+  "96": {
+    "inputs": {
+      "prompt": ""
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "97": {
+    "inputs": {
+      "text": [
+        "96",
+        0
+      ],
+      "clip": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "CLIP Text Encode (Prompt)"
+    }
+  },
+  "98": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "99": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "100": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "101": {
+    "inputs": {
+      "lora_name": "minimax_h3_turbo_4step.safetensors",
+      "strength_model": 1,
+      "model": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "102": {
+    "inputs": {
+      "model": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "103": {
+    "inputs": {
+      "unet_name": "10Eros_Max_h3_TURBO-hybrid_beta3_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "__rh_meta__": {
+    "accountId": "account_9946f5228811",
+    "workflowId": "2094769795479949313"
+  }
+}

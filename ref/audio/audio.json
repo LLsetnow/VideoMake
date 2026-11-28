@@ -1,0 +1,90 @@
+{
+  "version": 5,
+  "kind": "audio",
+  "references": [
+    {
+      "id": "audio-4fb76de77ef3",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "Hypervoid",
+      "text": "音频参考：Hypervoid，可作为音乐或源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/Hypervoid.m4a"
+    },
+    {
+      "id": "audio-683bc3097909",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "One Last Kiss",
+      "text": "音频参考：One Last Kiss，可作为音乐或源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/One Last Kiss.m4a"
+    },
+    {
+      "id": "audio-1f1fc84a6ba1",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "NEONAPSE",
+      "text": "音频参考：NEONAPSE，可作为音乐或源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/NEONAPSE.mp3"
+    },
+    {
+      "id": "audio-0731dc158774",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "sex1",
+      "text": "音频参考：sex1，可作为源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/sex1.m4a"
+    },
+    {
+      "id": "audio-67abc6777ae0",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "青春的幻象 · 前 15 秒",
+      "text": "音频参考：青春的幻象前 15 秒，可作为源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/青春的幻象_前15秒.wav"
+    },
+    {
+      "id": "audio-419eeac8b16c",
+      "kind": "audio",
+      "kind_label": "音频",
+      "category": "音乐与源音频",
+      "tags": [
+        "音频"
+      ],
+      "source_tags": [],
+      "title": "海螺 H3 · 前 10 秒",
+      "text": "音频参考：海螺 H3 前 10 秒，可作为源音频输入，具体用途以工作流节点配置为准。",
+      "image_path": "",
+      "audio_path": "assets/海螺H3_前10秒.wav"
+    }
+  ]
+}

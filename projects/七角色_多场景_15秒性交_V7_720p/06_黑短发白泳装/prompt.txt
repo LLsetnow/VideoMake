@@ -1,0 +1,31 @@
+subject_definitions:
+<Picture 1> is the opening frame of [Shot 1] and the identity, costume, and location reference: a clearly adult fictional woman with a short black bob, direct gaze, glossy wet skin, a white bikini, and a loose white cover-up, standing beside a bright turquoise swimming pool.
+<Subject 1> is the clearly adult fictional woman in <Picture 1>. Preserve her short black bob, dark eyes, pale skin, wet highlights, makeup, body proportions, and calm confident expression.
+<Subject 2> is her white bikini top with thin straps and white tie-side bikini bottom, plus the loose white cover-up.
+<Subject 3> is the modern pool terrace in <Picture 1>, with clear turquoise water, pale stone columns, bright daylight, and soft architectural shadows.
+<Subject 4> is a clearly adult fictional man defined by text only. Only his hands, forearms, lower torso, pelvis, and thighs may enter. His face, head, shoulders, and voice stay outside.
+
+summary:
+[keyframe completion + reference generation] A 15-second vertical three-shot sequence begins exactly from <Picture 1>. <Subject 1> removes <Subject 2> at the pool edge and has consensual vaginal sex with <Subject 4>. Clean daylight, water reflections, and three distinct camera positions create a controlled, sensual rhythm.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first frame): fully_preserved - her black bob, white swimwear, wet skin, pool, columns, and bright daylight match the reference.
+<Subject 1> (all shots): fully_preserved - her face, short bob, eyes, skin tone, makeup, and proportions remain consistent.
+<Subject 2> ([Shot 1]): partially_preserved - the white bikini and cover-up are worn at the opening and removed by 00:03.500; they do not return.
+<Subject 3> (all shots): fully_preserved - the turquoise pool, pale stone, columns, and bright daylight remain unchanged.
+<Subject 4> (from [Shot 2]): fully_preserved - only his body edge is visible and his face never appears.
+
+detailed_description:
+Photorealistic cinematic live-action with clean natural daylight, crisp water reflections, realistic wet skin and fabric, and precise camera moves. Both people are clearly adults. Her mouth remains relaxed and never opens wide: her jaw stays loose, her lips stay slightly parted during gasps and moans, and there is no exaggerated jaw drop. Use three shots with hard cuts at exactly 00:05.000 and 00:10.000. No fades and no slow motion. Keep the woman's calm expression evolving into visible arousal.
+
+[Shot 1] 00:00.000-00:05.000. The video begins exactly on <Picture 1>. Medium vertical framing. She lowers her hand from her forehead, smiles faintly, and unties the white cover-up at her waist. The camera arcs slowly around her as the cover-up slips from her shoulders. She reaches behind her back and unfastens the bikini top, then pulls the tie-side bottom open and lets both pieces drop onto the pale stone. She stands fully nude at the water's edge, wet skin shining. A male hand enters from the right and brushes along her hip; her smile disappears into a quick inhale.
+
+[Shot 2] 00:05.000-00:10.000. Hard cut. Low side medium shot at the pool edge. She sits on the warm stone with both legs open, heels near the water while <Subject 4>'s hands and torso edge enter from below. From 00:05.500 he visibly penetrates her vagina in a consensual seated position. The camera tracks laterally just above the waterline, catching ripples and reflections across their bodies. Her short bob swings forward, her fingers grip the stone, and she looks into the lens with parted lips as the first deep thrust lifts her shoulders.
+
+[Shot 3] 00:10.000-00:15.000. Hard cut. Medium close from her side, with the pool filling the background. One of the man's hands presses against her lower abdomen while his pelvis and thigh remain at the frame edge. The continuous thrusting makes her breasts move and her thighs tremble. The camera pushes in slowly, then tilts up from her waist to her face. She closes her eyes, breathes harder, and opens them again with a flushed, unfocused gaze. At 00:13.300 she reaches back to hold his forearm and lets her head fall against his shoulder, holding a soft breathy moan with her lips slightly parted through the final frame.
+
+overall_soundscape:
+Bright poolside ambience, gentle water lapping, droplets falling from skin onto stone, wet fabric dropping away, bare skin contact, and rhythmic friction stay synchronized to the action. The only human vocal sounds are the woman's quiet gasps and breathy moans. The man is completely silent, with no voice, breathing, or grunts.
+
+non_diegetic_music:
+N/A

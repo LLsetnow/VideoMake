@@ -1,0 +1,33 @@
+subject_definitions:
+<Subject 1> is The fictional adult woman Junye, whose face and hair are defined by <Picture 1>. Lock her gently rounded oval face, dark brown almond eyes with natural double eyelids and slightly raised outer corners, medium-length eyelashes, fine arched dark brown eyebrows, straight moderately high nose bridge, natural pink medium-full lips with a subtle Cupid's bow, fair even skin with faint blush, and a chin-length straight dark brown bob with a side part and subtle highlights. She wears no accessories.
+<Subject 2> is the rear-entry kneeling posture with two adults aligned at the hips, from <Picture 2>, a grayscale geometry reference only.
+<Subject 3> is the face-up M-leg posture with the knees raised and the partner between her thighs, from <Picture 3>, a grayscale geometry reference only.
+<Subject 4> is the woman-on-top kneeling straddle with the partner reclined beneath her, from <Picture 4>, a grayscale geometry reference only.
+<Subject 5> is the side-view face-up posture with the woman supported on the mattress and the man kneeling between her bent legs, from <Picture 5>, a grayscale geometry reference only.
+
+summary:
+[reference generation] Four 2.5-second shots of <Subject 1> and the same adult male partner having sex, with a different pose after every hard cut.
+
+retention_analysis:
+<Subject 1> fully_preserved — preserve Junye’s face and hair throughout.
+<Subject 2> partially_preserved — match the pose and depth ordering in Shot 1; render natural color and human skin, with no depth-map appearance or reference wardrobe.
+<Subject 3> partially_preserved — match the pose and depth ordering in Shot 2; render natural color and human skin, with no depth-map appearance or reference wardrobe.
+<Subject 4> partially_preserved — match the pose and depth ordering in Shot 3; render natural color and human skin, with no depth-map appearance or reference wardrobe.
+<Subject 5> partially_preserved — match the pose and depth ordering in Shot 4; render natural color and human skin, with no depth-map appearance or reference wardrobe.
+
+detailed_description:
+Photorealistic 16:9, the same two consenting adults in one rain-lit bedroom. Warm bedside lamp, cool rain-lit window, ivory sheets. The male partner has short dark hair, medium olive skin and a lean build. Each change of position happens as a hard cut. Preserve actor identity, light direction and room geography across all four shots.
+
+[Shot 1] Open mid-thrust in the rear-entry geometry of <Subject 2>. Fixed rear three-quarter medium two-shot at bed height, showing the hip contact and her recognizable profile. <Subject 1> kneels with her palms on the mattress; her partner kneels immediately behind with his hands at her hips. His penis is already inside her vagina. In the first frame his pelvis is moving forward; he withdraws slightly and thrusts back in along the same horizontal line. Her hands and knees stay planted. Cut during the next forward thrust.
+
+[Shot 2] At 00:02.500, hard cut to a high foot-side view with the M-leg geometry of <Subject 3>. <Subject 1> lies face-up, knees raised and spread. Her partner supports both thighs, with his penis already penetrating her vagina. His pelvis retreats slightly and advances in two short strokes between her thighs. Her shoulders remain anchored on the pillow; both knees react subtly to each forward stroke. Keep her face and both hips within the frame.
+
+[Shot 3] At 00:05.000, hard cut to a bed-height three-quarter medium shot of <Subject 4>. The same man lies on his back. <Subject 1> straddles him with knees on the mattress, his penis already inside her vagina. She braces her hands on his chest and drives the motion: her pelvis rocks forward along his abdomen, then back while he stays supported on the bed. She repeats the compact rock without losing contact. Keep her head in three-quarter view.
+
+[Shot 4] At 00:07.500, hard cut to a mattress-level profile two-shot based on <Subject 5>. <Subject 1> is face-up with her feet planted and knees bent. Her partner kneels between her thighs with one hand firmly braced by her shoulder. His penis is already inserted; he moves his pelvis forward and back along the bed plane in short, clear thrusts while keeping his shoulders level. End during the next forward thrust.
+
+overall_soundscape:
+Keep rain on the window continuous over the hard cuts. Close breathing, mattress creaks and sheet friction are synchronized to each shot. No dialogue.
+
+non_diegetic_music:
+N/A

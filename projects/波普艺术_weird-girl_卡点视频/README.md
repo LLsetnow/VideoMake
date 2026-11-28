@@ -24,7 +24,7 @@
 | S6 | 63.158–76.416 | 318 | 收尾副歌+渐出 | 6_.../S6_prompt.txt | S6_workflow_api.json | 575029985171552 |
 
 - 每段锁定音频切片：`lock_source_S{i}.wav`（从 v3 精确切割，44.1kHz）
-- 参考图：`character/波普艺术/微信图片_20260811163716_103_80.png`（Ref2VA `<Picture 1>`，身份/风格/文字锚）
+- 参考图：`ref/character/波普艺术/微信图片_20260811163716_103_80.png`（Ref2VA `<Picture 1>`，身份/风格/文字锚）
 
 ## H3 模式与流程
 - 全流程经 `minimax-h3-creative-director` → `minimax-h3-multishot-planner`（18 镜方案已确认 `multishot_plan_status: confirmed`）→ `minimax-h3-reference-video-prompt`（Ref2VA 六段式，英文+中文双语）
@@ -55,5 +55,5 @@
 
 ## 复现
 1. `opc aigate --start --create --sku "4090D-48G" --area "华东一区" --image-id 1138522483051855872 --image-type 3`
-2. 对每段：`python3 analysis/aigate_helper.py submit <实例URL> <段>/S{i}_workflow_api.json character/波普艺术/微信图片_20260811163716_103_80.png <段>/lock_source_S{i}.wav <段>/output MiniMaxH3/weirdgirl_beat_S{i}`
+2. 对每段：`python3 analysis/aigate_helper.py submit <实例URL> <段>/S{i}_workflow_api.json ref/character/波普艺术/微信图片_20260811163716_103_80.png <段>/lock_source_S{i}.wav <段>/output MiniMaxH3/weirdgirl_beat_S{i}`
 3. 按本文件"剪辑"节裁切拼接（各段先按目标帧数 305/266/343/314/288/318 用 `-frames:v` 裁切，段内切点按 `analysis/quantized_inner_cuts.json` 拆分后 concat；中间文件已清理，需重跑时按此重建）

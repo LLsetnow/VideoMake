@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is Chinatsu, the anime girl defined by the connected character image <Picture 1>. Preserve her pale silver-gray softly wavy hair, heavy straight bangs, mint-green star-shaped bow, multicolored eyes, heart-shaped hair ornaments, black dangling earrings, fair skin, white blouse, red tie, black choker, and pink backpack straps. Keep her face, identity, anatomy, colors, and costume stable.
+<Audio 1> is a 5.160-second reference recording containing Chinatsu's Chinese monologue with a quiet indoor room tone and a low air-conditioner hum. It is an audio reference for <Subject 1> (S1): use it for voice timbre, measured delivery, spoken-word pacing, and the relationship between the voice and the environment, but do not copy its waveform or use it as the final audio track.
+
+summary:
+[reference generation + audio reference] Create a single continuous 5.160-second vertical 9:16 anime close-up of <Subject 1>. Use the character image for stable identity and use <Audio 1> only as a reference for Chinatsu's voice delivery and quiet indoor ambience. Generate a new native stereo audio track that contains the exact monologue spoken by <Subject 1> and a restrained room tone beneath it. Do not directly reuse, time-copy, or remix the reference recording.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - preserve Chinatsu's face, hair, bow, eyes, earrings, skin, costume, proportions, and recognizable identity while adding only natural facial motion required for speaking.
+<Audio 1>: reference - use the recording as a reference for the speaker's timbre, delivery, monologue pacing, quiet room tone, and low air-conditioner hum; generate a new native audio track instead of copying the source signal.
+
+detailed_description:
+The target video is a single continuous front-facing medium close-up in polished anime rendering. Place <Subject 1> centered against a softly lit quiet interior with a pale wall and a slightly blurred window area, keeping the mouth unobstructed and the eyes clearly visible. Use stable frontal lighting, clean facial rendering, and a nearly static camera with a very small natural breathing motion and a subtle slow Push In. No cuts, no profile view, no hand covering the mouth, no subtitles, no readable text, no extra characters, and no watermark.
+
+[Shot 1] The shot opens on <Subject 1>, Chinatsu, facing the camera with a calm, attentive expression and closed lips. The young anime woman (S1) speaks on camera in a clear, gentle Chinese voice whose timbre and measured delivery are guided by <Audio 1>. From 00:00.000 through 00:05.160, animate visible lips, jaw, cheeks, and small eye motion in close temporal alignment with the newly generated spoken performance. The exact monologue is: <d>[Chinese] 你好，我是千夏。今天我们来测试一下原声对白的口型同步。</d> Keep the voice intelligible and centered, with a restrained quiet-room ambience underneath it. The generated ambience should suggest the same kind of indoor air-conditioner hum heard in <Audio 1>, but it must be newly synthesized rather than copied. End on a natural calm expression immediately after the final syllable at 00:05.160.
+
+overall_soundscape:
+Generate a subtle quiet indoor room tone with a low continuous air-conditioner hum, guided by the ambience in <Audio 1> but not copied from it. Keep this environment layer clearly below the new Chinatsu monologue. Do not add music, footsteps, foley, extra voices, or unrelated sound effects.
+
+non_diegetic_music:
+N/A

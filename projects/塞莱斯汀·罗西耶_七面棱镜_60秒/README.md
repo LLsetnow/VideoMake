@@ -17,7 +17,7 @@
 
 ## 参考资产
 
-- 角色三视图：`/Users/apple/Documents/VideoMake/character/塞莱斯汀·罗西耶/celestine_rosier_三视图角色参考.png`
-- 世界观：[世界观设定.md](../../character/塞莱斯汀·罗西耶/世界观设定.md)
-- 连续性约束：[视频生成连续性约束.md](../../character/塞莱斯汀·罗西耶/视频生成连续性约束.md)
+- 角色三视图：`/Users/apple/Documents/VideoMake/ref/character/塞莱斯汀·罗西耶/celestine_rosier_三视图角色参考.png`
+- 世界观：[世界观设定.md](../../ref/character/塞莱斯汀·罗西耶/世界观设定.md)
+- 连续性约束：[视频生成连续性约束.md](../../ref/character/塞莱斯汀·罗西耶/视频生成连续性约束.md)
 

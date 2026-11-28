@@ -1,0 +1,327 @@
+{
+  "6": {
+    "inputs": {
+      "prompt": [
+        "59",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0.7000000000000002,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "max",
+      "reference_video_policy": "official_2_to_15s",
+      "allow_above_reference_area": true,
+      "clip": [
+        "90",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "13",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "96",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "97",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 26082431
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "13": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/yuan_四镜分镜帧_10秒/1080p_8step/output/01_v3.png"
+    },
+    "_meta": {
+      "title": "Picture 1 · 00:00.000"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 10
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "16:9 (Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采分辨率"
+    }
+  },
+  "59": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Picture 1> is the opening frame of Shot 1 at 00:00.000, establishing the rear three-quarter composition, two adult characters, pose, and visible support points.\n<Picture 2> is the opening frame of Shot 2 at 00:02.500, establishing the overhead foot-end POV composition, two adult characters, pose, and visible support points.\n<Picture 3> is the opening frame of Shot 3 at 00:05.000, establishing the woman-on-top bed-side profile composition, two adult characters, pose, and visible support points.\n<Picture 4> is the opening frame of Shot 4 at 00:07.500, establishing the man-on-top close bed-side profile composition, two adult characters, pose, and visible support points.\n\nsummary:\n[reference generation + keyframe completion] A 10-second montage of the same two fictional consenting adults having sex, hard cutting at 00:02.500, 00:05.000 and 00:07.500. Begin each shot with its corresponding picture and continue the ongoing act immediately.\n\nretention_analysis:\n<Picture 1> fully_preserved — match its own shot opening in composition, identity, light and pose.\n<Picture 2> fully_preserved — match its own shot opening in composition, identity, light and pose.\n<Picture 3> fully_preserved — match its own shot opening in composition, identity, light and pose.\n<Picture 4> fully_preserved — match its own shot opening in composition, identity, light and pose.\n\ndetailed_description:\nPhotorealistic 16:9. Four fixed-camera shots lasting 2.5 seconds each. Make instantaneous hard cuts to the next image composition, without morphing or dissolving between poses.\n\n[Shot 1] Begin on <Picture 1>. Yuan stays on her hands and knees. Her partner kneels behind, with his hands holding her hips. The act is already in progress in the opening frame. Keeping her hands and knees planted, he draws his pelvis back a short distance and thrusts forward again along the bed plane, with his penis remaining inside her vagina. Repeat a compact cycle. Keep the exact side-rear camera and their positions in frame.\n\n[Shot 2] At 00:02.500, hard cut directly to <Picture 2> as the opening frame. Hold the overhead foot-end POV. Yuan lies face-up with both knees bent and apart; the partner’s hands keep their original hold on her thighs. His penis is already inside her vagina. His pelvis withdraws slightly and pushes forward twice along the same axis. The thighs respond a little while her head stays on the pillow. Keep the camera fixed.\n\n[Shot 3] At 00:05.000, hard cut directly to <Picture 3> as the opening frame. Maintain the full mattress-level profile. Yuan is already astride the supine man, his penis already inside her vagina. Keep her knees and hands supported at their starting points. Her pelvis rolls a small distance forward toward his abdomen, then back, and repeats. His head and shoulders remain on the pillow and his arms stay apart from hers. Keep the white top, the visible hand positions and the framing of the opening image.\n\n[Shot 4] At 00:07.500, hard cut directly to <Picture 4> as the opening frame. Keep the close bed-side profile of the two adults. Yuan remains on her back with bent knees. Her partner kneels between her thighs, his hand supporting his upper body beside her shoulder and his penis already inside her vagina. His pelvis moves back and forward twice along the bed plane while his shoulders remain the same height. Maintain the original contact of her hand against his neck.\n\noverall_soundscape:\nKeep room tone continuous across all three cuts. Close breathing and soft mattress and sheet sounds follow each shot. No dialogue.\n\nnon_diegetic_music:\nN/A"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "73": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "Yuan_4Frames_10s_720p_8step",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "87",
+        0
+      ],
+      "audio": [
+        "87",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "79": {
+    "inputs": {
+      "steps": 8,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "sampler_name": "dual_clock_euler",
+      "scheduler": "native_flow",
+      "model": [
+        "93",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "80": {
+    "inputs": {
+      "model": [
+        "79",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "81": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "80",
+        0
+      ],
+      "sampler": [
+        "79",
+        1
+      ],
+      "sigmas": [
+        "79",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "87": {
+    "inputs": {
+      "av_latent": [
+        "81",
+        0
+      ],
+      "video_vae": [
+        "91",
+        0
+      ],
+      "audio_vae": [
+        "92",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "90": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "91": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "92": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "93": {
+    "inputs": {
+      "lora_name": "h3ErosMax_beta5_turbo_lora_v1_rank_128_bf16.safetensors",
+      "strength_model": 0.5,
+      "model": [
+        "94",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "94": {
+    "inputs": {
+      "model": [
+        "95",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "95": {
+    "inputs": {
+      "unet_name": "10Eros_Max_h3_hybrid_beta5.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "96": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/yuan_四镜分镜帧_10秒/1080p_8step/output/02.png"
+    },
+    "_meta": {
+      "title": "Picture 2 · 00:02.500"
+    }
+  },
+  "97": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/yuan_四镜分镜帧_10秒/1080p_8step/output/03_v3.png"
+    },
+    "_meta": {
+      "title": "Picture 3 · 00:05.000"
+    }
+  },
+  "98": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/projects/yuan_四镜分镜帧_10秒/1080p_8step/output/04_v3.png"
+    },
+    "_meta": {
+      "title": "Picture 4 · 00:07.500"
+    }
+  }
+}

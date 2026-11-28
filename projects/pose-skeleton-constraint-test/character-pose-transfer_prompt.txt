@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the anime character defined by <Picture 1>, with short silver-gray wavy hair, a large turquoise bow, light eyes, a white short-sleeve blouse, a red star-patterned tie, a black choker, white wing accessories, a pink backpack, pink-and-white striped arm warmers, a black layered skirt, pink thigh straps, white over-the-knee socks, pink-and-white striped leg warmers, and pink platform shoes. Preserve this character's face, hairstyle, costume construction, colors, accessories, body proportions, and anime rendering style.
+<Subject 2> is the target pose encoded by <Picture 2>: an upright near-frontal stance, one hand raised beside the face, the opposite arm bent outward, a vertical torso, a slightly asymmetric shoulder and hip line, and both legs continuing downward with the same joint positions and directions. The colored lines and keypoint dots are motion-control information only.
+<Picture 1> is a three-view full-body character reference sheet for the identity and costume of <Subject 1>. It is not a storyboard, not a first-frame lock, and its white sheet layout must not appear in the target video.
+<Picture 2> is a DWPose/OpenPose-style skeleton map used only as a strict body-pose and limb-position reference for <Subject 2>. Its black background, colored lines, and keypoint dots must not be rendered in the final video.
+
+summary:
+[reference generation] Generate a five-second single-shot vertical anime character test in which <Subject 1> keeps the identity and costume from <Picture 1> while adopting and holding the body configuration from <Picture 2>. The test must clearly separate character appearance from pose control: one recognizable character, one stable camera, and no visible skeleton artwork.
+
+retention_analysis:
+<Subject 1>: fully_preserved - preserve the character identity, face, hair, costume, accessories, proportions, and anime style from <Picture 1>.
+<Subject 2>: fully_preserved - preserve the skeleton-defined head, shoulders, elbows, wrists, hips, knees, ankles, limb directions, and overall silhouette throughout the shot.
+<Picture 1>: partially_preserved - transfer the character design from the three-view sheet while converting it into one coherent single-view video subject and excluding the sheet layout.
+<Picture 2>: fully_preserved - preserve its pose geometry as hidden motion-control information while excluding every skeleton line, dot, and black-background artifact from the rendered image.
+
+detailed_description:
+High-quality 2D anime animation with clean linework, soft cel shading, detailed hair and fabric, stable anatomy, and a simple pale indoor studio background. Use a vertical 9:16 medium-full-body composition with the character centered and enough space above the head and below the feet. <Picture 1> supplies the character's appearance only; do not show three simultaneous views, a turnaround sheet, reference labels, or a white presentation board. <Picture 2> supplies the pose only; do not display its black background, colored bones, keypoint dots, or any overlay.
+
+[Shot 1] The shot opens with <Subject 1> as one single full-body anime character already aligned to the exact pose geometry of <Subject 2>. Her head is near the upper center, her torso is upright, one hand is raised beside the face, the opposite arm bends outward, the shoulder line and hip line retain the slight asymmetry shown by <Picture 2>, and both legs keep the same spacing and directions as the skeleton map. Keep the character's silver-gray hair, turquoise bow, white blouse, red star-patterned tie, pink backpack, white wings, black layered skirt, striped arm warmers and leg warmers, socks, and pink platform shoes consistent with <Picture 1>. The character's face remains recognizable and the outfit stays opaque and fully rendered.
+
+Hold a Static Shot for the entire five seconds. From the opening through 2.00 seconds, the character maintains the skeleton-defined stance with only a small blink, subtle breathing, and restrained hair or fabric movement. These micro-movements must not change the head, shoulder, elbow, wrist, hip, knee, or ankle relationships. From 2.00 to 4.20 seconds, allow a tiny natural finger adjustment beside the face and a barely perceptible weight shift, while keeping the hand beside the face, the opposite arm bent outward, the torso axis vertical, and the original silhouette intact. During the final 0.80 seconds, settle back into the starting skeleton-aligned pose and hold it clearly until the last frame. Do not add another character, extra limbs, a prop, a camera move, a cut, a pose change, readable text, or a skeleton overlay.
+
+overall_soundscape:
+Quiet studio room tone continues under the animation with faint fabric movement and restrained breathing-like ambience. No dialogue, impacts, or abrupt sound events are present.
+
+non_diegetic_music:
+N/A

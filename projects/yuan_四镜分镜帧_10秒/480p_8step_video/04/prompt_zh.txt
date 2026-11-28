@@ -1,0 +1,13 @@
+subject_definitions:
+<Picture 1> 为第一镜实际开场帧，确定两位成年角色、姿势、支撑点、机位和灯光。
+summary:
+[参考生成 + 关键帧对齐] 从该帧直接延续 2.5 秒，同一对自愿参与的虚构成年人。
+retention_analysis:
+<Picture 1> fully_preserved，保持开场构图、人物身份、光线、服装和支撑点。
+detailed_description:
+横屏写实，固定机位，镜内无切镜。
+[Shot 1] 从 <Picture 1> 起镜。保持床侧双人近景。女方仰卧屈膝，男方跪在她腿间，手支撑在她肩侧，首帧已插入。男方骨盆沿床面前后移动两次，肩线高度稳定。保持女方的手与男方颈肩的原始接触。
+overall_soundscape:
+轻微室内底噪、近处呼吸和床单摩擦。无对白。
+non_diegetic_music:
+无

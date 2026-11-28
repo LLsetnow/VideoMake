@@ -2,7 +2,7 @@
 
 ## 生成信息
 - 日期：2026-08-14
-- 来源图片：`character/波普艺术/微信图片_20260811163716_103_80.png`
+- 来源图片：`ref/character/波普艺术/微信图片_20260811163716_103_80.png`
 - 图片内容：复古丝网印刷/拼贴风格另类少女海报（粉黑主色调，"weird-girl" /
   "STRANGE GIRLS CLUB" / "SHE'S NOT NORMAL AND THAT'S OKAY."，星星、爱心、地球仪等拼贴符号）
 - 服务商/模型：MiniMax Music（`music-3.0-free`，限免模型）

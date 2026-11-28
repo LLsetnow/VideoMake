@@ -1,5 +1,7 @@
 # 视频发布流程
 
+发布前先完成 [`editing-delivery.md`](editing-delivery.md) 中的成片核验；发布完成后，按 [`project-cleanup.md`](project-cleanup.md) 评估项目中间文件。项目完整制作路线见 [`project-workflow.md`](project-workflow.md)。
+
 本文档记录 VideoMake 成片发布到 Bilibili 和小黑盒的实际流程。发布前先确认最终视频已经留在对应项目的 `output/` 或 `04_输出/` 目录，并完成 `ffprobe` 检查。
 
 ## 1. 发布前检查

@@ -1,5 +1,7 @@
 # 项目中间产物分级清理规则
 
+清理建立在 [`editing-delivery.md`](editing-delivery.md) 已确认最终成片和复现资料的基础上；如项目已发布，还应参考 [`publishing.md`](publishing.md) 核对平台使用的文件。完整项目生命周期见 [`project-workflow.md`](project-workflow.md)。
+
 本文用于管理 `projects/` 下视频制作过程中产生的中间文件，在节约磁盘空间的同时保留项目的复现能力、最终成品和必要的核验依据。
 
 清理默认是只读评估流程。任何实际处理（移入回收站、移动到外部归档或压缩），都必须先生成清单并由用户确认；不得因为文件名包含“中间”或“final”就直接判断其用途。

@@ -1,0 +1,425 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "lock_source",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 1,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "drive_audio": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "final_audio": [
+        "53",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "53",
+        0
+      ],
+      "ref_images.ref_image_1": [
+        "38",
+        0
+      ],
+      "ref_images.ref_image_2": [
+        "39",
+        0
+      ],
+      "ref_images.ref_image_3": [
+        "40",
+        0
+      ],
+      "ref_images.ref_image_4": [
+        "41",
+        0
+      ],
+      "ref_images.ref_image_5": [
+        "42",
+        0
+      ],
+      "ref_images.ref_image_6": [
+        "43",
+        0
+      ],
+      "ref_images.ref_image_7": [
+        "44",
+        0
+      ],
+      "ref_images.ref_image_8": [
+        "45",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 26110811
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/zenless_three_friends_15s_misery_15_30_480p",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 15
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.4,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> (S1) is Chinatsu. Use <Picture 4> for full-body costume and <Picture 7> for front-face identity: softly rounded face, multicolored eyes, pale mint-silver hair, heavy bangs, and black geometric clips. Preserve her white shirt/red heart tie, wings/pink backpack, black layered skirt, striped warmers, socks, and pink-white platforms.\n<Subject 2> (S2) is Nangong Yu. Use <Picture 5> for full-body costume and <Picture 8> for front-face identity: pale face, crimson star-highlight eyes, dark bob with coral-pink side buns, pink bows, mint ribbons, and translucent mint halo. Preserve her white corset/red striped tie, black sleeves, mechanical shoulder details, red-pink accents, stockings, and platforms.\n<Subject 3> (S3) is Airei. Use <Picture 6> for full-body costume and <Picture 9> for front-face identity: pink twin-tails with a mint streak, black horn ornaments, orange-black headphones, and blue-violet eyes. Preserve her white mecha DJ dress with orange X, wings, orange bow, mint halo device, pink striped socks, and white platforms.\n<Picture 1> is 404Bar.png, a compact neon urban bar/table reference. <Picture 2> is 404舞台.png, a small performance-stage reference. <Picture 3> is 六分街.png, a colorful urban-street reference. <Picture 4>-<Picture 6> are separate full-body references; <Picture 7>-<Picture 9> are separate front-face references. Never merge them. Identity lock: S1 only silver-mint hair; S2 only black/coral hair with mint halo; S3 only pink twin-tails with orange headphones. No duplicates or swaps.\n<Audio 1> is the exact 15-second 00:15.000-00:30.000 excerpt of pupsies' official track \"misery.\" from supplied NetEase album 373463974 (song 3375858474). It is locked final audio: preserve its high-intensity electronic-pop/hyperpop texture, female vocal, distorted synths, pulse, dynamics, and stereo balance exactly; do not generate replacement sound.\n\nsummary:\n[reference generation + audio reuse] Create an original 15-second vertical 9:16 friendship montage in Zenless Zone Zero Cartoon rendering style. Its central visual idea is headcount contrast: make the difference between exactly one person alone and exactly three friends together unmistakable. Adapt the supplied Bilibili reference's rhythm of 1 person to 3 people, repeated in several settings, without copying its people, frames, text, or live-action appearance. Use all nine picture references for scene, full-body, and front-face consistency. Study the source video offline only; do not upload it. Reuse <Audio 1> exactly.\n\nretention_analysis:\n<Subject 1>: fully_preserved - <Picture 4> fixes body costume; <Picture 7> fixes front face, eyes, hairline, bangs, and expressions.\n<Subject 2>: fully_preserved - <Picture 5> fixes body costume; <Picture 8> fixes front face, eyes, hairline, bangs, and expressions.\n<Subject 3>: fully_preserved - <Picture 6> fixes body costume; <Picture 9> fixes front face, eyes, hairline, bangs, and expressions.\n<Picture 1>-<Picture 3>: partially_preserved - retain each scene's visual atmosphere while changing composition.\n<Picture 4>-<Picture 6>: fully_preserved - separate full-body costume and silhouette references.\n<Picture 7>-<Picture 9>: fully_preserved - separate front-face identity references.\n<Audio 1>: fully_copy - copy the exact 15.000-second 00:15.000-00:30.000 source-song segment 1:1, including music, female vocal, timing, dynamics, and stereo balance.\n\ndetailed_description:\nThe target is a vertical 9:16 montage in Zenless Zone Zero Cartoon rendering style: crisp linework, cel shading, saturated cyan, violet, coral, mint, amber, subtle parallax, and playful timing. The headcount is the story: a one-person shot has only one subject and no background people; a three-person shot has exactly S1, S2, and S3, no fourth person, no duplicate, no swap. All three faces must remain readable. No readable text, logos, watermarks, subtitles, or live-action imagery. Use <Audio 1> from frame one to 00:15.000.\n\n[Shot 1] From 00:00.000 to 00:02.961, show exactly one person: <Subject 1> alone at a roadside shelter or urban street edge derived from <Picture 3>, beside a long empty bench. Keep the negative space and empty seats obvious; no other people. She looks toward the unused seats, quiet and slightly expectant. Use a Static Shot with a small slow Push In toward her face, keeping <Picture 7> identity clear.\n\n[Shot 2] At 00:02.961, hard cut on a clear beat to exactly three people in the same general street composition: <Subject 1>, <Subject 2>, and <Subject 3> sit or stand together in a compact row, filling the previously empty space. Keep their identities distinct: silver-mint S1, black/coral S2, pink-twin-tailed S3. The 1-to-3 count change must be instantly legible. Use a mostly Static Shot with a small Truck Right; hold long enough to read all three faces.\n\n[Shot 3] At 00:05.503, cut back to exactly one person and continue until 00:07.523: <Subject 1> alone at an outdoor table derived from <Picture 1>, with two clearly empty chairs and untouched place settings. No background pedestrians. She waits and glances between the empty chairs. Use a centered medium shot and a restrained slow Push In; preserve her front-face identity.\n\n[Shot 4] At 00:07.523, hard cut on the next clear beat. Replace the empty chairs with exactly three people: S1, S2, and S3 sit around the table and react together with a quick toast, laugh, or shared surprised gesture. Keep every face visible, the trio count unmistakable, and no fourth person. Use a fast small Push In, then briefly hold the three-person composition. Generate no new voice or sound effect.\n\n[Shot 5] At 00:09.044, cut to exactly one person and continue until 00:11.064: <Subject 1> alone on a large hay bale beside an open lakeside field, with wide negative space and distant hills inspired only by the source video's composition. No other people. She looks down at the bale, then toward the empty horizon. Use a wide Static Shot with a slow small Pan, making one-versus-empty-space unmistakable.\n\n[Shot 6] At 00:11.064, hard cut on a clear beat to exactly three in a fixed left-to-right order: S2 with black/coral hair and mint halo, S1 with silver-mint hair and white wings, S3 with pink twin-tails and orange headphones. They push one hay bale. Keep all full bodies and faces readable; never duplicate S3 or omit S1. Use a stable wide Tracking Shot, then hold the three-person lineup until 00:15.000.\n\noverall_soundscape:\nGenerate no independent ambience, dialogue, singing, foley, impacts, or sound effects. Every audible layer comes from copied <Audio 1>, including its original song and female vocal. Do not add any new voice or reaction sound.\n\nnon_diegetic_music:\nThe original \"misery.\" excerpt in <Audio 1> is the complete soundtrack from 00:00.000 to 00:15.000. Preserve its female vocal, electronic beat, distorted bass and synth texture, timing, dynamics, and stereo balance exactly; add no music.\n"
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/background/绝区零/404Bar.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Reference Image 1"
+    }
+  },
+  "52": {
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/绝区零三小只_朋友的重要性_竖屏15秒/source_audio_misery_15-30.wav",
+      "audioUI": ""
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Load Audio"
+    }
+  },
+  "53": {
+    "inputs": {
+      "start_index": 0,
+      "duration": 15.0,
+      "audio": [
+        "52",
+        0
+      ]
+    },
+    "class_type": "TrimAudioDuration",
+    "_meta": {
+      "title": "Trim Audio Duration"
+    }
+  },
+  "38": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/background/绝区零/404舞台.png"
+    },
+    "_meta": {
+      "title": "Load Reference Image 2"
+    }
+  },
+  "39": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/background/绝区零/六分街.png"
+    },
+    "_meta": {
+      "title": "Load Reference Image 3"
+    }
+  },
+  "40": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏-全身三视图-方形-v2.png"
+    },
+    "_meta": {
+      "title": "Load Reference Image 4"
+    }
+  },
+  "41": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/南宫羽/南宫羽_角色三视图.png"
+    },
+    "_meta": {
+      "title": "Load Reference Image 5"
+    }
+  },
+  "42": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/爱芮/爱芮_角色三视图.png"
+    },
+    "_meta": {
+      "title": "Load Reference Image 6"
+    }
+  },
+  "43": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Face Reference 1"
+    }
+  },
+  "44": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/南宫羽/exec-e658e3d5-6076-41ee-bc9f-d6ca9c6c0063.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Face Reference 2"
+    }
+  },
+  "45": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/爱芮/爱芮-正脸大头照.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Face Reference 3"
+    }
+  }
+}

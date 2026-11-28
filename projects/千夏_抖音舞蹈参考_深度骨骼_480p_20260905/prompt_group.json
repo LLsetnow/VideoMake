@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "id": "task-group-qianxia-depth-skeleton-480p-20260905",
+  "name": "千夏·抖音舞蹈参考·深度+骨骼·480p",
+  "updated_at": 1788591600000,
+  "items": [
+    {
+      "instance_id": "qianxia-douyin-subject-structure",
+      "kind": "fixed",
+      "block_id": "block-9091afb298c2",
+      "snapshot": {
+        "tags": [],
+        "title": "对象定义",
+        "text": "subject_definitions:"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-original-skin",
+      "kind": "reference",
+      "reference_id": "character-b1fbc0e1727a",
+      "reference_kind": "character",
+      "snapshot": {
+        "tags": [
+          "人物"
+        ],
+        "title": "原皮",
+        "text": "A character turnaround sheet showing a front half-body view, a side full-body view, and a back full-body view on a white background. The character is Chinatsu, with medium-length silver-gray softly wavy hair, a mint-green bow hair clip and black butterfly-and-cross hair clip on the right side, and light-colored eyes. Outfit: a cute-cool Decora idol style, consisting of a white short-sleeved shirt, a red tie with a heart motif, a black choker, a pair of small white angel wings, and a pink angel-wing backpack on the back; pink-and-white striped fingerless arm warmers extending above the elbows; a black multilayered tutu skirt with a wide white belt; a pink thigh strap and small shoulder bag on the left thigh; white distressed over-the-knee socks; pink-and-white striped leg warmers; pink-and-white platform shoes; and black ankle straps with mint-green bows. Palette: silver gray, white, black, pink, and mint green. Use as a character identity and clothing reference.",
+        "image_path": "千夏/千夏-全身三视图-方形-v2.png",
+        "audio_path": "",
+        "media_type": "image"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-face",
+      "kind": "reference",
+      "reference_id": "character-a77fa25a0315",
+      "reference_kind": "character",
+      "snapshot": {
+        "tags": [
+          "人物"
+        ],
+        "title": "面部",
+        "text": "A 1:1 front-facing 2D-anime 3D character headshot, looking directly at the camera in a centered, symmetrical composition against a pure white background with soft, even lighting. The character has layered medium-length pale mint-green and silver-green hair with a natural part, heavy straight bangs, and softly curled layered ends on both sides. A black geometric hair clip, pink heart detail, crossed pink-and-mint hair ornaments, and a black pixel-style rectangular clip are visible on the right side, along with black dangling earrings. The white shirt collar and red tie at the shoulders are retained as clothing identifiers. Use as a reference for the character's face, hairstyle, hair accessories, and identity.",
+        "image_path": "千夏/千夏_正脸头像_v4.png",
+        "audio_path": "",
+        "media_type": "image"
+      }
+    },
+    {
+      "instance_id": "qianxia-depth-skeleton-video",
+      "kind": "media",
+      "media_path": "/Users/apple/Documents/VideoMake/projects/千夏_抖音舞蹈参考_深度骨骼_480p_20260905/reference/千夏_抖音_深度骨骼参考.mp4",
+      "media_name": "深度 + 骨骼参考视频 · 同帧结构控制",
+      "media_kind": "video",
+      "media_mime": "video/mp4"
+    },
+    {
+      "instance_id": "qianxia-douyin-subject-text",
+      "kind": "text",
+      "text": "<Subject 1> is Chinatsu, the same anime character defined by <Picture 1> for her original-skin full-body design and by <Picture 2> for her face and hair identity. Lock her softly rounded oval face with a gently tapered rounded chin, large round-almond eyes with slightly upturned outer corners, vivid multicolored irises with yellow, orange, pink, teal, and blue highlights, dark pupils, clearly defined eyelashes, fine gently arched dark eyebrows, a small delicate nose, small pale-pink lips, fair even skin with a faint rosy cheek flush, and a bright cute approachable presence. Lock her medium-length pale silver-gray softly wavy hair, heavy straight bangs, large mint-green bow, black butterfly-and-cross hair ornaments, pink-and-mint crossed clips, black pixel-style rectangular clip, and black dangling earrings. Her original-skin outfit is a white short-sleeved shirt with a red heart-motif tie, black choker, small white angel wings, pink angel-wing backpack, pink-and-white striped fingerless arm warmers, black multilayered tutu skirt with a wide white belt, pink thigh strap and small side pouch, distressed white over-the-knee socks, pink-and-white striped leg warmers, and pink-and-white platform shoes with mint-green bows.\n<Video 1> is a silent derived structural reference made from the uploaded dance video. Each 9:16 frame combines normalized grayscale depth with bright DWPose body, face, and hand skeleton lines and keypoints. Use it only for pose geometry, depth layering, gesture timing, blocking, fixed-camera framing, indoor composition, and beat density. Do not reproduce its depth field, skeleton artwork, keypoints, live-action appearance, identity, clothing, soundtrack, watermark, or technical overlays.",
+      "translation_disabled": true,
+      "generated_type": "subject_definitions"
+    },
+    {
+      "instance_id": "qianxia-douyin-summary-structure",
+      "kind": "fixed",
+      "block_id": "block-eb58f4962187",
+      "snapshot": {
+        "tags": [],
+        "title": "任务综述",
+        "text": "summary:"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-summary",
+      "kind": "text",
+      "text": "[reference generation] Create a new vertical 9:16 polished anime dance performance starring <Subject 1>. Use <Picture 1> for Chinatsu's original-skin costume, wings, backpack, proportions, and accessories; use <Picture 2> for her stable face, hair, eyes, and facial accessories; use <Video 1> only as a derived depth-and-skeleton motion, pose, depth-layering, and camera reference. Re-stage the same readable single-take choreography in an original high-end anime rendering while keeping the simple indoor vertical composition. Generate fresh synchronized native stereo audio with an upbeat electronic dance-pop score and clean room/action sounds; do not reuse any source or reference-video audio.",
+      "translation_disabled": true,
+      "generated_type": "summary"
+    },
+    {
+      "instance_id": "qianxia-douyin-retention",
+      "kind": "text",
+      "text": "retention_analysis:\n<Subject 1> (appears throughout [Shot 1]): fully_preserved - preserve Chinatsu's identity, face, multicolored eyes, pale silver-gray hair, mint bow, hair ornaments, black earrings, original-skin white/red/black/pink/mint outfit, angel wings, pink backpack, proportions, and anime rendering; only her pose, gesture, and expression change with the referenced motion.\n<Video 1> (derived depth, skeleton, choreography, timing, framing, and indoor composition): partially_preserved - preserve detected joints, limb directions, depth order, single-take movement, rhythm, blocking, fixed camera, and room layout, while replacing technical maps, skeleton artwork, live-action appearance, and control-video artifacts with <Subject 1> and new audio.\n<Picture 1> (original-skin character and wardrobe reference): fully_preserved - retain the original-skin costume construction, palette, wings, backpack, accessories, and body design information without treating the image as a literal first or last frame.\n<Picture 2> (face and hair identity reference): fully_preserved - retain Chinatsu's facial structure, multicolored irises, pale silver-gray hair, bangs, clips, bow, earrings, and recognizable identity across every pose.",
+      "translation_disabled": true,
+      "generated_type": "retention_analysis"
+    },
+    {
+      "instance_id": "qianxia-douyin-detail-structure",
+      "kind": "fixed",
+      "block_id": "block-aa59c9802e99",
+      "snapshot": {
+        "tags": [],
+        "title": "细节描述",
+        "text": "detailed_description:"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-style",
+      "kind": "fixed",
+      "block_id": "856f6ed806e2",
+      "snapshot": {
+        "tags": [
+          "风格",
+          "二次元",
+          "新番"
+        ],
+        "title": "二次元·现代新番",
+        "text": "Modern high-end anime animation: rich multi-layered gradients, dramatic volumetric lighting, highly detailed hair and fabric rendering, smooth motion and cinematic framing."
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-detail",
+      "kind": "text",
+      "text": "Modern high-end anime animation: rich gradients, volumetric lighting, detailed hair and fabric, smooth motion, stable anatomy, and cinematic framing. Create a polished anime game-character performance in a clean vertical 9:16 frame with crisp linework, refined cel shading, soft highlights, and a restrained neutral indoor room with a pale gray wall, a small wall switch, and soft frontal overhead lighting. Reconstruct one coherent anime character; never display the depth map, skeleton lines, keypoints, tracking marks, split panels, labels, readable text, logos, or watermark. Use one continuous take with no cuts or scene changes. Keep the tripod camera fixed at eye level, framing <Subject 1> from head to upper thighs with space for gestures.\n\n[Shot 1] Over the full derived-reference-driven dance, <Subject 1> stands centered and faces the camera. At 00:00.000, begin with her upper body leaning slightly toward the lens, shoulders relaxed and arms held low or just behind her silhouette, matching the structural reference without copying a live-action appearance. From approximately 00:01.500 to 00:03.000, she straightens smoothly, lifts one hand to the front of her neck and collar, then lowers it as her skirt layers, striped arm warmers, hair, bow, wings, and backpack respond with natural secondary motion. From approximately 00:03.000 to 00:06.000, she extends one hand toward the camera with an open palm, reaches closest to the lens for one beat, then sweeps the arm inward across her torso; keep the detected foreshortening and depth order readable, with anatomically coherent fingers. From approximately 00:06.000 to 00:09.000, she shifts her weight side to side, turns her shoulders slightly, and raises one arm behind her head so the mint bow, hair clips, earrings, and wings remain visible. From approximately 00:09.000 to 00:11.500, she releases the raised arm, lets both arms travel down in a smooth rhythmic arc, and makes a small hip-and-shoulder sway while her pink backpack and white wings lag subtly behind the body. From approximately 00:11.500 to 00:13.460, she brings one hand across her upper chest and keeps the other lifted beside her shoulder, finishing with a poised cute closed-mouth expression and a brief stable hold. Preserve one face and one costume throughout profile changes and foreshortened hand motion; no extra character enters the room.",
+      "translation_disabled": true,
+      "generated_type": "detailed_description"
+    },
+    {
+      "instance_id": "qianxia-douyin-sound-structure",
+      "kind": "fixed",
+      "block_id": "block-a10969505ab4",
+      "snapshot": {
+        "tags": [],
+        "title": "景观声音",
+        "text": "overall_soundscape:"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-ventilation",
+      "kind": "fixed",
+      "block_id": "3d7a9e1c5f84",
+      "snapshot": {
+        "tags": [
+          "环境音",
+          "室内"
+        ],
+        "title": "空调低鸣",
+        "text": "The low continuous hum of an air conditioner or ventilation system, with a faint mechanical vibration underneath, constant and unobtrusive in the background."
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-sound",
+      "kind": "text",
+      "text": "The low continuous hum of an air conditioner or ventilation system, with a faint mechanical vibration underneath, constant and unobtrusive in the background. Add soft cloth movement, light hair and wing-feather rustle, subtle backpack and accessory movement, and restrained hand and body movement sounds synchronized to the dance. There is no intelligible dialogue, no singing, no character voice, and no reused source or control-video audio.",
+      "translation_disabled": true,
+      "generated_type": "overall_soundscape"
+    },
+    {
+      "instance_id": "qianxia-douyin-music-structure",
+      "kind": "fixed",
+      "block_id": "block-05a9822787dc",
+      "snapshot": {
+        "tags": [],
+        "title": "背景配乐",
+        "text": "non_diegetic_music:"
+      }
+    },
+    {
+      "instance_id": "qianxia-douyin-music",
+      "kind": "text",
+      "text": "Generate a fresh upbeat electronic dance-pop instrumental at a moderate-fast tempo, with a clean kick-and-snare pulse, bright synth plucks, a light bass groove, and small rhythmic accents that follow the derived choreography without copying any source melody or recording. Keep it audience-only, with no vocals.",
+      "translation_disabled": true,
+      "generated_type": "non_diegetic_music"
+    }
+  ]
+}

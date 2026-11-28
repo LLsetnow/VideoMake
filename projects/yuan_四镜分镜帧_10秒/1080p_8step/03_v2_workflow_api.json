@@ -1,0 +1,179 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_ablitrated_v1.6_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "5": {
+    "class_type": "ModelSamplingAuraFlow",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "shift": 3.1,
+      "sampling": "flow"
+    }
+  },
+  "6": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": "图1为双人体位深度参考，图2只锁定原创成年女性 Yuan 的脸、发型和肤色。写实彩色横幅，白床单白枕，暖床头灯和冷色窗光。侧后偏高机位、双人中景。短黑发成年男性仰卧在床上，头和肩枕在上方，双手自然垂放在身体两侧的床面上。Yuan 正跨坐在他髋部上方，两条腿分别在男方躯干两侧，双膝贴床。两名成年人正在自愿性交，男方的阴茎已经插入她的阴道。Yuan 的躯干略前倾，双手分别撑在男方肩部两侧的床面上，手腕和前臂分别连向各自肩部。清楚展示各自手部和腿部的归属。男方保持仰躺，女方头部转向镜头，取景保留她的完整头顶、男方头肩和两人的髋部。 完整的全幅连续图像，四边自然延伸到边缘，照片铺满整个画布。 机位稍向床头偏移，露出男方的脸、男方平躺的肩膀和女方在上方支撑的双臂，两人的手不交叠。",
+      "image2": [
+        "15",
+        0
+      ]
+    }
+  },
+  "7": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "5",
+        0
+      ],
+      "positive": [
+        "13",
+        0
+      ],
+      "negative": [
+        "14",
+        0
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 26082423,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "7",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "9": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "8",
+        0
+      ],
+      "filename_prefix": "videomake/yuan_storyboard_1080p_8step/shot_03_v2"
+    }
+  },
+  "10": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "videomake/yuan_storyboard_1080p_8step/03_depth_1920x1080.png"
+    }
+  },
+  "11": {
+    "class_type": "EmptySD3LatentImage",
+    "inputs": {
+      "width": 1920,
+      "height": 1080,
+      "batch_size": 1
+    }
+  },
+  "12": {
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "image1": [
+        "10",
+        0
+      ],
+      "prompt": "",
+      "image2": [
+        "15",
+        0
+      ]
+    }
+  },
+  "13": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "6",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "14": {
+    "class_type": "FluxKontextMultiReferenceLatentMethod",
+    "inputs": {
+      "conditioning": [
+        "12",
+        0
+      ],
+      "reference_latents_method": "index_timestep_zero"
+    }
+  },
+  "15": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "videomake/yuan_qwen2511_4step/yuan.png"
+    }
+  }
+}

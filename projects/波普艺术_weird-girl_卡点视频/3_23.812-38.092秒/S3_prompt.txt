@@ -1,6 +1,6 @@
 # S3 (23.812-38.092s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
 # 对应音乐：v3 副歌1（"Weird girl..."）+ Anthem（"Strange girls club, we shine like stars"）
-# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
 # 锁定音频：lock_source_S3.wav（v3 切片 23.812-38.092s）
 
 ### English Prompt

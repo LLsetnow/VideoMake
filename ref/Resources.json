@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "media_root": ".",
+  "sources": {
+    "prompt": "prompt/library.json",
+    "pose": "pose/pose.json",
+    "character": "character/character.json",
+    "audio": "audio/audio.json",
+    "background": "background/background.json",
+    "clothes": "clothes/clothes.json",
+    "tts": "tts"
+  },
+  "media_directories": {
+    "pose_color": "pose/color",
+    "pose_depth": "pose/depth",
+    "character": "character",
+    "audio": "audio",
+    "background": "background",
+    "clothes": "clothes",
+    "tts": "tts"
+  },
+  "schemas": {
+    "prompt": "blocks",
+    "pose": "actions",
+    "character": "references",
+    "audio": "references",
+    "background": "references",
+    "clothes": "references",
+    "tts": "directory"
+  }
+}

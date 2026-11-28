@@ -1,6 +1,6 @@
 # S5 (51.177-63.158s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
 # 对应音乐：v3 尾段主歌（"Collage dreams on a screen-print page..."）
-# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
 # 锁定音频：lock_source_S5.wav（v3 切片 51.177-63.158s）
 
 ### English Prompt

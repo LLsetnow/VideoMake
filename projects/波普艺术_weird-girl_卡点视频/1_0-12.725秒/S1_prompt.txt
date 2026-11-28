@@ -1,6 +1,6 @@
 # S1 (0.000-12.725s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
 # 对应音乐：v3 无伴奏 Intro → 主歌1（"Pink and black in a paper sky..."）
-# 参考图：character/波普艺术/微信图片_20260811163716_103_80.png
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
 # 锁定音频：lock_source_S1.wav（v3 切片 0-12.725s）
 
 ### English Prompt

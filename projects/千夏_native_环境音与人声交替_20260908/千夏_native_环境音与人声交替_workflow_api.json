@@ -1,0 +1,313 @@
+{
+  "1": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "2": {
+    "inputs": {
+      "lora_name": "minimax_h3_fl2v_turbo_4step_v0.1_comfyui_alpha8-T8-convert.safetensors",
+      "strength_model": 1,
+      "model": [
+        "17",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderBypassModelOnly",
+    "_meta": {
+      "title": "lora only"
+    }
+  },
+  "3": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "Load CLIP"
+    }
+  },
+  "4": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "5": {
+    "inputs": {
+      "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "6": {
+    "inputs": {
+      "prompt": [
+        "36",
+        0
+      ],
+      "width": [
+        "16",
+        0
+      ],
+      "height": [
+        "16",
+        1
+      ],
+      "length": [
+        "15",
+        1
+      ],
+      "task_type": "Ref2VA",
+      "audio_mode": "native",
+      "audio_denoise_strength": 0,
+      "add_source_as_reference": false,
+      "prompt_primary_audio_ordinal": 0,
+      "strict_prompt_tags": true,
+      "ref_image_size": "match",
+      "reference_video_policy": "official_2_to_15s",
+      "clip": [
+        "3",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ],
+      "ref_images.ref_image_0": [
+        "37",
+        0
+      ],
+      "ref_audios.ref_audio_0": [
+        "54",
+        0
+      ],
+      "ref_audios.ref_audio_1": [
+        "55",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AudioConditioningT8",
+    "_meta": {
+      "title": "MiniMax H3 Audio Conditioning (T8)"
+    }
+  },
+  "7": {
+    "inputs": {
+      "steps": 4,
+      "shift_video": 12,
+      "shift_audio": 3,
+      "model": [
+        "2",
+        0
+      ],
+      "av_latent": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "MiniMaxH3DualClockSamplerT8",
+    "_meta": {
+      "title": "STABLE 4 video / 4 audio"
+    }
+  },
+  "8": {
+    "inputs": {
+      "model": [
+        "7",
+        0
+      ],
+      "conditioning": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "Basic Guider"
+    }
+  },
+  "9": {
+    "inputs": {
+      "noise_seed": 575029984620997
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "10": {
+    "inputs": {
+      "noise": [
+        "9",
+        0
+      ],
+      "guider": [
+        "8",
+        0
+      ],
+      "sampler": [
+        "7",
+        1
+      ],
+      "sigmas": [
+        "7",
+        2
+      ],
+      "latent_image": [
+        "6",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "11": {
+    "inputs": {
+      "av_latent": [
+        "10",
+        0
+      ],
+      "video_vae": [
+        "4",
+        0
+      ],
+      "audio_vae": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3AVDecodeT8",
+    "_meta": {
+      "title": "MiniMax H3 AV Decode (T8)"
+    }
+  },
+  "12": {
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "MiniMaxH3/qianxia_native_alternating_ambient_voice_test",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": true,
+      "pingpong": false,
+      "save_output": true,
+      "no_preview": false,
+      "images": [
+        "11",
+        0
+      ],
+      "audio": [
+        "11",
+        1
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "Video Combine 🎥🅥🅗🅢"
+    }
+  },
+  "14": {
+    "inputs": {
+      "value": 5.16
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "Float (duration)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "Math Expression"
+    }
+  },
+  "16": {
+    "inputs": {
+      "aspect_ratio": "9:16 (Portrait Widescreen)",
+      "megapixels": 0.9,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "Resolution Selector"
+    }
+  },
+  "17": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3MemoryEfficientSageAttentionPatch",
+    "_meta": {
+      "title": "MiniMax H3 Memory Efficient Sage Attention Patch"
+    }
+  },
+  "36": {
+    "inputs": {
+      "prompt": "subject_definitions:\n<Subject 1> is the young anime girl shown in <Picture 1>, with silver-gray wavy hair, a large turquoise bow, a white short-sleeve blouse, a red necktie with white star details, a pink backpack with white wing accessories, a black layered skirt, pink-and-white striped arm warmers and leg warmers, and pink platform shoes. Preserve her exact face, hairstyle, proportions, costume details, colors, and recognizable identity.\n<Audio 1> is a pure environment reference containing continuous rainfall against a window, soft indoor room tone, and a low electrical hum, with no speech. Use it only to guide the native environmental sound texture.\n<Audio 2> is a pure Chinatsu voice reference. Use it only to guide the native speaker identity, timbre, pronunciation, pacing, and gentle delivery. Do not copy its waveform and do not keep its original continuous timing.\n\nsummary:\n[reference generation + audio reference] Create a new 5.16-second 9:16 vertical talking-character video with <Subject 1> in front of a rainy window. Generate the final audio natively and alternate between environment-only intervals and voice-only dialogue intervals. Keep the two layers separated in time: never play rain underneath the spoken words and never let speech continue during the environment-only intervals.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - keep the identity and defining visual features from <Picture 1> consistent.\n<Audio 1>: reference - use only its rainfall, indoor room tone, and low hum as a native environmental texture reference.\n<Audio 2>: reference - use only its Chinatsu voice identity and delivery as a native speech reference; do not copy the waveform.\n\ndetailed_description:\nThe target is a single continuous front-facing medium close-up of <Subject 1> standing indoors beside a large rainy window at dusk. Raindrops and blurred city lights are visible through the glass. Keep her face large enough for reliable lip synchronization, her mouth unobstructed, and her eyes clearly visible. Use a stable camera with a very slow Push In and no cuts. During every environment-only interval her lips remain completely closed; during every speech interval her mouth, jaw, and cheeks visibly follow the words.\n\n[Shot 1] From 00:00.000 to 00:00.600, <Subject 1> is silent with her lips closed. Generate only the rainy-window environment, indoor room tone, and low electrical hum guided by <Audio 1>; no voice and no music.\n\nFrom 00:00.600 to 00:02.100, <Subject 1> (S1) speaks in a clear, gentle young female voice whose identity is guided by <Audio 2>. The exact first dialogue is <d>[Chinese] 你好，我是千夏。</d> Generate only this voice during this interval. Do not play rain or room ambience underneath the words.\n\nFrom 00:02.100 to 00:02.700, <Subject 1> stops speaking and keeps her lips closed. Generate only the rainy-window environment and indoor room tone guided by <Audio 1>; no voice.\n\nFrom 00:02.700 to 00:05.160, <Subject 1> (S1) speaks the second exact dialogue in the same voice: <d>[Chinese] 今天我们来测试一下原声对白的口型同步。</d> Generate only the centered voice during this interval, with no rain, room tone, hum, music, or other sound underneath it. End naturally after the final syllable at 00:05.160.\n\nThe final audio must follow this alternating schedule exactly: environment only, voice only, environment only, voice only. Do not overlap the environment and voice layers, do not add extra dialogue, and do not add non-diegetic music.\n\noverall_soundscape:\nThe native soundtrack alternates between short environment-only segments containing continuous rainfall, indoor room tone, and a low electrical hum, and voice-only segments containing the centered Chinatsu dialogue. No environment is audible under speech, and no speech is audible during environment-only intervals.\n\nnon_diegetic_music:\nN/A. Do not add music."
+    },
+    "class_type": "CR Prompt Text",
+    "_meta": {
+      "title": "⚙️ CR Prompt Text"
+    }
+  },
+  "37": {
+    "inputs": {
+      "image": "/Users/apple/Documents/VideoMake/ref/character/千夏/千夏_正脸头像_v4.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "54": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/千夏_参考音频_明显环境音_reference_only_20260908/qa/environment_only.wav",
+      "audioUI": ""
+    },
+    "_meta": {
+      "title": "LoadAudio (environment reference)"
+    }
+  },
+  "55": {
+    "class_type": "LoadAudio",
+    "inputs": {
+      "audio": "/Users/apple/Documents/VideoMake/projects/千夏_原声对白口型测试_lock_source_20260908/input/tts_run/output.wav",
+      "audioUI": ""
+    },
+    "_meta": {
+      "title": "LoadAudio (voice reference)"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# S9 (95-100s) 卡点视频分段提示词 — MiniMax H3 Ref2VA
+# 对应音乐：v3 最终片尾标志（黑场 → STRANGE GIRLS CLUB 丝网印刷标志 → THE END → 硬切黑场）
+# 参考图：ref/character/波普艺术/微信图片_20260811163716_103_80.png
+# 锁定音频：lock_source_S9.wav（v3 尾噪 + 胶片结尾咔嗒声，约 5s）
+
+### English Prompt
+
+```text
+subject_definitions:
+<Picture 1> is the reference poster image retained as the identity anchor for the end card: a retro screen-print collage poster on a pink background, with a dark-haired girl with straight bangs in the center, black-and-white halftone dot textures, star/heart/globe/spiral/checkerboard symbols, and the visible texts "weird-girl", "STRANGE GIRLS CLUB", "SHE'S NOT NORMAL AND THAT'S OKAY." and the date "09 21 02".
+<Subject 1> is the girl character retained from <Picture 1>: dark hair with straight bangs, dark eyes, dark lips, rendered in halftone screen-print style.
+<Subject 2> is the collage world retained from <Picture 1>: pink paper background, halftone dots, grain, and black-and-white star, heart, globe, spiral, checkerboard and eye symbols.
+<Audio 1> is the locked audio for the end card: a vinyl tail crackle, a short 35mm film projector click-stop and two seconds of room-tone silence over about 5 seconds, reused 1:1 as the segment's complete audio track.
+
+summary:
+[reference generation + keyframe bookends + audio reuse] The target video is the final end card: <Picture 1> fades in from black as the first frame, the poster peels away to reveal a bold "STRANGE GIRLS CLUB" screen-print logo on a pink halftone field, a "THE END" zine cut-out slaps onto the center with a paper-thud, <Subject 2>'s symbols frame the composition as a border, and the shot holds static before a hard cut to black on the projector click-stop, with <Audio 1> reused as the complete soundtrack.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first-frame anchor): fully_preserved - the opening frame matches the poster exactly, including layout, palette, halftone dots, the girl's neutral pose and all visible texts.
+<Subject 1> (appears in [Shot 1]): fully_preserved - dark straight-bangs hair, dark eyes, dark lips and screen-print rendering stay unchanged; the girl returns only in the poster image.
+<Subject 2> (appears in [Shot 2], [Shot 3]): fully_preserved - pink paper background, halftone dots, grain and the black-and-white symbols are retained as decorative border elements.
+<Audio 1>: fully_copy - the complete source audio becomes the segment's complete final audio track.
+
+detailed_description:
+The target video is a retro screen-print collage pop-art end card with a pink, black and white palette, halftone dot textures, paper grain and a slow final-act pace.
+[Shot 1] The shot begins from <Picture 1>: the full poster, centered and filling the frame, fades in from black over one beat. The halftone dots breathe gently for a moment, paying homage to the poster that anchored the entire video. The camera holds static. After one beat, the poster begins to peel and dissolve into scattered halftone fragments that float away like confetti, clearing the frame.
+[Shot 2] At 00:02.000, the cleared frame reveals a bold end card composition: "STRANGE GIRLS CLUB" in oversized black-and-white halftone screen-print typography, centered on a solid pink paper background. The text is slightly distressed, with ink bleed and registration misalignment to simulate authentic offset print. Around the frame edges, <Subject 2>'s symbols — stars, hearts, globes, spirals, checkerboard and eyes — arrange themselves as a decorative border in black-and-white halftone. The camera holds a dead-center static medium-wide shot.
+[Shot 3] At 00:04.000, a rough paper-cut "THE END" zine insert slaps down onto the center of the frame with a sharp paper-thud, overlapping the "STRANGE GIRLS CLUB" text. The cut edges are torn and uneven, the font is a bold black stencil on white paper. The composition holds static for one beat, the halftone dots pulse once more, and then the frame cuts sharply to black on a 35mm projector click-stop sound, marking the definitive end of the video.
+
+overall_soundscape:
+Soft vinyl tail crackle runs throughout, paper peel and dissolve whispers during the poster removal, a sharp paper-thud punctuates the "THE END" slap-down, a 35mm film projector click-stop marks the final cut, followed by room-tone silence.
+
+non_diegetic_music:
+<Audio 1> is directly reused as the complete audience-only score: vinyl tail crackle, 35mm projector click-stop and room-tone silence over approximately 5 seconds of final end-card ambience.
+```
+
+### 中文翻译
+
+- `subject_definitions`：`<Picture 1>` 片尾标志身份锚点海报参考图（同全片海报）；`<Subject 1>` 女孩（仅以海报图像回归）；`<Subject 2>` 拼贴世界（作为装饰边框元素）；`<Audio 1>` 本段锁定音频——唱片尾噪 + 35mm 胶片投影机关机咔嗒声 + 2 秒静默环境音，约 5 秒，1:1 复用。
+- `summary`：任务类型 [reference generation + keyframe bookends + audio reuse]（参考生成 + 首尾帧锚定 + 音频复用）；最终片尾标志：黑场淡入 `<Picture 1>` 原海报作为首帧 → 海报剥落消散 → 露出大号 "STRANGE GIRLS CLUB" 丝网印刷标志（粉纸底 + 网点）→ "THE END" 杂志剪报啪一声拍到画面中央 → 拼贴符号环绕成装饰边框 → 静态定格一拍 → 投影机关机声硬切黑场。
+- `retention_analysis`：`<Picture 1>`（[Shot 1] 首帧锚）fully_preserved——首帧精确匹配原海报；`<Subject 1>`（[Shot 1]）fully_preserved——女孩仅以海报回归，形象不变；`<Subject 2>`（[Shot 2]、[Shot 3]）fully_preserved——粉纸底、网点、颗粒与黑白符号作为装饰边框保留；`<Audio 1>` fully_copy。
+- `detailed_description`：风格=复古丝网印刷拼贴波普片尾标志，粉黑白配色、网点、纸颗粒，慢速终幕节奏。Shot 1（0-2.000s）：黑场淡入完整海报（首帧 = 精确 `<Picture 1>`），网点轻柔呼吸一拍致敬全片海报锚点，镜头静态——然后海报开始剥落、消散为飞散的网点碎片，清除画面；Shot 2（2.000s）：露出片尾标志构图——超大号 "STRANGE GIRLS CLUB" 黑白网点丝网印刷字体居中于纯粉纸背景上，文字略带磨损（油墨渗出 + 套色错位，模拟真实胶印效果），画面四周 `<Subject 2>` 的符号（星星/爱心/地球仪/螺旋/棋盘格/眼睛）排列成黑白网点装饰边框，镜头正中心静态中全景；Shot 3（4.000s）：粗糙纸切 "THE END" 杂志剪报"啪"一声拍到画面中央（覆盖 "STRANGE GIRLS CLUB" 文字），切口撕裂不规则，字体为白纸上的粗黑模板体——构图静态定格一拍，网点最后一次脉动，35mm 投影机关机咔嗒声硬切黑场，全片正式结束。
+- `overall_soundscape`：轻柔唱片尾噪贯穿、海报剥落消散纸声、"THE END" 拍落纸面重音、35mm 投影机关机咔嗒声、随后静默。
+- `non_diegetic_music`：`<Audio 1>` 复用为配乐——唱片尾噪 + 投影机关机 + 约 5 秒终场环境音。
